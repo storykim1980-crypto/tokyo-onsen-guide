@@ -335,89 +335,139 @@ body::before {
 .empty-icon { font-size: 44px; margin-bottom: 12px; opacity: 0.5; }
 .empty-state p { font-size: 15px; font-weight: 700; color: var(--text-light); margin-bottom: 16px; }
 
-/* ===== Detail ===== */
-.detail-hero { position: relative; min-height: 280px; background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 64px 16px 28px; overflow: hidden; border-bottom: 2px solid var(--gold); display: flex; align-items: flex-end; }
+/* ===== Detail Page: Luxury Resort Style ===== */
+.detail-hero { position: relative; min-height: 340px; background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 72px 16px 32px; overflow: hidden; border-bottom: 2px solid var(--gold); display: flex; align-items: flex-end; }
 .detail-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 1; }
-.detail-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,0.45) 0%, rgba(26,20,16,0.70) 50%, rgba(26,20,16,0.92) 100%); }
+.detail-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,0.35) 0%, rgba(26,20,16,0.60) 40%, rgba(26,20,16,0.90) 100%); }
 .detail-hero-inner { position: relative; z-index: 2; max-width: 960px; margin: 0 auto; width: 100%; }
-.detail-back { display: inline-flex; align-items: center; gap: 6px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.35); color: var(--gold-light); padding: 7px 16px; border-radius: 24px; font-size: 12px; font-weight: 700; margin-bottom: 14px; cursor: pointer; backdrop-filter: blur(10px); transition: all 200ms; letter-spacing: 0.02em; }
-.detail-back:hover { background: rgba(201,169,110,0.28); color: var(--cream); border-color: var(--gold); transform: translateX(-2px); }
-.detail-title { font-size: 32px; font-weight: 800; margin-bottom: 14px; position: relative; letter-spacing: -0.02em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); line-height: 1.15; font-family: "Noto Serif KR", "Noto Serif JP", "Georgia", serif; }
-.detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; position: relative; }
-.detail-tag { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 24px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.3); color: var(--gold-light); backdrop-filter: blur(6px); transition: all 150ms; }
-.detail-tag:hover { background: rgba(201,169,110,0.22); border-color: var(--gold); color: var(--cream); }
-.detail-hero-actions { margin-top: 16px; }
-.detail-hero-actions .detail-back { margin-bottom: 0; background: rgba(201,169,110,0.18); border-color: rgba(201,169,110,0.45); }
-.detail-hero-actions .detail-back:hover { background: rgba(201,169,110,0.32); }
+.detail-back { display: inline-flex; align-items: center; gap: 6px; background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.40); color: var(--gold-light); padding: 8px 18px; border-radius: 24px; font-size: 12px; font-weight: 700; margin-bottom: 16px; cursor: pointer; backdrop-filter: blur(10px); transition: all 200ms; letter-spacing: 0.02em; }
+.detail-back:hover { background: rgba(201,169,110,0.30); color: var(--cream); border-color: var(--gold); transform: translateX(-2px); }
+.detail-title { font-size: 34px; font-weight: 800; margin-bottom: 16px; position: relative; letter-spacing: -0.02em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); line-height: 1.15; font-family: "Noto Serif KR", "Noto Serif JP", "Georgia", serif; }
+.detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; position: relative; }
+.detail-tag { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 24px; background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.35); color: var(--gold-light); backdrop-filter: blur(6px); transition: all 150ms; }
+.detail-tag:hover { background: rgba(201,169,110,0.28); border-color: var(--gold); color: var(--cream); }
+.detail-hero-actions { margin-top: 18px; }
+.detail-hero-actions .detail-back { margin-bottom: 0; background: rgba(201,169,110,0.22); border-color: rgba(201,169,110,0.50); }
+.detail-hero-actions .detail-back:hover { background: rgba(201,169,110,0.35); }
 
-.detail-content { max-width: 960px; margin: 0 auto; padding: 24px 16px 32px; background: var(--cream); position: relative; z-index: 3; }
+.detail-content { max-width: 960px; margin: 0 auto; padding: 28px 16px 40px; background: var(--cream); position: relative; z-index: 3; }
 [data-theme="dark"] .detail-content { background: var(--wood-mid); }
 
+.detail-section { margin-bottom: 24px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: 18px; padding: 28px; box-shadow: 0 2px 16px rgba(26,20,16,0.06); }
+[data-theme="dark"] .detail-section { background: rgba(30,26,20,0.7); border-color: var(--wood-light); }
+.detail-section h2 { font-size: 17px; font-weight: 800; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--border); display: inline-flex; align-items: center; gap: 10px; color: var(--text); position: relative; width: 100%; }
+.detail-section h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 64px; height: 3px; background: linear-gradient(90deg, var(--gold) 0%, var(--burgundy) 100%); border-radius: 2px; }
+
+.detail-text { font-size: 15.5px; color: var(--text-light); line-height: 1.95; }
+.detail-text p { margin-bottom: 14px; }
+
+/* Two-column layout */
+.detail-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
+.detail-main { min-width: 0; }
+.detail-side { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+
+@media (min-width: 768px) {
+  .detail-grid { grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
+  .detail-side { margin-top: 0; position: sticky; top: 90px; }
+  .detail-content { padding: 32px 24px 40px; }
+  .detail-hero { min-height: 380px; padding: 80px 24px 36px; }
+  .detail-title { font-size: 38px; }
+}
+
+/* Data tables (Basic info + Spring data) */
+.data-table { display: flex; flex-direction: column; border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; background: #fff; }
+[data-theme="dark"] .data-table { background: rgba(40,34,28,0.9); }
+.data-table-row { display: flex; border-bottom: 1px solid var(--border); transition: background 150ms; }
+.data-table-row:last-child { border-bottom: none; }
+.data-table-row:hover { background: rgba(201,169,110,0.04); }
+.data-table-label { width: 110px; flex-shrink: 0; background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); padding: 14px 16px; font-size: 11px; font-weight: 800; color: var(--gold-light); display: flex; align-items: center; line-height: 1.4; letter-spacing: 0.04em; text-transform: uppercase; }
+.data-table-value { flex: 1; padding: 14px 16px; font-size: 14.5px; font-weight: 600; color: var(--text); display: flex; align-items: center; line-height: 1.5; }
+.data-table-value a { color: var(--link); text-decoration: none; font-weight: 700; }
+.data-table-value a:hover { color: var(--burgundy); text-decoration: underline; }
+
+/* Amenity icons */
+.amenity-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.amenity-item { background: linear-gradient(135deg, #fff 0%, rgba(201,169,110,0.06) 100%); border: 1.5px solid var(--border); border-radius: 14px; padding: 18px 8px; text-align: center; transition: all 150ms; }
+.amenity-item:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 6px 16px rgba(201,169,110,0.12); }
+[data-theme="dark"] .amenity-item { background: rgba(50,42,32,0.9); }
+.amenity-icon { font-size: 30px; margin-bottom: 8px; display: block; }
+.amenity-label { font-size: 12px; font-weight: 700; color: var(--text); }
+
+/* Access & parking */
+.access-list { display: flex; flex-direction: column; gap: 10px; }
+.access-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: rgba(201,169,110,0.05); border-radius: 12px; border: 1px solid var(--border-light); transition: all 150ms; }
+.access-item:hover { background: rgba(201,169,110,0.09); border-color: var(--gold); }
+.access-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+.access-text { font-size: 13.5px; font-weight: 600; color: var(--text); line-height: 1.5; }
+
+/* Tips */
+.tip-list { display: flex; flex-direction: column; gap: 10px; }
+.tip-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: rgba(201,169,110,0.06); border: 1.5px solid var(--border-light); border-radius: 12px; transition: all 150ms; }
+.tip-item:hover { background: rgba(201,169,110,0.10); border-color: var(--gold); transform: translateX(3px); }
+.tip-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.tip-text { font-size: 14px; color: var(--text-light); line-height: 1.65; }
+
+/* Highlights */
+.highlight-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.highlight-card { background: linear-gradient(135deg, rgba(201,169,110,0.08) 0%, rgba(139,26,43,0.04) 100%); border: 1.5px solid var(--border); border-radius: 14px; padding: 18px; display: flex; align-items: flex-start; gap: 12px; transition: all 200ms; }
+.highlight-card:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(201,169,110,0.10); transform: translateY(-2px); }
+.highlight-card .hl-icon { font-size: 26px; flex-shrink: 0; }
+.highlight-card .hl-text { font-size: 14.5px; font-weight: 700; color: var(--text); line-height: 1.45; }
+
+/* Nearby */
+.nearby-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.nearby-item { display: flex; gap: 12px; padding: 14px; background: #fff; border: 1.5px solid var(--border); border-radius: 14px; cursor: pointer; transition: all 200ms; }
+[data-theme="dark"] .nearby-item { background: rgba(50,42,32,0.9); }
+.nearby-item:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(26,20,16,0.08); transform: translateY(-2px); }
+.nearby-thumb { width: 60px; height: 60px; border-radius: 12px; background: linear-gradient(135deg, var(--wood-light), var(--wood-dark)); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; border: 1px solid var(--gold); }
+.nearby-info { flex: 1; min-width: 0; }
+.nearby-name { font-size: 15px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
+.nearby-meta { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+
+/* Quick info */
 .quick-info-bar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
-.qinfo-item { background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.04) 100%); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 10px; text-align: center; box-shadow: var(--shadow-sm); transition: all 200ms; }
+.qinfo-item { background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.05) 100%); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 10px; text-align: center; box-shadow: var(--shadow-sm); transition: all 200ms; }
 .qinfo-item:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow); }
 [data-theme="dark"] .qinfo-item { background: rgba(30,26,20,0.6); }
 .qinfo-icon { font-size: 26px; margin-bottom: 10px; display: block; }
 .qinfo-label { display: block; font-size: 10px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
 .qinfo-value { display: block; font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.4; }
 
-.detail-section { margin-bottom: 28px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: 20px; padding: 32px; box-shadow: 0 2px 16px rgba(26,20,16,0.06); }
-[data-theme="dark"] .detail-section { background: rgba(30,26,20,0.7); border-color: var(--wood-light); }
-.detail-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--border); display: inline-flex; align-items: center; gap: 10px; color: var(--text); position: relative; }
-.detail-section h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 56px; height: 3px; background: linear-gradient(90deg, var(--gold) 0%, var(--burgundy) 100%); border-radius: 2px; }
-.detail-text { font-size: 15.5px; color: var(--text-light); line-height: 1.95; }
-.detail-text p { margin-bottom: 16px; }
-
-.highlight-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
-.highlight-card { background: linear-gradient(135deg, rgba(201,169,110,0.08) 0%, rgba(139,26,43,0.04) 100%); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; align-items: flex-start; gap: 12px; }
-.highlight-card .hl-icon { font-size: 24px; flex-shrink: 0; }
-.highlight-card .hl-text { font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.4; }
-
-.info-table { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-.info-table-row { display: flex; border-bottom: 1px solid var(--border); }
-.info-table-row:last-child { border-bottom: none; }
-.info-table-label { width: 100px; flex-shrink: 0; background: var(--cream-dark); padding: 12px 14px; font-size: 12px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; display: flex; align-items: center; }
-[data-theme="dark"] .info-table-label { background: rgba(50,42,32,0.8); }
-.info-table-value { flex: 1; padding: 12px 14px; font-size: 14px; font-weight: 600; color: var(--text); display: flex; align-items: center; }
-
-.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-.feature-item { display: flex; align-items: center; gap: 10px; padding: 12px; background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-[data-theme="dark"] .feature-item { background: rgba(50,42,32,0.9); }
-.feature-item .fi-icon { font-size: 22px; flex-shrink: 0; }
-.feature-item .fi-text { font-size: 13px; font-weight: 700; color: var(--text); }
-
-.tip-list { display: flex; flex-direction: column; gap: 10px; }
-.tip-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; background: rgba(201,169,110,0.06); border: 1px solid var(--border-light); border-radius: var(--radius); }
-.tip-item .tip-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
-.tip-item .tip-text { font-size: 13px; color: var(--text-light); line-height: 1.6; }
-
-.nearby-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
-.nearby-item { display: flex; gap: 12px; padding: 12px; background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 150ms; }
-[data-theme="dark"] .nearby-item { background: rgba(50,42,32,0.9); }
-.nearby-item:hover { border-color: var(--gold); box-shadow: var(--shadow-sm); }
-.nearby-thumb { width: 56px; height: 56px; border-radius: var(--radius); background: linear-gradient(135deg, var(--wood-light), var(--wood-dark)); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; border: 1px solid var(--gold); }
-.nearby-info { flex: 1; min-width: 0; }
-.nearby-name { font-size: 14px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
-.nearby-meta { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+/* Gallery */
+.gallery-wrap { margin-bottom: 20px; background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .gallery-wrap { background: rgba(30,26,20,0.7); border-color: var(--wood-light); }
+.gallery-main { position: relative; width: 100%; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #e8e0d4 0%, #d4c9b8 100%); overflow: hidden; }
+.gallery-main::before { content: "♨"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; color: rgba(201,169,110,0.25); z-index: 0; pointer-events: none; }
+.gallery-main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 400ms ease; opacity: 0; z-index: 1; }
+.gallery-main img.active { opacity: 1; }
+.gallery-disclaimer { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: linear-gradient(90deg, rgba(201,169,110,0.08) 0%, rgba(245,240,232,0.5) 100%); border-top: 1.5px solid var(--gold); font-size: 12px; font-weight: 600; color: var(--text-muted); line-height: 1.5; }
+.gallery-disclaimer .gd-icon { font-size: 18px; flex-shrink: 0; }
+.gallery-disclaimer .gd-text { flex: 1; }
+[data-theme="dark"] .gallery-disclaimer { background: linear-gradient(90deg, rgba(201,169,110,0.06) 0%, rgba(30,26,20,0.5) 100%); border-top-color: var(--gold-dark); }
 
 @media (min-width: 768px) {
   .quick-info-bar { grid-template-columns: repeat(4, 1fr); }
   .highlight-grid { grid-template-columns: repeat(3, 1fr); }
-  .feature-grid { grid-template-columns: repeat(3, 1fr); }
   .nearby-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 767px) {
-  .detail-title { font-size: 30px; }
-  .detail-hero { min-height: 360px; padding: 72px 14px 40px; }
-  .detail-content { padding: 28px 14px 36px; }
-  .detail-section { padding: 22px; margin-bottom: 20px; border-radius: 16px; }
-  .detail-section h2 { font-size: 16px; margin-bottom: 18px; padding-bottom: 10px; }
-  .feature-grid { grid-template-columns: repeat(2, 1fr); }
-  .qinfo-item { padding: 18px 12px; border-radius: 16px; }
-  .qinfo-icon { font-size: 22px; }
+  .detail-title { font-size: 26px; }
+  .detail-hero { min-height: 260px; padding: 64px 14px 28px; }
+  .detail-content { padding: 20px 14px 32px; }
+  .detail-section { padding: 20px; margin-bottom: 16px; border-radius: 14px; }
+  .detail-section h2 { font-size: 15px; margin-bottom: 14px; padding-bottom: 8px; }
+  .detail-tag { font-size: 11px; padding: 5px 12px; }
+  .detail-back { padding: 7px 14px; font-size: 11px; margin-bottom: 12px; }
+  .amenity-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .amenity-item { padding: 12px 4px; }
+  .amenity-icon { font-size: 24px; }
+  .amenity-label { font-size: 11px; }
+  .data-table-label { width: 90px; font-size: 10px; padding: 10px 12px; }
+  .data-table-value { font-size: 13px; padding: 10px 12px; }
+  .access-icon { font-size: 18px; }
+  .access-text { font-size: 12.5px; }
+  .qinfo-item { padding: 12px 8px; }
   .qinfo-value { font-size: 13px; }
-  .detail-tag { font-size: 12px; padding: 7px 14px; }
-  .detail-back { padding: 8px 16px; font-size: 12px; }
 }
 .memo-actions { display: flex; gap: 8px; }
 
@@ -685,254 +735,6 @@ body::before {
   transform: translateX(4px);
 }
 
-.detail-section {
-  margin-bottom: 18px;
-  padding: 18px;
-  border-radius: 14px;
-  background: var(--cream-panel);
-  border: 1px solid var(--border);
-  box-shadow: 0 2px 12px rgba(26,20,16,0.06);
-}
-[data-theme="dark"] .detail-section {
-  background: rgba(40,34,28,0.85);
-  border-color: var(--wood-light);
-}
-.detail-section h2 {
-  font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 14px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid var(--border);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text);
-}
-.detail-section h2::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 22px;
-  background: linear-gradient(180deg, var(--gold) 0%, var(--burgundy) 100%);
-  border-radius: 3px;
-}
-.detail-section h2::after {
-  display: none;
-}
-
-.detail-text {
-  font-size: 15px;
-  line-height: 1.8;
-  color: var(--text-light);
-}
-.detail-text p {
-  margin-bottom: 10px;
-}
-
-.tip-item {
-  padding: 14px 16px;
-  background: rgba(201,169,110,0.05);
-  border: 1.5px solid var(--border-light);
-  border-radius: 12px;
-  margin-bottom: 10px;
-  transition: all 150ms;
-}
-.tip-item:hover {
-  background: rgba(201,169,110,0.1);
-  border-color: var(--gold);
-  transform: translateX(4px);
-}
-.tip-icon {
-  font-size: 22px;
-  margin-top: 0;
-}
-.tip-text {
-  font-size: 14.5px;
-  line-height: 1.7;
-}
-
-.highlight-card {
-  padding: 18px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(139,26,43,0.03) 100%);
-  border: 1.5px solid var(--border);
-  transition: all 200ms;
-}
-.highlight-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 4px 16px rgba(201,169,110,0.12);
-  transform: translateY(-2px);
-}
-.hl-icon {
-  font-size: 28px;
-}
-.hl-text {
-  font-size: 14.5px;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.season-card {
-  padding: 20px 14px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(201,169,110,0.05) 0%, rgba(201,169,110,0.01) 100%);
-  border: 1.5px solid var(--border);
-  transition: all 200ms;
-}
-.season-card:hover {
-  border-color: var(--gold);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(201,169,110,0.1);
-}
-.s-icon {
-  font-size: 36px;
-  margin-bottom: 12px;
-}
-.s-title {
-  font-size: 15px;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
-.s-text {
-  font-size: 13.5px;
-  line-height: 1.7;
-}
-
-.time-item {
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: linear-gradient(90deg, #fff 0%, rgba(201,169,110,0.04) 100%);
-  border: 1.5px solid var(--border);
-  transition: all 150ms;
-}
-.time-item:hover {
-  border-color: var(--gold);
-}
-.tm-icon {
-  font-size: 28px;
-}
-.tm-title {
-  font-size: 15px;
-  font-weight: 800;
-}
-.tm-desc {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--text-light);
-}
-
-.nearby-item {
-  padding: 14px;
-  border-radius: 14px;
-  background: #fff;
-  border: 1.5px solid var(--border);
-  transition: all 200ms;
-}
-.nearby-item:hover {
-  border-color: var(--gold);
-  box-shadow: 0 4px 16px rgba(26,20,16,0.08);
-  transform: translateY(-2px);
-}
-.nearby-thumb {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  font-size: 28px;
-}
-.nearby-name {
-  font-size: 15px;
-  font-weight: 800;
-}
-.nearby-meta {
-  font-size: 13px;
-}
-
-.feature-item {
-  padding: 14px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #fff 0%, rgba(201,169,110,0.04) 100%);
-  border: 1.5px solid var(--border);
-  transition: all 150ms;
-}
-.feature-item:hover {
-  border-color: var(--gold);
-}
-.fi-icon {
-  font-size: 26px;
-}
-.fi-text {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.info-table {
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1.5px solid var(--border);
-}
-.info-table-row {
-  transition: background 150ms;
-}
-.info-table-row:hover {
-  background: rgba(201,169,110,0.03);
-}
-.info-table-label {
-  width: 110px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  padding: 14px 16px;
-}
-.info-table-value {
-  font-size: 14.5px;
-  padding: 14px 16px;
-}
-
-.quick-info-bar {
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.qinfo-item {
-  padding: 14px 10px;
-  border-radius: 14px;
-  background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.05) 100%);
-  border: 1.5px solid var(--border);
-  transition: all 150ms;
-}
-.qinfo-item:hover {
-  border-color: var(--gold);
-  transform: translateY(-2px);
-}
-.qinfo-icon {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-.qinfo-label {
-  font-size: 10px;
-  margin-bottom: 8px;
-  letter-spacing: 0.08em;
-}
-.qinfo-value {
-  font-size: 14.5px;
-  font-weight: 700;
-}
-
-.gallery-wrap {
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1.5px solid var(--border);
-  margin-bottom: 14px;
-}
-.gallery-main {
-  aspect-ratio: 16 / 9;
-}
-.gallery-caption {
-  padding: 10px 14px;
-  font-size: 12px;
-  font-weight: 600;
-  background: rgba(201,169,110,0.04);
-}
-
 .bottom-nav {
   height: 60px;
   background: rgba(250,247,242,0.98);
@@ -1027,6 +829,8 @@ body::before {
   .content-section { margin-bottom: 22px; }
   .section-title-bar { padding: 12px 0 8px; margin-bottom: 12px; }
 }
+
+
 
 </style>
 </head>
@@ -1634,17 +1438,21 @@ const S = {
     }
     const lang=S.lang||"ko";
     
-
     function esc(s){
       return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
     }
     function safe(fn){
       try{return fn();}catch(e){console.error("Detail render error:",e);return "";}
     }
+    function br(txt){
+      const s=String(txt||"").trim();
+      if(!s)return [];
+      return s.split(/\n\s*\n|\n/).map(x=>x.trim()).filter(Boolean);
+    }
 
     let h='';
 
-    // Hero with background image
+    // Hero
     h+=safe(function(){
       const bgImg=o.image||"";
       let s='<div class="detail-hero">';
@@ -1670,8 +1478,10 @@ const S = {
     });
 
     h+='<div class="detail-content">';
+    h+='<div class="detail-grid">';
+    h+='<div class="detail-main">';
 
-    // Gallery - single representative image + prominent disclaimer
+    // Gallery (single representative image)
     h+=safe(function(){
       const src=o.image||"";
       if(!src)return "";
@@ -1679,7 +1489,6 @@ const S = {
       s+='<div class="gallery-main">';
       s+='<img class="active" src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';" style="opacity:1;">';
       s+='</div>';
-      // Prominent disclaimer
       const disc = lang==="ko"
         ? "※ 본 이미지는 이해를 돕기 위한 예시 이미지이며, 실제 시설과 다를 수 있습니다."
         : (lang==="ja"
@@ -1690,132 +1499,99 @@ const S = {
       return s;
     });
 
-    // Quick info - use hoursDetail if available
+    // Basic info table
     h+=safe(function(){
-      const hoursLabel=lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours");
-      const hoursValue=(o.hoursDetail&&o.hoursDetail[lang])||o.hours||"-";
-      let s='<div class="quick-info-bar">';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(hoursLabel)+'</span><span class="qinfo-value">'+esc(hoursValue)+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">📅</span><span class="qinfo-label">'+esc(lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"))+'</span><span class="qinfo-value">'+esc((o.holiday&&o.holiday[lang])||"-")+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">📞</span><span class="qinfo-label">'+esc(lang==="ko"?"전화":(lang==="ja"?"電話":"Tel"))+'</span><span class="qinfo-value">'+esc(o.tel||"-")+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">💴</span><span class="qinfo-label">'+esc(lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"))+'</span><span class="qinfo-value">'+esc((o.price&&o.price[lang])||"-")+'</span></div>';
-      s+='</div>';
+      const rows=[
+        [lang==="ko"?"시설명":(lang==="ja"?"施設名":"Name"), (o.name&&o.name[lang])||""],
+        [lang==="ko"?"유형":(lang==="ja"?"タイプ":"Type"), (o.type&&o.type[lang])||""],
+        [lang==="ko"?"주소":(lang==="ja"?"住所":"Address"), (o.address&&o.address[lang])||""],
+        ["TEL", o.tel||"-"],
+        [lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours"), (o.hoursDetail&&o.hoursDetail[lang])||o.hours||"-"],
+        [lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"), (o.holiday&&o.holiday[lang])||"-"],
+        [lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"), (o.price&&o.price[lang])||"-"]
+      ];
+      if(o.website){
+        rows.push([lang==="ko"?"공식 HP":(lang==="ja"?"公式HP":"Website"), '<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer">'+esc(o.website)+'</a>']);
+      }
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"기본 정보":(lang==="ja"?"基本情報":"Information"))+'</h2>';
+      s+='<div class="data-table">';
+      rows.forEach(function(row){
+        if(!row[1])return;
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(row[0])+'</div><div class="data-table-value">'+row[1]+'</div></div>';
+      });
+      s+='</div></div>';
       return s;
     });
 
-    // Ad top
+    // Spring data
     h+=safe(function(){
-      return '<div class="ad-slot ad-detail-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세상단"</div></div>';
+      if(!o.springData||!o.springData[lang])return "";
+      const sp=o.springData[lang];
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"온천 데이터":(lang==="ja"?"湯データ":"Spa Data"))+'</h2>';
+      s+='<div class="data-table">';
+      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"원천":(lang==="ja"?"源泉名":"Source"))+'</div><div class="data-table-value">'+esc(sp.source)+'</div></div>';
+      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"수질":(lang==="ja"?"泉質":"Quality"))+'</div><div class="data-table-value">'+esc(sp.quality)+'</div></div>';
+      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"온도":(lang==="ja"?"泉温":"Temp"))+'</div><div class="data-table-value">'+esc(sp.temp)+'</div></div>';
+      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"효능":(lang==="ja"?"効能":"Benefits"))+'</div><div class="data-table-value">'+esc(sp.benefits)+'</div></div>';
+      if(sp.features&&sp.features.length){
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"특징":(lang==="ja"?"特徴":"Features"))+'</div><div class="data-table-value">'+esc(sp.features.join(" / "))+'</div></div>';
+      }
+      s+='</div></div>';
+      return s;
     });
 
-    // Description
+    // Amenities
+    h+=safe(function(){
+      if(!o.amenities||!o.amenities.length)return "";
+      const amMap={
+        shampoo:{icon:"🧴",ko:"샴푸",ja:"シャンプー",en:"Shampoo"},
+        bodySoap:{icon:"🫧",ko:"바디솝",ja:"ボディソープ",en:"Body Soap"},
+        hairDryer:{icon:"💨",ko:"드라이어",ja:"ドライヤー",en:"Hair Dryer"},
+        locker:{icon:"🔐",ko:"락커",ja:"ロッカー",en:"Locker"},
+        sauna:{icon:"🧖",ko:"사우나",ja:"サウナ",en:"Sauna"},
+        coldBath:{icon:"❄️",ko:"찜질방",ja:"水風呂",en:"Cold Bath"},
+        openAirBath:{icon:"♨️",ko:"노천탕",ja:"露天風呂",en:"Open-air Bath"},
+        bedrockBath:{icon:"🪨",ko:"암반욕",ja:"岩盤浴",en:"Bedrock Bath"},
+        restaurant:{icon:"🍽️",ko:"식당",ja:"食事処",en:"Restaurant"},
+        restArea:{icon:"🛋️",ko:"휴게실",ja:"休憩所",en:"Rest Area"},
+        vendingMachine:{icon:"🥤",ko:"자판기",ja:"自販機",en:"Vending Machine"},
+        gameCorner:{icon:"🎮",ko:"게임코너",ja:"ゲーム",en:"Games"},
+        yukata:{icon:"👘",ko:"유카타",ja:"浴衣",en:"Yukata"},
+        wifi:{icon:"📶",ko:"Wi-Fi",ja:"Wi-Fi",en:"Wi-Fi"},
+        rentalTowel:{icon:"🧖",ko:"수건 대여",ja:"タオルレンタル",en:"Towel Rental"},
+        manga:{icon:"📚",ko:"만화",ja:"漫画",en:"Manga"}
+      };
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"시설·어메니티":(lang==="ja"?"アメニティ·設備":"Amenities"))+'</h2>';
+      s+='<div class="amenity-grid">';
+      o.amenities.forEach(function(am){
+        const info=amMap[am];
+        if(!info)return;
+        const label=info[lang]||info.ko;
+        s+='<div class="amenity-item"><div class="amenity-icon">'+info.icon+'</div><div class="amenity-label">'+esc(label)+'</div></div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Description (paragraphs)
     h+=safe(function(){
       const desc=(o.desc&&o.desc[lang])||"";
       if(!desc)return "";
-      return '<div class="detail-section"><h2>'+esc(lang==="ko"?"상세 설명":(lang==="ja"?"詳細説明":"Description"))+'</h2><div class="detail-text"><p>'+esc(desc)+'</p></div></div>';
+      const paragraphs=br(desc);
+      if(!paragraphs.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"상세 설명":(lang==="ja"?"詳細説明":"Description"))+'</h2><div class="detail-text">';
+      paragraphs.forEach(function(p){
+        s+='<p>'+esc(p)+'</p>';
+      });
+      s+='</div></div>';
+      return s;
     });
 
-    // Rich description by type
-    h+=safe(function(){
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      let rich="";
-      if(typeKo==="천연 온천"){
-        if(lang==="ko") rich="지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있는 본격적인 온천 시설입니다. 대욕장은 넓고 쾌적한 공간으로 구성되어 있으며, 노천탕에서는 사계절 각기 다른 풍경을 감상하며 입욕할 수 있습니다. 온천수는 피로 회복과 혈액 순환 개선에 효과적이며, 장시간 업무에 지친 현대인에게 최적의 휴식 공간을 제공합니다. 시설 내에는 휴게 공간과 간단한 식사를 할 수 있는 공간도 마련되어 있어 하루의 피로를 녹이기에 충분합니다. 주말이나 휴일에는 가족 단위 방문객이 많으며, 연인이나 친구와 함께 방문하기에도 적합한 곳입니다.";
-        else if(lang==="ja") rich="地下から湧き出る天然温泉をそのまま楽しめる本格温泉施設です。大浴場は広く快適な空間で、露天風呂では四季折々の風景を眺めながら入浴できます。温泉水は疲労回復や血行促進に効果的で、長時間の仕事に疲れた現代人に最適な癒しの空間を提供します。施設内には休憩スペースや軽食を楽しめるスペースも備わっており、一日の疲れを癒すには十分です。週末や休日には家族連れの客が多く、恋人や友人との訪問にも適した場所です。";
-        else rich="Authentic natural hot spring facility with spacious baths and open-air bathing with seasonal views. Effective for fatigue recovery and blood circulation.";
-      }else if(typeKo==="도심형 스파"){
-        if(lang==="ko") rich="도쿄 도심에서 편리하게 이용할 수 있는 현대식 스파 시설입니다. 바쁜 일상 속에서 잠시 벗어나 몸과 마음을 재충전할 수 있는 공간으로, 최신 시설과 깔끔한 인테리어가 돋보입니다. 지하에서 끌어올린 온천수를 사용하는 곳도 있어 도심 속에서도 본격적인 온천 체험이 가능합니다. 사우나룸은 다양한 온도대로 운영되며, 암반욕실과 휴게 공간도 잘 갖추어져 있습니다.";
-        else if(lang==="ja") rich="東京の都心で気軽に利用できる現代型スパ施設です。忙しい日常から離れ、心身をリチャージできる空間で、最新設備と清潔なインテリアが魅力です。地下から汲み上げた温泉水を使用しているところもあり、都会の中で本格的な温泉体験が可能です。サウナルームは様々な温度帯で運営され、岩盤浴室や休憩スペースも充実しています。";
-        else rich="Modern urban spa in central Tokyo. Recharge your body and mind with clean facilities and hot spring water from deep underground. Features various sauna temperatures and bedrock baths.";
-      }else if(typeKo==="슈퍼 센토"){
-        if(lang==="ko") rich="대형 규모의 슈퍼 센토로, 온천을 즐기는 것은 물론 식사, 휴식, 엔터테인먼트까지 한 번에 해결할 수 있는 복합 휴양 시설입니다. 다양한 종류의 욕탕이 마련되어 있어 취향에 따라 선택할 수 있으며, 노천탕과 사우나도 충실합니다. 가족 단위 방문객을 위해 키즈 공간과 유아 욕탕을 별도로 운영하는 곳도 많습니다.";
-        else if(lang==="ja") rich="大型のスーパー銭湯で、温泉を楽しむだけでなく食事、休憩、エンターテイメントまで一度に楽しめる複合リゾート施設です。様々な種類の浴槽が用意されており、好みに合わせて選べます。露天風呂やサウナも充実しており、家族連れのためにキッズスペースや幼児用浴槽を別途運営しているところも多いです。";
-        else rich="Large super sento complex offering hot springs, dining, rest areas, and entertainment. Features various bath types, open-air baths, saunas, and kids' areas.";
-      }else if(typeKo==="전통 센토"){
-        if(lang==="ko") rich="에도 시대부터 이어져 온 전통적인 목욕탕으로, 현지 주민들의 일상적인 휴식 공간이자 관광객들에게도 인기 있는 명소입니다. 정교하게 그려진 후지산 벽화와 화려한 타일 장식이 특징이며, 옛 정취를 느낄 수 있는 소박한 분위기가 매력적입니다. 저렴한 입장료로 누구나 부담 없이 이용할 수 있습니다.";
-        else if(lang==="ja") rich="江戸時代から続く伝統的な銭湯で、地元住民の日常的な憩いの場であり、観光客にも人気の名所です。精巧に描かれた富士山の壁画と華やかなタイル装飾が特徴で、昔の趣きを感じられる素朴な雰囲気が魅力です。リーズナブルな入浴料で誰もが気軽に利用できます。";
-        else rich="Traditional sento dating back to the Edo period. Features iconic Mt. Fuji murals and colorful tile art. Affordable entry fees make it accessible to all.";
-      }else if(typeKo==="온천 여관"){
-        if(lang==="ko") rich="일본식 전통 여관으로, 정갈한 다다미 방과 계절별 가이세키 요리를 즐길 수 있는 곳입니다. 대부분 자연 풍광이 아름다운 지역에 위치해 있어 온천욕과 함께 경치를 즐기기에 최적입니다. 객실 내에서는 노천탕이나 반노천탕을 갖춘 곳도 있어 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.";
-        else if(lang==="ja") rich="日本式の伝統旅館で、清潔な畳の部屋と季節の懐石料理を楽しめる場所です。多くは自然風景が美しい地域に位置しており、温泉浴と共に景色を楽しむのに最適です。客室には露天風呂や半露天風呂を備えた部屋もあり、プライバシーを保ちながらゆったりとした時間を過ごせます。";
-        else rich="Traditional Japanese ryokan with tatami rooms and seasonal kaiseki cuisine. Located in scenic areas with private open-air baths available in some rooms.";
-      }else if(typeKo==="온천 테마파크"){
-        if(lang==="ko") rich="온천을 테마로 한 대형 엔터테인먼트 시설로, 다양한 놀이 시설과 입욕 시설을 동시에 즐길 수 있는 가족 단위 최적의 여행지입니다. 워터 슬라이드와 풀장이 있는 곳도 있어 아이들이 즐거운 시간을 볂낼 수 있으며, 어른들은 다양한 온천탕과 사우나에서 휴식을 취할 수 있습니다.";
-        else if(lang==="ja") rich="温泉をテーマにした大型エンターテイメント施設で、様々な遊戯設備と入浴施設を同時に楽しめる家族向けの最適な旅行先です。ウォータースライダーやプールがある施設もあり、子供たちが楽しい時間を過ごせます。大人も様々な温泉浴槽やサウナでリラックスできます。";
-        else rich="Large hot spring theme park combining bathing facilities with entertainment. Features water slides, pools, various baths, and saunas. Perfect for families.";
-      }else if(typeKo==="온천 마을"){
-        if(lang==="ko") rich="온천 마을은 여러 온천 시설과 여관이 모여 있는 지역으로, 온천 여행의 정수를 경험할 수 있는 곳입니다. 거리를 걸으며 유카타 차림으로 온천을 돌아다니는 것이 특색이며, 각 시설마다 다른 온천수와 분위기를 즐길 수 있습니다.";
-        else if(lang==="ja") rich="温泉郷は複数の温泉施設や旅館が集まる地域で、温泉旅行の醍醐味を体験できる場所です。街を浴衣姿で歩きながら温泉巡りをするのが特色で、それぞれの施設で異なる温泉水と雰囲気を楽しめます。";
-        else rich="Onsen village with multiple hot spring facilities and ryokan. Stroll between baths in yukata and enjoy different waters at each location.";
-      }
-      if(!rich)return "";
-      return '<div class="detail-section"><h2>'+esc(lang==="ko"?"시설 소개":(lang==="ja"?"施設紹介":"About"))+'</h2><div class="detail-text"><p>'+esc(rich)+'</p></div></div>';
-    });
-
-    // Spring quality
-    h+=safe(function(){
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      let spring="";
-      if(typeKo==="천연 온천" || typeKo==="온천 여관" || typeKo==="온천 마을"){
-        if(lang==="ko") spring="이 시설에서 사용되는 온천수는 지하 수십 미터에서 끌어올린 천연 온천으로, 나트륨·칼슘·마그네슘 등의 미네랄이 풍부하게 함유되어 있습니다. 온천수의 온도는 약 40~42도로 유지되며, 피부 미용과 신경통·근육통 완화에 효과적인 것으로 알려져 있습니다.";
-        else if(lang==="ja") spring="この施設で使用される温泉水は地下数十メートルから汲み上げた天然温泉で、ナトリウム・カルシウム・マグネシウムなどのミネラルが豊富に含まれています。温泉水の温度は約40～42度に保たれており、美肌効果や神経痛・筋肉痛の緩和に効果的であると言われています。";
-        else spring="The natural spring water is drawn from deep underground and rich in minerals like sodium, calcium, and magnesium. Maintained at around 40–42°C, known for skin beautification and relief from neuralgia and muscle pain.";
-      }else if((o.features||[]).indexOf("sauna")>=0){
-        if(lang==="ko") spring="사우나 시설은 건식과 습식 모두 갖추어져 있으며, 적정 온도와 습도로 관리되고 있습니다. 사우나 이용 후에는 차가운 물로 샤워하거나 휴식 공간에서 충분한 휴식을 취하는 것이 좋습니다.";
-        else if(lang==="ja") spring="サウナ施設は乾式と湿式の両方が備わっており、適正な温度と湿度で管理されています。サウナ利用後は冷水シャワーを浴びたり、休憩スペースで十分な休息を取ることをおすすめします。";
-        else spring="The sauna offers both dry and steam options, maintained at optimal temperature and humidity. Cool down with a cold shower and rest after use.";
-      }
-      if(!spring)return "";
-      return '<div class="detail-section"><h2>'+esc(lang==="ko"?"온천수 특징":(lang==="ja"?"温泉水の特徴":"Spring Quality"))+'</h2><div class="detail-text"><p>'+esc(spring)+'</p></div></div>';
-    });
-
-    // Recommendation points - use data-driven recommendPoints if available
+    // Recommend points
     h+=safe(function(){
       const recs=[];
-      // Use generated recommendPoints first
       if(o.recommendPoints&&o.recommendPoints[lang]){
         o.recommendPoints[lang].forEach(function(pt){if(pt)recs.push(pt);});
-      }
-      // Fallback to highlights
-      const hls=o.highlights||[];
-      hls.forEach(function(hl){if(hl&&hl[lang]&&recs.indexOf(hl[lang])<0) recs.push(hl[lang]);});
-      const features=o.features||[];
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      if(typeKo==="천연 온천"){
-        if(lang==="ko"){if(recs.indexOf("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.")<0)recs.push("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.");if(recs.indexOf("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.")<0)recs.push("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.");}
-        else if(lang==="ja"){if(recs.indexOf("地下から湧き出る天然温泉をそのまま楽しめます。")<0)recs.push("地下から湧き出る天然温泉をそのまま楽しめます。");if(recs.indexOf("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。")<0)recs.push("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。");}
-        else{if(recs.indexOf("Authentic natural spring water from deep underground.")<0)recs.push("Authentic natural spring water from deep underground.");if(recs.indexOf("Easily accessible from central Tokyo, perfect for day trips.")<0)recs.push("Easily accessible from central Tokyo, perfect for day trips.");}
-      }else if(typeKo==="도심형 스파"){
-        if(lang==="ko"){if(recs.indexOf("도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.")<0)recs.push("도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.");if(recs.indexOf("퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.")<0)recs.push("퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.");}
-        else if(lang==="ja"){if(recs.indexOf("都心にありながら最新設備と清潔なインテリアを備えた現代型スパです。")<0)recs.push("都心にありながら最新設備と清潔なインテリアを備えた現代型スパです。");if(recs.indexOf("退勤後も利用できる深夜営業で、会社員に人気です。")<0)recs.push("退勤後も利用できる深夜営業で、会社員に人気です。");}
-        else{if(recs.indexOf("Modern spa with state-of-the-art facilities in the city center.")<0)recs.push("Modern spa with state-of-the-art facilities in the city center.");if(recs.indexOf("Late-night hours popular with office workers after work.")<0)recs.push("Late-night hours popular with office workers after work.");}
-      }else if(typeKo==="슈퍼 센토"){
-        if(lang==="ko"){if(recs.indexOf("온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.")<0)recs.push("온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.");if(recs.indexOf("가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.")<0)recs.push("가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.");}
-        else if(lang==="ja"){if(recs.indexOf("温泉、食事、休憩を一度に楽しめる大型複合施設です。")<0)recs.push("温泉、食事、休憩を一度に楽しめる大型複合施設です。");if(recs.indexOf("家族連れのために様々な便利な設備が整っています。")<0)recs.push("家族連れのために様々な便利な設備が整っています。");}
-        else{if(recs.indexOf("Large complex combining hot springs, dining, and relaxation.")<0)recs.push("Large complex combining hot springs, dining, and relaxation.");if(recs.indexOf("Family-friendly with various amenities for all ages.")<0)recs.push("Family-friendly with various amenities for all ages.");}
-      }else if(typeKo==="전통 센토"){
-        if(lang==="ko"){if(recs.indexOf("에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.")<0)recs.push("에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.");if(recs.indexOf("후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.")<0)recs.push("후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.");}
-        else if(lang==="ja"){if(recs.indexOf("江戸時代の趣きを感じられる、安くて懐かしい伝統的な銭湯です。")<0)recs.push("江戸時代の趣きを感じられる、安くて懐かしい伝統的な銭湯です。");if(recs.indexOf("富士山の壁画と華やかなタイル装飾が印象的な写真スポットです。")<0)recs.push("富士山の壁画と華やかなタイル装飾が印象的な写真スポットです。");}
-        else{if(recs.indexOf("Affordable, nostalgic traditional bathhouse with Edo-period charm.")<0)recs.push("Affordable, nostalgic traditional bathhouse with Edo-period charm.");if(recs.indexOf("Iconic Mt. Fuji murals and colorful tiles make for great photos.")<0)recs.push("Iconic Mt. Fuji murals and colorful tiles make for great photos.");}
-      }else if(typeKo==="온천 여관"){
-        if(lang==="ko"){if(recs.indexOf("정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.")<0)recs.push("정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.");if(recs.indexOf("객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.")<0)recs.push("객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.");}
-        else if(lang==="ja"){if(recs.indexOf("清潔な畳の部屋と丁寧な懐石料理が楽しめる伝統旅館です。")<0)recs.push("清潔な畳の部屋と丁寧な懐石料理が楽しめる伝統旅館です。");if(recs.indexOf("客室の露天風呂でプライバシーを保ちながらゆったり過ごせます。")<0)recs.push("客室の露天風呂でプライバシーを保ちながらゆったり過ごせます。");}
-        else{if(recs.indexOf("Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.")<0)recs.push("Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.");if(recs.indexOf("Private open-air baths in some rooms ensure complete privacy.")<0)recs.push("Private open-air baths in some rooms ensure complete privacy.");}
-      }
-      if(features.indexOf("rotenburo")>=0){
-        if(lang==="ko"){if(recs.indexOf("노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.")<0)recs.push("노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.");}
-        else if(lang==="ja"){if(recs.indexOf("露天風呂で自然の景色を眺めながら、ゆったりと入浴時間を楽しめます。")<0)recs.push("露天風呂で自然の景色を眺めながら、ゆったりと入浴時間を楽しめます。");}
-        else{if(recs.indexOf("Enjoy relaxing open-air baths with beautiful natural scenery.")<0)recs.push("Enjoy relaxing open-air baths with beautiful natural scenery.");}
-      }
-      if(features.indexOf("sauna")>=0){
-        if(lang==="ko"){if(recs.indexOf("다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.")<0)recs.push("다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.");}
-        else if(lang==="ja"){if(recs.indexOf("様々な温度帯のサウナルームと休憩スペースが充実しています。")<0)recs.push("様々な温度帯のサウナルームと休憩スペースが充実しています。");}
-        else{if(recs.indexOf("Well-equipped sauna rooms at various temperatures with rest areas.")<0)recs.push("Well-equipped sauna rooms at various temperatures with rest areas.");}
-      }
-      if(features.indexOf("ganbanyoku")>=0){
-        if(lang==="ko"){if(recs.indexOf("천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.")<0)recs.push("천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.");}
-        else if(lang==="ja"){if(recs.indexOf("天然石の岩盤浴で汗をかき、抗酸化効果を体験できます。")<0)recs.push("天然石の岩盤浴で汗をかき、抗酸化効果を体験できます。");}
-        else{if(recs.indexOf("Experience antioxidant effects through natural stone bedrock bathing.")<0)recs.push("Experience antioxidant effects through natural stone bedrock bathing.");}
       }
       if(!recs.length)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"추천 포인트":(lang==="ja"?"おすすめポイント":"Highlights"))+'</h2><div class="detail-text">';
@@ -1824,115 +1600,14 @@ const S = {
       return s;
     });
 
-    // Highlights cards
-    h+=safe(function(){
-      const hls=o.highlights||[];
-      if(!hls.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"하이라이트":(lang==="ja"?"ハイライト":"Highlights"))+'</h2><div class="highlight-grid">';
-      hls.forEach(function(hl,i){
-        s+='<div class="highlight-card"><div class="hl-icon">'+["✨","🌟","💎","🏆","🎯"][i%5]+'</div><div class="hl-text">'+esc((hl&&hl[lang])||"")+'</div></div>';
-      });
-      s+='</div></div>';
-      return s;
-    });
-
-    // Info table
-    h+=safe(function(){
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"기본 정보":(lang==="ja"?"基本情報":"Information"))+'</h2><div class="info-table">';
-      const rows=[
-        [lang==="ko"?"지역":(lang==="ja"?"地域":"Area"),(o.area&&o.area[lang])||""],
-        [lang==="ko"?"유형":(lang==="ja"?"タイプ":"Type"),(o.type&&o.type[lang])||""],
-        ["Hours",o.hours||""],
-        [lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"),(o.holiday&&o.holiday[lang])||""],
-        [lang==="ko"?"가격":(lang==="ja"?"価格":"Price"),(o.price&&o.price[lang])||""],
-        ["Tel",o.tel||""],
-        [lang==="ko"?"주소":(lang==="ja"?"住所":"Address"),(o.address&&o.address[lang])||""],
-        [lang==="ko"?"접근":(lang==="ja"?"アクセス":"Access"),(o.station&&o.station[lang])||""]
-      ];
-      rows.forEach(function(row){
-        s+='<div class="info-table-row"><div class="info-table-label">'+esc(row[0])+'</div><div class="info-table-value">'+esc(row[1])+'</div></div>';
-      });
-      s+='</div></div>';
-      return s;
-    });
-
-    // Features
-    h+=safe(function(){
-      const features=o.features||[];
-      if(!features.length)return "";
-      const fmap={rotenburo:"♨️",sauna:"🧖",family:"👨‍👩‍👧‍👦",yukata:"👘",night:"🌙",sento:"🏮",relaxation:"💆",quiet:"🤫",tattoo:"🎨",retro:"🏛️",local:"🏘️",cheap:"💰",nature:"🌿",daytrip:"🚗",valley:"🏞️",history:"📜",restaurant:"🍽️",ganbanyoku:"🪨",garden:"🌳",pool:"🏊",ocean:"🌊"};
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"特徴":(lang==="ja"?"特徴":"Features"))+'</h2><div class="feature-grid">';
-      features.forEach(function(f){
-        s+='<div class="feature-item"><div class="fi-icon">'+(fmap[f]||"✓")+'</div><div class="fi-text">'+esc((FEATURES[lang]&&FEATURES[lang][f])||f)+'</div></div>';
-      });
-      s+='</div></div>';
-      return s;
-    });
-
-    // Tips - use data-driven tips if available
+    // Tips
     h+=safe(function(){
       let tips=[];
-      // Use generated tips first
       if(o.tips&&o.tips[lang]&&o.tips[lang].length){
         o.tips[lang].forEach(function(t,i){
-          const icons=["💡","✨","🎯","⭐","🔔","📌","💎"];
+          const icons=["💡","✨","🎯","⭐","🔔"];
           tips.push({icon:icons[i%icons.length],text:t});
         });
-      }
-      // Fallback to type-based tips
-      if(!tips.length){
-        const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-        const features=o.features||[];
-        if(typeKo==="천연 온천"){
-          if(lang==="ko") tips=[{icon:"🌿",text:"천연 온천수를 즐기기 위해 입욕 전 충분한 샤워를 권장합니다."},{icon:"⏱️",text:"15~20분 정도의 입욕이 적당합니다."}];
-          else if(lang==="ja") tips=[{icon:"🌿",text:"天然温泉を楽しむために、入浴前に十分にシャワーを浴びることをおすすめします。"},{icon:"⏱️",text:"15～20分程度の入浴が適切です。"}];
-          else tips=[{icon:"🌿",text:"Shower thoroughly before entering."},{icon:"⏱️",text:"Soak for 15-20 minutes."}];
-        }
-        else if(typeKo==="도심형 스파"){
-          if(lang==="ko") tips=[{icon:"🏙️",text:"예약제인 경우가 많으므로 사전 확인이 필요합니다."},{icon:"🧴",text:"개인 세멘도구를 챙기시는 것을 권장합니다."}];
-          else if(lang==="ja") tips=[{icon:"🏙️",text:"予約制の場合が多いため、事前に確認が必要です。"},{icon:"🧴",text:"個人用の洗面用具を持参することをおすすめします。"}];
-          else tips=[{icon:"🏙️",text:"Reservations are often required."},{icon:"🧴",text:"Bring personal toiletries."}];
-        }
-        else if(typeKo==="슈퍼 센토"){
-          if(lang==="ko") tips=[{icon:"🏛️",text:"식사, 휴식, 엔터테인먼트를 함께 즐길 수 있습니다."},{icon:"💴",text:"수건 대여료가 별도로 발생할 수 있습니다."}];
-          else if(lang==="ja") tips=[{icon:"🏛️",text:"食事、休憩、エンターテイメントを一度に楽しめます。"},{icon:"💴",text:"タオルのレンタル料が別途発生する場合があります。"}];
-          else tips=[{icon:"🏛️",text:"Enjoy dining and entertainment."},{icon:"💴",text:"Towel rental fees may apply."}];
-        }
-        else if(typeKo==="전통 센토"){
-          if(lang==="ko") tips=[{icon:"🏮",text:"세멘도구와 수건을 별도로 준비하셔야 합니다."},{icon:"🪙",text:"대부분 현금만 받습니다."}];
-          else if(lang==="ja") tips=[{icon:"🏮",text:"洗面用具とタオルは別途ご持参ください。"},{icon:"🪙",text:"ほとんど現金のみの支払いとなります。"}];
-          else tips=[{icon:"🏮",text:"Bring your own toiletries and towel."},{icon:"🪙",text:"Most accept cash only."}];
-        }
-        else if(typeKo==="온천 여관"){
-          if(lang==="ko") tips=[{icon:"🏯",text:"숙박과 식사를 함께 제공하며, 일일 입욕도 가능한 곳이 많습니다."}];
-          else if(lang==="ja") tips=[{icon:"🏯",text:"宿泊と食事をセットで提供しており、日帰り入浴もできる施設が多いです。"}];
-          else tips=[{icon:"🏯",text:"Lodging and meals provided; day-use bathing often available."}];
-        }
-        else if(typeKo==="온천 테마파크"){
-          if(lang==="ko") tips=[{icon:"🎭",text:"가족 단위 방문객에게 인기가 많습니다."}];
-          else if(lang==="ja") tips=[{icon:"🎭",text:"家族連れの客に人気があります。"}];
-          else tips=[{icon:"🎭",text:"Popular with families."}];
-        }
-        else {
-          if(lang==="ko") tips=[{icon:"♨️",text:"입욕 전 가벼운 스트레칭과 수분 섭취를 권장합니다."}];
-          else if(lang==="ja") tips=[{icon:"♨️",text:"入浴前に軽いストレッチと水分補給をおすすめします。"}];
-          else tips=[{icon:"♨️",text:"Stretch and hydrate before bathing."}];
-        }
-        if(features.indexOf("sauna")>=0){
-          if(lang==="ko") tips.push({icon:"🧖",text:"사우나 이용 후 충분한 휴식과 수분 보충이 필요합니다."});
-          else if(lang==="ja") tips.push({icon:"🧖",text:"サウナ利用後は十分な休息と水分補給が必要です。"});
-          else tips.push({icon:"🧖",text:"Rest and hydrate after sauna."});
-        }
-        if(features.indexOf("rotenburo")>=0){
-          if(lang==="ko") tips.push({icon:"🌙",text:"노천탕은 계절에 따라 다른 매력을 느낄 수 있습니다."});
-          else if(lang==="ja") tips.push({icon:"🌙",text:"露天風呂は季節によって異なる魅力を感じられます。"});
-          else tips.push({icon:"🌙",text:"Open-air baths offer seasonal charms."});
-        }
-        if(features.indexOf("ganbanyoku")>=0){
-          if(lang==="ko") tips.push({icon:"🪨",text:"암반욕 후에는 땀을 충분히 식히고 샤워한 후 휴식을 취하세요."});
-          else if(lang==="ja") tips.push({icon:"🪨",text:"岩盤浴後は汗を十分に冷まし、シャワーを浴びてから休息を取ってください。"});
-          else tips.push({icon:"🪨",text:"Cool down and shower after bedrock bathing."});
-        }
       }
       if(!tips.length)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"이용 팁":(lang==="ja"?"利用のヒント":"Tips"))+'</h2><div class="tip-list">';
@@ -1943,19 +1618,43 @@ const S = {
       return s;
     });
 
-    // Nearby - use nearbySpots text if available
+    h+='</div>';
+
+    // Side column
+    h+='<div class="detail-side">';
+
+    // Map
     h+=safe(function(){
-      // Show nearbySpots text first
-      let nearbyText="";
-      if(o.nearbySpots&&o.nearbySpots[lang]){
-        nearbyText='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 정보":(lang==="ja"?"周辺情報":"Nearby Info"))+'</h2><div class="detail-text"><p>'+esc(o.nearbySpots[lang])+'</p></div></div>';
-      }
-      // Also show nearby facilities
+      const addr=(o.address&&o.address.ko)||(o.address&&o.address.en)||"";
+      if(!addr)return "";
+      const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
+      let s='<div class="detail-section" style="padding:0;overflow:hidden;border:none;">';
+      s+='<iframe width="100%" height="240" style="border:0;border-radius:14px;display:block;" src="'+mapUrl+'" allowfullscreen="" loading="lazy"></iframe>';
+      s+='</div>';
+      return s;
+    });
+
+    // Access info
+    h+=safe(function(){
+      if(!o.access||!o.access[lang])return "";
+      const ac=o.access[lang];
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"접근·주차":(lang==="ja"?"アクセス":"Access"))+'</h2>';
+      s+='<div class="access-list">';
+      s+='<div class="access-item"><span class="access-icon">🚉</span><span class="access-text">'+esc(ac.station)+'</span></div>';
+      if(ac.parking)s+='<div class="access-item"><span class="access-icon">🅿️</span><span class="access-text">'+esc(ac.parking)+'</span></div>';
+      if(ac.shuttle)s+='<div class="access-item"><span class="access-icon">🚌</span><span class="access-text">'+esc(ac.shuttle)+'</span></div>';
+      if(ac.highway)s+='<div class="access-item"><span class="access-icon">🚗</span><span class="access-text">'+esc(ac.highway)+'</span></div>';
+      s+='</div></div>';
+      return s;
+    });
+
+    // Nearby in side (compact)
+    h+=safe(function(){
       const ag=(o.areaGroup||o.area);
       const myArea=(ag&&ag.ko)||"";
       const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
-      if(!nearby.length)return nearbyText;
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid">';
+      if(!nearby.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid" style="grid-template-columns:1fr;">';
       nearby.forEach(function(n){
         s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
         s+='<div class="nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
@@ -1963,62 +1662,19 @@ const S = {
         s+='</div>';
       });
       s+='</div></div>';
-      return nearbyText+s;
-    });
-
-    // Seasonal charm
-    h+=safe(function(){
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"계절별 매력":(lang==="ja"?"季節の魅力":"Seasonal Charm"))+'</h2><div class="season-grid">';
-      if(lang==="ko"){
-        s+='<div class="season-card"><span class="s-icon">🌸</span><div class="s-title">봄</div><div class="s-text">벚꽃이 흩날리는 노천탕에서 봄의 정취를 만끽할 수 있습니다.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🌿</span><div class="s-title">여름</div><div class="s-text">울창한 녹음 아래 시원한 바람을 느끼며 더위를 식힙니다.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🍁</span><div class="s-title">가을</div><div class="s-text">단풍으로 물든 정원을 바라볼 수 있는 계절입니다.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">❄️</span><div class="s-title">겨울</div><div class="s-text">눈 내리는 노천탕에서 따뜻한 온천수와 대비되는 겨울 정취를 즐깁니다.</div></div>';
-      }else if(lang==="ja"){
-        s+='<div class="season-card"><span class="s-icon">🌸</span><div class="s-title">春</div><div class="s-text">桜が舞う露天風呂で春の情緒を満喫できます。</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🌿</span><div class="s-title">夏</div><div class="s-text">茂みの緑の下で涼しい風を感じながら暑さをしのぎます。</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🍁</span><div class="s-title">秋</div><div class="s-text">紅葉に染まった庭園を眺められる季節です。</div></div>';
-        s+='<div class="season-card"><span class="s-icon">❄️</span><div class="s-title">冬</div><div class="s-text">雪が降る露天風呂で、暖かい温泉水との対比を楽しむ冬の趣があります。</div></div>';
-      }else{
-        s+='<div class="season-card"><span class="s-icon">🌸</span><div class="s-title">Spring</div><div class="s-text">Enjoy open-air baths with falling cherry blossoms.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🌿</span><div class="s-title">Summer</div><div class="s-text">Cool off under lush greenery with refreshing breezes.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">🍁</span><div class="s-title">Autumn</div><div class="s-text">Admire autumn foliage while soaking in warm waters.</div></div>';
-        s+='<div class="season-card"><span class="s-icon">❄️</span><div class="s-title">Winter</div><div class="s-text">Experience the contrast of hot springs and falling snow.</div></div>';
-      }
-      s+='</div></div>';
       return s;
     });
 
-    // Recommended hours
-    h+=safe(function(){
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"이용 시간대 추천":(lang==="ja"?"おすすめ時間帯":"Recommended Hours"))+'</h2><div class="time-rec">';
-      if(lang==="ko"){
-        s+='<div class="time-item"><span class="tm-icon">🌅</span><div class="tm-body"><div class="tm-title">오전 (개장 직후)</div><div class="tm-desc">한산하고 조용한 분위기에서 여유로운 입욕을 즐길 수 있습니다。</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌞</span><div class="tm-body"><div class="tm-title">오후 ~ 저녁</div><div class="tm-desc">가장 활기찬 시간대로, 다양한 부대 시설을 함께 이용하기 좋습니다。</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌙</span><div class="tm-body"><div class="tm-title">심야</div><div class="tm-desc">조용한 밤분위기와 별빛 아래 노천탕을 즐길 수 있는 로맨틱한 시간대입니다。</div></div></div>';
-      }else if(lang==="ja"){
-        s+='<div class="time-item"><span class="tm-icon">🌅</span><div class="tm-body"><div class="tm-title">午前（開館直後）</div><div class="tm-desc">落ち着いた静かな雰囲気の中で、ゆったりと入浴を楽しめます。</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌞</span><div class="tm-body"><div class="tm-title">午後～夕方</div><div class="tm-desc">最も活気のある時間帯で、様々な付帯施設を一緒に利用するのに最適です。</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌙</span><div class="tm-body"><div class="tm-title">深夜</div><div class="tm-desc">静かな夜の雰囲気と星空の下で露天風呂を楽しめるロマンチックな時間帯です。</div></div></div>';
-      }else{
-        s+='<div class="time-item"><span class="tm-icon">🌅</span><div class="tm-body"><div class="tm-title">Morning (Opening)</div><div class="tm-desc">Enjoy a quiet and relaxed soak in a less crowded atmosphere.</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌞</span><div class="tm-body"><div class="tm-title">Afternoon ~ Evening</div><div class="tm-desc">The most vibrant time; great for using various facilities together.</div></div></div>';
-        s+='<div class="time-item"><span class="tm-icon">🌙</span><div class="tm-body"><div class="tm-title">Late Night</div><div class="tm-desc">A romantic time to enjoy open-air baths under the stars.</div></div></div>';
-      }
-      s+='</div></div>';
-      return s;
-    });
+    // Ad
+    h+='<div class="ad-slot ad-detail-top" style="margin-bottom:0;min-height:200px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세사이드"</div></div>';
 
-    // Ad bottom
-    h+=safe(function(){
-      return '<div class="ad-slot ad-detail-bottom"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
-    });
+    h+='</div>';
+    h+='</div>';
 
     h+='</div>';
 
     wrap.innerHTML=h;
 
-    // Attach events after innerHTML
     const backBtn=wrap.querySelector("#detail-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
     wrap.querySelectorAll(".nearby-item").forEach(function(el){
@@ -2027,7 +1683,6 @@ const S = {
         if(nid) go("detail",{id:nid});
       });
     });
-    /* Gallery: single image, no thumbnail handlers needed */
     }catch(e){
       console.error("drawDetail error:",e);
       var wrap=document.getElementById("detail-container");
@@ -2102,5 +1757,6 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1dae79339bf7378',t:'MTc4NDQ3NjQ2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
