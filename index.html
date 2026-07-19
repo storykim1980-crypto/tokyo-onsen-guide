@@ -99,8 +99,8 @@ body::before {
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
 .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
 .logo-mark { font-size: 28px; line-height: 1; color: var(--burgundy); filter: drop-shadow(0 2px 4px rgba(139,26,43,0.2)); }
-.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); line-height: 1; }
-.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); line-height: 1.2; }
+.logo-sub { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); line-height: 1; }
+.logo-main { display: block; font-size: 15px; font-weight: 800; color: var(--text); line-height: 1.2; }
 .desktop-nav { display: none; gap: 4px; }
 .desktop-nav a { padding: 8px 14px; font-size: 14px; font-weight: 700; color: var(--text-light); text-decoration: none; border-radius: 8px; transition: all 150ms; }
 .desktop-nav a:hover, .desktop-nav a.active { color: var(--burgundy); background: rgba(139,26,43,0.06); }
@@ -520,13 +520,6 @@ body::before {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .qinfo-item { padding: 10px; }
   .qinfo-value { font-size: 13px; }
-  .hero-media { aspect-ratio: 16 / 9; min-height: 200px; }
-  .hero-content { padding: 16px; gap: 10px; }
-  .hero-content .editorial-icon { width: 48px; height: 48px; font-size: 26px; }
-  .editorial-title { font-size: 18px; }
-  .editorial-sub { font-size: 12px; }
-  .editorial-count { font-size: 11px; }
-  .hero-search-overlay { display: none; }
   .category-nav a { padding: 10px 12px; font-size: 12px; }
   .report-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .wish-item { padding: 12px; gap: 12px; }
@@ -603,8 +596,6 @@ body::before {
 .gallery-main { position: relative; width: 100%; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #e8e0d4 0%, #d4c9b8 100%); overflow: hidden; }
 .gallery-main::before { content: "♨"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; color: rgba(201,169,110,0.25); z-index: 0; pointer-events: none; }
 .gallery-main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 400ms ease; opacity: 0; z-index: 1; }
-.gallery-main img.active { opacity: 1; }
-.gallery-main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 400ms ease; opacity: 0; }
 .gallery-main img.active { opacity: 1; }
 .gallery-thumbs { display: flex; gap: 8px; padding: 12px; overflow-x: auto; scrollbar-width: none; }
 .gallery-thumbs::-webkit-scrollbar { display: none; }
@@ -947,14 +938,56 @@ body::before {
 }
 
 @media (max-width: 767px) {
-  .detail-section { padding: 18px; margin-bottom: 18px; }
-  .detail-title { font-size: 24px; }
-  .detail-hero { padding: 36px 16px 28px; }
-  .season-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .time-rec { gap: 10px; }
-  .nearby-grid { grid-template-columns: 1fr; }
-  .feature-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .quick-info-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  #sidebar-toggle { display: block !important; }
+  .list-sidebar { display: none; }
+  .list-layout { grid-template-columns: 1fr; }
+  .blog-list { grid-template-columns: 1fr; gap: 12px; }
+  .card-visual { aspect-ratio: 16 / 9; }
+  .blog-body { padding: 10px; gap: 4px; }
+  .blog-title { font-size: 15px; }
+  .info-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
+  .info-row { padding: 4px 6px; }
+  .info-label { font-size: 9px; }
+  .info-value { font-size: 11px; }
+  .feature-tag { font-size: 10px; padding: 3px 6px; }
+  .blog-btn { padding: 6px 10px; font-size: 11px; }
+  .sidebar-block { padding: 10px; }
+  .sidebar-title { font-size: 10px; margin-bottom: 6px; }
+  .sidebar-list li a { font-size: 11px; }
+  .sidebar-pill { padding: 3px 8px; font-size: 10px; }
+  .sub-hero h1 { font-size: 20px; }
+  .sub-hero p { font-size: 12px; }
+  .detail-title { font-size: 22px; }
+  .detail-hero { padding: 32px 12px 24px; }
+  .detail-content { padding: 20px 12px 32px; }
+  .detail-section { padding: 16px; margin-bottom: 16px; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .qinfo-item { padding: 10px; }
+  .qinfo-value { font-size: 13px; }
+  .hero-media { aspect-ratio: 16 / 9; min-height: 200px; }
+  .hero-content { padding: 16px; gap: 10px; }
+  .hero-content .editorial-icon { width: 48px; height: 48px; font-size: 26px; }
+  .editorial-title { font-size: 18px; }
+  .editorial-sub { font-size: 12px; }
+  .editorial-count { font-size: 11px; }
+  .hero-search-overlay { display: none; }
+  .category-nav a { padding: 10px 12px; font-size: 12px; }
+  .report-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .wish-item { padding: 12px; gap: 12px; }
+  .wish-thumb { width: 56px; height: 56px; font-size: 24px; }
+  .plan-item { padding: 10px; gap: 10px; }
+  .plan-thumb { width: 44px; height: 44px; font-size: 20px; }
+  .bottom-nav a { font-size: 9px; }
+  .bottom-nav a span { font-size: 20px; }
+  .container { padding: 0 12px; }
+  #page-home > .container,
+  #page-list > .container,
+  #page-plan > .container,
+  #page-settings > .container { padding: 4px 12px 20px; }
+  .home-layout { gap: 12px; margin: 0 0 20px; }
+  .map-frame { height: 220px; min-height: 180px; }
+  .content-section { margin-bottom: 22px; }
+  .section-title-bar { padding: 12px 0 8px; margin-bottom: 12px; }
 }
 
 </style>
@@ -967,8 +1000,8 @@ body::before {
     <a href="#" class="site-logo" data-nav="home" aria-label="홈으로 이동">
       <span class="logo-mark">♨</span>
       <div class="logo-text">
-        <span class="logo-en">TOKYO ONSEN</span>
-        <span class="logo-ko">도쿄 온천 가이드</span>
+        <span class="logo-sub" data-i18n="logoSub">TOKYO ONSEN</span>
+        <span class="logo-main" data-i18n="siteTitle">도쿄 온천 가이드</span>
       </div>
     </a>
     <nav class="desktop-nav" aria-label="메인 메뉴">
@@ -1023,7 +1056,7 @@ body::before {
         <div class="hero-content">
           <div class="editorial-icon">♨</div>
           <div>
-            <div class="editorial-title">도쿄 온천 가이드 <span class="editorial-year" data-i18n="yearBadge">(2026년 최신)</span></div>
+            <div class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span> <span class="editorial-year" data-i18n="yearBadge">(2026년 최신)</span></div>
             <div class="editorial-sub" data-i18n="siteSub">도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보</div>
             <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>154</strong>곳</div>
           </div>
@@ -1042,9 +1075,9 @@ body::before {
       <div class="category-nav-inner">
         <a href="#" data-nav="home" class="active" data-i18n="catHome">🏠 홈</a>
         <a href="#" data-nav="list" data-i18n="catOnsen">♨️ 온천 탐색</a>
-        <a href="#" onclick="event.preventDefault();S.fFeat='rotenburo';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catRotenburo">🌿 노천탕</a>
-        <a href="#" onclick="event.preventDefault();S.fFeat='sauna';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catSauna">🧖 사우나</a>
-        <a href="#" onclick="event.preventDefault();S.fFeat='family';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
+        <a href="#" data-feat="rotenburo" data-i18n="catRotenburo">🌿 노천탕</a>
+        <a href="#" data-feat="sauna" data-i18n="catSauna">🧖 사우나</a>
+        <a href="#" data-feat="family" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
         <a href="pages/about.html" data-i18n="catAbout">📖 소개</a>
       </div>
     </nav>
@@ -1886,11 +1919,18 @@ const S = {
     }
   }
 
+  window.S = S;
+
   function init(){
     try{
     load();applyTheme();
     document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-lang")===S.lang));
     document.querySelectorAll("[data-nav]").forEach(n=>n.addEventListener("click",e=>{e.preventDefault();go(n.getAttribute("data-nav"));}));
+    document.querySelectorAll(".category-nav a[data-feat]").forEach(n=>n.addEventListener("click",e=>{
+      e.preventDefault();
+      S.fFeat=n.getAttribute("data-feat");S.fArea="all";S.fType="all";S.q="";
+      go("list");
+    }));
     const mm=$("mobile-menu");const mb=$("btn-menu-toggle");const mc=$("btn-menu-close");
     if(mb&&mm)mb.addEventListener("click",()=>mm.classList.add("open"));
     if(mc&&mm)mc.addEventListener("click",()=>mm.classList.remove("open"));
@@ -1921,6 +1961,6 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d891485818d760',t:'MTc4NDQ1MTk1OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
