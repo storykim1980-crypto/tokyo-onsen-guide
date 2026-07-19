@@ -129,26 +129,47 @@ body::before {
 [data-theme="dark"] #page-detail { background: var(--wood-dark); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-.hero-wrap { margin: 0 -16px 16px; border-radius: 0 0 var(--radius-lg) var(--radius-lg); overflow: hidden; }
-.hero-media { position: relative; width: 100%; aspect-ratio: 2 / 1; min-height: 150px; max-height: 260px; background: linear-gradient(135deg, var(--wood-mid) 0%, var(--wood-dark) 100%); }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,20,16,0.7) 0%, rgba(26,20,16,0.3) 50%, rgba(26,20,16,0.6) 100%); }
-.hero-content { position: absolute; inset: 0; display: flex; align-items: center; gap: 12px; padding: 16px; color: #fff; }
+.hero-wrap { margin: 0 -16px 0; overflow: hidden; position: relative; }
+.hero-media { position: relative; width: 100%; aspect-ratio: 21 / 9; min-height: 280px; max-height: 480px; background: url('images/hero-onsen.jpg') center center / cover no-repeat; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,20,16,0.55) 0%, rgba(26,20,16,0.25) 40%, rgba(26,20,16,0.45) 100%); }
+.hero-content { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px; color: #fff; }
 .hero-content .editorial-icon {
-  width: 52px; height: 52px;
+  width: 64px; height: 64px;
   background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
   color: #fff;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 28px;
+  font-size: 36px;
   flex-shrink: 0;
-  box-shadow: 0 6px 18px rgba(139,26,43,0.35);
-  border: 2px solid var(--gold);
+  box-shadow: 0 6px 24px rgba(139,26,43,0.4);
+  border: 3px solid var(--gold);
 }
-.editorial-title { font-size: 20px; font-weight: 800; color: #fff; line-height: 1.2; letter-spacing: -0.02em; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-.editorial-sub { font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 4px; text-shadow: 0 1px 4px rgba(0,0,0,0.35); }
+.editorial-title { font-size: 26px; font-weight: 800; color: #fff; line-height: 1.2; letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+.editorial-sub { font-size: 14px; color: rgba(255,255,255,0.9); margin-top: 6px; text-shadow: 0 1px 6px rgba(0,0,0,0.4); }
 .editorial-year { color: var(--gold-light); font-weight: 700; }
-.editorial-count { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 6px; font-weight: 600; }
-.editorial-count strong { color: var(--gold-light); font-size: 15px; }
+.editorial-count { font-size: 13px; color: rgba(255,255,255,0.8); margin-top: 8px; font-weight: 600; }
+.editorial-count strong { color: var(--gold-light); font-size: 16px; }
+.hero-search-overlay { position: absolute; top: 16px; right: 16px; z-index: 5; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-radius: var(--radius); padding: 14px; width: 260px; box-shadow: var(--shadow-lg); border: 1.5px solid var(--gold); }
+.hero-search-overlay .hs-title { font-size: 12px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+.hero-search-overlay input { width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; background: #fff; color: var(--text); margin-bottom: 8px; }
+.hero-search-overlay input:focus { outline: none; border-color: var(--gold); }
+.hero-search-overlay button { width: 100%; padding: 10px; background: var(--wood-dark); color: var(--gold); border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 800; cursor: pointer; transition: all 150ms; }
+.hero-search-overlay button:hover { background: var(--burgundy); color: #fff; }
+.hero-search-overlay .hs-locate { display: flex; align-items: center; gap: 6px; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-light); font-size: 12px; font-weight: 700; color: var(--text-light); cursor: pointer; }
+.hero-search-overlay .hs-locate:hover { color: var(--burgundy); }
+
+.category-nav { background: linear-gradient(90deg, var(--wood-dark) 0%, var(--wood-mid) 50%, var(--wood-dark) 100%); border-bottom: 2px solid var(--gold); position: relative; z-index: 2; }
+.category-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; gap: 0; max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.category-nav-inner::-webkit-scrollbar { display: none; }
+.category-nav a { flex-shrink: 0; padding: 14px 18px; font-size: 14px; font-weight: 700; color: rgba(245,240,232,0.7); text-decoration: none; transition: all 150ms; position: relative; white-space: nowrap; }
+.category-nav a:hover { color: var(--gold-light); background: rgba(201,169,110,0.08); }
+.category-nav a.active { color: var(--gold-light); }
+.category-nav a.active::after { content: ""; position: absolute; bottom: 0; left: 12px; right: 12px; height: 3px; background: var(--gold); border-radius: 2px 2px 0 0; }
+
+.breadcrumb { padding: 10px 0; font-size: 12px; color: var(--text-muted); font-weight: 600; border-bottom: 1px solid var(--border-light); margin-bottom: 12px; }
+.breadcrumb .current { color: var(--text-light); font-weight: 700; }
+.breadcrumb a { color: var(--link); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
 
 .home-layout { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 0 0 24px; }
 .map-zone { background: var(--cream-panel); border-radius: var(--radius-lg); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
@@ -499,11 +520,14 @@ body::before {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .qinfo-item { padding: 10px; }
   .qinfo-value { font-size: 13px; }
+  .hero-media { aspect-ratio: 16 / 9; min-height: 200px; }
   .hero-content { padding: 16px; gap: 10px; }
-  .hero-content .editorial-icon { width: 44px; height: 44px; font-size: 24px; }
+  .hero-content .editorial-icon { width: 48px; height: 48px; font-size: 26px; }
   .editorial-title { font-size: 18px; }
   .editorial-sub { font-size: 12px; }
   .editorial-count { font-size: 11px; }
+  .hero-search-overlay { display: none; }
+  .category-nav a { padding: 10px 12px; font-size: 12px; }
   .report-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .wish-item { padding: 12px; gap: 12px; }
   .wish-thumb { width: 56px; height: 56px; font-size: 24px; }
@@ -536,11 +560,13 @@ body::before {
   #page-list > .container,
   #page-plan > .container,
   #page-settings > .container { padding: 4px 28px 28px; }
-  .hero-wrap { margin: 0 -28px 20px; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
-  .hero-media { aspect-ratio: 21 / 8; max-height: 300px; }
+  .hero-wrap { margin: 0 -28px 0; }
+  .hero-media { aspect-ratio: 21 / 8; max-height: 420px; }
   .hero-content { padding: 24px 28px; }
-  .editorial-title { font-size: 30px; }
-  .hero-content .editorial-icon { width: 64px; height: 64px; font-size: 36px; }
+  .editorial-title { font-size: 32px; }
+  .hero-content .editorial-icon { width: 72px; height: 72px; font-size: 40px; }
+  .hero-search-overlay { top: 24px; right: 28px; width: 300px; padding: 18px; }
+  .category-nav-inner { padding: 0 28px; }
   .home-layout { grid-template-columns: 1.2fr 1fr; gap: 16px; margin: 0 0 28px; }
   .map-frame { height: 360px; }
   .side-panel { padding: 20px; }
@@ -989,7 +1015,7 @@ body::before {
 <section id="page-home" class="page active" aria-label="홈">
   <div class="container">
     <div class="breadcrumb">
-      <span data-i18n="breadcrumbTop">온천 TOP</span> &gt; <span class="current" data-i18n="breadcrumbCurrent">도쿄의 온천, 일일 온천, 슈퍼 센토</span>
+      <a href="#" data-nav="home" data-i18n="breadcrumbTop">온천 TOP</a> &gt; <span class="current" data-i18n="breadcrumbCurrent">도쿄의 온천, 일일 온천, 슈퍼 센토</span>
     </div>
     <div class="hero-wrap">
       <div class="hero-media">
@@ -1002,8 +1028,26 @@ body::before {
             <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>154</strong>곳</div>
           </div>
         </div>
+        <div class="hero-search-overlay">
+          <div class="hs-title" data-i18n="sideSearchTitle">키워드 검색</div>
+          <input type="text" id="home-search-input" data-i18n-placeholder="searchPlaceholder" placeholder="온천 이름, 지역을 입력">
+          <button id="home-search-btn" data-i18n="btnSearch">검색</button>
+          <div class="hs-locate" onclick="window.open('https://www.google.com/maps/search/onsen+near+Tokyo','_blank','noopener,noreferrer')">
+            <span>📍</span> <span data-i18n="searchNearby">현재 위치에서 찾기</span>
+          </div>
+        </div>
       </div>
     </div>
+    <nav class="category-nav">
+      <div class="category-nav-inner">
+        <a href="#" data-nav="home" class="active" data-i18n="catHome">🏠 홈</a>
+        <a href="#" data-nav="list" data-i18n="catOnsen">♨️ 온천 탐색</a>
+        <a href="#" onclick="event.preventDefault();S.fFeat='rotenburo';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catRotenburo">🌿 노천탕</a>
+        <a href="#" onclick="event.preventDefault();S.fFeat='sauna';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catSauna">🧖 사우나</a>
+        <a href="#" onclick="event.preventDefault();S.fFeat='family';S.fArea='all';S.fType='all';S.q='';go('list');" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
+        <a href="pages/about.html" data-i18n="catAbout">📖 소개</a>
+      </div>
+    </nav>
     <div class="home-layout">
       <div class="map-zone">
         <div class="map-frame">
@@ -1027,10 +1071,10 @@ body::before {
       </div>
       <div class="side-panel">
         <div class="side-section">
-          <div class="side-title"><span class="side-bar"></span> <span data-i18n="sideSearchTitle">키워드 검색</span></div>
+          <div class="side-title"><span class="side-bar"></span> <span data-i18n="sideSearchTitle">빠른 검색</span></div>
           <div class="side-search">
-            <input type="text" id="home-search-input" data-i18n-placeholder="searchPlaceholder" placeholder="온천 이름, 지역을 입력">
-            <button id="home-search-btn" data-i18n="btnSearch">검색</button>
+            <input type="text" id="home-search-input2" data-i18n-placeholder="searchPlaceholder" placeholder="온천 이름, 지역을 입력">
+            <button id="home-search-btn2" data-i18n="btnSearch">검색</button>
           </div>
         </div>
         <div class="side-section">
@@ -1855,6 +1899,8 @@ const S = {
     const bt=$("btn-theme");if(bt)bt.addEventListener("click",()=>{const c={light:"dark",dark:"system",system:"light"};S.theme=c[S.theme]||"light";applyTheme();save();});
     const hs=$("home-search-input");const hb=$("home-search-btn");
     if(hs&&hb){const doSearch=()=>{S.q=hs.value;go("list");};hb.addEventListener("click",doSearch);hs.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});}
+    const hs2=$("home-search-input2");const hb2=$("home-search-btn2");
+    if(hs2&&hb2){const doSearch2=()=>{S.q=hs2.value;go("list");};hb2.addEventListener("click",doSearch2);hs2.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch2();});}
     const ls=$("list-search-input");const lb=$("list-search-btn");
     if(ls)ls.addEventListener("input",e=>{S.q=e.target.value;drawList();});
     if(lb)lb.addEventListener("click",()=>{S.q=ls?ls.value:"";drawList();});
@@ -1875,6 +1921,6 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d83f5db8b3e361',t:'MTc4NDQ0ODYwMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
