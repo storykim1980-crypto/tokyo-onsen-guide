@@ -335,7 +335,7 @@ body::before {
 .empty-icon { font-size: 44px; margin-bottom: 12px; opacity: 0.5; }
 .empty-state p { font-size: 15px; font-weight: 700; color: var(--text-light); margin-bottom: 16px; }
 
-/* ===== Detail Page: Luxury Resort Style ===== */
+/* ===== Detail Page: Single Column Luxury Style ===== */
 .detail-hero { position: relative; min-height: 340px; background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 72px 16px 32px; overflow: hidden; border-bottom: 2px solid var(--gold); display: flex; align-items: flex-end; }
 .detail-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 1; }
 .detail-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,0.35) 0%, rgba(26,20,16,0.60) 40%, rgba(26,20,16,0.90) 100%); }
@@ -346,7 +346,7 @@ body::before {
 .detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; position: relative; }
 .detail-tag { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 24px; background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.35); color: var(--gold-light); backdrop-filter: blur(6px); transition: all 150ms; }
 .detail-tag:hover { background: rgba(201,169,110,0.28); border-color: var(--gold); color: var(--cream); }
-.detail-hero-actions { margin-top: 18px; }
+.detail-hero-actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
 .detail-hero-actions .detail-back { margin-bottom: 0; background: rgba(201,169,110,0.22); border-color: rgba(201,169,110,0.50); }
 .detail-hero-actions .detail-back:hover { background: rgba(201,169,110,0.35); }
 
@@ -361,20 +361,7 @@ body::before {
 .detail-text { font-size: 15.5px; color: var(--text-light); line-height: 1.95; }
 .detail-text p { margin-bottom: 14px; }
 
-/* Two-column layout */
-.detail-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
-.detail-main { min-width: 0; }
-.detail-side { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
-
-@media (min-width: 768px) {
-  .detail-grid { grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
-  .detail-side { margin-top: 0; position: sticky; top: 90px; }
-  .detail-content { padding: 32px 24px 40px; }
-  .detail-hero { min-height: 380px; padding: 80px 24px 36px; }
-  .detail-title { font-size: 38px; }
-}
-
-/* Data tables (Basic info + Spring data) */
+/* Data tables */
 .data-table { display: flex; flex-direction: column; border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; background: #fff; }
 [data-theme="dark"] .data-table { background: rgba(40,34,28,0.9); }
 .data-table-row { display: flex; border-bottom: 1px solid var(--border); transition: background 150ms; }
@@ -445,10 +432,25 @@ body::before {
 .gallery-disclaimer .gd-text { flex: 1; }
 [data-theme="dark"] .gallery-disclaimer { background: linear-gradient(90deg, rgba(201,169,110,0.06) 0%, rgba(30,26,20,0.5) 100%); border-top-color: var(--gold-dark); }
 
+/* Rating bar */
+.rating-bar { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(201,169,110,0.10) 0%, rgba(139,26,43,0.06) 100%); border: 1.5px solid var(--gold); border-radius: 12px; padding: 10px 16px; margin-bottom: 16px; }
+.rating-bar .stars { font-size: 18px; letter-spacing: 2px; }
+.rating-bar .score { font-size: 18px; font-weight: 800; color: var(--burgundy); }
+.rating-bar .count { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+
+/* Map section */
+.map-embed-wrap { width: 100%; border-radius: 14px; overflow: hidden; border: 1.5px solid var(--border); box-shadow: var(--shadow-sm); }
+.map-embed-wrap iframe { width: 100%; height: 280px; border: 0; display: block; }
+
 @media (min-width: 768px) {
+  .detail-hero { min-height: 380px; padding: 80px 24px 36px; }
+  .detail-title { font-size: 38px; }
+  .detail-content { padding: 32px 24px 40px; }
   .quick-info-bar { grid-template-columns: repeat(4, 1fr); }
   .highlight-grid { grid-template-columns: repeat(3, 1fr); }
   .nearby-grid { grid-template-columns: repeat(3, 1fr); }
+  .amenity-grid { grid-template-columns: repeat(6, 1fr); }
+  .map-embed-wrap iframe { height: 360px; }
 }
 @media (max-width: 767px) {
   .detail-title { font-size: 26px; }
@@ -468,6 +470,10 @@ body::before {
   .access-text { font-size: 12.5px; }
   .qinfo-item { padding: 12px 8px; }
   .qinfo-value { font-size: 13px; }
+  .rating-bar { padding: 8px 12px; }
+  .rating-bar .stars { font-size: 16px; }
+  .rating-bar .score { font-size: 16px; }
+  .map-embed-wrap iframe { height: 220px; }
 }
 .memo-actions { display: flex; gap: 8px; }
 
@@ -1467,19 +1473,37 @@ const S = {
       s+='<span class="detail-tag">'+esc((o.type&&o.type[lang])||"")+'</span>';
       s+='<span class="detail-tag">'+esc((o.price&&o.price[lang])||"")+'</span>';
       s+='</div>';
+      s+='<div class="detail-hero-actions">';
       if(o.website){
-        s+='<div class="detail-hero-actions">';
         s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="detail-back" style="text-decoration:none;">';
         s+=esc(lang==="ko"?"공식 사이트 →":(lang==="ja"?"公式サイト →":"Official Site →"))+'</a>';
-        s+='</div>';
       }
+      if(o.googleMapsUrl){
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="detail-back" style="text-decoration:none;">📍 Google Maps</a>';
+      }
+      s+='</div>';
       s+='</div></div>';
       return s;
     });
 
     h+='<div class="detail-content">';
-    h+='<div class="detail-grid">';
-    h+='<div class="detail-main">';
+
+    // Rating bar
+    h+=safe(function(){
+      if(!o.rating)return "";
+      const stars='★'.repeat(Math.floor(o.rating))+'☆'.repeat(5-Math.floor(o.rating));
+      const countLabel=lang==="ko"?"리뷰":(lang==="ja"?"レビュー":"reviews");
+      const discLabel=lang==="ko"?"※ 평점 및 리뷰 수는 참고용이며 실시간 데이터와 상이할 수 있습니다."
+        :(lang==="ja"?"※ 評価とレビュー数は参考用で、リアルタイムデータと異なる場合があります。"
+        :"※ Ratings and review counts are for reference only and may differ from real-time data.");
+      let s='<div class="rating-bar">';
+      s+='<span class="stars">'+stars+'</span>';
+      s+='<span class="score">'+o.rating+'</span>';
+      s+='<span class="count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
+      s+='</div>';
+      s+='<p style="font-size:12px;color:var(--text-muted);margin-bottom:16px;font-weight:600;">'+esc(discLabel)+'</p>';
+      return s;
+    });
 
     // Gallery (single representative image)
     h+=safe(function(){
@@ -1501,13 +1525,15 @@ const S = {
 
     // Basic info table
     h+=safe(function(){
+      const hourLabel=lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours");
+      const hourVal=o.hours||"-";
+      const holidayVal=(o.holiday&&o.holiday[lang])||"-";
       const rows=[
         [lang==="ko"?"시설명":(lang==="ja"?"施設名":"Name"), (o.name&&o.name[lang])||""],
         [lang==="ko"?"유형":(lang==="ja"?"タイプ":"Type"), (o.type&&o.type[lang])||""],
         [lang==="ko"?"주소":(lang==="ja"?"住所":"Address"), (o.address&&o.address[lang])||""],
         ["TEL", o.tel||"-"],
-        [lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours"), (o.hoursDetail&&o.hoursDetail[lang])||o.hours||"-"],
-        [lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"), (o.holiday&&o.holiday[lang])||"-"],
+        [hourLabel, hourVal+(holidayVal!=="-"?" / "+esc(lang==="ko"?"휴일":(lang==="ja"?"定休日":"Closed"))+": "+holidayVal:"")],
         [lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"), (o.price&&o.price[lang])||"-"]
       ];
       if(o.website){
@@ -1618,29 +1644,24 @@ const S = {
       return s;
     });
 
-    h+='</div>';
-
-    // Side column
-    h+='<div class="detail-side">';
-
-    // Map
+    // Map (single column full width)
     h+=safe(function(){
-      const addr=(o.address&&o.address.ko)||(o.address&&o.address.en)||"";
+      const addr=(o.address&&o.address[lang])||(o.address&&o.address.ko)||"";
       if(!addr)return "";
       const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
-      let s='<div class="detail-section" style="padding:0;overflow:hidden;border:none;">';
-      s+='<iframe width="100%" height="240" style="border:0;border-radius:14px;display:block;" src="'+mapUrl+'" allowfullscreen="" loading="lazy"></iframe>';
-      s+='</div>';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"지도":(lang==="ja"?"地図":"Map"))+'</h2>';
+      s+='<div class="map-embed-wrap">';
+      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy"></iframe>';
+      s+='</div></div>';
       return s;
     });
 
     // Access info
     h+=safe(function(){
-      if(!o.access||!o.access[lang])return "";
-      const ac=o.access[lang];
+      const ac=(o.access&&o.access[lang])||{};
+      if(!ac.parking&&!ac.shuttle&&!ac.highway)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"접근·주차":(lang==="ja"?"アクセス":"Access"))+'</h2>';
       s+='<div class="access-list">';
-      s+='<div class="access-item"><span class="access-icon">🚉</span><span class="access-text">'+esc(ac.station)+'</span></div>';
       if(ac.parking)s+='<div class="access-item"><span class="access-icon">🅿️</span><span class="access-text">'+esc(ac.parking)+'</span></div>';
       if(ac.shuttle)s+='<div class="access-item"><span class="access-icon">🚌</span><span class="access-text">'+esc(ac.shuttle)+'</span></div>';
       if(ac.highway)s+='<div class="access-item"><span class="access-icon">🚗</span><span class="access-text">'+esc(ac.highway)+'</span></div>';
@@ -1648,13 +1669,15 @@ const S = {
       return s;
     });
 
-    // Nearby in side (compact)
+    // Nearby (full width single column)
     h+=safe(function(){
       const ag=(o.areaGroup||o.area);
       const myArea=(ag&&ag.ko)||"";
       const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid" style="grid-template-columns:1fr;">';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2>';
+      s+='<p style="font-size:14px;color:var(--text-light);margin-bottom:14px;">'+esc(lang==="ko"?"같은 지역의 다른 온천 시설도 함께 둘러보세요.":(lang==="ja"?"同じ地域の他の温泉施設も合わせてご覧ください。":"Check out other hot spring facilities in the same area."))+'</p>';
+      s+='<div class="nearby-grid">';
       nearby.forEach(function(n){
         s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
         s+='<div class="nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
@@ -1666,10 +1689,7 @@ const S = {
     });
 
     // Ad
-    h+='<div class="ad-slot ad-detail-top" style="margin-bottom:0;min-height:200px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세사이드"</div></div>';
-
-    h+='</div>';
-    h+='</div>';
+    h+='<div class="ad-slot ad-detail-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
 
     h+='</div>';
 
@@ -1757,5 +1777,5 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1daffcc4cbd2da1',t:'MTc4NDQ3NzQ1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
