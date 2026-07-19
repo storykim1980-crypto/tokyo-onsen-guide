@@ -1690,10 +1690,12 @@ const S = {
       return s;
     });
 
-    // Quick info
+    // Quick info - use hoursDetail if available
     h+=safe(function(){
+      const hoursLabel=lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours");
+      const hoursValue=(o.hoursDetail&&o.hoursDetail[lang])||o.hours||"-";
       let s='<div class="quick-info-bar">';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours"))+'</span><span class="qinfo-value">'+esc(o.hours||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(hoursLabel)+'</span><span class="qinfo-value">'+esc(hoursValue)+'</span></div>';
       s+='<div class="qinfo-item"><span class="qinfo-icon">📅</span><span class="qinfo-label">'+esc(lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"))+'</span><span class="qinfo-value">'+esc((o.holiday&&o.holiday[lang])||"-")+'</span></div>';
       s+='<div class="qinfo-item"><span class="qinfo-icon">📞</span><span class="qinfo-label">'+esc(lang==="ko"?"전화":(lang==="ja"?"電話":"Tel"))+'</span><span class="qinfo-value">'+esc(o.tel||"-")+'</span></div>';
       s+='<div class="qinfo-item"><span class="qinfo-icon">💴</span><span class="qinfo-label">'+esc(lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"))+'</span><span class="qinfo-value">'+esc((o.price&&o.price[lang])||"-")+'</span></div>';
@@ -1767,48 +1769,53 @@ const S = {
       return '<div class="detail-section"><h2>'+esc(lang==="ko"?"온천수 특징":(lang==="ja"?"温泉水の特徴":"Spring Quality"))+'</h2><div class="detail-text"><p>'+esc(spring)+'</p></div></div>';
     });
 
-    // Recommendation points
+    // Recommendation points - use data-driven recommendPoints if available
     h+=safe(function(){
       const recs=[];
-      const features=o.features||[];
+      // Use generated recommendPoints first
+      if(o.recommendPoints&&o.recommendPoints[lang]){
+        o.recommendPoints[lang].forEach(function(pt){if(pt)recs.push(pt);});
+      }
+      // Fallback to highlights
       const hls=o.highlights||[];
-      hls.forEach(function(hl){if(hl&&hl[lang]) recs.push(hl[lang]);});
+      hls.forEach(function(hl){if(hl&&hl[lang]&&recs.indexOf(hl[lang])<0) recs.push(hl[lang]);});
+      const features=o.features||[];
       const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       if(typeKo==="천연 온천"){
-        if(lang==="ko"){recs.push("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.");recs.push("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.");}
-        else if(lang==="ja"){recs.push("地下から湧き出る天然温泉をそのまま楽しめます。");recs.push("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。");}
-        else{recs.push("Authentic natural spring water from deep underground.");recs.push("Easily accessible from central Tokyo, perfect for day trips.");}
+        if(lang==="ko"){if(recs.indexOf("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.")<0)recs.push("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.");if(recs.indexOf("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.")<0)recs.push("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.");}
+        else if(lang==="ja"){if(recs.indexOf("地下から湧き出る天然温泉をそのまま楽しめます。")<0)recs.push("地下から湧き出る天然温泉をそのまま楽しめます。");if(recs.indexOf("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。")<0)recs.push("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。");}
+        else{if(recs.indexOf("Authentic natural spring water from deep underground.")<0)recs.push("Authentic natural spring water from deep underground.");if(recs.indexOf("Easily accessible from central Tokyo, perfect for day trips.")<0)recs.push("Easily accessible from central Tokyo, perfect for day trips.");}
       }else if(typeKo==="도심형 스파"){
-        if(lang==="ko"){recs.push("도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.");recs.push("퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.");}
-        else if(lang==="ja"){recs.push("都心にありながら最新設備と清潔なインテリアを備えた現代型スパです。");recs.push("退勤後も利用できる深夜営業で、会社員に人気です。");}
-        else{recs.push("Modern spa with state-of-the-art facilities in the city center.");recs.push("Late-night hours popular with office workers after work.");}
+        if(lang==="ko"){if(recs.indexOf("도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.")<0)recs.push("도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.");if(recs.indexOf("퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.")<0)recs.push("퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.");}
+        else if(lang==="ja"){if(recs.indexOf("都心にありながら最新設備と清潔なインテリアを備えた現代型スパです。")<0)recs.push("都心にありながら最新設備と清潔なインテリアを備えた現代型スパです。");if(recs.indexOf("退勤後も利用できる深夜営業で、会社員に人気です。")<0)recs.push("退勤後も利用できる深夜営業で、会社員に人気です。");}
+        else{if(recs.indexOf("Modern spa with state-of-the-art facilities in the city center.")<0)recs.push("Modern spa with state-of-the-art facilities in the city center.");if(recs.indexOf("Late-night hours popular with office workers after work.")<0)recs.push("Late-night hours popular with office workers after work.");}
       }else if(typeKo==="슈퍼 센토"){
-        if(lang==="ko"){recs.push("온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.");recs.push("가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.");}
-        else if(lang==="ja"){recs.push("温泉、食事、休憩を一度に楽しめる大型複合施設です。");recs.push("家族連れのために様々な便利な設備が整っています。");}
-        else{recs.push("Large complex combining hot springs, dining, and relaxation.");recs.push("Family-friendly with various amenities for all ages.");}
+        if(lang==="ko"){if(recs.indexOf("온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.")<0)recs.push("온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.");if(recs.indexOf("가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.")<0)recs.push("가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.");}
+        else if(lang==="ja"){if(recs.indexOf("温泉、食事、休憩を一度に楽しめる大型複合施設です。")<0)recs.push("温泉、食事、休憩を一度に楽しめる大型複合施設です。");if(recs.indexOf("家族連れのために様々な便利な設備が整っています。")<0)recs.push("家族連れのために様々な便利な設備が整っています。");}
+        else{if(recs.indexOf("Large complex combining hot springs, dining, and relaxation.")<0)recs.push("Large complex combining hot springs, dining, and relaxation.");if(recs.indexOf("Family-friendly with various amenities for all ages.")<0)recs.push("Family-friendly with various amenities for all ages.");}
       }else if(typeKo==="전통 센토"){
-        if(lang==="ko"){recs.push("에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.");recs.push("후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.");}
-        else if(lang==="ja"){recs.push("江戸時代の趣きを感じられる、安くて懐かしい伝統的な銭湯です。");recs.push("富士山の壁画と華やかなタイル装飾が印象的な写真スポットです。");}
-        else{recs.push("Affordable, nostalgic traditional bathhouse with Edo-period charm.");recs.push("Iconic Mt. Fuji murals and colorful tiles make for great photos.");}
+        if(lang==="ko"){if(recs.indexOf("에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.")<0)recs.push("에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.");if(recs.indexOf("후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.")<0)recs.push("후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.");}
+        else if(lang==="ja"){if(recs.indexOf("江戸時代の趣きを感じられる、安くて懐かしい伝統的な銭湯です。")<0)recs.push("江戸時代の趣きを感じられる、安くて懐かしい伝統的な銭湯です。");if(recs.indexOf("富士山の壁画と華やかなタイル装飾が印象的な写真スポットです。")<0)recs.push("富士山の壁画と華やかなタイル装飾が印象的な写真スポットです。");}
+        else{if(recs.indexOf("Affordable, nostalgic traditional bathhouse with Edo-period charm.")<0)recs.push("Affordable, nostalgic traditional bathhouse with Edo-period charm.");if(recs.indexOf("Iconic Mt. Fuji murals and colorful tiles make for great photos.")<0)recs.push("Iconic Mt. Fuji murals and colorful tiles make for great photos.");}
       }else if(typeKo==="온천 여관"){
-        if(lang==="ko"){recs.push("정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.");recs.push("객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.");}
-        else if(lang==="ja"){recs.push("清潔な畳の部屋と丁寧な懐石料理が楽しめる伝統旅館です。");recs.push("客室の露天風呂でプライバシーを保ちながらゆったり過ごせます。");}
-        else{recs.push("Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.");recs.push("Private open-air baths in some rooms ensure complete privacy.");}
+        if(lang==="ko"){if(recs.indexOf("정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.")<0)recs.push("정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.");if(recs.indexOf("객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.")<0)recs.push("객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.");}
+        else if(lang==="ja"){if(recs.indexOf("清潔な畳の部屋と丁寧な懐石料理が楽しめる伝統旅館です。")<0)recs.push("清潔な畳の部屋と丁寧な懐石料理が楽しめる伝統旅館です。");if(recs.indexOf("客室の露天風呂でプライバシーを保ちながらゆったり過ごせます。")<0)recs.push("客室の露天風呂でプライバシーを保ちながらゆったり過ごせます。");}
+        else{if(recs.indexOf("Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.")<0)recs.push("Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.");if(recs.indexOf("Private open-air baths in some rooms ensure complete privacy.")<0)recs.push("Private open-air baths in some rooms ensure complete privacy.");}
       }
       if(features.indexOf("rotenburo")>=0){
-        if(lang==="ko") recs.push("노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.");
-        else if(lang==="ja") recs.push("露天風呂で自然の景色を眺めながら、ゆったりと入浴時間を楽しめます。");
-        else recs.push("Enjoy relaxing open-air baths with beautiful natural scenery.");
+        if(lang==="ko"){if(recs.indexOf("노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.")<0)recs.push("노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.");}
+        else if(lang==="ja"){if(recs.indexOf("露天風呂で自然の景色を眺めながら、ゆったりと入浴時間を楽しめます。")<0)recs.push("露天風呂で自然の景色を眺めながら、ゆったりと入浴時間を楽しめます。");}
+        else{if(recs.indexOf("Enjoy relaxing open-air baths with beautiful natural scenery.")<0)recs.push("Enjoy relaxing open-air baths with beautiful natural scenery.");}
       }
       if(features.indexOf("sauna")>=0){
-        if(lang==="ko") recs.push("다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.");
-        else if(lang==="ja") recs.push("様々な温度帯のサウナルームと休憩スペースが充実しています。");
-        else recs.push("Well-equipped sauna rooms at various temperatures with rest areas.");
+        if(lang==="ko"){if(recs.indexOf("다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.")<0)recs.push("다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.");}
+        else if(lang==="ja"){if(recs.indexOf("様々な温度帯のサウナルームと休憩スペースが充実しています。")<0)recs.push("様々な温度帯のサウナルームと休憩スペースが充実しています。");}
+        else{if(recs.indexOf("Well-equipped sauna rooms at various temperatures with rest areas.")<0)recs.push("Well-equipped sauna rooms at various temperatures with rest areas.");}
       }
       if(features.indexOf("ganbanyoku")>=0){
-        if(lang==="ko") recs.push("천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.");
-        else if(lang==="ja") recs.push("天然石の岩盤浴で汗をかき、抗酸化効果を体験できます。");
-        else recs.push("Experience antioxidant effects through natural stone bedrock bathing.");
+        if(lang==="ko"){if(recs.indexOf("천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.")<0)recs.push("천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.");}
+        else if(lang==="ja"){if(recs.indexOf("天然石の岩盤浴で汗をかき、抗酸化効果を体験できます。")<0)recs.push("天然石の岩盤浴で汗をかき、抗酸化効果を体験できます。");}
+        else{if(recs.indexOf("Experience antioxidant effects through natural stone bedrock bathing.")<0)recs.push("Experience antioxidant effects through natural stone bedrock bathing.");}
       }
       if(!recs.length)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"추천 포인트":(lang==="ja"?"おすすめポイント":"Highlights"))+'</h2><div class="detail-text">';
@@ -1862,60 +1869,70 @@ const S = {
       return s;
     });
 
-    // Tips
+    // Tips - use data-driven tips if available
     h+=safe(function(){
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      const features=o.features||[];
       let tips=[];
-      if(typeKo==="천연 온천"){
-        if(lang==="ko") tips=[{icon:"🌿",text:"천연 온천수를 즐기기 위해 입욕 전 충분한 샤워를 권장합니다."},{icon:"⏱️",text:"15~20분 정도의 입욕이 적당합니다."}];
-        else if(lang==="ja") tips=[{icon:"🌿",text:"天然温泉を楽しむために、入浴前に十分にシャワーを浴びることをおすすめします。"},{icon:"⏱️",text:"15～20分程度の入浴が適切です。"}];
-        else tips=[{icon:"🌿",text:"Shower thoroughly before entering."},{icon:"⏱️",text:"Soak for 15-20 minutes."}];
+      // Use generated tips first
+      if(o.tips&&o.tips[lang]&&o.tips[lang].length){
+        o.tips[lang].forEach(function(t,i){
+          const icons=["💡","✨","🎯","⭐","🔔","📌","💎"];
+          tips.push({icon:icons[i%icons.length],text:t});
+        });
       }
-      else if(typeKo==="도심형 스파"){
-        if(lang==="ko") tips=[{icon:"🏙️",text:"예약제인 경우가 많으므로 사전 확인이 필요합니다."},{icon:"🧴",text:"개인 세멘도구를 챙기시는 것을 권장합니다."}];
-        else if(lang==="ja") tips=[{icon:"🏙️",text:"予約制の場合が多いため、事前に確認が必要です。"},{icon:"🧴",text:"個人用の洗面用具を持参することをおすすめします。"}];
-        else tips=[{icon:"🏙️",text:"Reservations are often required."},{icon:"🧴",text:"Bring personal toiletries."}];
-      }
-      else if(typeKo==="슈퍼 센토"){
-        if(lang==="ko") tips=[{icon:"🏛️",text:"식사, 휴식, 엔터테인먼트를 함께 즐길 수 있습니다."},{icon:"💴",text:"수건 대여료가 별도로 발생할 수 있습니다."}];
-        else if(lang==="ja") tips=[{icon:"🏛️",text:"食事、休憩、エンターテイメントを一度に楽しめます。"},{icon:"💴",text:"タオルのレンタル料が別途発生する場合があります。"}];
-        else tips=[{icon:"🏛️",text:"Enjoy dining and entertainment."},{icon:"💴",text:"Towel rental fees may apply."}];
-      }
-      else if(typeKo==="전통 센토"){
-        if(lang==="ko") tips=[{icon:"🏮",text:"세멘도구와 수건을 별도로 준비하셔야 합니다."},{icon:"🪙",text:"대부분 현금만 받습니다."}];
-        else if(lang==="ja") tips=[{icon:"🏮",text:"洗面用具とタオルは別途ご持参ください。"},{icon:"🪙",text:"ほとんど現金のみの支払いとなります。"}];
-        else tips=[{icon:"🏮",text:"Bring your own toiletries and towel."},{icon:"🪙",text:"Most accept cash only."}];
-      }
-      else if(typeKo==="온천 여관"){
-        if(lang==="ko") tips=[{icon:"🏯",text:"숙박과 식사를 함께 제공하며, 일일 입욕도 가능한 곳이 많습니다."}];
-        else if(lang==="ja") tips=[{icon:"🏯",text:"宿泊と食事をセットで提供しており、日帰り入浴もできる施設が多いです。"}];
-        else tips=[{icon:"🏯",text:"Lodging and meals provided; day-use bathing often available."}];
-      }
-      else if(typeKo==="온천 테마파크"){
-        if(lang==="ko") tips=[{icon:"🎭",text:"가족 단위 방문객에게 인기가 많습니다."}];
-        else if(lang==="ja") tips=[{icon:"🎭",text:"家族連れの客に人気があります。"}];
-        else tips=[{icon:"🎭",text:"Popular with families."}];
-      }
-      else {
-        if(lang==="ko") tips=[{icon:"♨️",text:"입욕 전 가벼운 스트레칭과 수분 섭취를 권장합니다."}];
-        else if(lang==="ja") tips=[{icon:"♨️",text:"入浴前に軽いストレッチと水分補給をおすすめします。"}];
-        else tips=[{icon:"♨️",text:"Stretch and hydrate before bathing."}];
-      }
-      if(features.indexOf("sauna")>=0){
-        if(lang==="ko") tips.push({icon:"🧖",text:"사우나 이용 후 충분한 휴식과 수분 보충이 필요합니다."});
-        else if(lang==="ja") tips.push({icon:"🧖",text:"サウナ利用後は十分な休息と水分補給が必要です。"});
-        else tips.push({icon:"🧖",text:"Rest and hydrate after sauna."});
-      }
-      if(features.indexOf("rotenburo")>=0){
-        if(lang==="ko") tips.push({icon:"🌙",text:"노천탕은 계절에 따라 다른 매력을 느낄 수 있습니다."});
-        else if(lang==="ja") tips.push({icon:"🌙",text:"露天風呂は季節によって異なる魅力を感じられます。"});
-        else tips.push({icon:"🌙",text:"Open-air baths offer seasonal charms."});
-      }
-      if(features.indexOf("ganbanyoku")>=0){
-        if(lang==="ko") tips.push({icon:"🪨",text:"암반욕 후에는 땀을 충분히 식히고 샤워한 후 휴식을 취하세요."});
-        else if(lang==="ja") tips.push({icon:"🪨",text:"岩盤浴後は汗を十分に冷まし、シャワーを浴びてから休息を取ってください。"});
-        else tips.push({icon:"🪨",text:"Cool down and shower after bedrock bathing."});
+      // Fallback to type-based tips
+      if(!tips.length){
+        const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
+        const features=o.features||[];
+        if(typeKo==="천연 온천"){
+          if(lang==="ko") tips=[{icon:"🌿",text:"천연 온천수를 즐기기 위해 입욕 전 충분한 샤워를 권장합니다."},{icon:"⏱️",text:"15~20분 정도의 입욕이 적당합니다."}];
+          else if(lang==="ja") tips=[{icon:"🌿",text:"天然温泉を楽しむために、入浴前に十分にシャワーを浴びることをおすすめします。"},{icon:"⏱️",text:"15～20分程度の入浴が適切です。"}];
+          else tips=[{icon:"🌿",text:"Shower thoroughly before entering."},{icon:"⏱️",text:"Soak for 15-20 minutes."}];
+        }
+        else if(typeKo==="도심형 스파"){
+          if(lang==="ko") tips=[{icon:"🏙️",text:"예약제인 경우가 많으므로 사전 확인이 필요합니다."},{icon:"🧴",text:"개인 세멘도구를 챙기시는 것을 권장합니다."}];
+          else if(lang==="ja") tips=[{icon:"🏙️",text:"予約制の場合が多いため、事前に確認が必要です。"},{icon:"🧴",text:"個人用の洗面用具を持参することをおすすめします。"}];
+          else tips=[{icon:"🏙️",text:"Reservations are often required."},{icon:"🧴",text:"Bring personal toiletries."}];
+        }
+        else if(typeKo==="슈퍼 센토"){
+          if(lang==="ko") tips=[{icon:"🏛️",text:"식사, 휴식, 엔터테인먼트를 함께 즐길 수 있습니다."},{icon:"💴",text:"수건 대여료가 별도로 발생할 수 있습니다."}];
+          else if(lang==="ja") tips=[{icon:"🏛️",text:"食事、休憩、エンターテイメントを一度に楽しめます。"},{icon:"💴",text:"タオルのレンタル料が別途発生する場合があります。"}];
+          else tips=[{icon:"🏛️",text:"Enjoy dining and entertainment."},{icon:"💴",text:"Towel rental fees may apply."}];
+        }
+        else if(typeKo==="전통 센토"){
+          if(lang==="ko") tips=[{icon:"🏮",text:"세멘도구와 수건을 별도로 준비하셔야 합니다."},{icon:"🪙",text:"대부분 현금만 받습니다."}];
+          else if(lang==="ja") tips=[{icon:"🏮",text:"洗面用具とタオルは別途ご持参ください。"},{icon:"🪙",text:"ほとんど現金のみの支払いとなります。"}];
+          else tips=[{icon:"🏮",text:"Bring your own toiletries and towel."},{icon:"🪙",text:"Most accept cash only."}];
+        }
+        else if(typeKo==="온천 여관"){
+          if(lang==="ko") tips=[{icon:"🏯",text:"숙박과 식사를 함께 제공하며, 일일 입욕도 가능한 곳이 많습니다."}];
+          else if(lang==="ja") tips=[{icon:"🏯",text:"宿泊と食事をセットで提供しており、日帰り入浴もできる施設が多いです。"}];
+          else tips=[{icon:"🏯",text:"Lodging and meals provided; day-use bathing often available."}];
+        }
+        else if(typeKo==="온천 테마파크"){
+          if(lang==="ko") tips=[{icon:"🎭",text:"가족 단위 방문객에게 인기가 많습니다."}];
+          else if(lang==="ja") tips=[{icon:"🎭",text:"家族連れの客に人気があります。"}];
+          else tips=[{icon:"🎭",text:"Popular with families."}];
+        }
+        else {
+          if(lang==="ko") tips=[{icon:"♨️",text:"입욕 전 가벼운 스트레칭과 수분 섭취를 권장합니다."}];
+          else if(lang==="ja") tips=[{icon:"♨️",text:"入浴前に軽いストレッチと水分補給をおすすめします。"}];
+          else tips=[{icon:"♨️",text:"Stretch and hydrate before bathing."}];
+        }
+        if(features.indexOf("sauna")>=0){
+          if(lang==="ko") tips.push({icon:"🧖",text:"사우나 이용 후 충분한 휴식과 수분 보충이 필요합니다."});
+          else if(lang==="ja") tips.push({icon:"🧖",text:"サウナ利用後は十分な休息と水分補給が必要です。"});
+          else tips.push({icon:"🧖",text:"Rest and hydrate after sauna."});
+        }
+        if(features.indexOf("rotenburo")>=0){
+          if(lang==="ko") tips.push({icon:"🌙",text:"노천탕은 계절에 따라 다른 매력을 느낄 수 있습니다."});
+          else if(lang==="ja") tips.push({icon:"🌙",text:"露天風呂は季節によって異なる魅力を感じられます。"});
+          else tips.push({icon:"🌙",text:"Open-air baths offer seasonal charms."});
+        }
+        if(features.indexOf("ganbanyoku")>=0){
+          if(lang==="ko") tips.push({icon:"🪨",text:"암반욕 후에는 땀을 충분히 식히고 샤워한 후 휴식을 취하세요."});
+          else if(lang==="ja") tips.push({icon:"🪨",text:"岩盤浴後は汗を十分に冷まし、シャワーを浴びてから休息を取ってください。"});
+          else tips.push({icon:"🪨",text:"Cool down and shower after bedrock bathing."});
+        }
       }
       if(!tips.length)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"이용 팁":(lang==="ja"?"利用のヒント":"Tips"))+'</h2><div class="tip-list">';
@@ -1926,12 +1943,18 @@ const S = {
       return s;
     });
 
-    // Nearby
+    // Nearby - use nearbySpots text if available
     h+=safe(function(){
+      // Show nearbySpots text first
+      let nearbyText="";
+      if(o.nearbySpots&&o.nearbySpots[lang]){
+        nearbyText='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 정보":(lang==="ja"?"周辺情報":"Nearby Info"))+'</h2><div class="detail-text"><p>'+esc(o.nearbySpots[lang])+'</p></div></div>';
+      }
+      // Also show nearby facilities
       const ag=(o.areaGroup||o.area);
       const myArea=(ag&&ag.ko)||"";
       const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
-      if(!nearby.length)return "";
+      if(!nearby.length)return nearbyText;
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid">';
       nearby.forEach(function(n){
         s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
@@ -1940,7 +1963,7 @@ const S = {
         s+='</div>';
       });
       s+='</div></div>';
-      return s;
+      return nearbyText+s;
     });
 
     // Seasonal charm
