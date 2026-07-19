@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /images/
+Disallow: /data.js.backup.*
+Disallow: /new_facilities.json
+Disallow: /new_facilities_2.json
+Disallow: /merge_new.js
+Disallow: /process_data.js
+Disallow: /update_data.py
+Disallow: /data_cleanup.py
+
+Sitemap: https://tokyo-onsen-guide.com/sitemap.xml

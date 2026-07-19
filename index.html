@@ -1308,17 +1308,8 @@ body::before {
 
 <div id="toast-container"></div>
 
-    <script src="data.js?v=5.3"></script>
 <script>
-/* DATA load guard */
-if(typeof DATA==='undefined'||!Array.isArray(DATA)||DATA.length===0){
-  document.addEventListener('DOMContentLoaded',function(){
-    var main=document.getElementById('main');
-    if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;font-family:sans-serif;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;line-height:1.7;margin-top:12px;"><strong>data.js</strong> 파일을 불러오지 못했습니다.<br>아래 사항을 확인해 주세요:</p><ul style="text-align:left;max-width:400px;margin:16px auto;color:#5c4d3c;font-size:14px;line-height:1.8;"><li>index.html 과 data.js 가 <strong>같은 폴터</strong>에 있는지 확인</li><li>웹서버에 data.js 업로드가 누락되지 않았는지 확인</li><li>브라우저 콘솔(F12 → Console)의 빨간 오류 메시지 확인</li><li><strong>Ctrl+F5</strong> (또는 모바일에서는 브라우저 캐시 삭제 후 새로고침)</li></ul><p style="color:#8a7a6a;font-size:13px;margin-top:20px;">Tokyo Onsen Guide v5.1</p></div>';
-  });
-  throw new Error('data.js not loaded');
-}
-(function(){
+function initApp(){
 const S = {
     lang:"ko", theme:"system", view:"home", detailId:null,
     fArea:"all", fType:"all", fFeat:"all", sort:"recommend", q:""
@@ -2073,8 +2064,27 @@ const S = {
   if(sbToggle){sbToggle.addEventListener("click",()=>{const sb=document.querySelector(".list-sidebar");if(sb){const hidden=sb.style.display==="none"||getComputedStyle(sb).display==="none";sb.style.display=hidden?"flex":"none";}});}
   window.addEventListener("resize",()=>{const sb=document.querySelector(".list-sidebar");if(sb&&window.innerWidth>=768){sb.style.display="";}});
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-})();
+}
+fetch('data.json?v=5.3')
+  .then(r=>r.json())
+  .then(data=>{
+    window.DATA=data.DATA;
+    window.AREAS=data.AREAS;
+    window.i18n=data.i18n;
+    window.TYPES=data.TYPES;
+    window.WISHES=data.WISHES;
+    window.FEATS=data.FEATS;
+    window.FEATURES=data.FEATURES;
+    window.IMAGE_MAP=data.IMAGE_MAP;
+    initApp();
+  })
+  .catch(err=>{
+    document.addEventListener('DOMContentLoaded',function(){
+      var main=document.getElementById('main');
+      if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;font-family:sans-serif;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;line-height:1.7;margin-top:12px;"><strong>data.json</strong> 파일을 불러오지 못했습니다.<br>아래 사항을 확인해 주세요:</p><ul style="text-align:left;max-width:400px;margin:16px auto;color:#5c4d3c;font-size:14px;line-height:1.8;"><li>index.html 과 data.json 가 <strong>같은 폴터</strong>에 있는지 확인</li><li>웹서버에 data.json 업로드가 누락되지 않았는지 확인</li><li>브라우저 콘솔(F12 → Console)의 빨간 오류 메시지 확인</li><li><strong>Ctrl+F5</strong> (또는 모바일에서는 브라우저 캐시 삭제 후 새로고침)</li></ul><p style="color:#8a7a6a;font-size:13px;margin-top:20px;">Tokyo Onsen Guide v5.3</p></div>';
+    });
+    console.error('Failed to load data.json',err);
+  });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1da204358a380e4',t:'MTc4NDQ2ODMwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
