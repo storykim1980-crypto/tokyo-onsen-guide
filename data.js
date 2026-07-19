@@ -14499,9 +14499,560 @@ const DATA = [
       "lng": 139.2432
     }
   }
-];;;const i18n={"ko":{"yearBadge":"(2026년 최신)","facilityCount":"엄선된 시설 수: {count}곳","breadcrumbTop":"온천 TOP","breadcrumbCurrent":"도쿄의 온천, 일일 온천, 슈퍼 센토","mapLegend23":"도쿄 23구","mapLegendTama":"다마 지역","mapLegendWest":"서부 산악·이즈","navHome":"홈","navOnsen":"온천 탐색","navPlan":"내 계획","navSettings":"설정","navExplore":"온천","menuTitle":"메뉴","skipToContent":"본문 바로가기","searchPlaceholder":"온천 이름, 지역을 입력","listSearchPlaceholder":"온천 이름, 지역 검색","btnSearch":"검색","sideSearchTitle":"키워드 검색","sideAreaTitle":"지역에서 찾기","sideMore":"전체 보기 →","sidePopularTitle":"인기 지역에서 찾기","siteTitle":"도쿄 온천 가이드","siteSub":"도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보","secWish":"이런 온천에 가고 싶어!","secRecommend":"추천 온천","pageListTitle":"온천 목록","pageListSub":"도쿄의 인기 일일 온천과 스파","pagePlanTitle":"내 여행 계획","pageSettingsTitle":"설정","filterSearch":"검색","filterArea":"지역","filterType":"유형","filterFeature":"특징","sortRecommend":"추천순","sortName":"이름순","sortPrice":"가격순","emptySearch":"검색 결과가 없습니다","btnResetFilter":"필터 초기화","tabFav":"찜한 온천","tabMemo":"메모","tabNote":"노트","emptyFav":"찜한 온천이 없습니다","emptyMemo":"메모가 없습니다","emptyNote":"노트가 없습니다","btnExplore":"온천 탐색하기","btnDetail":"자세히 보기","formNewNote":"새 여행 노트","labelTitle":"제목","labelDate":"날짜","labelContent":"내용","btnAddNote":"노트 추가","secGeneral":"일반","secData":"데이터 관리","secDanger":"데이터 초기화","labelLanguage":"언어","descLanguage":"인터페이스 언어를 변경합니다","labelTheme":"테마","descTheme":"화면 테마를 변경합니다","optLight":"라이트","optDark":"다크","optSystem":"시스템 설정","labelBackup":"백업 (낳볂기)","descBackup":"모든 데이터를 JSON 파일로 저장","labelRestore":"복원 (가져오기)","descRestore":"JSON 파일을 불러와 복원","labelReset":"전체 초기화","descReset":"찜, 메모, 노트, 설정을 모두 삭제","btnBackup":"백업","btnRestore":"복원","btnReset":"초기화","appInfoSub":"오프라인 동작 · 로컬 실행 · 서버 비용 없음","btnBack":"뒤로가기","btnFavAdd":"♡ 찜하기","btnFavRemove":"♥ 찜 해제","btnMap":"Google 지도","btnWebsite":"공식 사이트","btnSaveMemo":"메모 저장","btnDeleteMemo":"메모 삭제","detailDesc":"상세 설명","detailFeatures":"특징","detailHighlights":"하이라이트","detailInfo":"기본 정보","detailMemo":"내 메모","memoPlaceholder":"이 온천에 대한 메모를 남겨보세요 (최대 300자)","resultCount":"{count}개의 온천","toastFavAdd":"찜 목록에 추가되었습니다","toastFavRemove":"찜 목록에서 제거되었습니다","toastMemoSave":"메모가 저장되었습니다","toastMemoDelete":"메모가 삭제되었습니다","toastNoteAdd":"노트가 추가되었습니다","toastNoteDelete":"노트가 삭제되었습니다","toastBackup":"백업 파일을 다운로드했습니다","toastRestore":"데이터를 복원했습니다","toastReset":"모든 데이터가 초기화되었습니다","toastInvalidFile":"올바른 JSON 파일이 아닙니다","toastError":"오류가 발생했습니다","confirmReset":"정말 모든 데이터를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.","confirmDeleteNote":"이 노트를 삭제하시겠습니까?","confirmRemoveFav":"찜을 해제하시겠습니까?","confirmClearMemo":"메모를 삭제하시겠습니까?","validationTitleRequired":"제목을 입력해주세요.","validationTitleLength":"제목은 50자 이내로 입력해주세요.","validationContentLength":"내용은 500자 이내로 입력해주세요.","validationMemoLength":"메모는 300자 이내로 입력해주세요.","footerAbout":"소개","footerPrivacy":"개인정보처리방침","footerTerms":"이용약관","footerCookies":"쿠키 정책","footerContact":"문의","footerAds":"광고 정책","navAbout":"소개","menuLegal":"법적 고지","searchNearby":"현재 위치에서 찾기","catHome":"🏠 홈","catOnsen":"♨️ 온천 탐색","catRotenburo":"🌿 노천탕","catSauna":"🧖 사우나","catFamily":"👨‍👩‍👧‍👦 가족","catAbout":"📖 소개","logoSub":"TOKYO ONSEN"},"en":{"yearBadge":"(2026 Latest)","facilityCount":"{count} curated facilities","breadcrumbTop":"Onsen TOP","breadcrumbCurrent":"Tokyo Onsen, Day-trip, Super Sento","mapLegend23":"Tokyo 23 Wards","mapLegendTama":"Tama Area","mapLegendWest":"Western Mountains & Izu","navHome":"Home","navOnsen":"Explore","navPlan":"My Plan","navSettings":"Settings","navExplore":"Onsen","menuTitle":"Menu","skipToContent":"Skip to content","searchPlaceholder":"Enter onsen name or area","listSearchPlaceholder":"Search onsen name or area","btnSearch":"Search","sideSearchTitle":"Keyword Search","sideAreaTitle":"Find by Area","sideMore":"View All →","sidePopularTitle":"Popular Areas","siteTitle":"Tokyo Onsen Guide","siteSub":"Tokyo natural hot springs, day-trip onsen, super sento info","secWish":"I want this kind of onsen!","secRecommend":"Recommended Onsen","pageListTitle":"Onsen List","pageListSub":"Popular day-trip onsen and spas in Tokyo","pagePlanTitle":"My Travel Plan","pageSettingsTitle":"Settings","filterSearch":"Search","filterArea":"Area","filterType":"Type","filterFeature":"Feature","sortRecommend":"Recommended","sortName":"Name","sortPrice":"Price","emptySearch":"No results found","btnResetFilter":"Reset filters","tabFav":"Favorites","tabMemo":"Memos","tabNote":"Notes","emptyFav":"No favorites yet","emptyMemo":"No memos yet","emptyNote":"No notes yet","btnExplore":"Explore Onsen","btnDetail":"View Details","formNewNote":"New Travel Note","labelTitle":"Title","labelDate":"Date","labelContent":"Content","btnAddNote":"Add Note","secGeneral":"General","secData":"Data Management","secDanger":"Reset Data","labelLanguage":"Language","descLanguage":"Change interface language","labelTheme":"Theme","descTheme":"Change display theme","optLight":"Light","optDark":"Dark","optSystem":"System","labelBackup":"Backup (Export)","descBackup":"Save all data as a JSON file","labelRestore":"Restore (Import)","descRestore":"Load and restore from a JSON file","labelReset":"Reset All","descReset":"Delete favorites, memos, notes, and settings","btnBackup":"Backup","btnRestore":"Restore","btnReset":"Reset","appInfoSub":"Offline · Local execution · No server cost","btnBack":"Back","btnFavAdd":"♡ Add to favorites","btnFavRemove":"♥ Remove favorite","btnMap":"Google Maps","btnWebsite":"Official Site","btnSaveMemo":"Save memo","btnDeleteMemo":"Delete memo","detailDesc":"Description","detailFeatures":"Features","detailHighlights":"Highlights","detailInfo":"Information","detailMemo":"My memo","memoPlaceholder":"Leave a memo (max 300 chars)","resultCount":"{count} onsen found","toastFavAdd":"Added to favorites","toastFavRemove":"Removed from favorites","toastMemoSave":"Memo saved","toastMemoDelete":"Memo deleted","toastNoteAdd":"Note added","toastNoteDelete":"Note deleted","toastBackup":"Backup downloaded","toastRestore":"Data restored","toastReset":"All data reset","toastInvalidFile":"Invalid JSON file","toastError":"An error occurred","confirmReset":"Delete all data? This cannot be undone.","confirmDeleteNote":"Delete this note?","confirmRemoveFav":"Remove from favorites?","confirmClearMemo":"Delete this memo?","validationTitleRequired":"Please enter a title.","validationTitleLength":"Title must be 50 chars or less.","validationContentLength":"Content must be 500 chars or less.","validationMemoLength":"Memo must be 300 chars or less.","footerAbout":"About","footerPrivacy":"Privacy","footerTerms":"Terms","footerCookies":"Cookies","footerContact":"Contact","footerAds":"Ads","navAbout":"About","menuLegal":"Legal","searchNearby":"Search nearby","catHome":"🏠 Home","catOnsen":"♨️ Explore","catRotenburo":"🌿 Open-air","catSauna":"🧖 Sauna","catFamily":"👨‍👩‍👧‍👦 Family","catAbout":"📖 About","logoSub":"TOKYO ONSEN"},"ja":{"yearBadge":"(2026年最新)","facilityCount":"厳選施設数: {count}件","breadcrumbTop":"温泉TOP","breadcrumbCurrent":"東京の温泉、日帰り温泉、スーパー銭湯","mapLegend23":"東京23区","mapLegendTama":"多摩地域","mapLegendWest":"西部山岳・伊豆","navHome":"ホーム","navOnsen":"温泉探し","navPlan":"マイプラン","navSettings":"設定","navExplore":"温泉","menuTitle":"メニュー","skipToContent":"本文へ移動","searchPlaceholder":"温泉名、地域を入力","listSearchPlaceholder":"温泉名、地域を検索","btnSearch":"検索","sideSearchTitle":"キーワード検索","sideAreaTitle":"地域から探す","sideMore":"全て見る →","sidePopularTitle":"人気地域から探す","siteTitle":"東京温泉ガイド","siteSub":"東京の天然温泉、日帰り温泉、スーパー銭湯情報","secWish":"こんな温泉に行きたい！","secRecommend":"おすすめ温泉","pageListTitle":"温泉一覧","pageListSub":"東京の人気日帰り温泉とスパ","pagePlanTitle":"マイ旅行プラン","pageSettingsTitle":"設定","filterSearch":"検索","filterArea":"地域","filterType":"タイプ","filterFeature":"特徴","sortRecommend":"おすすめ順","sortName":"名前順","sortPrice":"価格順","emptySearch":"検索結果がありません","btnResetFilter":"フィルターをリセット","tabFav":"お気に入り","tabMemo":"メモ","tabNote":"ノート","emptyFav":"お気に入りがありません","emptyMemo":"メモがありません","emptyNote":"ノートがありません","btnExplore":"温泉を探す","btnDetail":"詳細を見る","formNewNote":"新しい旅行ノート","labelTitle":"タイトル","labelDate":"日付","labelContent":"内容","btnAddNote":"ノートを追加","secGeneral":"一般","secData":"データ管理","secDanger":"データ初期化","labelLanguage":"言語","descLanguage":"インターフェース言語を変更します","labelTheme":"テーマ","descTheme":"画面テーマを変更します","optLight":"ライト","optDark":"ダーク","optSystem":"システム設定","labelBackup":"バックアップ（エクスポート）","descBackup":"すべてのデータをJSONファイルで保存","labelRestore":"復元（インポート）","descRestore":"JSONファイルを読み込んで復元","labelReset":"すべてリセット","descReset":"お気に入り、メモ、ノート、設定をすべて削除","btnBackup":"バックアップ","btnRestore":"復元","btnReset":"リセット","appInfoSub":"オフライン動作・ローカル実行・サーバー費用なし","btnBack":"戻る","btnFavAdd":"♡ お気に入り","btnFavRemove":"♥ お気に入り解除","btnMap":"Googleマップ","btnWebsite":"公式サイト","btnSaveMemo":"メモ保存","btnDeleteMemo":"メモ削除","detailDesc":"詳細説明","detailFeatures":"特徴","detailHighlights":"ハイライト","detailInfo":"基本情報","detailMemo":"マイメモ","memoPlaceholder":"この温泉に関するメモを残してください（最大300文字）","resultCount":"{count}件の温泉","toastFavAdd":"お気に入りに追加しました","toastFavRemove":"お気に入りから削除しました","toastMemoSave":"メモを保存しました","toastMemoDelete":"メモを削除しました","toastNoteAdd":"ノートを追加しました","toastNoteDelete":"ノートを削除しました","toastBackup":"バックアップファイルをダウンロードしました","toastRestore":"データを復元しました","toastReset":"すべてのデータをリセットしました","toastInvalidFile":"正しいJSONファイルではありません","toastError":"エラーが発生しました","confirmReset":"本当にすべてのデータを削除しますか？この操作は元に戻せません。","confirmDeleteNote":"このノートを削除しますか？","confirmRemoveFav":"お気に入りを解除しますか？","confirmClearMemo":"メモを削除しますか？","validationTitleRequired":"タイトルを入力してください。","validationTitleLength":"タイトルは50文字以内で入力してください。","validationContentLength":"内容は500文字以内で入力してください。","validationMemoLength":"メモは300文字以内で入力してください。","footerAbout":"概要","footerPrivacy":"プライバシー","footerTerms":"利用規約","footerCookies":"クッキー","footerContact":"お問い合わせ","footerAds":"広告","navAbout":"概要","menuLegal":"法的情報","searchNearby":"現在地で探す","catHome":"🏠 ホーム","catOnsen":"♨️ 温泉探し","catRotenburo":"🌿 露天風呂","catSauna":"🧖 サウナ","catFamily":"👨‍👩‍👧‍👦 家族","catAbout":"📖 概要","logoSub":"TOKYO ONSEN"}};
+];
 
-  const IMAGE_MAP = {
+const AREAS = [
+  {
+    "id": "all",
+    "ko": "전체",
+    "en": "All",
+    "ja": "全て"
+  },
+  {
+    "id": "korakuen",
+    "ko": "고라쿠엔",
+    "en": "Korakuen",
+    "ja": "後楽園"
+  },
+  {
+    "id": "koto",
+    "ko": "고토",
+    "en": "Koto",
+    "ja": "江東"
+  },
+  {
+    "id": "kichijoji_musashino_mitaka",
+    "ko": "기치조지·무사시노·미타카",
+    "en": "Kichijoji/Musashino/Mitaka",
+    "ja": "吉祥寺・武蔵野・三鷹"
+  },
+  {
+    "id": "kita",
+    "ko": "기타",
+    "en": "Kita",
+    "ja": "北区"
+  },
+  {
+    "id": "kitashinagawa",
+    "ko": "기타시나가와",
+    "en": "Kitashinagawa",
+    "ja": "北品川"
+  },
+  {
+    "id": "ginza_shinbashi",
+    "ko": "긴자·신바시",
+    "en": "Ginza/Shinbashi",
+    "ja": "銀座・新橋"
+  },
+  {
+    "id": "nagayama",
+    "ko": "나가야마",
+    "en": "Nagayama",
+    "ja": "永山"
+  },
+  {
+    "id": "nakarokugo",
+    "ko": "나칠코",
+    "en": "Nakarokugo",
+    "ja": "仲六郷"
+  },
+  {
+    "id": "nakanobu",
+    "ko": "나칸노부",
+    "en": "Nakanobu",
+    "ja": "中延"
+  },
+  {
+    "id": "nakano",
+    "ko": "나칸오",
+    "en": "Nakano",
+    "ja": "中野"
+  },
+  {
+    "id": "nerima",
+    "ko": "네리마",
+    "en": "Nerima",
+    "ja": "練馬"
+  },
+  {
+    "id": "nishiarai",
+    "ko": "니시아라이",
+    "en": "Nishiarai",
+    "ja": "西新井"
+  },
+  {
+    "id": "tama_center",
+    "ko": "다마 센터",
+    "en": "Tama Center",
+    "ja": "多摩センター"
+  },
+  {
+    "id": "tama_fuchu_chofu",
+    "ko": "다마·후추·조후",
+    "en": "Tama/Fuchu/Chofu",
+    "ja": "多摩・府中・調布"
+  },
+  {
+    "id": "tamazakai",
+    "ko": "다마사카이",
+    "en": "Tamazakai",
+    "ja": "多摩境"
+  },
+  {
+    "id": "taito",
+    "ko": "다이토",
+    "en": "Taito",
+    "ja": "台東"
+  },
+  {
+    "id": "daito",
+    "ko": "다이토",
+    "en": "Daito",
+    "ja": "台東"
+  },
+  {
+    "id": "tachikawa_higashikurume",
+    "ko": "다치카와·히가시쿠루메",
+    "en": "Tachikawa/Higashikurume",
+    "ja": "立川・東久留米"
+  },
+  {
+    "id": "toshima",
+    "ko": "도시마",
+    "en": "Toshima",
+    "ja": "豊島"
+  },
+  {
+    "id": "toyosu",
+    "ko": "도요스",
+    "en": "Toyosu",
+    "ja": "豊洲"
+  },
+  {
+    "id": "ryogoku",
+    "ko": "료고쿠",
+    "en": "Ryogoku",
+    "ja": "両国"
+  },
+  {
+    "id": "maenohara",
+    "ko": "마에노하라",
+    "en": "Maenohara",
+    "ja": "前野原"
+  },
+  {
+    "id": "machida",
+    "ko": "마치다",
+    "en": "Machida",
+    "ja": "町田"
+  },
+  {
+    "id": "meguro",
+    "ko": "메구로",
+    "en": "Meguro",
+    "ja": "目黒"
+  },
+  {
+    "id": "musashimurayama",
+    "ko": "무사시무라야마",
+    "en": "Musashimurayama",
+    "ja": "武蔵村山"
+  },
+  {
+    "id": "musashikoyama",
+    "ko": "무사시코야마",
+    "en": "Musashikoyama",
+    "ja": "武蔵小山"
+  },
+  {
+    "id": "minami_machida",
+    "ko": "미나미마치다",
+    "en": "Minami-Machida",
+    "ja": "南町田"
+  },
+  {
+    "id": "minato",
+    "ko": "미나토",
+    "en": "Minato",
+    "ja": "港区"
+  },
+  {
+    "id": "bunkyo",
+    "ko": "분쿄",
+    "en": "Bunkyo",
+    "ja": "文京"
+  },
+  {
+    "id": "sakuradai",
+    "ko": "사쿠라다이",
+    "en": "Sakuradai",
+    "ja": "桜台"
+  },
+  {
+    "id": "seijo",
+    "ko": "세이조",
+    "en": "Seijo",
+    "ja": "成城"
+  },
+  {
+    "id": "setagaya",
+    "ko": "세타가야",
+    "en": "Setagaya",
+    "ja": "世田谷"
+  },
+  {
+    "id": "sengawa",
+    "ko": "센가와",
+    "en": "Sengawa",
+    "ja": "仙川"
+  },
+  {
+    "id": "sugamo",
+    "ko": "스가모",
+    "en": "Sugamo",
+    "ja": "巣鴨"
+  },
+  {
+    "id": "suginami",
+    "ko": "스기나미",
+    "en": "Suginami",
+    "ja": "杉並"
+  },
+  {
+    "id": "sumida",
+    "ko": "스미다",
+    "en": "Sumida",
+    "ja": "墨田"
+  },
+  {
+    "id": "shinagawa",
+    "ko": "시나가와",
+    "en": "Shinagawa",
+    "ja": "品川"
+  },
+  {
+    "id": "shibuya",
+    "ko": "시부야",
+    "en": "Shibuya",
+    "ja": "渋谷"
+  },
+  {
+    "id": "shinjuku",
+    "ko": "신주쿠",
+    "en": "Shinjuku",
+    "ja": "新宿"
+  },
+  {
+    "id": "adachi",
+    "ko": "아다치",
+    "en": "Adachi",
+    "ja": "足立"
+  },
+  {
+    "id": "arakawa",
+    "ko": "아라카와",
+    "en": "Arakawa",
+    "ja": "荒川区"
+  },
+  {
+    "id": "ariake",
+    "ko": "아리아케",
+    "en": "Ariake",
+    "ja": "有明"
+  },
+  {
+    "id": "asakusa",
+    "ko": "아사쿠사",
+    "en": "Asakusa",
+    "ja": "浅草"
+  },
+  {
+    "id": "asakusa_ryogoku",
+    "ko": "아사쿠사·료고쿠",
+    "en": "Asakusa/Ryogoku",
+    "ja": "浅草・両国"
+  },
+  {
+    "id": "akiruno",
+    "ko": "아키루노",
+    "en": "Akiruno",
+    "ja": "あきる野"
+  },
+  {
+    "id": "akishima",
+    "ko": "아키시마",
+    "en": "Akishima",
+    "ja": "昭島"
+  },
+  {
+    "id": "edogawa",
+    "ko": "에도가와",
+    "en": "Edogawa",
+    "ja": "江戸川"
+  },
+  {
+    "id": "ogikubo",
+    "ko": "오기쿠보",
+    "en": "Ogikubo",
+    "ja": "荻窪"
+  },
+  {
+    "id": "ome",
+    "ko": "오메",
+    "en": "Ome",
+    "ja": "青梅"
+  },
+  {
+    "id": "ome_akiruno",
+    "ko": "오메·아키루노",
+    "en": "Ome/Akiruno",
+    "ja": "青梅・あきる野"
+  },
+  {
+    "id": "oshima",
+    "ko": "오시마",
+    "en": "Oshima",
+    "ja": "大島"
+  },
+  {
+    "id": "oyada",
+    "ko": "오야다",
+    "en": "Oyada",
+    "ja": "おやだ"
+  },
+  {
+    "id": "oimachi",
+    "ko": "오이마치",
+    "en": "Oimachi",
+    "ja": "大井町"
+  },
+  {
+    "id": "okudo",
+    "ko": "오쿠도",
+    "en": "Okudo",
+    "ja": "奥戸"
+  },
+  {
+    "id": "okutama",
+    "ko": "오쿠타마",
+    "en": "Okutama",
+    "ja": "奥多摩"
+  },
+  {
+    "id": "okutama_hinohara",
+    "ko": "오쿠타마·히노하라",
+    "en": "Okutama/Hinohara",
+    "ja": "奥多摩・檜原村"
+  },
+  {
+    "id": "ota",
+    "ko": "오타",
+    "en": "Ota",
+    "ja": "大田"
+  },
+  {
+    "id": "otemachi",
+    "ko": "오테마치",
+    "en": "Otemachi",
+    "ja": "大手町"
+  },
+  {
+    "id": "inagi",
+    "ko": "이나기",
+    "en": "Inagi",
+    "ja": "稲城"
+  },
+  {
+    "id": "ikebukuro",
+    "ko": "이케부쿠로",
+    "en": "Ikebukuro",
+    "ja": "池袋"
+  },
+  {
+    "id": "ikebukuro_sugamo",
+    "ko": "이케부쿠로·스가모",
+    "en": "Ikebukuro/Sugamo",
+    "ja": "池袋・巣鴨"
+  },
+  {
+    "id": "itabashi",
+    "ko": "이타바시",
+    "en": "Itabashi",
+    "ja": "板橋"
+  },
+  {
+    "id": "zoshiki",
+    "ko": "조시",
+    "en": "Zoshiki",
+    "ja": "雑色"
+  },
+  {
+    "id": "chofu",
+    "ko": "조후",
+    "en": "Chofu",
+    "ja": "調布"
+  },
+  {
+    "id": "tsukiji_ginza",
+    "ko": "츠키지·긴자",
+    "en": "Tsukiji / Ginza",
+    "ja": "築地・銀座"
+  },
+  {
+    "id": "chiyoda",
+    "ko": "치요다",
+    "en": "Chiyoda",
+    "ja": "千代田区"
+  },
+  {
+    "id": "kawai",
+    "ko": "카와이",
+    "en": "Kawai",
+    "ja": "川井"
+  },
+  {
+    "id": "kabe",
+    "ko": "카페",
+    "en": "Kabe",
+    "ja": "河辺"
+  },
+  {
+    "id": "kamata",
+    "ko": "칵마타",
+    "en": "Kamata",
+    "ja": "蒲田"
+  },
+  {
+    "id": "kanda",
+    "ko": "칸다",
+    "en": "Kanda",
+    "ja": "神田"
+  },
+  {
+    "id": "kodaira",
+    "ko": "코다이라",
+    "en": "Kodaira",
+    "ja": "小平"
+  },
+  {
+    "id": "komagome",
+    "ko": "코마고메",
+    "en": "Komagome",
+    "ja": "駒込"
+  },
+  {
+    "id": "kozushima",
+    "ko": "코즈시마",
+    "en": "Kozushima",
+    "ja": "神津島"
+  },
+  {
+    "id": "kunitachi",
+    "ko": "쿠니타치",
+    "en": "Kunitachi",
+    "ja": "国立"
+  },
+  {
+    "id": "kinshicho",
+    "ko": "킨시초",
+    "en": "Kinshicho",
+    "ja": "錦糸町"
+  },
+  {
+    "id": "tama",
+    "ko": "타마",
+    "en": "Tama",
+    "ja": "多摩"
+  },
+  {
+    "id": "takao",
+    "ko": "타카오",
+    "en": "Takao",
+    "ja": "高尾"
+  },
+  {
+    "id": "takaido",
+    "ko": "타카이도",
+    "en": "Takaido",
+    "ja": "高井戸"
+  },
+  {
+    "id": "togoshi",
+    "ko": "토고시",
+    "en": "Togoshi",
+    "ja": "戸越"
+  },
+  {
+    "id": "hanakoganei",
+    "ko": "하나코가네이",
+    "en": "Hanakoganei",
+    "ja": "花小金井"
+  },
+  {
+    "id": "haneda",
+    "ko": "하네다",
+    "en": "Haneda",
+    "ja": "羽田"
+  },
+  {
+    "id": "hachioji",
+    "ko": "하치오지",
+    "en": "Hachioji",
+    "ja": "八王子"
+  },
+  {
+    "id": "hachioji_hino",
+    "ko": "하치오지·히노",
+    "en": "Hachioji/Hino",
+    "ja": "八王子・日野"
+  },
+  {
+    "id": "hachijojima",
+    "ko": "하치조지마",
+    "en": "Hachijojima",
+    "ja": "八丈島"
+  },
+  {
+    "id": "heiwajima",
+    "ko": "헤이와지마",
+    "en": "Heiwajima",
+    "ja": "平和島"
+  },
+  {
+    "id": "funabori",
+    "ko": "후나보리",
+    "en": "Funabori",
+    "ja": "船堀"
+  },
+  {
+    "id": "fuchu",
+    "ko": "후추",
+    "en": "Fuchu",
+    "ja": "府中"
+  },
+  {
+    "id": "higashikurume",
+    "ko": "히가시쿠루메",
+    "en": "Higashikurume",
+    "ja": "東久留米"
+  },
+  {
+    "id": "hinode",
+    "ko": "히노데",
+    "en": "Hinode",
+    "ja": "日の出"
+  },
+  {
+    "id": "hinohara",
+    "ko": "히노하라",
+    "en": "Hinohara",
+    "ja": "檜原"
+  }
+];
+
+const i18n={"ko":{"yearBadge":"(2026년 최신)","facilityCount":"엄선된 시설 수: {count}곳","breadcrumbTop":"온천 TOP","breadcrumbCurrent":"도쿄의 온천, 일일 온천, 슈퍼 센토","mapLegend23":"도쿄 23구","mapLegendTama":"다마 지역","mapLegendWest":"서부 산악·이즈","navHome":"홈","navOnsen":"온천 탐색","navPlan":"내 계획","navSettings":"설정","navExplore":"온천","menuTitle":"메뉴","skipToContent":"본문 바로가기","searchPlaceholder":"온천 이름, 지역을 입력","listSearchPlaceholder":"온천 이름, 지역 검색","btnSearch":"검색","sideSearchTitle":"키워드 검색","sideAreaTitle":"지역에서 찾기","sideMore":"전체 보기 →","sidePopularTitle":"인기 지역에서 찾기","siteTitle":"도쿄 온천 가이드","siteSub":"도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보","secWish":"이런 온천에 가고 싶어!","secRecommend":"추천 온천","pageListTitle":"온천 목록","pageListSub":"도쿄의 인기 일일 온천과 스파","pagePlanTitle":"내 여행 계획","pageSettingsTitle":"설정","filterSearch":"검색","filterArea":"지역","filterType":"유형","filterFeature":"특징","sortRecommend":"추천순","sortName":"이름순","sortPrice":"가격순","emptySearch":"검색 결과가 없습니다","btnResetFilter":"필터 초기화","tabFav":"찜한 온천","tabMemo":"메모","tabNote":"노트","emptyFav":"찜한 온천이 없습니다","emptyMemo":"메모가 없습니다","emptyNote":"노트가 없습니다","btnExplore":"온천 탐색하기","btnDetail":"자세히 보기","formNewNote":"새 여행 노트","labelTitle":"제목","labelDate":"날짜","labelContent":"내용","btnAddNote":"노트 추가","secGeneral":"일반","secData":"데이터 관리","secDanger":"데이터 초기화","labelLanguage":"언어","descLanguage":"인터페이스 언어를 변경합니다","labelTheme":"테마","descTheme":"화면 테마를 변경합니다","optLight":"라이트","optDark":"다크","optSystem":"시스템 설정","labelBackup":"백업 (낳볂기)","descBackup":"모든 데이터를 JSON 파일로 저장","labelRestore":"복원 (가져오기)","descRestore":"JSON 파일을 불러와 복원","labelReset":"전체 초기화","descReset":"찜, 메모, 노트, 설정을 모두 삭제","btnBackup":"백업","btnRestore":"복원","btnReset":"초기화","appInfoSub":"오프라인 동작 · 로컬 실행 · 서버 비용 없음","btnBack":"뒤로가기","btnFavAdd":"♡ 찜하기","btnFavRemove":"♥ 찜 해제","btnMap":"Google 지도","btnWebsite":"공식 사이트","btnSaveMemo":"메모 저장","btnDeleteMemo":"메모 삭제","detailDesc":"상세 설명","detailFeatures":"특징","detailHighlights":"하이라이트","detailInfo":"기본 정보","detailMemo":"내 메모","memoPlaceholder":"이 온천에 대한 메모를 남겨보세요 (최대 300자)","resultCount":"{count}개의 온천","toastFavAdd":"찜 목록에 추가되었습니다","toastFavRemove":"찜 목록에서 제거되었습니다","toastMemoSave":"메모가 저장되었습니다","toastMemoDelete":"메모가 삭제되었습니다","toastNoteAdd":"노트가 추가되었습니다","toastNoteDelete":"노트가 삭제되었습니다","toastBackup":"백업 파일을 다운로드했습니다","toastRestore":"데이터를 복원했습니다","toastReset":"모든 데이터가 초기화되었습니다","toastInvalidFile":"올바른 JSON 파일이 아닙니다","toastError":"오류가 발생했습니다","confirmReset":"정말 모든 데이터를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.","confirmDeleteNote":"이 노트를 삭제하시겠습니까?","confirmRemoveFav":"찜을 해제하시겠습니까?","confirmClearMemo":"메모를 삭제하시겠습니까?","validationTitleRequired":"제목을 입력해주세요.","validationTitleLength":"제목은 50자 이내로 입력해주세요.","validationContentLength":"내용은 500자 이내로 입력해주세요.","validationMemoLength":"메모는 300자 이내로 입력해주세요.","footerAbout":"소개","footerPrivacy":"개인정보처리방침","footerTerms":"이용약관","footerCookies":"쿠키 정책","footerContact":"문의","footerAds":"광고 정책","navAbout":"소개","menuLegal":"법적 고지","searchNearby":"현재 위치에서 찾기","catHome":"🏠 홈","catOnsen":"♨️ 온천 탐색","catRotenburo":"🌿 노천탕","catSauna":"🧖 사우나","catFamily":"👨‍👩‍👧‍👦 가족","catAbout":"📖 소개","logoSub":"TOKYO ONSEN"},"en":{"yearBadge":"(2026 Latest)","facilityCount":"{count} curated facilities","breadcrumbTop":"Onsen TOP","breadcrumbCurrent":"Tokyo Onsen, Day-trip, Super Sento","mapLegend23":"Tokyo 23 Wards","mapLegendTama":"Tama Area","mapLegendWest":"Western Mountains & Izu","navHome":"Home","navOnsen":"Explore","navPlan":"My Plan","navSettings":"Settings","navExplore":"Onsen","menuTitle":"Menu","skipToContent":"Skip to content","searchPlaceholder":"Enter onsen name or area","listSearchPlaceholder":"Search onsen name or area","btnSearch":"Search","sideSearchTitle":"Keyword Search","sideAreaTitle":"Find by Area","sideMore":"View All →","sidePopularTitle":"Popular Areas","siteTitle":"Tokyo Onsen Guide","siteSub":"Tokyo natural hot springs, day-trip onsen, super sento info","secWish":"I want this kind of onsen!","secRecommend":"Recommended Onsen","pageListTitle":"Onsen List","pageListSub":"Popular day-trip onsen and spas in Tokyo","pagePlanTitle":"My Travel Plan","pageSettingsTitle":"Settings","filterSearch":"Search","filterArea":"Area","filterType":"Type","filterFeature":"Feature","sortRecommend":"Recommended","sortName":"Name","sortPrice":"Price","emptySearch":"No results found","btnResetFilter":"Reset filters","tabFav":"Favorites","tabMemo":"Memos","tabNote":"Notes","emptyFav":"No favorites yet","emptyMemo":"No memos yet","emptyNote":"No notes yet","btnExplore":"Explore Onsen","btnDetail":"View Details","formNewNote":"New Travel Note","labelTitle":"Title","labelDate":"Date","labelContent":"Content","btnAddNote":"Add Note","secGeneral":"General","secData":"Data Management","secDanger":"Reset Data","labelLanguage":"Language","descLanguage":"Change interface language","labelTheme":"Theme","descTheme":"Change display theme","optLight":"Light","optDark":"Dark","optSystem":"System","labelBackup":"Backup (Export)","descBackup":"Save all data as a JSON file","labelRestore":"Restore (Import)","descRestore":"Load and restore from a JSON file","labelReset":"Reset All","descReset":"Delete favorites, memos, notes, and settings","btnBackup":"Backup","btnRestore":"Restore","btnReset":"Reset","appInfoSub":"Offline · Local execution · No server cost","btnBack":"Back","btnFavAdd":"♡ Add to favorites","btnFavRemove":"♥ Remove favorite","btnMap":"Google Maps","btnWebsite":"Official Site","btnSaveMemo":"Save memo","btnDeleteMemo":"Delete memo","detailDesc":"Description","detailFeatures":"Features","detailHighlights":"Highlights","detailInfo":"Information","detailMemo":"My memo","memoPlaceholder":"Leave a memo (max 300 chars)","resultCount":"{count} onsen found","toastFavAdd":"Added to favorites","toastFavRemove":"Removed from favorites","toastMemoSave":"Memo saved","toastMemoDelete":"Memo deleted","toastNoteAdd":"Note added","toastNoteDelete":"Note deleted","toastBackup":"Backup downloaded","toastRestore":"Data restored","toastReset":"All data reset","toastInvalidFile":"Invalid JSON file","toastError":"An error occurred","confirmReset":"Delete all data? This cannot be undone.","confirmDeleteNote":"Delete this note?","confirmRemoveFav":"Remove from favorites?","confirmClearMemo":"Delete this memo?","validationTitleRequired":"Please enter a title.","validationTitleLength":"Title must be 50 chars or less.","validationContentLength":"Content must be 500 chars or less.","validationMemoLength":"Memo must be 300 chars or less.","footerAbout":"About","footerPrivacy":"Privacy","footerTerms":"Terms","footerCookies":"Cookies","footerContact":"Contact","footerAds":"Ads","navAbout":"About","menuLegal":"Legal","searchNearby":"Search nearby","catHome":"🏠 Home","catOnsen":"♨️ Explore","catRotenburo":"🌿 Open-air","catSauna":"🧖 Sauna","catFamily":"👨‍👩‍👧‍👦 Family","catAbout":"📖 About","logoSub":"TOKYO ONSEN"},"ja":{"yearBadge":"(2026年最新)","facilityCount":"厳選施設数: {count}件","breadcrumbTop":"温泉TOP","breadcrumbCurrent":"東京の温泉、日帰り温泉、スーパー銭湯","mapLegend23":"東京23区","mapLegendTama":"多摩地域","mapLegendWest":"西部山岳・伊豆","navHome":"ホーム","navOnsen":"温泉探し","navPlan":"マイプラン","navSettings":"設定","navExplore":"温泉","menuTitle":"メニュー","skipToContent":"本文へ移動","searchPlaceholder":"温泉名、地域を入力","listSearchPlaceholder":"温泉名、地域を検索","btnSearch":"検索","sideSearchTitle":"キーワード検索","sideAreaTitle":"地域から探す","sideMore":"全て見る →","sidePopularTitle":"人気地域から探す","siteTitle":"東京温泉ガイド","siteSub":"東京の天然温泉、日帰り温泉、スーパー銭湯情報","secWish":"こんな温泉に行きたい！","secRecommend":"おすすめ温泉","pageListTitle":"温泉一覧","pageListSub":"東京の人気日帰り温泉とスパ","pagePlanTitle":"マイ旅行プラン","pageSettingsTitle":"設定","filterSearch":"検索","filterArea":"地域","filterType":"タイプ","filterFeature":"特徴","sortRecommend":"おすすめ順","sortName":"名前順","sortPrice":"価格順","emptySearch":"検索結果がありません","btnResetFilter":"フィルターをリセット","tabFav":"お気に入り","tabMemo":"メモ","tabNote":"ノート","emptyFav":"お気に入りがありません","emptyMemo":"メモがありません","emptyNote":"ノートがありません","btnExplore":"温泉を探す","btnDetail":"詳細を見る","formNewNote":"新しい旅行ノート","labelTitle":"タイトル","labelDate":"日付","labelContent":"内容","btnAddNote":"ノートを追加","secGeneral":"一般","secData":"データ管理","secDanger":"データ初期化","labelLanguage":"言語","descLanguage":"インターフェース言語を変更します","labelTheme":"テーマ","descTheme":"画面テーマを変更します","optLight":"ライト","optDark":"ダーク","optSystem":"システム設定","labelBackup":"バックアップ（エクスポート）","descBackup":"すべてのデータをJSONファイルで保存","labelRestore":"復元（インポート）","descRestore":"JSONファイルを読み込んで復元","labelReset":"すべてリセット","descReset":"お気に入り、メモ、ノート、設定をすべて削除","btnBackup":"バックアップ","btnRestore":"復元","btnReset":"リセット","appInfoSub":"オフライン動作・ローカル実行・サーバー費用なし","btnBack":"戻る","btnFavAdd":"♡ お気に入り","btnFavRemove":"♥ お気に入り解除","btnMap":"Googleマップ","btnWebsite":"公式サイト","btnSaveMemo":"メモ保存","btnDeleteMemo":"メモ削除","detailDesc":"詳細説明","detailFeatures":"特徴","detailHighlights":"ハイライト","detailInfo":"基本情報","detailMemo":"マイメモ","memoPlaceholder":"この温泉に関するメモを残してください（最大300文字）","resultCount":"{count}件の温泉","toastFavAdd":"お気に入りに追加しました","toastFavRemove":"お気に入りから削除しました","toastMemoSave":"メモを保存しました","toastMemoDelete":"メモを削除しました","toastNoteAdd":"ノートを追加しました","toastNoteDelete":"ノートを削除しました","toastBackup":"バックアップファイルをダウンロードしました","toastRestore":"データを復元しました","toastReset":"すべてのデータをリセットしました","toastInvalidFile":"正しいJSONファイルではありません","toastError":"エラーが発生しました","confirmReset":"本当にすべてのデータを削除しますか？この操作は元に戻せません。","confirmDeleteNote":"このノートを削除しますか？","confirmRemoveFav":"お気に入りを解除しますか？","confirmClearMemo":"メモを削除しますか？","validationTitleRequired":"タイトルを入力してください。","validationTitleLength":"タイトルは50文字以内で入力してください。","validationContentLength":"内容は500文字以内で入力してください。","validationMemoLength":"メモは300文字以内で入力してください。","footerAbout":"概要","footerPrivacy":"プライバシー","footerTerms":"利用規約","footerCookies":"クッキー","footerContact":"お問い合わせ","footerAds":"広告","navAbout":"概要","menuLegal":"法的情報","searchNearby":"現在地で探す","catHome":"🏠 ホーム","catOnsen":"♨️ 温泉探し","catRotenburo":"🌿 露天風呂","catSauna":"🧖 サウナ","catFamily":"👨‍👩‍👧‍👦 家族","catAbout":"📖 概要","logoSub":"TOKYO ONSEN"}};
+
+const IMAGE_MAP = {
   "천연 온천": [
     "./images/natural-onsen-rotenburo.jpg",
     "./images/natural-onsen-exterior.jpg",
