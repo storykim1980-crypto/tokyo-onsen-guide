@@ -336,25 +336,25 @@ body::before {
 .empty-state p { font-size: 15px; font-weight: 700; color: var(--text-light); margin-bottom: 16px; }
 
 /* ===== Detail ===== */
-.detail-hero { position: relative; min-height: 480px; background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 100px 16px 56px; overflow: hidden; border-bottom: 2px solid var(--gold); display: flex; align-items: flex-end; }
+.detail-hero { position: relative; min-height: 280px; background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 64px 16px 28px; overflow: hidden; border-bottom: 2px solid var(--gold); display: flex; align-items: flex-end; }
 .detail-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 1; }
 .detail-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,0.45) 0%, rgba(26,20,16,0.70) 50%, rgba(26,20,16,0.92) 100%); }
 .detail-hero-inner { position: relative; z-index: 2; max-width: 960px; margin: 0 auto; width: 100%; }
-.detail-back { display: inline-flex; align-items: center; gap: 6px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.35); color: var(--gold-light); padding: 9px 20px; border-radius: 24px; font-size: 13px; font-weight: 700; margin-bottom: 24px; cursor: pointer; backdrop-filter: blur(10px); transition: all 200ms; letter-spacing: 0.02em; }
+.detail-back { display: inline-flex; align-items: center; gap: 6px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.35); color: var(--gold-light); padding: 7px 16px; border-radius: 24px; font-size: 12px; font-weight: 700; margin-bottom: 14px; cursor: pointer; backdrop-filter: blur(10px); transition: all 200ms; letter-spacing: 0.02em; }
 .detail-back:hover { background: rgba(201,169,110,0.28); color: var(--cream); border-color: var(--gold); transform: translateX(-2px); }
-.detail-title { font-size: 48px; font-weight: 800; margin-bottom: 20px; position: relative; letter-spacing: -0.02em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); line-height: 1.15; font-family: "Noto Serif KR", "Noto Serif JP", "Georgia", serif; }
-.detail-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; position: relative; }
-.detail-tag { font-size: 13px; font-weight: 700; padding: 8px 18px; border-radius: 24px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.3); color: var(--gold-light); backdrop-filter: blur(6px); transition: all 150ms; }
+.detail-title { font-size: 32px; font-weight: 800; margin-bottom: 14px; position: relative; letter-spacing: -0.02em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); line-height: 1.15; font-family: "Noto Serif KR", "Noto Serif JP", "Georgia", serif; }
+.detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; position: relative; }
+.detail-tag { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 24px; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.3); color: var(--gold-light); backdrop-filter: blur(6px); transition: all 150ms; }
 .detail-tag:hover { background: rgba(201,169,110,0.22); border-color: var(--gold); color: var(--cream); }
-.detail-hero-actions { margin-top: 24px; }
+.detail-hero-actions { margin-top: 16px; }
 .detail-hero-actions .detail-back { margin-bottom: 0; background: rgba(201,169,110,0.18); border-color: rgba(201,169,110,0.45); }
 .detail-hero-actions .detail-back:hover { background: rgba(201,169,110,0.32); }
 
-.detail-content { max-width: 960px; margin: 0 auto; padding: 40px 16px 48px; background: var(--cream); position: relative; z-index: 3; }
+.detail-content { max-width: 960px; margin: 0 auto; padding: 24px 16px 32px; background: var(--cream); position: relative; z-index: 3; }
 [data-theme="dark"] .detail-content { background: var(--wood-mid); }
 
-.quick-info-bar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 36px; }
-.qinfo-item { background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.04) 100%); border: 1.5px solid var(--border); border-radius: 18px; padding: 24px 16px; text-align: center; box-shadow: var(--shadow-sm); transition: all 200ms; }
+.quick-info-bar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
+.qinfo-item { background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.04) 100%); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 10px; text-align: center; box-shadow: var(--shadow-sm); transition: all 200ms; }
 .qinfo-item:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow); }
 [data-theme="dark"] .qinfo-item { background: rgba(30,26,20,0.6); }
 .qinfo-icon { font-size: 26px; margin-bottom: 10px; display: block; }
@@ -523,9 +523,12 @@ body::before {
   .sub-hero h1 { font-size: 20px; }
   .sub-hero p { font-size: 12px; }
   .detail-title { font-size: 22px; }
-  .detail-hero { padding: 32px 12px 24px; }
-  .detail-content { padding: 20px 12px 32px; }
-  .detail-section { padding: 16px; margin-bottom: 16px; }
+  .detail-hero { min-height: 220px; padding: 56px 12px 20px; }
+  .detail-content { padding: 16px 12px 24px; }
+  .detail-section { padding: 14px; margin-bottom: 12px; border-radius: 12px; }
+  .detail-section h2 { font-size: 15px; margin-bottom: 12px; padding-bottom: 6px; }
+  .detail-tag { font-size: 11px; padding: 5px 12px; }
+  .detail-back { padding: 6px 14px; font-size: 11px; margin-bottom: 10px; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .qinfo-item { padding: 10px; }
   .qinfo-value { font-size: 13px; }
@@ -616,13 +619,13 @@ body::before {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 18px;
+  padding: 10px 14px;
   background: linear-gradient(90deg, rgba(201,169,110,0.08) 0%, rgba(245,240,232,0.5) 100%);
   border-top: 1.5px solid var(--gold);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .gallery-disclaimer .gd-icon {
   font-size: 18px;
@@ -683,9 +686,9 @@ body::before {
 }
 
 .detail-section {
-  margin-bottom: 24px;
-  padding: 24px;
-  border-radius: 18px;
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 14px;
   background: var(--cream-panel);
   border: 1px solid var(--border);
   box-shadow: 0 2px 12px rgba(26,20,16,0.06);
@@ -695,10 +698,10 @@ body::before {
   border-color: var(--wood-light);
 }
 .detail-section h2 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
   border-bottom: 2px solid var(--border);
   display: inline-flex;
   align-items: center;
@@ -718,12 +721,12 @@ body::before {
 }
 
 .detail-text {
-  font-size: 15.5px;
-  line-height: 2.0;
+  font-size: 15px;
+  line-height: 1.8;
   color: var(--text-light);
 }
 .detail-text p {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .tip-item {
@@ -886,12 +889,12 @@ body::before {
 }
 
 .quick-info-bar {
-  gap: 12px;
-  margin-bottom: 28px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .qinfo-item {
-  padding: 18px 14px;
-  border-radius: 16px;
+  padding: 14px 10px;
+  border-radius: 14px;
   background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.05) 100%);
   border: 1.5px solid var(--border);
   transition: all 150ms;
@@ -915,16 +918,17 @@ body::before {
 }
 
 .gallery-wrap {
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
   border: 1.5px solid var(--border);
+  margin-bottom: 14px;
 }
 .gallery-main {
   aspect-ratio: 16 / 9;
 }
 .gallery-caption {
-  padding: 14px 16px;
-  font-size: 13px;
+  padding: 10px 14px;
+  font-size: 12px;
   font-weight: 600;
   background: rgba(201,169,110,0.04);
 }
@@ -989,9 +993,12 @@ body::before {
   .sub-hero h1 { font-size: 20px; }
   .sub-hero p { font-size: 12px; }
   .detail-title { font-size: 22px; }
-  .detail-hero { padding: 32px 12px 24px; }
-  .detail-content { padding: 20px 12px 32px; }
-  .detail-section { padding: 16px; margin-bottom: 16px; }
+  .detail-hero { min-height: 220px; padding: 56px 12px 20px; }
+  .detail-content { padding: 16px 12px 24px; }
+  .detail-section { padding: 14px; margin-bottom: 12px; border-radius: 12px; }
+  .detail-section h2 { font-size: 15px; margin-bottom: 12px; padding-bottom: 6px; }
+  .detail-tag { font-size: 11px; padding: 5px 12px; }
+  .detail-back { padding: 6px 14px; font-size: 11px; margin-bottom: 10px; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .qinfo-item { padding: 10px; }
   .qinfo-value { font-size: 13px; }
@@ -1105,20 +1112,80 @@ body::before {
         </div>
       </div>
     </div>
+    <div class="category-nav">
+      <div class="category-nav-inner">
+        <a href="#" data-area="chiyoda">치요다</a>
+        <a href="#" data-area="chuo">주오</a>
+        <a href="#" data-area="minato">미나토</a>
+        <a href="#" data-area="shinjuku">신주쿠</a>
+        <a href="#" data-area="bunkyo">분쿄</a>
+        <a href="#" data-area="taito">다이토</a>
+        <a href="#" data-area="sumida">스미다</a>
+        <a href="#" data-area="koto">코토</a>
+        <a href="#" data-area="shinagawa">시나가와</a>
+        <a href="#" data-area="meguro">메구로</a>
+        <a href="#" data-area="ota">오타</a>
+        <a href="#" data-area="setagaya">세타가야</a>
+        <a href="#" data-area="shibuya">시부야</a>
+        <a href="#" data-area="nakano">나칸오</a>
+        <a href="#" data-area="suginami">스기나미</a>
+        <a href="#" data-area="toshima">도시마</a>
+        <a href="#" data-area="kita">기타</a>
+        <a href="#" data-area="arakawa">아라카와</a>
+        <a href="#" data-area="itabashi">이타바시</a>
+        <a href="#" data-area="nerima">네리마</a>
+        <a href="#" data-area="adachi">아다치</a>
+        <a href="#" data-area="katsushika">카츠시카</a>
+        <a href="#" data-area="edogawa">에도가와</a>
+        <a href="#" data-area="tama-fuchu-chofu">다마·후추·조후</a>
+        <a href="#" data-area="ome-akiruno">오메·아키루노</a>
+        <a href="#" data-area="okutama-hinohara">오쿠타마·히노하라</a>
+        <a href="#" data-area="hachioji-hino">하치오지·히노</a>
+        <a href="#" data-area="machida">마치다</a>
+        <a href="#" data-area="kichijoji-musashino-mitaka">기치조지·무사시노</a>
+        <a href="#" data-area="inagi-tachikawa">이나기·다치카와</a>
+        <a href="#" data-area="akishima">아키시마</a>
+        <a href="#" data-area="oshima-hachijo">오시마·하치조</a>
+        <a href="#" data-area="other-tokyo">도쿄 기타</a>
+      </div>
+    </div>
     <div class="home-layout">
       <div class="map-zone">
         <div class="map-frame">
           <iframe id="home-map-iframe" src="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399511713&z=9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <div class="map-label" style="top:30%;left:45%;" data-area="ginza-shinbashi">긴자·신바시</div>
-          <div class="map-label" style="top:25%;left:48%;" data-area="asakusa-ryogoku">아사쿠사·료고쿠</div>
-          <div class="map-label" style="top:35%;left:42%;" data-area="akasaka-azabu-minato">아카사카·미나토</div>
-          <div class="map-label" style="top:20%;left:40%;" data-area="ikebukuro-sugamo">이케부쿠로</div>
-          <div class="map-label" style="top:22%;left:50%;" data-area="ueno-taito">우에노·다이토</div>
-          <div class="map-label" style="top:45%;left:35%;" data-area="tama-fuchu-chofu">다마</div>
-          <div class="map-label" style="top:55%;left:30%;" data-area="okutama-hinohara">오쿠타마</div>
-          <div class="map-label" style="top:60%;left:25%;" data-area="ome-akiruno">오메</div>
-          <div class="map-label" style="top:50%;left:28%;" data-area="hachioji-hino">하치오지</div>
-          <div class="map-label" style="top:75%;left:70%;" data-area="hachijo-izu">이즈 제도</div>
+          <div class="map-label" style="top:45%;left:52%;" data-area="chiyoda">치요다</div>
+          <div class="map-label" style="top:48%;left:55%;" data-area="chuo">주오</div>
+          <div class="map-label" style="top:50%;left:58%;" data-area="minato">미나토</div>
+          <div class="map-label" style="top:42%;left:45%;" data-area="shinjuku">신주쿠</div>
+          <div class="map-label" style="top:38%;left:48%;" data-area="bunkyo">분쿄</div>
+          <div class="map-label" style="top:35%;left:55%;" data-area="taito">다이토</div>
+          <div class="map-label" style="top:38%;left:60%;" data-area="sumida">스미다</div>
+          <div class="map-label" style="top:42%;left:62%;" data-area="koto">코토</div>
+          <div class="map-label" style="top:55%;left:55%;" data-area="shinagawa">시나가와</div>
+          <div class="map-label" style="top:58%;left:50%;" data-area="meguro">메구로</div>
+          <div class="map-label" style="top:62%;left:48%;" data-area="ota">오타</div>
+          <div class="map-label" style="top:60%;left:42%;" data-area="setagaya">세타가야</div>
+          <div class="map-label" style="top:52%;left:45%;" data-area="shibuya">시부야</div>
+          <div class="map-label" style="top:45%;left:40%;" data-area="nakano">나칸오</div>
+          <div class="map-label" style="top:40%;left:38%;" data-area="suginami">스기나미</div>
+          <div class="map-label" style="top:35%;left:42%;" data-area="toshima">도시마</div>
+          <div class="map-label" style="top:32%;left:45%;" data-area="kita">기타</div>
+          <div class="map-label" style="top:32%;left:52%;" data-area="arakawa">아라카와</div>
+          <div class="map-label" style="top:30%;left:40%;" data-area="itabashi">이타바시</div>
+          <div class="map-label" style="top:28%;left:38%;" data-area="nerima">네리마</div>
+          <div class="map-label" style="top:28%;left:55%;" data-area="adachi">아다치</div>
+          <div class="map-label" style="top:30%;left:60%;" data-area="katsushika">카츠시카</div>
+          <div class="map-label" style="top:35%;left:65%;" data-area="edogawa">에도가와</div>
+          <div class="map-label" style="top:70%;left:40%;" data-area="tama-fuchu-chofu">다마·후추·조후</div>
+          <div class="map-label" style="top:25%;left:30%;" data-area="ome-akiruno">오메·아키루노</div>
+          <div class="map-label" style="top:20%;left:25%;" data-area="okutama-hinohara">오쿠타마·히노하라</div>
+          <div class="map-label" style="top:75%;left:35%;" data-area="hachioji-hino">하치오지·히노</div>
+          <div class="map-label" style="top:80%;left:45%;" data-area="machida">마치다</div>
+          <div class="map-label" style="top:48%;left:35%;" data-area="kichijoji-musashino-mitaka">기치조지·무사시노</div>
+          <div class="map-label" style="top:65%;left:38%;" data-area="inagi-tachikawa">이나기·다치카와</div>
+          <div class="map-label" style="top:68%;left:50%;" data-area="akishima">아키시마</div>
+          <div class="map-label" style="top:85%;left:70%;" data-area="oshima-hachijo">오시마·하치조</div>
+          <div class="map-label" style="top:75%;left:55%;" data-area="other-tokyo">도쿄 기타</div>
         </div>
         <div class="map-legend">
           <span><span class="legend-dot" style="background:#c9a96e;"></span> <span data-i18n="mapLegend23">도쿄 23구</span></span>
@@ -1241,7 +1308,7 @@ body::before {
 
 <div id="toast-container"></div>
 
-    <script src="data.js?v=5.2"></script>
+    <script src="data.js?v=5.3"></script>
 <script>
 /* DATA load guard */
 if(typeof DATA==='undefined'||!Array.isArray(DATA)||DATA.length===0){
@@ -1960,6 +2027,11 @@ const S = {
     document.querySelectorAll("[data-feat]").forEach(n=>n.addEventListener("click",e=>{
       e.preventDefault();
       S.fFeat=n.getAttribute("data-feat");S.fArea="all";S.fType="all";S.q="";
+      go("list");
+    }));
+    document.querySelectorAll("[data-area]").forEach(n=>n.addEventListener("click",e=>{
+      e.preventDefault();
+      S.fArea=n.getAttribute("data-area");S.fType="all";S.fFeat="all";S.q="";
       go("list");
     }));
     const mm=$("mobile-menu");const mb=$("btn-menu-toggle");const mc=$("btn-menu-close");
