@@ -1355,16 +1355,17 @@ const S = {
     const areaList=$("home-area-list");
     if(areaList){clearEl(areaList);AREAS.slice(1).forEach(a=>{
       const cnt=areaCounts[a.id]||0;
+      if(cnt===0)return;
       const li=el("li");
       const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();S.fArea=a.id;S.fType="all";S.fFeat="all";S.q="";go("list");}}});
       li.appendChild(btn);
-      if(cnt>0)li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
+      li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
       areaList.appendChild(li);
     });}
 
     const popList=$("home-popular-list");
     if(popList){clearEl(popList);
-      const sorted=Object.entries(areaCounts).sort((a,b)=>b[1]-a[1]).slice(0,5);
+      const sorted=Object.entries(areaCounts).filter(([id,cnt])=>cnt>0).sort((a,b)=>b[1]-a[1]).slice(0,5);
       sorted.forEach(([id,cnt])=>{
         const a=AREAS.find(x=>x.id===id);if(!a)return;
         const li=el("li");
@@ -1442,6 +1443,7 @@ const S = {
       const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const g=normArea((ag&&ag.ko)||"unknown");areaCounts[g]=(areaCounts[g]||0)+1;const found=AREAS.find(a=>a.ko===(ag&&ag.ko)||a.en===(ag&&ag.en)||a.ja===(ag&&ag.ja));if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
       AREAS.forEach(a=>{
         const cnt=a.id==="all"?DATA.length:(areaCounts[a.id]||0);
+        if(a.id!=="all" && cnt===0)return;
         const li=el("li");
         const isActive=resolveArea(S.fArea)===a.id;
         const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();S.fArea=a.id;drawList();}}});
@@ -1991,5 +1993,5 @@ const S = {
 })();
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d9bc86e83011d3',t:'MTc4NDQ2NDIxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>

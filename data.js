@@ -10977,6 +10977,11 @@ const DATA = [
     "coords": {
       "lat": 35.6639,
       "lng": 139.7714
+    },
+    "areaGroup": {
+      "ko": "츠키지·긴자",
+      "en": "Tsukiji / Ginza",
+      "ja": "築地・銀座"
     }
   },
   {
@@ -11054,6 +11059,11 @@ const DATA = [
     "coords": {
       "lat": 35.5484,
       "lng": 139.4467
+    },
+    "areaGroup": {
+      "ko": "마치다",
+      "en": "Machida",
+      "ja": "町田"
     }
   },
   {
@@ -11131,6 +11141,11 @@ const DATA = [
     "coords": {
       "lat": 35.7148,
       "lng": 139.7967
+    },
+    "areaGroup": {
+      "ko": "아사쿠사",
+      "en": "Asakusa",
+      "ja": "浅草"
     }
   },
   {
@@ -11141,7 +11156,7 @@ const DATA = [
       "ja": "京王高尾山温泉 極楽湯"
     },
     "area": {
-      "ko": "다카오",
+      "ko": "타카오",
       "en": "Takao",
       "ja": "高尾"
     },
@@ -11208,6 +11223,11 @@ const DATA = [
     "coords": {
       "lat": 35.6254,
       "lng": 139.2432
+    },
+    "areaGroup": {
+      "ko": "타카오",
+      "en": "Takao",
+      "ja": "高尾"
     }
   },
   {
@@ -11285,6 +11305,11 @@ const DATA = [
     "coords": {
       "lat": 35.5444,
       "lng": 139.7683
+    },
+    "areaGroup": {
+      "ko": "하네다",
+      "en": "Haneda",
+      "ja": "羽田"
     }
   },
   {
@@ -11362,6 +11387,11 @@ const DATA = [
     "coords": {
       "lat": 35.6361,
       "lng": 139.7936
+    },
+    "areaGroup": {
+      "ko": "아리아케",
+      "en": "Ariake",
+      "ja": "有明"
     }
   },
   {
@@ -11439,6 +11469,11 @@ const DATA = [
     "coords": {
       "lat": 35.7339,
       "lng": 139.7392
+    },
+    "areaGroup": {
+      "ko": "스가모",
+      "en": "Sugamo",
+      "ja": "巣鴨"
     }
   },
   {
@@ -11516,6 +11551,11 @@ const DATA = [
     "coords": {
       "lat": 35.6964,
       "lng": 139.8142
+    },
+    "areaGroup": {
+      "ko": "킨시초",
+      "en": "Kinshicho",
+      "ja": "錦糸町"
     }
   },
   {
@@ -11593,6 +11633,11 @@ const DATA = [
     "coords": {
       "lat": 35.7306,
       "lng": 139.7186
+    },
+    "areaGroup": {
+      "ko": "이케부쿠로",
+      "en": "Ikebukuro",
+      "ja": "池袋"
     }
   },
   {
@@ -11671,6 +11716,11 @@ const DATA = [
     "coords": {
       "lat": 35.6301,
       "lng": 139.4492
+    },
+    "areaGroup": {
+      "ko": "나가야마",
+      "en": "Nagayama",
+      "ja": "永山"
     }
   },
   {
@@ -11748,6 +11798,11 @@ const DATA = [
     "coords": {
       "lat": 35.5789,
       "lng": 139.7345
+    },
+    "areaGroup": {
+      "ko": "헤이와지마",
+      "en": "Heiwajima",
+      "ja": "平和島"
     }
   },
   {
@@ -11825,6 +11880,11 @@ const DATA = [
     "coords": {
       "lat": 35.6956,
       "lng": 139.7704
+    },
+    "areaGroup": {
+      "ko": "칸다",
+      "en": "Kanda",
+      "ja": "神田"
     }
   },
   {
@@ -11902,6 +11962,11 @@ const DATA = [
     "coords": {
       "lat": 35.6959,
       "lng": 139.7934
+    },
+    "areaGroup": {
+      "ko": "료고쿠",
+      "en": "Ryogoku",
+      "ja": "両国"
     }
   },
   {
@@ -11979,6 +12044,11 @@ const DATA = [
     "coords": {
       "lat": 35.5498,
       "lng": 139.7156
+    },
+    "areaGroup": {
+      "ko": "조시",
+      "en": "Zoshiki",
+      "ja": "雑色"
     }
   },
   {
@@ -12057,6 +12127,11 @@ const DATA = [
     "coords": {
       "lat": 35.5102,
       "lng": 139.4701
+    },
+    "areaGroup": {
+      "ko": "미나미마치다",
+      "en": "Minami-Machida",
+      "ja": "南町田"
     }
   },
   {
@@ -12133,6 +12208,11 @@ const DATA = [
     "coords": {
       "lat": 35.6201,
       "lng": 139.7045
+    },
+    "areaGroup": {
+      "ko": "무사시코야마",
+      "en": "Musashikoyama",
+      "ja": "武蔵小山"
     }
   },
   {
@@ -12209,6 +12289,11 @@ const DATA = [
     "coords": {
       "lat": 35.6223,
       "lng": 139.7389
+    },
+    "areaGroup": {
+      "ko": "기타시나가와",
+      "en": "Kitashinagawa",
+      "ja": "北品川"
     }
   },
   {
@@ -12286,6 +12371,11 @@ const DATA = [
     "coords": {
       "lat": 35.7001,
       "lng": 139.7987
+    },
+    "areaGroup": {
+      "ko": "료고쿠",
+      "en": "Ryogoku",
+      "ja": "両国"
     }
   },
   {
@@ -12363,6 +12453,11 @@ const DATA = [
     "coords": {
       "lat": 35.7689,
       "lng": 139.8056
+    },
+    "areaGroup": {
+      "ko": "아다치",
+      "en": "Adachi",
+      "ja": "足立"
     }
   },
   {
@@ -12440,6 +12535,11 @@ const DATA = [
     "coords": {
       "lat": 35.7543,
       "lng": 139.3876
+    },
+    "areaGroup": {
+      "ko": "무사시무라야마",
+      "en": "Musashimurayama",
+      "ja": "武蔵村山"
     }
   },
   {
@@ -12517,6 +12617,11 @@ const DATA = [
     "coords": {
       "lat": 35.6601,
       "lng": 139.5876
+    },
+    "areaGroup": {
+      "ko": "조후",
+      "en": "Chofu",
+      "ja": "調布"
     }
   },
   {
@@ -12594,6 +12699,11 @@ const DATA = [
     "coords": {
       "lat": 35.6234,
       "lng": 139.4245
+    },
+    "areaGroup": {
+      "ko": "다마 센터",
+      "en": "Tama Center",
+      "ja": "多摩センター"
     }
   },
   {
@@ -12671,6 +12781,11 @@ const DATA = [
     "coords": {
       "lat": 35.5612,
       "lng": 139.7156
+    },
+    "areaGroup": {
+      "ko": "카마타",
+      "en": "Kamata",
+      "ja": "蒲田"
     }
   },
   {
@@ -12748,6 +12863,11 @@ const DATA = [
     "coords": {
       "lat": 35.6089,
       "lng": 139.7345
+    },
+    "areaGroup": {
+      "ko": "오이마치",
+      "en": "Oimachi",
+      "ja": "大井町"
     }
   },
   {
@@ -12825,6 +12945,11 @@ const DATA = [
     "coords": {
       "lat": 35.7267,
       "lng": 139.5123
+    },
+    "areaGroup": {
+      "ko": "하나코가네이",
+      "en": "Hanakoganei",
+      "ja": "花小金井"
     }
   },
   {
@@ -12902,6 +13027,11 @@ const DATA = [
     "coords": {
       "lat": 35.6378,
       "lng": 139.5123
+    },
+    "areaGroup": {
+      "ko": "이나기",
+      "en": "Inagi",
+      "ja": "稲城"
     }
   },
   {
@@ -12979,6 +13109,11 @@ const DATA = [
     "coords": {
       "lat": 35.6689,
       "lng": 139.5543
+    },
+    "areaGroup": {
+      "ko": "조후",
+      "en": "Chofu",
+      "ja": "調布"
     }
   },
   {
@@ -13056,6 +13191,11 @@ const DATA = [
     "coords": {
       "lat": 35.7789,
       "lng": 139.6876
+    },
+    "areaGroup": {
+      "ko": "이타바시",
+      "en": "Itabashi",
+      "ja": "板橋"
     }
   },
   {
@@ -13133,6 +13273,11 @@ const DATA = [
     "coords": {
       "lat": 35.6012,
       "lng": 139.4678
+    },
+    "areaGroup": {
+      "ko": "다마사카이",
+      "en": "Tamazakai",
+      "ja": "多摩境"
     }
   },
   {
@@ -13209,6 +13354,11 @@ const DATA = [
     "coords": {
       "lat": 35.7051,
       "lng": 139.6498
+    },
+    "areaGroup": {
+      "ko": "스기나미",
+      "en": "Suginami",
+      "ja": "杉並"
     }
   },
   {
@@ -13285,6 +13435,11 @@ const DATA = [
     "coords": {
       "lat": 35.7078,
       "lng": 139.6645
+    },
+    "areaGroup": {
+      "ko": "나칸오",
+      "en": "Nakano",
+      "ja": "中野"
     }
   },
   {
@@ -13361,6 +13516,11 @@ const DATA = [
     "coords": {
       "lat": 35.6339,
       "lng": 139.7156
+    },
+    "areaGroup": {
+      "ko": "메구로",
+      "en": "Meguro",
+      "ja": "目黒"
     }
   },
   {
@@ -13437,6 +13597,11 @@ const DATA = [
     "coords": {
       "lat": 35.7378,
       "lng": 139.6534
+    },
+    "areaGroup": {
+      "ko": "네리마",
+      "en": "Nerima",
+      "ja": "練馬"
     }
   },
   {
@@ -13513,6 +13678,11 @@ const DATA = [
     "coords": {
       "lat": 35.7567,
       "lng": 139.7345
+    },
+    "areaGroup": {
+      "ko": "아라카와",
+      "en": "Arakawa",
+      "ja": "荒川"
     }
   },
   {
@@ -13589,6 +13759,11 @@ const DATA = [
     "coords": {
       "lat": 35.7012,
       "lng": 139.7598
+    },
+    "areaGroup": {
+      "ko": "분쿄",
+      "en": "Bunkyo",
+      "ja": "文京"
     }
   },
   {
@@ -13599,7 +13774,7 @@ const DATA = [
       "ja": "宝来湯"
     },
     "area": {
-      "ko": "타이토",
+      "ko": "다이토",
       "en": "Taito",
       "ja": "台東"
     },
@@ -13665,6 +13840,11 @@ const DATA = [
     "coords": {
       "lat": 35.7189,
       "lng": 139.7967
+    },
+    "areaGroup": {
+      "ko": "다이토",
+      "en": "Taito",
+      "ja": "台東"
     }
   },
   {
@@ -13741,6 +13921,11 @@ const DATA = [
     "coords": {
       "lat": 35.6198,
       "lng": 139.7234
+    },
+    "areaGroup": {
+      "ko": "시나가와",
+      "en": "Shinagawa",
+      "ja": "品川"
     }
   },
   {
@@ -13817,6 +14002,11 @@ const DATA = [
     "coords": {
       "lat": 35.7189,
       "lng": 139.8123
+    },
+    "areaGroup": {
+      "ko": "스미다",
+      "en": "Sumida",
+      "ja": "墨田"
     }
   },
   {
@@ -13893,6 +14083,11 @@ const DATA = [
     "coords": {
       "lat": 35.6123,
       "lng": 139.7156
+    },
+    "areaGroup": {
+      "ko": "시나가와",
+      "en": "Shinagawa",
+      "ja": "品川"
     }
   },
   {
@@ -13969,6 +14164,11 @@ const DATA = [
     "coords": {
       "lat": 35.7456,
       "lng": 139.6678
+    },
+    "areaGroup": {
+      "ko": "네리마",
+      "en": "Nerima",
+      "ja": "練馬"
     }
   },
   {
@@ -14045,6 +14245,11 @@ const DATA = [
     "coords": {
       "lat": 35.6089,
       "lng": 139.7234
+    },
+    "areaGroup": {
+      "ko": "시나가와",
+      "en": "Shinagawa",
+      "ja": "品川"
     }
   },
   {
@@ -14121,6 +14326,11 @@ const DATA = [
     "coords": {
       "lat": 35.7201,
       "lng": 139.7089
+    },
+    "areaGroup": {
+      "ko": "도시마",
+      "en": "Toshima",
+      "ja": "豊島"
     }
   },
   {
@@ -14197,6 +14407,11 @@ const DATA = [
     "coords": {
       "lat": 35.7012,
       "lng": 139.8123
+    },
+    "areaGroup": {
+      "ko": "스미다",
+      "en": "Sumida",
+      "ja": "墨田"
     }
   },
   {
@@ -14273,6 +14488,11 @@ const DATA = [
     "coords": {
       "lat": 35.5789,
       "lng": 139.7012
+    },
+    "areaGroup": {
+      "ko": "오타",
+      "en": "Ota",
+      "ja": "大田"
     }
   },
   {
@@ -14349,6 +14569,11 @@ const DATA = [
     "coords": {
       "lat": 35.7045,
       "lng": 139.6201
+    },
+    "areaGroup": {
+      "ko": "스기나미",
+      "en": "Suginami",
+      "ja": "杉並"
     }
   },
   {
@@ -14425,6 +14650,11 @@ const DATA = [
     "coords": {
       "lat": 35.7298,
       "lng": 139.7101
+    },
+    "areaGroup": {
+      "ko": "도시마",
+      "en": "Toshima",
+      "ja": "豊島"
     }
   },
   {
@@ -14435,7 +14665,7 @@ const DATA = [
       "ja": "TAKAO 36 SAUNA"
     },
     "area": {
-      "ko": "다카오",
+      "ko": "타카오",
       "en": "Takao",
       "ja": "高尾"
     },
@@ -14501,9 +14731,15 @@ const DATA = [
     "coords": {
       "lat": 35.6254,
       "lng": 139.2432
+    },
+    "areaGroup": {
+      "ko": "타카오",
+      "en": "Takao",
+      "ja": "高尾"
     }
   }
 ];
+
 
 const AREAS = [
   {
