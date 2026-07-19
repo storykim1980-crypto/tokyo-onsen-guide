@@ -101,8 +101,8 @@ body::before {
 .logo-mark { font-size: 28px; line-height: 1; color: var(--burgundy); filter: drop-shadow(0 2px 4px rgba(139,26,43,0.2)); }
 .logo-sub { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); line-height: 1; }
 .logo-main { display: block; font-size: 15px; font-weight: 800; color: var(--text); line-height: 1.2; }
-.desktop-nav { display: none; gap: 4px; }
-.desktop-nav a { padding: 8px 14px; font-size: 14px; font-weight: 700; color: var(--text-light); text-decoration: none; border-radius: 8px; transition: all 150ms; }
+.desktop-nav { display: none; gap: 2px; }
+.desktop-nav a { padding: 8px 12px; font-size: 13px; font-weight: 700; color: var(--text-light); text-decoration: none; border-radius: 8px; transition: all 150ms; white-space: nowrap; }
 .desktop-nav a:hover, .desktop-nav a.active { color: var(--burgundy); background: rgba(139,26,43,0.06); }
 .header-tools { display: flex; gap: 4px; }
 .tool-btn { width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; font-size: 14px; cursor: pointer; color: var(--text-light); display: inline-flex; align-items: center; justify-content: center; transition: background 150ms; }
@@ -1007,6 +1007,9 @@ body::before {
     <nav class="desktop-nav" aria-label="메인 메뉴">
       <a href="#" data-nav="home" class="active" data-i18n="navHome">홈</a>
       <a href="#" data-nav="list" data-i18n="navOnsen">온천 탐색</a>
+      <a href="#" data-feat="rotenburo" data-i18n="catRotenburo">🌿 노천탕</a>
+      <a href="#" data-feat="sauna" data-i18n="catSauna">🧖 사우나</a>
+      <a href="#" data-feat="family" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
       <a href="pages/about.html" data-i18n="navAbout">소개</a>
     </nav>
     <div class="header-tools">
@@ -1071,16 +1074,6 @@ body::before {
         </div>
       </div>
     </div>
-    <nav class="category-nav">
-      <div class="category-nav-inner">
-        <a href="#" data-nav="home" class="active" data-i18n="catHome">🏠 홈</a>
-        <a href="#" data-nav="list" data-i18n="catOnsen">♨️ 온천 탐색</a>
-        <a href="#" data-feat="rotenburo" data-i18n="catRotenburo">🌿 노천탕</a>
-        <a href="#" data-feat="sauna" data-i18n="catSauna">🧖 사우나</a>
-        <a href="#" data-feat="family" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
-        <a href="pages/about.html" data-i18n="catAbout">📖 소개</a>
-      </div>
-    </nav>
     <div class="home-layout">
       <div class="map-zone">
         <div class="map-frame">
@@ -1926,7 +1919,7 @@ const S = {
     load();applyTheme();
     document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-lang")===S.lang));
     document.querySelectorAll("[data-nav]").forEach(n=>n.addEventListener("click",e=>{e.preventDefault();go(n.getAttribute("data-nav"));}));
-    document.querySelectorAll(".category-nav a[data-feat]").forEach(n=>n.addEventListener("click",e=>{
+    document.querySelectorAll("[data-feat]").forEach(n=>n.addEventListener("click",e=>{
       e.preventDefault();
       S.fFeat=n.getAttribute("data-feat");S.fArea="all";S.fType="all";S.q="";
       go("list");
@@ -1961,6 +1954,6 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d89429eabc09e2',t:'MTc4NDQ1MjA3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
