@@ -435,76 +435,151 @@ body::before {
 
 
 
+
 /* ===== REDESIGNED DETAIL PAGE CSS ===== */
-.detail-top-card { display: flex; justify-content: space-between; align-items: center; gap: 18px; background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; padding: 22px 26px; box-shadow: var(--shadow); margin-bottom: 24px; flex-wrap: wrap; }
-[data-theme="dark"] .detail-top-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
-.top-rating-area { display: flex; flex-direction: column; gap: 6px; }
-.rating-badge-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.rating-stars { color: var(--gold); font-size: 20px; letter-spacing: 2px; }
-.rating-score { font-size: 22px; font-weight: 900; color: var(--burgundy); }
-.rating-count { font-size: 14px; font-weight: 700; color: var(--text-muted); }
-.rating-disclaimer { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
-.top-actions-area { display: flex; gap: 10px; flex-wrap: wrap; }
-.top-action-btn { padding: 11px 20px; border-radius: var(--radius-full); font-size: 13.5px; font-weight: 800; text-decoration: none; transition: all 150ms; display: inline-flex; align-items: center; gap: 6px; box-shadow: var(--shadow-sm); }
-.primary-btn { background: var(--wood-dark); color: var(--gold-light); border: 1.5px solid var(--gold); }
-.primary-btn:hover { background: var(--wood-mid); transform: translateY(-2px); box-shadow: var(--shadow); }
-.secondary-btn { background: rgba(201,169,110,0.16); color: var(--text); border: 1.5px solid var(--border); }
-.secondary-btn:hover { background: rgba(201,169,110,0.28); transform: translateY(-2px); }
+#detail-container { background: var(--cream); min-height: 100vh; padding-bottom: 60px; }
+[data-theme="dark"] #detail-container { background: var(--wood-mid); }
 
-.detail-gallery-card { background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 28px; }
-[data-theme="dark"] .detail-gallery-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
-.gallery-image-box { width: 100%; max-height: 500px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #0e0b08; position: relative; }
-.gallery-image-box img { width: 100%; height: auto; max-height: 500px; object-fit: cover; transition: transform 0.4s ease; }
-.gallery-image-box:hover img { transform: scale(1.02); }
-.gallery-info-bar { display: flex; align-items: center; gap: 10px; padding: 14px 22px; background: rgba(201,169,110,0.06); font-size: 13px; color: var(--text-muted); font-weight: 600; border-top: 1px solid var(--border-light); }
+.luxury-top-nav { max-width: 900px; margin: 0 auto; padding: 20px 20px 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.luxury-back-pill { background: #fff; border: 1.5px solid var(--border); color: var(--text); padding: 9px 20px; border-radius: 999px; font-size: 13.5px; font-weight: 800; cursor: pointer; transition: all 150ms; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(26,20,16,0.05); }
+.luxury-back-pill:hover { border-color: var(--gold); transform: translateX(-3px); box-shadow: 0 4px 12px rgba(201,169,110,0.18); background: rgba(201,169,110,0.06); }
+[data-theme="dark"] .luxury-back-pill { background: rgba(40,34,28,0.9); color: var(--cream); }
 
-.detail-card { background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; padding: 32px; box-shadow: 0 4px 22px rgba(26,20,16,0.07); margin-bottom: 26px; transition: border-color 0.2s ease; }
-[data-theme="dark"] .detail-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
-.detail-card:hover { border-color: var(--gold); }
-.card-header { margin-bottom: 20px; }
-.card-header h2 { font-size: 18px; font-weight: 900; color: var(--text); padding-bottom: 12px; border-bottom: 2px solid var(--border); position: relative; width: 100%; display: flex; align-items: center; gap: 10px; }
-.card-header h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 72px; height: 3px; background: linear-gradient(90deg, var(--gold) 0%, var(--burgundy) 100%); border-radius: 2px; }
-.card-divider { height: 1px; background: var(--border-light); margin: 28px 0; }
+.luxury-nav-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.luxury-action-pill { padding: 9px 18px; border-radius: 999px; font-size: 13px; font-weight: 800; text-decoration: none; transition: all 150ms; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(26,20,16,0.05); }
+.luxury-action-pill.primary { background: var(--wood-dark); color: var(--gold-light); border: 1.5px solid var(--gold); }
+.luxury-action-pill.primary:hover { background: var(--wood-mid); transform: translateY(-2px); box-shadow: 0 4px 14px rgba(201,169,110,0.25); }
+.luxury-action-pill.secondary { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
+.luxury-action-pill.secondary:hover { border-color: var(--gold); background: rgba(201,169,110,0.1); transform: translateY(-2px); }
+[data-theme="dark"] .luxury-action-pill.secondary { background: rgba(40,34,28,0.9); color: var(--cream); }
 
-.desc-content { font-size: 16px; color: var(--text); line-height: 1.95; letter-spacing: -0.01em; }
-.desc-content p { margin-bottom: 18px; text-align: justify; }
-.desc-content p:last-child { margin-bottom: 0; }
+.luxury-main-inner { max-width: 900px; margin: 0 auto; padding: 10px 20px 40px; }
 
-.recs-list { display: flex; flex-direction: column; gap: 12px; }
-.rec-item { display: flex; align-items: flex-start; gap: 14px; background: rgba(201,169,110,0.08); border-left: 4px solid var(--gold); border-radius: 10px; padding: 16px 18px; transition: all 150ms; }
-.rec-item:hover { background: rgba(201,169,110,0.14); transform: translateX(3px); }
-.rec-badge { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-.rec-text { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.6; }
+.luxury-header-card { background: #fff; border: 1px solid rgba(212,201,184,0.8); border-radius: 20px; padding: 28px 32px 24px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 24px; position: relative; overflow: hidden; }
+[data-theme="dark"] .luxury-header-card { background: rgba(38,32,24,0.9); border-color: rgba(70,56,40,0.8); }
+.luxury-header-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--gold) 0%, #8b1a2b 50%, var(--gold) 100%); }
 
-.data-table.spa-table .data-table-label { background: linear-gradient(135deg, #4a3623 0%, #2a2018 100%); color: #e8d0a0; }
-.inline-map-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--burgundy) !important; font-weight: 800; background: rgba(139,26,43,0.08); padding: 5px 12px; border-radius: var(--radius-full); transition: all 150ms; }
-.inline-map-btn:hover { background: var(--burgundy); color: #fff !important; text-decoration: none !important; }
+.luxury-meta-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.luxury-badge { background: linear-gradient(135deg, rgba(201,169,110,0.18) 0%, rgba(201,169,110,0.05) 100%); border: 1px solid rgba(201,169,110,0.5); color: var(--wood-dark); padding: 5px 14px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: 0.02em; }
+[data-theme="dark"] .luxury-badge { color: var(--gold-light); border-color: var(--gold-dark); }
 
-.map-address-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: rgba(201,169,110,0.08); border: 1px solid var(--border-light); border-radius: 12px; padding: 16px 20px; margin-top: 16px; }
-.map-address-text { font-size: 14.5px; color: var(--text); }
-.map-direct-btn { background: var(--burgundy); color: #fff; font-size: 13.5px; font-weight: 800; padding: 9px 18px; border-radius: var(--radius-full); text-decoration: none; transition: background 150ms; box-shadow: var(--shadow-sm); }
-.map-direct-btn:hover { background: var(--burgundy-light); transform: translateY(-1px); }
+.luxury-main-heading { font-size: 32px; font-weight: 900; color: var(--text); margin: 0 0 16px; line-height: 1.35; letter-spacing: -0.02em; }
 
-.detail-bottom-nav { text-align: center; margin: 38px 0 20px; }
-.detail-back-lg { padding: 16px 44px; font-size: 16.5px; font-weight: 800; border-radius: var(--radius-full); background: var(--wood-dark); color: var(--cream); border: 2px solid var(--gold); cursor: pointer; box-shadow: var(--shadow); transition: all 200ms; }
-.detail-back-lg:hover { background: var(--wood-mid); transform: translateY(-2px); box-shadow: var(--shadow-lg); color: var(--gold-light); }
+.luxury-rating-strip { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; background: rgba(201,169,110,0.08); border: 1px solid var(--border-light); border-radius: 14px; padding: 14px 20px; }
+.luxury-rating-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.luxury-rating-stars { color: #d97706; font-size: 20px; letter-spacing: 2px; }
+.luxury-rating-score { font-size: 22px; font-weight: 900; color: #8b1a2b; }
+[data-theme="dark"] .luxury-rating-score { color: #f87171; }
+.luxury-rating-count { font-size: 14px; font-weight: 700; color: var(--text-muted); }
+.luxury-rating-disc { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
+
+.luxury-showcase-wrap { border-radius: 20px; overflow: hidden; box-shadow: 0 12px 36px rgba(26,20,16,0.12); border: 1px solid var(--border); background: #120e0a; margin-bottom: 28px; }
+.luxury-showcase-imgbox { width: 100%; max-height: 480px; overflow: hidden; display: flex; justify-content: center; align-items: center; position: relative; }
+.luxury-showcase-imgbox img { width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block; transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.luxury-showcase-wrap:hover img { transform: scale(1.02); }
+.luxury-showcase-bar { background: rgba(245,240,232,0.98); padding: 12px 22px; font-size: 13px; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--border-light); }
+[data-theme="dark"] .luxury-showcase-bar { background: rgba(30,26,20,0.98); border-color: var(--wood-light); }
+
+.luxury-section-card { background: #fff; border: 1px solid rgba(212,201,184,0.8); border-radius: 20px; padding: 32px 36px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 26px; transition: border-color 0.2s ease; }
+[data-theme="dark"] .luxury-section-card { background: rgba(38,32,24,0.9); border-color: rgba(70,56,40,0.8); }
+.luxury-section-card:hover { border-color: var(--gold); }
+
+.luxury-sec-header { margin-bottom: 22px; }
+.luxury-sec-header h2 { font-size: 19px; font-weight: 900; color: var(--text); padding-bottom: 14px; border-bottom: 2px solid var(--border); position: relative; width: 100%; display: flex; align-items: center; gap: 10px; margin: 0; }
+.luxury-sec-header h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 78px; height: 3px; background: linear-gradient(90deg, var(--gold) 0%, #8b1a2b 100%); border-radius: 2px; }
+.luxury-divider { height: 1px; background: var(--border-light); margin: 28px 0; }
+
+.luxury-desc-content { font-size: 16px; color: var(--text); line-height: 1.95; letter-spacing: -0.01em; }
+.luxury-desc-content p { margin-bottom: 18px; text-align: justify; }
+.luxury-desc-content p:last-child { margin-bottom: 0; }
+
+.luxury-recs-list { display: flex; flex-direction: column; gap: 12px; }
+.luxury-rec-item { display: flex; align-items: flex-start; gap: 14px; background: linear-gradient(135deg, rgba(201,169,110,0.12) 0%, rgba(201,169,110,0.03) 100%); border-left: 4px solid #c9a96e; border-radius: 12px; padding: 16px 20px; transition: all 150ms; border-top: 1px solid rgba(201,169,110,0.2); border-right: 1px solid rgba(201,169,110,0.2); border-bottom: 1px solid rgba(201,169,110,0.2); }
+.luxury-rec-item:hover { background: linear-gradient(135deg, rgba(201,169,110,0.18) 0%, rgba(201,169,110,0.06) 100%); transform: translateX(4px); box-shadow: 0 4px 14px rgba(201,169,110,0.12); }
+.luxury-rec-badge { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.luxury-rec-text { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.65; }
+
+.luxury-table { display: flex; flex-direction: column; border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; background: #fff; }
+[data-theme="dark"] .luxury-table { background: rgba(30,26,20,0.9); }
+.luxury-table-row { display: flex; border-bottom: 1px solid var(--border); transition: background 150ms; }
+.luxury-table-row:last-child { border-bottom: none; }
+.luxury-table-row:hover { background: rgba(201,169,110,0.05); }
+.luxury-table-label { width: 140px; flex-shrink: 0; background: linear-gradient(135deg, rgba(201,169,110,0.16) 0%, rgba(201,169,110,0.06) 100%); padding: 14px 18px; font-size: 12.5px; font-weight: 800; color: var(--wood-dark); display: flex; align-items: center; line-height: 1.4; border-right: 1px solid var(--border-light); }
+[data-theme="dark"] .luxury-table-label { color: var(--gold-light); background: rgba(60,48,34,0.6); }
+.luxury-table-value { flex: 1; padding: 14px 18px; font-size: 14.5px; font-weight: 600; color: var(--text); display: flex; align-items: center; line-height: 1.6; }
+.luxury-table-value a { color: var(--link); text-decoration: none; font-weight: 700; }
+.luxury-table-value a:hover { color: #8b1a2b; text-decoration: underline; }
+
+.luxury-table.spa-data .luxury-table-label { background: linear-gradient(135deg, #3d2f20 0%, #221a12 100%); color: #edd8b0; border-right: 1px solid rgba(201,169,110,0.2); }
+
+.luxury-amenity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+.luxury-amenity-pill { background: #fff; border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 10px; text-align: center; transition: all 150ms; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+[data-theme="dark"] .luxury-amenity-pill { background: rgba(30,26,20,0.8); }
+.luxury-amenity-pill:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 6px 16px rgba(201,169,110,0.15); }
+.luxury-amenity-icon { font-size: 28px; line-height: 1; }
+.luxury-amenity-label { font-size: 13px; font-weight: 700; color: var(--text); }
+
+.luxury-tips-list { display: flex; flex-direction: column; gap: 12px; }
+.luxury-tip-card { display: flex; align-items: flex-start; gap: 14px; padding: 16px 20px; background: rgba(201,169,110,0.06); border: 1px solid var(--border-light); border-radius: 14px; transition: all 150ms; }
+.luxury-tip-card:hover { background: rgba(201,169,110,0.12); border-color: var(--gold); transform: translateX(3px); }
+.luxury-tip-icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(201,169,110,0.2); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.luxury-tip-text { font-size: 14.5px; color: var(--text); line-height: 1.7; font-weight: 600; margin-top: 2px; }
+
+.luxury-map-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; background: rgba(201,169,110,0.08); border: 1px solid var(--border-light); border-radius: 14px; padding: 16px 22px; margin-top: 16px; }
+.luxury-map-addr { font-size: 14.5px; color: var(--text); }
+.luxury-map-btn { background: #8b1a2b; color: #fff !important; font-size: 13.5px; font-weight: 800; padding: 10px 22px; border-radius: 999px; text-decoration: none !important; transition: background 150ms; box-shadow: 0 2px 8px rgba(139,26,43,0.25); display: inline-flex; align-items: center; gap: 6px; }
+.luxury-map-btn:hover { background: #a02035; transform: translateY(-1px); }
+
+.luxury-access-list { display: flex; flex-direction: column; gap: 10px; }
+.luxury-access-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; background: rgba(201,169,110,0.05); border-radius: 12px; border: 1px solid var(--border-light); }
+.luxury-access-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+.luxury-access-text { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.6; }
+
+.luxury-nearby-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.luxury-nearby-card { display: flex; gap: 14px; padding: 16px; background: #fff; border: 1.5px solid var(--border); border-radius: 16px; cursor: pointer; transition: all 200ms; }
+[data-theme="dark"] .luxury-nearby-card { background: rgba(30,26,20,0.9); }
+.luxury-nearby-card:hover { border-color: var(--gold); box-shadow: 0 6px 20px rgba(26,20,16,0.1); transform: translateY(-3px); }
+.luxury-nearby-thumb { width: 64px; height: 64px; border-radius: 14px; background: linear-gradient(135deg, var(--wood-light), var(--wood-dark)); display: flex; align-items: center; justify-content: center; font-size: 30px; flex-shrink: 0; border: 1px solid var(--gold); }
+.luxury-nearby-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.luxury-nearby-name { font-size: 15.5px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
+.luxury-nearby-meta { font-size: 13px; color: var(--text-muted); font-weight: 700; }
+
+.luxury-bottom-nav { text-align: center; margin: 40px 0 20px; }
+.luxury-back-btn-lg { padding: 16px 48px; font-size: 16.5px; font-weight: 800; border-radius: 999px; background: #1a1410; color: #f5f0e8; border: 2px solid #c9a96e; cursor: pointer; box-shadow: 0 6px 20px rgba(26,20,16,0.15); transition: all 200ms; }
+.luxury-back-btn-lg:hover { background: #2a2018; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,20,16,0.25); color: var(--gold-light); }
 
 @media (max-width: 767px) {
-  .detail-top-card { padding: 16px 18px; gap: 14px; }
-  .rating-score { font-size: 18px; }
-  .rating-stars { font-size: 16px; }
-  .top-actions-area { width: 100%; justify-content: stretch; }
-  .top-action-btn { flex: 1; justify-content: center; text-align: center; padding: 10px 12px; font-size: 12.5px; }
-  .detail-card { padding: 20px 16px; margin-bottom: 18px; border-radius: 14px; }
-  .card-header h2 { font-size: 16px; }
-  .desc-content { font-size: 15px; line-height: 1.8; }
-  .rec-item { padding: 12px 14px; gap: 10px; }
-  .rec-text { font-size: 14px; }
-  .map-address-bar { flex-direction: column; align-items: flex-start; padding: 14px; }
-  .map-direct-btn { width: 100%; text-align: center; margin-top: 6px; display: block; }
-  .detail-back-lg { width: 100%; padding: 14px 20px; font-size: 15px; }
+  .luxury-top-nav { padding: 14px 14px 8px; }
+  .luxury-back-pill { padding: 8px 16px; font-size: 12.5px; }
+  .luxury-nav-actions { width: 100%; }
+  .luxury-action-pill { flex: 1; justify-content: center; text-align: center; padding: 9px 12px; font-size: 12px; }
+  .luxury-main-inner { padding: 8px 14px 30px; }
+  .luxury-header-card { padding: 20px 18px 18px; border-radius: 16px; margin-bottom: 18px; }
+  .luxury-main-heading { font-size: 24px; margin: 0 0 12px; }
+  .luxury-rating-strip { padding: 12px 14px; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .luxury-rating-score { font-size: 18px; }
+  .luxury-rating-stars { font-size: 16px; }
+  .luxury-showcase-wrap { border-radius: 16px; margin-bottom: 20px; }
+  .luxury-showcase-imgbox img { max-height: 300px; }
+  .luxury-section-card { padding: 22px 18px; border-radius: 16px; margin-bottom: 18px; }
+  .luxury-sec-header h2 { font-size: 16.5px; padding-bottom: 10px; }
+  .luxury-desc-content { font-size: 15px; line-height: 1.8; }
+  .luxury-rec-item { padding: 14px; gap: 10px; }
+  .luxury-rec-text { font-size: 14px; }
+  .luxury-table-label { width: 105px; padding: 12px 12px; font-size: 11.5px; }
+  .luxury-table-value { padding: 12px 14px; font-size: 13.5px; }
+  .luxury-amenity-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .luxury-amenity-pill { padding: 12px 6px; }
+  .luxury-amenity-icon { font-size: 24px; }
+  .luxury-tip-card { padding: 14px; gap: 12px; }
+  .luxury-tip-icon { width: 34px; height: 34px; font-size: 16px; }
+  .luxury-tip-text { font-size: 13.5px; }
+  .luxury-map-bar { flex-direction: column; align-items: flex-start; padding: 14px; gap: 10px; }
+  .luxury-map-btn { width: 100%; justify-content: center; text-align: center; display: block; }
+  .luxury-back-btn-lg { width: 100%; padding: 14px 20px; font-size: 15px; }
 }
 /* ===== END REDESIGNED DETAIL PAGE CSS ===== */
+
 
 /* Rating bar */
 .rating-bar { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(201,169,110,0.10) 0%, rgba(139,26,43,0.06) 100%); border: 1.5px solid var(--gold); border-radius: 12px; padding: 10px 16px; margin-bottom: 16px; }
@@ -1513,7 +1588,7 @@ const S = {
     if(!wrap) return;
     const o=DATA.find(x=>x.id===id);
     if(!o){
-      wrap.innerHTML='<p style="padding:40px;text-align:center;">Not found</p>';
+      wrap.innerHTML='<p style="padding:60px;text-align:center;font-size:18px;">Not found</p>';
       return;
     }
     const lang=S.lang||"ko";
@@ -1532,77 +1607,63 @@ const S = {
 
     let h='';
 
-    // 1. Hero
+    // 1. Top Navigation Bar (Clean & compact, no wide dark box)
     h+=safe(function(){
-      const bgImg=o.image||"";
-      let s='<div class="detail-hero">';
-      if(bgImg){
-        s+='<div class="detail-hero-bg" style="background-image:url(\''+esc(bgImg)+'\')"></div>';
-      }
-      s+='<div class="detail-hero-inner">';
-      s+='<button class="detail-back" id="detail-back-btn">← '+esc(lang==="ko"?"뒤로가기":(lang==="ja"?"戻る":"Back"))+'</button>';
-      s+='<h1 class="detail-title">'+esc((o.name&&o.name[lang])||(o.name&&o.name.ko)||"")+'</h1>';
-      s+='<div class="detail-tags">';
-      s+='<span class="detail-tag">'+esc((o.area&&o.area[lang])||"")+'</span>';
-      s+='<span class="detail-tag">'+esc((o.type&&o.type[lang])||"")+'</span>';
-      s+='<span class="detail-tag">'+esc((o.price&&o.price[lang])||"")+'</span>';
-      s+='</div>';
-      s+='<div class="detail-hero-actions">';
+      let s='<div class="luxury-top-nav">';
+      s+='<button class="luxury-back-pill" id="luxury-back-btn">← '+esc(lang==="ko"?"온천 목록으로 돌아가기":(lang==="ja"?"一覧に戻る":"Back to List"))+'</button>';
+      s+='<div class="luxury-nav-actions">';
       if(o.website){
-        s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="detail-back" style="text-decoration:none;">';
-        s+=esc(lang==="ko"?"공식 사이트 →":(lang==="ja"?"公式サイト →":"Official Site →"))+'</a>';
+        s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill primary">🌐 '+esc(lang==="ko"?"공식 웹사이트":(lang==="ja"?"公式サイト":"Official Website"))+' ↗</a>';
       }
       if(o.googleMapsUrl){
-        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="detail-back" style="text-decoration:none;">📍 Google Maps</a>';
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill secondary">📍 Google Maps ↗</a>';
       }
       s+='</div>';
-      s+='</div></div>';
+      s+='</div>';
       return s;
     });
 
-    h+='<div class="detail-content">';
+    h+='<div class="luxury-main-inner">';
 
-    // 2. Top Overview Bar (Rating + Quick Actions)
+    // 2. Luxury Header Card (Title, Badges, Integrated Rating Strip)
     h+=safe(function(){
-      let s='<div class="detail-top-card">';
+      let s='<div class="luxury-header-card">';
+      s+='<div class="luxury-meta-tags">';
+      if(o.area&&o.area[lang]) s+='<span class="luxury-badge">📍 '+esc(o.area[lang])+'</span>';
+      if(o.type&&o.type[lang]) s+='<span class="luxury-badge">🏛️ '+esc(o.type[lang])+'</span>';
+      if(o.price&&o.price[lang]) s+='<span class="luxury-badge">💰 '+esc(o.price[lang])+'</span>';
+      s+='</div>';
       
-      // Rating Box
-      s+='<div class="top-rating-area">';
+      s+='<h1 class="luxury-main-heading">'+esc((o.name&&o.name[lang])||(o.name&&o.name.ko)||"")+'</h1>';
+      
+      s+='<div class="luxury-rating-strip">';
+      s+='<div class="luxury-rating-left">';
       if(o.rating){
         const stars='★'.repeat(Math.floor(o.rating))+'☆'.repeat(5-Math.floor(o.rating));
         const countLabel=lang==="ko"?"리뷰":(lang==="ja"?"レビュー":"reviews");
-        s+='<div class="rating-badge-row">';
-        s+='<span class="rating-stars">'+stars+'</span>';
-        s+='<span class="rating-score">'+o.rating+'</span>';
-        s+='<span class="rating-count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
-        s+='</div>';
+        s+='<span class="luxury-rating-stars">'+stars+'</span>';
+        s+='<span class="luxury-rating-score">'+o.rating+'</span>';
+        s+='<span class="luxury-rating-count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
+      } else {
+        s+='<span class="luxury-rating-score" style="font-size:16px;">NEW</span>';
       }
+      s+='</div>';
       const discLabel=lang==="ko"?"※ 평점 및 리뷰 수는 참고용이며 실시간 데이터와 상이할 수 있습니다."
         :(lang==="ja"?"※ 評価とレビュー数は参考用で、リアルタイムデータと異なる場合があります。"
         :"※ Ratings and review counts are for reference only and may differ from real-time data.");
-      s+='<div class="rating-disclaimer">'+esc(discLabel)+'</div>';
-      s+='</div>';
+      s+='<div class="luxury-rating-disc">'+esc(discLabel)+'</div>';
+      s+='</div>'; // end rating strip
 
-      // Quick Actions Box
-      s+='<div class="top-actions-area">';
-      if(o.website){
-        s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="top-action-btn primary-btn">🌐 '+esc(lang==="ko"?"공식 웹사이트":(lang==="ja"?"公式サイト":"Official Website"))+' →</a>';
-      }
-      if(o.googleMapsUrl){
-        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="top-action-btn secondary-btn">📍 Google Maps</a>';
-      }
-      s+='</div>';
-
-      s+='</div>';
+      s+='</div>'; // end header card
       return s;
     });
 
-    // 3. Gallery (Single representative image card with elegant rounded styling)
+    // 3. Master Showcase Photo Card (ONLY ONE photo representation, zero duplication)
     h+=safe(function(){
       const src=o.image||"";
       if(!src)return "";
-      let s='<div class="detail-gallery-card">';
-      s+='<div class="gallery-image-box">';
+      let s='<div class="luxury-showcase-wrap">';
+      s+='<div class="luxury-showcase-imgbox">';
       s+='<img src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';">';
       s+='</div>';
       const disc = lang==="ko"
@@ -1610,7 +1671,7 @@ const S = {
         : (lang==="ja"
           ? "※ この画像はイメージです。実際の施設とは異なる場合があります。"
           : "※ This image is for illustrative purposes only and may differ from the actual facility.");
-      s+='<div class="gallery-info-bar"><span class="gd-icon">ℹ️</span><span class="gd-text">'+esc(disc)+'</span></div>';
+      s+='<div class="luxury-showcase-bar"><span style="font-size:16px;">ℹ️</span><span>'+esc(disc)+'</span></div>';
       s+='</div>';
       return s;
     });
@@ -1624,11 +1685,11 @@ const S = {
       }
       if(!desc && !recs.length) return "";
 
-      let s='<div class="detail-card">';
+      let s='<div class="luxury-section-card">';
       if(desc){
-        s+='<div class="card-header"><h2>📖 '+esc(lang==="ko"?"온천 소개 및 상세 설명":(lang==="ja"?"施設のご紹介・詳細説明":"Overview & Detailed Description"))+'</h2></div>';
+        s+='<div class="luxury-sec-header"><h2>📖 '+esc(lang==="ko"?"온천 소개 및 상세 설명":(lang==="ja"?"施設のご紹介・詳細説明":"Overview & Detailed Description"))+'</h2></div>';
         const paragraphs=br(desc);
-        s+='<div class="desc-content">';
+        s+='<div class="luxury-desc-content">';
         paragraphs.forEach(function(p){
           s+='<p>'+esc(p)+'</p>';
         });
@@ -1636,13 +1697,13 @@ const S = {
       }
 
       if(recs.length){
-        if(desc) s+='<div class="card-divider"></div>';
-        s+='<div class="card-header" style="margin-bottom:16px;"><h2>✨ '+esc(lang==="ko"?"추천 포인트 & 하이라이트":(lang==="ja"?"おすすめポイント＆ハイライト":"Highlights & Recommend Points"))+'</h2></div>';
-        s+='<div class="recs-list">';
+        if(desc) s+='<div class="luxury-divider"></div>';
+        s+='<div class="luxury-sec-header" style="margin-bottom:16px;"><h2>✨ '+esc(lang==="ko"?"추천 포인트 & 하이라이트":(lang==="ja"?"おすすめポイント＆ハイライト":"Highlights & Recommend Points"))+'</h2></div>';
+        s+='<div class="luxury-recs-list">';
         const badgeIcons = ["👑", "🌟", "♨️", "💎", "👍"];
         recs.slice(0,5).forEach(function(pt, i){
           const icon = badgeIcons[i % badgeIcons.length];
-          s+='<div class="rec-item"><span class="rec-badge">'+icon+'</span><div class="rec-text">'+esc(pt)+'</div></div>';
+          s+='<div class="luxury-rec-item"><span class="luxury-rec-badge">'+icon+'</span><div class="luxury-rec-text">'+esc(pt)+'</div></div>';
         });
         s+='</div>';
       }
@@ -1666,32 +1727,28 @@ const S = {
       if(o.website){
         rows.push([lang==="ko"?"공식 HP":(lang==="ja"?"公式HP":"Website"), '<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer">'+esc(o.website)+'</a>']);
       }
-      if(o.googleMapsUrl){
-        const mapBtnText = lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで直接見る ↗":"View on Google Maps ↗");
-        rows.push([lang==="ko"?"지도 링크":(lang==="ja"?"地図リンク":"Map Link"), '<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="inline-map-btn">📍 '+mapBtnText+'</a>']);
-      }
 
-      let s='<div class="detail-card">';
-      s+='<div class="card-header"><h2>📋 '+esc(lang==="ko"?"기본 시설 정보":(lang==="ja"?"基本施設情報":"Basic Information"))+'</h2></div>';
-      s+='<div class="data-table">';
+      let s='<div class="luxury-section-card">';
+      s+='<div class="luxury-sec-header"><h2>📋 '+esc(lang==="ko"?"기본 시설 정보":(lang==="ja"?"基本施設情報":"Basic Information"))+'</h2></div>';
+      s+='<div class="luxury-table">';
       rows.forEach(function(row){
         if(!row[1])return;
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(row[0])+'</div><div class="data-table-value">'+row[1]+'</div></div>';
+        s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(row[0])+'</div><div class="luxury-table-value">'+row[1]+'</div></div>';
       });
       s+='</div>';
 
-      // Spring Data subsection inside same card
+      // Spring Data subsection
       if(o.springData && o.springData[lang]){
         const sp=o.springData[lang];
-        s+='<div class="card-divider"></div>';
-        s+='<div class="card-header" style="margin-bottom:16px;"><h2>♨️ '+esc(lang==="ko"?"온천수 및 수질 데이터":(lang==="ja"?"温泉データ・泉質情報":"Hot Spring Data & Quality"))+'</h2></div>';
-        s+='<div class="data-table spa-table">';
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"원천명":(lang==="ja"?"源泉名":"Source"))+'</div><div class="data-table-value">'+esc(sp.source)+'</div></div>';
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"수질 (泉質)":(lang==="ja"?"泉質":"Quality"))+'</div><div class="data-table-value">'+esc(sp.quality)+'</div></div>';
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"온도 (泉温)":(lang==="ja"?"泉温":"Temp"))+'</div><div class="data-table-value">'+esc(sp.temp)+'</div></div>';
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"주요 효능":(lang==="ja"?"効能":"Benefits"))+'</div><div class="data-table-value">'+esc(sp.benefits)+'</div></div>';
+        s+='<div class="luxury-divider"></div>';
+        s+='<div class="luxury-sec-header" style="margin-bottom:16px;"><h2>♨️ '+esc(lang==="ko"?"온천수 및 수질 데이터":(lang==="ja"?"温泉データ・泉質情報":"Hot Spring Data & Quality"))+'</h2></div>';
+        s+='<div class="luxury-table spa-data">';
+        s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(lang==="ko"?"원천명":(lang==="ja"?"源泉名":"Source"))+'</div><div class="luxury-table-value">'+esc(sp.source)+'</div></div>';
+        s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(lang==="ko"?"수질 (泉質)":(lang==="ja"?"泉質":"Quality"))+'</div><div class="luxury-table-value">'+esc(sp.quality)+'</div></div>';
+        s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(lang==="ko"?"온도 (泉温)":(lang==="ja"?"泉温":"Temp"))+'</div><div class="luxury-table-value">'+esc(sp.temp)+'</div></div>';
+        s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(lang==="ko"?"주요 효능":(lang==="ja"?"効能":"Benefits"))+'</div><div class="luxury-table-value">'+esc(sp.benefits)+'</div></div>';
         if(sp.features&&sp.features.length){
-          s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"특징 및 설비":(lang==="ja"?"特徴・設備":"Features"))+'</div><div class="data-table-value">'+esc(sp.features.join(" / "))+'</div></div>';
+          s+='<div class="luxury-table-row"><div class="luxury-table-label">'+esc(lang==="ko"?"특징 및 설비":(lang==="ja"?"特徴・設備":"Features"))+'</div><div class="luxury-table-value">'+esc(sp.features.join(" / "))+'</div></div>';
         }
         s+='</div>';
       }
@@ -1730,25 +1787,25 @@ const S = {
       }
       if(!hasAm && !tips.length) return "";
 
-      let s='<div class="detail-card">';
+      let s='<div class="luxury-section-card">';
       if(hasAm){
-        s+='<div class="card-header"><h2>🧴 '+esc(lang==="ko"?"보유 시설 및 어메니티":(lang==="ja"?"館内設備・アメニティ":"Amenities & Facilities"))+'</h2></div>';
-        s+='<div class="amenity-grid">';
+        s+='<div class="luxury-sec-header"><h2>🧴 '+esc(lang==="ko"?"보유 시설 및 어메니티":(lang==="ja"?"館内設備・アメニティ":"Amenities & Facilities"))+'</h2></div>';
+        s+='<div class="luxury-amenity-grid">';
         o.amenities.forEach(function(am){
           const info=amMap[am];
           if(!info)return;
           const label=info[lang]||info.ko;
-          s+='<div class="amenity-item"><span class="amenity-icon">'+info.icon+'</span><span class="amenity-label">'+esc(label)+'</span></div>';
+          s+='<div class="luxury-amenity-pill"><span class="luxury-amenity-icon">'+info.icon+'</span><span class="luxury-amenity-label">'+esc(label)+'</span></div>';
         });
         s+='</div>';
       }
 
       if(tips.length){
-        if(hasAm) s+='<div class="card-divider"></div>';
-        s+='<div class="card-header" style="margin-bottom:16px;"><h2>💡 '+esc(lang==="ko"?"방문 및 이용 팁":(lang==="ja"?"ご利用のヒント＆マナー":"Visitor Tips & Etiquette"))+'</h2></div>';
-        s+='<div class="tip-list">';
+        if(hasAm) s+='<div class="luxury-divider"></div>';
+        s+='<div class="luxury-sec-header" style="margin-bottom:16px;"><h2>💡 '+esc(lang==="ko"?"방문 및 이용 팁":(lang==="ja"?"ご利用のヒント＆マナー":"Visitor Tips & Etiquette"))+'</h2></div>';
+        s+='<div class="luxury-tips-list">';
         tips.forEach(function(tip){
-          s+='<div class="tip-item"><span class="tip-icon">'+tip.icon+'</span><span class="tip-text">'+esc(tip.text)+'</span></div>';
+          s+='<div class="luxury-tip-card"><span class="luxury-tip-icon">'+tip.icon+'</span><div class="luxury-tip-text">'+esc(tip.text)+'</div></div>';
         });
         s+='</div>';
       }
@@ -1762,28 +1819,28 @@ const S = {
       if(!addr)return "";
       const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
       
-      let s='<div class="detail-card">';
-      s+='<div class="card-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
+      let s='<div class="luxury-section-card">';
+      s+='<div class="luxury-sec-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
       
-      s+='<div class="map-embed-wrap">';
-      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy"></iframe>';
+      s+='<div style="border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 2px 10px rgba(0,0,0,0.06); width:100%;">';
+      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" style="width:100%; height:380px; border:0; display:block;"></iframe>';
       s+='</div>';
 
-      s+='<div class="map-address-bar">';
-      s+='<div class="map-address-text"><strong>'+esc(lang==="ko"?"주소":(lang==="ja"?"住所":"Address"))+':</strong> '+esc(addr)+'</div>';
+      s+='<div class="luxury-map-bar">';
+      s+='<div class="luxury-map-addr"><strong>'+esc(lang==="ko"?"📍 주소":(lang==="ja"?"📍 住所":"📍 Address"))+':</strong> '+esc(addr)+'</div>';
       if(o.googleMapsUrl){
-        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="map-direct-btn">📍 '+esc(lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで開く ↗":"Open in Google Maps ↗"))+'</a>';
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-map-btn">📍 '+esc(lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで直接見る ↗":"View on Google Maps ↗"))+'</a>';
       }
       s+='</div>';
 
       const ac=(o.access&&o.access[lang])||{};
       if(ac.parking||ac.shuttle||ac.highway){
-        s+='<div class="card-divider" style="margin-top:16px; margin-bottom:20px;"></div>';
-        s+='<div class="card-header" style="margin-bottom:14px;"><h3 style="font-size:15px; font-weight:800; color:var(--text);">🚗 '+esc(lang==="ko"?"주차 및 교통 접근성":(lang==="ja"?"駐車場・交通アクセス":"Parking & Transit Info"))+'</h3></div>';
-        s+='<div class="access-list">';
-        if(ac.parking)s+='<div class="access-item"><span class="access-icon">🅿️</span><span class="access-text">'+esc(ac.parking)+'</span></div>';
-        if(ac.shuttle)s+='<div class="access-item"><span class="access-icon">🚌</span><span class="access-text">'+esc(ac.shuttle)+'</span></div>';
-        if(ac.highway)s+='<div class="access-item"><span class="access-icon">🚗</span><span class="access-text">'+esc(ac.highway)+'</span></div>';
+        s+='<div class="luxury-divider" style="margin-top:22px; margin-bottom:20px;"></div>';
+        s+='<div class="luxury-sec-header" style="margin-bottom:14px;"><h3 style="font-size:16px; font-weight:900; color:var(--text); margin:0;">🚗 '+esc(lang==="ko"?"주차 및 교통 접근성":(lang==="ja"?"駐車場・交通アクセス":"Parking & Transit Info"))+'</h3></div>';
+        s+='<div class="luxury-access-list">';
+        if(ac.parking)s+='<div class="luxury-access-item"><span class="luxury-access-icon">🅿️</span><span class="luxury-access-text">'+esc(ac.parking)+'</span></div>';
+        if(ac.shuttle)s+='<div class="luxury-access-item"><span class="luxury-access-icon">🚌</span><span class="luxury-access-text">'+esc(ac.shuttle)+'</span></div>';
+        if(ac.highway)s+='<div class="luxury-access-item"><span class="luxury-access-icon">🚗</span><span class="luxury-access-text">'+esc(ac.highway)+'</span></div>';
         s+='</div>';
       }
 
@@ -1798,14 +1855,14 @@ const S = {
       const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
       
-      let s='<div class="detail-card">';
-      s+='<div class="card-header"><h2>♨️ '+esc(lang==="ko"?"주변 추천 온천 시설":(lang==="ja"?"周辺の人気の温泉・銭湯":"Nearby Hot Springs in the Same Area"))+'</h2></div>';
-      s+='<p style="font-size:14px;color:var(--text-light);margin-bottom:18px;">'+esc(lang==="ko"?"같은 지역의 다른 인기 온천 시설도 함께 둘러보시고 비교해 보세요.":(lang==="ja"?"同じ地域の他の人気温泉・銭湯施設もあわせてご覧ください。":"Explore other highly rated hot spring facilities nearby."))+'</p>';
-      s+='<div class="nearby-grid">';
+      let s='<div class="luxury-section-card">';
+      s+='<div class="luxury-sec-header"><h2>♨️ '+esc(lang==="ko"?"주변 추천 온천 시설":(lang==="ja"?"周辺の人気の温泉・銭湯":"Nearby Hot Springs in the Same Area"))+'</h2></div>';
+      s+='<p style="font-size:14.5px; color:var(--text-light); margin-bottom:18px;">'+esc(lang==="ko"?"같은 지역의 다른 인기 온천 시설도 함께 둘러보시고 비교해 보세요.":(lang==="ja"?"同じ地域の他の人気温泉・銭湯施設もあわせてご覧ください。":"Explore other highly rated hot spring facilities nearby."))+'</p>';
+      s+='<div class="luxury-nearby-grid">';
       nearby.forEach(function(n){
-        s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
-        s+='<div class="nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
-        s+='<div class="nearby-info"><div class="nearby-name">'+esc((n.name&&n.name[lang])||"")+'</div><div class="nearby-meta">'+esc((n.area&&n.area[lang])||"")+' · '+esc((n.price&&n.price[lang])||"")+'</div></div>';
+        s+='<div class="luxury-nearby-card" data-nid="'+esc(n.id)+'">';
+        s+='<div class="luxury-nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
+        s+='<div class="luxury-nearby-info"><div class="luxury-nearby-name">'+esc((n.name&&n.name[lang])||"")+'</div><div class="luxury-nearby-meta">'+esc((n.area&&n.area[lang])||"")+' · '+esc((n.price&&n.price[lang])||"")+'</div></div>';
         s+='</div>';
       });
       s+='</div></div>';
@@ -1814,25 +1871,25 @@ const S = {
 
     // 9. Back Button at Bottom
     h+=safe(function(){
-      let s='<div class="detail-bottom-nav">';
-      s+='<button class="detail-back-lg" id="detail-back-btn-lg">← '+esc(lang==="ko"?"온천 목록으로 돌아가기":(lang==="ja"?"一覧に戻る":"Back to List"))+'</button>';
+      let s='<div class="luxury-bottom-nav">';
+      s+='<button class="luxury-back-btn-lg" id="luxury-back-btn-lg">← '+esc(lang==="ko"?"온천 목록으로 돌아가기":(lang==="ja"?"一覧に戻る":"Back to List"))+'</button>';
       s+='</div>';
       return s;
     });
 
     // 10. Ad Slot
-    h+='<div class="ad-slot ad-detail-top" style="margin-top:12px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
+    h+='<div class="ad-slot ad-detail-top" style="margin-top:10px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
 
-    h+='</div>';
+    h+='</div>'; // end luxury-main-inner
 
     wrap.innerHTML=h;
 
-    const backBtn=wrap.querySelector("#detail-back-btn");
+    const backBtn=wrap.querySelector("#luxury-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
-    const backBtnLg=wrap.querySelector("#detail-back-btn-lg");
+    const backBtnLg=wrap.querySelector("#luxury-back-btn-lg");
     if(backBtnLg) backBtnLg.addEventListener("click",function(){go("list");});
 
-    wrap.querySelectorAll(".nearby-item").forEach(function(el){
+    wrap.querySelectorAll(".luxury-nearby-card").forEach(function(el){
       el.addEventListener("click",function(){
         const nid=this.getAttribute("data-nid");
         if(nid) go("detail",{id:nid});
@@ -1913,5 +1970,5 @@ fetch('data.json?v=5.3')
   });
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1dcc73d4a1e8eb8',t:'MTc4NDQ5NjExMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1dcd9550c6f8eb8',t:'MTc4NDQ5Njg1Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
