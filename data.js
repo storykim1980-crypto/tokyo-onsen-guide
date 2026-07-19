@@ -15491,3 +15491,63 @@ const IMAGE_MAP = {
     "./images/autumn-leaves-onsen.jpg"
   ]
 };
+
+const WISHES = [
+  {icon:"🌿",filter:"rotenburo",title:{ko:"노천탕이 멋진!",en:"Stunning Open-air Baths",ja:"露天風呂が素敵！"},desc:{ko:"별을 본 채 느긋하게 즐기는 개방적인 노천탕과 정취 있는 바위풍욕, 정원 노천탕 등 멋진 노천탕이 있는 온천을 소개합니다.",en:"Enjoy open-air baths under the stars, atmospheric rock baths, and garden rotenburo.",ja:"星を見ながらゆっくり楽しめる開放的な露天風呂と情緒ある岩風呂、庭園露天風呂など素敵な露天風呂がある温泉を紹介します。"}},
+  {icon:"✈️",filter:"daytrip",title:{ko:"기분은 미니 온천 여행♪",en:"Feel Like a Hot Spring Trip",ja:"気分はミニ温泉旅行♪"},desc:{ko:"퇴근길에 잠시 들러 기분 전환할 수 있는 곳. 도심 속에서 온천 여행 분위기를 만끽할 수 있는 곳을 소개합니다.",en:"Stop by after work for a quick refresh. Enjoy an onsen trip atmosphere in the city.",ja:"退勤後に立ち寄って気分転換できる場所。都会の中で温泉旅行気分を満喫できる場所を紹介します。"}},
+  {icon:"💆",filter:"relaxation",title:{ko:"에스테 메뉴가 충실",en:"Rich Esthetic Menu",ja:"エステメニューが充実"},desc:{ko:"마사지와 페이셜, 전신 케어 등 몸과 마음이 힐링할 수 있는 메뉴가 충실한 스파를 소개합니다.",en:"Spas with massages, facials, and full-body care for complete healing.",ja:"マッサージとフェイシャル、全身ケアなど心身が癒せるメニューが充実したスパを紹介します。"}},
+  {icon:"🌃",filter:"night",title:{ko:"흑탕에 잠기다",en:"Immerse in Black Water",ja:"黒湯に浸かる"},desc:{ko:"지하 1,500m 이상에서 끌어올린 도쿄 온천에는 고대 식물이 분필된 성분이 녹아 들어 검은색 온천수가 됩니다.",en:"Tokyo onsen drawn from deep underground contains dissolved ancient plant matter, creating black water.",ja:"地下1,500m以上から汲み上げた東京温泉には古代植物が分解された成分が溶け込み、黒い温泉水になります。"}},
+  {icon:"🌙",filter:"night",title:{ko:"심야 체류 가능한 스파",en:"Late-night Stay Spa",ja:"深夜滞在可能なスパ"},desc:{ko:"온천을 즐긴 후 늦은 전철을 타고 귀가하는 것은 조금 힘듭니다. 넓은 휴게실에서 아침까지 체류할 수 있는 스파를 소개합니다.",en:"Too tired to catch the last train after bathing? Spas with spacious rest areas for overnight stays.",ja:"温泉を楽しんだ後遅い電車に乗って帰るのは少し大変です。広い休憩室で朝まで滞在できるスパを紹介します。"}},
+  {icon:"🪨",filter:"ganbanyoku",title:{ko:"암반욕으로 건강하게!",en:"Healthy with Bedrock Bath!",ja:"岩盤浴で健康に！"},desc:{ko:"천연석 암반욕으로 땀을 흘리며 신진대사를 활성화합니다. 대형 시설에서는 추가 요금으로 암반욕도 즐길 수 있습니다.",en:"Activate metabolism by sweating in natural stone bedrock baths. Available at large facilities for an extra fee.",ja:"天然石の岩盤浴で汗を流しながら新陳代謝を活性化します。大型施設では追加料金で岩盤浴も楽しめます。"}},
+  {icon:"🏮",filter:"sento",title:{ko:"옛 정취가 나는 센토",en:"Nostalgic Sento",ja:"昔の情緒が残る銭湯"},desc:{ko:"에도 시대부터 이어지는 역사 있는 건축물도 있으며, 현지인들의 웃음소리가 들리는 정겨운 목욕탕을 소개합니다.",en:"Historic buildings from the Edo period and friendly local bathhouses full of laughter.",ja:"江戸時代から続く歴史ある建築物もあり、地元の人々の笑い声が聞こえる情緒ある銭湯を紹介します。"}},
+  {icon:"🍺",filter:"restaurant",title:{ko:"당일치기 온천으로 숙녀화·연회!",en:"Day-trip Onsen for Parties!",ja:"日帰り温泉で女子会・宴会！"},desc:{ko:"온천에서 땀을 흘리고 차가운 맥주로 거봐! 개인실이나 대여, 연회 플랜이 있는 당일치기 온천을 소개합니다.",en:"Sweat in the onsen and cool down with cold beer! Day-trip onsen with private rooms and party plans.",ja:"温泉で汗を流して冷えたビールで乾杯！個室や貸切、宴会プランがある日帰り温泉を紹介します。"}}
+];
+
+const TYPES = [
+  {id:"all",ko:"전체",en:"All",ja:"全て"},
+  {id:"천연 온천",ko:"천연 온천",en:"Natural Hot Spring",ja:"天然温泉"},
+  {id:"도심형 스파",ko:"도심형 스파",en:"Urban Spa",ja:"都市型スパ"},
+  {id:"도심 스파",ko:"도심 스파",en:"Urban Spa",ja:"都市スパ"},
+  {id:"슈퍼 센토",ko:"슈퍼 센토",en:"Super Sento",ja:"スーパー銭湯"},
+  {id:"전통 센토",ko:"전통 센토",en:"Traditional Sento",ja:"伝統銭湯"},
+  {id:"온천 여관",ko:"온천 여관",en:"Hot Spring Inn",ja:"温泉旅館"},
+  {id:"테마파크",ko:"테마파크",en:"Theme Park",ja:"テーマパーク"},
+  {id:"온천 마을",ko:"온천 마을",en:"Onsen Village",ja:"温泉郷"}
+];
+
+const FEATS = [
+  {id:"all",ko:"전체",en:"All",ja:"全て"},
+  {id:"rotenburo",ko:"노천탕",en:"Open-air bath",ja:"露天風呂"},
+  {id:"sauna",ko:"사우나",en:"Sauna",ja:"サウナ"},
+  {id:"family",ko:"가족",en:"Family",ja:"家族"},
+  {id:"night",ko:"심야",en:"Late night",ja:"深夜"},
+  {id:"restaurant",ko:"식사",en:"Dining",ja:"食事"},
+  {id:"nature",ko:"자연",en:"Nature",ja:"自然"},
+  {id:"ganbanyoku",ko:"암반욕",en:"Bedrock bath",ja:"岩盤浴"},
+  {id:"retro",ko:"레트로",en:"Retro",ja:"レトロ"},
+  {id:"local",ko:"지역 밀착",en:"Local",ja:"地域密着"},
+  {id:"cheap",ko:"저렴",en:"Affordable",ja:"リーズナブル"},
+  {id:"daytrip",ko:"당일치기",en:"Day trip",ja:"日帰り"},
+  {id:"sento",ko:"센토",en:"Sento",ja:"銭湯"},
+  {id:"relaxation",ko:"휴식",en:"Relaxation",ja:"リラクゼーション"},
+  {id:"yukata",ko:"유카타",en:"Yukata",ja:"浴衣"},
+  {id:"quiet",ko:"조용",en:"Quiet",ja:"静か"},
+  {id:"tattoo",ko:"타투 OK",en:"Tattoo OK",ja:"タトゥーOK"},
+  {id:"history",ko:"역사",en:"Historic",ja:"歴史"},
+  {id:"valley",ko:"계곡",en:"Valley",ja:"渓谷"},
+  {id:"garden",ko:"정원",en:"Garden",ja:"庭園"},
+  {id:"pool",ko:"풀",en:"Pool",ja:"プール"},
+  {id:"ocean",ko:"바다",en:"Ocean",ja:"海"}
+];
+
+const FEATURES = {
+  "ko": {
+    "rotenburo":"노천탕","sauna":"사우나","family":"가족","yukata":"유카타","night":"심야","sento":"센토","relaxation":"휴식","quiet":"조용","tattoo":"타투 OK","retro":"레트로","local":"지역 밀착","cheap":"저렴","nature":"자연","daytrip":"당일치기","valley":"계곡","history":"역사","restaurant":"식사","ganbanyoku":"암반욕","garden":"정원","pool":"풀","ocean":"바다","natural_spring":"천연 온천","barrier_free":"배리어프리","cafe":"카페","men_only":"남성 전용","24h":"24시간","loyly":"로우류","adults_only":"성인 전용","workspace":"워킹 스페이스","rock_bath":"암반욕","bowling":"볼링","manga":"만화","hybrid":"하이브리드","steam":"스팀","business":"비즈니스","rock_bath_free":"묵 암반욕","modern":"모던","clean":"청결","rest_area":"휴게 공간","parking":"주차장","yugawara":"유가와라 온천","shopping":"쇼핑","stay":"숙박","chain":"체인","spa_hotel":"스파 호텔","massage":"마사지","station_near":"역세권","events":"이벤트","park":"공원","shuttle":"셔틀 버스","forest":"숲","source_flow":"원천 카케나가시","renovated":"리노베이션","wooden":"목조","historic":"역사 깊은","art":"예술","photo_ok":"사진 가능","black_water":"흑탕","skytree_view":"스카이트리 뷰","therapy":"치료","oasis":"오아시스","nano_water":"나노 물","tatami":"다다미","unique":"독특","theme":"테마","warm":"따뜻한","refreshing":"청량한","varied_temps":"다양한 온도"
+  },
+  "en": {
+    "rotenburo":"Open-air bath","sauna":"Sauna","family":"Family","yukata":"Yukata","night":"Late night","sento":"Sento","relaxation":"Relaxation","quiet":"Quiet","tattoo":"Tattoo OK","retro":"Retro","local":"Local","cheap":"Affordable","nature":"Nature","daytrip":"Day trip","valley":"Valley","history":"Historic","restaurant":"Dining","ganbanyoku":"Bedrock bath","garden":"Garden","pool":"Pool","ocean":"Ocean","natural_spring":"Natural spring","barrier_free":"Barrier-free","cafe":"Cafe","men_only":"Men only","24h":"24 hours","loyly":"Löyly","adults_only":"Adults only","workspace":"Workspace","rock_bath":"Rock bath","bowling":"Bowling","manga":"Manga","hybrid":"Hybrid","steam":"Steam","business":"Business","rock_bath_free":"Free rock bath","modern":"Modern","clean":"Clean","rest_area":"Rest area","parking":"Parking","yugawara":"Yugawara spring","shopping":"Shopping","stay":"Stay","chain":"Chain","spa_hotel":"Spa hotel","massage":"Massage","station_near":"Near station","events":"Events","park":"Park","shuttle":"Shuttle bus","forest":"Forest","source_flow":"Source-flowing","renovated":"Renovated","wooden":"Wooden","historic":"Historic","art":"Art","photo_ok":"Photos OK","black_water":"Black water","skytree_view":"Skytree view","therapy":"Therapy","oasis":"Oasis","nano_water":"Nano water","tatami":"Tatami","unique":"Unique","theme":"Theme","warm":"Warm","refreshing":"Refreshing","varied_temps":"Various temps"
+  },
+  "ja": {
+    "rotenburo":"露天風呂","sauna":"サウナ","family":"家族","yukata":"浴衣","night":"深夜","sento":"銭湯","relaxation":"リラクゼーション","quiet":"静か","tattoo":"タトゥーOK","retro":"レトロ","local":"地域密着","cheap":"リーズナブル","nature":"自然","daytrip":"日帰り","valley":"渓谷","history":"歴史","restaurant":"食事","ganbanyoku":"岩盤浴","garden":"庭園","pool":"プール","ocean":"海","natural_spring":"天然温泉","barrier_free":"バリアフリー","cafe":"カフェ","men_only":"男性専用","24h":"24時間","loyly":"ロウリュ","adults_only":"大人限定","workspace":"ワーキングスペース","rock_bath":"岩盤浴","bowling":"ボウリング","manga":"漫画","hybrid":"ハイブリッド","steam":"スチーム","business":"ビジネス","rock_bath_free":"無料岩盤浴","modern":"モダン","clean":"清潔","rest_area":"休憩スペース","parking":"駐車場","yugawara":"湯河原温泉","shopping":"ショッピング","stay":"宿泊","chain":"チェーン","spa_hotel":"スパホテル","massage":"マッサージ","station_near":"駅近","events":"イベント","park":"公園","shuttle":"シャトルバス","forest":"森","source_flow":"源泉かけ流し","renovated":"リノベーション","wooden":"木造","historic":"歴史深い","art":"アート","photo_ok":"写真OK","black_water":"黒湯","skytree_view":"スカイツリービュー","therapy":"湯治","oasis":"オアシス","nano_water":"ナノ水","tatami":"畳","unique":"独特","theme":"テーマ","warm":"温かい","refreshing":"清涼","varied_temps":"多彩な温度"
+  }
+};
