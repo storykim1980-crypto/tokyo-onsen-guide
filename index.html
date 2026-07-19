@@ -595,6 +595,334 @@ body::before {
 .time-item .tm-title { font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
 .time-item .tm-desc { font-size: 13px; color: var(--text-light); }
 @media (min-width: 768px) { .season-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ===== LUXURY DESIGN REFRESH v6 ===== */
+.mobile-menu .menu-panel {
+  background: rgba(250,247,242,0.98);
+  border-left: 3px solid var(--gold);
+  box-shadow: -8px 0 40px rgba(26,20,16,0.25);
+}
+[data-theme="dark"] .mobile-menu .menu-panel {
+  background: rgba(35,30,24,0.98);
+}
+.menu-header {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.menu-nav a {
+  padding: 16px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  background: rgba(201,169,110,0.04);
+  border: 1px solid transparent;
+  transition: all 200ms ease;
+}
+.menu-nav a:hover {
+  background: rgba(201,169,110,0.12);
+  border-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.detail-section {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--cream-panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(26,20,16,0.06);
+}
+[data-theme="dark"] .detail-section {
+  background: rgba(40,34,28,0.85);
+  border-color: var(--wood-light);
+}
+.detail-section h2 {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+.detail-section h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 22px;
+  background: linear-gradient(180deg, var(--gold) 0%, var(--burgundy) 100%);
+  border-radius: 3px;
+}
+.detail-section h2::after {
+  display: none;
+}
+
+.detail-text {
+  font-size: 15.5px;
+  line-height: 2.0;
+  color: var(--text-light);
+}
+.detail-text p {
+  margin-bottom: 14px;
+}
+
+.tip-item {
+  padding: 14px 16px;
+  background: rgba(201,169,110,0.05);
+  border: 1.5px solid var(--border-light);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: all 150ms;
+}
+.tip-item:hover {
+  background: rgba(201,169,110,0.1);
+  border-color: var(--gold);
+  transform: translateX(4px);
+}
+.tip-icon {
+  font-size: 22px;
+  margin-top: 0;
+}
+.tip-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+.highlight-card {
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(139,26,43,0.03) 100%);
+  border: 1.5px solid var(--border);
+  transition: all 200ms;
+}
+.highlight-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(201,169,110,0.12);
+  transform: translateY(-2px);
+}
+.hl-icon {
+  font-size: 28px;
+}
+.hl-text {
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.season-card {
+  padding: 20px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(201,169,110,0.05) 0%, rgba(201,169,110,0.01) 100%);
+  border: 1.5px solid var(--border);
+  transition: all 200ms;
+}
+.season-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(201,169,110,0.1);
+}
+.s-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.s-title {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.s-text {
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.time-item {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #fff 0%, rgba(201,169,110,0.04) 100%);
+  border: 1.5px solid var(--border);
+  transition: all 150ms;
+}
+.time-item:hover {
+  border-color: var(--gold);
+}
+.tm-icon {
+  font-size: 28px;
+}
+.tm-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+.tm-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.nearby-item {
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  transition: all 200ms;
+}
+.nearby-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(26,20,16,0.08);
+  transform: translateY(-2px);
+}
+.nearby-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 28px;
+}
+.nearby-name {
+  font-size: 15px;
+  font-weight: 800;
+}
+.nearby-meta {
+  font-size: 13px;
+}
+
+.feature-item {
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fff 0%, rgba(201,169,110,0.04) 100%);
+  border: 1.5px solid var(--border);
+  transition: all 150ms;
+}
+.feature-item:hover {
+  border-color: var(--gold);
+}
+.fi-icon {
+  font-size: 26px;
+}
+.fi-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.info-table {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+}
+.info-table-row {
+  transition: background 150ms;
+}
+.info-table-row:hover {
+  background: rgba(201,169,110,0.03);
+}
+.info-table-label {
+  width: 110px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 14px 16px;
+}
+.info-table-value {
+  font-size: 14.5px;
+  padding: 14px 16px;
+}
+
+.quick-info-bar {
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.qinfo-item {
+  padding: 18px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, rgba(201,169,110,0.05) 100%);
+  border: 1.5px solid var(--border);
+  transition: all 150ms;
+}
+.qinfo-item:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.qinfo-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.qinfo-label {
+  font-size: 10px;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+}
+.qinfo-value {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.gallery-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+}
+.gallery-main {
+  aspect-ratio: 16 / 9;
+}
+.gallery-caption {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(201,169,110,0.04);
+}
+
+.bottom-nav {
+  height: 60px;
+  background: rgba(250,247,242,0.98);
+  border-top: 1.5px solid var(--gold);
+  box-shadow: 0 -4px 20px rgba(26,20,16,0.1);
+}
+[data-theme="dark"] .bottom-nav {
+  background: rgba(30,26,20,0.98);
+}
+.bottom-nav a {
+  font-size: 10px;
+  gap: 3px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.bottom-nav a span {
+  font-size: 24px;
+}
+.bottom-nav a.active {
+  color: var(--burgundy);
+  position: relative;
+}
+.bottom-nav a.active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background: var(--burgundy);
+  border-radius: 2px;
+}
+
+.site-header {
+  background: rgba(250,247,242,0.95);
+  border-bottom: 1.5px solid var(--gold);
+}
+
+@media (max-width: 767px) {
+  .detail-section { padding: 18px; margin-bottom: 18px; }
+  .detail-title { font-size: 24px; }
+  .detail-hero { padding: 36px 16px 28px; }
+  .season-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .time-rec { gap: 10px; }
+  .nearby-grid { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .quick-info-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+}
+
 </style>
 </head>
 <body>
@@ -1088,7 +1416,7 @@ const S = {
       return;
     }
     const lang=S.lang||"ko";
-    const isKo=lang==="ko";
+    
 
     function esc(s){
       return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -1103,7 +1431,7 @@ const S = {
     h+=safe(function(){
       let s='<div class="detail-hero">';
       s+='<div class="detail-hero-inner">';
-      s+='<button class="detail-back" id="detail-back-btn">← '+esc(isKo?"뒤로가기":"Back")+'</button>';
+      s+='<button class="detail-back" id="detail-back-btn">← '+esc(lang==="ko"?"뒤로가기":(lang==="ja"?"戻る":"Back"))+'</button>';
       s+='<h1 class="detail-title">'+esc((o.name&&o.name[lang])||(o.name&&o.name.ko)||"")+'</h1>';
       s+='<div class="detail-tags">';
       s+='<span class="detail-tag">'+esc((o.area&&o.area[lang])||"")+'</span>';
@@ -1124,7 +1452,7 @@ const S = {
       s+='<div class="gallery-main">';
       s+='<img class="active" src="'+esc(imgSrc)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
       s+='</div>';
-      const cap=isKo?'시설 전경 (이미지는 해당 유형의 대표적인 모습입니다)':'Facility view (typical '+(o.type&&o.type.en||"onsen")+' scenery)';
+      const cap=lang==="ko"?'시설 전경 (이미지는 해당 유형의 대표적인 모습입니다)':(lang==="ja"?'施設外観（画像は当該タイプの代表的な光景です）':'Facility view (typical '+(o.type&&o.type.en||"onsen")+' scenery)');
       s+='<div class="gallery-caption">'+esc(cap)+'</div>';
       s+='</div>';
       return s;
@@ -1133,10 +1461,10 @@ const S = {
     // Quick info
     h+=safe(function(){
       let s='<div class="quick-info-bar">';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(isKo?"영업시간":"Hours")+'</span><span class="qinfo-value">'+esc(o.hours||"-")+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">📅</span><span class="qinfo-label">'+esc(isKo?"휴일":"Holiday")+'</span><span class="qinfo-value">'+esc((o.holiday&&o.holiday[lang])||"-")+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">📞</span><span class="qinfo-label">'+esc(isKo?"전화":"Tel")+'</span><span class="qinfo-value">'+esc(o.tel||"-")+'</span></div>';
-      s+='<div class="qinfo-item"><span class="qinfo-icon">💴</span><span class="qinfo-label">'+esc(isKo?"입장료":"Price")+'</span><span class="qinfo-value">'+esc((o.price&&o.price[lang])||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours"))+'</span><span class="qinfo-value">'+esc(o.hours||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">📅</span><span class="qinfo-label">'+esc(lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"))+'</span><span class="qinfo-value">'+esc((o.holiday&&o.holiday[lang])||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">📞</span><span class="qinfo-label">'+esc(lang==="ko"?"전화":(lang==="ja"?"電話":"Tel"))+'</span><span class="qinfo-value">'+esc(o.tel||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">💴</span><span class="qinfo-label">'+esc(lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"))+'</span><span class="qinfo-value">'+esc((o.price&&o.price[lang])||"-")+'</span></div>';
       s+='</div>';
       return s;
     });
@@ -1150,7 +1478,7 @@ const S = {
     h+=safe(function(){
       const desc=(o.desc&&o.desc[lang])||"";
       if(!desc)return "";
-      return '<div class="detail-section"><h2>'+esc(isKo?"상세 설명":"Description")+'</h2><div class="detail-text"><p>'+esc(desc)+'</p></div></div>';
+      return '<div class="detail-section"><h2>'+esc(lang==="ko"?"상세 설명":(lang==="ja"?"詳細説明":"Description"))+'</h2><div class="detail-text"><p>'+esc(desc)+'</p></div></div>';
     });
 
     // Rich description by type
@@ -1261,7 +1589,7 @@ const S = {
     h+=safe(function(){
       const hls=o.highlights||[];
       if(!hls.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(isKo?"하이라이트":"Highlights")+'</h2><div class="highlight-grid">';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"하이라이트":(lang==="ja"?"ハイライト":"Highlights"))+'</h2><div class="highlight-grid">';
       hls.forEach(function(hl,i){
         s+='<div class="highlight-card"><div class="hl-icon">'+["✨","🌟","💎","🏆","🎯"][i%5]+'</div><div class="hl-text">'+esc((hl&&hl[lang])||"")+'</div></div>';
       });
@@ -1271,16 +1599,16 @@ const S = {
 
     // Info table
     h+=safe(function(){
-      let s='<div class="detail-section"><h2>'+esc(isKo?"기본 정보":"Information")+'</h2><div class="info-table">';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"기본 정보":(lang==="ja"?"基本情報":"Information"))+'</h2><div class="info-table">';
       const rows=[
-        [isKo?"지역":"Area",(o.area&&o.area[lang])||""],
-        [isKo?"유형":"Type",(o.type&&o.type[lang])||""],
+        [lang==="ko"?"지역":(lang==="ja"?"地域":"Area"),(o.area&&o.area[lang])||""],
+        [lang==="ko"?"유형":(lang==="ja"?"タイプ":"Type"),(o.type&&o.type[lang])||""],
         ["Hours",o.hours||""],
-        [isKo?"휴일":"Holiday",(o.holiday&&o.holiday[lang])||""],
-        [isKo?"가격":"Price",(o.price&&o.price[lang])||""],
+        [lang==="ko"?"휴일":(lang==="ja"?"定休日":"Holiday"),(o.holiday&&o.holiday[lang])||""],
+        [lang==="ko"?"가격":(lang==="ja"?"価格":"Price"),(o.price&&o.price[lang])||""],
         ["Tel",o.tel||""],
-        [isKo?"주소":"Address",(o.address&&o.address[lang])||""],
-        [isKo?"접근":"Access",(o.station&&o.station[lang])||""]
+        [lang==="ko"?"주소":(lang==="ja"?"住所":"Address"),(o.address&&o.address[lang])||""],
+        [lang==="ko"?"접근":(lang==="ja"?"アクセス":"Access"),(o.station&&o.station[lang])||""]
       ];
       rows.forEach(function(row){
         s+='<div class="info-table-row"><div class="info-table-label">'+esc(row[0])+'</div><div class="info-table-value">'+esc(row[1])+'</div></div>';
@@ -1294,7 +1622,7 @@ const S = {
       const features=o.features||[];
       if(!features.length)return "";
       const fmap={rotenburo:"♨️",sauna:"🧖",family:"👨‍👩‍👧‍👦",yukata:"👘",night:"🌙",sento:"🏮",relaxation:"💆",quiet:"🤫",tattoo:"🎨",retro:"🏛️",local:"🏘️",cheap:"💰",nature:"🌿",daytrip:"🚗",valley:"🏞️",history:"📜",restaurant:"🍽️",ganbanyoku:"🪨",garden:"🌳",pool:"🏊",ocean:"🌊"};
-      let s='<div class="detail-section"><h2>'+esc(isKo?"특징":"Features")+'</h2><div class="feature-grid">';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"特徴":(lang==="ja"?"特徴":"Features"))+'</h2><div class="feature-grid">';
       features.forEach(function(f){
         s+='<div class="feature-item"><div class="fi-icon">'+(fmap[f]||"✓")+'</div><div class="fi-text">'+esc((FEATURES[lang]&&FEATURES[lang][f])||f)+'</div></div>';
       });
@@ -1371,7 +1699,7 @@ const S = {
       const myArea=(o.areaGroup&&o.areaGroup.ko)||"";
       const nearby=DATA.filter(function(x){return x.id!==o.id && x.areaGroup && x.areaGroup.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(isKo?"주변 온천":"Nearby")+'</h2><div class="nearby-grid">';
+      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid">';
       nearby.forEach(function(n){
         s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
         s+='<div class="nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
@@ -1485,5 +1813,5 @@ const S = {
 })();
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d7cd0d992d1ed0',t:'MTc4NDQ0MzkyMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
