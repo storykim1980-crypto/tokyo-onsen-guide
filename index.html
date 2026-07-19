@@ -1376,6 +1376,12 @@ const S = {
       const txt=i18n[S.lang][k];
       if(txt!==undefined) el.setAttribute("placeholder", txt);
     });
+    // Update category nav texts dynamically based on current language
+    document.querySelectorAll(".category-nav a[data-area]").forEach(el=>{
+      const areaId=el.getAttribute("data-area");
+      const area=AREAS.find(a=>a.id===areaId);
+      if(area) el.textContent=area[S.lang];
+    });
   }
   function updateMapLang(){
     const iframe=$("home-map-iframe");
@@ -1417,7 +1423,12 @@ const S = {
     const ec=$("editorial-count");
     if(ec)ec.textContent=t("facilityCount",{count:DATA.length});
     const areaCounts={};
-    DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const g=normArea((ag&&ag.ko)||"unknown");areaCounts[g]=(areaCounts[g]||0)+1;const found=AREAS.find(a=>a.ko===(ag&&ag.ko)||a.en===(ag&&ag.en)||a.ja===(ag&&ag.ja));if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
+    DATA.forEach(o=>{
+      const ag=(o.areaGroup||o.area);
+      const agKo=(ag&&ag.ko)||"unknown";
+      const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);
+      if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;
+    });
 
     const areaList=$("home-area-list");
     if(areaList){clearEl(areaList);AREAS.slice(1).forEach(a=>{
@@ -1447,7 +1458,7 @@ const S = {
       const areaId=lbl.getAttribute("data-area");
       const area=AREAS.find(a=>a.id===areaId);
       if(area)lbl.textContent=area[S.lang];
-      lbl.onclick=(e)=>{e.preventDefault();S.fArea=normArea(areaId);S.fType="all";S.fFeat="all";S.q="";go("list");};
+      lbl.onclick=(e)=>{e.preventDefault();S.fArea=areaId;S.fType="all";S.fFeat="all";S.q="";go("list");};
     });
 
     const wishGrid=$("home-wish-list");
@@ -1497,17 +1508,17 @@ const S = {
     const ag=(o.areaGroup||o.area);
     const agKo=ag&&ag.ko;
     if(!agKo)return false;
-    const target=normArea(S.fArea);
-    if(normArea(agKo)===target)return true;
-    const found=AREAS.find(a=>a.ko===agKo||a.en===agKo||a.ja===agKo);
-    return found?normArea(found.id)===target:false;
+    // agKo may be an area id (new data) or a name (old data)
+    if(agKo===S.fArea)return true;
+    const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);
+    return found?found.id===S.fArea:false;
   }
 
   function drawList(){
     try{
     const areaList=$("sidebar-area-list");
     if(areaList){clearEl(areaList);
-      const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const g=normArea((ag&&ag.ko)||"unknown");areaCounts[g]=(areaCounts[g]||0)+1;const found=AREAS.find(a=>a.ko===(ag&&ag.ko)||a.en===(ag&&ag.en)||a.ja===(ag&&ag.ja));if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
+      const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const agKo=(ag&&ag.ko)||"unknown";const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
       AREAS.forEach(a=>{
         const cnt=a.id==="all"?DATA.length:(areaCounts[a.id]||0);
         if(a.id!=="all" && cnt===0)return;
@@ -2064,6 +2075,6 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1da204358a380e4',t:'MTc4NDQ2ODMwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
