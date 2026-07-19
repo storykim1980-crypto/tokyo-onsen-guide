@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="도쿄 온천 가이드 - 도쿄의 인기 일일 온천, 천연 온천, 슈퍼 센토 정보">
+<meta name="theme-color" content="#1a1410">
+<meta name="color-scheme" content="light">
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<!-- Google AdSense -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<title>도쿄 온천 가이드 | Tokyo Onsen Guide</title>
+<style>
+:root {
+  --wood-dark: #1a1410;
+  --wood-mid: #2a2018;
+  --wood-light: #3d3020;
+  --cream: #f5f0e8;
+  --cream-panel: rgba(245,240,232,0.97);
+  --cream-dark: #ebe5db;
+  --gold: #c9a96e;
+  --gold-light: #d4b87a;
+  --gold-dark: #a08050;
+  --gold-pale: rgba(201,169,110,0.12);
+  --burgundy: #8b1a2b;
+  --burgundy-light: #a02035;
+  --text: #2c2416;
+  --text-light: #5c4d3c;
+  --text-muted: #8a7a6a;
+  --link: #7a5c3a;
+  --link-hover: #5c4228;
+  --border: #d4c9b8;
+  --border-light: #e8e0d4;
+  --danger: #b91c1c;
+  --danger-bg: #fee2e2;
+  --shadow-sm: 0 2px 8px rgba(26,20,16,0.08);
+  --shadow: 0 4px 20px rgba(26,20,16,0.12);
+  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18);
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+  --transition: 200ms ease;
+}
+[data-theme="dark"] {
+  --cream-panel: rgba(30,26,20,0.96);
+  --text: #e8e0d4;
+  --text-light: #c4b8a8;
+  --text-muted: #8a7a6a;
+  --link: #c9a96e;
+  --link-hover: #d4b87a;
+  --border: #3d3020;
+  --border-light: #2a2018;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+}
+/* System dark mode auto-switch disabled — only manual toggle via data-theme="dark" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --cream-panel: rgba(245,240,232,0.97);
+    --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+    --link: #7a5c3a; --link-hover: #5c4228;
+    --border: #d4c9b8; --border-light: #e8e0d4;
+    --shadow-sm: 0 2px 8px rgba(26,20,16,0.08); --shadow: 0 4px 20px rgba(26,20,16,0.12); --shadow-lg: 0 12px 40px rgba(26,20,16,0.18);
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", "Noto Serif KR", serif;
+  font-size: 15px; line-height: 1.6; color: var(--text);
+  background: var(--wood-dark);
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(139,26,43,0.05) 0%, transparent 50%);
+  min-height: 100vh; padding-bottom: 64px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(201,169,110,0.015) 3px, rgba(201,169,110,0.015) 4px);
+  pointer-events: none; z-index: 0;
+}
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--burgundy); color: #fff; padding: 8px 16px; z-index: 9999; text-decoration: none; font-size: 14px; border-radius: 0 0 8px 0; transition: top 150ms; }
+.skip-link:focus { top: 0; }
+.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 16px; position: relative; z-index: 1; }
+.hidden { display: none !important; }
+
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+[data-theme="dark"] .site-header { background: rgba(30,26,20,0.92); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
+.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo-mark { font-size: 28px; line-height: 1; color: var(--burgundy); filter: drop-shadow(0 2px 4px rgba(139,26,43,0.2)); }
+.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); line-height: 1; }
+.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); line-height: 1.2; }
+.desktop-nav { display: none; gap: 4px; }
+.desktop-nav a { padding: 8px 14px; font-size: 14px; font-weight: 700; color: var(--text-light); text-decoration: none; border-radius: 8px; transition: all 150ms; }
+.desktop-nav a:hover, .desktop-nav a.active { color: var(--burgundy); background: rgba(139,26,43,0.06); }
+.header-tools { display: flex; gap: 4px; }
+.tool-btn { width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; font-size: 14px; cursor: pointer; color: var(--text-light); display: inline-flex; align-items: center; justify-content: center; transition: background 150ms; }
+.tool-btn:hover { background: rgba(201,169,110,0.15); color: var(--wood-dark); }
+.menu-toggle { font-size: 18px; }
+.lang-group { display: flex; align-items: center; gap: 2px; margin-right: 4px; }
+.lang-btn { width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid transparent; background: transparent; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; line-height: 1; transition: all 150ms; }
+.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); transform: scale(1.05); }
+.lang-btn:hover { background: rgba(201,169,110,0.15); }
+
+.mobile-menu { position: fixed; inset: 0; z-index: 200; visibility: hidden; opacity: 0; transition: opacity 200ms; }
+.mobile-menu.open { visibility: visible; opacity: 1; }
+.menu-backdrop { position: absolute; inset: 0; background: rgba(26,20,16,0.6); }
+.menu-panel { position: absolute; top: 0; right: 0; width: 280px; height: 100%; background: var(--cream-panel); padding: 20px; display: flex; flex-direction: column; gap: 8px; transform: translateX(100%); transition: transform 250ms ease; box-shadow: var(--shadow-lg); border-left: 2px solid var(--gold); }
+.mobile-menu.open .menu-panel { transform: translateX(0); }
+.menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); font-size: 16px; font-weight: 800; color: var(--text); }
+.menu-close { width: 32px; height: 32px; border-radius: 50%; border: none; background: var(--border-light); font-size: 16px; cursor: pointer; color: var(--text); }
+.menu-nav a { display: block; padding: 14px; font-size: 15px; font-weight: 700; color: var(--text); text-decoration: none; border-radius: 10px; transition: background 150ms; }
+.menu-nav a:hover { background: var(--gold-pale); }
+
+.page { display: none; animation: fadeIn 300ms ease; }
+.page.active { display: block; }
+#page-detail { background: var(--cream); min-height: 100vh; }
+[data-theme="dark"] #page-detail { background: var(--wood-dark); }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero-wrap { margin: 0 -16px 16px; border-radius: 0 0 var(--radius-lg) var(--radius-lg); overflow: hidden; }
+.hero-media { position: relative; width: 100%; aspect-ratio: 2 / 1; min-height: 150px; max-height: 260px; background: linear-gradient(135deg, var(--wood-mid) 0%, var(--wood-dark) 100%); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,20,16,0.7) 0%, rgba(26,20,16,0.3) 50%, rgba(26,20,16,0.6) 100%); }
+.hero-content { position: absolute; inset: 0; display: flex; align-items: center; gap: 12px; padding: 16px; color: #fff; }
+.hero-content .editorial-icon {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(139,26,43,0.35);
+  border: 2px solid var(--gold);
+}
+.editorial-title { font-size: 20px; font-weight: 800; color: #fff; line-height: 1.2; letter-spacing: -0.02em; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+.editorial-sub { font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 4px; text-shadow: 0 1px 4px rgba(0,0,0,0.35); }
+.editorial-year { color: var(--gold-light); font-weight: 700; }
+.editorial-count { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 6px; font-weight: 600; }
+.editorial-count strong { color: var(--gold-light); font-size: 15px; }
+
+.home-layout { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 0 0 24px; }
+.map-zone { background: var(--cream-panel); border-radius: var(--radius-lg); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+[data-theme="dark"] .map-zone { background: rgba(30,26,20,0.7); }
+.map-frame { position: relative; height: 260px; min-height: 220px; background: var(--cream-dark); }
+.map-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: saturate(0.85) contrast(1.05) sepia(0.1); }
+[data-theme="dark"] .map-frame iframe { filter: saturate(0.6) contrast(1.1) brightness(0.75) sepia(0.15); }
+.map-label { position: absolute; background: rgba(245,240,232,0.98); border: 1.5px solid var(--gold); padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 800; color: var(--wood-dark); cursor: pointer; box-shadow: 0 2px 8px rgba(26,20,16,0.15); transition: all 150ms; white-space: nowrap; z-index: 2; }
+.map-label:hover { background: var(--burgundy); color: #fff; border-color: var(--burgundy); transform: translateY(-2px); }
+[data-theme="dark"] .map-label { background: rgba(40,34,26,0.98); color: var(--cream); }
+.map-legend { display: flex; align-items: center; gap: 14px; padding: 12px 16px; font-size: 12px; font-weight: 700; color: var(--text-light); border-top: 1px solid var(--border); background: var(--cream-dark); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.side-panel { background: var(--cream-panel); border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 18px; box-shadow: var(--shadow); }
+[data-theme="dark"] .side-panel { background: rgba(30,26,20,0.7); }
+.side-section { margin-bottom: 18px; }
+.side-section:last-child { margin-bottom: 0; }
+.side-title { font-size: 15px; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding: 10px 12px; background: linear-gradient(90deg, var(--gold-pale) 0%, transparent 100%); border-radius: 6px; border-left: 3px solid var(--gold); }
+.side-bar { width: 4px; height: 16px; background: var(--burgundy); border-radius: 2px; display: inline-block; }
+.side-more { margin-left: auto; font-size: 12px; color: var(--text-muted); text-decoration: none; font-weight: 700; }
+.side-more:hover { color: var(--link-hover); text-decoration: underline; }
+.side-search { display: flex; gap: 8px; }
+.side-search input { flex: 1; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 15px; background: rgba(255,255,255,0.7); color: var(--text); transition: border-color 150ms; }
+.side-search input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-pale); }
+.side-search input::placeholder { color: var(--text-muted); }
+.side-search button { background: var(--wood-dark); color: var(--gold); border: none; border-radius: var(--radius-sm); padding: 11px 20px; font-size: 14px; font-weight: 800; cursor: pointer; transition: all 150ms; white-space: nowrap; }
+.side-search button:hover { background: var(--burgundy); color: #fff; }
+.side-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.side-list li { display: inline-flex; align-items: center; gap: 4px; }
+.side-list li a { color: var(--link); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 150ms; }
+.side-list li a:hover { color: var(--burgundy); text-decoration: underline; }
+.side-list .count { color: var(--text-muted); font-size: 13px; font-weight: 700; }
+
+.sub-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 28px 16px 20px; text-align: center; border-bottom: 2px solid var(--gold); position: relative; }
+.sub-hero::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: var(--gold); border-radius: 2px; }
+.sub-hero h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.01em; }
+.sub-hero p { font-size: 13px; color: var(--gold-light); margin-top: 6px; }
+
+#page-home > .container,
+#page-list > .container,
+#page-plan > .container,
+#page-settings > .container {
+  background: var(--cream-panel);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+  padding: 4px 16px 24px;
+  box-shadow: var(--shadow-lg);
+  margin-top: 12px;
+  border-top: 3px solid var(--gold);
+}
+[data-theme="dark"] #page-home > .container,
+[data-theme="dark"] #page-list > .container,
+[data-theme="dark"] #page-plan > .container,
+[data-theme="dark"] #page-settings > .container {
+  background: var(--cream-panel);
+}
+
+.content-section { margin-bottom: 28px; }
+.section-title-bar { display: flex; align-items: center; gap: 10px; padding: 14px 0 10px; margin-bottom: 14px; border-bottom: 2px solid var(--border); position: relative; }
+.section-title-bar::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 80px; height: 2px; background: var(--gold); border-radius: 1px; }
+.section-icon { font-size: 22px; color: var(--burgundy); }
+.section-title-bar h2 { font-size: 18px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+
+.wish-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.wish-item { display: flex; gap: 16px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; cursor: pointer; transition: all 200ms; }
+[data-theme="dark"] .wish-item { background: rgba(30,26,20,0.6); }
+.wish-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); border-color: var(--gold); }
+.wish-thumb { width: 72px; height: 72px; border-radius: var(--radius); background: linear-gradient(135deg, var(--wood-light), var(--wood-dark)); display: flex; align-items: center; justify-content: center; font-size: 32px; flex-shrink: 0; border: 1px solid var(--gold); }
+.wish-body h3 { font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+.wish-body p { font-size: 13px; color: var(--text-light); line-height: 1.6; }
+
+.report-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.report-item { cursor: pointer; transition: all 250ms ease; background: var(--cream-panel); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.report-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--gold-light); }
+.report-img { width: 100%; aspect-ratio: 16 / 10; background: linear-gradient(135deg, var(--wood-light), var(--wood-mid)); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+.report-img .report-icon { font-size: 48px; opacity: 0.8; }
+.report-badge { position: absolute; bottom: 8px; left: 8px; background: rgba(26,20,16,0.75); color: var(--gold-light); padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 800; backdrop-filter: blur(6px); border: 1px solid rgba(201,169,110,0.25); z-index: 2; }
+.report-info { padding: 10px 12px; }
+.report-info p { font-size: 13px; font-weight: 800; color: var(--text); line-height: 1.3; margin-bottom: 2px; }
+.report-info small { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+
+.ad-slot { background: rgba(201,169,110,0.04); border: 1px dashed var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 12px; font-weight: 700; text-align: center; overflow: hidden; }
+.ad-slot-label { display: block; font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+.ad-top { min-height: 90px; margin-bottom: 16px; }
+.ad-sidebar { min-height: 250px; margin-top: 16px; }
+.ad-infeed { min-height: 200px; margin: 10px 0; }
+.ad-detail-top { min-height: 90px; margin-bottom: 20px; }
+.ad-detail-bottom { min-height: 90px; margin-top: 24px; }
+
+/* ===== List Page: Sidebar + Cards ===== */
+.list-layout { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.list-sidebar { display: flex; flex-direction: column; gap: 10px; }
+.sidebar-block { background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .sidebar-block { background: rgba(30,26,20,0.6); }
+.sidebar-title { font-size: 10px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1.5px solid var(--border); position: relative; letter-spacing: 0.08em; text-transform: uppercase; }
+.sidebar-title::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 32px; height: 2px; background: var(--gold); border-radius: 1px; }
+.sidebar-search { display: flex; gap: 6px; }
+.sidebar-search input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; background: rgba(255,255,255,0.7); color: var(--text); }
+.sidebar-search input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-pale); }
+.sidebar-search button { background: var(--wood-dark); color: var(--gold); border: none; border-radius: var(--radius-sm); padding: 8px 10px; font-size: 12px; font-weight: 800; cursor: pointer; }
+.sidebar-search button:hover { background: var(--burgundy); color: #fff; }
+.active-filters { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.active-filter-tag { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 20px; background: var(--burgundy); color: #fff; border: none; cursor: pointer; }
+.active-filter-tag::after { content: "✕"; font-size: 9px; opacity: 0.8; }
+.sidebar-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+.sidebar-list li { display: flex; align-items: center; justify-content: space-between; padding: 2px 0; }
+.sidebar-list li a { color: var(--link); text-decoration: none; font-size: 12px; font-weight: 600; transition: all 150ms; padding: 2px 4px; border-radius: 4px; line-height: 1.35; }
+.sidebar-list li a:hover { color: var(--burgundy); background: var(--gold-pale); text-decoration: none; }
+.sidebar-list li a.active { color: var(--burgundy); font-weight: 800; background: rgba(139,26,43,0.06); }
+.sidebar-list .count { color: var(--text-muted); font-size: 11px; font-weight: 700; }
+.sidebar-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+.sidebar-pill { padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 20px; border: 1.5px solid var(--border); background: rgba(255,255,255,0.5); color: var(--text-light); cursor: pointer; transition: all 150ms; line-height: 1.3; }
+.sidebar-pill:hover { border-color: var(--gold); color: var(--wood-dark); background: var(--gold-pale); }
+.sidebar-pill.active { background: var(--wood-dark); color: var(--gold); border-color: var(--wood-dark); }
+
+.blog-list { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.blog-item { display: flex; flex-direction: column; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; cursor: pointer; transition: all 250ms ease; position: relative; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .blog-item { background: rgba(30,26,20,0.6); }
+.blog-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: var(--gold-light); }
+
+.card-visual { position: relative; width: 100%; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #2d2420 0%, #1a1410 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.card-visual.type-rotenburo { background: linear-gradient(135deg, #3d3028 0%, #1a1410 100%); }
+.card-visual.type-sauna { background: linear-gradient(135deg, #4a3f35 0%, #1a1410 100%); }
+.card-visual.type-super { background: linear-gradient(135deg, #2d2a28 0%, #1a1410 100%); }
+.card-visual.type-natural { background: linear-gradient(135deg, #2a3530 0%, #1a1410 100%); }
+.card-visual.type-sento { background: linear-gradient(135deg, #3d2a28 0%, #1a1410 100%); }
+.card-visual.type-ryokan { background: linear-gradient(135deg, #4a3528 0%, #1a1410 100%); }
+.card-visual.type-theme { background: linear-gradient(135deg, #3d3028 0%, #1a1410 100%); }
+.card-visual.type-village { background: linear-gradient(135deg, #2a3530 0%, #1a1410 100%); }
+.card-visual.type-urban { background: linear-gradient(135deg, #2d2a28 0%, #1a1410 100%); }
+
+.card-icon-wrap { width: 56px; height: 56px; border-radius: 50%; background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.25); display: flex; align-items: center; justify-content: center; font-size: 28px; backdrop-filter: blur(4px); }
+.card-badge-group { position: absolute; bottom: 10px; left: 10px; right: 10px; display: flex; gap: 6px; flex-wrap: wrap; z-index: 2; }
+.card-badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; font-size: 11px; font-weight: 800; border-radius: 20px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.card-badge.type { background: rgba(26,20,16,0.75); color: var(--gold-light); border: 1px solid rgba(201,169,110,0.3); }
+.card-badge.price { background: rgba(139,26,43,0.85); color: #fff; border: 1px solid rgba(139,26,43,0.5); }
+
+.blog-body { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.blog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.blog-title { font-size: 17px; font-weight: 800; color: var(--text); line-height: 1.25; letter-spacing: -0.02em; }
+.blog-title:hover { color: var(--burgundy); }
+.blog-desc { font-size: 13px; color: var(--text-light); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-meta { font-size: 12px; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.blog-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.feature-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.feature-tag { display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; font-size: 12px; font-weight: 700; border-radius: 8px; background: rgba(201,169,110,0.1); color: var(--text); border: 1px solid var(--border); }
+[data-theme="dark"] .feature-tag { background: rgba(201,169,110,0.08); color: var(--text-light); }
+.feature-tag::before { content: '✓'; color: var(--burgundy); font-weight: 800; font-size: 10px; }
+.blog-actions { display: flex; gap: 8px; padding-top: 4px; }
+.blog-btn { display: inline-flex; align-items: center; gap: 5px; padding: 8px 14px; font-size: 13px; font-weight: 800; border-radius: var(--radius-sm); transition: all 150ms; border: none; cursor: pointer; }
+.blog-btn.primary { background: var(--wood-dark); color: var(--gold); }
+.blog-btn.primary:hover { background: var(--burgundy); color: #fff; }
+.blog-btn.secondary { background: rgba(255,255,255,0.7); color: var(--text); border: 1.5px solid var(--border); }
+.blog-btn.secondary:hover { background: rgba(255,255,255,1); border-color: var(--gold); }
+
+.list-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.list-toolbar select { padding: 8px 28px 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; background: rgba(255,255,255,0.7); color: var(--text); }
+#list-result-count { font-size: 13px; color: var(--text-muted); font-weight: 700; }
+
+.empty-state { text-align: center; padding: 40px 16px; }
+.empty-icon { font-size: 44px; margin-bottom: 12px; opacity: 0.5; }
+.empty-state p { font-size: 15px; font-weight: 700; color: var(--text-light); margin-bottom: 16px; }
+
+/* ===== Detail ===== */
+.detail-hero { background: linear-gradient(135deg, #2a2018 0%, #1a1410 100%); color: var(--cream); padding: 36px 16px 28px; position: relative; overflow: hidden; border-bottom: 2px solid var(--gold); }
+.detail-hero::before { content: '♨'; position: absolute; top: -10px; right: 16px; font-size: 120px; opacity: 0.05; line-height: 1; color: var(--gold); z-index: 1; }
+.detail-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,0.2) 0%, rgba(26,20,16,0.5) 100%); z-index: 1; }
+.detail-hero-inner { position: relative; z-index: 2; max-width: 960px; margin: 0 auto; }
+.detail-back { display: inline-flex; align-items: center; gap: 6px; background: rgba(201,169,110,0.2); border: 1px solid var(--gold); color: var(--gold-light); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-bottom: 14px; cursor: pointer; backdrop-filter: blur(4px); transition: all 150ms; }
+.detail-back:hover { background: rgba(201,169,110,0.35); color: var(--cream); }
+.detail-title { font-size: 28px; font-weight: 800; margin-bottom: 12px; position: relative; letter-spacing: -0.01em; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.detail-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0; position: relative; }
+.detail-tag { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 20px; background: rgba(201,169,110,0.2); border: 1px solid rgba(201,169,110,0.4); color: var(--gold-light); backdrop-filter: blur(4px); }
+
+.detail-content { max-width: 960px; margin: 0 auto; padding: 20px 16px 32px; background: var(--cream); position: relative; z-index: 3; }
+[data-theme="dark"] .detail-content { background: var(--wood-mid); }
+
+.quick-info-bar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+.qinfo-item { background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; text-align: center; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .qinfo-item { background: rgba(30,26,20,0.6); }
+.qinfo-icon { font-size: 20px; margin-bottom: 6px; display: block; }
+.qinfo-label { display: block; font-size: 10px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+.qinfo-value { display: block; font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.3; }
+
+.detail-section { margin-bottom: 18px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .detail-section { background: rgba(30,26,20,0.7); border-color: var(--wood-light); }
+.detail-section h2 { font-size: 16px; font-weight: 800; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; color: var(--text); position: relative; }
+.detail-section h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 40px; height: 2px; background: var(--gold); border-radius: 1px; }
+.detail-text { font-size: 15px; color: var(--text-light); line-height: 1.9; }
+.detail-text p { margin-bottom: 12px; }
+
+.highlight-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.highlight-card { background: linear-gradient(135deg, rgba(201,169,110,0.08) 0%, rgba(139,26,43,0.04) 100%); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; align-items: flex-start; gap: 12px; }
+.highlight-card .hl-icon { font-size: 24px; flex-shrink: 0; }
+.highlight-card .hl-text { font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.4; }
+
+.info-table { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.info-table-row { display: flex; border-bottom: 1px solid var(--border); }
+.info-table-row:last-child { border-bottom: none; }
+.info-table-label { width: 100px; flex-shrink: 0; background: var(--cream-dark); padding: 12px 14px; font-size: 12px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; display: flex; align-items: center; }
+[data-theme="dark"] .info-table-label { background: rgba(50,42,32,0.8); }
+.info-table-value { flex: 1; padding: 12px 14px; font-size: 14px; font-weight: 600; color: var(--text); display: flex; align-items: center; }
+
+.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.feature-item { display: flex; align-items: center; gap: 10px; padding: 12px; background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+[data-theme="dark"] .feature-item { background: rgba(50,42,32,0.9); }
+.feature-item .fi-icon { font-size: 22px; flex-shrink: 0; }
+.feature-item .fi-text { font-size: 13px; font-weight: 700; color: var(--text); }
+
+.tip-list { display: flex; flex-direction: column; gap: 10px; }
+.tip-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; background: rgba(201,169,110,0.06); border: 1px solid var(--border-light); border-radius: var(--radius); }
+.tip-item .tip-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.tip-item .tip-text { font-size: 13px; color: var(--text-light); line-height: 1.6; }
+
+.nearby-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.nearby-item { display: flex; gap: 12px; padding: 12px; background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 150ms; }
+[data-theme="dark"] .nearby-item { background: rgba(50,42,32,0.9); }
+.nearby-item:hover { border-color: var(--gold); box-shadow: var(--shadow-sm); }
+.nearby-thumb { width: 56px; height: 56px; border-radius: var(--radius); background: linear-gradient(135deg, var(--wood-light), var(--wood-dark)); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; border: 1px solid var(--gold); }
+.nearby-info { flex: 1; min-width: 0; }
+.nearby-name { font-size: 14px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
+.nearby-meta { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+
+@media (min-width: 768px) {
+  .quick-info-bar { grid-template-columns: repeat(4, 1fr); }
+  .highlight-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .nearby-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 767px) {
+  .detail-title { font-size: 22px; }
+  .detail-hero { padding: 32px 12px 24px; }
+  .detail-content { padding: 20px 12px 32px; }
+  .detail-section { padding: 16px; margin-bottom: 16px; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .qinfo-item { padding: 10px; }
+  .qinfo-value { font-size: 13px; }
+}
+.memo-actions { display: flex; gap: 8px; }
+
+/* ===== Plan ===== */
+.plan-tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 2px solid var(--border); overflow-x: auto; scrollbar-width: none; }
+.plan-tabs::-webkit-scrollbar { display: none; }
+.plan-tab { padding: 12px 16px; font-size: 15px; font-weight: 800; color: var(--text-muted); border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; white-space: nowrap; background: transparent; cursor: pointer; transition: color 150ms; }
+.plan-tab:hover { color: var(--text-light); }
+.plan-tab.active { color: var(--burgundy); border-bottom-color: var(--burgundy); }
+.tab-count { font-size: 11px; background: rgba(0,0,0,0.05); color: var(--text-muted); padding: 2px 8px; border-radius: 10px; margin-left: 6px; }
+.plan-tab.active .tab-count { background: var(--burgundy); color: #fff; }
+.plan-panel { display: none; }
+.plan-panel.active { display: block; }
+
+.plan-item { display: flex; align-items: center; gap: 14px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 10px; cursor: pointer; transition: all 200ms; }
+[data-theme="dark"] .plan-item { background: rgba(30,26,20,0.5); }
+.plan-item:hover { box-shadow: var(--shadow); border-color: var(--gold); }
+.plan-thumb { width: 52px; height: 52px; border-radius: var(--radius); background: linear-gradient(135deg, var(--wood-light), var(--wood-mid)); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; border: 1px solid var(--gold); }
+.plan-info { flex: 1; min-width: 0; }
+.plan-title { font-size: 15px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
+.plan-meta { font-size: 13px; color: var(--text-light); }
+.plan-del { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; color: var(--text-muted); background: transparent; border: none; cursor: pointer; transition: all 150ms; }
+.plan-del:hover { background: var(--danger-bg); color: var(--danger); }
+
+.note-form { background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 20px; }
+[data-theme="dark"] .note-form { background: rgba(30,26,20,0.5); }
+.note-form h3 { font-size: 16px; font-weight: 800; margin-bottom: 16px; color: var(--text); }
+.form-row { display: flex; flex-direction: column; gap: 12px; margin-bottom: 12px; }
+.form-field { margin-bottom: 12px; }
+.form-field label { display: block; font-size: 12px; font-weight: 800; color: var(--text-light); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.03em; }
+.form-field input, .form-field textarea { width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--radius); font-size: 15px; background: rgba(255,255,255,0.7); color: var(--text); transition: all 150ms; }
+.form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-pale); }
+.note-card { background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 10px; position: relative; }
+[data-theme="dark"] .note-card { background: rgba(30,26,20,0.5); }
+.note-card h4 { font-size: 15px; font-weight: 800; margin-bottom: 4px; padding-right: 32px; color: var(--text); }
+.note-card .note-date { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+.note-card p { font-size: 14px; color: var(--text-light); line-height: 1.6; white-space: pre-wrap; }
+.note-card .note-del { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); background: transparent; border: none; cursor: pointer; }
+.note-card .note-del:hover { background: var(--danger-bg); color: var(--danger); }
+
+/* ===== Settings ===== */
+.settings-card { background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px; }
+[data-theme="dark"] .settings-card { background: rgba(30,26,20,0.5); }
+.settings-card h3 { font-size: 15px; font-weight: 800; margin-bottom: 16px; color: var(--text); }
+.settings-card.danger { border-color: var(--danger-bg); }
+.settings-card.danger h3 { color: var(--danger); }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.settings-row:last-child { border-bottom: none; }
+.settings-info strong { display: block; font-size: 15px; font-weight: 700; color: var(--text); }
+.settings-info span { display: block; font-size: 13px; color: var(--text-muted); }
+.settings-row select { padding: 8px 32px 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: rgba(255,255,255,0.7); color: var(--text); }
+
+.app-info { text-align: center; padding: 24px 16px; color: var(--text-muted); font-size: 13px; }
+.app-info p { margin-bottom: 4px; }
+.app-info span { font-weight: 400; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 10px 20px; font-size: 14px; font-weight: 800; border-radius: var(--radius); transition: all 150ms; border: none; cursor: pointer; }
+.btn-primary { background: var(--wood-dark); color: var(--gold); }
+.btn-primary:hover { background: var(--burgundy); color: #fff; }
+.btn-secondary { background: rgba(255,255,255,0.7); color: var(--text); border: 1.5px solid var(--border); }
+.btn-secondary:hover { background: rgba(255,255,255,1); border-color: var(--gold); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-danger:hover { filter: brightness(0.9); }
+
+.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 20px 16px; font-size: 12px; margin-bottom: 64px; border-top: 1px solid var(--wood-light); }
+[data-theme="dark"] .site-footer { background: #0f0c0a; }
+
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-around; align-items: center; height: 64px; background: rgba(245,240,232,0.96); backdrop-filter: blur(12px); border-top: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0); }
+[data-theme="dark"] .bottom-nav { background: rgba(26,20,16,0.96); border-top-color: var(--wood-light); }
+.bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 6px; font-size: 10px; font-weight: 700; color: var(--text-muted); text-decoration: none; transition: color 150ms; }
+.bottom-nav a span { font-size: 22px; line-height: 1; }
+.bottom-nav a.active { color: var(--burgundy); }
+
+#toast-container { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 10000; display: flex; flex-direction: column; gap: 8px; width: calc(100% - 32px); max-width: 400px; pointer-events: none; }
+.toast { background: var(--cream-panel); color: var(--text); padding: 14px 20px; border-radius: var(--radius); box-shadow: var(--shadow-lg); font-size: 14px; font-weight: 700; border-left: 4px solid var(--gold); animation: toastIn 250ms ease, toastOut 250ms ease 2.5s forwards; pointer-events: auto; }
+.toast.error { border-left-color: var(--danger); }
+.toast.warn { border-left-color: var(--gold-dark); }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toastOut { to { opacity: 0; transform: translateY(-8px); } }
+
+@media (max-width: 767px) {
+  #sidebar-toggle { display: block !important; }
+  .list-sidebar { display: none; }
+  .list-layout { grid-template-columns: 1fr; }
+  .blog-list { grid-template-columns: 1fr; gap: 12px; }
+  .card-visual { aspect-ratio: 16 / 9; }
+  .blog-body { padding: 10px; gap: 4px; }
+  .blog-title { font-size: 15px; }
+  .info-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
+  .info-row { padding: 4px 6px; }
+  .info-label { font-size: 9px; }
+  .info-value { font-size: 11px; }
+  .feature-tag { font-size: 10px; padding: 3px 6px; }
+  .blog-btn { padding: 6px 10px; font-size: 11px; }
+  .sidebar-block { padding: 10px; }
+  .sidebar-title { font-size: 10px; margin-bottom: 6px; }
+  .sidebar-list li a { font-size: 11px; }
+  .sidebar-pill { padding: 3px 8px; font-size: 10px; }
+  .sub-hero h1 { font-size: 20px; }
+  .sub-hero p { font-size: 12px; }
+  .detail-title { font-size: 22px; }
+  .detail-hero { padding: 32px 12px 24px; }
+  .detail-content { padding: 20px 12px 32px; }
+  .detail-section { padding: 16px; margin-bottom: 16px; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .qinfo-item { padding: 10px; }
+  .qinfo-value { font-size: 13px; }
+  .hero-content { padding: 16px; gap: 10px; }
+  .hero-content .editorial-icon { width: 44px; height: 44px; font-size: 24px; }
+  .editorial-title { font-size: 18px; }
+  .editorial-sub { font-size: 12px; }
+  .editorial-count { font-size: 11px; }
+  .report-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .wish-item { padding: 12px; gap: 12px; }
+  .wish-thumb { width: 56px; height: 56px; font-size: 24px; }
+  .plan-item { padding: 10px; gap: 10px; }
+  .plan-thumb { width: 44px; height: 44px; font-size: 20px; }
+  .bottom-nav a { font-size: 9px; }
+  .bottom-nav a span { font-size: 20px; }
+  .container { padding: 0 12px; }
+  #page-home > .container,
+  #page-list > .container,
+  #page-plan > .container,
+  #page-settings > .container { padding: 4px 12px 20px; }
+  .home-layout { gap: 12px; margin: 0 0 20px; }
+  .map-frame { height: 220px; min-height: 180px; }
+  .content-section { margin-bottom: 22px; }
+  .section-title-bar { padding: 12px 0 8px; margin-bottom: 12px; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .blog-list { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .report-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
+  .bottom-nav { display: none; }
+  .menu-toggle { display: none; }
+  .desktop-nav { display: flex; }
+  .site-footer { margin-bottom: 0; }
+  .container { padding: 0 24px; }
+  #page-home > .container,
+  #page-list > .container,
+  #page-plan > .container,
+  #page-settings > .container { padding: 4px 28px 28px; }
+  .hero-wrap { margin: 0 -28px 20px; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+  .hero-media { aspect-ratio: 21 / 8; max-height: 300px; }
+  .hero-content { padding: 24px 28px; }
+  .editorial-title { font-size: 30px; }
+  .hero-content .editorial-icon { width: 64px; height: 64px; font-size: 36px; }
+  .home-layout { grid-template-columns: 1.2fr 1fr; gap: 16px; margin: 0 0 28px; }
+  .map-frame { height: 360px; }
+  .side-panel { padding: 20px; }
+  .wish-grid { grid-template-columns: repeat(2, 1fr); }
+  .report-grid { grid-template-columns: repeat(4, 1fr); }
+  .list-layout { grid-template-columns: 280px 1fr; gap: 24px; align-items: start; }
+  .list-sidebar { position: sticky; top: 80px; max-height: calc(100vh - 100px); overflow-y: auto; scrollbar-width: thin; }
+  .list-sidebar::-webkit-scrollbar { width: 6px; }
+  .list-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  .blog-list { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .info-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .form-row { flex-direction: row; }
+  .form-row .form-field { flex: 1; }
+}
+@media (min-width: 1024px) {
+  .container { max-width: 1180px; }
+  .report-grid { grid-template-columns: repeat(5, 1fr); }
+}
+@media print {
+  .site-header, .bottom-nav, .site-footer, .mobile-menu, .detail-actions, .memo-actions, .plan-tabs, .note-form, .settings-card, #toast-container { display: none !important; }
+  body { background: #fff !important; color: #000 !important; padding: 0; }
+  .page { display: block !important; }
+}
+
+.card-visual img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; }
+.card-visual .card-icon-wrap { position:relative; z-index:2; }
+.card-badge-group { z-index:3; }
+.report-thumb-img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; z-index:1; }
+.report-img .report-badge { z-index:2; }
+.plan-thumb img { width:100%; height:100%; object-fit:cover; border-radius:var(--radius); }
+
+/* ===== Gallery ===== */
+.gallery-wrap { margin-bottom: 20px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .gallery-wrap { background: rgba(30,26,20,0.7); border-color: var(--wood-light); }
+.gallery-main { position: relative; width: 100%; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #e8e0d4 0%, #d4c9b8 100%); overflow: hidden; }
+.gallery-main::before { content: "♨"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; color: rgba(201,169,110,0.25); z-index: 0; pointer-events: none; }
+.gallery-main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 400ms ease; opacity: 0; z-index: 1; }
+.gallery-main img.active { opacity: 1; }
+.gallery-main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 400ms ease; opacity: 0; }
+.gallery-main img.active { opacity: 1; }
+.gallery-thumbs { display: flex; gap: 8px; padding: 12px; overflow-x: auto; scrollbar-width: none; }
+.gallery-thumbs::-webkit-scrollbar { display: none; }
+.gallery-thumb { flex: 0 0 80px; height: 56px; border-radius: var(--radius-sm); overflow: hidden; cursor: pointer; border: 2px solid transparent; opacity: 0.7; transition: all 200ms; position: relative; background: var(--wood-dark); }
+.gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-thumb.active { border-color: var(--gold); opacity: 1; transform: scale(1.05); }
+.gallery-thumb:hover { opacity: 1; }
+.gallery-caption { padding: 10px 16px 14px; font-size: 13px; color: var(--text-muted); font-weight: 600; text-align: center; border-top: 1px solid var(--border); }
+@media (min-width: 768px) { .gallery-thumb { flex: 0 0 100px; height: 70px; } }
+
+/* ===== Extra Detail Sections ===== */
+.season-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.season-card { background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(139,26,43,0.03) 100%); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px; text-align: center; }
+.season-card .s-icon { font-size: 28px; margin-bottom: 8px; display: block; }
+.season-card .s-title { font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+.season-card .s-text { font-size: 13px; color: var(--text-light); line-height: 1.5; }
+.time-rec { display: flex; flex-direction: column; gap: 10px; }
+.time-item { display: flex; align-items: center; gap: 14px; padding: 14px; background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+[data-theme="dark"] .time-item { background: rgba(50,42,32,0.9); }
+.time-item .tm-icon { font-size: 24px; flex-shrink: 0; }
+.time-item .tm-body { flex: 1; }
+.time-item .tm-title { font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
+.time-item .tm-desc { font-size: 13px; color: var(--text-light); }
+@media (min-width: 768px) { .season-grid { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skipToContent">본문 바로가기</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#" class="site-logo" data-nav="home" aria-label="홈으로 이동">
+      <span class="logo-mark">♨</span>
+      <div class="logo-text">
+        <span class="logo-en">TOKYO ONSEN</span>
+        <span class="logo-ko">도쿄 온천 가이드</span>
+      </div>
+    </a>
+    <nav class="desktop-nav" aria-label="메인 메뉴">
+      <a href="#" data-nav="home" class="active" data-i18n="navHome">홈</a>
+      <a href="#" data-nav="list" data-i18n="navOnsen">온천 탐색</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-group" id="lang-group">
+        <button type="button" class="lang-btn active" data-lang="ko" title="한국어">🇰🇷</button>
+        <button type="button" class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+        <button type="button" class="lang-btn" data-lang="ja" title="日本語">🇯🇵</button>
+      </div>
+      <button type="button" id="btn-theme" class="tool-btn" aria-label="테마 전환">🌙</button>
+      <button type="button" id="btn-menu-toggle" class="tool-btn menu-toggle" aria-label="메뉴 열기">☰</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="menu-backdrop"></div>
+  <div class="menu-panel">
+    <div class="menu-header">
+      <strong data-i18n="menuTitle">메뉴</strong>
+      <button type="button" id="btn-menu-close" class="menu-close" aria-label="닫기">✕</button>
+    </div>
+    <nav class="menu-nav">
+      <a href="#" data-nav="home"><span>🏠</span> <span data-i18n="navHome">홈</span></a>
+      <a href="#" data-nav="list"><span>♨️</span> <span data-i18n="navOnsen">온천 탐색</span></a>
+    </nav>
+  </div>
+</div>
+
+<main id="main" class="main">
+
+<section id="page-home" class="page active" aria-label="홈">
+  <div class="container">
+    <div class="breadcrumb">
+      <span data-i18n="breadcrumbTop">온천 TOP</span> &gt; <span class="current" data-i18n="breadcrumbCurrent">도쿄의 온천, 일일 온천, 슈퍼 센토</span>
+    </div>
+    <div class="hero-wrap">
+      <div class="hero-media">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="editorial-icon">♨</div>
+          <div>
+            <div class="editorial-title">도쿄 온천 가이드 <span class="editorial-year" data-i18n="yearBadge">(2026년 최신)</span></div>
+            <div class="editorial-sub" data-i18n="siteSub">도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보</div>
+            <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>154</strong>곳</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-layout">
+      <div class="map-zone">
+        <div class="map-frame">
+          <iframe id="home-map-iframe" src="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399511713&z=9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="map-label" style="top:30%;left:45%;" data-area="ginza-shinbashi">긴자·신바시</div>
+          <div class="map-label" style="top:25%;left:48%;" data-area="asakusa-ryogoku">아사쿠사·료고쿠</div>
+          <div class="map-label" style="top:35%;left:42%;" data-area="akasaka-azabu-minato">아카사카·미나토</div>
+          <div class="map-label" style="top:20%;left:40%;" data-area="ikebukuro-sugamo">이케부쿠로</div>
+          <div class="map-label" style="top:22%;left:50%;" data-area="ueno-taito">우에노·다이토</div>
+          <div class="map-label" style="top:45%;left:35%;" data-area="tama-fuchu-chofu">다마</div>
+          <div class="map-label" style="top:55%;left:30%;" data-area="okutama-hinohara">오쿠타마</div>
+          <div class="map-label" style="top:60%;left:25%;" data-area="ome-akiruno">오메</div>
+          <div class="map-label" style="top:50%;left:28%;" data-area="hachioji-hino">하치오지</div>
+          <div class="map-label" style="top:75%;left:70%;" data-area="hachijo-izu">이즈 제도</div>
+        </div>
+        <div class="map-legend">
+          <span><span class="legend-dot" style="background:#c9a96e;"></span> <span data-i18n="mapLegend23">도쿄 23구</span></span>
+          <span><span class="legend-dot" style="background:#8b1a2b;"></span> <span data-i18n="mapLegendTama">다마 지역</span></span>
+          <span><span class="legend-dot" style="background:#3d3020;"></span> <span data-i18n="mapLegendWest">서부 산악·이즈</span></span>
+        </div>
+      </div>
+      <div class="side-panel">
+        <div class="side-section">
+          <div class="side-title"><span class="side-bar"></span> <span data-i18n="sideSearchTitle">키워드 검색</span></div>
+          <div class="side-search">
+            <input type="text" id="home-search-input" data-i18n-placeholder="searchPlaceholder" placeholder="온천 이름, 지역을 입력">
+            <button id="home-search-btn" data-i18n="btnSearch">검색</button>
+          </div>
+        </div>
+        <div class="side-section">
+          <div class="side-title"><span class="side-bar"></span> <span data-i18n="sideAreaTitle">지역에서 찾기</span> <a href="#" class="side-more" data-nav="list" data-i18n="sideMore">전체 보기 →</a></div>
+          <ul class="side-list" id="home-area-list"></ul>
+        </div>
+        <div class="side-section">
+          <div class="side-title"><span class="side-bar"></span> <span data-i18n="sidePopularTitle">인기 지역에서 찾기</span></div>
+          <ul class="side-list" id="home-popular-list"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="section-title-bar">
+        <span class="section-icon">💭</span>
+        <h2 data-i18n="secWish">이런 온천에 가고 싶어!</h2>
+      </div>
+      <div class="wish-grid" id="home-wish-list"></div>
+    </div>
+    <div class="content-section">
+      <div class="section-title-bar">
+        <span class="section-icon">⭐</span>
+        <h2 data-i18n="secRecommend">추천 온천</h2>
+      </div>
+      <div class="report-grid" id="home-report-list"></div>
+    </div>
+  </div>
+</section>
+
+<section id="page-list" class="page" aria-label="온천 목록">
+  <div class="container">
+    <div class="sub-hero">
+      <h1 data-i18n="pageListTitle">온천 목록</h1>
+      <p data-i18n="pageListSub">도쿄의 인기 일일 온천과 스파</p>
+    </div>
+    <div class="ad-slot ad-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="리스트상단"</div></div>
+    <button type="button" id="sidebar-toggle" class="btn btn-secondary" style="display:none;margin-bottom:10px;width:100%;font-size:14px;font-weight:800;">☰ 필터 보기</button>
+    <div class="list-layout">
+      <aside class="list-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-search">
+            <input type="text" id="list-search-input" data-i18n-placeholder="listSearchPlaceholder" placeholder="온천 이름, 지역 검색">
+            <button id="list-search-btn" data-i18n="btnSearch">검색</button>
+          </div>
+          <div class="active-filters" id="active-filters"></div>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-title" data-i18n="filterArea">지역</div>
+          <ul class="sidebar-list" id="sidebar-area-list"></ul>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-title" data-i18n="filterType">유형</div>
+          <div class="sidebar-pills" id="sidebar-type-list"></div>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-title" data-i18n="filterFeature">특징</div>
+          <div class="sidebar-pills" id="sidebar-feat-list"></div>
+        </div>
+        <div class="ad-slot ad-sidebar"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="사이드바"</div></div>
+      </aside>
+      <div class="list-main">
+        <div class="list-toolbar">
+          <select id="list-sort">
+            <option value="recommend" data-i18n="sortRecommend">추천순</option>
+            <option value="name" data-i18n="sortName">이름순</option>
+            <option value="price" data-i18n="sortPrice">가격순</option>
+          </select>
+          <span id="list-result-count">0개의 온천</span>
+          <button id="list-reset-btn" class="btn btn-secondary" style="display:none" data-i18n="btnResetFilter">필터 초기화</button>
+        </div>
+        <div class="blog-list" id="list-grid"></div>
+        <div class="empty-state hidden" id="list-empty">
+          <div class="empty-icon">🔍</div>
+          <p data-i18n="emptySearch">검색 결과가 없습니다</p>
+          <button class="btn btn-primary" onclick="S.q='';S.fArea='all';S.fType='all';S.fFeat='all';document.getElementById('list-search-input').value='';drawList();" data-i18n="btnResetFilter">필터 초기화</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="page-detail" class="page" aria-label="온천 상세">
+  <div id="detail-container"></div>
+</section>
+
+
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+</footer>
+
+<nav class="bottom-nav" aria-label="모바일 하단 메뉴">
+  <a href="#" data-nav="home" class="active"><span>🏠</span><span data-i18n="navHome">홈</span></a>
+  <a href="#" data-nav="list"><span>♨️</span><span data-i18n="navOnsen">온천</span></a>
+</nav>
+
+<div id="toast-container"></div>
+
+<script src="data.js?v=5.1"></script>
+<script>
+/* DATA load guard */
+if(typeof DATA==='undefined'||!Array.isArray(DATA)||DATA.length===0){
+  document.addEventListener('DOMContentLoaded',function(){
+    var main=document.getElementById('main');
+    if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;font-family:sans-serif;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;line-height:1.7;margin-top:12px;"><strong>data.js</strong> 파일을 불러오지 못했습니다.<br>아래 사항을 확인해 주세요:</p><ul style="text-align:left;max-width:400px;margin:16px auto;color:#5c4d3c;font-size:14px;line-height:1.8;"><li>index.html 과 data.js 가 <strong>같은 폴터</strong>에 있는지 확인</li><li>웹서버에 data.js 업로드가 누락되지 않았는지 확인</li><li>브라우저 콘솔(F12 → Console)의 빨간 오류 메시지 확인</li><li><strong>Ctrl+F5</strong> (또는 모바일에서는 브라우저 캐시 삭제 후 새로고침)</li></ul><p style="color:#8a7a6a;font-size:13px;margin-top:20px;">Tokyo Onsen Guide v5.1</p></div>';
+  });
+  throw new Error('data.js not loaded');
+}
+(function(){
+const S = {
+    lang:"ko", theme:"system", view:"home", detailId:null,
+    fArea:"all", fType:"all", fFeat:"all", sort:"recommend", q:""
+  };
+  const KEY = "tokyoOnsen_v5";
+
+  function $(id){return document.getElementById(id);}
+  function t(k,obj){let s=(i18n[S.lang]&&i18n[S.lang][k])||i18n["ko"][k]||k;return obj?s.replace(/\{(\w+)\}/g,(_,p)=>obj[p]??""):s;}
+  function el(tag,opts){
+    const e=document.createElement(tag);
+    if(!opts)return e;
+    if(opts.cls){if(Array.isArray(opts.cls))e.classList.add(...opts.cls.filter(Boolean));else e.className=opts.cls;}
+    if(opts.id)e.id=opts.id;
+    if(opts.text!==undefined)e.textContent=opts.text;
+    if(opts.html!==undefined)e.innerHTML=opts.html;
+    if(opts.attr)Object.entries(opts.attr).forEach(([k,v])=>e.setAttribute(k,v));
+    if(opts.on)Object.entries(opts.on).forEach(([k,v])=>e.addEventListener(k,v));
+    if(opts.children)opts.children.forEach(c=>{if(c)e.appendChild(c);});
+    return e;
+  }
+  function clearEl(el){while(el.firstChild)el.removeChild(el.firstChild);}
+  function toast(msg,type){
+    const box=$("toast-container");if(!box)return;
+    const t=el("div",{cls:["toast",type],text:msg});
+    box.appendChild(t);
+    setTimeout(()=>{if(t.parentNode)t.parentNode.removeChild(t);},3000);
+  }
+  function save(){
+    try{localStorage.setItem(KEY,JSON.stringify({v:5,lang:S.lang,theme:S.theme}));}catch(e){}
+  }
+  function load(){
+    try{const raw=localStorage.getItem(KEY);if(!raw)return;const d=JSON.parse(raw);if(d.v!==5)return;S.lang=d.lang||"ko";S.theme=d.theme||"system";}catch(e){}
+  }
+  function applyTheme(){
+    let m=S.theme;
+    if(m==="system")m="light"; // ignore OS dark mode, default to light for luxury resort feel
+    document.documentElement.setAttribute("data-theme",m);
+    const i=$("btn-theme");if(i)i.textContent=m==="dark"?"☀️":"🌙";
+  }
+  function validate(str,opts){
+    const o=Object.assign({max:500,need:false},opts);
+    const s=String(str||"").trim();
+    if(o.need&&s.length===0)return{ok:false};
+    if(s.length>o.max)return{ok:false};
+    return{ok:true,val:s};
+  }
+  function updateI18n(){
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+      const k=el.getAttribute("data-i18n");
+      const txt=i18n[S.lang][k];
+      if(txt!==undefined){ el.textContent=txt; }
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{
+      const k=el.getAttribute("data-i18n-placeholder");
+      const txt=i18n[S.lang][k];
+      if(txt!==undefined) el.setAttribute("placeholder", txt);
+    });
+  }
+  function updateMapLang(){
+    const iframe=$("home-map-iframe");
+    if(!iframe)return;
+    const hl={ko:"ko",en:"en",ja:"ja"}[S.lang]||"ko";
+    const base="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399511713&z=9";
+    iframe.src=base+"&hl="+hl;
+  }
+
+  function go(name,opts){
+    S.view=name;
+    if(opts&&opts.id)S.detailId=opts.id;
+    document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+    const page=$("page-"+name);if(page)page.classList.add("active");
+    document.querySelectorAll("[data-nav]").forEach(n=>{
+      const v=n.getAttribute("data-nav");
+      n.classList.toggle("active",v===name||(name==="detail"&&v==="list"));
+    });
+    const mm=$("mobile-menu");if(mm)mm.classList.remove("open");
+    window.scrollTo(0,0);
+    updateI18n();
+    updateMapLang();
+    if(name==="home")drawHome();
+    if(name==="list")drawList();
+    if(name==="detail")drawDetail(S.detailId);
+  }
+
+  function getTypeClass(typeKo){
+    const map={"천연 온천":"type-natural","도심형 스파":"type-urban","슈퍼 센토":"type-super","전통 센토":"type-sento","온천 여관":"type-ryokan","온천 테마파크":"type-theme","온천 마을":"type-village"};
+    return map[typeKo]||"type-urban";
+  }
+  function getTypeIcon(typeKo){
+    const map={"천연 온천":"🌿","도심형 스파":"🏙️","슈퍼 센토":"🏛️","전통 센토":"♨️","온천 여관":"🏯","온천 테마파크":"🎭","온천 마을":"🌸"};
+    return map[typeKo]||"♨️";
+  }
+
+  function drawHome(){
+    try{
+    const ec=$("editorial-count");
+    if(ec)ec.textContent=t("facilityCount",{count:DATA.length});
+    const areaCounts={};
+    DATA.forEach(o=>{const g=(o.areaGroup&&o.areaGroup.ko)||"unknown";areaCounts[g]=(areaCounts[g]||0)+1;});
+
+    const areaList=$("home-area-list");
+    if(areaList){clearEl(areaList);AREAS.slice(1).forEach(a=>{
+      const cnt=areaCounts[a.id]||0;
+      const li=el("li");
+      const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();S.fArea=a.id;S.fType="all";S.fFeat="all";S.q="";go("list");}}});
+      li.appendChild(btn);
+      if(cnt>0)li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
+      areaList.appendChild(li);
+    });}
+
+    const popList=$("home-popular-list");
+    if(popList){clearEl(popList);
+      const sorted=Object.entries(areaCounts).sort((a,b)=>b[1]-a[1]).slice(0,5);
+      sorted.forEach(([id,cnt])=>{
+        const a=AREAS.find(x=>x.id===id);if(!a)return;
+        const li=el("li");
+        const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();S.fArea=a.id;S.fType="all";S.fFeat="all";S.q="";go("list");}}});
+        li.appendChild(btn);
+        li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
+        popList.appendChild(li);
+      });
+    }
+
+    document.querySelectorAll(".map-label").forEach(lbl=>{
+      const areaId=lbl.getAttribute("data-area");
+      const area=AREAS.find(a=>a.id===areaId);
+      if(area)lbl.textContent=area[S.lang];
+      lbl.onclick=(e)=>{e.preventDefault();S.fArea=areaId;S.fType="all";S.fFeat="all";S.q="";go("list");};
+    });
+
+    const wishGrid=$("home-wish-list");
+    if(wishGrid){clearEl(wishGrid);WISHES.forEach(w=>{
+      const item=el("div",{cls:"wish-item",on:{click:()=>{S.fFeat=w.filter;S.fArea="all";S.fType="all";S.q="";go("list");}}});
+      item.appendChild(el("div",{cls:"wish-thumb",text:w.icon}));
+      const body=el("div",{cls:"wish-body"});
+      body.appendChild(el("h3",{text:w.title[S.lang]}));
+      body.appendChild(el("p",{text:w.desc[S.lang]}));
+      item.appendChild(body);wishGrid.appendChild(item);
+    });}
+
+    const report=$("home-report-list");
+    if(report){clearEl(report);DATA.slice(0,8).forEach(o=>{
+      const item=el("div",{cls:"report-item",on:{click:()=>go("detail",{id:o.id})}});
+      const imgWrap=el("div",{cls:"report-img"});
+      const typeKo=(o.type&&o.type.ko)||"";
+      const rImg=IMAGE_MAP[typeKo];if(rImg){ imgWrap.appendChild(el("img",{cls:"report-thumb-img",attr:{src:rImg,alt:"",loading:"lazy"}})); }
+      else { imgWrap.appendChild(el("div",{cls:"report-icon",text:getTypeIcon(typeKo)})); }
+      imgWrap.appendChild(el("span",{cls:"report-badge",text:(o.type&&o.type[S.lang])||""}));
+      item.appendChild(imgWrap);
+      const info=el("div",{cls:"report-info"});
+      info.appendChild(el("p",{text:(o.name&&o.name[S.lang])||""}));
+      info.appendChild(el("small",{text:((o.area&&o.area[S.lang])||"")+" · "+((o.price&&o.price[S.lang])||"")}));
+      item.appendChild(info);
+      report.appendChild(item);
+    });}
+    }catch(e){
+      console.error("drawHome error:",e);
+      var rep=document.getElementById("home-report-list");
+      if(rep) rep.innerHTML='<p style="padding:20px;color:#b91c1c;text-align:center;font-weight:700;">⚠️ 홈 콘텐츠를 불러오는 중 오류가 발생했습니다.<br><span style="font-size:13px;color:#8a7a6a;font-weight:400;">'+String(e.message).replace(/</g,"&lt;")+'</span></p>';
+    }
+  }
+
+  function resolveArea(areaVal){
+    if(!areaVal||areaVal==="all")return"all";
+    const found=AREAS.find(a=>a.id===areaVal||a.ko===areaVal||a.en===areaVal||a.ja===areaVal);
+    return found?found.id:areaVal;
+  }
+  function areaMatch(o){
+    if(S.fArea==="all")return true;
+    return o.areaGroup.ko === S.fArea;
+  }
+
+  function drawList(){
+    try{
+    const areaList=$("sidebar-area-list");
+    if(areaList){clearEl(areaList);
+      const areaCounts={};DATA.forEach(o=>{const g=(o.areaGroup&&o.areaGroup.ko)||"unknown";areaCounts[g]=(areaCounts[g]||0)+1;});
+      AREAS.forEach(a=>{
+        const cnt=a.id==="all"?DATA.length:(areaCounts[a.id]||0);
+        const li=el("li");
+        const isActive=resolveArea(S.fArea)===a.id;
+        const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();S.fArea=a.id;drawList();}}});
+        li.appendChild(link);
+        areaList.appendChild(li);
+      });
+    }
+
+    const typeList=$("sidebar-type-list");
+    if(typeList){clearEl(typeList);TYPES.forEach(t=>{
+      const btn=el("button",{cls:["sidebar-pill",S.fType===t.id?"active":""],text:t[S.lang],on:{click:()=>{S.fType=t.id;drawList();}}});
+      typeList.appendChild(btn);
+    });}
+
+    const featList=$("sidebar-feat-list");
+    if(featList){clearEl(featList);FEATS.forEach(f=>{
+      const btn=el("button",{cls:["sidebar-pill",S.fFeat===f.id?"active":""],text:f[S.lang],on:{click:()=>{S.fFeat=f.id;drawList();}}});
+      featList.appendChild(btn);
+    });}
+
+    let list=DATA.filter(o=>{
+      const ma=areaMatch(o);
+      const typeKo=(o.type&&o.type.ko)||"";
+      const mt=S.fType==="all"||typeKo===S.fType||(o.type&&o.type.en)===S.fType||(o.type&&o.type.ja)===S.fType;
+      const mf=S.fFeat==="all"||(o.features||[]).includes(S.fFeat);
+      const q=(S.q||"").trim().toLowerCase();
+      const nameStr=(o.name&&o.name[S.lang])||"";
+      const areaStr=(o.area&&o.area[S.lang])||"";
+      const descStr=(o.desc&&o.desc[S.lang])||"";
+      const mq=!q||nameStr.toLowerCase().includes(q)||areaStr.toLowerCase().includes(q)||descStr.toLowerCase().includes(q);
+      return ma&&mt&&mf&&mq;
+    });
+    if(S.sort==="name")list.sort((a,b)=>{const aName=(a.name&&a.name[S.lang])||"";const bName=(b.name&&b.name[S.lang])||"";return aName.localeCompare(bName,S.lang);});
+    else if(S.sort==="price")list.sort((a,b)=>{const n=x=>{const m=((x.price&&x.price[S.lang])||"").replace(/,/g,"").match(/\d+/);return m?parseInt(m[0],10):99999;};return n(a)-n(b);});
+    const count=$("list-result-count");if(count)count.textContent=t("resultCount",{count:list.length});
+    const resetBtn=$("list-reset-btn");if(resetBtn)resetBtn.style.display=(S.q||S.fArea!=="all"||S.fType!=="all"||S.fFeat!=="all")?"inline-flex":"none";
+    const af=$("active-filters");
+    if(af){clearEl(af);
+      const tags=[];
+      if(S.q.trim())tags.push({text:'"'+S.q.trim()+'"',clear:()=>{S.q="";const inp=$("list-search-input");if(inp)inp.value="";drawList();}});
+      if(S.fArea!=="all"){const a=AREAS.find(x=>x.id===S.fArea);if(a)tags.push({text:a[S.lang],clear:()=>{S.fArea="all";drawList();}});}
+      if(S.fType!=="all"){const a=TYPES.find(x=>x.id===S.fType);if(a)tags.push({text:a[S.lang],clear:()=>{S.fType="all";drawList();}});}
+      if(S.fFeat!=="all"){const a=FEATS.find(x=>x.id===S.fFeat);if(a)tags.push({text:a[S.lang],clear:()=>{S.fFeat="all";drawList();}});}
+      tags.forEach(tag=>{
+        const btn=el("button",{cls:"active-filter-tag",text:tag.text,on:{click:()=>tag.clear()}});
+        af.appendChild(btn);
+      });
+    }
+    const grid=$("list-grid");const emptyEl=$("list-empty");
+    if(!grid)return;clearEl(grid);
+    if(list.length===0){grid.classList.add("hidden");emptyEl.classList.remove("hidden");}
+    else{grid.classList.remove("hidden");emptyEl.classList.add("hidden");list.forEach((o,i)=>{grid.appendChild(makeBlogItem(o));if((i+1)%4===0&&i!==list.length-1)grid.appendChild(makeAdInfeed(Math.floor((i+1)/4)-1));});}
+    }catch(e){
+      console.error("drawList error:",e);
+      var grid=document.getElementById("list-grid");
+      if(grid) grid.innerHTML='<p style="padding:20px;color:#b91c1c;text-align:center;font-weight:700;">⚠️ 목록을 불러오는 중 오류가 발생했습니다.<br><span style="font-size:13px;color:#8a7a6a;font-weight:400;">'+String(e.message).replace(/</g,"&lt;")+'</span></p>';
+    }
+  }
+
+  function makeBlogItem(o){
+    try{
+    const item=el("div",{cls:"blog-item"});
+    const typeKo=(o.type&&o.type.ko)||"";
+    const media=el("div",{cls:["card-visual",getTypeClass(typeKo)]});
+    const cImg=IMAGE_MAP[typeKo];if(cImg){ media.appendChild(el("img",{attr:{src:cImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}})); }
+    media.appendChild(el("div",{cls:"card-icon-wrap",text:getTypeIcon(typeKo)}));
+    const badges=el("div",{cls:"card-badge-group"});
+    badges.appendChild(el("span",{cls:["card-badge","type"],text:(o.type&&o.type[S.lang])||""}));
+    badges.appendChild(el("span",{cls:["card-badge","price"],text:(o.price&&o.price[S.lang])||""}));
+    media.appendChild(badges);
+    item.appendChild(media);
+    const body=el("div",{cls:"blog-body"});
+    const header=el("div",{cls:"blog-header"});
+    header.appendChild(el("div",{cls:"blog-title",text:(o.name&&o.name[S.lang])||""}));
+    body.appendChild(header);
+    body.appendChild(el("div",{cls:"blog-desc",text:(o.desc&&o.desc[S.lang])||""}));
+    const meta=el("div",{cls:"blog-meta"});
+    meta.appendChild(el("span",{text:(o.area&&o.area[S.lang])||""}));
+    meta.appendChild(el("span",{cls:"dot"}));
+    meta.appendChild(el("span",{text:(o.type&&o.type[S.lang])||""}));
+    meta.appendChild(el("span",{cls:"dot"}));
+    meta.appendChild(el("span",{text:(o.price&&o.price[S.lang])||""}));
+    body.appendChild(meta);
+    if(o.highlights&&o.highlights.length){const hl=el("div",{cls:"feature-tags"});o.highlights.slice(0,3).forEach(h=>hl.appendChild(el("span",{cls:"feature-tag",text:(h&&h[S.lang])||""})));body.appendChild(hl);}
+    const actions=el("div",{cls:"blog-actions"});
+    actions.appendChild(el("button",{cls:"blog-btn primary",text:t("btnMap"),on:{click:e=>{e.stopPropagation();window.open("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent((o.address&&o.address[S.lang])||""),"_blank","noopener,noreferrer");}}}));
+    if(o.website)actions.appendChild(el("button",{cls:"blog-btn secondary",text:t("btnWebsite"),on:{click:e=>{e.stopPropagation();window.open(o.website,"_blank","noopener,noreferrer");}}}));
+    body.appendChild(actions);
+    item.appendChild(body);
+    item.addEventListener("click",()=>go("detail",{id:o.id}));
+    return item;
+    }catch(e){
+      console.error("makeBlogItem error:",e,o);
+      return el("div",{cls:"blog-item",html:'<p style="padding:16px;color:#b91c1c;font-size:13px;">항목 렌더링 오류</p>'});
+    }
+  }
+  function makeAdInfeed(index){
+    const ad=el("div",{cls:"ad-slot ad-infeed"});
+    ad.innerHTML='<span class="ad-slot-label">Ad</span><div>Google AdSense<br>인피드 광고 슬롯 #'+(index+1)+'</div>';
+    return ad;
+  }
+
+  function drawDetail(id){
+    try{
+    const wrap=$("detail-container");
+    if(!wrap) return;
+    const o=DATA.find(x=>x.id===id);
+    if(!o){
+      wrap.innerHTML='<p style="padding:40px;text-align:center;">Not found</p>';
+      return;
+    }
+    const lang=S.lang||"ko";
+    const isKo=lang==="ko";
+
+    function esc(s){
+      return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+    }
+    function safe(fn){
+      try{return fn();}catch(e){console.error("Detail render error:",e);return "";}
+    }
+
+    let h='';
+
+    // Hero (always render)
+    h+=safe(function(){
+      let s='<div class="detail-hero">';
+      s+='<div class="detail-hero-inner">';
+      s+='<button class="detail-back" id="detail-back-btn">← '+esc(isKo?"뒤로가기":"Back")+'</button>';
+      s+='<h1 class="detail-title">'+esc((o.name&&o.name[lang])||(o.name&&o.name.ko)||"")+'</h1>';
+      s+='<div class="detail-tags">';
+      s+='<span class="detail-tag">'+esc((o.area&&o.area[lang])||"")+'</span>';
+      s+='<span class="detail-tag">'+esc((o.type&&o.type[lang])||"")+'</span>';
+      s+='<span class="detail-tag">'+esc((o.price&&o.price[lang])||"")+'</span>';
+      s+='</div></div></div>';
+      return s;
+    });
+
+    h+='<div class="detail-content">';
+
+    // Gallery
+    h+=safe(function(){
+      const typeKo=(o.type&&o.type.ko)||"";
+      const imgSrc=IMAGE_MAP[typeKo];
+      if(!imgSrc)return "";
+      let s='<div class="gallery-wrap">';
+      s+='<div class="gallery-main">';
+      s+='<img class="active" src="'+esc(imgSrc)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
+      s+='</div>';
+      const cap=isKo?'시설 전경 (이미지는 해당 유형의 대표적인 모습입니다)':'Facility view (typical '+(o.type&&o.type.en||"onsen")+' scenery)';
+      s+='<div class="gallery-caption">'+esc(cap)+'</div>';
+      s+='</div>';
+      return s;
+    });
+
+    // Quick info
+    h+=safe(function(){
+      let s='<div class="quick-info-bar">';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">🕐</span><span class="qinfo-label">'+esc(isKo?"영업시간":"Hours")+'</span><span class="qinfo-value">'+esc(o.hours||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">📅</span><span class="qinfo-label">'+esc(isKo?"휴일":"Holiday")+'</span><span class="qinfo-value">'+esc((o.holiday&&o.holiday[lang])||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">📞</span><span class="qinfo-label">'+esc(isKo?"전화":"Tel")+'</span><span class="qinfo-value">'+esc(o.tel||"-")+'</span></div>';
+      s+='<div class="qinfo-item"><span class="qinfo-icon">💴</span><span class="qinfo-label">'+esc(isKo?"입장료":"Price")+'</span><span class="qinfo-value">'+esc((o.price&&o.price[lang])||"-")+'</span></div>';
+      s+='</div>';
+      return s;
+    });
+
+    // Ad top
+    h+=safe(function(){
+      return '<div class="ad-slot ad-detail-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세상단"</div></div>';
+    });
+
+    // Description
+    h+=safe(function(){
+      const desc=(o.desc&&o.desc[lang])||"";
+      if(!desc)return "";
+      return '<div class="detail-section"><h2>'+esc(isKo?"상세 설명":"Description")+'</h2><div class="detail-text"><p>'+esc(desc)+'</p></div></div>';
+    });
+
+    // Rich description by type
+    h+=safe(function(){
+      const typeKo=(o.type&&o.type.ko)||"";
+      let rich="";
+      if(typeKo==="천연 온천"){
+        rich=isKo?"지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있는 본격적인 온천 시설입니다. 대욕장은 넓고 쾌적한 공간으로 구성되어 있으며, 노천탕에서는 사계절 각기 다른 풍경을 감상하며 입욕할 수 있습니다. 온천수는 피로 회복과 혈액 순환 개선에 효과적이며, 장시간 업무에 지친 현대인에게 최적의 휴식 공간을 제공합니다. 시설 내에는 휴게 공간과 간단한 식사를 할 수 있는 공간도 마련되어 있어 하루의 피로를 녹이기에 충분합니다. 주말이나 휴일에는 가족 단위 방문객이 많으며, 연인이나 친구와 함께 방문하기에도 적합한 곳입니다.":"Authentic natural hot spring facility with spacious baths and open-air bathing with seasonal views. Effective for fatigue recovery and blood circulation.";
+      }else if(typeKo==="도심형 스파"){
+        rich=isKo?"도쿄 도심에서 편리하게 이용할 수 있는 현대식 스파 시설입니다. 바쁜 일상 속에서 잠시 벗어나 몸과 마음을 재충전할 수 있는 공간으로, 최신 시설과 깔끔한 인테리어가 돋보입니다. 지하에서 끌어올린 온천수를 사용하는 곳도 있어 도심 속에서도 본격적인 온천 체험이 가능합니다. 사우나룸은 다양한 온도대로 운영되며, 암반욕실과 휴게 공간도 잘 갖추어져 있습니다.":"Modern urban spa in central Tokyo. Recharge your body and mind with clean facilities and hot spring water from deep underground. Features various sauna temperatures and bedrock baths.";
+      }else if(typeKo==="슈퍼 센토"){
+        rich=isKo?"대형 규모의 슈퍼 센토로, 온천을 즐기는 것은 물론 식사, 휴식, 엔터테인먼트까지 한 번에 해결할 수 있는 복합 휴양 시설입니다. 다양한 종류의 욕탕이 마련되어 있어 취향에 따라 선택할 수 있으며, 노천탕과 사우나도 충실합니다. 가족 단위 방문객을 위해 키즈 공간과 유아 욕탕을 별도로 운영하는 곳도 많습니다.":"Large super sento complex offering hot springs, dining, rest areas, and entertainment. Features various bath types, open-air baths, saunas, and kids' areas.";
+      }else if(typeKo==="전통 센토"){
+        rich=isKo?"에도 시대부터 이어져 온 전통적인 목욕탕으로, 현지 주민들의 일상적인 휴식 공간이자 관광객들에게도 인기 있는 명소입니다. 정교하게 그려진 후지산 벽화와 화려한 타일 장식이 특징이며, 옛 정취를 느낄 수 있는 소박한 분위기가 매력적입니다. 저렴한 입장료로 누구나 부담 없이 이용할 수 있습니다.":"Traditional sento dating back to the Edo period. Features iconic Mt. Fuji murals and colorful tile art. Affordable entry fees make it accessible to all.";
+      }else if(typeKo==="온천 여관"){
+        rich=isKo?"일본식 전통 여관으로, 정갈한 다다미 방과 계절별 가이세키 요리를 즐길 수 있는 곳입니다. 대부분 자연 풍광이 아름다운 지역에 위치해 있어 온천욕과 함께 경치를 즐기기에 최적입니다. 객실 내에서는 노천탕이나 반노천탕을 갖춘 곳도 있어 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.":"Traditional Japanese ryokan with tatami rooms and seasonal kaiseki cuisine. Located in scenic areas with private open-air baths available in some rooms.";
+      }else if(typeKo==="온천 테마파크"){
+        rich=isKo?"온천을 테마로 한 대형 엔터테인먼트 시설로, 다양한 놀이 시설과 입욕 시설을 동시에 즐길 수 있는 가족 단위 최적의 여행지입니다. 워터 슬라이드와 풀장이 있는 곳도 있어 아이들이 즐거운 시간을 볂낼 수 있으며, 어른들은 다양한 온천탕과 사우나에서 휴식을 취할 수 있습니다.":"Large hot spring theme park combining bathing facilities with entertainment. Features water slides, pools, various baths, and saunas. Perfect for families.";
+      }else if(typeKo==="온천 마을"){
+        rich=isKo?"온천 마을은 여러 온천 시설과 여관이 모여 있는 지역으로, 온천 여행의 정수를 경험할 수 있는 곳입니다. 거리를 걸으며 유카타 차림으로 온천을 돌아다니는 것이 특색이며, 각 시설마다 다른 온천수와 분위기를 즐길 수 있습니다.":"Onsen village with multiple hot spring facilities and ryokan. Stroll between baths in yukata and enjoy different waters at each location.";
+      }
+      if(!rich)return "";
+      return '<div class="detail-section"><h2>'+esc(isKo?"시설 소개":"About")+'</h2><div class="detail-text"><p>'+esc(rich)+'</p></div></div>';
+    });
+
+    // Spring quality
+    h+=safe(function(){
+      const typeKo=(o.type&&o.type.ko)||"";
+      let spring="";
+      if(typeKo==="천연 온천" || typeKo==="온천 여관" || typeKo==="온천 마을"){
+        spring=isKo?"이 시설에서 사용되는 온천수는 지하 수십 미터에서 끌어올린 천연 온천으로, 나트륨·칼슘·마그네슘 등의 미네랄이 풍부하게 함유되어 있습니다. 온천수의 온도는 약 40~42도로 유지되며, 피부 미용과 신경통·근육통 완화에 효과적인 것으로 알려져 있습니다.":"The natural spring water is drawn from deep underground and rich in minerals like sodium, calcium, and magnesium. Maintained at around 40–42°C, known for skin beautification and relief from neuralgia and muscle pain.";
+      }else if((o.features||[]).indexOf("sauna")>=0){
+        spring=isKo?"사우나 시설은 건식과 습식 모두 갖추어져 있으며, 적정 온도와 습도로 관리되고 있습니다. 사우나 이용 후에는 차가운 물로 샤워하거나 휴식 공간에서 충분한 휴식을 취하는 것이 좋습니다.":"The sauna offers both dry and steam options, maintained at optimal temperature and humidity. Cool down with a cold shower and rest after use.";
+      }
+      if(!spring)return "";
+      return '<div class="detail-section"><h2>'+esc(isKo?"온천수 특징":"Spring Quality")+'</h2><div class="detail-text"><p>'+esc(spring)+'</p></div></div>';
+    });
+
+    // Recommendation points
+    h+=safe(function(){
+      const recs=[];
+      const features=o.features||[];
+      const hls=o.highlights||[];
+      hls.forEach(function(hl){if(hl&&hl[lang]) recs.push(hl[lang]);});
+      const typeKo=(o.type&&o.type.ko)||"";
+      if(typeKo==="천연 온천"){
+        recs.push(isKo?"지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.":"Authentic natural spring water from deep underground.");
+        recs.push(isKo?"도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.":"Easily accessible from central Tokyo, perfect for day trips.");
+      }else if(typeKo==="도심형 스파"){
+        recs.push(isKo?"도심 속에서 최신 시설과 깔끔한 인테리어를 갖춘 현대식 스파입니다.":"Modern spa with state-of-the-art facilities in the city center.");
+        recs.push(isKo?"퇴근 후에도 방문할 수 있는 심야 영업으로 직장인에게 인기입니다.":"Late-night hours popular with office workers after work.");
+      }else if(typeKo==="슈퍼 센토"){
+        recs.push(isKo?"온천, 식사, 휴식을 한 번에 즐길 수 있는 대형 복합 시설입니다.":"Large complex combining hot springs, dining, and relaxation.");
+        recs.push(isKo?"가족 단위 방문객을 위한 다양한 편의 시설이 마련되어 있습니다.":"Family-friendly with various amenities for all ages.");
+      }else if(typeKo==="전통 센토"){
+        recs.push(isKo?"에도 시대의 정취를 느낄 수 있는 저렴하고 정겨운 전통 목욕탕입니다.":"Affordable, nostalgic traditional bathhouse with Edo-period charm.");
+        recs.push(isKo?"후지산 벽화와 화려한 타일 장식이 인상적인 인증샷 명소입니다.":"Iconic Mt. Fuji murals and colorful tiles make for great photos.");
+      }else if(typeKo==="온천 여관"){
+        recs.push(isKo?"정갈한 다다미 방과 정성스러운 가이세키 요리가 준비된 전통 여관입니다.":"Traditional ryokan with tatami rooms and exquisite kaiseki cuisine.");
+        recs.push(isKo?"객실 내 노천탕에서 사생활을 보장받으며 여유로운 시간을 볂낼 수 있습니다.":"Private open-air baths in some rooms ensure complete privacy.");
+      }
+      if(features.indexOf("rotenburo")>=0){
+        recs.push(isKo?"노천탕에서 자연 경관을 감상하며 여유로운 입욕 시간을 가질 수 있습니다.":"Enjoy relaxing open-air baths with beautiful natural scenery.");
+      }
+      if(features.indexOf("sauna")>=0){
+        recs.push(isKo?"다양한 온도대의 사우나룸과 휴식 공간이 잘 갖추어져 있습니다.":"Well-equipped sauna rooms at various temperatures with rest areas.");
+      }
+      if(features.indexOf("ganbanyoku")>=0){
+        recs.push(isKo?"천연석 암반욕으로 땀을 흘리며 항산화 효과를 경험할 수 있습니다.":"Experience antioxidant effects through natural stone bedrock bathing.");
+      }
+      if(!recs.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(isKo?"추천 포인트":"Highlights")+'</h2><div class="detail-text">';
+      recs.slice(0,5).forEach(function(pt){s+='<p>• '+esc(pt)+'</p>';});
+      s+='</div></div>';
+      return s;
+    });
+
+    // Highlights cards
+    h+=safe(function(){
+      const hls=o.highlights||[];
+      if(!hls.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(isKo?"하이라이트":"Highlights")+'</h2><div class="highlight-grid">';
+      hls.forEach(function(hl,i){
+        s+='<div class="highlight-card"><div class="hl-icon">'+["✨","🌟","💎","🏆","🎯"][i%5]+'</div><div class="hl-text">'+esc((hl&&hl[lang])||"")+'</div></div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Info table
+    h+=safe(function(){
+      let s='<div class="detail-section"><h2>'+esc(isKo?"기본 정보":"Information")+'</h2><div class="info-table">';
+      const rows=[
+        [isKo?"지역":"Area",(o.area&&o.area[lang])||""],
+        [isKo?"유형":"Type",(o.type&&o.type[lang])||""],
+        ["Hours",o.hours||""],
+        [isKo?"휴일":"Holiday",(o.holiday&&o.holiday[lang])||""],
+        [isKo?"가격":"Price",(o.price&&o.price[lang])||""],
+        ["Tel",o.tel||""],
+        [isKo?"주소":"Address",(o.address&&o.address[lang])||""],
+        [isKo?"접근":"Access",(o.station&&o.station[lang])||""]
+      ];
+      rows.forEach(function(row){
+        s+='<div class="info-table-row"><div class="info-table-label">'+esc(row[0])+'</div><div class="info-table-value">'+esc(row[1])+'</div></div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Features
+    h+=safe(function(){
+      const features=o.features||[];
+      if(!features.length)return "";
+      const fmap={rotenburo:"♨️",sauna:"🧖",family:"👨‍👩‍👧‍👦",yukata:"👘",night:"🌙",sento:"🏮",relaxation:"💆",quiet:"🤫",tattoo:"🎨",retro:"🏛️",local:"🏘️",cheap:"💰",nature:"🌿",daytrip:"🚗",valley:"🏞️",history:"📜",restaurant:"🍽️",ganbanyoku:"🪨",garden:"🌳",pool:"🏊",ocean:"🌊"};
+      let s='<div class="detail-section"><h2>'+esc(isKo?"특징":"Features")+'</h2><div class="feature-grid">';
+      features.forEach(function(f){
+        s+='<div class="feature-item"><div class="fi-icon">'+(fmap[f]||"✓")+'</div><div class="fi-text">'+esc((FEATURES[lang]&&FEATURES[lang][f])||f)+'</div></div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Tips
+    h+=safe(function(){
+      const typeKo=(o.type&&o.type.ko)||"";
+      const features=o.features||[];
+      let tips=[];
+      if(typeKo==="천연 온천"){tips=[{icon:"🌿",text:isKo?"천연 온천수를 즐기기 위해 입욕 전 충분한 샤워를 권장합니다.":"Shower thoroughly before entering."},{icon:"⏱️",text:isKo?"15~20분 정도의 입욕이 적당합니다.":"Soak for 15-20 minutes."}];}
+      else if(typeKo==="도심형 스파"){tips=[{icon:"🏙️",text:isKo?"예약제인 경우가 많으므로 사전 확인이 필요합니다.":"Reservations are often required."},{icon:"🧴",text:isKo?"개인 세멘도구를 챙기시는 것을 권장합니다.":"Bring personal toiletries."}];}
+      else if(typeKo==="슈퍼 센토"){tips=[{icon:"🏛️",text:isKo?"식사, 휴식, 엔터테인먼트를 함께 즐길 수 있습니다.":"Enjoy dining and entertainment."},{icon:"💴",text:isKo?"수건 대여료가 별도로 발생할 수 있습니다.":"Towel rental fees may apply."}];}
+      else if(typeKo==="전통 센토"){tips=[{icon:"🏮",text:isKo?"세멘도구와 수건을 별도로 준비하셔야 합니다.":"Bring your own toiletries and towel."},{icon:"🪙",text:isKo?"대부분 현금만 받습니다.":"Most accept cash only."}];}
+      else if(typeKo==="온천 여관"){tips=[{icon:"🏯",text:isKo?"숙박과 식사를 함께 제공하며, 일일 입욕도 가능한 곳이 많습니다.":"Lodging and meals provided; day-use bathing often available."}];}
+      else if(typeKo==="온천 테마파크"){tips=[{icon:"🎭",text:isKo?"가족 단위 방문객에게 인기가 많습니다.":"Popular with families."}];}
+      else {tips=[{icon:"♨️",text:isKo?"입욕 전 가벼운 스트레칭과 수분 섭취를 권장합니다.":"Stretch and hydrate before bathing."}];}
+      if(features.indexOf("sauna")>=0) tips.push({icon:"🧖",text:isKo?"사우나 이용 후 충분한 휴식과 수분 보충이 필요합니다.":"Rest and hydrate after sauna."});
+      if(features.indexOf("rotenburo")>=0) tips.push({icon:"🌙",text:isKo?"노천탕은 계절에 따라 다른 매력을 느낄 수 있습니다.":"Open-air baths offer seasonal charms."});
+      if(features.indexOf("ganbanyoku")>=0) tips.push({icon:"🪨",text:isKo?"암반욕 후에는 땀을 충분히 식히고 샤워한 후 휴식을 취하세요.":"Cool down and shower after bedrock bathing."});
+      if(!tips.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(isKo?"이용 팁":"Tips")+'</h2><div class="tip-list">';
+      tips.forEach(function(tip){
+        s+='<div class="tip-item"><span class="tip-icon">'+tip.icon+'</span><span class="tip-text">'+esc(tip.text)+'</span></div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Nearby
+    h+=safe(function(){
+      const myArea=(o.areaGroup&&o.areaGroup.ko)||"";
+      const nearby=DATA.filter(function(x){return x.id!==o.id && x.areaGroup && x.areaGroup.ko===myArea;}).slice(0,3);
+      if(!nearby.length)return "";
+      let s='<div class="detail-section"><h2>'+esc(isKo?"주변 온천":"Nearby")+'</h2><div class="nearby-grid">';
+      nearby.forEach(function(n){
+        s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
+        s+='<div class="nearby-thumb">'+getTypeIcon((n.type&&n.type.ko)||"")+'</div>';
+        s+='<div class="nearby-info"><div class="nearby-name">'+esc((n.name&&n.name[lang])||"")+'</div><div class="nearby-meta">'+esc((n.area&&n.area[lang])||"")+' · '+esc((n.price&&n.price[lang])||"")+'</div></div>';
+        s+='</div>';
+      });
+      s+='</div></div>';
+      return s;
+    });
+
+    // Seasonal charm
+    h+=safe(function(){
+      let s='<div class="detail-section"><h2>'+esc(isKo?"계절별 매력":"Seasonal Charm")+'</h2><div class="season-grid">';
+      s+='<div class="season-card"><span class="s-icon">🌸</span><div class="s-title">'+esc(isKo?"봄":"Spring")+'</div><div class="s-text">'+esc(isKo?"벚꽃이 흩날리는 노천탕에서 봄의 정취를 만끽할 수 있습니다.":"Enjoy open-air baths with falling cherry blossoms.")+'</div></div>';
+      s+='<div class="season-card"><span class="s-icon">🌿</span><div class="s-title">'+esc(isKo?"여름":"Summer")+'</div><div class="s-text">'+esc(isKo?"울창한 녹음 아래 시원한 바람을 느끼며 더위를 식힙니다.":"Cool off under lush greenery with refreshing breezes.")+'</div></div>';
+      s+='<div class="season-card"><span class="s-icon">🍁</span><div class="s-title">'+esc(isKo?"가을":"Autumn")+'</div><div class="s-text">'+esc(isKo?"단풍으로 물든 정원을 바라볼 수 있는 계절입니다.":"Admire autumn foliage while soaking in warm waters.")+'</div></div>';
+      s+='<div class="season-card"><span class="s-icon">❄️</span><div class="s-title">'+esc(isKo?"겨울":"Winter")+'</div><div class="s-text">'+esc(isKo?"눈 내리는 노천탕에서 따뜻한 온천수와 대비되는 겨울 정취를 즐깁니다.":"Experience the contrast of hot springs and falling snow.")+'</div></div>';
+      s+='</div></div>';
+      return s;
+    });
+
+    // Recommended hours
+    h+=safe(function(){
+      let s='<div class="detail-section"><h2>'+esc(isKo?"이용 시간대 추천":"Recommended Hours")+'</h2><div class="time-rec">';
+      s+='<div class="time-item"><span class="tm-icon">🌅</span><div class="tm-body"><div class="tm-title">'+esc(isKo?"오전 (개장 직후)":"Morning (Opening)")+'</div><div class="tm-desc">'+esc(isKo?"한산하고 조용한 분위기에서 여유로운 입욕을 즐길 수 있습니다.":"Enjoy a quiet and relaxed soak in a less crowded atmosphere.")+'</div></div></div>';
+      s+='<div class="time-item"><span class="tm-icon">🌞</span><div class="tm-body"><div class="tm-title">'+esc(isKo?"오후 ~ 저녁":"Afternoon ~ Evening")+'</div><div class="tm-desc">'+esc(isKo?"가장 활기찬 시간대로, 다양한 부대 시설을 함께 이용하기 좋습니다.":"The most vibrant time; great for using various facilities together.")+'</div></div></div>';
+      s+='<div class="time-item"><span class="tm-icon">🌙</span><div class="tm-body"><div class="tm-title">'+esc(isKo?"심야":"Late Night")+'</div><div class="tm-desc">'+esc(isKo?"조용한 밤분위기와 별빛 아래 노천탕을 즐길 수 있는 로맨틱한 시간대입니다.":"A romantic time to enjoy open-air baths under the stars.")+'</div></div></div>';
+      s+='</div></div>';
+      return s;
+    });
+
+    // Ad bottom
+    h+=safe(function(){
+      return '<div class="ad-slot ad-detail-bottom"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
+    });
+
+    h+='</div>';
+
+    wrap.innerHTML=h;
+
+    // Attach events after innerHTML
+    const backBtn=wrap.querySelector("#detail-back-btn");
+    if(backBtn) backBtn.addEventListener("click",function(){go("list");});
+    wrap.querySelectorAll(".nearby-item").forEach(function(el){
+      el.addEventListener("click",function(){
+        const nid=this.getAttribute("data-nid");
+        if(nid) go("detail",{id:nid});
+      });
+    });
+    /* Gallery single image - no thumbs */
+    }catch(e){
+      console.error("drawDetail error:",e);
+      var wrap=document.getElementById("detail-container");
+      if(wrap) wrap.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 상세 페이지 오류</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">'+String(e.message).replace(/</g,"&lt;")+'</p></div>';
+    }
+  }
+
+  function init(){
+    try{
+    load();applyTheme();
+    document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-lang")===S.lang));
+    document.querySelectorAll("[data-nav]").forEach(n=>n.addEventListener("click",e=>{e.preventDefault();go(n.getAttribute("data-nav"));}));
+    const mm=$("mobile-menu");const mb=$("btn-menu-toggle");const mc=$("btn-menu-close");
+    if(mb&&mm)mb.addEventListener("click",()=>mm.classList.add("open"));
+    if(mc&&mm)mc.addEventListener("click",()=>mm.classList.remove("open"));
+    if(mm)mm.querySelector(".menu-backdrop")?.addEventListener("click",()=>mm.classList.remove("open"));
+    const lgs=document.querySelectorAll(".lang-btn");lgs.forEach(btn=>{btn.addEventListener("click",()=>{S.lang=btn.getAttribute("data-lang");lgs.forEach(b=>b.classList.toggle("active",b===btn));save();go(S.view,{id:S.detailId});});});
+    const bt=$("btn-theme");if(bt)bt.addEventListener("click",()=>{const c={light:"dark",dark:"system",system:"light"};S.theme=c[S.theme]||"light";applyTheme();save();});
+    const hs=$("home-search-input");const hb=$("home-search-btn");
+    if(hs&&hb){const doSearch=()=>{S.q=hs.value;go("list");};hb.addEventListener("click",doSearch);hs.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});}
+    const ls=$("list-search-input");const lb=$("list-search-btn");
+    if(ls)ls.addEventListener("input",e=>{S.q=e.target.value;drawList();});
+    if(lb)lb.addEventListener("click",()=>{S.q=ls?ls.value:"";drawList();});
+    const ss=$("list-sort");if(ss)ss.addEventListener("change",e=>{S.sort=e.target.value;drawList();});
+    const br=$("list-reset-btn");if(br)br.addEventListener("click",()=>{S.q="";S.fArea="all";S.fType="all";S.fFeat="all";if(ls)ls.value="";drawList();});
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(S.theme==="system")applyTheme();});
+    go("home");
+    }catch(e){
+      console.error("init error:",e);
+      var main=document.getElementById("main");
+      if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 초기화 오류</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">'+String(e.message).replace(/</g,"&lt;")+'</p><p style="color:#8a7a6a;font-size:13px;margin-top:12px;">콘솔(F12 → Console)의 빨간 오류 메시지를 개발자에게 알려주세요.</p></div>';
+    }
+  }
+
+  const sbToggle=document.getElementById("sidebar-toggle");
+  if(sbToggle){sbToggle.addEventListener("click",()=>{const sb=document.querySelector(".list-sidebar");if(sb){const hidden=sb.style.display==="none"||getComputedStyle(sb).display==="none";sb.style.display=hidden?"flex":"none";}});}
+  window.addEventListener("resize",()=>{const sb=document.querySelector(".list-sidebar");if(sb&&window.innerWidth>=768){sb.style.display="";}});
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+</body>
+</html>
