@@ -1467,7 +1467,7 @@ const S = {
       const item=el("div",{cls:"report-item",on:{click:()=>go("detail",{id:o.id})}});
       const imgWrap=el("div",{cls:"report-img"});
       const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      const rImgArr=IMAGE_MAP[typeKo];const rImg=rImgArr&&rImgArr.length?rImgArr[0]:"";
+      const rImg=o.image||"";
       if(rImg){
         const img=el("img",{attr:{src:rImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}});
         img.onerror=function(){this.style.display='none';if(!imgWrap.querySelector('.report-icon'))imgWrap.appendChild(el("div",{cls:"report-icon",text:getTypeIcon(typeKo)}));};
@@ -1580,8 +1580,7 @@ const S = {
     const item=el("div",{cls:"blog-item"});
     const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
     const media=el("div",{cls:["card-visual",getTypeClass(typeKo)]});
-    const cImgArr=IMAGE_MAP[typeKo];
-    const cImg=cImgArr&&cImgArr.length?cImgArr[0]:"";
+      const cImg=o.image||"";
     if(cImg){
       const img=el("img",{attr:{src:cImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}});
       img.onerror=function(){this.style.display='none';};
@@ -1647,9 +1646,7 @@ const S = {
 
     // Hero with background image
     h+=safe(function(){
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      const imgArr=IMAGE_MAP[typeKo];
-      const bgImg=imgArr&&imgArr.length?imgArr[0]:"";
+      const bgImg=o.image||"";
       let s='<div class="detail-hero">';
       if(bgImg){
         s+='<div class="detail-hero-bg" style="background-image:url(\''+esc(bgImg)+'\')"></div>';
@@ -1676,12 +1673,8 @@ const S = {
 
     // Gallery - single representative image + prominent disclaimer
     h+=safe(function(){
-      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
-      const imgArr=IMAGE_MAP[typeKo];
-      if(!imgArr||!imgArr.length)return "";
-      // Pick 1 representative image deterministically based on id hash
-      const idx = o.id.split('').reduce((a,c)=>a+c.charCodeAt(0),0) % imgArr.length;
-      const src = imgArr[idx];
+      const src=o.image||"";
+      if(!src)return "";
       let s='<div class="gallery-wrap">';
       s+='<div class="gallery-main">';
       s+='<img class="active" src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';" style="opacity:1;">';
