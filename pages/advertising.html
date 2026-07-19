@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="도쿄 온천 가이드 광고 정책 - Tokyo Onsen Guide Advertising Policy">
+<meta name="robots" content="index, follow">
+<title>광고 정책 | Advertising Policy | 広告ポリシー | Tokyo Onsen Guide</title>
+<style>
+:root {
+  --wood-dark: #1a1410; --wood-mid: #2a2018; --wood-light: #3d3020;
+  --cream: #f5f0e8; --cream-panel: rgba(245,240,232,0.97);
+  --gold: #c9a96e; --gold-light: #d4b87a; --gold-pale: rgba(201,169,110,0.12);
+  --burgundy: #8b1a2b; --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+  --border: #d4c9b8; --shadow: 0 4px 20px rgba(26,20,16,0.12);
+  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18); --radius-lg: 16px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
+  font-size: 15px; line-height: 1.7; color: var(--text);
+  background: var(--wood-dark);
+  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
+  min-height: 100vh;
+}
+.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1.5px solid var(--gold); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
+.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo-mark { font-size: 28px; color: var(--burgundy); }
+.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
+.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
+.lang-group { display: flex; gap: 4px; }
+.lang-btn { padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--text-light); transition: all 150ms; }
+.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
+.page-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 40px 16px 32px; text-align: center; border-bottom: 2px solid var(--gold); }
+.page-hero h1 { font-size: 26px; font-weight: 800; }
+.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
+.content-wrap { background: var(--cream-panel); border-radius: var(--radius-lg); padding: 28px 20px; margin: 24px 0 40px; box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold); }
+.content-wrap h2 { font-size: 17px; font-weight: 800; color: var(--text); margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; }
+.content-wrap h2:first-child { margin-top: 0; }
+.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
+.content-wrap ul { margin: 12px 0 12px 20px; color: var(--text-light); }
+.content-wrap li { margin-bottom: 8px; }
+.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px; font-size: 12px; border-top: 1px solid var(--wood-light); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
+.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; }
+.footer-links a:hover { color: var(--gold-light); }
+@media (min-width: 768px) { .container { padding: 0 24px; } .content-wrap { padding: 36px 32px; } .page-hero h1 { font-size: 30px; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <span class="logo-mark">♨</span>
+      <div><span class="logo-en">TOKYO ONSEN</span><span class="logo-ko">도쿄 온천 가이드</span></div>
+    </a>
+    <div class="lang-group">
+      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+      <button class="lang-btn" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    </div>
+  </div>
+</header>
+<div class="page-hero">
+  <h1 data-i18n="title">광고 및 제휴 정책</h1>
+  <p data-i18n="sub">Advertising Policy</p>
+</div>
+<div class="container">
+  <div class="content-wrap">
+    <h2 data-i18n="h1">1. 광고 게재</h2>
+    <p data-i18n="p1">본 사이트는 Google AdSense 프로그램을 통해 광고를 게재합니다. Google AdSense는 사용자의 관심사에 기반한 맞춤형 광고를 자동으로 표시할 수 있습니다.</p>
+
+    <h2 data-i18n="h2">2. 제휴 링크</h2>
+    <p data-i18n="p2">현재 본 사이트는 제휴 링크(Affiliate Links)를 사용하지 않습니다. 모든 온천 정보는 중립적으로 제공되며, 특정 시설과의 유료 제휴 관계는 없습니다.</p>
+
+    <h2 data-i18n="h3">3. 스폰서십 및 후원</h2>
+    <p data-i18n="p3">본 사이트의 콘텐츠는 독립적으로 작성되며, 특정 온천 시설이나 기업으로부터 금전적 후원을 받고 있지 않습니다. 향후 후원 콘텐츠가 포함될 경우, 해당 콘텐츠에 명확히 "후원" 또는 "광고" 표기를 추가합니다.</p>
+
+    <h2 data-i18n="h4">4. AI 생성 이미지 고지</h2>
+    <p data-i18n="p4">본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 온천 시설과 다를 수 있으며, 시설 예약이나 방문 결정의 유일한 기준이 되어서는 안 됩니다.</p>
+
+    <h2 data-i18n="h5">5. 광고 문의</h2>
+    <p data-i18n="p5">광고 게재 및 제휴 문의: <a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a></p>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
+    <a href="contact.html">Contact</a><a href="advertising.html">Ads</a><a href="about.html">About</a>
+  </div>
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+</footer>
+<script>
+const i18n = {
+  ko: {
+    title: "광고 및 제휴 정책", sub: "Advertising Policy",
+    h1: "1. 광고 게재", p1: "본 사이트는 Google AdSense 프로그램을 통해 광고를 게재합니다. Google AdSense는 사용자의 관심사에 기반한 맞춤형 광고를 자동으로 표시할 수 있습니다.",
+    h2: "2. 제휴 링크", p2: "현재 본 사이트는 제휴 링크(Affiliate Links)를 사용하지 않습니다. 모든 온천 정보는 중립적으로 제공되며, 특정 시설과의 유료 제휴 관계는 없습니다.",
+    h3: "3. 스폰서십 및 후원", p3: "본 사이트의 콘텐츠는 독립적으로 작성되며, 특정 온천 시설이나 기업으로부터 금전적 후원을 받고 있지 않습니다. 향후 후원 콘텐츠가 포함될 경우 명확히 표기합니다.",
+    h4: "4. AI 생성 이미지 고지", p4: "본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 온천 시설과 다를 수 있습니다.",
+    h5: "5. 광고 문의", p5: "광고 게재 및 제휴 문의: storykim1980@gmail.com"
+  },
+  en: {
+    title: "Advertising Policy", sub: "Advertising Policy",
+    h1: "1. Advertising", p1: "This site displays advertisements through the Google AdSense program. Google AdSense may automatically show personalized ads based on user interests.",
+    h2: "2. Affiliate Links", p2: "This site does not currently use affiliate links. All onsen information is provided neutrally without paid partnerships.",
+    h3: "3. Sponsorship", p3: "Our content is created independently without financial sponsorship from any onsen facility or company. Any sponsored content will be clearly labeled.",
+    h4: "4. AI-Generated Images", p4: "Some images on this site are AI-generated for reference only and may differ from actual facilities.",
+    h5: "5. Ad Inquiries", p5: "For advertising and partnership inquiries: storykim1980@gmail.com"
+  },
+  ja: {
+    title: "広告ポリシー", sub: "広告ポリシー",
+    h1: "1. 広告掲載", p1: "当サイトはGoogle AdSenseプログラムを通じて広告を掲載しています。Google AdSenseはユーザーの興味に基づいたパーソナライズド広告を自動的に表示する場合があります。",
+    h2: "2. アフィリエイトリンク", p2: "現在、当サイトはアフィリエイトリンクを使用していません。すべての温泉情報は中立的に提供されており、特定の施設との有料提携関係はありません。",
+    h3: "3. スポンサーシップ", p3: "当サイトのコンテンツは独立して作成されており、特定の温泉施設や企業からの金銭的後援を受けていません。今後後援コンテンツが含まれる場合は明確に表示します。",
+    h4: "4. AI生成画像の告知", p4: "当サイトの一部画像はAI（人工知能）が生成した参考画像です。実際の施設と異なる場合があります。",
+    h5: "5. 広告に関するお問い合わせ", p5: "広告掲載および提携に関するお問い合わせ: storykim1980@gmail.com"
+  }
+};
+let lang = 'ko';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
+  document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if(i18n[lang][k]) el.textContent = i18n[lang][k]; });
+}
+</script>
+</body>
+</html>

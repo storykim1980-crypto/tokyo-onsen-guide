@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="도쿄 온천 가이드 개인정보처리방침 - Tokyo Onsen Guide Privacy Policy">
+<meta name="robots" content="index, follow">
+<title>개인정보처리방침 | Privacy Policy | プライバシーポリシー | Tokyo Onsen Guide</title>
+<style>
+:root {
+  --wood-dark: #1a1410;
+  --wood-mid: #2a2018;
+  --wood-light: #3d3020;
+  --cream: #f5f0e8;
+  --cream-panel: rgba(245,240,232,0.97);
+  --gold: #c9a96e;
+  --gold-light: #d4b87a;
+  --gold-pale: rgba(201,169,110,0.12);
+  --burgundy: #8b1a2b;
+  --text: #2c2416;
+  --text-light: #5c4d3c;
+  --text-muted: #8a7a6a;
+  --border: #d4c9b8;
+  --border-light: #e8e0d4;
+  --shadow: 0 4px 20px rgba(26,20,16,0.12);
+  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18);
+  --radius-lg: 16px;
+  --transition: 200ms ease;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
+  font-size: 15px; line-height: 1.7; color: var(--text);
+  background: var(--wood-dark);
+  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
+  min-height: 100vh;
+}
+.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(245,240,232,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1.5px solid var(--gold);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto;
+}
+.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo-mark { font-size: 28px; color: var(--burgundy); }
+.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
+.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
+.lang-group { display: flex; gap: 4px; }
+.lang-btn {
+  padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border);
+  background: transparent; font-size: 13px; font-weight: 700; cursor: pointer;
+  color: var(--text-light); transition: all 150ms;
+}
+.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
+
+.page-hero {
+  background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%);
+  color: var(--cream); padding: 40px 16px 32px; text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+.page-hero h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.01em; }
+.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
+
+.content-wrap {
+  background: var(--cream-panel); border-radius: var(--radius-lg);
+  padding: 28px 20px; margin: 24px 0 40px;
+  box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold);
+}
+.content-wrap h2 {
+  font-size: 17px; font-weight: 800; color: var(--text);
+  margin: 28px 0 12px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--border); display: inline-block;
+}
+.content-wrap h2:first-child { margin-top: 0; }
+.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
+.content-wrap ul { margin: 12px 0 12px 20px; color: var(--text-light); }
+.content-wrap li { margin-bottom: 8px; }
+.content-wrap strong { color: var(--text); }
+.update-date {
+  display: inline-block; padding: 6px 14px; background: var(--gold-pale);
+  border-radius: 20px; font-size: 12px; font-weight: 700; color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.site-footer {
+  background: var(--wood-dark); color: rgba(245,240,232,0.35);
+  text-align: center; padding: 24px 16px; font-size: 12px;
+  border-top: 1px solid var(--wood-light);
+}
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px;
+  margin-bottom: 12px;
+}
+.footer-links a {
+  color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600;
+  transition: color 150ms;
+}
+.footer-links a:hover { color: var(--gold-light); }
+
+@media (min-width: 768px) {
+  .container { padding: 0 24px; }
+  .content-wrap { padding: 36px 32px; }
+  .page-hero h1 { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <span class="logo-mark">♨</span>
+      <div>
+        <span class="logo-en">TOKYO ONSEN</span>
+        <span class="logo-ko">도쿄 온천 가이드</span>
+      </div>
+    </a>
+    <div class="lang-group">
+      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+      <button class="lang-btn" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1 data-i18n="title">개인정보처리방침</h1>
+  <p data-i18n="sub">Tokyo Onsen Guide Privacy Policy</p>
+</div>
+
+<div class="container">
+  <div class="content-wrap">
+    <span class="update-date" data-i18n="updated">최종 업데이트: 2026년 7월 19일</span>
+
+    <h2 data-i18n="h1">1. 개인정보 수집 및 이용</h2>
+    <p data-i18n="p1">본 사이트(Tokyo Onsen Guide)는 서버를 운영하지 않는 정적 웹사이트로, 별도의 회원가입 없이 이용 가능합니다. 사용자의 개인정보(이름, 이메일, 주소, 전화번호 등)를 직접 수집하지 않습니다.</p>
+    <p data-i18n="p1b">단, 사이트 이용 편의를 위해 브라우저의 로컬 스토리지(LocalStorage)에 다음 정보를 저장할 수 있습니다.</p>
+    <ul>
+      <li data-i18n="li1">언어 설정 (한국어/영어/일본어)</li>
+      <li data-i18n="li2">화면 테마 설정 (라이트/다크)</li>
+    </ul>
+
+    <h2 data-i18n="h2">2. 쿠키(Cookie) 및 추적 기술</h2>
+    <p data-i18n="p2">본 사이트는 자체적으로 쿠키를 사용하지 않습니다. 다만 Google AdSense 광고를 게재함에 따라 Google LLC가 광고 개인화 및 성과 측정을 위해 쿠키를 사용할 수 있습니다. Google의 쿠키 사용에 대한 자세한 내용은 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a>을 참조하세요.</p>
+
+    <h2 data-i18n="h3">3. 제3자 제공</h2>
+    <p data-i18n="p3">수집된 정보는 어떠한 제3자에게도 제공되거나 판매되지 않습니다. Google AdSense를 통해 수집되는 데이터는 Google의 개인정보처리방침에 따릅니다.</p>
+
+    <h2 data-i18n="h4">4. 데이터 보관 및 삭제</h2>
+    <p data-i18n="p4">로컬 스토리지에 저장된 설정 정보는 사용자가 브라우저 설정에서 삭제하기 전까지 보관됩니다. 삭제를 원하시면 브라우저의 "쿠키 및 사이트 데이터 삭제" 기능을 이용해 주세요.</p>
+
+    <h2 data-i18n="h5">5. 외부 링크</h2>
+    <p data-i18n="p5">본 사이트에는 각 온천 시설의 공식 웹사이트, Google Maps 등 외부 링크가 포함되어 있습니다. 외부 사이트의 개인정보처리방침은 해당 사이트의 정책을 따륩니다.</p>
+
+    <h2 data-i18n="h6">6. 문의처</h2>
+    <p data-i18n="p6">개인정보 관련 문의는 아래 이메일로 연락 주시기 바랍니다.</p>
+    <p><strong>Email:</strong> <a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="contact.html">Contact</a>
+    <a href="advertising.html">Ads</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+</footer>
+
+<script>
+const i18n = {
+  ko: {
+    title: "개인정보처리방침", sub: "Tokyo Onsen Guide Privacy Policy",
+    updated: "최종 업데이트: 2026년 7월 19일",
+    h1: "1. 개인정보 수집 및 이용", p1: "본 사이트(Tokyo Onsen Guide)는 서버를 운영하지 않는 정적 웹사이트로, 별도의 회원가입 없이 이용 가능합니다. 사용자의 개인정보(이름, 이메일, 주소, 전화번호 등)를 직접 수집하지 않습니다.", p1b: "단, 사이트 이용 편의를 위해 브라우저의 로컬 스토리지(LocalStorage)에 다음 정보를 저장할 수 있습니다.", li1: "언어 설정 (한국어/영어/일본어)", li2: "화면 테마 설정 (라이트/다크)",
+    h2: "2. 쿠키(Cookie) 및 추적 기술", p2: "본 사이트는 자체적으로 쿠키를 사용하지 않습니다. 다만 Google AdSense 광고를 게재함에 따라 Google LLC가 광고 개인화 및 성과 측정을 위해 쿠키를 사용할 수 있습니다.",
+    h3: "3. 제3자 제공", p3: "수집된 정보는 어떠한 제3자에게도 제공되거나 판매되지 않습니다. Google AdSense를 통해 수집되는 데이터는 Google의 개인정보처리방침에 따릅니다.",
+    h4: "4. 데이터 보관 및 삭제", p4: "로컬 스토리지에 저장된 설정 정보는 사용자가 브라우저 설정에서 삭제하기 전까지 보관됩니다. 삭제를 원하시면 브라우저의 \"쿠키 및 사이트 데이터 삭제\" 기능을 이용해 주세요.",
+    h5: "5. 외부 링크", p5: "본 사이트에는 각 온천 시설의 공식 웹사이트, Google Maps 등 외부 링크가 포함되어 있습니다. 외부 사이트의 개인정보처리방침은 해당 사이트의 정책을 따릅니다.",
+    h6: "6. 문의처", p6: "개인정보 관련 문의는 아래 이메일로 연락 주시기 바랍니다."
+  },
+  en: {
+    title: "Privacy Policy", sub: "Tokyo Onsen Guide Privacy Policy",
+    updated: "Last updated: July 19, 2026",
+    h1: "1. Information Collection and Use", p1: "Tokyo Onsen Guide is a static website that does not operate a server. No registration is required. We do not directly collect personal information such as name, email, address, or phone number.", p1b: "However, we may store the following information in your browser's LocalStorage for convenience:", li1: "Language preference (Korean/English/Japanese)", li2: "Theme preference (Light/Dark)",
+    h2: "2. Cookies and Tracking Technologies", p2: "This site does not use cookies directly. However, Google AdSense may use cookies for ad personalization and performance measurement.",
+    h3: "3. Third-Party Disclosure", p3: "Collected information is not sold or provided to any third party. Data collected through Google AdSense is subject to Google's privacy policy.",
+    h4: "4. Data Retention and Deletion", p4: "Settings stored in LocalStorage are retained until you delete them via your browser settings.",
+    h5: "5. External Links", p5: "This site contains links to official onsen websites and Google Maps. External sites have their own privacy policies.",
+    h6: "6. Contact", p6: "For privacy-related inquiries, please contact us via email below."
+  },
+  ja: {
+    title: "プライバシーポリシー", sub: "Tokyo Onsen Guide Privacy Policy",
+    updated: "最終更新日: 2026年7月19日",
+    h1: "1. 個人情報の収集と利用", p1: "Tokyo Onsen Guideはサーバーを運用しない静的ウェブサイトであり、会員登録なしで利用できます。名前、メールアドレス、住所、電話番号などの個人情報を直接収集しません。", p1b: "ただし、サイト利用の利便性のため、ブラウザのローカルストレージに以下の情報を保存する場合があります。", li1: "言語設定（韓国語/英語/日本語）", li2: "画面テーマ設定（ライト/ダーク）",
+    h2: "2. クッキーおよび追跡技術", p2: "当サイトは独自のクッキーを使用しません。ただし、Google AdSenseの広告配信により、Google LLCが広告のパーソナライズや効果測定のためにクッキーを使用する場合があります。",
+    h3: "3. 第三者提供", p3: "収集された情報はいかなる第三者にも提供または販売されません。Google AdSenseを通じて収集されるデータはGoogleのプライバシーポリシーに従います。",
+    h4: "4. データの保管と削除", p4: "ローカルストレージに保存された設定情報は、ユーザーがブラウザ設定で削除するまで保管されます。",
+    h5: "5. 外部リンク", p5: "当サイトには各温泉施設の公式ウェブサイト、Google Mapsなどの外部リンクが含まれています。外部サイトのプライバシーポリシーは各サイトのポリシーに従います。",
+    h6: "6. お問い合わせ", p6: "個人情報に関するお問い合わせは、以下のメールアドレスまでご連絡ください。"
+  }
+};
+let lang = 'ko';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if(i18n[lang][k]) el.textContent = i18n[lang][k];
+  });
+}
+</script>
+</body>
+</html>

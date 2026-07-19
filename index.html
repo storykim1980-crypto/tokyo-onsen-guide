@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="description" content="도쿄 온천 가이드 - 도쿄의 인기 일일 온천, 천연 온천, 슈퍼 센토 정보">
+<meta name="keywords" content="도쿄 온천, Tokyo onsen, 도쿄 스파, 일본 온천, 도쿄 여행, 도쿄 일일 온천, 슈퍼 센토, sento, ryokan">
+<meta name="author" content="Tokyo Onsen Guide">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1a1410">
 <meta name="color-scheme" content="light">
 <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
@@ -449,7 +452,10 @@ body::before {
 .btn-danger { background: var(--danger); color: #fff; }
 .btn-danger:hover { filter: brightness(0.9); }
 
-.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 20px 16px; font-size: 12px; margin-bottom: 64px; border-top: 1px solid var(--wood-light); }
+.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px 20px; font-size: 12px; margin-bottom: 64px; border-top: 1px solid var(--wood-light); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
+.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; transition: color 150ms; }
+.footer-links a:hover { color: var(--gold-light); }
 [data-theme="dark"] .site-footer { background: #0f0c0a; }
 
 .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-around; align-items: center; height: 64px; background: rgba(245,240,232,0.96); backdrop-filter: blur(12px); border-top: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0); }
@@ -941,6 +947,7 @@ body::before {
     <nav class="desktop-nav" aria-label="메인 메뉴">
       <a href="#" data-nav="home" class="active" data-i18n="navHome">홈</a>
       <a href="#" data-nav="list" data-i18n="navOnsen">온천 탐색</a>
+      <a href="pages/about.html" data-i18n="navAbout">소개</a>
     </nav>
     <div class="header-tools">
       <div class="lang-group" id="lang-group">
@@ -964,6 +971,7 @@ body::before {
     <nav class="menu-nav">
       <a href="#" data-nav="home"><span>🏠</span> <span data-i18n="navHome">홈</span></a>
       <a href="#" data-nav="list"><span>♨️</span> <span data-i18n="navOnsen">온천 탐색</span></a>
+      <a href="pages/about.html"><span>📖</span> <span data-i18n="navAbout">소개</span></a>
     </nav>
   </div>
 </div>
@@ -1105,6 +1113,14 @@ body::before {
 </main>
 
 <footer class="site-footer">
+  <div class="footer-links">
+    <a href="pages/about.html" data-i18n="footerAbout">소개</a>
+    <a href="pages/privacy.html" data-i18n="footerPrivacy">개인정보처리방침</a>
+    <a href="pages/terms.html" data-i18n="footerTerms">이용약관</a>
+    <a href="pages/cookies.html" data-i18n="footerCookies">쿠키 정책</a>
+    <a href="pages/contact.html" data-i18n="footerContact">문의</a>
+    <a href="pages/advertising.html" data-i18n="footerAds">광고 정책</a>
+  </div>
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
 </footer>
 
@@ -1850,6 +1866,5 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d80f87aa2ea0be',t:'MTc4NDQ0NjY0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>

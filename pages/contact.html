@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="도쿄 온천 가이드 연락처 - Tokyo Onsen Guide Contact">
+<meta name="robots" content="index, follow">
+<title>연락처 | Contact | お問い合わせ | Tokyo Onsen Guide</title>
+<style>
+:root {
+  --wood-dark: #1a1410; --wood-mid: #2a2018; --wood-light: #3d3020;
+  --cream: #f5f0e8; --cream-panel: rgba(245,240,232,0.97);
+  --gold: #c9a96e; --gold-light: #d4b87a; --gold-pale: rgba(201,169,110,0.12);
+  --burgundy: #8b1a2b; --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+  --border: #d4c9b8; --shadow: 0 4px 20px rgba(26,20,16,0.12);
+  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18); --radius-lg: 16px; --radius: 10px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
+  font-size: 15px; line-height: 1.7; color: var(--text);
+  background: var(--wood-dark);
+  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
+  min-height: 100vh;
+}
+.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1.5px solid var(--gold); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
+.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo-mark { font-size: 28px; color: var(--burgundy); }
+.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
+.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
+.lang-group { display: flex; gap: 4px; }
+.lang-btn { padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--text-light); transition: all 150ms; }
+.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
+.page-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 40px 16px 32px; text-align: center; border-bottom: 2px solid var(--gold); }
+.page-hero h1 { font-size: 26px; font-weight: 800; }
+.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
+.content-wrap { background: var(--cream-panel); border-radius: var(--radius-lg); padding: 28px 20px; margin: 24px 0 40px; box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold); }
+.content-wrap h2 { font-size: 17px; font-weight: 800; color: var(--text); margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; }
+.content-wrap h2:first-child { margin-top: 0; }
+.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
+.contact-card { background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(139,26,43,0.03) 100%); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 20px; margin: 16px 0; }
+.contact-card .label { font-size: 11px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+.contact-card .value { font-size: 15px; font-weight: 700; color: var(--text); }
+.contact-card a { color: var(--burgundy); text-decoration: none; }
+.contact-card a:hover { text-decoration: underline; }
+.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px; font-size: 12px; border-top: 1px solid var(--wood-light); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
+.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; }
+.footer-links a:hover { color: var(--gold-light); }
+@media (min-width: 768px) { .container { padding: 0 24px; } .content-wrap { padding: 36px 32px; } .page-hero h1 { font-size: 30px; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <span class="logo-mark">♨</span>
+      <div><span class="logo-en">TOKYO ONSEN</span><span class="logo-ko">도쿄 온천 가이드</span></div>
+    </a>
+    <div class="lang-group">
+      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+      <button class="lang-btn" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    </div>
+  </div>
+</header>
+<div class="page-hero">
+  <h1 data-i18n="title">연락처</h1>
+  <p data-i18n="sub">Contact Us</p>
+</div>
+<div class="container">
+  <div class="content-wrap">
+    <p data-i18n="intro">본 사이트에 대한 문의, 정보 수정 요청, 제휴 제안 등은 아래 연락처로 별도 주시기 바랍니다.</p>
+
+    <div class="contact-card">
+      <div class="label" data-i18n="l1">이메일 / Email</div>
+      <div class="value"><a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a></div>
+    </div>
+
+    <div class="contact-card">
+      <div class="label" data-i18n="l2">운영자 / Operator</div>
+      <div class="value" data-i18n="v2">Tokyo Onsen Guide 운영팀</div>
+    </div>
+
+    <div class="contact-card">
+      <div class="label" data-i18n="l3">사이트 / Website</div>
+      <div class="value"><a href="../index.html">tokyo-onsen-guide.com</a></div>
+    </div>
+
+    <h2 data-i18n="h1">문의 안내</h2>
+    <ul>
+      <li data-i18n="li1">온천 정보 수정/업데이트 요청</li>
+      <li data-i18n="li2">불법 콘텐츠/저작권 침해 신고</li>
+      <li data-i18n="li3">광고 및 제휴 문의</li>
+      <li data-i18n="li4">기술적 오류 신고</li>
+    </ul>
+    <p data-i18n="note">※ 이메일 접수 후 3~5영업일 내에 답변 드리겠습니다.</p>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
+    <a href="contact.html">Contact</a><a href="advertising.html">Ads</a><a href="about.html">About</a>
+  </div>
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+</footer>
+<script>
+const i18n = {
+  ko: {
+    title: "연락처", sub: "Contact Us",
+    intro: "본 사이트에 대한 문의, 정보 수정 요청, 제휴 제안 등은 아래 연락처로 별도 주시기 바랍니다.",
+    l1: "이메일 / Email", l2: "운영자 / Operator", v2: "Tokyo Onsen Guide 운영팀", l3: "사이트 / Website",
+    h1: "문의 안내",
+    li1: "온천 정보 수정/업데이트 요청", li2: "불법 콘텐츠/저작권 침해 신고", li3: "광고 및 제휴 문의", li4: "기술적 오류 신고",
+    note: "※ 이메일 접수 후 3~5영업일 내에 답변 드리겠습니다."
+  },
+  en: {
+    title: "Contact", sub: "Contact Us",
+    intro: "For inquiries, correction requests, or partnership proposals, please contact us using the information below.",
+    l1: "Email", l2: "Operator", v2: "Tokyo Onsen Guide Team", l3: "Website",
+    h1: "Inquiry Types",
+    li1: "Onsen information corrections/updates", li2: "Illegal content/copyright infringement reports", li3: "Advertising and partnership inquiries", li4: "Technical issue reports",
+    note: "※ We will respond within 3-5 business days."
+  },
+  ja: {
+    title: "お問い合わせ", sub: "お問い合わせ",
+    intro: "当サイトに関するお問い合わせ、情報修正のご依頼、提携のご提案などは、以下の連絡先までお願いいたします。",
+    l1: "メールアドレス", l2: "運営者", v2: "Tokyo Onsen Guide 運営チーム", l3: "ウェブサイト",
+    h1: "お問い合わせ内容",
+    li1: "温泉情報の修正・更新依頼", li2: "違法コンテンツ・著作権侵害の報告", li3: "広告および提携に関するお問い合わせ", li4: "技術的な不具合の報告",
+    note: "※ メール受付後、3～5営業日以内にご返信いたします。"
+  }
+};
+let lang = 'ko';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
+  document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if(i18n[lang][k]) el.textContent = i18n[lang][k]; });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="도쿄 온천 가이드 소개 - Tokyo Onsen Guide About">
+<meta name="robots" content="index, follow">
+<title>소개 | About | 概要 | Tokyo Onsen Guide</title>
+<style>
+:root {
+  --wood-dark: #1a1410; --wood-mid: #2a2018; --wood-light: #3d3020;
+  --cream: #f5f0e8; --cream-panel: rgba(245,240,232,0.97);
+  --gold: #c9a96e; --gold-light: #d4b87a; --gold-pale: rgba(201,169,110,0.12);
+  --burgundy: #8b1a2b; --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+  --border: #d4c9b8; --shadow: 0 4px 20px rgba(26,20,16,0.12);
+  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18); --radius-lg: 16px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
+  font-size: 15px; line-height: 1.7; color: var(--text);
+  background: var(--wood-dark);
+  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
+  min-height: 100vh;
+}
+.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1.5px solid var(--gold); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
+.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.logo-mark { font-size: 28px; color: var(--burgundy); }
+.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
+.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
+.lang-group { display: flex; gap: 4px; }
+.lang-btn { padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--text-light); transition: all 150ms; }
+.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
+.page-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 40px 16px 32px; text-align: center; border-bottom: 2px solid var(--gold); }
+.page-hero h1 { font-size: 26px; font-weight: 800; }
+.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
+.content-wrap { background: var(--cream-panel); border-radius: var(--radius-lg); padding: 28px 20px; margin: 24px 0 40px; box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold); }
+.content-wrap h2 { font-size: 17px; font-weight: 800; color: var(--text); margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; }
+.content-wrap h2:first-child { margin-top: 0; }
+.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
+.content-wrap ul { margin: 12px 0 12px 20px; color: var(--text-light); }
+.content-wrap li { margin-bottom: 8px; }
+.stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; }
+.stat-card { background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(139,26,43,0.03) 100%); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 800; color: var(--burgundy); }
+.stat-card .label { font-size: 12px; font-weight: 700; color: var(--text-muted); margin-top: 4px; }
+.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px; font-size: 12px; border-top: 1px solid var(--wood-light); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
+.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; }
+.footer-links a:hover { color: var(--gold-light); }
+@media (min-width: 768px) { .container { padding: 0 24px; } .content-wrap { padding: 36px 32px; } .page-hero h1 { font-size: 30px; } .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <span class="logo-mark">♨</span>
+      <div><span class="logo-en">TOKYO ONSEN</span><span class="logo-ko">도쿄 온천 가이드</span></div>
+    </a>
+    <div class="lang-group">
+      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+      <button class="lang-btn" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    </div>
+  </div>
+</header>
+<div class="page-hero">
+  <h1 data-i18n="title">사이트 소개</h1>
+  <p data-i18n="sub">About Tokyo Onsen Guide</p>
+</div>
+<div class="container">
+  <div class="content-wrap">
+    <p data-i18n="p1">Tokyo Onsen Guide는 도쿄와 그 주변 지역의 온천, 일일 온천, 슈퍼 센토 정보를 한국어, 영어, 일본어로 제공하는 관광 정보 사이트입니다. 도쿄를 방문하는 관광객과 현지인 모두가 쉽게 온천 정보를 찾을 수 있도록 만든 서비스입니다.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">154</div>
+        <div class="label" data-i18n="s1">등록 시설</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">3</div>
+        <div class="label" data-i18n="s2">지원 언어</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">17</div>
+        <div class="label" data-i18n="s3">지역 커버</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">7</div>
+        <div class="label" data-i18n="s4">시설 유형</div>
+      </div>
+    </div>
+
+    <h2 data-i18n="h1">운영 목표</h2>
+    <ul>
+      <li data-i18n="li1">정확하고 최신의 온천 정보 제공</li>
+      <li data-i18n="li2">다국어 지원으로 외국인 관광객 편의 증대</li>
+      <li data-i18n="li3">실제 운영 중인 시설만 엄선하여 소개</li>
+      <li data-i18n="li4">누구나 물론으로 이용할 수 있는 열린 정보 플랫폼</li>
+    </ul>
+
+    <h2 data-i18n="h2">주요 기능</h2>
+    <ul>
+      <li data-i18n="li5">지역별·유형별 온천 검색 및 필터링</li>
+      <li data-i18n="li6">상세 페이지에서 영업시간, 요금, 특징, 이용 팁 확인</li>
+      <li data-i18n="li7">Google Maps 연동으로 쉬운 길 찾기</li>
+      <li data-i18n="li8">공식 웹사이트 링크로 빠른 예약 및 확인</li>
+    </ul>
+
+    <h2 data-i18n="h3">운영자 정보</h2>
+    <p data-i18n="p3">운영자: Tokyo Onsen Guide 팀<br>Email: <a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a><br>운영 시작: 2026년</p>
+
+    <h2 data-i18n="h4">업데이트 이력</h2>
+    <ul>
+      <li data-i18n="u1"><strong>2026.07</strong> — 154개 시설 등록, AI 이미지 갤러리 추가, 디자인 개선</li>
+      <li data-i18n="u2"><strong>2026.06</strong> — 사이트 런칭, 기본 온천 데이터 구축</li>
+    </ul>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
+    <a href="contact.html">Contact</a><a href="advertising.html">Ads</a><a href="about.html">About</a>
+  </div>
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+</footer>
+<script>
+const i18n = {
+  ko: {
+    title: "사이트 소개", sub: "About Tokyo Onsen Guide",
+    p1: "Tokyo Onsen Guide는 도쿄와 그 주변 지역의 온천, 일일 온천, 슈퍼 센토 정보를 한국어, 영어, 일본어로 제공하는 관광 정보 사이트입니다.",
+    s1: "등록 시설", s2: "지원 언어", s3: "지역 커버", s4: "시설 유형",
+    h1: "운영 목표", li1: "정확하고 최신의 온천 정보 제공", li2: "다국어 지원으로 외국인 관광객 편의 증대", li3: "실제 운영 중인 시설만 엄선하여 소개", li4: "누구나 물론으로 이용할 수 있는 열린 정보 플랫폼",
+    h2: "주요 기능", li5: "지역별·유형별 온천 검색 및 필터링", li6: "상세 페이지에서 영업시간, 요금, 특징, 이용 팁 확인", li7: "Google Maps 연동으로 쉬운 길 찾기", li8: "공식 웹사이트 링크로 빠른 예약 및 확인",
+    h3: "운영자 정보", p3: "운영자: Tokyo Onsen Guide 팀\nEmail: storykim1980@gmail.com\n운영 시작: 2026년",
+    h4: "업데이트 이력", u1: "2026.07 — 154개 시설 등록, AI 이미지 갤러리 추가, 디자인 개선", u2: "2026.06 — 사이트 런칭, 기본 온천 데이터 구축"
+  },
+  en: {
+    title: "About", sub: "About Tokyo Onsen Guide",
+    p1: "Tokyo Onsen Guide is a travel information site providing hot spring, day-trip onsen, and super sento information in Tokyo and surrounding areas in Korean, English, and Japanese.",
+    s1: "Facilities", s2: "Languages", s3: "Areas", s4: "Types",
+    h1: "Mission", li1: "Provide accurate and up-to-date onsen information", li2: "Support multiple languages for international travelers", li3: "Feature only verified, operating facilities", li4: "Maintain an open information platform for everyone",
+    h2: "Key Features", li5: "Search and filter by area and type", li6: "Detailed pages with hours, prices, features, and tips", li7: "Google Maps integration for easy navigation", li8: "Official website links for quick booking",
+    h3: "Operator", p3: "Operator: Tokyo Onsen Guide Team\nEmail: storykim1980@gmail.com\nLaunched: 2026",
+    h4: "Update History", u1: "2026.07 — 154 facilities, AI image gallery, design improvements", u2: "2026.06 — Site launch, initial onsen database"
+  },
+  ja: {
+    title: "概要", sub: "Tokyo Onsen Guide について",
+    p1: "Tokyo Onsen Guideは、東京および周辺地域の温泉、日帰り温泉、スーパー銭湯情報を韓国語、英語、日本語で提供する観光情報サイトです。",
+    s1: "登録施設", s2: "対応言語", s3: "カバー地域", s4: "施設タイプ",
+    h1: "運営目標", li1: "正確で最新の温泉情報を提供", li2: "多言語対応で外国人観光客の利便性向上", li3: "実際に営業中の施設のみを厳選して紹介", li4: "誰でも無料で利用できるオープンな情報プラットフォーム",
+    h2: "主な機能", li5: "地域別・タイプ別の温泉検索および絞り込み", li6: "詳細ページで営業時間、料金、特徴、利用のヒントを確認", li7: "Google Maps連携で簡単な道順検索", li8: "公式ウェブサイトリンクで迅速な予約・確認",
+    h3: "運営者情報", p3: "運営者: Tokyo Onsen Guide チーム\nEmail: storykim1980@gmail.com\n運営開始: 2026年",
+    h4: "更新履歴", u1: "2026.07 — 154施設登録、AI画像ギャラリー追加、デザイン改善", u2: "2026.06 — サイトローンチ、基本温泉データ構築"
+  }
+};
+let lang = 'ko';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if(i18n[lang][k]) {
+      if(k==='p3') el.innerHTML = i18n[lang][k].replace(/\n/g,'<br>');
+      else el.textContent = i18n[lang][k];
+    }
+  });
+}
+</script>
+</body>
+</html>
