@@ -432,6 +432,80 @@ body::before {
 .gallery-disclaimer .gd-text { flex: 1; }
 [data-theme="dark"] .gallery-disclaimer { background: linear-gradient(90deg, rgba(201,169,110,0.06) 0%, rgba(30,26,20,0.5) 100%); border-top-color: var(--gold-dark); }
 
+
+
+
+/* ===== REDESIGNED DETAIL PAGE CSS ===== */
+.detail-top-card { display: flex; justify-content: space-between; align-items: center; gap: 18px; background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; padding: 22px 26px; box-shadow: var(--shadow); margin-bottom: 24px; flex-wrap: wrap; }
+[data-theme="dark"] .detail-top-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
+.top-rating-area { display: flex; flex-direction: column; gap: 6px; }
+.rating-badge-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.rating-stars { color: var(--gold); font-size: 20px; letter-spacing: 2px; }
+.rating-score { font-size: 22px; font-weight: 900; color: var(--burgundy); }
+.rating-count { font-size: 14px; font-weight: 700; color: var(--text-muted); }
+.rating-disclaimer { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
+.top-actions-area { display: flex; gap: 10px; flex-wrap: wrap; }
+.top-action-btn { padding: 11px 20px; border-radius: var(--radius-full); font-size: 13.5px; font-weight: 800; text-decoration: none; transition: all 150ms; display: inline-flex; align-items: center; gap: 6px; box-shadow: var(--shadow-sm); }
+.primary-btn { background: var(--wood-dark); color: var(--gold-light); border: 1.5px solid var(--gold); }
+.primary-btn:hover { background: var(--wood-mid); transform: translateY(-2px); box-shadow: var(--shadow); }
+.secondary-btn { background: rgba(201,169,110,0.16); color: var(--text); border: 1.5px solid var(--border); }
+.secondary-btn:hover { background: rgba(201,169,110,0.28); transform: translateY(-2px); }
+
+.detail-gallery-card { background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 28px; }
+[data-theme="dark"] .detail-gallery-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
+.gallery-image-box { width: 100%; max-height: 500px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #0e0b08; position: relative; }
+.gallery-image-box img { width: 100%; height: auto; max-height: 500px; object-fit: cover; transition: transform 0.4s ease; }
+.gallery-image-box:hover img { transform: scale(1.02); }
+.gallery-info-bar { display: flex; align-items: center; gap: 10px; padding: 14px 22px; background: rgba(201,169,110,0.06); font-size: 13px; color: var(--text-muted); font-weight: 600; border-top: 1px solid var(--border-light); }
+
+.detail-card { background: var(--cream-panel); border: 1.5px solid var(--border); border-radius: 18px; padding: 32px; box-shadow: 0 4px 22px rgba(26,20,16,0.07); margin-bottom: 26px; transition: border-color 0.2s ease; }
+[data-theme="dark"] .detail-card { background: rgba(30,26,20,0.85); border-color: var(--wood-light); }
+.detail-card:hover { border-color: var(--gold); }
+.card-header { margin-bottom: 20px; }
+.card-header h2 { font-size: 18px; font-weight: 900; color: var(--text); padding-bottom: 12px; border-bottom: 2px solid var(--border); position: relative; width: 100%; display: flex; align-items: center; gap: 10px; }
+.card-header h2::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 72px; height: 3px; background: linear-gradient(90deg, var(--gold) 0%, var(--burgundy) 100%); border-radius: 2px; }
+.card-divider { height: 1px; background: var(--border-light); margin: 28px 0; }
+
+.desc-content { font-size: 16px; color: var(--text); line-height: 1.95; letter-spacing: -0.01em; }
+.desc-content p { margin-bottom: 18px; text-align: justify; }
+.desc-content p:last-child { margin-bottom: 0; }
+
+.recs-list { display: flex; flex-direction: column; gap: 12px; }
+.rec-item { display: flex; align-items: flex-start; gap: 14px; background: rgba(201,169,110,0.08); border-left: 4px solid var(--gold); border-radius: 10px; padding: 16px 18px; transition: all 150ms; }
+.rec-item:hover { background: rgba(201,169,110,0.14); transform: translateX(3px); }
+.rec-badge { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.rec-text { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.6; }
+
+.data-table.spa-table .data-table-label { background: linear-gradient(135deg, #4a3623 0%, #2a2018 100%); color: #e8d0a0; }
+.inline-map-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--burgundy) !important; font-weight: 800; background: rgba(139,26,43,0.08); padding: 5px 12px; border-radius: var(--radius-full); transition: all 150ms; }
+.inline-map-btn:hover { background: var(--burgundy); color: #fff !important; text-decoration: none !important; }
+
+.map-address-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: rgba(201,169,110,0.08); border: 1px solid var(--border-light); border-radius: 12px; padding: 16px 20px; margin-top: 16px; }
+.map-address-text { font-size: 14.5px; color: var(--text); }
+.map-direct-btn { background: var(--burgundy); color: #fff; font-size: 13.5px; font-weight: 800; padding: 9px 18px; border-radius: var(--radius-full); text-decoration: none; transition: background 150ms; box-shadow: var(--shadow-sm); }
+.map-direct-btn:hover { background: var(--burgundy-light); transform: translateY(-1px); }
+
+.detail-bottom-nav { text-align: center; margin: 38px 0 20px; }
+.detail-back-lg { padding: 16px 44px; font-size: 16.5px; font-weight: 800; border-radius: var(--radius-full); background: var(--wood-dark); color: var(--cream); border: 2px solid var(--gold); cursor: pointer; box-shadow: var(--shadow); transition: all 200ms; }
+.detail-back-lg:hover { background: var(--wood-mid); transform: translateY(-2px); box-shadow: var(--shadow-lg); color: var(--gold-light); }
+
+@media (max-width: 767px) {
+  .detail-top-card { padding: 16px 18px; gap: 14px; }
+  .rating-score { font-size: 18px; }
+  .rating-stars { font-size: 16px; }
+  .top-actions-area { width: 100%; justify-content: stretch; }
+  .top-action-btn { flex: 1; justify-content: center; text-align: center; padding: 10px 12px; font-size: 12.5px; }
+  .detail-card { padding: 20px 16px; margin-bottom: 18px; border-radius: 14px; }
+  .card-header h2 { font-size: 16px; }
+  .desc-content { font-size: 15px; line-height: 1.8; }
+  .rec-item { padding: 12px 14px; gap: 10px; }
+  .rec-text { font-size: 14px; }
+  .map-address-bar { flex-direction: column; align-items: flex-start; padding: 14px; }
+  .map-direct-btn { width: 100%; text-align: center; margin-top: 6px; display: block; }
+  .detail-back-lg { width: 100%; padding: 14px 20px; font-size: 15px; }
+}
+/* ===== END REDESIGNED DETAIL PAGE CSS ===== */
+
 /* Rating bar */
 .rating-bar { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(201,169,110,0.10) 0%, rgba(139,26,43,0.06) 100%); border: 1.5px solid var(--gold); border-radius: 12px; padding: 10px 16px; margin-bottom: 16px; }
 .rating-bar .stars { font-size: 18px; letter-spacing: 2px; }
@@ -1458,7 +1532,7 @@ const S = {
 
     let h='';
 
-    // Hero
+    // 1. Hero
     h+=safe(function(){
       const bgImg=o.image||"";
       let s='<div class="detail-hero">';
@@ -1488,42 +1562,95 @@ const S = {
 
     h+='<div class="detail-content">';
 
-    // Rating bar
+    // 2. Top Overview Bar (Rating + Quick Actions)
     h+=safe(function(){
-      if(!o.rating)return "";
-      const stars='★'.repeat(Math.floor(o.rating))+'☆'.repeat(5-Math.floor(o.rating));
-      const countLabel=lang==="ko"?"리뷰":(lang==="ja"?"レビュー":"reviews");
+      let s='<div class="detail-top-card">';
+      
+      // Rating Box
+      s+='<div class="top-rating-area">';
+      if(o.rating){
+        const stars='★'.repeat(Math.floor(o.rating))+'☆'.repeat(5-Math.floor(o.rating));
+        const countLabel=lang==="ko"?"리뷰":(lang==="ja"?"レビュー":"reviews");
+        s+='<div class="rating-badge-row">';
+        s+='<span class="rating-stars">'+stars+'</span>';
+        s+='<span class="rating-score">'+o.rating+'</span>';
+        s+='<span class="rating-count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
+        s+='</div>';
+      }
       const discLabel=lang==="ko"?"※ 평점 및 리뷰 수는 참고용이며 실시간 데이터와 상이할 수 있습니다."
         :(lang==="ja"?"※ 評価とレビュー数は参考用で、リアルタイムデータと異なる場合があります。"
         :"※ Ratings and review counts are for reference only and may differ from real-time data.");
-      let s='<div class="rating-bar">';
-      s+='<span class="stars">'+stars+'</span>';
-      s+='<span class="score">'+o.rating+'</span>';
-      s+='<span class="count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
+      s+='<div class="rating-disclaimer">'+esc(discLabel)+'</div>';
       s+='</div>';
-      s+='<p style="font-size:12px;color:var(--text-muted);margin-bottom:16px;font-weight:600;">'+esc(discLabel)+'</p>';
+
+      // Quick Actions Box
+      s+='<div class="top-actions-area">';
+      if(o.website){
+        s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="top-action-btn primary-btn">🌐 '+esc(lang==="ko"?"공식 웹사이트":(lang==="ja"?"公式サイト":"Official Website"))+' →</a>';
+      }
+      if(o.googleMapsUrl){
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="top-action-btn secondary-btn">📍 Google Maps</a>';
+      }
+      s+='</div>';
+
+      s+='</div>';
       return s;
     });
 
-    // Gallery (single representative image)
+    // 3. Gallery (Single representative image card with elegant rounded styling)
     h+=safe(function(){
       const src=o.image||"";
       if(!src)return "";
-      let s='<div class="gallery-wrap">';
-      s+='<div class="gallery-main">';
-      s+='<img class="active" src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';" style="opacity:1;">';
+      let s='<div class="detail-gallery-card">';
+      s+='<div class="gallery-image-box">';
+      s+='<img src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';">';
       s+='</div>';
       const disc = lang==="ko"
         ? "※ 본 이미지는 이해를 돕기 위한 예시 이미지이며, 실제 시설과 다를 수 있습니다."
         : (lang==="ja"
           ? "※ この画像はイメージです。実際の施設とは異なる場合があります。"
           : "※ This image is for illustrative purposes only and may differ from the actual facility.");
-      s+='<div class="gallery-disclaimer"><span class="gd-icon">ℹ️</span><span class="gd-text">'+esc(disc)+'</span></div>';
+      s+='<div class="gallery-info-bar"><span class="gd-icon">ℹ️</span><span class="gd-text">'+esc(disc)+'</span></div>';
       s+='</div>';
       return s;
     });
 
-    // Basic info table
+    // 4. Section 1: Detailed Description & Highlights
+    h+=safe(function(){
+      const desc=(o.desc&&o.desc[lang])||"";
+      const recs=[];
+      if(o.recommendPoints&&o.recommendPoints[lang]){
+        o.recommendPoints[lang].forEach(function(pt){if(pt)recs.push(pt);});
+      }
+      if(!desc && !recs.length) return "";
+
+      let s='<div class="detail-card">';
+      if(desc){
+        s+='<div class="card-header"><h2>📖 '+esc(lang==="ko"?"온천 소개 및 상세 설명":(lang==="ja"?"施設のご紹介・詳細説明":"Overview & Detailed Description"))+'</h2></div>';
+        const paragraphs=br(desc);
+        s+='<div class="desc-content">';
+        paragraphs.forEach(function(p){
+          s+='<p>'+esc(p)+'</p>';
+        });
+        s+='</div>';
+      }
+
+      if(recs.length){
+        if(desc) s+='<div class="card-divider"></div>';
+        s+='<div class="card-header" style="margin-bottom:16px;"><h2>✨ '+esc(lang==="ko"?"추천 포인트 & 하이라이트":(lang==="ja"?"おすすめポイント＆ハイライト":"Highlights & Recommend Points"))+'</h2></div>';
+        s+='<div class="recs-list">';
+        const badgeIcons = ["👑", "🌟", "♨️", "💎", "👍"];
+        recs.slice(0,5).forEach(function(pt, i){
+          const icon = badgeIcons[i % badgeIcons.length];
+          s+='<div class="rec-item"><span class="rec-badge">'+icon+'</span><div class="rec-text">'+esc(pt)+'</div></div>';
+        });
+        s+='</div>';
+      }
+      s+='</div>';
+      return s;
+    });
+
+    // 5. Section 2: Basic Info Table + Spring Data Table
     h+=safe(function(){
       const hourLabel=lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours");
       const hourVal=o.hours||"-";
@@ -1539,95 +1666,61 @@ const S = {
       if(o.website){
         rows.push([lang==="ko"?"공식 HP":(lang==="ja"?"公式HP":"Website"), '<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer">'+esc(o.website)+'</a>']);
       }
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"기본 정보":(lang==="ja"?"基本情報":"Information"))+'</h2>';
+      if(o.googleMapsUrl){
+        const mapBtnText = lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで直接見る ↗":"View on Google Maps ↗");
+        rows.push([lang==="ko"?"지도 링크":(lang==="ja"?"地図リンク":"Map Link"), '<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="inline-map-btn">📍 '+mapBtnText+'</a>']);
+      }
+
+      let s='<div class="detail-card">';
+      s+='<div class="card-header"><h2>📋 '+esc(lang==="ko"?"기본 시설 정보":(lang==="ja"?"基本施設情報":"Basic Information"))+'</h2></div>';
       s+='<div class="data-table">';
       rows.forEach(function(row){
         if(!row[1])return;
         s+='<div class="data-table-row"><div class="data-table-label">'+esc(row[0])+'</div><div class="data-table-value">'+row[1]+'</div></div>';
       });
-      s+='</div></div>';
-      return s;
-    });
+      s+='</div>';
 
-    // Spring data
-    h+=safe(function(){
-      if(!o.springData||!o.springData[lang])return "";
-      const sp=o.springData[lang];
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"온천 데이터":(lang==="ja"?"湯データ":"Spa Data"))+'</h2>';
-      s+='<div class="data-table">';
-      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"원천":(lang==="ja"?"源泉名":"Source"))+'</div><div class="data-table-value">'+esc(sp.source)+'</div></div>';
-      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"수질":(lang==="ja"?"泉質":"Quality"))+'</div><div class="data-table-value">'+esc(sp.quality)+'</div></div>';
-      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"온도":(lang==="ja"?"泉温":"Temp"))+'</div><div class="data-table-value">'+esc(sp.temp)+'</div></div>';
-      s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"효능":(lang==="ja"?"効能":"Benefits"))+'</div><div class="data-table-value">'+esc(sp.benefits)+'</div></div>';
-      if(sp.features&&sp.features.length){
-        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"특징":(lang==="ja"?"特徴":"Features"))+'</div><div class="data-table-value">'+esc(sp.features.join(" / "))+'</div></div>';
+      // Spring Data subsection inside same card
+      if(o.springData && o.springData[lang]){
+        const sp=o.springData[lang];
+        s+='<div class="card-divider"></div>';
+        s+='<div class="card-header" style="margin-bottom:16px;"><h2>♨️ '+esc(lang==="ko"?"온천수 및 수질 데이터":(lang==="ja"?"温泉データ・泉質情報":"Hot Spring Data & Quality"))+'</h2></div>';
+        s+='<div class="data-table spa-table">';
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"원천명":(lang==="ja"?"源泉名":"Source"))+'</div><div class="data-table-value">'+esc(sp.source)+'</div></div>';
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"수질 (泉質)":(lang==="ja"?"泉質":"Quality"))+'</div><div class="data-table-value">'+esc(sp.quality)+'</div></div>';
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"온도 (泉温)":(lang==="ja"?"泉温":"Temp"))+'</div><div class="data-table-value">'+esc(sp.temp)+'</div></div>';
+        s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"주요 효능":(lang==="ja"?"効能":"Benefits"))+'</div><div class="data-table-value">'+esc(sp.benefits)+'</div></div>';
+        if(sp.features&&sp.features.length){
+          s+='<div class="data-table-row"><div class="data-table-label">'+esc(lang==="ko"?"특징 및 설비":(lang==="ja"?"特徴・設備":"Features"))+'</div><div class="data-table-value">'+esc(sp.features.join(" / "))+'</div></div>';
+        }
+        s+='</div>';
       }
-      s+='</div></div>';
+
+      s+='</div>';
       return s;
     });
 
-    // Amenities
+    // 6. Section 3: Amenities & Tips
     h+=safe(function(){
-      if(!o.amenities||!o.amenities.length)return "";
       const amMap={
         shampoo:{icon:"🧴",ko:"샴푸",ja:"シャンプー",en:"Shampoo"},
         bodySoap:{icon:"🫧",ko:"바디솝",ja:"ボディソープ",en:"Body Soap"},
         hairDryer:{icon:"💨",ko:"드라이어",ja:"ドライヤー",en:"Hair Dryer"},
         locker:{icon:"🔐",ko:"락커",ja:"ロッカー",en:"Locker"},
         sauna:{icon:"🧖",ko:"사우나",ja:"サウナ",en:"Sauna"},
-        coldBath:{icon:"❄️",ko:"찜질방",ja:"水風呂",en:"Cold Bath"},
+        coldBath:{icon:"❄️",ko:"냉탕/찜질",ja:"水風呂",en:"Cold Bath"},
         openAirBath:{icon:"♨️",ko:"노천탕",ja:"露天風呂",en:"Open-air Bath"},
         bedrockBath:{icon:"🪨",ko:"암반욕",ja:"岩盤浴",en:"Bedrock Bath"},
-        restaurant:{icon:"🍽️",ko:"식당",ja:"食事処",en:"Restaurant"},
+        restaurant:{icon:"🍽️",ko:"식당/카페",ja:"食事処",en:"Restaurant"},
         restArea:{icon:"🛋️",ko:"휴게실",ja:"休憩所",en:"Rest Area"},
         vendingMachine:{icon:"🥤",ko:"자판기",ja:"自販機",en:"Vending Machine"},
-        gameCorner:{icon:"🎮",ko:"게임코너",ja:"ゲーム",en:"Games"},
-        yukata:{icon:"👘",ko:"유카타",ja:"浴衣",en:"Yukata"},
+        gameCorner:{icon:"🎮",ko:"게임/오락",ja:"ゲーム",en:"Games"},
+        yukata:{icon:"👘",ko:"유카타 대여",ja:"浴衣",en:"Yukata"},
         wifi:{icon:"📶",ko:"Wi-Fi",ja:"Wi-Fi",en:"Wi-Fi"},
         rentalTowel:{icon:"🧖",ko:"수건 대여",ja:"タオルレンタル",en:"Towel Rental"},
-        manga:{icon:"📚",ko:"만화",ja:"漫画",en:"Manga"}
+        manga:{icon:"📚",ko:"만화/도서",ja:"漫画コーナー",en:"Manga"}
       };
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"시설·어메니티":(lang==="ja"?"アメニティ·設備":"Amenities"))+'</h2>';
-      s+='<div class="amenity-grid">';
-      o.amenities.forEach(function(am){
-        const info=amMap[am];
-        if(!info)return;
-        const label=info[lang]||info.ko;
-        s+='<div class="amenity-item"><div class="amenity-icon">'+info.icon+'</div><div class="amenity-label">'+esc(label)+'</div></div>';
-      });
-      s+='</div></div>';
-      return s;
-    });
-
-    // Description (paragraphs)
-    h+=safe(function(){
-      const desc=(o.desc&&o.desc[lang])||"";
-      if(!desc)return "";
-      const paragraphs=br(desc);
-      if(!paragraphs.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"상세 설명":(lang==="ja"?"詳細説明":"Description"))+'</h2><div class="detail-text">';
-      paragraphs.forEach(function(p){
-        s+='<p>'+esc(p)+'</p>';
-      });
-      s+='</div></div>';
-      return s;
-    });
-
-    // Recommend points
-    h+=safe(function(){
-      const recs=[];
-      if(o.recommendPoints&&o.recommendPoints[lang]){
-        o.recommendPoints[lang].forEach(function(pt){if(pt)recs.push(pt);});
-      }
-      if(!recs.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"추천 포인트":(lang==="ja"?"おすすめポイント":"Highlights"))+'</h2><div class="detail-text">';
-      recs.slice(0,5).forEach(function(pt){s+='<p>• '+esc(pt)+'</p>';});
-      s+='</div></div>';
-      return s;
-    });
-
-    // Tips
-    h+=safe(function(){
+      const hasAm = o.amenities && o.amenities.length;
       let tips=[];
       if(o.tips&&o.tips[lang]&&o.tips[lang].length){
         o.tips[lang].forEach(function(t,i){
@@ -1635,48 +1728,79 @@ const S = {
           tips.push({icon:icons[i%icons.length],text:t});
         });
       }
-      if(!tips.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"이용 팁":(lang==="ja"?"利用のヒント":"Tips"))+'</h2><div class="tip-list">';
-      tips.forEach(function(tip){
-        s+='<div class="tip-item"><span class="tip-icon">'+tip.icon+'</span><span class="tip-text">'+esc(tip.text)+'</span></div>';
-      });
-      s+='</div></div>';
+      if(!hasAm && !tips.length) return "";
+
+      let s='<div class="detail-card">';
+      if(hasAm){
+        s+='<div class="card-header"><h2>🧴 '+esc(lang==="ko"?"보유 시설 및 어메니티":(lang==="ja"?"館内設備・アメニティ":"Amenities & Facilities"))+'</h2></div>';
+        s+='<div class="amenity-grid">';
+        o.amenities.forEach(function(am){
+          const info=amMap[am];
+          if(!info)return;
+          const label=info[lang]||info.ko;
+          s+='<div class="amenity-item"><span class="amenity-icon">'+info.icon+'</span><span class="amenity-label">'+esc(label)+'</span></div>';
+        });
+        s+='</div>';
+      }
+
+      if(tips.length){
+        if(hasAm) s+='<div class="card-divider"></div>';
+        s+='<div class="card-header" style="margin-bottom:16px;"><h2>💡 '+esc(lang==="ko"?"방문 및 이용 팁":(lang==="ja"?"ご利用のヒント＆マナー":"Visitor Tips & Etiquette"))+'</h2></div>';
+        s+='<div class="tip-list">';
+        tips.forEach(function(tip){
+          s+='<div class="tip-item"><span class="tip-icon">'+tip.icon+'</span><span class="tip-text">'+esc(tip.text)+'</span></div>';
+        });
+        s+='</div>';
+      }
+      s+='</div>';
       return s;
     });
 
-    // Map (single column full width)
+    // 7. Section 4: Map & Access
     h+=safe(function(){
       const addr=(o.address&&o.address[lang])||(o.address&&o.address.ko)||"";
       if(!addr)return "";
       const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"지도":(lang==="ja"?"地図":"Map"))+'</h2>';
+      
+      let s='<div class="detail-card">';
+      s+='<div class="card-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
+      
       s+='<div class="map-embed-wrap">';
       s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy"></iframe>';
-      s+='</div></div>';
-      return s;
-    });
+      s+='</div>';
 
-    // Access info
-    h+=safe(function(){
+      s+='<div class="map-address-bar">';
+      s+='<div class="map-address-text"><strong>'+esc(lang==="ko"?"주소":(lang==="ja"?"住所":"Address"))+':</strong> '+esc(addr)+'</div>';
+      if(o.googleMapsUrl){
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="map-direct-btn">📍 '+esc(lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで開く ↗":"Open in Google Maps ↗"))+'</a>';
+      }
+      s+='</div>';
+
       const ac=(o.access&&o.access[lang])||{};
-      if(!ac.parking&&!ac.shuttle&&!ac.highway)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"접근·주차":(lang==="ja"?"アクセス":"Access"))+'</h2>';
-      s+='<div class="access-list">';
-      if(ac.parking)s+='<div class="access-item"><span class="access-icon">🅿️</span><span class="access-text">'+esc(ac.parking)+'</span></div>';
-      if(ac.shuttle)s+='<div class="access-item"><span class="access-icon">🚌</span><span class="access-text">'+esc(ac.shuttle)+'</span></div>';
-      if(ac.highway)s+='<div class="access-item"><span class="access-icon">🚗</span><span class="access-text">'+esc(ac.highway)+'</span></div>';
-      s+='</div></div>';
+      if(ac.parking||ac.shuttle||ac.highway){
+        s+='<div class="card-divider" style="margin-top:16px; margin-bottom:20px;"></div>';
+        s+='<div class="card-header" style="margin-bottom:14px;"><h3 style="font-size:15px; font-weight:800; color:var(--text);">🚗 '+esc(lang==="ko"?"주차 및 교통 접근성":(lang==="ja"?"駐車場・交通アクセス":"Parking & Transit Info"))+'</h3></div>';
+        s+='<div class="access-list">';
+        if(ac.parking)s+='<div class="access-item"><span class="access-icon">🅿️</span><span class="access-text">'+esc(ac.parking)+'</span></div>';
+        if(ac.shuttle)s+='<div class="access-item"><span class="access-icon">🚌</span><span class="access-text">'+esc(ac.shuttle)+'</span></div>';
+        if(ac.highway)s+='<div class="access-item"><span class="access-icon">🚗</span><span class="access-text">'+esc(ac.highway)+'</span></div>';
+        s+='</div>';
+      }
+
+      s+='</div>';
       return s;
     });
 
-    // Nearby (full width single column)
+    // 8. Section 5: Nearby Hot Springs
     h+=safe(function(){
       const ag=(o.areaGroup||o.area);
       const myArea=(ag&&ag.ko)||"";
       const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
-      let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2>';
-      s+='<p style="font-size:14px;color:var(--text-light);margin-bottom:14px;">'+esc(lang==="ko"?"같은 지역의 다른 온천 시설도 함께 둘러보세요.":(lang==="ja"?"同じ地域の他の温泉施設も合わせてご覧ください。":"Check out other hot spring facilities in the same area."))+'</p>';
+      
+      let s='<div class="detail-card">';
+      s+='<div class="card-header"><h2>♨️ '+esc(lang==="ko"?"주변 추천 온천 시설":(lang==="ja"?"周辺の人気の温泉・銭湯":"Nearby Hot Springs in the Same Area"))+'</h2></div>';
+      s+='<p style="font-size:14px;color:var(--text-light);margin-bottom:18px;">'+esc(lang==="ko"?"같은 지역의 다른 인기 온천 시설도 함께 둘러보시고 비교해 보세요.":(lang==="ja"?"同じ地域の他の人気温泉・銭湯施設もあわせてご覧ください。":"Explore other highly rated hot spring facilities nearby."))+'</p>';
       s+='<div class="nearby-grid">';
       nearby.forEach(function(n){
         s+='<div class="nearby-item" data-nid="'+esc(n.id)+'">';
@@ -1688,8 +1812,16 @@ const S = {
       return s;
     });
 
-    // Ad
-    h+='<div class="ad-slot ad-detail-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
+    // 9. Back Button at Bottom
+    h+=safe(function(){
+      let s='<div class="detail-bottom-nav">';
+      s+='<button class="detail-back-lg" id="detail-back-btn-lg">← '+esc(lang==="ko"?"온천 목록으로 돌아가기":(lang==="ja"?"一覧に戻る":"Back to List"))+'</button>';
+      s+='</div>';
+      return s;
+    });
+
+    // 10. Ad Slot
+    h+='<div class="ad-slot ad-detail-top" style="margin-top:12px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
 
     h+='</div>';
 
@@ -1697,6 +1829,9 @@ const S = {
 
     const backBtn=wrap.querySelector("#detail-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
+    const backBtnLg=wrap.querySelector("#detail-back-btn-lg");
+    if(backBtnLg) backBtnLg.addEventListener("click",function(){go("list");});
+
     wrap.querySelectorAll(".nearby-item").forEach(function(el){
       el.addEventListener("click",function(){
         const nid=this.getAttribute("data-nid");
@@ -1777,5 +1912,6 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
-</body>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1dcc73d4a1e8eb8',t:'MTc4NDQ5NjExMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
