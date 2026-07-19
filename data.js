@@ -22,7 +22,7 @@ const DATA = [{"id":"otemachi","name":{"ko":"SPA 오테마치 피트니스 클�
     "./images/waterfall-bath-nature.jpg",
     "./images/cave-onsen.jpg"
   ],
-  "도심형 스파": [
+  "도심 스파": [
     "./images/urban-spa-rotenburo.jpg",
     "./images/urban-spa-exterior.jpg",
     "./images/urban-spa-lounge.jpg",
@@ -57,7 +57,7 @@ const DATA = [{"id":"otemachi","name":{"ko":"SPA 오테마치 피트니스 클�
     "./images/private-bath-ryokan.jpg",
     "./images/bamboo-garden-bath.jpg"
   ],
-  "온천 테마파크": [
+  "테마파크": [
     "./images/theme-park-rotenburo.jpg",
     "./images/theme-park-exterior.jpg",
     "./images/theme-park-lounge.jpg",
