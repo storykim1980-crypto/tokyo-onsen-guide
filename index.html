@@ -1336,13 +1336,13 @@ const S = {
     if(name==="detail")drawDetail(S.detailId);
   }
 
-  function getTypeClass(typeKo){
-    const map={"천연 온천":"type-natural","도심 스파":"type-urban","슈퍼 센토":"type-super","전통 센토":"type-sento","온천 여관":"type-ryokan","테마파크":"type-theme","온천 마을":"type-village"};
-    return map[typeKo]||"type-urban";
+  function getTypeClass(typeVal){
+    const map={"천연 온천":"type-natural","Natural Hot Spring":"type-natural","도심 스파":"type-urban","Urban Spa":"type-urban","도심형 스파":"type-urban","슈퍼 센토":"type-super","Super Sento":"type-super","전통 센토":"type-sento","Traditional Sento":"type-sento","온천 여관":"type-ryokan","Hot Spring Inn":"type-ryokan","테마파크":"type-theme","Theme Park":"type-theme","온천 마을":"type-village","Onsen Village":"type-village"};
+    return map[typeVal]||"type-urban";
   }
-  function getTypeIcon(typeKo){
-    const map={"천연 온천":"🌿","도심 스파":"🏙️","슈퍼 센토":"🏛️","전통 센토":"♨️","온천 여관":"🏯","테마파크":"🎭","온천 마을":"🌸"};
-    return map[typeKo]||"♨️";
+  function getTypeIcon(typeVal){
+    const map={"천연 온천":"🌿","Natural Hot Spring":"🌿","도심 스파":"🏙️","Urban Spa":"🏙️","도심형 스파":"🏙️","슈퍼 센토":"🏛️","Super Sento":"🏛️","전통 센토":"♨️","Traditional Sento":"♨️","온천 여관":"🏯","Hot Spring Inn":"🏯","테마파크":"🎭","Theme Park":"🎭","온천 마을":"🌸","Onsen Village":"🌸"};
+    return map[typeVal]||"♨️";
   }
 
   function drawHome(){
@@ -1350,7 +1350,7 @@ const S = {
     const ec=$("editorial-count");
     if(ec)ec.textContent=t("facilityCount",{count:DATA.length});
     const areaCounts={};
-    DATA.forEach(o=>{const g=(o.areaGroup&&o.areaGroup.ko)||"unknown";areaCounts[g]=(areaCounts[g]||0)+1;});
+    DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const g=normArea((ag&&ag.ko)||"unknown");areaCounts[g]=(areaCounts[g]||0)+1;const found=AREAS.find(a=>a.ko===(ag&&ag.ko)||a.en===(ag&&ag.en)||a.ja===(ag&&ag.ja));if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
 
     const areaList=$("home-area-list");
     if(areaList){clearEl(areaList);AREAS.slice(1).forEach(a=>{
@@ -1379,7 +1379,7 @@ const S = {
       const areaId=lbl.getAttribute("data-area");
       const area=AREAS.find(a=>a.id===areaId);
       if(area)lbl.textContent=area[S.lang];
-      lbl.onclick=(e)=>{e.preventDefault();S.fArea=areaId;S.fType="all";S.fFeat="all";S.q="";go("list");};
+      lbl.onclick=(e)=>{e.preventDefault();S.fArea=normArea(areaId);S.fType="all";S.fFeat="all";S.q="";go("list");};
     });
 
     const wishGrid=$("home-wish-list");
@@ -1396,7 +1396,7 @@ const S = {
     if(report){clearEl(report);DATA.slice(0,15).forEach(o=>{
       const item=el("div",{cls:"report-item",on:{click:()=>go("detail",{id:o.id})}});
       const imgWrap=el("div",{cls:"report-img"});
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       const rImgArr=IMAGE_MAP[typeKo];const rImg=rImgArr&&rImgArr.length?rImgArr[0]:"";
       if(rImg){
         const img=el("img",{attr:{src:rImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}});
@@ -1418,6 +1418,7 @@ const S = {
     }
   }
 
+  function normArea(id){return String(id||"").replace(/-/g,"_");}
   function resolveArea(areaVal){
     if(!areaVal||areaVal==="all")return"all";
     const found=AREAS.find(a=>a.id===areaVal||a.ko===areaVal||a.en===areaVal||a.ja===areaVal);
@@ -1425,14 +1426,20 @@ const S = {
   }
   function areaMatch(o){
     if(S.fArea==="all")return true;
-    return o.areaGroup.ko === S.fArea;
+    const ag=(o.areaGroup||o.area);
+    const agKo=ag&&ag.ko;
+    if(!agKo)return false;
+    const target=normArea(S.fArea);
+    if(normArea(agKo)===target)return true;
+    const found=AREAS.find(a=>a.ko===agKo||a.en===agKo||a.ja===agKo);
+    return found?normArea(found.id)===target:false;
   }
 
   function drawList(){
     try{
     const areaList=$("sidebar-area-list");
     if(areaList){clearEl(areaList);
-      const areaCounts={};DATA.forEach(o=>{const g=(o.areaGroup&&o.areaGroup.ko)||"unknown";areaCounts[g]=(areaCounts[g]||0)+1;});
+      const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const g=normArea((ag&&ag.ko)||"unknown");areaCounts[g]=(areaCounts[g]||0)+1;const found=AREAS.find(a=>a.ko===(ag&&ag.ko)||a.en===(ag&&ag.en)||a.ja===(ag&&ag.ja));if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
       AREAS.forEach(a=>{
         const cnt=a.id==="all"?DATA.length:(areaCounts[a.id]||0);
         const li=el("li");
@@ -1457,8 +1464,11 @@ const S = {
 
     let list=DATA.filter(o=>{
       const ma=areaMatch(o);
-      const typeKo=(o.type&&o.type.ko)||"";
-      const mt=S.fType==="all"||typeKo===S.fType||(o.type&&o.type.en)===S.fType||(o.type&&o.type.ja)===S.fType;
+      const typeVal=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
+      const typeEn=(typeof o.type==="string")?o.type:((o.type&&o.type.en)||"");
+      const typeJa=(typeof o.type==="string")?o.type:((o.type&&o.type.ja)||"");
+      const typeFound=TYPES.find(t=>t.id===S.fType);
+      const mt=S.fType==="all"||typeVal===S.fType||typeEn===S.fType||typeJa===S.fType||(typeFound&&(typeVal===typeFound.ko||typeEn===typeFound.en||typeJa===typeFound.ja));
       const mf=S.fFeat==="all"||(o.features||[]).includes(S.fFeat);
       const q=(S.q||"").trim().toLowerCase();
       const nameStr=(o.name&&o.name[S.lang])||"";
@@ -1497,7 +1507,7 @@ const S = {
   function makeBlogItem(o){
     try{
     const item=el("div",{cls:"blog-item"});
-    const typeKo=(o.type&&o.type.ko)||"";
+    const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
     const media=el("div",{cls:["card-visual",getTypeClass(typeKo)]});
     const cImgArr=IMAGE_MAP[typeKo];
     const cImg=cImgArr&&cImgArr.length?cImgArr[0]:"";
@@ -1566,7 +1576,7 @@ const S = {
 
     // Hero with background image
     h+=safe(function(){
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       const imgArr=IMAGE_MAP[typeKo];
       const bgImg=imgArr&&imgArr.length?imgArr[0]:"";
       let s='<div class="detail-hero">';
@@ -1595,7 +1605,7 @@ const S = {
 
     // Gallery - single representative image + prominent disclaimer
     h+=safe(function(){
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       const imgArr=IMAGE_MAP[typeKo];
       if(!imgArr||!imgArr.length)return "";
       // Pick 1 representative image deterministically based on id hash
@@ -1641,7 +1651,7 @@ const S = {
 
     // Rich description by type
     h+=safe(function(){
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       let rich="";
       if(typeKo==="천연 온천"){
         if(lang==="ko") rich="지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있는 본격적인 온천 시설입니다. 대욕장은 넓고 쾌적한 공간으로 구성되어 있으며, 노천탕에서는 사계절 각기 다른 풍경을 감상하며 입욕할 수 있습니다. 온천수는 피로 회복과 혈액 순환 개선에 효과적이며, 장시간 업무에 지친 현대인에게 최적의 휴식 공간을 제공합니다. 시설 내에는 휴게 공간과 간단한 식사를 할 수 있는 공간도 마련되어 있어 하루의 피로를 녹이기에 충분합니다. 주말이나 휴일에는 가족 단위 방문객이 많으며, 연인이나 친구와 함께 방문하기에도 적합한 곳입니다.";
@@ -1678,7 +1688,7 @@ const S = {
 
     // Spring quality
     h+=safe(function(){
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       let spring="";
       if(typeKo==="천연 온천" || typeKo==="온천 여관" || typeKo==="온천 마을"){
         if(lang==="ko") spring="이 시설에서 사용되는 온천수는 지하 수십 미터에서 끌어올린 천연 온천으로, 나트륨·칼슘·마그네슘 등의 미네랄이 풍부하게 함유되어 있습니다. 온천수의 온도는 약 40~42도로 유지되며, 피부 미용과 신경통·근육통 완화에 효과적인 것으로 알려져 있습니다.";
@@ -1699,7 +1709,7 @@ const S = {
       const features=o.features||[];
       const hls=o.highlights||[];
       hls.forEach(function(hl){if(hl&&hl[lang]) recs.push(hl[lang]);});
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       if(typeKo==="천연 온천"){
         if(lang==="ko"){recs.push("지하에서 솟아오르는 천연 온천수를 그대로 즐길 수 있습니다.");recs.push("도쿄 도심에서 쉽게 접근할 수 있어 당일치기 여행에 최적입니다.");}
         else if(lang==="ja"){recs.push("地下から湧き出る天然温泉をそのまま楽しめます。");recs.push("東京の都心から簡単にアクセスでき、日帰り旅行に最適です。");}
@@ -1790,7 +1800,7 @@ const S = {
 
     // Tips
     h+=safe(function(){
-      const typeKo=(o.type&&o.type.ko)||"";
+      const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       const features=o.features||[];
       let tips=[];
       if(typeKo==="천연 온천"){
@@ -1854,8 +1864,9 @@ const S = {
 
     // Nearby
     h+=safe(function(){
-      const myArea=(o.areaGroup&&o.areaGroup.ko)||"";
-      const nearby=DATA.filter(function(x){return x.id!==o.id && x.areaGroup && x.areaGroup.ko===myArea;}).slice(0,3);
+      const ag=(o.areaGroup||o.area);
+      const myArea=(ag&&ag.ko)||"";
+      const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
       let s='<div class="detail-section"><h2>'+esc(lang==="ko"?"주변 온천":(lang==="ja"?"周辺の温泉":"Nearby"))+'</h2><div class="nearby-grid">';
       nearby.forEach(function(n){
@@ -1980,5 +1991,5 @@ const S = {
 })();
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d999dd697cd754',t:'MTc4NDQ2Mjc5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d9bc86e83011d3',t:'MTc4NDQ2NDIxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
