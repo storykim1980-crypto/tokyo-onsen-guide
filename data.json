@@ -34377,7 +34377,8 @@
       "catSauna": "🧖 사우나",
       "catFamily": "👨‍👩‍👧‍👦 가족",
       "catAbout": "📖 소개",
-      "logoSub": "TOKYO ONSEN"
+      "logoSub": "TOKYO ONSEN",
+      "filterToggle": "☰ 필터 보기"
     },
     "en": {
       "yearBadge": "(2026 Latest)",
@@ -34499,7 +34500,8 @@
       "catSauna": "🧖 Sauna",
       "catFamily": "👨‍👩‍👧‍👦 Family",
       "catAbout": "📖 About",
-      "logoSub": "TOKYO ONSEN"
+      "logoSub": "TOKYO ONSEN",
+      "filterToggle": "☰ Filter Options"
     },
     "ja": {
       "yearBadge": "(2026年最新)",
@@ -34621,7 +34623,8 @@
       "catSauna": "🧖 サウナ",
       "catFamily": "👨‍👩‍👧‍👦 家族",
       "catAbout": "📖 概要",
-      "logoSub": "TOKYO ONSEN"
+      "logoSub": "TOKYO ONSEN",
+      "filterToggle": "☰ 絞り込みフィルター"
     }
   },
   "TYPES": [

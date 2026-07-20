@@ -1206,7 +1206,7 @@ if ('serviceWorker' in navigator) {
       <p data-i18n="pageListSub">도쿄의 인기 일일 온천과 스파</p>
     </div>
     <div class="ad-slot ad-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="리스트상단"</div></div>
-    <button type="button" id="sidebar-toggle" class="btn btn-secondary" style="display:none;margin-bottom:10px;width:100%;font-size:14px;font-weight:800;">☰ 필터 보기</button>
+    <button type="button" id="sidebar-toggle" class="btn btn-secondary" style="display:none;margin-bottom:10px;width:100%;font-size:14px;font-weight:800;" data-i18n="filterToggle">☰ 필터 보기</button>
     <div class="list-layout">
       <aside class="list-sidebar">
         <div class="sidebar-block">
@@ -1553,6 +1553,22 @@ const S = {
       const k=el.getAttribute("data-i18n");
       const txt=i18n[S.lang][k];
       if(txt!==undefined){ el.textContent=txt; }
+    });
+        // Explicitly update mobile filter toggle button and AdSense slots dynamically by language
+    const sbBtn = document.getElementById("sidebar-toggle");
+    if (sbBtn) {
+      sbBtn.textContent = { ko: "☰ 필터 보기", ja: "☰ 絞り込みフィルター", en: "☰ Filter Options" }[S.lang] || "☰ 필터 보기";
+    }
+    const adTop = document.querySelector(".ad-top div");
+    if (adTop) {
+      adTop.innerHTML = { ko: 'Google AdSense<br>data-ad-slot="리스트상단"', ja: 'Google AdSense<br>data-ad-slot="一覧上部"', en: 'Google AdSense<br>data-ad-slot="List Top"' }[S.lang] || 'Google AdSense<br>data-ad-slot="리스트상단"';
+    }
+    const adSide = document.querySelector(".ad-sidebar div");
+    if (adSide) {
+      adSide.innerHTML = { ko: 'Google AdSense<br>data-ad-slot="사이드바"', ja: 'Google AdSense<br>data-ad-slot="サイドバー"', en: 'Google AdSense<br>data-ad-slot="Sidebar"' }[S.lang] || 'Google AdSense<br>data-ad-slot="사이드바"';
+    }
+    document.querySelectorAll(".ad-detail-top div").forEach(el => {
+      el.innerHTML = { ko: 'Google AdSense<br>data-ad-slot="상세하단"', ja: 'Google AdSense<br>data-ad-slot="詳細下部"', en: 'Google AdSense<br>data-ad-slot="Detail Bottom"' }[S.lang] || 'Google AdSense<br>data-ad-slot="상세하단"';
     });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{
       const k=el.getAttribute("data-i18n-placeholder");
@@ -2342,7 +2358,8 @@ const S = {
     });
 
     // 10. Ad Slot
-    h+='<div class="ad-slot ad-detail-top" style="margin-top:10px;"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="상세하단"</div></div>';
+    const adLabel = { ko: 'Google AdSense<br>data-ad-slot="상세하단"', ja: 'Google AdSense<br>data-ad-slot="詳細下部"', en: 'Google AdSense<br>data-ad-slot="Detail Bottom"' }[lang] || 'Google AdSense<br>data-ad-slot="상세하단"';
+    h+='<div class="ad-slot ad-detail-top" style="margin-top:10px;"><span class="ad-slot-label">Advertisement</span><div>'+adLabel+'</div></div>';
 
     h+='</div>'; // end luxury-main-inner
 
@@ -2492,5 +2509,6 @@ function loadDataFast(callback){
 }
 loadDataFast(initApp);
 </script>
-</body>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1de7ce95f2eea74',t:'MTc4NDUxNDAzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
