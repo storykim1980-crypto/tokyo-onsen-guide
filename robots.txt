@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /images/
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://tokyo-onsen-guide.com/sitemap.xml
