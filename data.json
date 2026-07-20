@@ -19,8 +19,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,100엔~",
@@ -195,8 +195,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -366,8 +366,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "2,900엔~",
@@ -544,8 +544,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "2,750엔~",
@@ -723,8 +723,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "900엔~",
@@ -898,8 +898,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -1070,8 +1070,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,038엔~",
@@ -1244,8 +1244,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "2,680엔~",
@@ -1419,8 +1419,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -1592,8 +1592,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "1,000엔~",
@@ -1765,8 +1765,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -1936,9 +1936,9 @@
         "en": "ota"
       },
       "type": {
-        "ko": "천연 온천 스파",
-        "en": "Spa",
-        "ja": "天然温泉スパ"
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "2,000엔~",
@@ -2112,8 +2112,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -2286,8 +2286,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "1,250엔~",
@@ -2460,8 +2460,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -2634,8 +2634,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -2807,9 +2807,9 @@
         "en": "koto"
       },
       "type": {
-        "ko": "온천 테마파크",
-        "en": "Theme Park",
-        "ja": "温泉テーマパーク"
+        "ko": "테마파크",
+        "ja": "温泉テーマパーク",
+        "en": "Onsen Theme Park"
       },
       "price": {
         "ko": "3,850엔~",
@@ -2982,8 +2982,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "470엔~",
@@ -3155,8 +3155,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,830엔~",
@@ -3331,8 +3331,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "2,350엔~",
@@ -3501,9 +3501,9 @@
         "en": "itabashi"
       },
       "type": {
-        "ko": "천연 온천 스파",
-        "en": "Spa",
-        "ja": "天然温泉スパ"
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "2,260엔~",
@@ -3676,8 +3676,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "890엔~",
@@ -3851,8 +3851,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,320엔~",
@@ -4026,8 +4026,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "950엔~",
@@ -4198,8 +4198,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "750엔~",
@@ -4376,8 +4376,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "750엔~",
@@ -4555,8 +4555,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "1,000엔~",
@@ -4728,8 +4728,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "830엔~",
@@ -4905,8 +4905,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "2,400엔~",
@@ -5060,179 +5060,6 @@
       }
     },
     {
-      "id": "tokinoirodori",
-      "name": {
-        "ko": "이나기 천연온천 토키노이로도리",
-        "en": "Tokino Irodori",
-        "ja": "稲城天然温泉 季彩の湯"
-      },
-      "area": {
-        "ko": "이나기·다치카와",
-        "ja": "稲城・立川",
-        "en": "Inagi-Tachikawa"
-      },
-      "areaGroup": {
-        "ko": "inagi-tachikawa",
-        "ja": "inagi-tachikawa",
-        "en": "inagi-tachikawa"
-      },
-      "type": {
-        "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
-      },
-      "price": {
-        "ko": "800엔~",
-        "en": "¥800~",
-        "ja": "800円～"
-      },
-      "hours": {
-        "ko": "9:00~25:00",
-        "ja": "9:00~25:00",
-        "en": "9:00~25:00"
-      },
-      "holiday": {
-        "ko": "연중무휴",
-        "en": "Open year-round",
-        "ja": "年中無休"
-      },
-      "address": {
-        "ko": "도쿄도 이나기시 코요다이 6-13",
-        "en": "6-13 Koyodai, Inagi",
-        "ja": "東京都稲城市小代台6-13"
-      },
-      "tel": "042-370-2614",
-      "features": [
-        "rotenburo",
-        "family",
-        "restaurant"
-      ],
-      "highlights": [
-        {
-          "ko": "노천탕 충실",
-          "en": "Rich open-air baths",
-          "ja": "露天風呂充実"
-        },
-        {
-          "ko": "석굴풍탕",
-          "en": "Cave-style bath",
-          "ja": "石窟風呂"
-        },
-        {
-          "ko": "가족 단위 인기",
-          "en": "Popular with families",
-          "ja": "家族単位人気"
-        }
-      ],
-      "desc": {
-        "ko": "이나기·다치카와에 자리한 천연 온천 명소 '이나기 천연온천 토키노이로도리'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 노천탕 충실, 석굴풍탕, 가족 단위 인기 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1167m에서 공급되는 탄산수소염 천을(를) 사용하며, 약 54℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 관절통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '이나기 천연온천 토키노이로도리'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "稲城・立川に位置する天然温泉の人気施設「稲城天然温泉 季彩の湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に露天風呂充実、石窟風呂、家族単位人気といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1167mから湧き出る炭酸水素塩泉を使用し、約54℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が神経痛、筋肉痛、関節痛などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。特に、心地よい風を感じながら湯船に浸かれる露天風呂は、都会の喧騒を忘れさせる解放感と深いリラクゼーションを提供します。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。広々としたくつろぎの休憩ラウンジやお食事処、漫画・リラクゼーションスペースなどが充実しており、ご家族連れやご友人、カップル、お一人様まで時間を忘れてゆっくりとおくつろぎいただけます。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「稲城天然温泉 季彩の湯」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Inagi-Tachikawa, 'Tokino Irodori' is a highly regarded Natural destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Rich open-air baths, Cave-style bath, Popular with families, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Bicarbonate spring sourced directly from From 1167m underground, kept at an ideal temperature of roughly 54°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Neuralgia, Muscle pain, Joint pain, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. Especially noteworthy is the open-air bath area, where guests can breathe in fresh outdoor air and soak in tranquil resort-like surroundings right in the middle of the city.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Tokino Irodori' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "website": "https://www.tokino-irodori.com/",
-      "imageIndex": 2,
-      "image": "images/snow-rotenburo.jpg",
-      "tips": {
-        "ko": [
-          "수건 대여 서비스(기본 포함 또는 유료 대여)가 마련되어 있어 짐 없이 가벼운 차림으로도 방문하실 수 있습니다.",
-          "운영시간(9:00~25:00) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "입욕 후에는 시원한 음료로 수분을 보충하고, 로비에서 잠시 몸을 식힌 후 외출하시면 한결 상쾌하고 가벼운 컨디션을 느낄 수 있습니다.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "タオルレンタルサービス（料金込みまたは有料レンタル）があるため、手ぶらでお気軽にご来店いただけます。",
-          "営業時間（9:00~25:00）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "入浴後は冷たいお飲み物でしっかり水分補給を行い、ロビーで少し涼んでからお帰りいただくと、より爽快で軽やかな気分が味わえます。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "Towel rental services are available (included or for a rental fee), making it convenient to drop by empty-handed.",
-          "Check operating hours (9:00~25:00) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Be sure to drink refreshing water or beverages right after bathing and rest briefly in the lobby to maintain a light, energized feeling.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '노천탕 충실' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '석굴풍탕' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '가족 단위 인기' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'탄산수소염 천' 수질을 자랑하며, 입욕 시 신경통, 근육통, 관절통 등에 탁월한 효능을 기대할 수 있습니다.",
-          "도심 속에서도 상쾌한 야외 공기를 마시며 힐링할 수 있는 개방적인 노천탕 공간이 완비되어 있습니다."
-        ],
-        "ja": [
-          "施設自慢の「露天風呂充実」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「石窟風呂」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「家族単位人気」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「炭酸水素塩泉」の泉質を誇り、入浴によって神経痛、筋肉痛、関節痛などの嬉しい効果が期待できます。",
-          "都会にいながら心地よい外気を感じてリラックスできる、開放的な露天風呂スペースを完備しています。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Rich open-air baths', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Cave-style bath', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Popular with families', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Bicarbonate spring' thermal water, known for promoting Neuralgia, Muscle pain, Joint pain and long-lasting body warmth.",
-          "Features a relaxing outdoor open-air bath where you can enjoy fresh breezes and peaceful resort vibes."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 1167m",
-          "quality": "탄산수소염 천",
-          "temp": "54℃",
-          "benefits": "신경통, 근육통, 관절통"
-        },
-        "en": {
-          "source": "From 1167m underground",
-          "quality": "Bicarbonate spring",
-          "temp": "54°C",
-          "benefits": "Neuralgia, Muscle pain, Joint pain"
-        },
-        "ja": {
-          "source": "地下1167m",
-          "quality": "炭酸水素塩泉",
-          "temp": "54℃",
-          "benefits": "神経痛、筋肉痛、関節痛"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "196대 (입장 시 물료)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "en": {
-          "parking": "196 spaces (free)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "ja": {
-          "parking": "196台(無料)",
-          "shuttle": "",
-          "highway": ""
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "openAirBath",
-        "restaurant",
-        "rentalTowel"
-      ],
-      "rating": 3.7,
-      "reviewCount": 271,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E5%9F%8E%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E5%AD%A3%E5%BD%A9%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%A8%B2%E5%9F%8E%E5%B8%82%E5%B0%8F%E4%BB%A3%E5%8F%B06-13",
-      "coords": {
-        "lat": 35.707,
-        "lng": 139.7042
-      }
-    },
-    {
       "id": "rotengarden",
       "name": {
         "ko": "로텐 가든",
@@ -5251,8 +5078,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "780엔~",
@@ -5425,8 +5252,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "850엔~",
@@ -5599,8 +5426,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "920엔~",
@@ -5772,8 +5599,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "800엔~",
@@ -5945,9 +5772,9 @@
         "en": "machida"
       },
       "type": {
-        "ko": "온천 테마파크",
-        "en": "Theme Park",
-        "ja": "温泉テーマパーク"
+        "ko": "테마파크",
+        "ja": "温泉テーマパーク",
+        "en": "Onsen Theme Park"
       },
       "price": {
         "ko": "2,300엔~",
@@ -6120,8 +5947,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "750엔~",
@@ -6292,8 +6119,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "840엔~",
@@ -6465,8 +6292,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "960엔~",
@@ -6644,8 +6471,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "860엔~",
@@ -6816,8 +6643,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "880엔~",
@@ -6987,8 +6814,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000엔~",
@@ -7163,8 +6990,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "7,500엔~",
@@ -7339,8 +7166,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "850엔~",
@@ -7511,8 +7338,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "880엔~",
@@ -7683,8 +7510,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "750엔~",
@@ -7858,8 +7685,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000엔~",
@@ -8035,8 +7862,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000엔~",
@@ -8210,8 +8037,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "900엔~",
@@ -8384,8 +8211,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "7,500엔~",
@@ -8561,8 +8388,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "800엔~",
@@ -8734,8 +8561,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "800엔~",
@@ -8910,8 +8737,8 @@
       },
       "type": {
         "ko": "온천 마을",
-        "en": "Onsen Village",
-        "ja": "温泉郷"
+        "ja": "温泉郷",
+        "en": "Onsen Village"
       },
       "price": {
         "ko": "시설별 상이",
@@ -9084,8 +8911,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,870엔~",
@@ -9258,8 +9085,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "price": {
         "ko": "1,320엔~",
@@ -9428,8 +9255,8 @@
       },
       "type": {
         "ko": "테마파크",
-        "en": "Theme Park Spa",
-        "ja": "テーマパーク"
+        "ja": "温泉テーマパーク",
+        "en": "Onsen Theme Park"
       },
       "desc": {
         "ko": "다이토에 자리한 테마파크 명소 '아사쿠사 ROX 마츠리유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 스카이트리 뷰 노천탕, 히스이 온천, 관광 연계 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1792m에서 공급되는 단순 온천을(를) 사용하며, 약 40℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 스트레스 해소, 가족 건강, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 무엇보다 계절의 변화와 맑은 공기를 만끽할 수 있는 탁 트인 노천탕과, 땀을 흠뻑 배출하며 심신을 재충전할 수 있는 고온 사우나 및 시원한 냉탕이 완비되어 있어 최상의 온·냉 교대욕 코스를 경험할 수 있습니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '아사쿠사 ROX 마츠리유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -9610,8 +9437,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1600円~",
@@ -9772,8 +9599,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -9925,9 +9752,9 @@
         "en": "Toshima"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "도시마에 자리한 도심 스파 명소 '타임즈 스파 레스타'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 성인 전용, 워킹 스페이스, 도심 노천탕 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 751m (인공 온천)에서 공급되는 단순 온천을(를) 사용하며, 약 40℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 혈액순환, 피로회복, 피부 미용, 스트레스 해소 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 무엇보다 계절의 변화와 맑은 공기를 만끽할 수 있는 탁 트인 노천탕과, 땀을 흠뻑 배출하며 심신을 재충전할 수 있는 고온 사우나 및 시원한 냉탕이 완비되어 있어 최상의 온·냉 교대욕 코스를 경험할 수 있습니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '타임즈 스파 레스타'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -10105,8 +9932,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -10263,8 +10090,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "880円~",
@@ -10418,8 +10245,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "다마·후추·조후에 자리한 천연 온천 명소 '천연 온천 센카와 유케무리노사토'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 나노 미용 온천, 12종 욕조, 다다미 휴게 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1306m에서 공급되는 황산염 천을(를) 사용하며, 약 39℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 혈액순환 개선, 소화불량 개선, 피부미용 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '천연 온천 센카와 유케무리노사토'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -10595,8 +10422,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "2600円~",
@@ -10754,8 +10581,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -10913,8 +10740,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1100円~",
@@ -11073,8 +10900,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1100円~",
@@ -11232,8 +11059,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -11392,8 +11219,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -11551,8 +11378,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,000円~",
@@ -11708,8 +11535,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1,000円~",
@@ -11864,8 +11691,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "21780円~",
@@ -12023,8 +11850,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "1700円~",
@@ -12179,8 +12006,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1900円~",
@@ -12338,8 +12165,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -12498,8 +12325,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -12653,8 +12480,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "desc": {
         "ko": "치요다에 자리한 슈퍼 센토 명소 '라쿠 스파 1010 칸다'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 하이브리드 센토, 출근 전 이용, 복합 사우나 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 793m에서 공급되는 탄산수소염 천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 가족 건강, 피부 미용, 신경통, 근육통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '라쿠 스파 1010 칸다'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -12835,8 +12662,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Ryokan",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "price": {
         "ko": "1,000円~",
@@ -12995,8 +12822,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "1,000円~",
@@ -13152,8 +12979,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "1180円~",
@@ -13308,8 +13135,8 @@
       },
       "type": {
         "ko": "도심형 스파",
-        "en": "Urban Spa",
-        "ja": "都市型スパ"
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "price": {
         "ko": "980円~",
@@ -13462,8 +13289,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "하치오지·히노에 자리한 천연 온천 명소 '게이오 다카오산 온천 고쿠라쿠유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 다카오산 절경, 숲속 노천탕, 암반욕 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1111m에서 공급되는 단순 온천(저온)을(를) 사용하며, 약 38℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 관절통, 근육통, 신경통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 무엇보다 계절의 변화와 맑은 공기를 만끽할 수 있는 탁 트인 노천탕과, 땀을 흠뻑 배출하며 심신을 재충전할 수 있는 고온 사우나 및 시원한 냉탕이 완비되어 있어 최상의 온·냉 교대욕 코스를 경험할 수 있습니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '게이오 다카오산 온천 고쿠라쿠유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -13642,8 +13469,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "960円~",
@@ -13792,9 +13619,9 @@
         "en": "Hachioji-Hino"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "하치오지·히노에 자리한 도심 스파 명소 '다카오 36 사우나'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 프리미엄 사우나, 다카오산 절경, 천연 풀 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 842m (인공 온천)에서 공급되는 중성 저온 온천을(를) 사용하며, 약 39℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피부 미용, 피로회복, 혈액순환, 스트레스 해소 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '다카오 36 사우나'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -13971,8 +13798,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "490엔~",
@@ -14143,8 +13970,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "490엔~",
@@ -14314,8 +14141,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "490엔~",
@@ -14485,8 +14312,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "490엔~",
@@ -14657,8 +14484,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "price": {
         "ko": "490엔~",
@@ -14810,177 +14637,6 @@
       }
     },
     {
-      "id": "e011",
-      "name": {
-        "ko": "우메노유2",
-        "en": "Umenoyu2",
-        "ja": "梅の湯"
-      },
-      "area": {
-        "ko": "네리마",
-        "ja": "練馬区",
-        "en": "Nerima"
-      },
-      "areaGroup": {
-        "ko": "nerima",
-        "ja": "nerima",
-        "en": "nerima"
-      },
-      "type": {
-        "ko": "전통 센토",
-        "en": "Sento",
-        "ja": "伝統銭湯"
-      },
-      "price": {
-        "ko": "490엔~",
-        "en": "490円～",
-        "ja": "490円～"
-      },
-      "hours": {
-        "ko": "15:00~23:30",
-        "ja": "15:00~23:30",
-        "en": "15:00~23:30"
-      },
-      "holiday": {
-        "ko": "월요일",
-        "en": "월요일",
-        "ja": "월요일"
-      },
-      "address": {
-        "ko": "도쿄도 네리마구 히카와다이 2-23-5",
-        "en": "2-23-5 Hikawadai, Nerima-ku",
-        "ja": "東京都練馬区氷川台2-23-5"
-      },
-      "tel": "03-3990-1234",
-      "features": [
-        "sento",
-        "retro",
-        "cheap"
-      ],
-      "highlights": [
-        {
-          "ko": "1960년 창업",
-          "en": "Founded in 1960",
-          "ja": "1960年創業"
-        },
-        {
-          "ko": "네리마의 숨은 명소",
-          "en": "Hidden Gem in Nerima",
-          "ja": "練馬の隠れ名所"
-        },
-        {
-          "ko": "매일 청결 관리",
-          "en": "Daily Cleaning",
-          "ja": "毎日清潔管理"
-        }
-      ],
-      "desc": {
-        "ko": "네리마에 자리한 전통 센토 명소 '우메노유2'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 1960년 창업, 네리마의 숨은 명소, 매일 청결 관리 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1409m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 41℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 근육통, 신경통, 피로회복, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '우메노유2'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "練馬区に位置する伝統銭湯の人気施設「梅の湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に1960年創業、練馬の隠れ名所、毎日清潔管理といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1409m(温泉・ガス併用)から湧き出る単純温泉を使用し、約41℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が筋肉痛、神経痛、疲労回復、日常の健康管理などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。手入れの行き届いた大浴場内には多彩な浴槽が用意されており、落ち着いた静かな空間の中で心身ともに癒やされる贅沢な時間をお過ごしいただけます。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。清潔感のある脱衣所やパウダールーム、必要なアメニティ類がしっかりと揃っているため、荷物を少なくした手ぶら感覚でのご来店でも安心です。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「梅の湯」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Nerima, 'Umenoyu2' is a highly regarded Sento destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Founded in 1960, Hidden Gem in Nerima, Daily Cleaning, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring sourced directly from 1409m (spring/gas heated), kept at an ideal temperature of roughly 41°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Muscle pain, Neuralgia, Fatigue recovery, Daily health, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. The spacious main bath room features a variety of specialized soaking tubs, carefully arranged to foster deep relaxation and holistic wellness in a serene environment.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. Featuring spotless changing rooms, well-lit vanity stations, and essential grooming amenities, travelers can drop by conveniently with minimal luggage. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Umenoyu2' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "website": "",
-      "imageIndex": 10,
-      "image": "images/sento-exterior.jpg",
-      "tips": {
-        "ko": [
-          "개인 페이스타올과 바디타올을 미리 준비해 오시면 별도의 비용 없이 편리하게 이용하실 수 있습니다.",
-          "운영시간(15:00~23:30) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "입욕 후에는 시원한 음료로 수분을 보충하고, 로비에서 잠시 몸을 식힌 후 외출하시면 한결 상쾌하고 가벼운 컨디션을 느낄 수 있습니다.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "ご自身のフェイスタオルやバスタオルをご持参いただくと、余計な費用をかけずにスムーズにご利用いただけます。",
-          "営業時間（15:00~23:30）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "入浴後は冷たいお飲み物でしっかり水分補給を行い、ロビーで少し涼んでからお帰りいただくと、より爽快で軽やかな気分が味わえます。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "We recommend bringing your own face towel and bath towel from home for added convenience and savings.",
-          "Check operating hours (15:00~23:30) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Be sure to drink refreshing water or beverages right after bathing and rest briefly in the lobby to maintain a light, energized feeling.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '1960년 창업' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '네리마의 숨은 명소' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '매일 청결 관리' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'단순 온천' 수질을 자랑하며, 입욕 시 근육통, 신경통, 피로회복, 일상적 건강관리 등에 탁월한 효능을 기대할 수 있습니다.",
-          "전통 센토로서 490엔~의 부담 없는 입장료로 수준 높은 휴식과 목욕을 만끽할 수 있는 핫플레이스입니다."
-        ],
-        "ja": [
-          "施設自慢の「1960年創業」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「練馬の隠れ名所」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「毎日清潔管理」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「単純温泉」の泉質を誇り、入浴によって筋肉痛、神経痛、疲労回復、日常の健康管理などの嬉しい効果が期待できます。",
-          "伝統銭湯として、490円～の気軽な料金で高品質な癒やしとお風呂を満喫できる人気スポットです。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Founded in 1960', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Hidden Gem in Nerima', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Daily Cleaning', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Simple thermal spring' thermal water, known for promoting Muscle pain, Neuralgia, Fatigue recovery, Daily health and long-lasting body warmth.",
-          "As a premier Sento, it offers an exceptional bathing and relaxation experience at 490円～."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 1409m (온천/가스)",
-          "quality": "단순 온천",
-          "temp": "41℃",
-          "benefits": "근육통, 신경통, 피로회복, 일상적 건강관리"
-        },
-        "en": {
-          "source": "1409m (spring/gas heated)",
-          "quality": "Simple thermal spring",
-          "temp": "41°C",
-          "benefits": "Muscle pain, Neuralgia, Fatigue recovery, Daily health"
-        },
-        "ja": {
-          "source": "地下1409m(温泉・ガス併用)",
-          "quality": "単純温泉",
-          "temp": "41℃",
-          "benefits": "筋肉痛、神経痛、疲労回復、日常の健康管理"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "95대 (입장 시 물료)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "en": {
-          "parking": "95 spaces (free)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "ja": {
-          "parking": "95台(無料)",
-          "shuttle": "",
-          "highway": ""
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "wifi"
-      ],
-      "rating": 4.4,
-      "reviewCount": 891,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A2%85%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E6%B0%B7%E5%B7%9D%E5%8F%B02-23-5",
-      "coords": {
-        "lat": 35.6706,
-        "lng": 139.749
-      }
-    },
-    {
       "id": "yamato_yu",
       "name": {
         "ko": "야마토유",
@@ -14994,8 +14650,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "아다치에 자리한 전통 센토 명소 '야마토유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 친절한 서비스, 깔끔, 사우나 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 895m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 일상적 건강관리, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '야마토유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -15172,8 +14828,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "price": {
         "ko": "1,100엔~",
@@ -15345,9 +15001,9 @@
         "en": "Chuo"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "주오에 자리한 도심 스파 명소 '시시노유·츠키노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도심 속 신규 사우나 온천, 고농도 탄산천, 타월 대여 포함 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1466m (인공 온천)에서 공급되는 단순 온천을(를) 사용하며, 약 39℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피부 미용, 스트레스 해소, 혈액순환 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '시시노유·츠키노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -15518,8 +15174,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "마치다에 자리한 천연 온천 명소 '천연 온천 로텐 가든'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 가족 단위 노천탕, 만화 1만 권, 키즈 코너 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 669m에서 공급되는 탄산수소염 천을(를) 사용하며, 약 72℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 관절통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '천연 온천 로텐 가든'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -15689,9 +15345,9 @@
         "en": "Ota"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "오타에 자리한 도심 스파 명소 '이즈미 텐쿠노유 하네다 공항'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 공항 직결, 24시간, 천연 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1289m (인공 온천)에서 공급되는 중성 저온 온천을(를) 사용하며, 약 40℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 스트레스 해소, 피부 미용, 피로회복, 혈액순환 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '이즈미 텐쿠노유 하네다 공항'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -15862,9 +15518,9 @@
         "en": "Koto"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "고토에 자리한 도심 스파 명소 '이즈미 텐쿠노유 아리아케 가든'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 24시간 도심 리조트, 미용 온천, 호텔식 레스토랑 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1316m (인공 온천)에서 공급되는 단순 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 스트레스 해소, 피부 미용, 혈액순환, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '이즈미 텐쿠노유 아리아케 가든'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16024,8 +15680,8 @@
       "id": "rakutenchi_spa",
       "name": {
         "ko": "라쿠텐치 스파",
-        "en": "Rakutenchi Spa",
-        "ja": "楽天地スパ"
+        "ja": "天然温泉 楽天地スパ",
+        "en": "Rakutenchi Spa"
       },
       "area": {
         "ko": "스미다",
@@ -16034,8 +15690,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "desc": {
         "ko": "스미다에 자리한 슈퍼 센토 명소 '라쿠텐치 스파'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 역 직결 남성 스파, 로우류 쇼, 숙박 대용 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 310m에서 공급되는 단순 온천을(를) 사용하며, 약 41℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 근육통, 신경통, 가족 건강, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '라쿠텐치 스파'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16043,9 +15699,9 @@
         "en": "Nestled in Sumida, 'Rakutenchi Spa' is a highly regarded Super Sento destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Station-direct men spa, Löyly show, Hotel alternative, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring sourced directly from From 310m underground, kept at an ideal temperature of roughly 41°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Muscle pain, Neuralgia, Family health, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. Additionally, the establishment boasts well-appointed saunas and crisp cold plunge tubs, making it an ideal destination for those seeking deep physical renewal and mental clarity.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Rakutenchi Spa' promises an exceptional and deeply satisfying hot spring experience."
       },
       "address": {
-        "ko": "도쿄도 스미다구 킨시초 2-4-1",
-        "en": "2-4-1 Kinshicho, Sumida-ku, Tokyo",
-        "ja": "東京都墨田区錦糸町2-4-1"
+        "ja": "東京都墨田区江東橋4-27-14 楽天地ビル9階",
+        "ko": "도쿄도 스미다구 고토바시 4-27-14 라쿠텐치빌딩 9층",
+        "en": "9F Rakutenchi Bldg, 4-27-14 Kotobashi, Sumida-ku, Tokyo"
       },
       "holiday": {
         "ko": "연중무휴",
@@ -16211,8 +15867,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "desc": {
         "ko": "다마·후추·조후에 자리한 슈퍼 센토 명소 '타케토리노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 최대급 암반욕, 가족 단위, 엔터테인먼트 풍부 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 470m에서 공급되는 탄산수소염 천을(를) 사용하며, 약 44℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 피부 미용, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '타케토리노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16385,8 +16041,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "오타에 자리한 천연 온천 명소 '천연 온천 NU-LAND'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 지역 밀착형, 가성비, 넓은 주차장 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 347m에서 공급되는 나트륨-염화물 강염천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 관절통, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '천연 온천 NU-LAND'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16556,8 +16212,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Hot Spring Inn",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "desc": {
         "ko": "마치다에 자리한 온천 여관 명소 '도쿄 유가와라 온천 만요노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 유가와라 온천, 쇼핑몰 연계, 숙박 가능 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 679m (자연용출)에서 공급되는 철분 온천을(를) 사용하며, 약 72℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 혈액순환, 피부미용, 피로회복, 신경통, 불면증 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 무엇보다 계절의 변화와 맑은 공기를 만끽할 수 있는 탁 트인 노천탕과, 땀을 흠뻑 배출하며 심신을 재충전할 수 있는 고온 사우나 및 시원한 냉탕이 완비되어 있어 최상의 온·냉 교대욕 코스를 경험할 수 있습니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '도쿄 유가와라 온천 만요노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16734,8 +16390,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "시나가와에 자리한 전통 센토 명소 '기타시나가와 온천 텐진유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 흑탕 미용, 모던 센토, 직장인 인기 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1299m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 43℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 일상적 건강관리, 피로회복, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '기타시나가와 온천 텐진유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -16905,8 +16561,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "아다치에 자리한 천연 온천 명소 '오야타 온천 묘진노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 호박색 온천, 목조 욕실, 저렴한 천연온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 375m에서 공급되는 나트륨-염화물 강염천을(를) 사용하며, 약 69℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 혈액순환 개선, 소화불량 개선, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '오야타 온천 묘진노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17076,8 +16732,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "기타에 자리한 천연 온천 명소 '무라야마 온천 카타쿠리노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 가족 풀, 공원 연계, 다마 자연 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 724m에서 공급되는 황산염 천을(를) 사용하며, 약 46℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 관절통, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '무라야마 온천 카타쿠리노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17246,9 +16902,9 @@
         "en": "Ota"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "오타에 자리한 도심 스파 명소 'SPA&HOTEL 나고미'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 스파 호텔, 카마타 역세권, 마사지 완비 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 980m (인공 온천)에서 공급되는 단순 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 혈액순환, 피부 미용, 스트레스 해소 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, 'SPA&HOTEL 나고미'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17420,8 +17076,8 @@
       },
       "type": {
         "ko": "슈퍼 센토",
-        "en": "Super Sento",
-        "ja": "スーパー銭湯"
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
       },
       "desc": {
         "ko": "시나가와에 자리한 슈퍼 센토 명소 '오후로노 오사마 오이마치점'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 역에서 1분, 대형 암반욕, 이벤트 풍부 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1694m에서 공급되는 단순 온천을(를) 사용하며, 약 44℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 가족 건강, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '오후로노 오사마 오이마치점'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17583,9 +17239,9 @@
     {
       "id": "inagi_tokinoiro",
       "name": {
-        "ko": "이나기 천연 온천 토키노이로도리",
-        "en": "Inagi Tennen Onsen Tokino Irodori",
-        "ja": "稲城天然温泉 季乃彩"
+        "ko": "이나기 천연온천 도키노이로도리",
+        "ja": "稲城天然温泉 季乃彩",
+        "en": "Inagi Onsen Toki no Irodori"
       },
       "area": {
         "ko": "이나기·다치카와",
@@ -17594,8 +17250,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "이나기·다치카와에 자리한 천연 온천 명소 '이나기 천연 온천 토키노이로도리'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 사계절 정원, 미용 온천, 셔틀 버스 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 943m에서 공급되는 나트륨-염화물 강염천을(를) 사용하며, 약 63℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 혈액순환 개선, 소화불량 개선, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '이나기 천연 온천 토키노이로도리'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17603,9 +17259,9 @@
         "en": "Nestled in Inagi-Tachikawa, 'Inagi Tennen Onsen Tokino Irodori' is a highly regarded Natural Hot Spring destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Four-season garden, Beauty spring, Shuttle bus, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Sodium-chloride strong saline spring sourced directly from From 943m underground, kept at an ideal temperature of roughly 63°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Insomnia relief, Blood circulation, Digestive improvement, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. The spacious main bath room features a variety of specialized soaking tubs, carefully arranged to foster deep relaxation and holistic wellness in a serene environment.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. Featuring spotless changing rooms, well-lit vanity stations, and essential grooming amenities, travelers can drop by conveniently with minimal luggage. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Inagi Tennen Onsen Tokino Irodori' promises an exceptional and deeply satisfying hot spring experience."
       },
       "address": {
-        "ko": "도쿄도 이나기·다치카와 1-1-16",
-        "ja": "東京都稲城·立川1-1-16",
-        "en": "1-1-16 Inagi-Tachikawa, Tokyo"
+        "ja": "東京都稲城市向陽台6-13",
+        "ko": "도쿄도 이나기시 고요다이 6-13",
+        "en": "6-13 Koyodai, Inagi-shi, Tokyo"
       },
       "holiday": {
         "ko": "화요일",
@@ -17749,7 +17405,7 @@
       ],
       "rating": 4.8,
       "reviewCount": 3451,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E5%9F%8E%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E5%AD%A3%E4%B9%83%E5%BD%A9%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%A8%B2%E5%9F%8E%E3%83%BB%E7%AB%8B%E5%B7%9D",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E5%9F%8E%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E5%AD%A3%E4%B9%83%E5%BD%A9%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%A8%B2%E5%9F%8E%E5%B8%82%E5%90%91%E9%99%BD%E5%8F%B06-13",
       "imageIndex": 5
     },
     {
@@ -17766,8 +17422,8 @@
       },
       "type": {
         "ko": "천연 온천",
-        "en": "Natural Hot Spring",
-        "ja": "天然温泉"
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
       },
       "desc": {
         "ko": "마치다에 자리한 천연 온천 명소 '다마자카이 천연 온천 모리노이로'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 원천 노천탕, 숲속 온천, 가족 단위 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 978m에서 공급되는 황산염 천을(를) 사용하며, 약 60℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 피부미용, 신경통, 근육통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '다마자카이 천연 온천 모리노이로'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -17937,8 +17593,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "스기나미에 자리한 전통 센토 명소 '고엔지유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 레트로 타일, 목조 건축, 지역 밀착 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1902m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 41℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 일상적 건강관리, 근육통, 신경통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '고엔지유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -18108,8 +17764,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "나카노에 자리한 전통 센토 명소 '나칸노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 청결한 시설, 외국인 환영, 역세권 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1434m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 일상적 건강관리, 피로회복, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '나칸노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -18278,8 +17934,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "메구로에 자리한 전통 센토 명소 '시미즈유(메구로)'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 리노베이션 센토, 천연 온천, 메구로 지역 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1767m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 일상적 건강관리, 근육통, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '시미즈유(메구로)'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -18449,8 +18105,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "네리마에 자리한 전통 센토 명소 '카츠라유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 목조 건축, 레트로, 저렴 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 455m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 일상적 건강관리, 신경통, 근육통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '카츠라유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -18619,8 +18275,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "시나가와에 자리한 전통 센토 명소 '요시이케유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 직장인 인기, 청결, 편안한 분위기 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1160m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 근육통, 신경통, 피로회복, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 또한 온몸의 노폐물을 배출하고 피로를 싹 씻어내는 쾌적한 사우나와 상쾌한 냉탕 시설이 잘 갖춰져 있어 최근 유행하는 '토토노이(심신 안정)'를 경험하기에 완벽합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '요시이케유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -18777,177 +18433,6 @@
       "imageIndex": 10
     },
     {
-      "id": "sakaeyu",
-      "name": {
-        "ko": "사카에유",
-        "en": "Sakaeyu",
-        "ja": "栄湯"
-      },
-      "area": {
-        "ko": "스미다",
-        "ja": "墨田区",
-        "en": "Sumida"
-      },
-      "type": {
-        "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
-      },
-      "desc": {
-        "ko": "스미다에 자리한 전통 센토 명소 '사카에유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 레트로 타일, 목조 건축, 지역 사랑 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1481m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 일상적 건강관리, 근육통, 신경통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '사카에유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "墨田区に位置する伝統銭湯の人気施設「栄湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特にレトロタイル、木造建築、地域愛といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1481m(温泉・ガス併用)から湧き出る単純温泉を使用し、約45℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が日常の健康管理、筋肉痛、神経痛、疲労回復などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。手入れの行き届いた大浴場内には多彩な浴槽が用意されており、落ち着いた静かな空間の中で心身ともに癒やされる贅沢な時間をお過ごしいただけます。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。清潔感のある脱衣所やパウダールーム、必要なアメニティ類がしっかりと揃っているため、荷物を少なくした手ぶら感覚でのご来店でも安心です。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「栄湯」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Sumida, 'Sakaeyu' is a highly regarded Traditional Sento destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Retro tiles, Wooden architecture, Local favorite, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring sourced directly from 1481m (spring/gas heated), kept at an ideal temperature of roughly 45°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Daily health, Muscle pain, Neuralgia, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. The spacious main bath room features a variety of specialized soaking tubs, carefully arranged to foster deep relaxation and holistic wellness in a serene environment.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. Featuring spotless changing rooms, well-lit vanity stations, and essential grooming amenities, travelers can drop by conveniently with minimal luggage. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Sakaeyu' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "address": {
-        "ko": "도쿄도 스미다 1-11-16",
-        "ja": "東京都墨田区1-11-16",
-        "en": "1-11-16 Sumida, Tokyo"
-      },
-      "holiday": {
-        "ko": "월요일",
-        "en": "Mondays",
-        "ja": "月曜日"
-      },
-      "price": {
-        "ko": "성인 520엔",
-        "en": "Adults ¥520",
-        "ja": "大人520円"
-      },
-      "hours": {
-        "ko": "15:00~24:30",
-        "en": "15:00-24:30",
-        "ja": "15:00～24:30"
-      },
-      "highlights": [
-        {
-          "ko": "레트로 타일",
-          "en": "Retro tiles",
-          "ja": "レトロタイル"
-        },
-        {
-          "ko": "목조 건축",
-          "en": "Wooden architecture",
-          "ja": "木造建築"
-        },
-        {
-          "ko": "지역 사랑",
-          "en": "Local favorite",
-          "ja": "地域愛"
-        }
-      ],
-      "features": [
-        "retro",
-        "wooden",
-        "local"
-      ],
-      "website": "https://www.sakae-yu.com/",
-      "image": "images/sento-lounge.jpg",
-      "coords": {
-        "lat": 35.7189,
-        "lng": 139.8123
-      },
-      "areaGroup": {
-        "ko": "sumida",
-        "ja": "sumida",
-        "en": "sumida"
-      },
-      "tips": {
-        "ko": [
-          "수건 대여 서비스(기본 포함 또는 유료 대여)가 마련되어 있어 짐 없이 가벼운 차림으로도 방문하실 수 있습니다.",
-          "운영시간({'ko': '15:00~24:30', 'en': '15:00-24:30', 'ja': '15:00～24:30'}) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "입욕 후에는 시원한 음료로 수분을 보충하고, 로비에서 잠시 몸을 식힌 후 외출하시면 한결 상쾌하고 가벼운 컨디션을 느낄 수 있습니다.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "タオルレンタルサービス（料金込みまたは有料レンタル）があるため、手ぶらでお気軽にご来店いただけます。",
-          "営業時間（{'ko': '15:00~24:30', 'en': '15:00-24:30', 'ja': '15:00～24:30'}）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "入浴後は冷たいお飲み物でしっかり水分補給を行い、ロビーで少し涼んでからお帰りいただくと、より爽快で軽やかな気分が味わえます。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "Towel rental services are available (included or for a rental fee), making it convenient to drop by empty-handed.",
-          "Check operating hours ({'ko': '15:00~24:30', 'en': '15:00-24:30', 'ja': '15:00～24:30'}) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Be sure to drink refreshing water or beverages right after bathing and rest briefly in the lobby to maintain a light, energized feeling.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '레트로 타일' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '목조 건축' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '지역 사랑' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'단순 온천' 수질을 자랑하며, 입욕 시 일상적 건강관리, 근육통, 신경통, 피로회복 등에 탁월한 효능을 기대할 수 있습니다.",
-          "전통 센토로서 성인 520엔의 부담 없는 입장료로 수준 높은 휴식과 목욕을 만끽할 수 있는 핫플레이스입니다."
-        ],
-        "ja": [
-          "施設自慢の「レトロタイル」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「木造建築」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「地域愛」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「単純温泉」の泉質を誇り、入浴によって日常の健康管理、筋肉痛、神経痛、疲労回復などの嬉しい効果が期待できます。",
-          "伝統銭湯として、大人520円の気軽な料金で高品質な癒やしとお風呂を満喫できる人気スポットです。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Retro tiles', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Wooden architecture', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Local favorite', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Simple thermal spring' thermal water, known for promoting Daily health, Muscle pain, Neuralgia, Fatigue recovery and long-lasting body warmth.",
-          "As a premier Traditional Sento, it offers an exceptional bathing and relaxation experience at Adults ¥520."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 1481m (온천/가스)",
-          "quality": "단순 온천",
-          "temp": "45℃",
-          "benefits": "일상적 건강관리, 근육통, 신경통, 피로회복"
-        },
-        "en": {
-          "source": "1481m (spring/gas heated)",
-          "quality": "Simple thermal spring",
-          "temp": "45°C",
-          "benefits": "Daily health, Muscle pain, Neuralgia, Fatigue recovery"
-        },
-        "ja": {
-          "source": "地下1481m(温泉・ガス併用)",
-          "quality": "単純温泉",
-          "temp": "45℃",
-          "benefits": "日常の健康管理、筋肉痛、神経痛、疲労回復"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "33대 (유료)",
-          "shuttle": "셔틀버스 운행 (공식 사이트 확인)",
-          "highway": "고속도로 IC에서 약 10분"
-        },
-        "en": {
-          "parking": "33 spaces (paid)",
-          "shuttle": "Shuttle bus available",
-          "highway": "About 10 min from highway IC"
-        },
-        "ja": {
-          "parking": "33台(有料)",
-          "shuttle": "シャトルバス運行(公式サイト要確認)",
-          "highway": "高速ICから約10分"
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "wifi",
-        "rentalTowel"
-      ],
-      "rating": 4,
-      "reviewCount": 585,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A0%84%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA",
-      "imageIndex": 1
-    },
-    {
       "id": "fuku_no_yu",
       "name": {
         "ko": "후쿠노유",
@@ -18961,8 +18446,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "시나가와에 자리한 전통 센토 명소 '후쿠노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 따뜻한 분위기, 지역 인기, 청결 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1161m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 일상적 건강관리, 신경통, 근육통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '후쿠노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19132,8 +18617,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "네리마에 자리한 전통 센토 명소 '치요노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 역사 깊은, 레트로 타일, 저렴 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 360m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 42℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 근육통, 신경통, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '치요노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19303,8 +18788,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "치요다에 자리한 전통 센토 명소 '시나노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 신ano 정취, 청결, 다양한 온도 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1538m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 피로회복, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '시나노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19473,8 +18958,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "도시마에 자리한 전통 센토 명소 '마츠바유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 청량한 분위기, 청결, 친절 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 724m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 40℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 일상적 건강관리, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '마츠바유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19643,8 +19128,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "스미다에 자리한 전통 센토 명소 '카파노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 카파 모티브, 독특한 인테리어, 재미있는 분위기 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1899m (온천/가스)에서 공급되는 나트륨-염화물 온천을(를) 사용하며, 약 44℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 피로회복, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '카파노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19814,8 +19299,8 @@
       },
       "type": {
         "ko": "온천 여관",
-        "en": "Hot Spring Inn",
-        "ja": "温泉旅館"
+        "ja": "温泉旅館",
+        "en": "Onsen Ryokan"
       },
       "desc": {
         "ko": "오타에 자리한 온천 여관 명소 '스이메이소'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 소규모 여관, 조용한 주택가, 천연 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1316m (자연용출)에서 공급되는 탄산수소염 천을(를) 사용하며, 약 70℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 관절통, 근육통, 불면증, 신경통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '스이메이소'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -19985,9 +19470,9 @@
         "en": "Suginami"
       },
       "type": {
-        "ko": "도심 스파",
-        "en": "Urban Spa",
-        "ja": "都市スパ"
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
       },
       "desc": {
         "ko": "스기나미에 자리한 도심 스파 명소 '유라리 오기쿠보'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 현대적 스파, 편안한 휴게, 역세권 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1628m (인공 온천)에서 공급되는 중성 저온 온천을(를) 사용하며, 약 40℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 혈액순환, 피로회복, 스트레스 해소 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '유라리 오기쿠보'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -20157,8 +19642,8 @@
       },
       "type": {
         "ko": "전통 센토",
-        "en": "Traditional Sento",
-        "ja": "伝統銭湯"
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
       },
       "desc": {
         "ko": "도시마에 자리한 전통 센토 명소 '타칼라유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 지역 본보기, 깔끔한 시설, 다양한 온도 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 451m (온천/가스)에서 공급되는 단순 온천을(를) 사용하며, 약 45℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 피로회복, 근육통, 신경통, 일상적 건강관리 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '타칼라유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
@@ -20312,6 +19797,1687 @@
       "reviewCount": 2041,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%9D%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA",
       "imageIndex": 8
+    },
+    {
+      "id": "soshigaya21",
+      "name": {
+        "ko": "소시가야 온천 21",
+        "ja": "そしがや温泉21",
+        "en": "Soshigaya Onsen 21"
+      },
+      "area": {
+        "ko": "세타가야",
+        "ja": "世田谷区",
+        "en": "Setagaya"
+      },
+      "areaGroup": {
+        "ko": "setagaya",
+        "ja": "setagaya",
+        "en": "setagaya"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "14:00~26:00",
+        "ja": "14:00~26:00",
+        "en": "14:00~26:00"
+      },
+      "holiday": {
+        "ko": "연중무휴(설날 제외)",
+        "ja": "年中無休（元日除く）",
+        "en": "Open year-round (exc. Jan 1)"
+      },
+      "address": {
+        "ja": "東京都世田谷区祖師谷3-36-21",
+        "ko": "도쿄도 세타가야구 소시가야 3-36-21",
+        "en": "3-36-21 Soshigaya, Setagaya-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "tattoo",
+        "pool"
+      ],
+      "highlights": [
+        {
+          "ko": "흑탕 천연 광천수",
+          "ja": "黒湯の軟水風呂",
+          "en": "Black mineral water baths"
+        },
+        {
+          "ko": "명물 냉동 사우나",
+          "ja": "名物の冷凍サウナ",
+          "en": "Signature freezer sauna"
+        },
+        {
+          "ko": "쿨다운용 미니 풀",
+          "ja": "ミニプール完備",
+          "en": "Cool-down mini pool"
+        }
+      ],
+      "desc": {
+        "ko": "세타가야에 자리한 전통 센토 '소시가야 온천 21'은(는) 흑탕과 3종 사우나, 미니 풀까지 갖춘 테마파크형 센토입니다. 명물 냉동 사우나가 유명하며 타투 입욕도 가능합니다.",
+        "ja": "世田谷区に位置する伝統銭湯「そしがや温泉21」は、黒湯と3種類のサウナ、ミニプールを備えたテーマパークのような銭湯です。名物の冷凍サウナが有名で、タトゥーの方も入浴できます。",
+        "en": "Located in Setagaya, Soshigaya Onsen 21 is a theme-park-like sento with black mineral water, three saunas, and a mini pool. Its freezer sauna is famous, and tattoos are welcome."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%9D%E3%81%97%E3%81%8C%E3%82%84%E6%B8%A9%E6%B3%8921%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%A5%96%E5%B8%AB%E8%B0%B73-36-21"
+    },
+    {
+      "id": "shikinoyu_setagaya",
+      "name": {
+        "ko": "세타가야 온천 시키노유",
+        "ja": "世田谷温泉 四季の湯",
+        "en": "Setagaya Onsen Shiki no Yu"
+      },
+      "area": {
+        "ko": "세타가야",
+        "ja": "世田谷区",
+        "en": "Setagaya"
+      },
+      "areaGroup": {
+        "ko": "setagaya",
+        "ja": "setagaya",
+        "en": "setagaya"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都世田谷区桜丘2-18-26",
+        "ko": "도쿄도 세타가야구 사쿠라가오카 2-18-26",
+        "en": "2-18-26 Sakuragaoka, Setagaya-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "지토세후나바시역 도보 4분",
+          "ja": "千歳船橋駅から徒歩4分",
+          "en": "4 min from Chitose-Funabashi Sta."
+        },
+        {
+          "ko": "남녀 주간 교체탕",
+          "ja": "男女週替わりの浴室",
+          "en": "Weekly rotating baths"
+        },
+        {
+          "ko": "주택가의 동네 센토",
+          "ja": "住宅街の地域密着銭湯",
+          "en": "Neighborhood sento"
+        }
+      ],
+      "desc": {
+        "ko": "세타가야에 자리한 전통 센토 '세타가야 온천 시키노유'은(는) 지토세후나바시역에서 도보 4분 거리의 주택가 센토로, 구조가 다른 두 욕실을 남녀 교대로 운영합니다.",
+        "ja": "世田谷区に位置する伝統銭湯「世田谷温泉 四季の湯」は、千歳船橋駅から徒歩4分、住宅街にあるフロント式の銭湯で、つくりの違う浴室を男女入れ替えで楽しめます。",
+        "en": "Located in Setagaya, Setagaya Onsen Shiki no Yu is a neighborhood sento 4 minutes from Chitose-Funabashi Station, rotating two differently designed bath halls between men and women."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%96%E7%94%B0%E8%B0%B7%E6%B8%A9%E6%B3%89%20%E5%9B%9B%E5%AD%A3%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E6%A1%9C%E4%B8%982-18-26"
+    },
+    {
+      "id": "masuhoyu",
+      "name": {
+        "ko": "마스호유",
+        "ja": "ますほ湯",
+        "en": "Masuho-yu"
+      },
+      "area": {
+        "ko": "세타가야",
+        "ja": "世田谷区",
+        "en": "Setagaya"
+      },
+      "areaGroup": {
+        "ko": "setagaya",
+        "ja": "setagaya",
+        "en": "setagaya"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都世田谷区南烏山5-21-15",
+        "ko": "도쿄도 세타가야구 미나미카라스야마 5-21-15",
+        "en": "5-21-15 Minami-Karasuyama, Setagaya-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local",
+        "retro"
+      ],
+      "highlights": [
+        {
+          "ko": "지토세카라스야마역 도보 3분",
+          "ja": "千歳烏山駅から徒歩3分",
+          "en": "3 min from Chitose-Karasuyama Sta."
+        },
+        {
+          "ko": "역세권 동네 센토",
+          "ja": "駅チカの地域銭湯",
+          "en": "Station-side local sento"
+        },
+        {
+          "ko": "레트로 분위기",
+          "ja": "レトロな雰囲気",
+          "en": "Retro atmosphere"
+        }
+      ],
+      "desc": {
+        "ko": "세타가야에 자리한 전통 센토 '마스호유'은(는) 지토세카라스야마역 도보 3분의 접근성 좋은 동네 센토입니다.",
+        "ja": "世田谷区に位置する伝統銭湯「ますほ湯」は、千歳烏山駅から徒歩3分、アクセス良好な地域密着型の銭湯です。",
+        "en": "Located in Setagaya, Masuho-yu is a conveniently located local sento just 3 minutes from Chitose-Karasuyama Station."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%99%E3%81%BB%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8D%97%E7%83%8F%E5%B1%B15-21-15"
+    },
+    {
+      "id": "takarayu_adachi",
+      "name": {
+        "ko": "다카라유",
+        "ja": "タカラ湯",
+        "en": "Takara-yu"
+      },
+      "area": {
+        "ko": "아다치",
+        "ja": "足立区",
+        "en": "Adachi"
+      },
+      "areaGroup": {
+        "ko": "adachi",
+        "ja": "adachi",
+        "en": "adachi"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都足立区千住元町27-1",
+        "ko": "도쿄도 아다치구 센주모토마치 27-1",
+        "en": "27-1 Senju-Motomachi, Adachi-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "garden",
+        "history"
+      ],
+      "highlights": [
+        {
+          "ko": "\"킹 오브 엔가와\" 정원 센토",
+          "ja": "「キング・オブ・縁側」",
+          "en": "King of Engawa garden"
+        },
+        {
+          "ko": "1938년 창업 전통 건축",
+          "ja": "1938年創業の伝統建築",
+          "en": "Historic building since 1938"
+        },
+        {
+          "ko": "잉어 연못 일본 정원",
+          "ja": "鯉の泳ぐ日本庭園",
+          "en": "Japanese garden with koi pond"
+        }
+      ],
+      "desc": {
+        "ko": "아다치에 자리한 전통 센토 '다카라유'은(는) \"킹 오브 엔가와\"로 불리는 명물 센토로, 잉어가 헤엄치는 일본 정원을 툇마루에서 바라보며 쉴 수 있습니다. 1938년 창업의 전통 건축이 그대로 남아 있습니다.",
+        "ja": "足立区に位置する伝統銭湯「タカラ湯」は、「キング・オブ・縁側」と呼ばれる名物銭湯で、鯉の泳ぐ日本庭園を縁側から眺められます。1938年創業の伝統建築が今も残ります。",
+        "en": "Located in Adachi, Takara-yu is a celebrated sento known as the \"King of Engawa,\" where bathers relax on a veranda overlooking a koi-filled Japanese garden. The 1938 building retains its traditional architecture."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%82%AB%E3%83%A9%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E5%8D%83%E4%BD%8F%E5%85%83%E7%94%BA27-1"
+    },
+    {
+      "id": "nikonikoyu",
+      "name": {
+        "ko": "니코니코유",
+        "ja": "ニコニコ湯",
+        "en": "Nikoniko-yu"
+      },
+      "area": {
+        "ko": "아다치",
+        "ja": "足立区",
+        "en": "Adachi"
+      },
+      "areaGroup": {
+        "ko": "adachi",
+        "ja": "adachi",
+        "en": "adachi"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "15:30~24:30",
+        "ja": "15:30~24:30",
+        "en": "15:30~24:30"
+      },
+      "holiday": {
+        "ko": "목요일 휴무",
+        "ja": "木曜定休",
+        "en": "Closed Thursdays"
+      },
+      "address": {
+        "ja": "東京都足立区千住柳町2-10",
+        "ko": "도쿄도 아다치구 센주야나기초 2-10",
+        "en": "2-10 Senju-Yanagicho, Adachi-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local",
+        "pool"
+      ],
+      "highlights": [
+        {
+          "ko": "30℃ 온수 풀 완비",
+          "ja": "30℃の温水プール",
+          "en": "30℃ warm pool"
+        },
+        {
+          "ko": "유료 소금 사우나",
+          "ja": "塩サウナあり",
+          "en": "Salt sauna"
+        },
+        {
+          "ko": "기타센주의 숨은 명소",
+          "ja": "北千住の穴場銭湯",
+          "en": "Hidden gem in Kita-Senju"
+        }
+      ],
+      "desc": {
+        "ko": "아다치에 자리한 전통 센토 '니코니코유'은(는) 기타센주의 숨은 명소로, 제트 바스와 소금 사우나, 몸을 식히기 좋은 30℃ 온수 풀을 갖추고 있습니다.",
+        "ja": "足立区に位置する伝統銭湯「ニコニコ湯」は、エステバスや塩サウナ、身体を冷ますのにちょうどいい30℃の温水プールを備えた北千住の穴場銭湯です。",
+        "en": "Located in Adachi, Nikoniko-yu is a hidden gem in Kita-Senju featuring jet baths, a salt sauna, and a 30℃ warm pool for cooling down."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E5%8D%83%E4%BD%8F%E6%9F%B3%E7%94%BA2-10"
+    },
+    {
+      "id": "haginoyu",
+      "name": {
+        "ko": "히다마리노이즈미 하기노유",
+        "ja": "ひだまりの泉 萩の湯",
+        "en": "Hidamari no Izumi Hagi no Yu"
+      },
+      "area": {
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
+      },
+      "areaGroup": {
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
+      },
+      "type": {
+        "ko": "슈퍼 센토",
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都台東区根岸2-13-13",
+        "ko": "도쿄도 다이토구 네기시 2-13-13",
+        "en": "2-13-13 Negishi, Taito-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "restaurant",
+        "cheap"
+      ],
+      "highlights": [
+        {
+          "ko": "도내 최대급 대형 센토",
+          "ja": "都内最大級のビル型銭湯",
+          "en": "One of Tokyo's largest sento"
+        },
+        {
+          "ko": "센토 요금으로 사우나급 설비",
+          "ja": "銭湯価格で充実設備",
+          "en": "Spa facilities at sento price"
+        },
+        {
+          "ko": "식사처 병설",
+          "ja": "食事処併設",
+          "en": "On-site restaurant"
+        }
+      ],
+      "desc": {
+        "ko": "다이토에 자리한 슈퍼 센토 '히다마리노이즈미 하기노유'은(는) 우구이스다니 인근의 도내 최대급 빌딩형 센토로, 센토 요금으로 탄산천·사우나 등 슈퍼 센토급 설비를 즐길 수 있습니다.",
+        "ja": "台東区に位置するスーパー銭湯「ひだまりの泉 萩の湯」は、鶯谷近くの都内最大級のビル型銭湯で、銭湯価格で炭酸泉やサウナなどスーパー銭湯級の設備が楽しめます。",
+        "en": "Located in Taito, Hidamari no Izumi Hagi no Yu is one of Tokyo's largest building-style sento near Uguisudani, offering carbonated baths and saunas at regular sento prices."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%B2%E3%81%A0%E3%81%BE%E3%82%8A%E3%81%AE%E6%B3%89%20%E8%90%A9%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%A0%B9%E5%B2%B82-13-13"
+    },
+    {
+      "id": "tsubameyu",
+      "name": {
+        "ko": "쓰바메유",
+        "ja": "燕湯",
+        "en": "Tsubame-yu"
+      },
+      "area": {
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
+      },
+      "areaGroup": {
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "06:00~20:00",
+        "ja": "6:00~20:00",
+        "en": "06:00~20:00"
+      },
+      "holiday": {
+        "ko": "월요일 휴무",
+        "ja": "月曜定休",
+        "en": "Closed Mondays"
+      },
+      "address": {
+        "ja": "東京都台東区上野3-14-5",
+        "ko": "도쿄도 다이토구 우에노 3-14-5",
+        "en": "3-14-5 Ueno, Taito-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "history"
+      ],
+      "highlights": [
+        {
+          "ko": "국가 등록 유형문화재",
+          "ja": "国登録有形文化財",
+          "en": "Registered Tangible Cultural Property"
+        },
+        {
+          "ko": "아침 6시 개점",
+          "ja": "朝6時開店",
+          "en": "Opens at 6 AM"
+        },
+        {
+          "ko": "후지산 용암 바위 장식",
+          "ja": "富士山の溶岩の岩山",
+          "en": "Mt. Fuji lava rock decor"
+        }
+      ],
+      "desc": {
+        "ko": "다이토에 자리한 전통 센토 '쓰바메유'은(는) 국가 등록 유형문화재로 지정된 우에노의 노포 센토입니다. 아침 6시부터 영업해 여행객에게도 인기이며, 후지산 용암으로 만든 바위 장식이 상징입니다.",
+        "ja": "台東区に位置する伝統銭湯「燕湯」は、国登録有形文化財に指定された上野の老舗銭湯です。朝6時から営業しており、富士山の溶岩を使った岩山が名物です。",
+        "en": "Located in Taito, Tsubame-yu is a venerable Ueno sento designated a Registered Tangible Cultural Property. It opens at 6 AM and is famous for its rock formation made of Mt. Fuji lava."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%87%95%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E3-14-5"
+    },
+    {
+      "id": "kotobukiyu",
+      "name": {
+        "ko": "고토부키유",
+        "ja": "寿湯",
+        "en": "Kotobuki-yu"
+      },
+      "area": {
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
+      },
+      "areaGroup": {
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都台東区東上野5-4-17",
+        "ko": "도쿄도 다이토구 히가시우에노 5-4-17",
+        "en": "5-4-17 Higashi-Ueno, Taito-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "노천탕 있는 도심 센토",
+          "ja": "露天風呂のある銭湯",
+          "en": "Sento with open-air bath"
+        },
+        {
+          "ko": "넓은 사우나·수풍려",
+          "ja": "サウナ・水風呂充実",
+          "en": "Great sauna & cold bath"
+        },
+        {
+          "ko": "우에노 인근 인기 센토",
+          "ja": "上野エリアの人気店",
+          "en": "Popular in Ueno area"
+        }
+      ],
+      "desc": {
+        "ko": "다이토에 자리한 전통 센토 '고토부키유'은(는) 우에노 인근에서 노천탕과 사우나로 인기가 높은 센토입니다. 도심 센토로는 드물게 개방감 있는 노천 공간을 갖췄습니다.",
+        "ja": "台東区に位置する伝統銭湯「寿湯」は、上野エリアで露天風呂とサウナが人気の銭湯です。都心の銭湯としては珍しい開放感ある露天スペースが自慢です。",
+        "en": "Located in Taito, Kotobuki-yu is a popular Ueno-area sento known for its open-air bath and sauna—a rarity among central Tokyo bathhouses."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AF%BF%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%9D%B1%E4%B8%8A%E9%87%8E5-4-17"
+    },
+    {
+      "id": "akebonoyu",
+      "name": {
+        "ko": "아케보노유",
+        "ja": "曙湯",
+        "en": "Akebono-yu"
+      },
+      "area": {
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
+      },
+      "areaGroup": {
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都台東区浅草4-17-1",
+        "ko": "도쿄도 다이토구 아사쿠사 4-17-1",
+        "en": "4-17-1 Asakusa, Taito-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "history"
+      ],
+      "highlights": [
+        {
+          "ko": "궁전풍 미야즈쿠리 건축",
+          "ja": "宮造りの堂々たる外観",
+          "en": "Palace-style architecture"
+        },
+        {
+          "ko": "등나무꽃 명소",
+          "ja": "藤の花の名所",
+          "en": "Famous wisteria blooms"
+        },
+        {
+          "ko": "아사쿠사 안쪽의 노포",
+          "ja": "浅草奥の老舗銭湯",
+          "en": "Historic Asakusa sento"
+        }
+      ],
+      "desc": {
+        "ko": "다이토에 자리한 전통 센토 '아케보노유'은(는) 아사쿠사 안쪽에 자리한 미야즈쿠리(궁전풍) 건축의 노포 센토로, 봄이면 건물을 뒤덮는 등나무꽃으로 유명합니다.",
+        "ja": "台東区に位置する伝統銭湯「曙湯」は、浅草の奥に構える宮造りの老舗銭湯で、春には建物を覆う藤の花が有名です。",
+        "en": "Located in Taito, Akebono-yu is a historic palace-style sento in the back streets of Asakusa, famous for the wisteria that blankets its facade each spring."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9B%99%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%894-17-1"
+    },
+    {
+      "id": "koganeyu",
+      "name": {
+        "ko": "고가네유",
+        "ja": "黄金湯",
+        "en": "Kogane-yu"
+      },
+      "area": {
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
+      },
+      "areaGroup": {
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都墨田区太平4-14-6",
+        "ko": "도쿄도 스미다구 다이헤이 4-14-6",
+        "en": "4-14-6 Taihei, Sumida-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "tattoo"
+      ],
+      "highlights": [
+        {
+          "ko": "디자이너스 리뉴얼 센토",
+          "ja": "デザイナーズ銭湯",
+          "en": "Designer-renovated sento"
+        },
+        {
+          "ko": "본격 오토로 사우나",
+          "ja": "本格オートロウリュサウナ",
+          "en": "Auto-löyly sauna"
+        },
+        {
+          "ko": "DJ부스·크래프트 맥주",
+          "ja": "DJブースとクラフトビール",
+          "en": "DJ booth & craft beer"
+        }
+      ],
+      "desc": {
+        "ko": "스미다에 자리한 전통 센토 '고가네유'은(는) 2020년 리뉴얼로 화제가 된 디자이너스 센토입니다. 오토 로우리유 사우나와 DJ 부스, 크래프트 맥주까지 갖춘 새로운 센토 문화의 발신지입니다.",
+        "ja": "墨田区に位置する伝統銭湯「黄金湯」は、2020年のリニューアルで話題となったデザイナーズ銭湯。オートロウリュサウナやDJブース、クラフトビールも楽しめる新しい銭湯文化の発信地です。",
+        "en": "Located in Sumida, Kogane-yu is a designer sento that made waves with its 2020 renovation, featuring an auto-löyly sauna, DJ booth, and craft beer on tap."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BB%84%E9%87%91%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E5%A4%AA%E5%B9%B34-14-6"
+    },
+    {
+      "id": "yakushiyu",
+      "name": {
+        "ko": "야쿠시유",
+        "ja": "薬師湯",
+        "en": "Yakushi-yu"
+      },
+      "area": {
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
+      },
+      "areaGroup": {
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都墨田区向島3-46-10",
+        "ko": "도쿄도 스미다구 무코지마 3-46-10",
+        "en": "3-46-10 Mukojima, Sumida-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "스카이트리 도보권",
+          "ja": "スカイツリー徒歩圏",
+          "en": "Walking distance to Skytree"
+        },
+        {
+          "ko": "다양한 일替わり탕",
+          "ja": "日替わり湯が充実",
+          "en": "Daily rotating baths"
+        },
+        {
+          "ko": "심야까지 영업",
+          "ja": "深夜まで営業",
+          "en": "Open late"
+        }
+      ],
+      "desc": {
+        "ko": "스미다에 자리한 전통 센토 '야쿠시유'은(는) 도쿄 스카이트리 도보권의 무코지마 센토로, 날마다 바뀌는 이벤트탕과 늦은 시간까지의 영업으로 사랑받습니다.",
+        "ja": "墨田区に位置する伝統銭湯「薬師湯」は、東京スカイツリー徒歩圏の向島にある銭湯で、日替わりの薬湯と深夜までの営業で親しまれています。",
+        "en": "Located in Sumida, Yakushi-yu is a Mukojima sento within walking distance of Tokyo Skytree, loved for its daily rotating herbal baths and late hours."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%96%AC%E5%B8%AB%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E5%90%91%E5%B3%B63-46-10"
+    },
+    {
+      "id": "bunkayokusen",
+      "name": {
+        "ko": "분카요쿠센",
+        "ja": "文化浴泉",
+        "en": "Bunka Yokusen"
+      },
+      "area": {
+        "ko": "메구로",
+        "ja": "目黒区",
+        "en": "Meguro"
+      },
+      "areaGroup": {
+        "ko": "meguro",
+        "ja": "meguro",
+        "en": "meguro"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都目黒区東山3-6-8",
+        "ko": "도쿄도 메구로구 히가시야마 3-6-8",
+        "en": "3-6-8 Higashiyama, Meguro-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "이케지리오하시의 세련된 센토",
+          "ja": "池尻大橋のデザイン銭湯",
+          "en": "Stylish sento in Ikejiri-Ohashi"
+        },
+        {
+          "ko": "나노 버블 \"실키탕\"",
+          "ja": "ナノ湯（シルキー風呂）",
+          "en": "Nano-bubble silky bath"
+        },
+        {
+          "ko": "콤팩트한 양질 사우나",
+          "ja": "質の高いサウナ",
+          "en": "Quality compact sauna"
+        }
+      ],
+      "desc": {
+        "ko": "메구로에 자리한 전통 센토 '분카요쿠센'은(는) 이케지리오하시의 세련된 리뉴얼 센토로, 우유처럼 뽀얀 나노 버블탕과 알찬 사우나가 인기입니다.",
+        "ja": "目黒区に位置する伝統銭湯「文化浴泉」は、池尻大橋のスタイリッシュなリニューアル銭湯で、ミルクのようなナノ湯とコンパクトながら質の高いサウナが人気です。",
+        "en": "Located in Meguro, Bunka Yokusen is a stylishly renovated sento in Ikejiri-Ohashi, popular for its milky nano-bubble bath and small but excellent sauna."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%87%E5%8C%96%E6%B5%B4%E6%B3%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%9D%B1%E5%B1%B13-6-8"
+    },
+    {
+      "id": "komyosen",
+      "name": {
+        "ko": "고묘센",
+        "ja": "光明泉",
+        "en": "Komyosen"
+      },
+      "area": {
+        "ko": "메구로",
+        "ja": "目黒区",
+        "en": "Meguro"
+      },
+      "areaGroup": {
+        "ko": "meguro",
+        "ja": "meguro",
+        "en": "meguro"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都目黒区上目黒1-6-1",
+        "ko": "도쿄도 메구로구 가미메구로 1-6-1",
+        "en": "1-6-1 Kami-Meguro, Meguro-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "나카메구로의 옥상 노천탕",
+          "ja": "中目黒の屋上露天風呂",
+          "en": "Rooftop bath in Nakameguro"
+        },
+        {
+          "ko": "탄산천",
+          "ja": "高濃度炭酸泉",
+          "en": "Carbonated spring bath"
+        },
+        {
+          "ko": "남녀 주替わり 욕실",
+          "ja": "男女週替わり",
+          "en": "Weekly rotating floors"
+        }
+      ],
+      "desc": {
+        "ko": "메구로에 자리한 전통 센토 '고묘센'은(는) 나카메구로역 인근의 인기 센토로, 옥상 노천탕과 고농도 탄산천이 자랑입니다.",
+        "ja": "目黒区に位置する伝統銭湯「光明泉」は、中目黒駅近くの人気銭湯で、屋上の露天風呂と高濃度炭酸泉が自慢です。",
+        "en": "Located in Meguro, Komyosen is a popular sento near Nakameguro Station boasting a rooftop open-air bath and highly carbonated spring water."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%89%E6%98%8E%E6%B3%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E4%B8%8A%E7%9B%AE%E9%BB%921-6-1"
+    },
+    {
+      "id": "aqua_higashinakano",
+      "name": {
+        "ko": "아쿠아 히가시나카노",
+        "ja": "アクア東中野",
+        "en": "Aqua Higashi-Nakano"
+      },
+      "area": {
+        "ko": "나카노",
+        "ja": "中野区",
+        "en": "Nakano"
+      },
+      "areaGroup": {
+        "ko": "nakano",
+        "ja": "nakano",
+        "en": "nakano"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都中野区東中野4-9-22",
+        "ko": "도쿄도 나카노구 히가시나카노 4-9-22",
+        "en": "4-9-22 Higashi-Nakano, Nakano-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "pool",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "센토 최초급 노천 풀",
+          "ja": "露天プールのある銭湯",
+          "en": "Sento with outdoor pool"
+        },
+        {
+          "ko": "노천탕·사우나 완비",
+          "ja": "露天風呂・サウナ完備",
+          "en": "Open-air bath & sauna"
+        },
+        {
+          "ko": "히가시나카노역 도보권",
+          "ja": "東中野駅から徒歩圏",
+          "en": "Near Higashi-Nakano Sta."
+        }
+      ],
+      "desc": {
+        "ko": "나카노에 자리한 전통 센토 '아쿠아 히가시나카노'은(는) 노천 풀을 갖춘 보기 드문 센토로, 노천탕·사우나와 함께 사계절 이용할 수 있습니다.",
+        "ja": "中野区に位置する伝統銭湯「アクア東中野」は、露天プールを備えた珍しい銭湯で、露天風呂やサウナとともに四季を通じて楽しめます。",
+        "en": "Located in Nakano, Aqua Higashi-Nakano is a rare sento equipped with an outdoor pool, alongside open-air baths and a sauna, enjoyable year-round."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%AF%E3%82%A2%E6%9D%B1%E4%B8%AD%E9%87%8E%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E6%9D%B1%E4%B8%AD%E9%87%8E4-9-22"
+    },
+    {
+      "id": "matsumotoyu",
+      "name": {
+        "ko": "마쓰모토유",
+        "ja": "松本湯",
+        "en": "Matsumoto-yu"
+      },
+      "area": {
+        "ko": "나카노",
+        "ja": "中野区",
+        "en": "Nakano"
+      },
+      "areaGroup": {
+        "ko": "nakano",
+        "ja": "nakano",
+        "en": "nakano"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都中野区東中野5-29-12",
+        "ko": "도쿄도 나카노구 히가시나카노 5-29-12",
+        "en": "5-29-12 Higashi-Nakano, Nakano-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "사우나 성지로 유명",
+          "ja": "サウナの聖地として有名",
+          "en": "Famed sauna destination"
+        },
+        {
+          "ko": "넓은 수풍려·외기욕",
+          "ja": "広い水風呂と外気浴",
+          "en": "Large cold bath & rest area"
+        },
+        {
+          "ko": "2021년 대규모 리뉴얼",
+          "ja": "2021年大規模リニューアル",
+          "en": "Fully renovated in 2021"
+        }
+      ],
+      "desc": {
+        "ko": "나카노에 자리한 전통 센토 '마쓰모토유'은(는) 2021년 리뉴얼 이후 \"사우나 성지\"로 불리는 인기 센토입니다. 넓은 수풍려와 쾌적한 휴식 공간이 사우나 애호가들을 불러 모읍니다.",
+        "ja": "中野区に位置する伝統銭湯「松本湯」は、2021年のリニューアル以降「サウナの聖地」と呼ばれる人気銭湯。広い水風呂と快適な休憩スペースがサウナーを惹きつけます。",
+        "en": "Located in Nakano, Matsumoto-yu is a sento hailed as a \"sauna mecca\" since its 2021 renovation, drawing enthusiasts with its large cold plunge and comfortable rest areas."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E6%9C%AC%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E6%9D%B1%E4%B8%AD%E9%87%8E5-29-12"
+    },
+    {
+      "id": "egotayu",
+      "name": {
+        "ko": "에고타유",
+        "ja": "えごた湯",
+        "en": "Egota-yu"
+      },
+      "area": {
+        "ko": "나카노",
+        "ja": "中野区",
+        "en": "Nakano"
+      },
+      "areaGroup": {
+        "ko": "nakano",
+        "ja": "nakano",
+        "en": "nakano"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都中野区江古田3-5-12",
+        "ko": "도쿄도 나카노구 에고타 3-5-12",
+        "en": "3-5-12 Egota, Nakano-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "리뉴얼된 동네 센토",
+          "ja": "リニューアル済みの地域銭湯",
+          "en": "Renovated local sento"
+        },
+        {
+          "ko": "사우나·탄산천",
+          "ja": "サウナ・炭酸泉",
+          "en": "Sauna & carbonated bath"
+        },
+        {
+          "ko": "조용한 주택가 입지",
+          "ja": "静かな住宅街",
+          "en": "Quiet residential area"
+        }
+      ],
+      "desc": {
+        "ko": "나카노에 자리한 전통 센토 '에고타유'은(는) 조용한 주택가의 리뉴얼 센토로, 탄산천과 사우나를 갖춰 지역 주민들의 사랑을 받습니다.",
+        "ja": "中野区に位置する伝統銭湯「えごた湯」は、静かな住宅街にあるリニューアル銭湯で、炭酸泉とサウナを備え、地域の人々に親しまれています。",
+        "en": "Located in Nakano, Egota-yu is a renovated sento in a quiet residential area, cherished by locals for its carbonated bath and sauna."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%88%E3%81%94%E3%81%9F%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E6%B1%9F%E5%8F%A4%E7%94%B03-5-12"
+    },
+    {
+      "id": "yoshinoyu",
+      "name": {
+        "ko": "유야 와고코로 요시노유",
+        "ja": "ゆ家 和ごころ 吉の湯",
+        "en": "Yuya Wagokoro Yoshi no Yu"
+      },
+      "area": {
+        "ko": "스기나미",
+        "ja": "杉並区",
+        "en": "Suginami"
+      },
+      "areaGroup": {
+        "ko": "suginami",
+        "ja": "suginami",
+        "en": "suginami"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都杉並区成田東1-14-7",
+        "ko": "도쿄도 스기나미구 나리타히가시 1-14-7",
+        "en": "1-14-7 Narita-Higashi, Suginami-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna",
+        "garden"
+      ],
+      "highlights": [
+        {
+          "ko": "정원식 노천탕",
+          "ja": "庭園風の露天風呂",
+          "en": "Garden-style open-air bath"
+        },
+        {
+          "ko": "토고시 사우나·수풍려",
+          "ja": "サウナ・水風呂充実",
+          "en": "Excellent sauna & cold bath"
+        },
+        {
+          "ko": "스기나미의 인기 센토",
+          "ja": "杉並の人気銭湯",
+          "en": "Popular Suginami sento"
+        }
+      ],
+      "desc": {
+        "ko": "스기나미에 자리한 전통 센토 '유야 와고코로 요시노유'은(는) 정원식 노천탕과 알찬 사우나로 스기나미에서 손꼽히는 인기 센토입니다.",
+        "ja": "杉並区に位置する伝統銭湯「ゆ家 和ごころ 吉の湯」は、庭園風の露天風呂と充実したサウナで杉並屈指の人気を誇る銭湯です。",
+        "en": "Located in Suginami, Yuya Wagokoro Yoshi no Yu is one of Suginami's most popular sento, prized for its garden-style open-air bath and excellent sauna."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%86%E5%AE%B6%20%E5%92%8C%E3%81%94%E3%81%93%E3%82%8D%20%E5%90%89%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E6%88%90%E7%94%B0%E6%9D%B11-14-7"
+    },
+    {
+      "id": "saitoyu",
+      "name": {
+        "ko": "사이토유",
+        "ja": "斉藤湯",
+        "en": "Saito-yu"
+      },
+      "area": {
+        "ko": "아라카와",
+        "ja": "荒川区",
+        "en": "Arakawa"
+      },
+      "areaGroup": {
+        "ko": "arakawa",
+        "ja": "arakawa",
+        "en": "arakawa"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都荒川区東日暮里6-59-2",
+        "ko": "도쿄도 아라카와구 히가시닛포리 6-59-2",
+        "en": "6-59-2 Higashi-Nippori, Arakawa-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "닛포리역 도보권",
+          "ja": "日暮里駅から徒歩圏",
+          "en": "Near Nippori Station"
+        },
+        {
+          "ko": "생맥주 서버 완비",
+          "ja": "生ビールサーバー完備",
+          "en": "Draft beer on tap"
+        },
+        {
+          "ko": "탄산천·실키탕",
+          "ja": "炭酸泉・シルキー風呂",
+          "en": "Carbonated & silky baths"
+        }
+      ],
+      "desc": {
+        "ko": "아라카와에 자리한 전통 센토 '사이토유'은(는) 닛포리역 인근의 리뉴얼 센토로, 목욕 후 생맥주를 즐길 수 있는 것으로 유명합니다.",
+        "ja": "荒川区に位置する伝統銭湯「斉藤湯」は、日暮里駅近くのリニューアル銭湯で、風呂上がりの生ビールが楽しめることで有名です。",
+        "en": "Located in Arakawa, Saito-yu is a renovated sento near Nippori Station, famous for serving draft beer to enjoy after your bath."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%89%E8%97%A4%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%8D%92%E5%B7%9D%E5%8C%BA%E6%9D%B1%E6%97%A5%E6%9A%AE%E9%87%8C6-59-2"
+    },
+    {
+      "id": "umenoyu_arakawa",
+      "name": {
+        "ko": "유도코로 우메노유 (아라카와)",
+        "ja": "湯処 梅の湯",
+        "en": "Yudokoro Ume no Yu (Arakawa)"
+      },
+      "area": {
+        "ko": "아라카와",
+        "ja": "荒川区",
+        "en": "Arakawa"
+      },
+      "areaGroup": {
+        "ko": "arakawa",
+        "ja": "arakawa",
+        "en": "arakawa"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都荒川区西尾久4-13-2",
+        "ko": "도쿄도 아라카와구 니시오구 4-13-2",
+        "en": "4-13-2 Nishi-Ogu, Arakawa-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "도덴 아라카와선 인근",
+          "ja": "都電荒川線沿線",
+          "en": "Along Toden Arakawa Line"
+        },
+        {
+          "ko": "노천탕·일替わり탕",
+          "ja": "露天風呂と日替わり湯",
+          "en": "Open-air & rotating baths"
+        },
+        {
+          "ko": "리뉴얼된 시설",
+          "ja": "リニューアル済み",
+          "en": "Renovated facility"
+        }
+      ],
+      "desc": {
+        "ko": "아라카와에 자리한 전통 센토 '유도코로 우메노유 (아라카와)'은(는) 도덴 아라카와선 연선의 리뉴얼 센토로, 노천탕과 날마다 바뀌는 이벤트탕이 인기입니다.",
+        "ja": "荒川区に位置する伝統銭湯「湯処 梅の湯」は、都電荒川線沿線のリニューアル銭湯で、露天風呂と日替わり湯が人気です。",
+        "en": "Located in Arakawa, Yudokoro Ume no Yu (Arakawa) is a renovated sento along the Toden Arakawa tram line, popular for its open-air bath and daily rotating specialty baths."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%87%A6%20%E6%A2%85%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%8D%92%E5%B7%9D%E5%8C%BA%E8%A5%BF%E5%B0%BE%E4%B9%854-13-2"
+    },
+    {
+      "id": "hasunuma",
+      "name": {
+        "ko": "하스누마 온천",
+        "ja": "はすぬま温泉",
+        "en": "Hasunuma Onsen"
+      },
+      "area": {
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
+      },
+      "areaGroup": {
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
+      },
+      "type": {
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都大田区西蒲田6-16-11",
+        "ko": "도쿄도 오타구 니시카마타 6-16-11",
+        "en": "6-16-11 Nishi-Kamata, Ota-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "다이쇼 로망풍 인테리어",
+          "ja": "大正ロマン風の内装",
+          "en": "Taisho-era romantic decor"
+        },
+        {
+          "ko": "천연 온천 센토",
+          "ja": "天然温泉の銭湯",
+          "en": "Natural hot spring sento"
+        },
+        {
+          "ko": "가마타의 명물",
+          "ja": "蒲田の名物銭湯",
+          "en": "Kamata landmark"
+        }
+      ],
+      "desc": {
+        "ko": "오타에 자리한 천연 온천 '하스누마 온천'은(는) 다이쇼 로망을 테마로 한 인테리어가 아름다운 천연 온천 센토로, 가마타 지역의 명물입니다.",
+        "ja": "大田区に位置する天然温泉「はすぬま温泉」は、大正ロマンをテーマにした内装が美しい天然温泉銭湯で、蒲田エリアの名物です。",
+        "en": "Located in Ota, Hasunuma Onsen is a natural hot spring sento with beautiful Taisho-romantic interiors, a beloved landmark of the Kamata area."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%99%E3%81%AC%E3%81%BE%E6%B8%A9%E6%B3%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E8%A5%BF%E8%92%B2%E7%94%B06-16-11"
+    },
+    {
+      "id": "kaiseiyu",
+      "name": {
+        "ko": "가이세이유",
+        "ja": "改正湯",
+        "en": "Kaisei-yu"
+      },
+      "area": {
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
+      },
+      "areaGroup": {
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
+      },
+      "type": {
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都大田区西蒲田5-10-5",
+        "ko": "도쿄도 오타구 니시카마타 5-10-5",
+        "en": "5-10-5 Nishi-Kamata, Ota-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "욕실 안 금붕어 수조",
+          "ja": "浴室内の金魚水槽",
+          "en": "Goldfish tank in bathhouse"
+        },
+        {
+          "ko": "가마타 명물 흑탕",
+          "ja": "蒲田名物の黒湯",
+          "en": "Kamata's famous black water"
+        },
+        {
+          "ko": "천연 온천 사용",
+          "ja": "天然温泉使用",
+          "en": "Natural hot spring"
+        }
+      ],
+      "desc": {
+        "ko": "오타에 자리한 천연 온천 '가이세이유'은(는) 욕조 옆 수조에서 금붕어가 헤엄치는 독특한 흑탕 온천 센토입니다.",
+        "ja": "大田区に位置する天然温泉「改正湯」は、浴槽横の水槽で金魚が泳ぐユニークな黒湯温泉銭湯です。",
+        "en": "Located in Ota, Kaisei-yu is a unique black-water onsen sento where goldfish swim in a tank beside the baths."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%94%B9%E6%AD%A3%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E8%A5%BF%E8%92%B2%E7%94%B05-10-5"
+    },
+    {
+      "id": "sakurakan",
+      "name": {
+        "ko": "사쿠라칸",
+        "ja": "桜館",
+        "en": "Sakurakan"
+      },
+      "area": {
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
+      },
+      "areaGroup": {
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
+      },
+      "type": {
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都大田区池上6-35-5",
+        "ko": "도쿄도 오타구 이케가미 6-35-5",
+        "en": "6-35-5 Ikegami, Ota-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "이케가미의 흑탕 온천",
+          "ja": "池上の黒湯温泉",
+          "en": "Black spring in Ikegami"
+        },
+        {
+          "ko": "전망 노천탕",
+          "ja": "展望露天風呂",
+          "en": "Open-air bath with view"
+        },
+        {
+          "ko": "심야 1시까지 영업",
+          "ja": "深夜1時まで営業",
+          "en": "Open until 1 AM"
+        }
+      ],
+      "desc": {
+        "ko": "오타에 자리한 천연 온천 '사쿠라칸'은(는) 이케가미의 흑탕 온천 센토로, 전망 노천탕과 심야 영업이 강점입니다.",
+        "ja": "大田区に位置する天然温泉「桜館」は、池上の黒湯温泉銭湯で、展望露天風呂と深夜営業が魅力です。",
+        "en": "Located in Ota, Sakurakan is a black-water onsen sento in Ikegami, notable for its open-air view bath and late-night hours."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A1%9C%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E6%B1%A0%E4%B8%8A6-35-5"
+    },
+    {
+      "id": "miyagiyu",
+      "name": {
+        "ko": "미야기유",
+        "ja": "宮城湯",
+        "en": "Miyagi-yu"
+      },
+      "area": {
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
+      },
+      "areaGroup": {
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
+      },
+      "type": {
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都品川区西品川2-18-4",
+        "ko": "도쿄도 시나가와구 니시시나가와 2-18-4",
+        "en": "2-18-4 Nishi-Shinagawa, Shinagawa-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna"
+      ],
+      "highlights": [
+        {
+          "ko": "천연 온천 사용 센토",
+          "ja": "天然温泉使用の銭湯",
+          "en": "Natural hot spring sento"
+        },
+        {
+          "ko": "주替わり 노천탕",
+          "ja": "週替わりの露天風呂",
+          "en": "Weekly rotating baths"
+        },
+        {
+          "ko": "오사키·시나가와 인근",
+          "ja": "大崎・品川近く",
+          "en": "Near Osaki & Shinagawa"
+        }
+      ],
+      "desc": {
+        "ko": "시나가와에 자리한 천연 온천 '미야기유'은(는) 오사키 인근의 천연 온천 센토로, 층이 다른 두 욕실을 남녀 주간 교대로 운영하며 노천탕도 갖췄습니다.",
+        "ja": "品川区に位置する天然温泉「宮城湯」は、大崎近くの天然温泉銭湯で、階の異なる2つの浴室を男女週替わりで運営し、露天風呂も備えます。",
+        "en": "Located in Shinagawa, Miyagi-yu is a natural hot spring sento near Osaki, rotating two bath floors weekly between men and women, with an open-air bath."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%9F%8E%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E5%93%81%E5%B7%9D2-18-4"
     }
   ],
   "AREAS": [
@@ -20911,12 +22077,6 @@
       "ja": "都市型スパ"
     },
     {
-      "id": "도심 스파",
-      "ko": "도심 스파",
-      "en": "Urban Spa",
-      "ja": "都市スパ"
-    },
-    {
       "id": "슈퍼 센토",
       "ko": "슈퍼 센토",
       "en": "Super Sento",
@@ -20931,14 +22091,14 @@
     {
       "id": "온천 여관",
       "ko": "온천 여관",
-      "en": "Hot Spring Inn",
+      "en": "Onsen Ryokan",
       "ja": "温泉旅館"
     },
     {
       "id": "테마파크",
       "ko": "테마파크",
-      "en": "Theme Park",
-      "ja": "テーマパーク"
+      "en": "Onsen Theme Park",
+      "ja": "温泉テーマパーク"
     },
     {
       "id": "온천 마을",
