@@ -2,54 +2,47 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="도쿄 온천 가이드 쿠키 정책 - Tokyo Onsen Guide Cookie Policy">
-<meta name="robots" content="index, follow">
-<title>쿠키 정책 | Cookie Policy | クッキーポリシー | Tokyo Onsen Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>쿠키 정책 | Tokyo Onsen Guide</title>
 <style>
 :root {
   --wood-dark: #1a1410; --wood-mid: #2a2018; --wood-light: #3d3020;
   --cream: #f5f0e8; --cream-panel: rgba(245,240,232,0.97);
-  --gold: #c9a96e; --gold-light: #d4b87a; --gold-pale: rgba(201,169,110,0.12);
-  --burgundy: #8b1a2b; --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
-  --border: #d4c9b8; --shadow: 0 4px 20px rgba(26,20,16,0.12);
-  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18); --radius-lg: 16px;
+  --gold: #c9a96e; --gold-light: #d4b87a; --burgundy: #8b1a2b;
+  --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+  --border: #d4c9b8; --border-light: #e8e0d4;
+  --radius: 10px; --radius-lg: 16px; --radius-full: 999px;
+  --shadow: 0 4px 20px rgba(26,20,16,0.12);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
-  font-size: 15px; line-height: 1.7; color: var(--text);
-  background: var(--wood-dark);
-  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
-  min-height: 100vh;
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; }
+.site-header { background: var(--wood-dark); border-bottom: 2px solid var(--gold); position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+.site-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--cream); }
+.logo-mark { font-size: 26px; color: var(--gold); }
+.logo-sub { display: block; font-size: 10px; font-weight: 800; color: var(--gold-light); letter-spacing: 0.1em; }
+.logo-main { display: block; font-size: 17px; font-weight: 900; color: #fff; }
+.desktop-nav { display: flex; gap: 6px; align-items: center; }
+.desktop-nav a { color: var(--cream); text-decoration: none; font-size: 14.5px; font-weight: 700; padding: 8px 14px; border-radius: var(--radius-full); transition: all 150ms; }
+.desktop-nav a:hover, .desktop-nav a.active { background: rgba(201,169,110,0.22); color: var(--gold-light); }
+.header-tools { display: flex; gap: 8px; align-items: center; }
+.lang-btn { background: transparent; border: 1px solid rgba(201,169,110,0.4); color: var(--cream); padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 700; }
+.lang-btn.active { background: var(--gold); color: var(--wood-dark); font-weight: 900; }
+.hero-box { background: var(--wood-dark); color: var(--cream); padding: 50px 20px; text-align: center; border-bottom: 2px solid var(--gold); }
+.hero-box h1 { font-size: 32px; font-weight: 900; margin-bottom: 8px; color: #fff; }
+.hero-box p { font-size: 15px; color: var(--gold-light); font-weight: 700; }
+.content-box { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 30px; margin-bottom: 24px; box-shadow: var(--shadow); }
+.card h2 { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.card p { margin-bottom: 14px; font-size: 15.5px; line-height: 1.85; color: var(--text-light); text-align: justify; }
+.card p:last-child { margin-bottom: 0; }
+.footer { background: var(--wood-dark); color: var(--cream); text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 2px solid var(--gold); font-size: 13px; }
+.footer a { color: var(--gold-light); text-decoration: none; margin: 0 10px; }
+@media (max-width: 767px) {
+  .desktop-nav { display: none; }
+  .hero-box h1 { font-size: 26px; }
+  .card { padding: 22px 18px; }
 }
-.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
-.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1.5px solid var(--gold); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
-.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
-.logo-mark { font-size: 28px; color: var(--burgundy); }
-.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
-.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
-.lang-group { display: flex; gap: 4px; }
-.lang-btn { padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--text-light); transition: all 150ms; }
-.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
-.page-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 40px 16px 32px; text-align: center; border-bottom: 2px solid var(--gold); }
-.page-hero h1 { font-size: 26px; font-weight: 800; }
-.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
-.content-wrap { background: var(--cream-panel); border-radius: var(--radius-lg); padding: 28px 20px; margin: 24px 0 40px; box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold); }
-.content-wrap h2 { font-size: 17px; font-weight: 800; color: var(--text); margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; }
-.content-wrap h2:first-child { margin-top: 0; }
-.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
-.content-wrap ul { margin: 12px 0 12px 20px; color: var(--text-light); }
-.content-wrap li { margin-bottom: 8px; }
-.content-wrap strong { color: var(--text); }
-.update-date { display: inline-block; padding: 6px 14px; background: var(--gold-pale); border-radius: 20px; font-size: 12px; font-weight: 700; color: var(--text-muted); margin-bottom: 20px; }
-.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px; font-size: 12px; border-top: 1px solid var(--wood-light); }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
-.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; }
-.footer-links a:hover { color: var(--gold-light); }
-@media (min-width: 768px) { .container { padding: 0 24px; } .content-wrap { padding: 36px 32px; } .page-hero h1 { font-size: 30px; } }
 </style>
 </head>
 <body>
@@ -57,89 +50,41 @@ body {
   <div class="header-inner">
     <a href="../index.html" class="site-logo">
       <span class="logo-mark">♨</span>
-      <div><span class="logo-en">TOKYO ONSEN</span><span class="logo-ko">도쿄 온천 가이드</span></div>
+      <div><span class="logo-sub">TOKYO ONSEN</span><span class="logo-main">도쿄 온천 가이드</span></div>
     </a>
-    <div class="lang-group">
-      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
-      <button class="lang-btn" onclick="setLang('en')">English</button>
-      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    <nav class="desktop-nav">
+      <a href="../index.html">홈</a>
+      <a href="../index.html#list">온천 탐색</a>
+      <a href="../index.html?feat=rotenburo">🌿 노천탕</a>
+      <a href="../index.html?feat=sauna">🧖 사우나</a>
+      <a href="../index.html?feat=family">👨‍👩‍👧‍👦 가족</a>
+      <a href="about.html" class="">소개</a>
+    </nav>
+    <div class="header-tools">
+      <button class="lang-btn active" onclick="location.href='../index.html?view=about&lang=ko'">KR</button>
+      <button class="lang-btn" onclick="location.href='../index.html?view=about&lang=en'">EN</button>
+      <button class="lang-btn" onclick="location.href='../index.html?view=about&lang=ja'">JP</button>
     </div>
   </div>
 </header>
-<div class="page-hero">
-  <h1 data-i18n="title">쿠키 정책</h1>
-  <p data-i18n="sub">Cookie Policy</p>
+<div class="hero-box">
+  <h1>쿠키 정책</h1>
+  <p>Cookie Policy</p>
 </div>
-<div class="container">
-  <div class="content-wrap">
-    <span class="update-date" data-i18n="updated">최종 업데이트: 2026년 7월 19일</span>
-
-    <h2 data-i18n="h1">1. 쿠키란?</h2>
-    <p data-i18n="p1">쿠키는 웹사이트가 사용자의 브라우저에 저장하는 작은 텍스트 파일입니다. 이 파일을 통해 사이트는 사용자의 설정, 방문 기록 등을 기억할 수 있습니다.</p>
-
-    <h2 data-i18n="h2">2. 당사의 쿠키 사용</h2>
-    <p data-i18n="p2">Tokyo Onsen Guide는 자체적으로 쿠키를 사용하지 않습니다. 다만 사이트 성능 개선과 사용자 편의를 위해 브라우저의 로컬 스토리지(LocalStorage)를 사용할 수 있습니다.</p>
-    <ul>
-      <li data-i18n="li1">언어 설정 기억</li>
-      <li data-i18n="li2">테마(라이트/다크) 설정 기억</li>
-    </ul>
-
-    <h2 data-i18n="h3">3. 제3자 쿠키</h2>
-    <p data-i18n="p3">Google AdSense 광고가 게재되는 경우, Google 및 광고주가 다음 목적으로 쿠키를 사용할 수 있습니다.</p>
-    <ul>
-      <li data-i18n="li3">광고 게재 및 성과 측정</li>
-      <li data-i18n="li4">광고 개인화 (사용자의 관심사에 맞는 광고 표시)</li>
-      <li data-i18n="li5">사기 방지 및 스팸 차단</li>
-    </ul>
-    <p data-i18n="p3b">Google의 쿠키 사용을 거부하려면 <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google 광고 설정</a>에서 개인 맞춤형 광고를 끌 수 있습니다.</p>
-
-    <h2 data-i18n="h4">4. 쿠키 거부 방법</h2>
-    <p data-i18n="p4">모든 브라우저는 쿠키 수신을 거부하거나 저장 시 알림을 설정할 수 있습니다. 설정 방법은 사용 중인 브라우저의 도움말을 참조하세요. 단, 쿠키를 비활성화하면 일부 기능이 정상 작동하지 않을 수 있습니다.</p>
-
-    <h2 data-i18n="h5">5. 문의처</h2>
-    <p data-i18n="p5">쿠키 정책 관련 문의: <a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a></p>
-  </div>
+<div class="content-box">
+  
+<div class="card">
+  <h2>🍪 쿠키(Cookie) 정책 안내</h2>
+  <p>본 사이트는 사용자의 언어 설정(한국어, 영어, 일본어) 및 테마 설정(라이트/다크 모드)을 브라우저에 기억하여 편리한 이용을 돕기 위해 쿠키 및 로컬 스토리지(Local Storage)를 사용합니다.</p>
+  <p>사용자는 언제든 브라우저 설정에서 쿠키 저장을 거부하거나 기존 데이터를 삭제할 수 있으며, 이 경우에도 온천 탐색 및 상세페이지 열람 서비스는 정상적으로 이용 가능합니다.</p>
 </div>
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
-    <a href="contact.html">Contact</a><a href="advertising.html">Ads</a><a href="about.html">About</a>
-  </div>
+
+</div>
+<footer class="footer">
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+  <div style="margin-top:12px;">
+    <a href="about.html">소개</a> | <a href="privacy.html">개인정보처리방침</a> | <a href="terms.html">이용약관</a> | <a href="cookies.html">쿠키 정책</a> | <a href="contact.html">문의</a>
+  </div>
 </footer>
-<script>
-const i18n = {
-  ko: {
-    title: "쿠키 정책", sub: "Cookie Policy", updated: "최종 업데이트: 2026년 7월 19일",
-    h1: "1. 쿠키란?", p1: "쿠키는 웹사이트가 사용자의 브라우저에 저장하는 작은 텍스트 파일입니다. 이 파일을 통해 사이트는 사용자의 설정, 방문 기록 등을 기억할 수 있습니다.",
-    h2: "2. 당사의 쿠키 사용", p2: "Tokyo Onsen Guide는 자체적으로 쿠키를 사용하지 않습니다. 다만 사이트 성능 개선과 사용자 편의를 위해 브라우저의 로컬 스토리지(LocalStorage)를 사용할 수 있습니다.", li1: "언어 설정 기억", li2: "테마(라이트/다크) 설정 기억",
-    h3: "3. 제3자 쿠키", p3: "Google AdSense 광고가 게재되는 경우, Google 및 광고주가 다음 목적으로 쿠키를 사용할 수 있습니다.", li3: "광고 게재 및 성과 측정", li4: "광고 개인화 (사용자의 관심사에 맞는 광고 표시)", li5: "사기 방지 및 스팸 차단", p3b: "Google의 쿠키 사용을 거부하려면 Google 광고 설정에서 개인 맞춤형 광고를 끌 수 있습니다.",
-    h4: "4. 쿠키 거부 방법", p4: "모든 브라우저는 쿠키 수신을 거부하거나 저장 시 알림을 설정할 수 있습니다. 설정 방법은 사용 중인 브라우저의 도움말을 참조하세요.",
-    h5: "5. 문의처", p5: "쿠키 정책 관련 문의: storykim1980@gmail.com"
-  },
-  en: {
-    title: "Cookie Policy", sub: "Cookie Policy", updated: "Last updated: July 19, 2026",
-    h1: "1. What Are Cookies?", p1: "Cookies are small text files that websites store on your browser. They help sites remember your preferences and visit history.",
-    h2: "2. Our Cookie Usage", p2: "Tokyo Onsen Guide does not use cookies directly. However, we may use browser LocalStorage for performance and user convenience.", li1: "Language preference", li2: "Theme (light/dark) preference",
-    h3: "3. Third-Party Cookies", p3: "When Google AdSense ads are displayed, Google and advertisers may use cookies for the following purposes:", li3: "Ad delivery and performance measurement", li4: "Ad personalization", li5: "Fraud prevention and spam blocking", p3b: "To opt out of Google's cookie usage, you can turn off personalized ads in Google Ad Settings.",
-    h4: "4. How to Refuse Cookies", p4: "All browsers allow you to refuse cookies or be notified when cookies are stored. Please refer to your browser's help section.",
-    h5: "5. Contact", p5: "Cookie policy inquiries: storykim1980@gmail.com"
-  },
-  ja: {
-    title: "クッキーポリシー", sub: "クッキーポリシー", updated: "最終更新日: 2026年7月19日",
-    h1: "1. クッキーとは", p1: "クッキーは、ウェブサイトがユーザーのブラウザに保存する小さなテキストファイルです。サイトはこのファイルを通じてユーザーの設定や訪問履歴を記憶できます。",
-    h2: "2. 当社のクッキー使用", p2: "Tokyo Onsen Guideは独自のクッキーを使用しません。ただし、サイトのパフォーマンス向上とユーザーの利便性のため、ブラウザのローカルストレージを使用する場合があります。", li1: "言語設定の記憶", li2: "テーマ（ライト/ダーク）設定の記憶",
-    h3: "3. 第三者クッキー", p3: "Google AdSenseの広告が掲載される場合、Googleおよび広告主が以下の目的でクッキーを使用する場合があります。", li3: "広告配信および効果測定", li4: "広告のパーソナライズ", li5: "詐欺防止およびスパム対策", p3b: "Googleのクッキー使用を拒否するには、Google広告設定でパーソナライズド広告をオフにできます。",
-    h4: "4. クッキーの拒否方法", p4: "すべてのブラウザは、クッキーの受信を拒否するか、保存時に通知するように設定できます。設定方法はお使いのブラウザのヘルプを参照してください。",
-    h5: "5. お問い合わせ", p5: "クッキーポリシーに関するお問い合わせ: storykim1980@gmail.com"
-  }
-};
-let lang = 'ko';
-function setLang(l) {
-  lang = l;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
-  document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if(i18n[lang][k]) el.textContent = i18n[lang][k]; });
-}
-</script>
 </body>
 </html>

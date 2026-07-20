@@ -2,54 +2,47 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="도쿄 온천 가이드 이용약관 - Tokyo Onsen Guide Terms of Service">
-<meta name="robots" content="index, follow">
-<title>이용약관 | Terms of Service | 利用規約 | Tokyo Onsen Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>이용약관 | Tokyo Onsen Guide</title>
 <style>
 :root {
   --wood-dark: #1a1410; --wood-mid: #2a2018; --wood-light: #3d3020;
   --cream: #f5f0e8; --cream-panel: rgba(245,240,232,0.97);
-  --gold: #c9a96e; --gold-light: #d4b87a; --gold-pale: rgba(201,169,110,0.12);
-  --burgundy: #8b1a2b; --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
-  --border: #d4c9b8; --shadow: 0 4px 20px rgba(26,20,16,0.12);
-  --shadow-lg: 0 12px 40px rgba(26,20,16,0.18); --radius-lg: 16px;
+  --gold: #c9a96e; --gold-light: #d4b87a; --burgundy: #8b1a2b;
+  --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+  --border: #d4c9b8; --border-light: #e8e0d4;
+  --radius: 10px; --radius-lg: 16px; --radius-full: 999px;
+  --shadow: 0 4px 20px rgba(26,20,16,0.12);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", serif;
-  font-size: 15px; line-height: 1.7; color: var(--text);
-  background: var(--wood-dark);
-  background-image: radial-gradient(ellipse at 20% 30%, rgba(201,169,110,0.07) 0%, transparent 50%);
-  min-height: 100vh;
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; }
+.site-header { background: var(--wood-dark); border-bottom: 2px solid var(--gold); position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+.site-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--cream); }
+.logo-mark { font-size: 26px; color: var(--gold); }
+.logo-sub { display: block; font-size: 10px; font-weight: 800; color: var(--gold-light); letter-spacing: 0.1em; }
+.logo-main { display: block; font-size: 17px; font-weight: 900; color: #fff; }
+.desktop-nav { display: flex; gap: 6px; align-items: center; }
+.desktop-nav a { color: var(--cream); text-decoration: none; font-size: 14.5px; font-weight: 700; padding: 8px 14px; border-radius: var(--radius-full); transition: all 150ms; }
+.desktop-nav a:hover, .desktop-nav a.active { background: rgba(201,169,110,0.22); color: var(--gold-light); }
+.header-tools { display: flex; gap: 8px; align-items: center; }
+.lang-btn { background: transparent; border: 1px solid rgba(201,169,110,0.4); color: var(--cream); padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 700; }
+.lang-btn.active { background: var(--gold); color: var(--wood-dark); font-weight: 900; }
+.hero-box { background: var(--wood-dark); color: var(--cream); padding: 50px 20px; text-align: center; border-bottom: 2px solid var(--gold); }
+.hero-box h1 { font-size: 32px; font-weight: 900; margin-bottom: 8px; color: #fff; }
+.hero-box p { font-size: 15px; color: var(--gold-light); font-weight: 700; }
+.content-box { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 30px; margin-bottom: 24px; box-shadow: var(--shadow); }
+.card h2 { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.card p { margin-bottom: 14px; font-size: 15.5px; line-height: 1.85; color: var(--text-light); text-align: justify; }
+.card p:last-child { margin-bottom: 0; }
+.footer { background: var(--wood-dark); color: var(--cream); text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 2px solid var(--gold); font-size: 13px; }
+.footer a { color: var(--gold-light); text-decoration: none; margin: 0 10px; }
+@media (max-width: 767px) {
+  .desktop-nav { display: none; }
+  .hero-box h1 { font-size: 26px; }
+  .card { padding: 22px 18px; }
 }
-.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 16px; }
-.site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1.5px solid var(--gold); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 16px; max-width: 1100px; margin: 0 auto; }
-.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
-.logo-mark { font-size: 28px; color: var(--burgundy); }
-.logo-en { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; color: var(--gold); }
-.logo-ko { display: block; font-size: 15px; font-weight: 800; color: var(--text); }
-.lang-group { display: flex; gap: 4px; }
-.lang-btn { padding: 6px 12px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--text-light); transition: all 150ms; }
-.lang-btn.active { border-color: var(--gold); background: var(--gold-pale); color: var(--wood-dark); }
-.page-hero { background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood-mid) 100%); color: var(--cream); padding: 40px 16px 32px; text-align: center; border-bottom: 2px solid var(--gold); }
-.page-hero h1 { font-size: 26px; font-weight: 800; }
-.page-hero p { font-size: 13px; color: var(--gold-light); margin-top: 8px; }
-.content-wrap { background: var(--cream-panel); border-radius: var(--radius-lg); padding: 28px 20px; margin: 24px 0 40px; box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold); }
-.content-wrap h2 { font-size: 17px; font-weight: 800; color: var(--text); margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: inline-block; }
-.content-wrap h2:first-child { margin-top: 0; }
-.content-wrap p { margin-bottom: 12px; color: var(--text-light); }
-.content-wrap ul { margin: 12px 0 12px 20px; color: var(--text-light); }
-.content-wrap li { margin-bottom: 8px; }
-.content-wrap strong { color: var(--text); }
-.update-date { display: inline-block; padding: 6px 14px; background: var(--gold-pale); border-radius: 20px; font-size: 12px; font-weight: 700; color: var(--text-muted); margin-bottom: 20px; }
-.site-footer { background: var(--wood-dark); color: rgba(245,240,232,0.35); text-align: center; padding: 24px 16px; font-size: 12px; border-top: 1px solid var(--wood-light); }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 12px; }
-.footer-links a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 12px; font-weight: 600; }
-.footer-links a:hover { color: var(--gold-light); }
-@media (min-width: 768px) { .container { padding: 0 24px; } .content-wrap { padding: 36px 32px; } .page-hero h1 { font-size: 30px; } }
 </style>
 </head>
 <body>
@@ -57,102 +50,41 @@ body {
   <div class="header-inner">
     <a href="../index.html" class="site-logo">
       <span class="logo-mark">♨</span>
-      <div><span class="logo-en">TOKYO ONSEN</span><span class="logo-ko">도쿄 온천 가이드</span></div>
+      <div><span class="logo-sub">TOKYO ONSEN</span><span class="logo-main">도쿄 온천 가이드</span></div>
     </a>
-    <div class="lang-group">
-      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
-      <button class="lang-btn" onclick="setLang('en')">English</button>
-      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    <nav class="desktop-nav">
+      <a href="../index.html">홈</a>
+      <a href="../index.html#list">온천 탐색</a>
+      <a href="../index.html?feat=rotenburo">🌿 노천탕</a>
+      <a href="../index.html?feat=sauna">🧖 사우나</a>
+      <a href="../index.html?feat=family">👨‍👩‍👧‍👦 가족</a>
+      <a href="about.html" class="">소개</a>
+    </nav>
+    <div class="header-tools">
+      <button class="lang-btn active" onclick="location.href='../index.html?view=about&lang=ko'">KR</button>
+      <button class="lang-btn" onclick="location.href='../index.html?view=about&lang=en'">EN</button>
+      <button class="lang-btn" onclick="location.href='../index.html?view=about&lang=ja'">JP</button>
     </div>
   </div>
 </header>
-<div class="page-hero">
-  <h1 data-i18n="title">이용약관</h1>
-  <p data-i18n="sub">Terms of Service</p>
+<div class="hero-box">
+  <h1>이용약관</h1>
+  <p>Terms of Service</p>
 </div>
-<div class="container">
-  <div class="content-wrap">
-    <span class="update-date" data-i18n="updated">최종 업데이트: 2026년 7월 19일</span>
-
-    <h2 data-i18n="h1">1. 서비스 개요</h2>
-    <p data-i18n="p1">Tokyo Onsen Guide(이하 "본 사이트")는 도쿄 및 주변 지역의 온천, 일일 온천, 슈퍼 센토 정보를 제공하는 관광 정보 사이트입니다. 본 사이트는 물론으로 제공되며, 모든 콘텐츠는 참고용입니다.</p>
-
-    <h2 data-i18n="h2">2. 면책사항</h2>
-    <p data-i18n="p2">본 사이트에 게재된 정보(영업시간, 요금, 시설 내용 등)는 각 시설의 공식 정보를 바탕으로 하지만, 변경될 수 있습니다. 실제 방문 전 해당 시설에 직접 확인하시기 바랍니다. 본 사이트는 정보의 정확성, 완전성, 신뢰성에 대해 어떠한 보증도 하지 않습니다.</p>
-
-    <h2 data-i18n="h3">3. AI 생성 이미지 고지</h2>
-    <p data-i18n="p3">본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 시설과 다를 수 있으며, 시설 선택의 유일한 기준이 되어서는 안 됩니다.</p>
-
-    <h2 data-i18n="h4">4. 저작권</h2>
-    <p data-i18n="p4">본 사이트의 텍스트, 디자인, 코드, 이미지 등 모든 콘텐츠의 저작권은 Tokyo Onsen Guide에 있습니다. 사전 서면 동의 없는 무단 복제, 배포, 수정, 상업적 이용을 금지합니다.</p>
-
-    <h2 data-i18n="h5">5. 금지 행위</h2>
-    <ul>
-      <li data-i18n="li1">자동화 도구(크롤러, 스크래퍼 등)를 이용한 데이터 수집</li>
-      <li data-i18n="li2">서비스 운영을 방해하는 행위</li>
-      <li data-i18n="li3">타인의 권리를 침해하거나 불법적인 콘텐츠 게시</li>
-      <li data-i18n="li4">본 사이트 콘텐츠의 무단 재판매 또는 재배포</li>
-    </ul>
-
-    <h2 data-i18n="h6">6. 광고</h2>
-    <p data-i18n="p6">본 사이트는 Google AdSense를 통해 광고를 게재할 수 있습니다. 광고주의 콘텐츠에 대한 책임은 해당 광고주에게 있으며, 본 사이트는 광고 내용에 대해 책임을 지지 않습니다.</p>
-
-    <h2 data-i18n="h7">7. 준거법 및 관할</h2>
-    <p data-i18n="p7">본 약관은 일본 법률 및 대한민국 법률을 준거법으로 하며, 분쟁 발생 시 관할 법원은 운영자의 거주지를 관할하는 법원으로 합니다.</p>
-
-    <h2 data-i18n="h8">8. 문의</h2>
-    <p data-i18n="p8">약관 관련 문의: <a href="mailto:storykim1980@gmail.com">storykim1980@gmail.com</a></p>
-  </div>
+<div class="content-box">
+  
+<div class="card">
+  <h2>📋 이용약관 및 면책조항</h2>
+  <p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 200개 온천 시설의 요금, 영업시간, 휴무일, 泉質 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p>
+  <p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p>
 </div>
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
-    <a href="contact.html">Contact</a><a href="advertising.html">Ads</a><a href="about.html">About</a>
-  </div>
+
+</div>
+<footer class="footer">
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
+  <div style="margin-top:12px;">
+    <a href="about.html">소개</a> | <a href="privacy.html">개인정보처리방침</a> | <a href="terms.html">이용약관</a> | <a href="cookies.html">쿠키 정책</a> | <a href="contact.html">문의</a>
+  </div>
 </footer>
-<script>
-const i18n = {
-  ko: {
-    title: "이용약관", sub: "Terms of Service", updated: "최종 업데이트: 2026년 7월 19일",
-    h1: "1. 서비스 개요", p1: "Tokyo Onsen Guide(이하 \"본 사이트\")는 도쿄 및 주변 지역의 온천, 일일 온천, 슈퍼 센토 정보를 제공하는 관광 정보 사이트입니다. 본 사이트는 물론으로 제공되며, 모든 콘텐츠는 참고용입니다.",
-    h2: "2. 면책사항", p2: "본 사이트에 게재된 정보(영업시간, 요금, 시설 내용 등)는 각 시설의 공식 정보를 바탕으로 하지만, 변경될 수 있습니다. 실제 방문 전 해당 시설에 직접 확인하시기 바랍니다.",
-    h3: "3. AI 생성 이미지 고지", p3: "본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 시설과 다를 수 있습니다.",
-    h4: "4. 저작권", p4: "본 사이트의 텍스트, 디자인, 코드, 이미지 등 모든 콘텐츠의 저작권은 Tokyo Onsen Guide에 있습니다. 사전 서면 동의 없는 무단 복제, 배포, 수정, 상업적 이용을 금지합니다.",
-    h5: "5. 금지 행위", li1: "자동화 도구(크롤러, 스크래퍼 등)를 이용한 데이터 수집", li2: "서비스 운영을 방해하는 행위", li3: "타인의 권리를 침해하거나 불법적인 콘텐츠 게시", li4: "본 사이트 콘텐츠의 무단 재판매 또는 재배포",
-    h6: "6. 광고", p6: "본 사이트는 Google AdSense를 통해 광고를 게재할 수 있습니다. 광고주의 콘텐츠에 대한 책임은 해당 광고주에게 있습니다.",
-    h7: "7. 준거법 및 관할", p7: "본 약관은 일본 법률 및 대한민국 법률을 준거법으로 하며, 분쟁 발생 시 관할 법원은 운영자의 거주지를 관할하는 법원으로 합니다.",
-    h8: "8. 문의", p8: "약관 관련 문의: storykim1980@gmail.com"
-  },
-  en: {
-    title: "Terms of Service", sub: "Terms of Service", updated: "Last updated: July 19, 2026",
-    h1: "1. Service Overview", p1: "Tokyo Onsen Guide provides information about hot springs, day-trip onsen, and super sento in Tokyo and surrounding areas. All content is for reference only.",
-    h2: "2. Disclaimer", p2: "Information on this site (hours, prices, facilities) is based on official sources but may change. Please verify directly with the facility before visiting.",
-    h3: "3. AI-Generated Images", p3: "Some images on this site are AI-generated for reference only and may differ from actual facilities.",
-    h4: "4. Copyright", p4: "All content including text, design, code, and images is copyrighted by Tokyo Onsen Guide. Unauthorized reproduction, distribution, or commercial use is prohibited.",
-    h5: "5. Prohibited Activities", li1: "Data collection using automated tools (crawlers, scrapers)", li2: "Actions that interfere with service operation", li3: "Infringing on others' rights or posting illegal content", li4: "Unauthorized resale or redistribution of content",
-    h6: "6. Advertising", p6: "This site may display advertisements through Google AdSense. Advertisers are responsible for their content.",
-    h7: "7. Governing Law", p7: "These terms are governed by the laws of Japan and South Korea. Disputes shall be resolved in the courts of the operator's residence.",
-    h8: "8. Contact", p8: "For inquiries: storykim1980@gmail.com"
-  },
-  ja: {
-    title: "利用規約", sub: "利用規約", updated: "最終更新日: 2026年7月19日",
-    h1: "1. サービス概要", p1: "Tokyo Onsen Guideは、東京および周辺地域の温泉、日帰り温泉、スーパー銭湯情報を提供する観光情報サイトです。すべてのコンテンツは参考用です。",
-    h2: "2. 免責事項", p2: "当サイトに掲載された情報（営業時間、料金、施設内容など）は各施設の公式情報に基づきますが、変更される場合があります。実際に訪問する前に施設に直接ご確認ください。",
-    h3: "3. AI生成画像の告知", p3: "当サイトの一部画像はAI（人工知能）が生成した参考画像です。実際の施設と異なる場合があります。",
-    h4: "4. 著作権", p4: "当サイトのテキスト、デザイン、コード、画像などすべてのコンテンツの著作権はTokyo Onsen Guideに帰属します。無断複製・配布・改変・商業利用を禁止します。",
-    h5: "5. 禁止行為", li1: "自動化ツール（クローラー、スクレイパーなど）を利用したデータ収集", li2: "サービス運営を妨害する行為", li3: "他人の権利を侵害するまたは違法なコンテンツの投稿", li4: "当サイトコンテンツの無断転売または再配布",
-    h6: "6. 広告", p6: "当サイトはGoogle AdSenseを通じて広告を掲載する場合があります。広告主のコンテンツに対する責任は広告主にあります。",
-    h7: "7. 準拠法および管轄", p7: "本規約は日本国法および大韓民国法を準拠法とし、紛争が発生した場合は運営者の居住地を管轄する裁判所を管轄裁判所とします。",
-    h8: "8. お問い合わせ", p8: "規約に関するお問い合わせ: storykim1980@gmail.com"
-  }
-};
-let lang = 'ko';
-function setLang(l) {
-  lang = l;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(l==='ko'?'한국어':(l==='en'?'English':'日本語'))));
-  document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if(i18n[lang][k]) el.textContent = i18n[lang][k]; });
-}
-</script>
 </body>
 </html>
