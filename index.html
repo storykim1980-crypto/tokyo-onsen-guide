@@ -1111,7 +1111,7 @@ body::before {
     <div class="home-layout">
       <div class="map-zone">
         <div class="map-frame">
-          <iframe id="home-map-iframe" src="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399511713&z=9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe id="home-map-iframe" src="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399511713&z=9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" decoding="async"></iframe>
           <div class="map-label" style="top:45%;left:52%;" data-area="chiyoda">치요다</div>
           <div class="map-label" style="top:48%;left:55%;" data-area="chuo">주오</div>
           <div class="map-label" style="top:50%;left:58%;" data-area="minato">미나토</div>
@@ -1315,6 +1315,161 @@ const S = {
     if(s.length>o.max)return{ok:false};
     return{ok:true,val:s};
   }
+  function updateSEO(){
+    try {
+      const view = S.view || "home";
+      const lang = S.lang || "ko";
+      const detailId = S.detailId;
+      const domain = "https://tokyo-onsen-guide.com";
+
+      let title = "";
+      let desc = "";
+      let kw = "";
+      let ogTitle = "";
+      let ogDesc = "";
+      let ogImg = domain + "/images/hero-onsen.jpg";
+      let canonicalUrl = domain + (lang === "ko" ? "/" : "/?lang=" + lang);
+      let schemaJson = null;
+
+      if (view === "detail" && detailId && typeof DATA !== "undefined") {
+        const o = DATA.find(x => x.id === detailId);
+        if (o) {
+          const nameTxt = (o.name && o.name[lang]) || (o.name && o.name.ko) || "";
+          const typeTxt = (o.type && o.type[lang]) || (o.type && o.type.ko) || "";
+          const areaTxt = (o.area && o.area[lang]) || (o.area && o.area.ko) || "";
+          const rawDesc = (o.desc && o.desc[lang]) || (o.desc && o.desc.ko) || "";
+          const shortDesc = rawDesc.replace(/\n+/g, " ").slice(0, 155) + (rawDesc.length > 155 ? "..." : "");
+
+          title = nameTxt + " | " + typeTxt + " (" + areaTxt + ") - Tokyo Onsen Guide";
+          desc = shortDesc || (nameTxt + " - " + typeTxt + " in " + areaTxt + ", Tokyo. Detailed visitor guide, hot spring data, and reviews.");
+          kw = nameTxt + ", " + areaTxt + " 온천, " + typeTxt + ", 도쿄 온천 추천, Tokyo onsen, " + (lang === "ja" ? "日帰り温泉, スーパー銭湯" : "sento");
+          ogTitle = nameTxt + " (" + areaTxt + ") | Tokyo Onsen Guide";
+          ogDesc = desc;
+          if (o.image) ogImg = domain + "/" + o.image;
+          canonicalUrl = domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=" + lang;
+
+          schemaJson = {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": nameTxt,
+            "description": desc,
+            "image": ogImg,
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": areaTxt,
+              "addressRegion": "Tokyo",
+              "addressCountry": "JP",
+              "streetAddress": (o.address && o.address[lang]) || ""
+            },
+            "url": canonicalUrl
+          };
+          if (o.rating) {
+            schemaJson.aggregateRating = {
+              "@type": "AggregateRating",
+              "ratingValue": o.rating,
+              "reviewCount": o.reviewCount || 10
+            };
+          }
+        }
+      }
+
+      if (!title) {
+        if (lang === "ko") {
+          title = "도쿄 온천 추천 베스트 200 | 직접 가본 도쿄 당일치기 온천 가이드";
+          desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 200곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
+          kw = "도쿄 온천 추천, 도쿄 당일치기 온천, 도쿄 온천 여행, 도쿄 료칸, 도쿄 스파, 도쿄 센토";
+          ogTitle = "도쿄 온천 추천 베스트 200 | 실제 운영중인 온천 가이드";
+          ogDesc = "실제 운영 중인 도쿄 인기 온천 엄선! 외국인 접근성 최상, 찐 현지인 추천 온천 정보.";
+          canonicalUrl = domain + "/";
+        } else if (lang === "ja") {
+          title = "東京温泉おすすめ200選！現地で人気の日帰り温泉・スーパー銭湯紹介";
+          desc = "東京都内で実際に営業している人気の天然温泉・スパ施設200選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
+          kw = "東京 温泉 おすすめ, 東京 日帰り温泉, 都内 温泉, 東京 スーパー銭湯, 源泉かけ流し";
+          ogTitle = "東京温泉おすすめ200選！日帰り温泉最新ガイド";
+          ogDesc = "実際に営業している都内の極上温泉を厳選。現地人にも愛される名湯・銭湯を紹介。";
+          canonicalUrl = domain + "/?lang=ja";
+        } else {
+          title = "200 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
+          desc = "Discover 200 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
+          kw = "best onsen in tokyo, tokyo hot spring, tokyo day trip onsen, tokyo spa, traditional bathhouse tokyo";
+          ogTitle = "Best Onsen in Tokyo | Top-Rated Day Trip Hot Springs & Sento";
+          ogDesc = "Explore Tokyo's best natural hot springs. Tourist-friendly and highly recommended by locals.";
+          canonicalUrl = domain + "/?lang=en";
+        }
+
+        schemaJson = {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Tokyo Onsen Guide",
+          "url": domain + "/",
+          "description": desc
+        };
+      }
+
+      // Apply to DOM
+      document.title = title;
+      const setMeta = (sel, attr, val) => {
+        let m = document.querySelector(sel);
+        if (!m) {
+          m = document.createElement("meta");
+          const parts = sel.replace(/^meta\[/, "").replace(/\]$/, "").split("=");
+          m.setAttribute(parts[0], parts[1].replace(/"/g, ""));
+          document.head.appendChild(m);
+        }
+        m.setAttribute(attr, val);
+      };
+
+      setMeta('meta[name="description"]', 'content', desc);
+      setMeta('meta[name="keywords"]', 'content', kw);
+      setMeta('meta[property="og:title"]', 'content', ogTitle);
+      setMeta('meta[property="og:description"]', 'content', ogDesc);
+      setMeta('meta[property="og:image"]', 'content', ogImg);
+      setMeta('meta[property="og:url"]', 'content', canonicalUrl);
+
+      // Canonical link
+      let can = document.querySelector('link[rel="canonical"]');
+      if (!can) {
+        can = document.createElement("link");
+        can.setAttribute("rel", "canonical");
+        document.head.appendChild(can);
+      }
+      can.setAttribute("href", canonicalUrl);
+
+      // Hreflang links
+      const hreflangs = {
+        "ko": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=ko" : domain + "/",
+        "ja": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=ja" : domain + "/?lang=ja",
+        "en": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=en" : domain + "/?lang=en",
+        "x-default": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=en" : domain + "/?lang=en"
+      };
+
+      Object.keys(hreflangs).forEach(hl => {
+        let el = document.querySelector('link[rel="alternate"][hreflang="' + hl + '"]');
+        if (!el) {
+          el = document.createElement("link");
+          el.setAttribute("rel", "alternate");
+          el.setAttribute("hreflang", hl);
+          document.head.appendChild(el);
+        }
+        el.setAttribute("href", hreflangs[hl]);
+      });
+
+      // Schema.org JSON-LD
+      if (schemaJson) {
+        let sEl = document.getElementById("dynamic-schema-ld");
+        if (!sEl) {
+          sEl = document.createElement("script");
+          sEl.setAttribute("type", "application/ld+json");
+          sEl.setAttribute("id", "dynamic-schema-ld");
+          document.head.appendChild(sEl);
+        }
+        sEl.textContent = JSON.stringify(schemaJson, null, 2);
+      }
+    } catch(e) {
+      console.error("updateSEO error:", e);
+    }
+  }
+
   function updateI18n(){
     document.querySelectorAll("[data-i18n]").forEach(el=>{
       const k=el.getAttribute("data-i18n");
@@ -1332,6 +1487,7 @@ const S = {
       const area=AREAS.find(a=>a.id===areaId);
       if(area) el.textContent=area[S.lang];
     });
+    updateSEO();
   }
   function updateMapLang(){
     const iframe=$("home-map-iframe");
@@ -1428,7 +1584,7 @@ const S = {
       const typeKo=(typeof o.type==="string")?o.type:((o.type&&o.type.ko)||"");
       const rImg=o.image||"";
       if(rImg){
-        const img=el("img",{attr:{src:rImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}});
+        const img=el("img",{attr:{src:rImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy", decoding:"async"}});
         img.onerror=function(){smartImgFallback(this, o.id, typeKo);};
         imgWrap.appendChild(img);
       }else{ imgWrap.appendChild(el("div",{cls:"report-icon",text:getTypeIcon(typeKo)})); }
@@ -1541,7 +1697,7 @@ const S = {
     const media=el("div",{cls:["card-visual",getTypeClass(typeKo)]});
       const cImg=o.image||"";
     if(cImg){
-      const img=el("img",{attr:{src:cImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy"}});
+      const img=el("img",{attr:{src:cImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy", decoding:"async"}});
       img.onerror=function(){smartImgFallback(this, o.id, typeKo);};
       media.appendChild(img);
     }
@@ -1664,7 +1820,7 @@ const S = {
       if(!src)return "";
       let s='<div class="luxury-showcase-wrap">';
       s+='<div class="luxury-showcase-imgbox">';
-      s+='<img src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';">';
+      s+='<img src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';">';
       s+='</div>';
       const disc = lang==="ko"
         ? "※ 본 이미지는 이해를 돕기 위한 예시 이미지이며, 실제 시설과 다를 수 있습니다."
@@ -1823,7 +1979,7 @@ const S = {
       s+='<div class="luxury-sec-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
       
       s+='<div style="border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 2px 10px rgba(0,0,0,0.06); width:100%;">';
-      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" style="width:100%; height:380px; border:0; display:block;"></iframe>';
+      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" decoding="async" style="width:100%; height:380px; border:0; display:block;"></iframe>';
       s+='</div>';
 
       s+='<div class="luxury-map-bar">';
@@ -1884,6 +2040,7 @@ const S = {
 
     wrap.innerHTML=h;
 
+    updateSEO();
     const backBtn=wrap.querySelector("#luxury-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
     const backBtnLg=wrap.querySelector("#luxury-back-btn-lg");
@@ -1907,6 +2064,19 @@ const S = {
   function init(){
     try{
     load();applyTheme();
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if(params.has("lang")) {
+        const pl = params.get("lang");
+        if(["ko", "ja", "en"].includes(pl)) S.lang = pl;
+      }
+      if(params.has("view")) {
+        const pv = params.get("view");
+        if(["home", "list", "detail"].includes(pv)) S.view = pv;
+        if(params.has("id")) S.detailId = params.get("id");
+      }
+    } catch(e) {}
+
     document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-lang")===S.lang));
     document.querySelectorAll("[data-nav]").forEach(n=>n.addEventListener("click",e=>{e.preventDefault();go(n.getAttribute("data-nav"));}));
     document.querySelectorAll("[data-feat]").forEach(n=>n.addEventListener("click",e=>{
@@ -1970,5 +2140,5 @@ fetch('data.json?v=5.3')
   });
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1ddb6620cd6e36d',t:'MTc4NDUwNTkwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1ddc6be686ee359',t:'MTc4NDUwNjU3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
