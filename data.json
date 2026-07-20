@@ -9,13 +9,13 @@
       },
       "area": {
         "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "areaGroup": {
         "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "type": {
         "ko": "도심형 스파",
@@ -184,14 +184,14 @@
         "ja": "大黒湯"
       },
       "area": {
-        "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
-        "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "전통 센토",
@@ -356,13 +356,13 @@
       },
       "area": {
         "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ja": "文京区",
+        "en": "Bunkyo"
       },
       "areaGroup": {
         "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ja": "bunkyo",
+        "en": "bunkyo"
       },
       "type": {
         "ko": "도심형 스파",
@@ -533,14 +533,14 @@
         "ja": "両国湯屋 江戸遊"
       },
       "area": {
-        "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
-        "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -712,14 +712,14 @@
         "ja": "おやだ温泉 明神の湯"
       },
       "area": {
-        "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ko": "아다치",
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
-        "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ko": "adachi",
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "천연 온천",
@@ -888,13 +888,13 @@
       },
       "area": {
         "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ja": "江戸川区",
+        "en": "Edogawa"
       },
       "areaGroup": {
         "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ja": "edogawa",
+        "en": "edogawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -1059,14 +1059,14 @@
         "ja": "THE SPA 西新井"
       },
       "area": {
-        "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ko": "아다치",
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
-        "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ko": "adachi",
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "도심형 스파",
@@ -1234,13 +1234,13 @@
       },
       "area": {
         "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ja": "葛飾区",
+        "en": "Katsushika"
       },
       "areaGroup": {
         "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ja": "katsushika",
+        "en": "katsushika"
       },
       "type": {
         "ko": "천연 온천",
@@ -1408,14 +1408,14 @@
         "ja": "蒲田温泉（銭湯）"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -1581,14 +1581,14 @@
         "ja": "黒湯天然温泉 ぬるんど さがみ湯"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "천연 온천",
@@ -1754,14 +1754,14 @@
         "ja": "戸越銀座温泉"
       },
       "area": {
-        "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ko": "주오",
+        "ja": "中央区",
+        "en": "Chuo"
       },
       "areaGroup": {
-        "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ko": "chuo",
+        "ja": "chuo",
+        "en": "chuo"
       },
       "type": {
         "ko": "전통 센토",
@@ -1926,14 +1926,14 @@
         "ja": "天然温泉 平和島"
       },
       "area": {
-        "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "천연 온천 스파",
@@ -2101,14 +2101,14 @@
         "ja": "中延温泉 松の湯"
       },
       "area": {
-        "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -2275,14 +2275,14 @@
         "ja": "SPA&HOTEL なごみ"
       },
       "area": {
-        "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "천연 온천",
@@ -2449,14 +2449,14 @@
         "ja": "照の湯（銭湯）"
       },
       "area": {
-        "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -2623,14 +2623,14 @@
         "ja": "武蔵小山温泉 清水湯"
       },
       "area": {
-        "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -2798,13 +2798,13 @@
       },
       "area": {
         "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ja": "江東区",
+        "en": "Koto"
       },
       "areaGroup": {
         "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ja": "koto",
+        "en": "koto"
       },
       "type": {
         "ko": "온천 테마파크",
@@ -2971,14 +2971,14 @@
         "ja": "久松湯"
       },
       "area": {
-        "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ko": "네리마",
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
-        "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ko": "nerima",
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -3144,14 +3144,14 @@
         "ja": "東京荻窪天然温泉 和の湯"
       },
       "area": {
-        "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ko": "스기나미",
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
-        "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ko": "suginami",
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "도심형 스파",
@@ -3320,14 +3320,14 @@
         "ja": "豊島園 庭の湯"
       },
       "area": {
-        "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ko": "네리마",
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
-        "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ko": "nerima",
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "천연 온천",
@@ -3491,14 +3491,14 @@
         "ja": "スパディオ"
       },
       "area": {
-        "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ko": "이타바시",
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
-        "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ko": "itabashi",
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "천연 온천 스파",
@@ -3666,13 +3666,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "천연 온천",
@@ -3841,13 +3841,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "도심형 스파",
@@ -4015,14 +4015,14 @@
         "ja": "うつくしの湯"
       },
       "area": {
-        "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ko": "스기나미",
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
-        "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ko": "suginami",
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "천연 온천",
@@ -4187,14 +4187,14 @@
         "ja": "スパジアムジャパン"
       },
       "area": {
-        "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
       },
       "areaGroup": {
-        "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -4365,14 +4365,14 @@
         "ja": "竜泉寺の湯 八王子みなみ野店"
       },
       "area": {
-        "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ko": "하치오지·히노",
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
-        "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ko": "hachioji-hino",
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -4544,14 +4544,14 @@
         "ja": "極楽湯 京王高尾山温泉"
       },
       "area": {
-        "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ko": "하치오지·히노",
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
-        "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ko": "hachioji-hino",
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "천연 온천",
@@ -4717,14 +4717,14 @@
         "ja": "極楽湯 多摩センター店"
       },
       "area": {
-        "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -4894,14 +4894,14 @@
         "ja": "府中駅前天然温泉 縄文の湯"
       },
       "area": {
-        "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -5068,13 +5068,13 @@
       },
       "area": {
         "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ja": "稲城·立川",
+        "en": "Inagi-Tachikawa"
       },
       "areaGroup": {
         "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ja": "inagi-tachikawa",
+        "en": "inagi-tachikawa"
       },
       "type": {
         "ko": "천연 온천",
@@ -5241,13 +5241,13 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "type": {
         "ko": "천연 온천",
@@ -5415,13 +5415,13 @@
       },
       "area": {
         "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ja": "昭島",
+        "en": "Akishima"
       },
       "areaGroup": {
         "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ja": "akishima",
+        "en": "akishima"
       },
       "type": {
         "ko": "천연 온천",
@@ -5589,13 +5589,13 @@
       },
       "area": {
         "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ja": "港区",
+        "en": "Minato"
       },
       "areaGroup": {
         "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ja": "minato",
+        "en": "minato"
       },
       "type": {
         "ko": "천연 온천",
@@ -5761,14 +5761,14 @@
         "ja": "深大寺天然温泉 湯守の里"
       },
       "area": {
-        "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -5936,13 +5936,13 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "type": {
         "ko": "온천 테마파크",
@@ -6109,14 +6109,14 @@
         "ja": "仙川ゆけむりの里"
       },
       "area": {
-        "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -6281,14 +6281,14 @@
         "ja": "テルメ小川"
       },
       "area": {
-        "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -6454,14 +6454,14 @@
         "ja": "おふろの王様 花小金井店"
       },
       "area": {
-        "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -6633,14 +6633,14 @@
         "ja": "生涯青春の湯 つるつる温泉"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "천연 온천",
@@ -6805,14 +6805,14 @@
         "ja": "河辺温泉 梅の湯"
       },
       "area": {
-        "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ko": "오메·아키루노",
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
-        "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ko": "ome-akiruno",
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "천연 온천",
@@ -6976,14 +6976,14 @@
         "ja": "蛇の湯温泉 宝荘"
       },
       "area": {
-        "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -7152,14 +7152,14 @@
         "ja": "多摩・松乃温泉 水幸園"
       },
       "area": {
-        "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -7328,14 +7328,14 @@
         "ja": "奥多摩温泉 もえぎの湯"
       },
       "area": {
-        "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "천연 온천",
@@ -7500,14 +7500,14 @@
         "ja": "檜原温泉センター かずまの湯"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "천연 온천",
@@ -7672,14 +7672,14 @@
         "ja": "玉水荘"
       },
       "area": {
-        "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -7847,14 +7847,14 @@
         "ja": "ままだや（岩蔵温泉/旅館）"
       },
       "area": {
-        "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ko": "오메·아키루노",
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
-        "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ko": "ome-akiruno",
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -8024,14 +8024,14 @@
         "ja": "バト館（奥多摩 鶴の湯温泉/旅館）"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오쿠타마·히노하라",
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "okutama-hinohara",
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -8199,14 +8199,14 @@
         "ja": "秋川渓谷 瀬音の湯"
       },
       "area": {
-        "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ko": "오메·아키루노",
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
-        "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ko": "ome-akiruno",
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "천연 온천",
@@ -8374,13 +8374,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -8551,13 +8551,13 @@
       },
       "area": {
         "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ja": "港区",
+        "en": "Minato"
       },
       "areaGroup": {
         "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ja": "minato",
+        "en": "minato"
       },
       "type": {
         "ko": "천연 온천",
@@ -8724,13 +8724,13 @@
       },
       "area": {
         "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ja": "大島·八丈",
+        "en": "Oshima-Hachijo"
       },
       "areaGroup": {
         "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ja": "oshima-hachijo",
+        "en": "oshima-hachijo"
       },
       "type": {
         "ko": "온천 여관",
@@ -8900,13 +8900,13 @@
       },
       "area": {
         "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ja": "大島·八丈",
+        "en": "Oshima-Hachijo"
       },
       "areaGroup": {
         "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ja": "oshima-hachijo",
+        "en": "oshima-hachijo"
       },
       "type": {
         "ko": "온천 마을",
@@ -9074,13 +9074,13 @@
       },
       "area": {
         "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ja": "新宿区",
+        "en": "Shinjuku"
       },
       "areaGroup": {
         "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ja": "shinjuku",
+        "en": "shinjuku"
       },
       "type": {
         "ko": "도심형 스파",
@@ -9247,14 +9247,14 @@
         "ja": "東京染井温泉 SAKURA"
       },
       "area": {
-        "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
-        "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "천연 온천",
@@ -9422,14 +9422,14 @@
         "ja": "浅草ROXまつり湯"
       },
       "area": {
-        "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
-        "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "전통 센토",
@@ -9579,14 +9579,14 @@
         "ja": "サウナ＆カプセルホテル北欧"
       },
       "area": {
-        "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
-        "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "온천 여관",
@@ -9741,14 +9741,14 @@
         "ja": "センチュリオンホテル＆スパ上野駅前"
       },
       "area": {
-        "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ko": "스미다",
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
-        "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ko": "sumida",
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "온천 여관",
@@ -9900,14 +9900,14 @@
         "ja": "タイムズ スパ・レスタ"
       },
       "area": {
-        "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
-        "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "도심형 스파",
@@ -10057,14 +10057,14 @@
         "ja": "東京染井温泉 SAKURA （サクラ）"
       },
       "area": {
-        "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
-        "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "천연 온천",
@@ -10214,14 +10214,14 @@
         "ja": "Ｔａｂｉｓｔ　東京シティビューホテル"
       },
       "area": {
-        "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
-        "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "온천 여관",
@@ -10372,14 +10372,14 @@
         "ja": "おふろの王様 多摩百草店"
       },
       "area": {
-        "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -10532,14 +10532,14 @@
         "ja": "天然温泉 仙川湯けむりの里"
       },
       "area": {
-        "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ko": "다마·후추·조후",
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
-        "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ko": "tama-fuchu-chofu",
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "전통 센토",
@@ -10690,13 +10690,13 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -10849,13 +10849,13 @@
       },
       "area": {
         "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
         "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -11008,13 +11008,13 @@
       },
       "area": {
         "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
         "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -11167,14 +11167,14 @@
         "ja": "亀の井ホテル 青梅"
       },
       "area": {
-        "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ko": "오메·아키루노",
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
-        "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ko": "ome-akiruno",
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -11327,13 +11327,13 @@
       },
       "area": {
         "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
         "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "전통 센토",
@@ -11483,13 +11483,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -11643,13 +11643,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -11802,13 +11802,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "도심형 스파",
@@ -11958,14 +11958,14 @@
         "ja": "竜泉寺の湯 八王子みなみ野店"
       },
       "area": {
-        "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ko": "하치오지·히노",
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
-        "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ko": "hachioji-hino",
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "전통 센토",
@@ -12115,13 +12115,13 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "도심형 스파",
@@ -12270,14 +12270,14 @@
         "ja": "THE PROLABO SAUNA（ザ プロラボサウナ）"
       },
       "area": {
-        "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ko": "미나토",
+        "ja": "港区",
+        "en": "Minato"
       },
       "areaGroup": {
-        "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ko": "minato",
+        "ja": "minato",
+        "en": "minato"
       },
       "type": {
         "ko": "도심형 스파",
@@ -12429,14 +12429,14 @@
         "ja": "スカイビュー浴場"
       },
       "area": {
-        "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ko": "미나토",
+        "ja": "港区",
+        "en": "Minato"
       },
       "areaGroup": {
-        "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ko": "minato",
+        "ja": "minato",
+        "en": "minato"
       },
       "type": {
         "ko": "전통 센토",
@@ -12585,14 +12585,14 @@
         "ja": "SPA＆SAUNA コリドーの湯"
       },
       "area": {
-        "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ko": "주오",
+        "ja": "中央区",
+        "en": "Chuo"
       },
       "areaGroup": {
-        "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ko": "chuo",
+        "ja": "chuo",
+        "en": "chuo"
       },
       "type": {
         "ko": "도심형 스파",
@@ -12744,14 +12744,14 @@
         "ja": "Ｔａｂｉｓｔ 東京シティビューホテル"
       },
       "area": {
-        "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ko": "기타",
+        "ja": "北区",
+        "en": "Kita"
       },
       "areaGroup": {
-        "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ko": "kita",
+        "ja": "kita",
+        "en": "kita"
       },
       "type": {
         "ko": "온천 여관",
@@ -12904,13 +12904,13 @@
       },
       "area": {
         "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
         "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -13063,13 +13063,13 @@
       },
       "area": {
         "ko": "오쿠타마·히노하라",
-        "en": "Okutama-Hinohara",
-        "ja": "奥多摩·日の原"
+        "ja": "奥多摩·日の原",
+        "en": "Okutama-Hinohara"
       },
       "areaGroup": {
         "ko": "okutama-hinohara",
-        "en": "okutama-hinohara",
-        "ja": "okutama-hinohara"
+        "ja": "okutama-hinohara",
+        "en": "okutama-hinohara"
       },
       "type": {
         "ko": "온천 여관",
@@ -13223,13 +13223,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -13383,13 +13383,13 @@
       },
       "area": {
         "ko": "오메·아키루노",
-        "en": "Ome-Akiruno",
-        "ja": "青梅·あきる野"
+        "ja": "青梅·あきる野",
+        "en": "Ome-Akiruno"
       },
       "areaGroup": {
         "ko": "ome-akiruno",
-        "en": "ome-akiruno",
-        "ja": "ome-akiruno"
+        "ja": "ome-akiruno",
+        "en": "ome-akiruno"
       },
       "type": {
         "ko": "온천 여관",
@@ -13540,14 +13540,14 @@
         "ja": "ホテル丸忠 CENTRO（チェントロ）"
       },
       "area": {
-        "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ko": "아라카와",
+        "ja": "荒川区",
+        "en": "Arakawa"
       },
       "areaGroup": {
-        "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ko": "arakawa",
+        "ja": "arakawa",
+        "en": "arakawa"
       },
       "type": {
         "ko": "온천 여관",
@@ -13700,14 +13700,14 @@
         "ja": "アルモントホテル日暮里"
       },
       "area": {
-        "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ko": "아라카와",
+        "ja": "荒川区",
+        "en": "Arakawa"
       },
       "areaGroup": {
-        "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ko": "arakawa",
+        "ja": "arakawa",
+        "en": "arakawa"
       },
       "type": {
         "ko": "온천 여관",
@@ -13860,14 +13860,14 @@
         "ja": "RAKU SPA 1010 神田"
       },
       "area": {
-        "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ko": "치요다",
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "areaGroup": {
-        "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ko": "chiyoda",
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "type": {
         "ko": "도심형 스파",
@@ -14015,14 +14015,14 @@
         "ja": "お茶の水ホテル昇龍館"
       },
       "area": {
-        "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ko": "치요다",
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "areaGroup": {
-        "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ko": "chiyoda",
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "type": {
         "ko": "온천 여관",
@@ -14175,14 +14175,14 @@
         "ja": "すえひろの湯 ドーミーイン秋葉原"
       },
       "area": {
-        "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ko": "치요다",
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "areaGroup": {
-        "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ko": "chiyoda",
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "type": {
         "ko": "전통 센토",
@@ -14333,13 +14333,13 @@
       },
       "area": {
         "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ja": "稲城·立川",
+        "en": "Inagi-Tachikawa"
       },
       "areaGroup": {
         "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ja": "inagi-tachikawa",
+        "en": "inagi-tachikawa"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -14492,13 +14492,13 @@
       },
       "area": {
         "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ja": "吉祥寺·武蔵野·三鷹",
+        "en": "Kichijoji-Musashino-Mitaka"
       },
       "areaGroup": {
         "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ja": "kichijoji-musashino-mitaka",
+        "en": "kichijoji-musashino-mitaka"
       },
       "type": {
         "ko": "도심형 스파",
@@ -14648,13 +14648,13 @@
       },
       "area": {
         "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ja": "吉祥寺·武蔵野·三鷹",
+        "en": "Kichijoji-Musashino-Mitaka"
       },
       "areaGroup": {
         "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ja": "kichijoji-musashino-mitaka",
+        "en": "kichijoji-musashino-mitaka"
       },
       "type": {
         "ko": "도심형 스파",
@@ -14807,13 +14807,13 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "type": {
         "ko": "천연 온천",
@@ -14963,13 +14963,13 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "전통 센토",
@@ -15120,13 +15120,13 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "전통 센토",
@@ -15276,13 +15276,13 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "type": {
         "ko": "도심형 스파",
@@ -15435,13 +15435,13 @@
       },
       "area": {
         "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ja": "渋谷区",
+        "en": "Shibuya"
       },
       "areaGroup": {
         "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ja": "shibuya",
+        "en": "shibuya"
       },
       "type": {
         "ko": "전통 센토",
@@ -15607,13 +15607,13 @@
       },
       "area": {
         "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ja": "渋谷区",
+        "en": "Shibuya"
       },
       "areaGroup": {
         "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ja": "shibuya",
+        "en": "shibuya"
       },
       "type": {
         "ko": "전통 센토",
@@ -15778,13 +15778,13 @@
       },
       "area": {
         "ko": "신주쿠",
-        "en": "Shinjuku",
-        "ja": "新宿区"
+        "ja": "新宿区",
+        "en": "Shinjuku"
       },
       "areaGroup": {
         "ko": "shinjuku",
-        "en": "shinjuku",
-        "ja": "shinjuku"
+        "ja": "shinjuku",
+        "en": "shinjuku"
       },
       "type": {
         "ko": "전통 센토",
@@ -15949,13 +15949,13 @@
       },
       "area": {
         "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ja": "渋谷区",
+        "en": "Shibuya"
       },
       "areaGroup": {
         "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ja": "shibuya",
+        "en": "shibuya"
       },
       "type": {
         "ko": "전통 센토",
@@ -16121,13 +16121,13 @@
       },
       "area": {
         "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ja": "台東区",
+        "en": "Taito"
       },
       "areaGroup": {
         "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ja": "taito",
+        "en": "taito"
       },
       "type": {
         "ko": "전통 센토",
@@ -16292,13 +16292,13 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -16464,13 +16464,13 @@
       },
       "area": {
         "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ja": "渋谷区",
+        "en": "Shibuya"
       },
       "areaGroup": {
         "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ja": "shibuya",
+        "en": "shibuya"
       },
       "type": {
         "ko": "전통 센토",
@@ -16634,14 +16634,14 @@
         "ja": "光明湯"
       },
       "area": {
-        "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -16805,14 +16805,14 @@
         "ja": "宝来湯"
       },
       "area": {
-        "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -16978,13 +16978,13 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "전통 센토",
@@ -17148,14 +17148,14 @@
         "ja": "梅の湯"
       },
       "area": {
-        "ko": "미나토",
-        "en": "Minato",
-        "ja": "港区"
+        "ko": "네리마",
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
-        "ko": "minato",
-        "en": "minato",
-        "ja": "minato"
+        "ko": "nerima",
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -17319,14 +17319,14 @@
         "ja": "富士見湯"
       },
       "area": {
-        "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ko": "네리마",
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
-        "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ko": "nerima",
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -17492,13 +17492,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "전통 센토",
@@ -17664,13 +17664,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "전통 센토",
@@ -17833,14 +17833,14 @@
         "ja": "旭湯"
       },
       "area": {
-        "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -18006,13 +18006,13 @@
       },
       "area": {
         "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ja": "江戸川区",
+        "en": "Edogawa"
       },
       "areaGroup": {
         "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ja": "edogawa",
+        "en": "edogawa"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -18185,14 +18185,14 @@
         "ja": "湯の郷グランデ"
       },
       "area": {
-        "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ko": "코토",
+        "ja": "江東区",
+        "en": "Koto"
       },
       "areaGroup": {
-        "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ko": "koto",
+        "ja": "koto",
+        "en": "koto"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -18364,14 +18364,14 @@
         "ja": "カプセル&サウナコスモプラザ赤羽"
       },
       "area": {
-        "ko": "에도가와",
-        "en": "Edogawa",
-        "ja": "江户川区"
+        "ko": "기타",
+        "ja": "北区",
+        "en": "Kita"
       },
       "areaGroup": {
-        "ko": "edogawa",
-        "en": "edogawa",
-        "ja": "edogawa"
+        "ko": "kita",
+        "ja": "kita",
+        "en": "kita"
       },
       "type": {
         "ko": "온천 여관",
@@ -18541,13 +18541,13 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "온천 여관",
@@ -18718,13 +18718,13 @@
       },
       "area": {
         "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ja": "台東区",
+        "en": "Taito"
       },
       "areaGroup": {
         "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ja": "taito",
+        "en": "taito"
       },
       "type": {
         "ko": "온천 여관",
@@ -18895,13 +18895,13 @@
       },
       "area": {
         "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ja": "台東区",
+        "en": "Taito"
       },
       "areaGroup": {
         "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ja": "taito",
+        "en": "taito"
       },
       "type": {
         "ko": "온천 여관",
@@ -19069,14 +19069,14 @@
         "ja": "カプセルホテル&サウナ池袋"
       },
       "area": {
-        "ko": "아키시마",
-        "en": "Akishima",
-        "ja": "昭島"
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
-        "ko": "akishima",
-        "en": "akishima",
-        "ja": "akishima"
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "온천 여관",
@@ -19247,13 +19247,13 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "온천 여관",
@@ -19424,13 +19424,13 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "type": {
         "ko": "천연 온천",
@@ -19597,13 +19597,13 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -19774,13 +19774,13 @@
       },
       "area": {
         "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ja": "荒川区",
+        "en": "Arakawa"
       },
       "areaGroup": {
         "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ja": "arakawa",
+        "en": "arakawa"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -19951,14 +19951,14 @@
         "ja": "松の湯"
       },
       "area": {
-        "ko": "오시마·하치조",
-        "en": "Oshima-Hachijo",
-        "ja": "大島·八丈"
+        "ko": "스기나미",
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
-        "ko": "oshima-hachijo",
-        "en": "oshima-hachijo",
-        "ja": "oshima-hachijo"
+        "ko": "suginami",
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "전통 센토",
@@ -20123,13 +20123,13 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "전통 센토",
@@ -20295,13 +20295,13 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "전통 센토",
@@ -20466,13 +20466,13 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "전통 센토",
@@ -20636,14 +20636,14 @@
         "ja": "旭湯"
       },
       "area": {
-        "ko": "시부야",
-        "en": "Shibuya",
-        "ja": "涩谷区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "shibuya",
-        "en": "shibuya",
-        "ja": "shibuya"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -20808,14 +20808,14 @@
         "ja": "松の湯"
       },
       "area": {
-        "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -20979,14 +20979,14 @@
         "ja": "富士見湯"
       },
       "area": {
-        "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -21151,13 +21151,13 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -21323,13 +21323,13 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -21495,13 +21495,13 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -21665,13 +21665,13 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -21837,13 +21837,13 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -22008,14 +22008,14 @@
         "ja": "宝来湯"
       },
       "area": {
-        "ko": "기치조지·무사시노·미타카",
-        "en": "Kichijoji-Musashino-Mitaka",
-        "ja": "吉祥寺·武蔵野·三鷹"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "kichijoji-musashino-mitaka",
-        "en": "kichijoji-musashino-mitaka",
-        "ja": "kichijoji-musashino-mitaka"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -22179,14 +22179,14 @@
         "ja": "松の湯"
       },
       "area": {
-        "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -22351,14 +22351,14 @@
         "ja": "富士見湯"
       },
       "area": {
-        "ko": "도쿄 기타",
-        "en": "Other Tokyo",
-        "ja": "東京その他"
+        "ko": "오타",
+        "ja": "大田区",
+        "en": "Ota"
       },
       "areaGroup": {
-        "ko": "other-tokyo",
-        "en": "other-tokyo",
-        "ja": "other-tokyo"
+        "ko": "ota",
+        "ja": "ota",
+        "en": "ota"
       },
       "type": {
         "ko": "전통 센토",
@@ -22523,14 +22523,14 @@
         "ja": "大和湯"
       },
       "area": {
-        "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ko": "시나가와",
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "areaGroup": {
-        "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ko": "shinagawa",
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -22695,13 +22695,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "전통 센토",
@@ -22866,13 +22866,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "전통 센토",
@@ -23038,13 +23038,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "전통 센토",
@@ -23209,13 +23209,13 @@
       },
       "area": {
         "ko": "세타가야",
-        "en": "Setagaya",
-        "ja": "世田谷区"
+        "ja": "世田谷区",
+        "en": "Setagaya"
       },
       "areaGroup": {
         "ko": "setagaya",
-        "en": "setagaya",
-        "ja": "setagaya"
+        "ja": "setagaya",
+        "en": "setagaya"
       },
       "type": {
         "ko": "전통 센토",
@@ -23381,13 +23381,13 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -23552,13 +23552,13 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -23723,13 +23723,13 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -23895,13 +23895,13 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -24066,13 +24066,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "전통 센토",
@@ -24237,13 +24237,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "전통 센토",
@@ -24409,13 +24409,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "전통 센토",
@@ -24581,13 +24581,13 @@
       },
       "area": {
         "ko": "이타바시",
-        "en": "Itabashi",
-        "ja": "板桥区"
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "areaGroup": {
         "ko": "itabashi",
-        "en": "itabashi",
-        "ja": "itabashi"
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "type": {
         "ko": "전통 센토",
@@ -24751,13 +24751,13 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "전통 센토",
@@ -24923,13 +24923,13 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "전통 센토",
@@ -25095,13 +25095,13 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "전통 센토",
@@ -25266,13 +25266,13 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "type": {
         "ko": "전통 센토",
@@ -25436,14 +25436,14 @@
         "ja": "宝来湯"
       },
       "area": {
-        "ko": "카츠시카",
-        "en": "Katsushika",
-        "ja": "葛饰区"
+        "ko": "코토",
+        "ja": "江東区",
+        "en": "Koto"
       },
       "areaGroup": {
-        "ko": "katsushika",
-        "en": "katsushika",
-        "ja": "katsushika"
+        "ko": "koto",
+        "ja": "koto",
+        "en": "koto"
       },
       "type": {
         "ko": "전통 센토",
@@ -25608,14 +25608,14 @@
         "ja": "松の湯"
       },
       "area": {
-        "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ko": "코토",
+        "ja": "江東区",
+        "en": "Koto"
       },
       "areaGroup": {
-        "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ko": "koto",
+        "ja": "koto",
+        "en": "koto"
       },
       "type": {
         "ko": "전통 센토",
@@ -25780,13 +25780,13 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -25959,8 +25959,8 @@
       },
       "area": {
         "ko": "주오",
-        "en": "Chuo",
-        "ja": "中央区"
+        "ja": "中央区",
+        "en": "Chuo"
       },
       "type": {
         "ko": "도심 스파",
@@ -26023,8 +26023,8 @@
       },
       "areaGroup": {
         "ko": "chuo",
-        "en": "chuo",
-        "ja": "chuo"
+        "ja": "chuo",
+        "en": "chuo"
       },
       "tips": {
         "ko": [
@@ -26131,8 +26131,8 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "type": {
         "ko": "천연 온천",
@@ -26195,8 +26195,8 @@
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "tips": {
         "ko": [
@@ -26303,8 +26303,8 @@
       },
       "area": {
         "ko": "다이토",
-        "en": "Taito",
-        "ja": "台东区"
+        "ja": "台東区",
+        "en": "Taito"
       },
       "type": {
         "ko": "테마파크",
@@ -26367,8 +26367,8 @@
       },
       "areaGroup": {
         "ko": "taito",
-        "en": "taito",
-        "ja": "taito"
+        "ja": "taito",
+        "en": "taito"
       },
       "tips": {
         "ko": [
@@ -26480,8 +26480,8 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "type": {
         "ko": "천연 온천",
@@ -26544,8 +26544,8 @@
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "tips": {
         "ko": [
@@ -26655,8 +26655,8 @@
       },
       "area": {
         "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ja": "大田区",
+        "en": "Ota"
       },
       "type": {
         "ko": "도심 스파",
@@ -26719,8 +26719,8 @@
       },
       "areaGroup": {
         "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ja": "ota",
+        "en": "ota"
       },
       "tips": {
         "ko": [
@@ -26828,8 +26828,8 @@
       },
       "area": {
         "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ja": "江東区",
+        "en": "Koto"
       },
       "type": {
         "ko": "도심 스파",
@@ -26892,8 +26892,8 @@
       },
       "areaGroup": {
         "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ja": "koto",
+        "en": "koto"
       },
       "tips": {
         "ko": [
@@ -26999,8 +26999,8 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "type": {
         "ko": "천연 온천",
@@ -27063,8 +27063,8 @@
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "tips": {
         "ko": [
@@ -27171,8 +27171,8 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -27235,8 +27235,8 @@
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "tips": {
         "ko": [
@@ -27348,8 +27348,8 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "type": {
         "ko": "도심 스파",
@@ -27412,8 +27412,8 @@
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "tips": {
         "ko": [
@@ -27522,8 +27522,8 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -27587,8 +27587,8 @@
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "tips": {
         "ko": [
@@ -27696,8 +27696,8 @@
       },
       "area": {
         "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ja": "大田区",
+        "en": "Ota"
       },
       "type": {
         "ko": "천연 온천",
@@ -27760,8 +27760,8 @@
       },
       "areaGroup": {
         "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ja": "ota",
+        "en": "ota"
       },
       "tips": {
         "ko": [
@@ -27868,8 +27868,8 @@
       },
       "area": {
         "ko": "치요다",
-        "en": "Chiyoda",
-        "ja": "千代田区"
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -27932,8 +27932,8 @@
       },
       "areaGroup": {
         "ko": "chiyoda",
-        "en": "chiyoda",
-        "ja": "chiyoda"
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "tips": {
         "ko": [
@@ -28045,8 +28045,8 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -28109,8 +28109,8 @@
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "tips": {
         "ko": [
@@ -28219,8 +28219,8 @@
       },
       "area": {
         "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ja": "大田区",
+        "en": "Ota"
       },
       "type": {
         "ko": "천연 온천",
@@ -28283,8 +28283,8 @@
       },
       "areaGroup": {
         "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ja": "ota",
+        "en": "ota"
       },
       "tips": {
         "ko": [
@@ -28390,8 +28390,8 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "type": {
         "ko": "온천 여관",
@@ -28455,8 +28455,8 @@
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "tips": {
         "ko": [
@@ -28568,8 +28568,8 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -28631,8 +28631,8 @@
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "tips": {
         "ko": [
@@ -28737,8 +28737,8 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -28800,8 +28800,8 @@
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "tips": {
         "ko": [
@@ -28908,8 +28908,8 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "type": {
         "ko": "전통 센토",
@@ -28972,8 +28972,8 @@
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "tips": {
         "ko": [
@@ -29080,8 +29080,8 @@
       },
       "area": {
         "ko": "아다치",
-        "en": "Adachi",
-        "ja": "足立区"
+        "ja": "足立区",
+        "en": "Adachi"
       },
       "type": {
         "ko": "천연 온천",
@@ -29144,8 +29144,8 @@
       },
       "areaGroup": {
         "ko": "adachi",
-        "en": "adachi",
-        "ja": "adachi"
+        "ja": "adachi",
+        "en": "adachi"
       },
       "tips": {
         "ko": [
@@ -29251,8 +29251,8 @@
       },
       "area": {
         "ko": "기타",
-        "en": "Kita",
-        "ja": "北区"
+        "ja": "北区",
+        "en": "Kita"
       },
       "type": {
         "ko": "천연 온천",
@@ -29315,8 +29315,8 @@
       },
       "areaGroup": {
         "ko": "kita",
-        "en": "kita",
-        "ja": "kita"
+        "ja": "kita",
+        "en": "kita"
       },
       "tips": {
         "ko": [
@@ -29422,8 +29422,8 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -29486,8 +29486,8 @@
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "tips": {
         "ko": [
@@ -29594,8 +29594,8 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -29658,8 +29658,8 @@
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "tips": {
         "ko": [
@@ -29770,8 +29770,8 @@
       },
       "area": {
         "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ja": "大田区",
+        "en": "Ota"
       },
       "type": {
         "ko": "도심 스파",
@@ -29834,8 +29834,8 @@
       },
       "areaGroup": {
         "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ja": "ota",
+        "en": "ota"
       },
       "tips": {
         "ko": [
@@ -29943,8 +29943,8 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -30007,8 +30007,8 @@
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "tips": {
         "ko": [
@@ -30117,8 +30117,8 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "type": {
         "ko": "슈퍼 센토",
@@ -30181,8 +30181,8 @@
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "tips": {
         "ko": [
@@ -30292,8 +30292,8 @@
       },
       "area": {
         "ko": "이나기·다치카와",
-        "en": "Inagi-Tachikawa",
-        "ja": "稲城·立川"
+        "ja": "稲城·立川",
+        "en": "Inagi-Tachikawa"
       },
       "type": {
         "ko": "천연 온천",
@@ -30356,8 +30356,8 @@
       },
       "areaGroup": {
         "ko": "inagi-tachikawa",
-        "en": "inagi-tachikawa",
-        "ja": "inagi-tachikawa"
+        "ja": "inagi-tachikawa",
+        "en": "inagi-tachikawa"
       },
       "tips": {
         "ko": [
@@ -30464,8 +30464,8 @@
       },
       "area": {
         "ko": "다마·후추·조후",
-        "en": "Tama-Fuchu-Chofu",
-        "ja": "多摩·府中·調布"
+        "ja": "多摩·府中·調布",
+        "en": "Tama-Fuchu-Chofu"
       },
       "type": {
         "ko": "천연 온천",
@@ -30528,8 +30528,8 @@
       },
       "areaGroup": {
         "ko": "tama-fuchu-chofu",
-        "en": "tama-fuchu-chofu",
-        "ja": "tama-fuchu-chofu"
+        "ja": "tama-fuchu-chofu",
+        "en": "tama-fuchu-chofu"
       },
       "tips": {
         "ko": [
@@ -30634,9 +30634,9 @@
         "ja": "前野原温泉 さやの湯処"
       },
       "area": {
-        "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ko": "이타바시",
+        "ja": "板橋区",
+        "en": "Itabashi"
       },
       "type": {
         "ko": "천연 온천",
@@ -30698,9 +30698,9 @@
         "lng": 139.6876
       },
       "areaGroup": {
-        "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ko": "itabashi",
+        "ja": "itabashi",
+        "en": "itabashi"
       },
       "tips": {
         "ko": [
@@ -30807,8 +30807,8 @@
       },
       "area": {
         "ko": "마치다",
-        "en": "Machida",
-        "ja": "町田"
+        "ja": "町田",
+        "en": "Machida"
       },
       "type": {
         "ko": "천연 온천",
@@ -30871,8 +30871,8 @@
       },
       "areaGroup": {
         "ko": "machida",
-        "en": "machida",
-        "ja": "machida"
+        "ja": "machida",
+        "en": "machida"
       },
       "tips": {
         "ko": [
@@ -30978,8 +30978,8 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "type": {
         "ko": "전통 센토",
@@ -31041,8 +31041,8 @@
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "tips": {
         "ko": [
@@ -31149,8 +31149,8 @@
       },
       "area": {
         "ko": "나칸오",
-        "en": "Nakano",
-        "ja": "中野区"
+        "ja": "中野区",
+        "en": "Nakano"
       },
       "type": {
         "ko": "전통 센토",
@@ -31212,8 +31212,8 @@
       },
       "areaGroup": {
         "ko": "nakano",
-        "en": "nakano",
-        "ja": "nakano"
+        "ja": "nakano",
+        "en": "nakano"
       },
       "tips": {
         "ko": [
@@ -31319,8 +31319,8 @@
       },
       "area": {
         "ko": "메구로",
-        "en": "Meguro",
-        "ja": "目黑区"
+        "ja": "目黒区",
+        "en": "Meguro"
       },
       "type": {
         "ko": "전통 센토",
@@ -31382,8 +31382,8 @@
       },
       "areaGroup": {
         "ko": "meguro",
-        "en": "meguro",
-        "ja": "meguro"
+        "ja": "meguro",
+        "en": "meguro"
       },
       "tips": {
         "ko": [
@@ -31490,8 +31490,8 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -31553,8 +31553,8 @@
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "tips": {
         "ko": [
@@ -31660,8 +31660,8 @@
       },
       "area": {
         "ko": "아라카와",
-        "en": "Arakawa",
-        "ja": "荒川区"
+        "ja": "荒川区",
+        "en": "Arakawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -31723,8 +31723,8 @@
       },
       "areaGroup": {
         "ko": "arakawa",
-        "en": "arakawa",
-        "ja": "arakawa"
+        "ja": "arakawa",
+        "en": "arakawa"
       },
       "tips": {
         "ko": [
@@ -31833,8 +31833,8 @@
       },
       "area": {
         "ko": "분쿄",
-        "en": "Bunkyo",
-        "ja": "文京区"
+        "ja": "文京区",
+        "en": "Bunkyo"
       },
       "type": {
         "ko": "전통 센토",
@@ -31896,8 +31896,8 @@
       },
       "areaGroup": {
         "ko": "bunkyo",
-        "en": "bunkyo",
-        "ja": "bunkyo"
+        "ja": "bunkyo",
+        "en": "bunkyo"
       },
       "tips": {
         "ko": [
@@ -32003,9 +32003,9 @@
         "ja": "宝来湯"
       },
       "area": {
-        "ko": "코토",
-        "en": "Koto",
-        "ja": "江东区"
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
       },
       "type": {
         "ko": "전통 센토",
@@ -32066,9 +32066,9 @@
         "lng": 139.7967
       },
       "areaGroup": {
-        "ko": "koto",
-        "en": "koto",
-        "ja": "koto"
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
       },
       "tips": {
         "ko": [
@@ -32177,8 +32177,8 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -32240,8 +32240,8 @@
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "tips": {
         "ko": [
@@ -32348,8 +32348,8 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "type": {
         "ko": "전통 센토",
@@ -32411,8 +32411,8 @@
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "tips": {
         "ko": [
@@ -32519,8 +32519,8 @@
       },
       "area": {
         "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ja": "品川区",
+        "en": "Shinagawa"
       },
       "type": {
         "ko": "전통 센토",
@@ -32582,8 +32582,8 @@
       },
       "areaGroup": {
         "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ja": "shinagawa",
+        "en": "shinagawa"
       },
       "tips": {
         "ko": [
@@ -32690,8 +32690,8 @@
       },
       "area": {
         "ko": "네리마",
-        "en": "Nerima",
-        "ja": "练马区"
+        "ja": "練馬区",
+        "en": "Nerima"
       },
       "type": {
         "ko": "전통 센토",
@@ -32753,8 +32753,8 @@
       },
       "areaGroup": {
         "ko": "nerima",
-        "en": "nerima",
-        "ja": "nerima"
+        "ja": "nerima",
+        "en": "nerima"
       },
       "tips": {
         "ko": [
@@ -32860,9 +32860,9 @@
         "ja": "信濃湯"
       },
       "area": {
-        "ko": "시나가와",
-        "en": "Shinagawa",
-        "ja": "品川区"
+        "ko": "치요다",
+        "ja": "千代田区",
+        "en": "Chiyoda"
       },
       "type": {
         "ko": "전통 센토",
@@ -32923,9 +32923,9 @@
         "lng": 139.7234
       },
       "areaGroup": {
-        "ko": "shinagawa",
-        "en": "shinagawa",
-        "ja": "shinagawa"
+        "ko": "chiyoda",
+        "ja": "chiyoda",
+        "en": "chiyoda"
       },
       "tips": {
         "ko": [
@@ -33031,8 +33031,8 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "type": {
         "ko": "전통 센토",
@@ -33094,8 +33094,8 @@
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "tips": {
         "ko": [
@@ -33201,8 +33201,8 @@
       },
       "area": {
         "ko": "스미다",
-        "en": "Sumida",
-        "ja": "墨田区"
+        "ja": "墨田区",
+        "en": "Sumida"
       },
       "type": {
         "ko": "전통 센토",
@@ -33264,8 +33264,8 @@
       },
       "areaGroup": {
         "ko": "sumida",
-        "en": "sumida",
-        "ja": "sumida"
+        "ja": "sumida",
+        "en": "sumida"
       },
       "tips": {
         "ko": [
@@ -33372,8 +33372,8 @@
       },
       "area": {
         "ko": "오타",
-        "en": "Ota",
-        "ja": "大田区"
+        "ja": "大田区",
+        "en": "Ota"
       },
       "type": {
         "ko": "온천 여관",
@@ -33435,8 +33435,8 @@
       },
       "areaGroup": {
         "ko": "ota",
-        "en": "ota",
-        "ja": "ota"
+        "ja": "ota",
+        "en": "ota"
       },
       "tips": {
         "ko": [
@@ -33544,8 +33544,8 @@
       },
       "area": {
         "ko": "스기나미",
-        "en": "Suginami",
-        "ja": "杉并区"
+        "ja": "杉並区",
+        "en": "Suginami"
       },
       "type": {
         "ko": "도심 스파",
@@ -33607,8 +33607,8 @@
       },
       "areaGroup": {
         "ko": "suginami",
-        "en": "suginami",
-        "ja": "suginami"
+        "ja": "suginami",
+        "en": "suginami"
       },
       "tips": {
         "ko": [
@@ -33715,8 +33715,8 @@
       },
       "area": {
         "ko": "도시마",
-        "en": "Toshima",
-        "ja": "豊島区"
+        "ja": "豊島区",
+        "en": "Toshima"
       },
       "type": {
         "ko": "전통 센토",
@@ -33778,8 +33778,8 @@
       },
       "areaGroup": {
         "ko": "toshima",
-        "en": "toshima",
-        "ja": "toshima"
+        "ja": "toshima",
+        "en": "toshima"
       },
       "tips": {
         "ko": [
@@ -33885,8 +33885,8 @@
       },
       "area": {
         "ko": "하치오지·히노",
-        "en": "Hachioji-Hino",
-        "ja": "八王子·日野"
+        "ja": "八王子·日野",
+        "en": "Hachioji-Hino"
       },
       "type": {
         "ko": "도심 스파",
@@ -33948,8 +33948,8 @@
       },
       "areaGroup": {
         "ko": "hachioji-hino",
-        "en": "hachioji-hino",
-        "ja": "hachioji-hino"
+        "ja": "hachioji-hino",
+        "en": "hachioji-hino"
       },
       "tips": {
         "ko": [
