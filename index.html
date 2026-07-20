@@ -1007,7 +1007,7 @@ body::before {
       <a href="#" data-feat="rotenburo" data-i18n="catRotenburo">🌿 노천탕</a>
       <a href="#" data-feat="sauna" data-i18n="catSauna">🧖 사우나</a>
       <a href="#" data-feat="family" data-i18n="catFamily">👨‍👩‍👧‍👦 가족</a>
-      <a href="pages/about.html" data-i18n="navAbout">소개</a>
+      <a href="#" data-nav="about" data-i18n="navAbout">소개</a>
     </nav>
     <div class="header-tools">
       <div class="lang-group" id="lang-group">
@@ -1031,7 +1031,7 @@ body::before {
     <nav class="menu-nav">
       <a href="#" data-nav="home"><span>🏠</span> <span data-i18n="navHome">홈</span></a>
       <a href="#" data-nav="list"><span>♨️</span> <span data-i18n="navOnsen">온천 탐색</span></a>
-      <a href="pages/about.html"><span>📖</span> <span data-i18n="navAbout">소개</span></a>
+      <a href="#" data-nav="about"><span>📖</span> <span data-i18n="navAbout">소개</span></a>
     </nav>
     <div style="margin-top:8px;padding-top:12px;border-top:1px solid var(--border);">
       <div style="font-size:11px;font-weight:800;color:var(--text-muted);margin-bottom:8px;padding-left:14px;letter-spacing:0.06em;text-transform:uppercase;" data-i18n="menuLegal">법적 고지</div>
@@ -1243,6 +1243,11 @@ body::before {
   <div id="detail-container"></div>
 </section>
 
+<section id="page-about" class="page" aria-label="소개">
+  <div id="about-container"></div>
+</section>
+
+
 
 
 </main>
@@ -1250,7 +1255,7 @@ body::before {
 <footer class="site-footer">
   <div class="footer-divider"></div>
   <div class="footer-links">
-    <a href="pages/about.html" data-i18n="footerAbout">소개</a>
+    <a href="#" data-nav="about" data-i18n="footerAbout">소개</a>
     <a href="pages/privacy.html" data-i18n="footerPrivacy">개인정보처리방침</a>
     <a href="pages/terms.html" data-i18n="footerTerms">이용약관</a>
     <a href="pages/cookies.html" data-i18n="footerCookies">쿠키 정책</a>
@@ -1373,7 +1378,37 @@ const S = {
         }
       }
 
-      if (!title) {
+      if (view === "about") {
+        if (lang === "ko") {
+          title = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide - 실제 운영 온천 큐레이션";
+          desc = "도쿄 온천 가이드 설립 목적과 200선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
+          kw = "도쿄 온천 가이드 소개, 도쿄 온천 큐레이션, 일본 온천 예절, 온천 타투 규정";
+          ogTitle = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide";
+          ogDesc = desc;
+          canonicalUrl = domain + "/?view=about&lang=ko";
+        } else if (lang === "ja") {
+          title = "東京温泉ガイドについて | 当サイトのご紹介と厳選基準";
+          desc = "東京温泉ガイドの設立目的と人気200施設の厳選基準、快適に楽しむための日本の温泉・銭湯マナー（タトゥー規定、入浴エチケット）をご紹介します。";
+          kw = "東京温泉ガイドについて, 日帰り温泉 選び方, 銭湯 マナー, 温泉 タトゥー";
+          ogTitle = "東京温泉ガイドについて | About Tokyo Onsen Guide";
+          ogDesc = desc;
+          canonicalUrl = domain + "/?view=about&lang=ja";
+        } else {
+          title = "About Tokyo Onsen Guide | Our Mission & Curation Standards";
+          desc = "Learn about Tokyo Onsen Guide's mission, our 200 facility verification criteria, and essential Japanese bathhouse etiquette (tattoos, towel rules).";
+          kw = "about tokyo onsen guide, japanese onsen etiquette, tokyo bathhouse rules, tattoo friendly onsen";
+          ogTitle = "About Tokyo Onsen Guide | Our Mission & Standards";
+          ogDesc = desc;
+          canonicalUrl = domain + "/?view=about&lang=en";
+        }
+        schemaJson = {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": title,
+          "description": desc,
+          "url": canonicalUrl
+        };
+      } else if (!title) {
         if (lang === "ko") {
           title = "도쿄 온천 추천 베스트 200 | 직접 가본 도쿄 당일치기 온천 가이드";
           desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 200곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
@@ -1488,6 +1523,7 @@ const S = {
       if(area) el.textContent=area[S.lang];
     });
     updateSEO();
+    if(S.view==="about")drawAbout();
   }
   function updateMapLang(){
     const iframe=$("home-map-iframe");
@@ -1513,6 +1549,7 @@ const S = {
     if(name==="home")drawHome();
     if(name==="list")drawList();
     if(name==="detail")drawDetail(S.detailId);
+    if(name==="about")drawAbout();
   }
 
   function getTypeClass(typeVal){
@@ -1618,6 +1655,113 @@ const S = {
     if(agKo===S.fArea)return true;
     const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);
     return found?found.id===S.fArea:false;
+  }
+
+  function drawAbout(){
+    try {
+      const wrap = $("about-container");
+      if (!wrap) return;
+      const lang = S.lang || "ko";
+      
+      const content = {
+        ko: {
+          title: "사이트 소개",
+          sub: "About Tokyo Onsen Guide",
+          c1Title: "🎯 도쿄 온천 가이드의 설립 목적 및 미션",
+          c1Body: `<p>도쿄는 번화한 메트로폴리탄 도시이자, 지하 수천 미터에서 솟아오르는 양질의 천연 온천과 에도 시대부터 이어져 온 전통 센토(銭湯) 문화가 살아 숨 쉬는 매력적인 곳입니다. 하지만 외국인 여행객이나 현지 거주자들에게는 각 시설의 수질(泉質), 효능, 타투 허용 여부, 수건 대여 규정 등 복잡하고 상세한 정보를 정확히 확인하고 비교하기에 언어적·문화적 장벽이 컸습니다.</p>
+                   <p><strong>Tokyo Onsen Guide (도쿄 온천 가이드)</strong>는 이러한 정보 불균형을 해소하고, 누구나 쉽고 편리하게 도쿄 곳곳의 숨은 명탕과 최고의 힐링 스파를 발견할 수 있도록 돕기 위해 설립되었습니다. 한국어, 영어, 일본어 3개 국어로 100% 현장 검증 기반의 심층 큐레이션 데이터를 제공합니다.</p>`,
+          c2Title: "✨ 우리의 200선 엄선 기준 및 차별화 포인트",
+          c2Body: `<div class="luxury-recs-list">
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 200개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>심층 수질 및 효능 분석:</strong> 단순한 위치 정보를 넘어, 원천명, 수질(나트륨-염화물 강염천, 흑탕 등), 온도, 피로 회복 및 신경통 완화 등 구체적인 효능 데이터를 상세히 수록했습니다.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>방문 편의성 및 어메니티 확인:</strong> 수건 대여 가능 여부, 사우나 및 로텐부로(노천탕) 완비 여부, 휴게실 및 식당 유무를 한눈에 파악할 수 있도록 정리했습니다.</div></div>
+                   </div>`,
+          c3Title: "💡 올바른 일본 온천 및 센토 입욕 예절 가이드",
+          c3Body: `<div class="luxury-tips-list">
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🚿</span><div class="luxury-tip-text"><strong>입탕 전 반드시 비누로 몸 씻기:</strong> 탕에 들어가기 전 샤워 코너에서 비누와 샴푸로 몸과 머리를 깨끗이 씻는 것은 일본 온천 문화의 가장 중요한 기본 예절입니다.</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🧖</span><div class="luxury-tip-text"><strong>수건을 탕 안 물에 넣지 않기:</strong> 페이스타올이나 바디타올은 머리 위에 올려두거나 탕 밖의 선반에 보관해야 하며, 온천수 탕 안 물에 적시거나 담그면 절대 안 됩니다.</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🛑</span><div class="luxury-tip-text"><strong>타투(문신) 규정 확인:</strong> 시설에 따라 문신 입장이 제한되거나 커버 패치 부착이 필수일 수 있으므로, 사전에 각 시설의 공식 사이트 규정을 확인하시기 바랍니다.</div></div>
+                   </div>`,
+          c4Title: "✉️ 데이터 업데이트 및 피드백 안내",
+          c4Body: `<p>본 사이트의 데이터와 운영 시간, 요금 정보는 주기적으로 검토 및 최신화되고 있습니다. 만약 실제 시설 이용 시 변경된 사항이 있거나 제안 및 피드백이 있으시다면 언제든 공식 문의 이메일을 통해 알려주시기 바랍니다. 여러분의 소중한 피드백이 더욱 완벽한 도쿄 온천 가이드를 만듭니다.</p>`
+        },
+        ja: {
+          title: "サイトのご紹介",
+          sub: "About Tokyo Onsen Guide",
+          c1Title: "🎯 東京温泉ガイドの設立目的とミッション",
+          c1Body: `<p>東京は最先端のメトロポリスであると同時に、地下数千メートルから湧き出る天然温泉や、江戸時代から続く伝統的な銭湯文化が息づく魅力的な都市です。しかし、訪日観光客や在住外国人にとって、各施設の泉質、効能、タトゥー規定、アメニティ情報などを正確に把握して比較することは容易ではありませんでした。</p>
+                   <p><strong>Tokyo Onsen Guide (東京温泉ガイド)</strong>は、こうした情報格差を解消し、誰でも手軽に東京都内の極上の名湯や極上の癒やしスポットを発見できるよう設立されました。日本語・韓国語・英語の3言語で信頼性の高い深掘りキュレーション情報をお届けします。</p>`,
+          c2Title: "✨ 厳選200施設の選定基準と特徴",
+          c2Body: `<div class="luxury-recs-list">
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気200施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>泉質・効能の深掘りデータ:</strong> 単なる住所情報にとどまらず、源泉名、泉質（強塩泉、黒湯など）、泉温、疲労回復や神経통への具体的な効能データを網羅しています。</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>充実のアメニティ確認:</strong> タオルレンタルやサウナ・露天風呂・岩盤浴の有無、お食事処や休憩ラウンジの充実度をひと目で比較できるように整理しています。</div></div>
+                   </div>`,
+          c3Title: "💡 心地よく楽しむための日本の温泉・銭湯マナー",
+          c3Body: `<div class="luxury-tips-list">
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🚿</span><div class="luxury-tip-text"><strong>湯船に入る前は体をきれいに洗う:</strong> 湯船に浸かる前に、洗い場（シャワーコーナー）で石鹸とシャンプーを使って体をしっかり洗うのが最も大切なマナーです。</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🧖</span><div class="luxury-tip-text"><strong>タオルを浴槽のお湯に入れない:</strong> フェイスタオルやバスタオルは頭の上に載せるか湯船の外に置き、浴槽のお湯には絶対に入れないようにしてください。</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🛑</span><div class="luxury-tip-text"><strong>タトゥー（刺青）ルールの確認:</strong> 施設によって刺青の入館制限やカバーシールの着用が義務付けられている場合があります。ご来館前に各公式サイトの利用規約をご確認ください。</div></div>
+                   </div>`,
+          c4Title: "✉️ データ更新とフィードバックについて",
+          c4Body: `<p>当サイトに掲載されている営業時間、入場料、泉質情報は定期的に調査・更新されています。万が一、現地での営業内容に変更点がある場合やご意見・ご要望がございましたら、いつでもお問い合わせ窓口よりお寄せください。より良いガイド作りに活用させていただきます。</p>`
+        },
+        en: {
+          title: "About Our Guide",
+          sub: "About Tokyo Onsen Guide",
+          c1Title: "🎯 Our Mission & Purpose",
+          c1Body: `<p>Tokyo is not only a ultra-modern metropolis but also home to rich subterranean natural hot springs (Onsen) and a historic neighborhood bathhouse (Sento) culture dating back to the Edo period. However, international travelers and expatriates often face language and informational barriers when trying to compare thermal water qualities, tattoo policies, and amenity rules.</p>
+                   <p><strong>Tokyo Onsen Guide</strong> was created to bridge this gap. We provide comprehensive, 100% verified multilingual curation across English, Korean, and Japanese, empowering anyone to effortlessly discover the finest relaxing hot springs and authentic bathhouses throughout Tokyo.</p>`,
+          c2Title: "✨ Our 200 Curation Standards & Highlights",
+          c2Body: `<div class="luxury-recs-list">
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>200 Verified Operating Facilities:</strong> We strictly feature top-rated, actively operating natural hot springs, super sento, and urban day spas across the 23 special wards and Tama region.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>In-Depth Thermal & Quality Data:</strong> Beyond basic locations, we document exact spring sources, water quality (e.g., sodium-chloride strong salt springs, mineral black water), temperature, and therapeutic benefits.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>Transparent Amenity Checks:</strong> Easily check whether towel rentals, saunas, open-air baths (rotenburo), bedrock baths, and dining/lounge areas are available before your visit.</div></div>
+                   </div>`,
+          c3Title: "💡 Essential Japanese Onsen & Sento Etiquette",
+          c3Body: `<div class="luxury-tips-list">
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🚿</span><div class="luxury-tip-text"><strong>Always Wash Before Soaking:</strong> Thoroughly wash and rinse your body and hair with soap and shampoo at the shower stations before entering the bath tubs.</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🧖</span><div class="luxury-tip-text"><strong>Keep Towels Out of the Water:</strong> Place your face towel on your head or leave it on the dry deck outside the tub. Never submerge towels into the hot spring water.</div></div>
+                     <div class="luxury-tip-card"><span class="luxury-tip-icon">🛑</span><div class="luxury-tip-text"><strong>Check Tattoo Regulations:</strong> Some facilities restrict entry or require cover patches for tattoos. Always check official facility guidelines or ask the front desk prior to entering.</div></div>
+                   </div>`,
+          c4Title: "✉️ Updates & Feedback",
+          c4Body: `<p>Our database, business hours, and pricing information are regularly reviewed and updated. If you notice any operational changes during your visit or have suggestions for improvement, please contact us anytime via email. Your feedback helps us maintain the most accurate onsen guide in Tokyo.</p>`
+        }
+      }[lang] || content.ko;
+
+      let h = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);">`;
+      h += `<h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${content.title}</h1>`;
+      h += `<p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${content.sub}</p>`;
+      h += `</div>`;
+
+      h += `<div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">`;
+      
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;">`;
+      h += `<div class="luxury-sec-header"><h2>${content.c1Title}</h2></div>`;
+      h += `<div class="luxury-desc-content">${content.c1Body}</div>`;
+      h += `</div>`;
+
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;">`;
+      h += `<div class="luxury-sec-header"><h2>${content.c2Title}</h2></div>`;
+      h += `${content.c2Body}`;
+      h += `</div>`;
+
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;">`;
+      h += `<div class="luxury-sec-header"><h2>${content.c3Title}</h2></div>`;
+      h += `${content.c3Body}`;
+      h += `</div>`;
+
+      h += `<div class="luxury-section-card">`;
+      h += `<div class="luxury-sec-header"><h2>${content.c4Title}</h2></div>`;
+      h += `<div class="luxury-desc-content">${content.c4Body}</div>`;
+      h += `</div>`;
+
+      h += `</div>`;
+
+      wrap.innerHTML = h;
+    } catch(e) {
+      console.error("drawAbout error:", e);
+    }
   }
 
   function drawList(){
@@ -2041,6 +2185,7 @@ const S = {
     wrap.innerHTML=h;
 
     updateSEO();
+    if(S.view==="about")drawAbout();
     const backBtn=wrap.querySelector("#luxury-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
     const backBtnLg=wrap.querySelector("#luxury-back-btn-lg");
@@ -2139,6 +2284,5 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1ddc6be686ee359',t:'MTc4NDUwNjU3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
