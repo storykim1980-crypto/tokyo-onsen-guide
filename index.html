@@ -988,6 +988,14 @@ body::before {
 
 
 </style>
+<link rel="manifest" href="manifest.json">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.log('SW reg error:', err));
+  });
+}
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link" data-i18n="skipToContent">본문 바로가기</a>
@@ -1969,7 +1977,20 @@ const S = {
     const grid=$("list-grid");const emptyEl=$("list-empty");
     if(!grid)return;clearEl(grid);
     if(list.length===0){grid.classList.add("hidden");emptyEl.classList.remove("hidden");}
-    else{grid.classList.remove("hidden");emptyEl.classList.add("hidden");list.forEach((o,i)=>{grid.appendChild(makeBlogItem(o));if((i+1)%4===0&&i!==list.length-1)grid.appendChild(makeAdInfeed(Math.floor((i+1)/4)-1));});}
+    else{
+      grid.classList.remove("hidden");emptyEl.classList.add("hidden");
+      const CHUNK_SIZE=24; let idx=0;
+      function renderNextBatch(){
+        const end=Math.min(idx+CHUNK_SIZE, list.length);
+        for(; idx<end; idx++){
+          const o=list[idx];
+          grid.appendChild(makeBlogItem(o));
+          if((idx+1)%4===0 && idx!==list.length-1) grid.appendChild(makeAdInfeed(Math.floor((idx+1)/4)-1));
+        }
+        if(idx<list.length) requestAnimationFrame(renderNextBatch);
+      }
+      renderNextBatch();
+    }
     }catch(e){
       console.error("drawList error:",e);
       var grid=document.getElementById("list-grid");
@@ -2427,26 +2448,49 @@ const S = {
   window.addEventListener("resize",()=>{const sb=document.querySelector(".list-sidebar");if(sb&&window.innerWidth>=768){sb.style.display="";}});
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 }
-fetch('data.json?v=5.3')
-  .then(r=>r.json())
-  .then(data=>{
-    window.DATA=data.DATA;
-    window.AREAS=data.AREAS;
-    window.i18n=data.i18n;
-    window.TYPES=data.TYPES;
-    window.WISHES=data.WISHES;
-    window.FEATS=data.FEATS;
-    window.FEATURES=data.FEATURES;
-    window.IMAGE_MAP=data.IMAGE_MAP;
-    initApp();
-  })
-  .catch(err=>{
-    document.addEventListener('DOMContentLoaded',function(){
-      var main=document.getElementById('main');
-      if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;font-family:sans-serif;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;line-height:1.7;margin-top:12px;"><strong>data.json</strong> 파일을 불러오지 못했습니다.<br>아래 사항을 확인해 주세요:</p><ul style="text-align:left;max-width:400px;margin:16px auto;color:#5c4d3c;font-size:14px;line-height:1.8;"><li>index.html 과 data.json 가 <strong>같은 폴터</strong>에 있는지 확인</li><li>웹서버에 data.json 업로드가 누락되지 않았는지 확인</li><li>브라우저 콘솔(F12 → Console)의 빨간 오류 메시지 확인</li><li><strong>Ctrl+F5</strong> (또는 모바일에서는 브라우저 캐시 삭제 후 새로고침)</li></ul><p style="color:#8a7a6a;font-size:13px;margin-top:20px;">Tokyo Onsen Guide v5.3</p></div>';
-    });
-    console.error('Failed to load data.json',err);
-  });
+function loadDataFast(callback){
+  const DB_NAME="TokyoOnsenDB_v5"; const DB_VER=1; const STORE_NAME="cache"; const DATA_KEY="data_v5_3";
+  try {
+    const req=indexedDB.open(DB_NAME, DB_VER);
+    req.onupgradeneeded=e=>{ e.target.result.createObjectStore(STORE_NAME); };
+    req.onsuccess=e=>{
+      const db=e.target.result; const tx=db.transaction(STORE_NAME, "readonly");
+      const getReq=tx.objectStore(STORE_NAME).get(DATA_KEY);
+      getReq.onsuccess=()=>{
+        if(getReq.result && getReq.result.DATA){
+          applyDataAndInit(getReq.result, callback);
+          fetchAndUpdateDB(db, false);
+        } else { fetchAndUpdateDB(db, true, callback); }
+      };
+      getReq.onerror=()=>fetchAndUpdateDB(null, true, callback);
+    };
+    req.onerror=()=>fetchAndUpdateDB(null, true, callback);
+  } catch(err) { fetchAndUpdateDB(null, true, callback); }
+
+  function fetchAndUpdateDB(db, isFirst, cb){
+    fetch('data.json?v=5.3')
+      .then(r=>r.json())
+      .then(data=>{
+        if(db){ try{ const tx=db.transaction(STORE_NAME, "readwrite"); tx.objectStore(STORE_NAME).put(data, DATA_KEY); }catch(e){} }
+        if(isFirst) applyDataAndInit(data, cb);
+      })
+      .catch(err=>{
+        if(isFirst){
+          console.error('Failed to load data.json',err);
+          var main=document.getElementById('main');
+          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;"><strong>data.json</strong> 로출 오류: '+err.message+'</p></div>';
+        }
+      });
+  }
+
+  function applyDataAndInit(data, cb){
+    if(window.DATA) return;
+    window.DATA=data.DATA; window.AREAS=data.AREAS; window.i18n=data.i18n; window.TYPES=data.TYPES;
+    window.WISHES=data.WISHES; window.FEATS=data.FEATS; window.FEATURES=data.FEATURES; window.IMAGE_MAP=data.IMAGE_MAP;
+    if(cb) cb();
+  }
+}
+loadDataFast(initApp);
 </script>
 </body>
 </html>

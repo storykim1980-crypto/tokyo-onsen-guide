@@ -1,0 +1,21 @@
+{
+  "name": "도쿄 온천 가이드 | Tokyo Onsen Guide",
+  "short_name": "Tokyo Onsen",
+  "description": "200 Best Hot Springs and Sento in Tokyo - Multilingual Guide",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#1a1410",
+  "icons": [
+    {
+      "src": "images/hero-onsen.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "images/hero-onsen.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
