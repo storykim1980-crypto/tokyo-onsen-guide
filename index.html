@@ -1031,6 +1031,9 @@ body::before {
     <nav class="menu-nav">
       <a href="#" data-nav="home"><span>🏠</span> <span data-i18n="navHome">홈</span></a>
       <a href="#" data-nav="list"><span>♨️</span> <span data-i18n="navOnsen">온천 탐색</span></a>
+      <a href="#" data-feat="rotenburo"><span>🌿</span> <span data-i18n="catRotenburo">노천탕</span></a>
+      <a href="#" data-feat="sauna"><span>🧖</span> <span data-i18n="catSauna">사우나</span></a>
+      <a href="#" data-feat="family"><span>👨‍👩‍👧‍👦</span> <span data-i18n="catFamily">가족</span></a>
       <a href="#" data-nav="about"><span>📖</span> <span data-i18n="navAbout">소개</span></a>
     </nav>
     <div style="margin-top:8px;padding-top:12px;border-top:1px solid var(--border);">
@@ -2014,7 +2017,7 @@ const S = {
     // 5. Section 2: Basic Info Table + Spring Data Table
     h+=safe(function(){
       const hourLabel=lang==="ko"?"영업시간":(lang==="ja"?"営業時間":"Hours");
-      const hourVal=o.hours||"-";
+      const hourVal=(typeof o.hours==="object"&&o.hours?(o.hours[lang]||o.hours.ko):o.hours)||"-";
       const holidayVal=(o.holiday&&o.holiday[lang])||"-";
       const rows=[
         [lang==="ko"?"시설명":(lang==="ja"?"施設名":"Name"), (o.name&&o.name[lang])||""],
@@ -2227,6 +2230,7 @@ const S = {
     document.querySelectorAll("[data-feat]").forEach(n=>n.addEventListener("click",e=>{
       e.preventDefault();
       S.fFeat=n.getAttribute("data-feat");S.fArea="all";S.fType="all";S.q="";
+      const mm=$("mobile-menu");if(mm)mm.classList.remove("open");
       go("list");
     }));
     document.querySelectorAll("[data-area]").forEach(n=>n.addEventListener("click",e=>{
@@ -2250,7 +2254,18 @@ const S = {
     const ss=$("list-sort");if(ss)ss.addEventListener("change",e=>{S.sort=e.target.value;drawList();});
     const br=$("list-reset-btn");if(br)br.addEventListener("click",()=>{S.q="";S.fArea="all";S.fType="all";S.fFeat="all";if(ls)ls.value="";drawList();});
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(S.theme==="system")applyTheme();});
-    go("home");
+    // Check URL parameters / hash before navigation
+    try {
+      const p = new URLSearchParams(window.location.search);
+      if (p.has("feat")) {
+        S.fFeat = p.get("feat");
+        S.view = "list";
+      }
+      if (window.location.hash === "#list") {
+        S.view = "list";
+      }
+    } catch(e) {}
+    go(S.view || "home", { id: S.detailId });
     }catch(e){
       console.error("init error:",e);
       var main=document.getElementById("main");
@@ -2284,5 +2299,6 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
-</body>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1de1af9adad980b',t:'MTc4NDUxMDAyNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
