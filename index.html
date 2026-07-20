@@ -1104,7 +1104,7 @@ if ('serviceWorker' in navigator) {
         <a href="#" data-area="ota">오타</a>
         <a href="#" data-area="setagaya">세타가야</a>
         <a href="#" data-area="shibuya">시부야</a>
-        <a href="#" data-area="nakano">나칸오</a>
+        <a href="#" data-area="nakano">나카노</a>
         <a href="#" data-area="suginami">스기나미</a>
         <a href="#" data-area="toshima">도시마</a>
         <a href="#" data-area="kita">기타</a>
@@ -1143,7 +1143,7 @@ if ('serviceWorker' in navigator) {
           <div class="map-label" style="top:62%;left:48%;" data-area="ota">오타</div>
           <div class="map-label" style="top:60%;left:42%;" data-area="setagaya">세타가야</div>
           <div class="map-label" style="top:52%;left:45%;" data-area="shibuya">시부야</div>
-          <div class="map-label" style="top:45%;left:40%;" data-area="nakano">나칸오</div>
+          <div class="map-label" style="top:45%;left:40%;" data-area="nakano">나카노</div>
           <div class="map-label" style="top:40%;left:38%;" data-area="suginami">스기나미</div>
           <div class="map-label" style="top:35%;left:42%;" data-area="toshima">도시마</div>
           <div class="map-label" style="top:32%;left:45%;" data-area="kita">기타</div>
@@ -1561,6 +1561,19 @@ const S = {
       const txt=i18n[S.lang][k];
       if(txt!==undefined){ el.textContent=txt; }
     });
+    // 지역 필터·지도 라벨 3개국어 동기화
+    if (typeof AREAS !== "undefined" && Array.isArray(AREAS)) {
+      document.querySelectorAll("[data-area]").forEach(el => {
+        const id = el.getAttribute("data-area");
+        const a = AREAS.find(x => x.id === id);
+        if (a && a[S.lang]) {
+          const cnt = el.querySelector(".area-count");
+          const cntHtml = cnt ? cnt.outerHTML : "";
+          const suffix = el.textContent.match(/\s*\(\d+\)\s*$/);
+          el.innerHTML = a[S.lang] + (suffix ? suffix[0] : "") + cntHtml;
+        }
+      });
+    }
         // Explicitly update mobile filter toggle button and AdSense slots dynamically by language
     const sbBtn = document.getElementById("sidebar-toggle");
     if (sbBtn) {
