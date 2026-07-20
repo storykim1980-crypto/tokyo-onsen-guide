@@ -1038,10 +1038,11 @@ body::before {
     </nav>
     <div style="margin-top:8px;padding-top:12px;border-top:1px solid var(--border);">
       <div style="font-size:11px;font-weight:800;color:var(--text-muted);margin-bottom:8px;padding-left:14px;letter-spacing:0.06em;text-transform:uppercase;" data-i18n="menuLegal">법적 고지</div>
-      <a href="pages/privacy.html" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🔒</span> <span data-i18n="footerPrivacy">개인정보처리방침</span></a>
-      <a href="pages/terms.html" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>📋</span> <span data-i18n="footerTerms">이용약관</span></a>
-      <a href="pages/cookies.html" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🍪</span> <span data-i18n="footerCookies">쿠키 정책</span></a>
-      <a href="pages/contact.html" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>✉️</span> <span data-i18n="footerContact">문의</span></a>
+      <a href="#" data-nav="privacy" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🔒</span> <span data-i18n="footerPrivacy">개인정보처리방침</span></a>
+      <a href="#" data-nav="terms" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>📋</span> <span data-i18n="footerTerms">이용약관</span></a>
+      <a href="#" data-nav="cookies" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🍪</span> <span data-i18n="footerCookies">쿠키 정책</span></a>
+      <a href="#" data-nav="contact" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>✉️</span> <span data-i18n="footerContact">문의</span></a>
+      <a href="#" data-nav="advertising" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>📢</span> <span data-i18n="footerAdvertising">광고 정책</span></a>
     </div>
   </div>
 </div>
@@ -1249,6 +1250,22 @@ body::before {
 <section id="page-about" class="page" aria-label="소개">
   <div id="about-container"></div>
 </section>
+<section id="page-privacy" class="page" aria-label="개인정보처리방침">
+  <div id="privacy-container"></div>
+</section>
+<section id="page-terms" class="page" aria-label="이용약관">
+  <div id="terms-container"></div>
+</section>
+<section id="page-cookies" class="page" aria-label="쿠키 정책">
+  <div id="cookies-container"></div>
+</section>
+<section id="page-contact" class="page" aria-label="문의">
+  <div id="contact-container"></div>
+</section>
+<section id="page-advertising" class="page" aria-label="광고 및 제휴 정책">
+  <div id="advertising-container"></div>
+</section>
+
 
 
 
@@ -1257,13 +1274,13 @@ body::before {
 
 <footer class="site-footer">
   <div class="footer-divider"></div>
-  <div class="footer-links">
+    <div class="footer-links">
     <a href="#" data-nav="about" data-i18n="footerAbout">소개</a>
-    <a href="pages/privacy.html" data-i18n="footerPrivacy">개인정보처리방침</a>
-    <a href="pages/terms.html" data-i18n="footerTerms">이용약관</a>
-    <a href="pages/cookies.html" data-i18n="footerCookies">쿠키 정책</a>
-    <a href="pages/contact.html" data-i18n="footerContact">문의</a>
-    <a href="pages/advertising.html" data-i18n="footerAds">광고 정책</a>
+    <a href="#" data-nav="privacy" data-i18n="footerPrivacy">개인정보처리방침</a>
+    <a href="#" data-nav="terms" data-i18n="footerTerms">이용약관</a>
+    <a href="#" data-nav="cookies" data-i18n="footerCookies">쿠키 정책</a>
+    <a href="#" data-nav="contact" data-i18n="footerContact">문의</a>
+    <a href="#" data-nav="advertising" data-i18n="footerAdvertising">광고 정책</a>
   </div>
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.</p>
 </footer>
@@ -1381,7 +1398,22 @@ const S = {
         }
       }
 
-      if (view === "about") {
+            if (view === "advertising") {
+        const tMap = { ko: "도쿄 온천 가이드 광고 및 제휴 정책 | Advertising Policy", ja: "東京温泉ガイド 広告および提携ポリシー | Advertising Policy", en: "Tokyo Onsen Guide Advertising & Partnership Policy" };
+        title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 Google AdSense 광고 게재, 제휴 링크 및 후원 정책 안내입니다."; canonicalUrl = domain + "/?view=advertising&lang=" + lang;
+      } else if (view === "privacy") {
+        const tMap = { ko: "도쿄 온천 가이드 개인정보처리방침 | Privacy Policy", ja: "東京温泉ガイド プライバシーポリシー | Privacy Policy", en: "Tokyo Onsen Guide Privacy Policy" };
+        title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 개인정보처리방침 및 쿠키 보호 원칙 안내입니다."; canonicalUrl = domain + "/?view=privacy&lang=" + lang;
+      } else if (view === "terms") {
+        const tMap = { ko: "도쿄 온천 가이드 이용약관 | Terms of Service", ja: "東京温泉ガイド 利用規約 | Terms of Service", en: "Tokyo Onsen Guide Terms of Service" };
+        title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 서비스 이용약관 및 면책조항 안내입니다."; canonicalUrl = domain + "/?view=terms&lang=" + lang;
+      } else if (view === "cookies") {
+        const tMap = { ko: "도쿄 온천 가이드 쿠키 정책 | Cookie Policy", ja: "東京温泉ガイド Cookieポリシー | Cookie Policy", en: "Tokyo Onsen Guide Cookie Policy" };
+        title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 쿠키 및 로컬 스토리지 사용 안내입니다."; canonicalUrl = domain + "/?view=cookies&lang=" + lang;
+      } else if (view === "contact") {
+        const tMap = { ko: "도쿄 온천 가이드 공식 문의 | Contact Us", ja: "東京温泉ガイド お問い合わせ | Contact Us", en: "Tokyo Onsen Guide Contact Us" };
+        title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 운영팀 이메일 문의 및 정보 수정 요청 접수 안내입니다."; canonicalUrl = domain + "/?view=contact&lang=" + lang;
+      } else if (view === "about") {
         if (lang === "ko") {
           title = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide - 실제 운영 온천 큐레이션";
           desc = "도쿄 온천 가이드 설립 목적과 200선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
@@ -1526,7 +1558,16 @@ const S = {
       if(area) el.textContent=area[S.lang];
     });
     updateSEO();
-    if(S.view==="about")drawAbout();
+        if(S.view==="about")drawAbout();
+    if(S.view==="privacy")drawPrivacy();
+    if(S.view==="terms")drawTerms();
+    if(S.view==="cookies")drawCookies();
+    if(S.view==="contact")drawContact();
+    if(S.view==="advertising")drawAdvertising();
+    // update footerAdvertising i18n label dynamically
+    document.querySelectorAll('[data-i18n="footerAdvertising"]').forEach(el => {
+      el.textContent = { ko: "광고 정책", ja: "広告ポリシー", en: "Advertising Policy" }[S.lang] || "광고 정책";
+    });
   }
   function updateMapLang(){
     const iframe=$("home-map-iframe");
@@ -1552,7 +1593,12 @@ const S = {
     if(name==="home")drawHome();
     if(name==="list")drawList();
     if(name==="detail")drawDetail(S.detailId);
-    if(name==="about")drawAbout();
+        if(name==="about")drawAbout();
+    if(name==="privacy")drawPrivacy();
+    if(name==="terms")drawTerms();
+    if(name==="cookies")drawCookies();
+    if(name==="contact")drawContact();
+    if(name==="advertising")drawAdvertising();
   }
 
   function getTypeClass(typeVal){
@@ -1658,6 +1704,100 @@ const S = {
     if(agKo===S.fArea)return true;
     const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);
     return found?found.id===S.fArea:false;
+  }
+
+  function drawAdvertising(){
+    try {
+      const wrap = $("advertising-container");
+      if (!wrap) return;
+      const lang = S.lang || "ko";
+      const c = {
+        ko: {
+          title: "광고 및 제휴 정책", sub: "Advertising Policy",
+          c1Title: "1. 광고 게재", c1Body: "<p>본 사이트는 Google AdSense 프로그램을 통해 광고를 게재합니다. Google AdSense는 사용자의 관심사에 기반한 맞춤형 광고를 자동으로 표시할 수 있습니다.</p>",
+          c2Title: "2. 제휴 링크", c2Body: "<p>현재 본 사이트는 제휴 링크(Affiliate Links)를 사용하지 않습니다. 모든 온천 정보는 중립적으로 제공되며, 특정 시설과의 유료 제휴 관계는 없습니다.</p>",
+          c3Title: "3. 스폰서십 및 후원", c3Body: "<p>본 사이트의 콘텐츠는 독립적으로 작성되며, 특정 온천 시설이나 기업으로부터 금전적 후원을 받고 있지 않습니다. 향후 후원 콘텐츠가 포함될 경우, 해당 콘텐츠에 명확히 \"후원\" 또는 \"광고\" 표기를 추가합니다.</p>",
+          c4Title: "4. AI 생성 이미지 고지", c4Body: "<p>본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 온천 시설과 다를 수 있으며, 시설 예약이나 방문 결정의 유일한 기준이 되어서는 안 됩니다.</p>",
+          c5Title: "5. 광고 문의", c5Body: '<p>광고 게재 및 제휴 문의: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
+        },
+        ja: {
+          title: "広告および提携ポリシー", sub: "Advertising Policy",
+          c1Title: "1. 広告掲載", c1Body: "<p>当サイトはGoogle AdSenseプログラムを通じて広告を掲載しています。Google AdSenseはユーザーの興味や関心に基づいたパーソナライズ広告を自動的に表示する場合があります。</p>",
+          c2Title: "2. アフィリエイトリンク", c2Body: "<p>現在、当サイトはアフィリエイトリンクを使用していません。すべての温泉情報は中立かつ公正な視点で提供されており、特定施設との有料提携関係はありません。</p>",
+          c3Title: "3. スポンサーシップおよび協賛", c3Body: "<p>当サイトのコンテンツは独自に作成されており、特定の温泉施設や企業から金銭的支援を受けていません。将来的にスポンサー記事を掲載する場合は、該当コンテンツに明確に「PR」または「広告」と明記します。</p>",
+          c4Title: "4. AI生成画像についてのご案内", c4Body: "<p>当サイトの一部のイメージ画像はAI（人工知能）により生成された参考用イメージです。実際の温泉施設とは異なる場合があるため、施設のご予約や訪問決定の唯一の判断基準となさらないようお願い申し上げます。</p>",
+          c5Title: "5. 広告に関するお問い合わせ", c5Body: '<p>広告掲載および提携に関するお問い合わせ: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
+        },
+        en: {
+          title: "Advertising & Partnership Policy", sub: "Advertising Policy",
+          c1Title: "1. Ad Placement", c1Body: "<p>This site displays advertisements via the Google AdSense program. Google AdSense may automatically display personalized advertisements based on user interests and browsing history.</p>",
+          c2Title: "2. Affiliate Links", c2Body: "<p>This site currently does not use affiliate links. All hot spring curation data is provided neutrally, and we have no paid partnerships with any featured facilities.</p>",
+          c3Title: "3. Sponsorships & Funding", c3Body: "<p>All editorial content on this site is written independently without financial sponsorship from specific hot spring facilities or corporations. If sponsored content is introduced in the future, it will be clearly labeled as \"Sponsored\" or \"Ad\".</p>",
+          c4Title: "4. Notice Regarding AI-Generated Images", c4Body: "<p>Some illustrative photos on this site are AI-generated reference images. They may differ from the actual hot spring facilities and should not serve as the sole criterion when making reservations or visiting decisions.</p>",
+          c5Title: "5. Advertising Inquiries", c5Body: '<p>For advertising and partnership inquiries: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
+        }
+      }[lang] || c.ko;
+
+      let h = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);">`;
+      h += `<h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1>`;
+      h += `<p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p>`;
+      h += `</div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">`;
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;"><div class="luxury-sec-header"><h2>${c.c1Title}</h2></div><div class="luxury-desc-content">${c.c1Body}</div></div>`;
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;"><div class="luxury-sec-header"><h2>${c.c2Title}</h2></div><div class="luxury-desc-content">${c.c2Body}</div></div>`;
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;"><div class="luxury-sec-header"><h2>${c.c3Title}</h2></div><div class="luxury-desc-content">${c.c3Body}</div></div>`;
+      h += `<div class="luxury-section-card" style="margin-bottom:24px;"><div class="luxury-sec-header"><h2>${c.c4Title}</h2></div><div class="luxury-desc-content">${c.c4Body}</div></div>`;
+      h += `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>${c.c5Title}</h2></div><div class="luxury-desc-content">${c.c5Body}</div></div>`;
+      h += `</div>`;
+      wrap.innerHTML = h;
+    } catch(e) { console.error("drawAdvertising error:", e); }
+  }
+
+  function drawPrivacy(){
+    try {
+      const wrap = $("privacy-container"); if (!wrap) return; const lang = S.lang || "ko";
+      const c = {
+        ko: { title: "개인정보처리방침", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 개인정보 보호 원칙</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide는 서비스 이용자의 개인정보를 소중히 다루며, 관련 법령을 철저히 준수합니다.</p><p><strong>1. 수집하는 정보:</strong> 당사는 회원가입을 요구하지 않으며 개인식별정보를 직접 수집하지 않습니다. 서비스 최적화를 위해 접속 로그 및 쿠키 등 익명화된 통계 정보만 자동 수집될 수 있습니다.</p><p><strong>2. 광고 및 맞춤형 쿠키:</strong> Google AdSense 및 Google Analytics 등의 맞춤형 광고 서비스와 연동될 수 있으며, 브라우저 쿠키를 활용하여 맞춤형 광고가 표시될 수 있습니다.</p></div></div>` },
+        ja: { title: "プライバシーポリシー", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 個人情報の保護について</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guideは、利用者の個人情報を尊重し、関連法令を徹底して遵守します。</p><p><strong>1. 収集する情報:</strong> 当サイトは会員登録を求めず、氏名や電話番号などの個人情報を直接収集しません。サービス改善のため匿名化されたアクセスログやCookieのみが自動収集される場合があります。</p><p><strong>2. 広告およびCookie:</strong> Google AdSenseおよびGoogle Analyticsなどの広告・分析ツールがCookieを使用してユーザーの興味に応じた広告を表示する場合があります。</p></div></div>` },
+        en: { title: "Privacy Policy", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 Privacy & Data Protection</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide respects user privacy and strictly complies with applicable data protection regulations.</p><p><strong>1. Information Collection:</strong> We do not require membership registration or collect personally identifiable information directly. Only anonymized statistical data and cookies may be automatically processed for site optimization.</p><p><strong>2. Advertising Cookies:</strong> Third-party vendors including Google AdSense use cookies to serve ads based on prior visits to our website or other websites.</p></div></div>` }
+      }[lang] || c.ko;
+      wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
+    } catch(e) {}
+  }
+
+  function drawTerms(){
+    try {
+      const wrap = $("terms-container"); if (!wrap) return; const lang = S.lang || "ko";
+      const c = {
+        ko: { title: "이용약관", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 200개 온천 시설의 요금, 영업시간, 휴무일, 泉質 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
+        ja: { title: "利用規約", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている200の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
+        en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 200 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
+      }[lang] || c.ko;
+      wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
+    } catch(e) {}
+  }
+
+  function drawCookies(){
+    try {
+      const wrap = $("cookies-container"); if (!wrap) return; const lang = S.lang || "ko";
+      const c = {
+        ko: { title: "쿠키 정책", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 쿠키(Cookie) 사용 안내</h2></div><div class="luxury-desc-content"><p>본 사이트는 사용자의 언어 설정(한국어, 영어, 일본어) 및 테마 설정(라이트/다크 모드)을 브라우저에 기억하여 편리한 이용을 돕기 위해 쿠키 및 로컬 스토리지(Local Storage)를 사용합니다.</p><p>사용자는 언제든 브라우저 설정에서 쿠키 저장을 거부하거나 기존 데이터를 삭제할 수 있으며, 이 경우에도 온천 탐색 및 상세페이지 열람 서비스는 정상적으로 이용 가능합니다.</p></div></div>` },
+        ja: { title: "Cookieポリシー", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 Cookieの使用について</h2></div><div class="luxury-desc-content"><p>当サイトはユーザーの言語設定（日本語・韓国語・英語）やテーマ設定をブラウザに記憶し、より快適なブラウジングを提供するためにCookieおよびローカルストレージを使用します。</p><p>ブラウザの設定によりCookieを無効化したり削除したりすることが可能であり、その場合でも温泉検索や詳細ページの閲覧は問題なくご利用いただけます。</p></div></div>` },
+        en: { title: "Cookie Policy", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 Cookie & Local Storage Usage</h2></div><div class="luxury-desc-content"><p>We use cookies and local storage solely to remember your preferred language (English, Korean, Japanese) and theme mode (light/dark) across visits.</p><p>You can disable or delete cookies at any time through your browser settings. Doing so will not restrict your access to exploring hot springs or reading detailed guides.</p></div></div>` }
+      }[lang] || c.ko;
+      wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
+    } catch(e) {}
+  }
+
+  function drawContact(){
+    try {
+      const wrap = $("contact-container"); if (!wrap) return; const lang = S.lang || "ko";
+      const c = {
+        ko: { title: "문의 및 제안", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ 공식 문의 및 제안 접수</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide 운영팀과 소통하고 싶으시거나 새로운 온천 시설 추천, 기존 데이터 수정 요청이 있다면 아래 공식 이메일로 연락 주시기 바랍니다.</p><p><strong>• 이메일 문의:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>보내주신 의견은 신속하게 검토하여 서비스에 반영하겠습니다.</p></div></div>` },
+        ja: { title: "お問い合わせ", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ お問い合わせ・ご提案</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide運営チームへのご連絡、新規温泉施設のリクエスト、掲載データの情報修正依頼などがございましたら下記メールアドレスまでお問い合わせください。</p><p><strong>• 公式メール:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>お寄せいただいたご意見は速やかに確認し、改善に役立てます。</p></div></div>` },
+        en: { title: "Contact Us", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ Inquiries & Feedback</h2></div><div class="luxury-desc-content"><p>If you have questions for the Tokyo Onsen Guide editorial team, wish to recommend a new bathhouse, or need to request data updates, please reach out via email.</p><p><strong>• Official Email:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>We review all feedback promptly to keep our guide accurate and helpful.</p></div></div>` }
+      }[lang] || c.ko;
+      wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
+    } catch(e) {}
   }
 
   function drawAbout(){
@@ -2188,7 +2328,16 @@ const S = {
     wrap.innerHTML=h;
 
     updateSEO();
-    if(S.view==="about")drawAbout();
+        if(S.view==="about")drawAbout();
+    if(S.view==="privacy")drawPrivacy();
+    if(S.view==="terms")drawTerms();
+    if(S.view==="cookies")drawCookies();
+    if(S.view==="contact")drawContact();
+    if(S.view==="advertising")drawAdvertising();
+    // update footerAdvertising i18n label dynamically
+    document.querySelectorAll('[data-i18n="footerAdvertising"]').forEach(el => {
+      el.textContent = { ko: "광고 정책", ja: "広告ポリシー", en: "Advertising Policy" }[S.lang] || "광고 정책";
+    });
     const backBtn=wrap.querySelector("#luxury-back-btn");
     if(backBtn) backBtn.addEventListener("click",function(){go("list");});
     const backBtnLg=wrap.querySelector("#luxury-back-btn-lg");
@@ -2220,7 +2369,7 @@ const S = {
       }
       if(params.has("view")) {
         const pv = params.get("view");
-        if(["home", "list", "detail"].includes(pv)) S.view = pv;
+        if(["home", "list", "detail", "about", "privacy", "terms", "cookies", "contact", "advertising"].includes(pv)) S.view = pv;
         if(params.has("id")) S.detailId = params.get("id");
       }
     } catch(e) {}
@@ -2299,6 +2448,5 @@ fetch('data.json?v=5.3')
     console.error('Failed to load data.json',err);
   });
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1de1af9adad980b',t:'MTc4NDUxMDAyNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
