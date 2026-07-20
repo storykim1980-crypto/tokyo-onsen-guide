@@ -707,9 +707,9 @@
     {
       "id": "myojinnoyu",
       "name": {
-        "ko": "오야다 온천 묘진노유",
-        "en": "Oyada Myojin no Yu",
-        "ja": "おやだ温泉 明神の湯"
+        "ko": "오야타 온천 묘진노유",
+        "ja": "大谷田温泉 明神の湯",
+        "en": "Oyata Onsen Myojin no Yu"
       },
       "area": {
         "ko": "아다치",
@@ -732,14 +732,14 @@
         "ja": "900円～"
       },
       "hours": {
-        "ko": "월~목 10:00~23:30 / 금·토·일 10:00~24:00",
-        "ja": "月~木 10:00~23:30 / 金土日 10:00~24:00",
-        "en": "Mon-Thu 10:00-23:30 / Fri-Sun 10:00-24:00"
+        "ko": "09:00~22:00",
+        "ja": "9:00~22:00",
+        "en": "09:00~22:00"
       },
       "holiday": {
-        "ko": "연중무휴",
-        "en": "Open year-round",
-        "ja": "年中無休"
+        "ko": "홀수달 셋째 화요일",
+        "ja": "奇数月の第3火曜",
+        "en": "3rd Tue of odd months"
       },
       "address": {
         "ko": "도쿄도 아다치구 오야다 1-18-1",
@@ -771,8 +771,8 @@
         }
       ],
       "desc": {
-        "ko": "아다치에 자리한 천연 온천 명소 '오야다 온천 묘진노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 23구에서 느껴지지 않는 본격 온천, 천연 히노키 대욕장, 개방적인 암석 노천탕 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1465m에서 공급되는 단순 온천(저온)을(를) 사용하며, 약 58℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 혈액순환 개선, 소화불량 개선, 불면증 완화, 신경통, 근육통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '오야다 온천 묘진노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "足立区に位置する天然温泉の人気施設「おやだ温泉 明神の湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に23区では感じられない本格温泉、天然檜大浴場、開放的な岩石露天風呂といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1465mから湧き出る単純温泉(低温泉)を使用し、約58℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が血行促進、消化不良改善、不眠症緩和、神経痛、筋肉痛などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。特に、心地よい風を感じながら湯船に浸かれる露天風呂は、都会の喧騒を忘れさせる解放感と深いリラクゼーションを提供します。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。広々としたくつろぎの休憩ラウンジやお食事処、漫画・リラクゼーションスペースなどが充実しており、ご家族連れやご友人、カップル、お一人様まで時間を忘れてゆっくりとおくつろぎいただけます。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「おやだ温泉 明神の湯」で、心温まる至福のひとときをお過ごしください。",
+        "ko": "아다치에 자리한 천연 온천 명소 '오야타 온천 묘진노유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 23구에서 느껴지지 않는 본격 온천, 천연 히노키 대욕장, 개방적인 암석 노천탕 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1465m에서 공급되는 단순 온천(저온)을(를) 사용하며, 약 58℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 혈액순환 개선, 소화불량 개선, 불면증 완화, 신경통, 근육통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '오야타 온천 묘진노유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
+        "ja": "足立区に位置する天然温泉の人気施設「大谷田温泉 明神の湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に23区では感じられない本格温泉、天然檜大浴場、開放的な岩石露天風呂といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1465mから湧き出る単純温泉(低温泉)を使用し、約58℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が血行促進、消化不良改善、不眠症緩和、神経痛、筋肉痛などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。特に、心地よい風を感じながら湯船に浸かれる露天風呂は、都会の喧騒を忘れさせる解放感と深いリラクゼーションを提供します。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。広々としたくつろぎの休憩ラウンジやお食事処、漫画・リラクゼーションスペースなどが充実しており、ご家族連れやご友人、カップル、お一人様まで時間を忘れてゆっくりとおくつろぎいただけます。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「大谷田温泉 明神の湯」で、心温まる至福のひとときをお過ごしください。",
         "en": "Nestled in Adachi, 'Oyada Myojin no Yu' is a highly regarded Natural destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Authentic onsen unlike 23 wards, Giant natural hinoki bath, Open rock open-air bath, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring (low temp) sourced directly from From 1465m underground, kept at an ideal temperature of roughly 58°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Blood circulation, Digestive improvement, Insomnia relief, Neuralgia, Muscle pain, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. Especially noteworthy is the open-air bath area, where guests can breathe in fresh outdoor air and soak in tranquil resort-like surroundings right in the middle of the city.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Oyada Myojin no Yu' promises an exceptional and deeply satisfying hot spring experience."
       },
       "website": "https://www.myojin-no-yu.com/",
@@ -873,7 +873,7 @@
       ],
       "rating": 4.6,
       "reviewCount": 351,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%82%84%E3%81%A0%E6%B8%A9%E6%B3%89%20%E6%98%8E%E7%A5%9E%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E5%A4%A7%E8%B0%B7%E7%94%B01-18-1",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%B0%B7%E7%94%B0%E6%B8%A9%E6%B3%89%20%E6%98%8E%E7%A5%9E%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E5%A4%A7%E8%B0%B7%E7%94%B01-18-1",
       "coords": {
         "lat": 35.7763,
         "lng": 139.8452
@@ -9264,9 +9264,9 @@
         "en": "Nestled in Taito, 'Asakusa ROX Matsuri Yu' is a highly regarded Theme Park Spa destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Skytree-view rotenburo, Jade onsen, Sightseeing combo, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring sourced directly from From 1792m underground, kept at an ideal temperature of roughly 40°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Stress relief, Family health, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. A major standout is the harmonious combination of spacious open-air baths that let you soak under the open sky, alongside invigorating saunas and chilling plunge pools that provide the ultimate thermal contrast therapy.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Asakusa ROX Matsuri Yu' promises an exceptional and deeply satisfying hot spring experience."
       },
       "address": {
-        "ko": "도쿄도 다이토구 아사쿠사",
-        "en": "Asakusa, Taito-ku, Tokyo",
-        "ja": "東京都台東区浅草"
+        "ja": "東京都台東区浅草1-25-15 ROXビル",
+        "ko": "도쿄도 다이토구 아사쿠사 1-25-15 ROX빌딩",
+        "en": "ROX Bldg, 1-25-15 Asakusa, Taito-ku, Tokyo"
       },
       "holiday": {
         "ko": "연중무휴",
@@ -9416,7 +9416,7 @@
       ],
       "rating": 4.4,
       "reviewCount": 2989,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%85%E8%8D%89ROX%E3%81%BE%E3%81%A4%E3%82%8A%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%89"
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%85%E8%8D%89ROX%E3%81%BE%E3%81%A4%E3%82%8A%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%891-25-15%20ROX%E3%83%93%E3%83%AB"
     },
     {
       "id": "n1001",
@@ -9456,9 +9456,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 아사쿠사·료고쿠",
-        "en": "Tokyo, Asakusa/Ryogoku",
-        "ja": "東京都浅草・両国"
+        "ja": "東京都台東区上野7-2-16",
+        "ko": "도쿄도 다이토구 우에노 7-2-16",
+        "en": "7-2-16 Ueno, Taito-ku, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -9574,7 +9574,7 @@
       ],
       "rating": 4.3,
       "reviewCount": 1309,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%82%A6%E3%83%8A%EF%BC%86%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E5%8C%97%E6%AC%A7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%82%A6%E3%83%8A%EF%BC%86%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E5%8C%97%E6%AC%A7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E7-2-16",
       "coords": {
         "lat": 35.7633,
         "lng": 139.716
@@ -9618,9 +9618,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 아사쿠사·료고쿠",
-        "en": "Tokyo, Asakusa/Ryogoku",
-        "ja": "東京都浅草・両国"
+        "ja": "東京都台東区上野",
+        "ko": "도쿄도 다이토구 우에노",
+        "en": "Ueno, Taito-ku, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -9733,7 +9733,7 @@
       ],
       "rating": 4.4,
       "reviewCount": 1551,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BB%E3%83%B3%E3%83%81%E3%83%A5%E3%83%AA%E3%82%AA%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%EF%BC%86%E3%82%B9%E3%83%91%E4%B8%8A%E9%87%8E%E9%A7%85%E5%89%8D%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BB%E3%83%B3%E3%83%81%E3%83%A5%E3%83%AA%E3%82%AA%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%EF%BC%86%E3%82%B9%E3%83%91%E4%B8%8A%E9%87%8E%E9%A7%85%E5%89%8D%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E",
       "coords": {
         "lat": 35.7175,
         "lng": 139.6538
@@ -9912,164 +9912,6 @@
       "rating": 3.6,
       "reviewCount": 525,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%BA%20%E3%82%B9%E3%83%91%E3%83%BB%E3%83%AC%E3%82%B9%E3%82%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-19-2"
-    },
-    {
-      "id": "n1005",
-      "name": {
-        "ko": "Ｔａｂｉｓｔ　東京シティビューホテル",
-        "en": "Ｔａｂｉｓｔ　東京シティビューホテル",
-        "ja": "Ｔａｂｉｓｔ　東京シティビューホテル"
-      },
-      "area": {
-        "ko": "도시마",
-        "ja": "豊島区",
-        "en": "Toshima"
-      },
-      "areaGroup": {
-        "ko": "toshima",
-        "ja": "toshima",
-        "en": "toshima"
-      },
-      "type": {
-        "ko": "온천 여관",
-        "ja": "温泉旅館",
-        "en": "Onsen Ryokan"
-      },
-      "price": {
-        "ko": "1,000円~",
-        "en": "1,000円~",
-        "ja": "1,000円~"
-      },
-      "hours": {
-        "ko": "10:00~22:00",
-        "ja": "10:00~22:00",
-        "en": "10:00~22:00"
-      },
-      "holiday": {
-        "ko": "연중무휴",
-        "en": "Open year-round",
-        "ja": "年中無休"
-      },
-      "address": {
-        "ko": "도쿄도 이케부쿠로·스가모",
-        "en": "Tokyo, Ikebukuro/Sugamo",
-        "ja": "東京都池袋・巣鴨"
-      },
-      "tel": "03-0000-0000",
-      "features": [
-        "night"
-      ],
-      "highlights": [
-        {
-          "ko": "도쿄 온천",
-          "en": "Tokyo Onsen",
-          "ja": "東京温泉"
-        }
-      ],
-      "desc": {
-        "ko": "도시마에 자리한 온천 여관 명소 'Ｔａｂｉｓｔ　東京シティビューホテル'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1745m (자연용출)에서 공급되는 탄산수소염 천을(를) 사용하며, 약 54℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 관절통, 근육통, 불면증, 신경통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 정갈하게 구성된 대욕장 내 다양한 맞춤형 탕들은 각기 다른 물줄기와 온도를 제공하며, 고요하고 편안한 분위기 속에서 진정한 휴식의 가치를 느끼게 해줍니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, 'Ｔａｂｉｓｔ　東京シティビューホテル'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "豊島区に位置する温泉旅館の人気施設「Ｔａｂｉｓｔ　東京シティビューホテル」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に東京温泉といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1745m(自然湧出)から湧き出る炭酸水素塩泉を使用し、約54℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が関節痛、筋肉痛、不眠症、神経痛、疲労回復などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。手入れの行き届いた大浴場内には多彩な浴槽が用意されており、落ち着いた静かな空間の中で心身ともに癒やされる贅沢な時間をお過ごしいただけます。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。広々としたくつろぎの休憩ラウンジやお食事処、漫画・リラクゼーションスペースなどが充実しており、ご家族連れやご友人、カップル、お一人様まで時間を忘れてゆっくりとおくつろぎいただけます。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「Ｔａｂｉｓｔ　東京シティビューホテル」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Toshima, 'Ｔａｂｉｓｔ　東京シティビューホテル' is a highly regarded Ryokan destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Tokyo Onsen, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Bicarbonate spring sourced directly from Natural flow from 1745m, kept at an ideal temperature of roughly 54°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Joint pain, Muscle pain, Insomnia, Neuralgia, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. The spacious main bath room features a variety of specialized soaking tubs, carefully arranged to foster deep relaxation and holistic wellness in a serene environment.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Ｔａｂｉｓｔ　東京シティビューホテル' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "website": "https://onsen.nifty.com/ikebukuro-onsen/onsen020919/",
-      "imageIndex": 5,
-      "image": "images/ryokan-exterior.jpg",
-      "tips": {
-        "ko": [
-          "개인 페이스타올과 바디타올을 미리 준비해 오시면 별도의 비용 없이 편리하게 이용하실 수 있습니다.",
-          "운영시간(10:00~22:00) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "목욕 후 휴게실이나 만화 코너에서 느긋하게 휴식을 취하며 온천욕의 따뜻한 여운을 만끽하는 일정을 추천합니다.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "ご自身のフェイスタオルやバスタオルをご持参いただくと、余計な費用をかけずにスムーズにご利用いただけます。",
-          "営業時間（10:00~22:00）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "湯上がりの後は、休憩ラウンジや漫画コーナーでくつろぎながら、心地よい温まりの余韻を楽しむゆとりあるスケジュールをおすすめします。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "We recommend bringing your own face towel and bath towel from home for added convenience and savings.",
-          "Check operating hours (10:00~22:00) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Take extra time after your bath to relax in the lounge or reading corner, savoring the deeply soothing afterglow of your soak.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '도쿄 온천' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'탄산수소염 천' 수질을 자랑하며, 입욕 시 관절통, 근육통, 불면증, 신경통, 피로회복 등에 탁월한 효능을 기대할 수 있습니다.",
-          "온천 여관로서 1,000円~의 부담 없는 입장료로 수준 높은 휴식과 목욕을 만끽할 수 있는 핫플레이스입니다.",
-          "철저한 청결 유지와 정기적인 수질 관리로 언제나 쾌적하고 안심할 수 있는 목욕 환경을 제공합니다."
-        ],
-        "ja": [
-          "施設自慢の「東京温泉」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「炭酸水素塩泉」の泉質を誇り、入浴によって関節痛、筋肉痛、不眠症、神経痛、疲労回復などの嬉しい効果が期待できます。",
-          "温泉旅館として、1,000円~の気軽な料金で高品質な癒やしとお風呂を満喫できる人気スポットです。",
-          "徹底した清掃と定期的な水質管理により、いつでも清潔で安心してお過ごしいただける入浴環境を提供します。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Tokyo Onsen', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Bicarbonate spring' thermal water, known for promoting Joint pain, Muscle pain, Insomnia, Neuralgia, Fatigue recovery and long-lasting body warmth.",
-          "As a premier Ryokan, it offers an exceptional bathing and relaxation experience at 1,000円~.",
-          "Rigorous hygiene standards and continuous water monitoring ensure a spotless, safe environment for all visitors."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 1745m (자연용출)",
-          "quality": "탄산수소염 천",
-          "temp": "54℃",
-          "benefits": "관절통, 근육통, 불면증, 신경통, 피로회복"
-        },
-        "en": {
-          "source": "Natural flow from 1745m",
-          "quality": "Bicarbonate spring",
-          "temp": "54°C",
-          "benefits": "Joint pain, Muscle pain, Insomnia, Neuralgia, Fatigue recovery"
-        },
-        "ja": {
-          "source": "地下1745m(自然湧出)",
-          "quality": "炭酸水素塩泉",
-          "temp": "54℃",
-          "benefits": "関節痛、筋肉痛、不眠症、神経痛、疲労回復"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "152대 (입장 시 물료)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "en": {
-          "parking": "152 spaces (free)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "ja": {
-          "parking": "152台(無料)",
-          "shuttle": "",
-          "highway": ""
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "yukata",
-        "restaurant",
-        "restArea"
-      ],
-      "rating": 4.7,
-      "reviewCount": 2289,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%EF%BC%B4%EF%BD%81%EF%BD%82%EF%BD%89%EF%BD%93%EF%BD%94%E3%80%80%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA",
-      "coords": {
-        "lat": 35.7241,
-        "lng": 139.8808
-      }
     },
     {
       "id": "n1006",
@@ -10441,9 +10283,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 다마·후추·조후",
-        "en": "Tokyo, Tama/Fuchu/Chofu",
-        "ja": "東京都多摩・府中・調布"
+        "ja": "東京都多摩市永山1-3-4",
+        "ko": "도쿄도 다마시 나가야마 1-3-4",
+        "en": "1-3-4 Nagayama, Tama-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -10556,7 +10398,7 @@
       ],
       "rating": 3.6,
       "reviewCount": 625,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E5%B1%B1%E5%81%A5%E5%BA%B7%E3%83%A9%E3%83%B3%E3%83%89%20%E7%AB%B9%E5%8F%96%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%9A%E6%91%A9%E3%83%BB%E5%BA%9C%E4%B8%AD%E3%83%BB%E8%AA%BF%E5%B8%83",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E5%B1%B1%E5%81%A5%E5%BA%B7%E3%83%A9%E3%83%B3%E3%83%89%20%E7%AB%B9%E5%8F%96%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%9A%E6%91%A9%E5%B8%82%E6%B0%B8%E5%B1%B11-3-4",
       "coords": {
         "lat": 35.677,
         "lng": 139.6892
@@ -10600,9 +10442,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 오쿠타마·히노하라",
-        "en": "Tokyo, Okutama/Hinohara",
-        "ja": "東京都奥多摩・檜原村"
+        "ja": "東京都西多摩郡奥多摩町",
+        "ko": "도쿄도 니시타마군 오쿠타마마치",
+        "en": "Okutama-machi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -10715,7 +10557,7 @@
       ],
       "rating": 3.7,
       "reviewCount": 871,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%88%A5%E8%8D%98%E6%97%85%E9%A4%A8%E3%80%80%E9%8C%A6%E6%B1%9F%E9%96%A3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A5%A5%E5%A4%9A%E6%91%A9%E3%83%BB%E6%AA%9C%E5%8E%9F%E6%9D%91",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%88%A5%E8%8D%98%E6%97%85%E9%A4%A8%E3%80%80%E9%8C%A6%E6%B1%9F%E9%96%A3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E5%A5%A5%E5%A4%9A%E6%91%A9%E7%94%BA",
       "coords": {
         "lat": 35.6795,
         "lng": 139.6967
@@ -10759,9 +10601,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 오쿠타마·히노하라",
-        "en": "Tokyo, Okutama/Hinohara",
-        "ja": "東京都奥多摩・檜原村"
+        "ja": "東京都西多摩郡奥多摩町氷川",
+        "ko": "도쿄도 니시타마군 오쿠타마마치 히카와",
+        "en": "Hikawa, Okutama-machi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -10875,7 +10717,7 @@
       ],
       "rating": 4.5,
       "reviewCount": 1489,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E5%B7%9D%E9%83%B7%E9%BA%BB%E8%91%89%E3%81%AE%E6%B9%AF%E3%80%80%E4%B8%89%E6%B2%B3%E5%B1%8B%E6%97%85%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A5%A5%E5%A4%9A%E6%91%A9%E3%83%BB%E6%AA%9C%E5%8E%9F%E6%9D%91",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E5%B7%9D%E9%83%B7%E9%BA%BB%E8%91%89%E3%81%AE%E6%B9%AF%E3%80%80%E4%B8%89%E6%B2%B3%E5%B1%8B%E6%97%85%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E5%A5%A5%E5%A4%9A%E6%91%A9%E7%94%BA%E6%B0%B7%E5%B7%9D",
       "coords": {
         "lat": 35.682,
         "lng": 139.7042
@@ -11078,9 +10920,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 오메·아키루노",
-        "en": "Tokyo, Ome/Akiruno",
-        "ja": "東京都青梅・あきる野"
+        "ja": "東京都青梅市",
+        "ko": "도쿄도 오메시",
+        "en": "Ome-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -11194,7 +11036,7 @@
       ],
       "rating": 4.8,
       "reviewCount": 2311,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8F%AF%E3%81%AE%E5%AE%BF%E3%80%80%E3%82%84%E3%81%BE%E3%81%AA%E3%81%8B%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E3%83%BB%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8F%AF%E3%81%AE%E5%AE%BF%E3%80%80%E3%82%84%E3%81%BE%E3%81%AA%E3%81%8B%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82",
       "coords": {
         "lat": 35.6895,
         "lng": 139.6892
@@ -11238,9 +11080,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 오메·아키루노",
-        "en": "Tokyo, Ome/Akiruno",
-        "ja": "東京都青梅・あきる野"
+        "ja": "東京都青梅市御岳山",
+        "ko": "도쿄도 오메시 미타케산",
+        "en": "Mitakesan, Ome-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -11353,7 +11195,7 @@
       ],
       "rating": 3.5,
       "reviewCount": 2589,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%BF%E5%9D%8A%E3%80%80%E8%83%BD%E4%BF%9D%E5%88%A9%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E3%83%BB%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%BF%E5%9D%8A%E3%80%80%E8%83%BD%E4%BF%9D%E5%88%A9%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82%E5%BE%A1%E5%B2%B3%E5%B1%B1",
       "coords": {
         "lat": 35.692,
         "lng": 139.6967
@@ -11397,9 +11239,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 오메·아키루노",
-        "en": "Tokyo, Ome/Akiruno",
-        "ja": "東京都青梅・あきる野"
+        "ja": "東京都青梅市",
+        "ko": "도쿄도 오메시",
+        "en": "Ome-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -11510,7 +11352,7 @@
       ],
       "rating": 3.6,
       "reviewCount": 2869,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E5%B1%B1%E8%8D%98%EF%BC%9C%E6%9D%B1%E4%BA%AC%E9%83%BD%EF%BC%9E%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E3%83%BB%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E5%B1%B1%E8%8D%98%EF%BC%9C%E6%9D%B1%E4%BA%AC%E9%83%BD%EF%BC%9E%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82",
       "coords": {
         "lat": 35.6945,
         "lng": 139.7042
@@ -11554,9 +11396,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 하치오지·히노",
-        "en": "Tokyo, Hachioji/Hino",
-        "ja": "東京都八王子・日野"
+        "ja": "東京都羽村市",
+        "ko": "도쿄도 하무라시",
+        "en": "Hamura-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -11666,7 +11508,7 @@
       ],
       "rating": 3.8,
       "reviewCount": 715,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%97%E3%83%A9%E3%82%B6%E3%82%A4%E3%83%B3%E7%BE%BD%E6%9D%91%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E3%83%BB%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%97%E3%83%A9%E3%82%B6%E3%82%A4%E3%83%B3%E7%BE%BD%E6%9D%91%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%BE%BD%E6%9D%91%E5%B8%82",
       "coords": {
         "lat": 35.6995,
         "lng": 139.6817
@@ -12015,9 +11857,9 @@
         "ja": "1900円~"
       },
       "hours": {
-        "ko": "10:00~22:00",
-        "ja": "10:00~22:00",
-        "en": "10:00~22:00"
+        "ko": "11:00~익일 09:00",
+        "ja": "11:00~翌9:00",
+        "en": "11:00~9:00 (next day)"
       },
       "holiday": {
         "ko": "연중무휴",
@@ -12025,9 +11867,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 긴자·신바시",
-        "en": "Tokyo, Ginza/Shinbashi",
-        "ja": "東京都銀座・新橋"
+        "ja": "東京都中央区銀座7-2-18 グランベルスクエア4F",
+        "ko": "도쿄도 주오구 긴자 7-2-18 그랑벨스퀘어 4F",
+        "en": "4F Granbell Square, 7-2-18 Ginza, Chuo-ku, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -12140,7 +11982,7 @@
       ],
       "rating": 4.2,
       "reviewCount": 2661,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SPA%EF%BC%86SAUNA%20%E3%82%B3%E3%83%AA%E3%83%89%E3%83%BC%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SPA%EF%BC%86SAUNA%20%E3%82%B3%E3%83%AA%E3%83%89%E3%83%BC%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A77-2-18%20%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%99%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A24F",
       "coords": {
         "lat": 35.7733,
         "lng": 139.746
@@ -12998,9 +12840,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 기치조지·무사시노·미타카",
-        "en": "Tokyo, Kichijoji/Musashino/Mitaka",
-        "ja": "東京都吉祥寺・武蔵野・三鷹"
+        "ja": "東京都三鷹市下連雀3-45-2",
+        "ko": "도쿄도 미타카시 시모렌자쿠 3-45-2",
+        "en": "3-45-2 Shimorenjaku, Mitaka-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -13110,7 +12952,7 @@
       ],
       "rating": 4.7,
       "reviewCount": 501,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FLOBA%EF%BC%88%E3%83%95%E3%83%AD%E3%83%BC%E3%83%90%EF%BC%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%90%89%E7%A5%A5%E5%AF%BA%E3%83%BB%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%BB%E4%B8%89%E9%B7%B9",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FLOBA%EF%BC%88%E3%83%95%E3%83%AD%E3%83%BC%E3%83%90%EF%BC%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%89%E9%B7%B9%E5%B8%82%E4%B8%8B%E9%80%A3%E9%9B%803-45-2",
       "coords": {
         "lat": 35.6995,
         "lng": 139.6817
@@ -13144,9 +12986,9 @@
         "ja": "980円~"
       },
       "hours": {
-        "ko": "10:00~22:00",
-        "ja": "10:00~22:00",
-        "en": "10:00~22:00"
+        "ko": "08:00~24:00",
+        "ja": "8:00~24:00",
+        "en": "08:00~24:00"
       },
       "holiday": {
         "ko": "연중무휴",
@@ -13154,9 +12996,9 @@
         "ja": "年中無休"
       },
       "address": {
-        "ko": "도쿄도 기치조지·무사시노·미타카",
-        "en": "Tokyo, Kichijoji/Musashino/Mitaka",
-        "ja": "東京都吉祥寺・武蔵野・三鷹"
+        "ja": "東京都武蔵野市吉祥寺本町1-8-3 コスモビルB1F",
+        "ko": "도쿄도 무사시노시 기치조지혼초 1-8-3 코스모빌딩 B1F",
+        "en": "B1F Cosmo Bldg, 1-8-3 Kichijoji-Honcho, Musashino-shi, Tokyo"
       },
       "tel": "03-0000-0000",
       "features": [
@@ -13269,186 +13111,11 @@
       ],
       "rating": 4.8,
       "reviewCount": 855,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MONSTER%20WORK%EF%BC%86SAUNA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%90%89%E7%A5%A5%E5%AF%BA%E3%83%BB%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%BB%E4%B8%89%E9%B7%B9",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MONSTER%20WORK%EF%BC%86SAUNA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82%E5%90%89%E7%A5%A5%E5%AF%BA%E6%9C%AC%E7%94%BA1-8-3%20%E3%82%B3%E3%82%B9%E3%83%A2%E3%83%93%E3%83%ABB1F",
       "coords": {
         "lat": 35.702,
         "lng": 139.6892
       }
-    },
-    {
-      "id": "keio_takao_gokuraku",
-      "name": {
-        "ko": "게이오 다카오산 온천 고쿠라쿠유",
-        "en": "Keio Takao Onsen Gokurakuyu",
-        "ja": "京王高尾山温泉 極楽湯"
-      },
-      "area": {
-        "ko": "하치오지·히노",
-        "ja": "八王子・日野",
-        "en": "Hachioji-Hino"
-      },
-      "type": {
-        "ko": "천연 온천",
-        "ja": "天然温泉",
-        "en": "Natural Hot Spring"
-      },
-      "desc": {
-        "ko": "하치오지·히노에 자리한 천연 온천 명소 '게이오 다카오산 온천 고쿠라쿠유'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 다카오산 절경, 숲속 노천탕, 암반욕 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 1111m에서 공급되는 단순 온천(저온)을(를) 사용하며, 약 38℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 불면증 완화, 관절통, 근육통, 신경통, 피로회복 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 무엇보다 계절의 변화와 맑은 공기를 만끽할 수 있는 탁 트인 노천탕과, 땀을 흠뻑 배출하며 심신을 재충전할 수 있는 고온 사우나 및 시원한 냉탕이 완비되어 있어 최상의 온·냉 교대욕 코스를 경험할 수 있습니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 청결하게 유지되는 탈의실과 파우더룸, 그리고 꼭 필요한 욕실 어메니티들이 알차게 갖춰져 있어 짐을 최소화한 가벼운 차림으로도 언제든 부담 없이 들를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '게이오 다카오산 온천 고쿠라쿠유'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "八王子・日野に位置する天然温泉の人気施設「京王高尾山温泉 極楽湯」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特に高尾山絶景、森の露天風呂、岩盤浴といった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下1111mから湧き出る単純温泉(低温泉)を使用し、約38℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が不眠症緩和、関節痛、筋肉痛、神経痛、疲労回復などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。中でも、外気を感じながら四季折々の風情を楽しめる開放的な露天風呂と、しっかり汗を流して心身をリフレッシュできる本格サウナ・冷水風呂が完備されており、極上の温冷交代浴をお楽しみいただけます。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。清潔感のある脱衣所やパウダールーム、必要なアメニティ類がしっかりと揃っているため、荷物を少なくした手ぶら感覚でのご来店でも安心です。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「京王高尾山温泉 極楽湯」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Kita, 'Keio Takao Onsen Gokurakuyu' is a highly regarded Natural Hot Spring destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Mt. Takao scenery, Forest rotenburo, Rock bathing, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Simple thermal spring (low temp) sourced directly from From 1111m underground, kept at an ideal temperature of roughly 38°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Insomnia relief, Joint pain, Muscle pain, Neuralgia, Fatigue recovery, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. A major standout is the harmonious combination of spacious open-air baths that let you soak under the open sky, alongside invigorating saunas and chilling plunge pools that provide the ultimate thermal contrast therapy.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. Featuring spotless changing rooms, well-lit vanity stations, and essential grooming amenities, travelers can drop by conveniently with minimal luggage. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Keio Takao Onsen Gokurakuyu' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "address": {
-        "ko": "도쿄도 하치오지시 다카오마치",
-        "en": "Takaomachi, Hachioji, Tokyo",
-        "ja": "東京都八王子市高尾町"
-      },
-      "holiday": {
-        "ko": "연중무휴",
-        "en": "Open year-round",
-        "ja": "年中無休"
-      },
-      "price": {
-        "ko": "대인 주말 1,200엔~",
-        "en": "Adults from ¥1,200 on weekends",
-        "ja": "大人土日1,200円～"
-      },
-      "hours": {
-        "ko": "10:00~23:00",
-        "en": "10:00-23:00",
-        "ja": "10:00～23:00"
-      },
-      "highlights": [
-        {
-          "ko": "다카오산 절경",
-          "en": "Mt. Takao scenery",
-          "ja": "高尾山絶景"
-        },
-        {
-          "ko": "숲속 노천탕",
-          "en": "Forest rotenburo",
-          "ja": "森の露天風呂"
-        },
-        {
-          "ko": "암반욕",
-          "en": "Rock bathing",
-          "ja": "岩盤浴"
-        }
-      ],
-      "features": [
-        "rotenburo",
-        "sauna",
-        "rock_bath",
-        "nature"
-      ],
-      "website": "https://www.gokurakuyu.ne.jp/takao/",
-      "image": "images/autumn-leaves-onsen.jpg",
-      "coords": {
-        "lat": 35.6254,
-        "lng": 139.2432
-      },
-      "areaGroup": {
-        "ko": "hachioji-hino",
-        "ja": "hachioji-hino",
-        "en": "hachioji-hino"
-      },
-      "tips": {
-        "ko": [
-          "수건 대여 서비스(기본 포함 또는 유료 대여)가 마련되어 있어 짐 없이 가벼운 차림으로도 방문하실 수 있습니다.",
-          "운영시간({'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "사우나 이용 전후로는 수분을 충분히 섭취해 주시고, 사우나 이용에 따라 전용 수건이나 입욕권이 필요할 수 있으므로 카운터에서 확인해 주세요.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "タオルレンタルサービス（料金込みまたは有料レンタル）があるため、手ぶらでお気軽にご来店いただけます。",
-          "営業時間（{'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "サウナご利用前後はこまめに水分補給を行い、施設によってはサウナ利用券や専用タオルが必要となるため受付でご確認ください。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "Towel rental services are available (included or for a rental fee), making it convenient to drop by empty-handed.",
-          "Check operating hours ({'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Stay well-hydrated when enjoying the saunas. Note that some facilities may require a separate sauna wristband or towel from the front desk.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '다카오산 절경' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '숲속 노천탕' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '암반욕' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'단순 온천(저온)' 수질을 자랑하며, 입욕 시 불면증 완화, 관절통, 근육통, 신경통, 피로회복 등에 탁월한 효능을 기대할 수 있습니다.",
-          "땀을 흠뻑 배출하여 노폐물을 씻어내는 사우나와 시원한 냉탕이 갖춰져 온·냉 교대욕을 즐기기에 최적입니다."
-        ],
-        "ja": [
-          "施設自慢の「高尾山絶景」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「森の露天風呂」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「岩盤浴」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「単純温泉(低温泉)」の泉質を誇り、入浴によって不眠症緩和、関節痛、筋肉痛、神経痛、疲労回復などの嬉しい効果が期待できます。",
-          "汗を流して老廃物を排出するサウナと冷水風呂が完備されており、極上の温冷交代浴がお楽しみいただけます。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Mt. Takao scenery', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Forest rotenburo', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Rock bathing', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Simple thermal spring (low temp)' thermal water, known for promoting Insomnia relief, Joint pain, Muscle pain, Neuralgia, Fatigue recovery and long-lasting body warmth.",
-          "Equipped with invigorating saunas and crisp cold plunge baths, perfect for thermal cycling and deep stress relief."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 1111m",
-          "quality": "단순 온천(저온)",
-          "temp": "38℃",
-          "benefits": "불면증 완화, 관절통, 근육통, 신경통, 피로회복"
-        },
-        "en": {
-          "source": "From 1111m underground",
-          "quality": "Simple thermal spring (low temp)",
-          "temp": "38°C",
-          "benefits": "Insomnia relief, Joint pain, Muscle pain, Neuralgia, Fatigue recovery"
-        },
-        "ja": {
-          "source": "地下1111m",
-          "quality": "単純温泉(低温泉)",
-          "temp": "38℃",
-          "benefits": "不眠症緩和、関節痛、筋肉痛、神経痛、疲労回復"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "188대 (입장 시 물료)",
-          "shuttle": "셔틀버스 운행 (공식 사이트 확인)",
-          "highway": ""
-        },
-        "en": {
-          "parking": "188 spaces (free)",
-          "shuttle": "Shuttle bus available",
-          "highway": ""
-        },
-        "ja": {
-          "parking": "188台(無料)",
-          "shuttle": "シャトルバス運行(公式サイト要確認)",
-          "highway": ""
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "sauna",
-        "coldBath",
-        "openAirBath",
-        "wifi",
-        "rentalTowel"
-      ],
-      "rating": 3.6,
-      "reviewCount": 1019,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E7%8E%8B%E9%AB%98%E5%B0%BE%E5%B1%B1%E6%B8%A9%E6%B3%89%20%E6%A5%B5%E6%A5%BD%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82%E9%AB%98%E5%B0%BE%E7%94%BA",
-      "imageIndex": 1
     },
     {
       "id": "n3018",
@@ -15159,178 +14826,6 @@
       "rating": 4.6,
       "reviewCount": 469,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%8D%85%E5%AD%90%E3%81%AE%E6%B9%AF%E3%80%81%E3%81%A4%E3%81%8D%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E7%AF%89%E5%9C%B06-23-8"
-    },
-    {
-      "id": "roten_garden",
-      "name": {
-        "ko": "천연 온천 로텐 가든",
-        "en": "Tennen Onsen Roten Garden",
-        "ja": "天然温泉ロテンガーデン"
-      },
-      "area": {
-        "ko": "마치다",
-        "ja": "町田",
-        "en": "Machida"
-      },
-      "type": {
-        "ko": "천연 온천",
-        "ja": "天然温泉",
-        "en": "Natural Hot Spring"
-      },
-      "desc": {
-        "ko": "마치다에 자리한 천연 온천 명소 '천연 온천 로텐 가든'은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 가족 단위 노천탕, 만화 1만 권, 키즈 코너 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 있어 지역 주민과 여행객 모두에게 사랑받고 있습니다. 깨끗하게 유지되는 시설과 아늑한 분위기, 따뜻한 환대가 어우러져 처음 방문하는 분들도 일본 전통 온천 및 센토 문화의 진수를 편안하게 만끽할 수 있습니다.\n\n이곳의 자랑인 온천수는 지하 669m에서 공급되는 탄산수소염 천을(를) 사용하며, 약 72℃의 최적 온도에서 몸의 긴장을 부드럽게 풀어줍니다. 물에 풍부하게 담긴 성분들은 신경통, 근육통, 관절통 등에 탁월한 도움을 주어 입욕 후 오랫동안 몸이 따뜻하고 개운함이 지속됩니다. 특히 야외의 맑은 공기와 풍경을 감상하며 탕에 몸을 담글 수 있는 노천탕은 도심 속 휴양지에 온 듯한 탁 트인 해방감과 깊은 힐링을 선사합니다.\n\n목욕을 마친 이후에도 여유로운 여가 시간을 즐길 수 있도록 이용객의 편의를 고려한 다채로운 시설이 준비되어 있습니다. 넓고 쾌적한 휴게 공간을 비롯해 정갈한 식사를 즐길 수 있는 식당, 만화 및 휴식 코너가 마련되어 있어 가족이나 친구, 연인, 혼자 방문한 여행객 모두가 시간 가는 줄 모르고 편안하게 머무를 수 있습니다. 도쿄 여행 일정이나 바쁜 업무 후 몸과 마음을 새롭게 리프레시할 수 있는 최적의 명소, '천연 온천 로텐 가든'에서 특별하고 따뜻한 온천욕의 추억을 만들어 보시기 바랍니다.",
-        "ja": "町田に位置する天然温泉の人気施設「天然温泉ロテンガーデン」は、忙しい日常から離れて心地よい癒やしを味わえる特別な空間です。特にファミリー露天風呂、漫画1万冊、キッズコーナーといった魅力的な特長を備えており、地元の方々から観光客まで幅広く愛されています。行き届いた清掃と落ち着いた雰囲気、そして温かなおもてなしが融合し、初めて訪れる方でも日本の伝統的なお風呂文化を存分に堪能していただけます。\n\n自慢のお湯は地下669mから湧き出る炭酸水素塩泉を使用し、約72℃の絶妙な温度で体の芯までしっかりと温めてくれます。豊かな温泉成分が神経痛、筋肉痛、関節痛などに優れた効果をもたらし、湯上がり後もポカポカとした心地よさと爽快感が持続します。特に、心地よい風を感じながら湯船に浸かれる露天風呂は、都会の喧騒を忘れさせる解放感と深いリラクゼーションを提供します。\n\nお風呂上がりもゆったりと充実した時間をお過ごしいただけるよう、利用者の目線に立った快適なアメニティと設備が整っています。広々としたくつろぎの休憩ラウンジやお食事処、漫画・リラクゼーションスペースなどが充実しており、ご家族連れやご友人、カップル、お一人様まで時間を忘れてゆっくりとおくつろぎいただけます。東京での観光や仕事帰りに疲れた心と体をリフレッシュするのに最適な「天然温泉ロテンガーデン」で、心温まる至福のひとときをお過ごしください。",
-        "en": "Nestled in Machida, 'Tennen Onsen Roten Garden' is a highly regarded Natural Hot Spring destination offering a peaceful and rejuvenating escape from bustling urban life. Renowned for signature highlights such as Family open-air bath, 10,000 manga volumes, Kids corner, the facility attracts both neighborhood regulars and visitors from around the world. With its thoughtfully maintained interior, welcoming atmosphere, and genuine hospitality, guests can effortlessly relax and experience the very best of Japanese bathing culture.\n\nThe thermal waters feature Bicarbonate spring sourced directly from From 669m underground, kept at an ideal temperature of roughly 72°C to gently ease muscle tension and soothe away stress. Rich in beneficial minerals, the baths aid in Neuralgia, Muscle pain, Joint pain, ensuring bathers emerge feeling revitalized and refreshed with long-lasting warmth. Especially noteworthy is the open-air bath area, where guests can breathe in fresh outdoor air and soak in tranquil resort-like surroundings right in the middle of the city.\n\nBeyond the bathhouse itself, the facility offers comprehensive amenities and thoughtfully designed lounge areas to ensure a delightful post-bath experience. With spacious relaxation zones, on-site dining options, and entertainment corners, solo visitors, couples, and families alike can comfortably linger and unwind for hours. Whether unwinding after a day of sightseeing or taking a relaxing weekend break, 'Tennen Onsen Roten Garden' promises an exceptional and deeply satisfying hot spring experience."
-      },
-      "address": {
-        "ko": "도쿄도 마치다시",
-        "en": "Machida, Tokyo",
-        "ja": "東京都町田市"
-      },
-      "holiday": {
-        "ko": "연중무휴",
-        "en": "Open year-round",
-        "ja": "年中無休"
-      },
-      "price": {
-        "ko": "대인 주말 1,100엔~",
-        "en": "Adults from ¥1,100 on weekends",
-        "ja": "大人土日1,100円～"
-      },
-      "hours": {
-        "ko": "10:00~23:00",
-        "en": "10:00-23:00",
-        "ja": "10:00～23:00"
-      },
-      "highlights": [
-        {
-          "ko": "가족 단위 노천탕",
-          "en": "Family open-air bath",
-          "ja": "ファミリー露天風呂"
-        },
-        {
-          "ko": "만화 1만 권",
-          "en": "10,000 manga volumes",
-          "ja": "漫画1万冊"
-        },
-        {
-          "ko": "키즈 코너",
-          "en": "Kids corner",
-          "ja": "キッズコーナー"
-        }
-      ],
-      "features": [
-        "rotenburo",
-        "family",
-        "manga",
-        "kids"
-      ],
-      "website": "https://www.rotengarden.com/",
-      "image": "images/village-lounge.jpg",
-      "coords": {
-        "lat": 35.5484,
-        "lng": 139.4467
-      },
-      "areaGroup": {
-        "ko": "machida",
-        "ja": "machida",
-        "en": "machida"
-      },
-      "tips": {
-        "ko": [
-          "수건 대여 서비스(기본 포함 또는 유료 대여)가 마련되어 있어 짐 없이 가벼운 차림으로도 방문하실 수 있습니다.",
-          "운영시간({'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}) 및 휴무 여부를 사전에 확인하시고, 주말 혼잡 시간을 피해 평일 오전이나 저녁에 방문하시면 더욱 한가롭게 즐기실 수 있습니다.",
-          "욕조에 들어가기 전에는 반드시 샤워 코너에서 비누로 몸을 깨끗이 씻고 입장하며, 수건이 탕 물에 닿지 않게 하는 것이 기본 예절입니다.",
-          "목욕 후 휴게실이나 만화 코너에서 느긋하게 휴식을 취하며 온천욕의 따뜻한 여운을 만끽하는 일정을 추천합니다.",
-          "문신(타투)이 있는 경우 시설 규정에 따라 커버 스티커 부착이 필수이거나 입장이 제한될 수 있으므로 방문 전 공식 안내를 확인해 주세요."
-        ],
-        "ja": [
-          "タオルレンタルサービス（料金込みまたは有料レンタル）があるため、手ぶらでお気軽にご来店いただけます。",
-          "営業時間（{'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}）や休館日を事前にご確認いただき、週末の混雑を避けて平日午前や夜間に訪れるとよりゆったり過ごせます。",
-          "湯船に入る前には必ず洗い場で体をきれいに洗ってから入室し、タオルを浴槽のお湯につけないのが日本の大切なお風呂マナーです。",
-          "湯上がりの後は、休憩ラウンジや漫画コーナーでくつろぎながら、心地よい温まりの余韻を楽しむゆとりあるスケジュールをおすすめします。",
-          "タトゥー（刺青）をお持ちの方は、カバーシールの着用が必要となる場合や入館制限があるため、事前に公式情報をご確認ください。"
-        ],
-        "en": [
-          "Towel rental services are available (included or for a rental fee), making it convenient to drop by empty-handed.",
-          "Check operating hours ({'ko': '10:00~23:00', 'en': '10:00-23:00', 'ja': '10:00～23:00'}) and regular closing dates before visiting. Weekday mornings or late evenings offer a quieter, more peaceful atmosphere.",
-          "Always wash and rinse thoroughly at the shower stations before entering the tubs, and ensure your towels never touch the bath water.",
-          "Take extra time after your bath to relax in the lounge or reading corner, savoring the deeply soothing afterglow of your soak.",
-          "If you have tattoos, please check official entry guidelines beforehand, as some establishments require cover stickers or have entry restrictions."
-        ]
-      },
-      "recommendPoints": {
-        "ko": [
-          "이곳만의 자랑인 '가족 단위 노천탕' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '만화 1만 권' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "이곳만의 자랑인 '키즈 코너' 시설 및 환경을 통해 특별하고 차별화된 입욕 경험을 누릴 수 있습니다.",
-          "'탄산수소염 천' 수질을 자랑하며, 입욕 시 신경통, 근육통, 관절통 등에 탁월한 효능을 기대할 수 있습니다.",
-          "도심 속에서도 상쾌한 야외 공기를 마시며 힐링할 수 있는 개방적인 노천탕 공간이 완비되어 있습니다."
-        ],
-        "ja": [
-          "施設自慢の「ファミリー露天風呂」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「漫画1万冊」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "施設自慢の「キッズコーナー」を通じて、特別で心地よい入浴体験をお楽しみいただけます。",
-          "「炭酸水素塩泉」の泉質を誇り、入浴によって神経痛、筋肉痛、関節痛などの嬉しい効果が期待できます。",
-          "都会にいながら心地よい外気を感じてリラックスできる、開放的な露天風呂スペースを完備しています。"
-        ],
-        "en": [
-          "Enjoy our signature feature, 'Family open-air bath', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, '10,000 manga volumes', designed to provide a truly memorable and relaxing spa environment.",
-          "Enjoy our signature feature, 'Kids corner', designed to provide a truly memorable and relaxing spa environment.",
-          "Boasting 'Bicarbonate spring' thermal water, known for promoting Neuralgia, Muscle pain, Joint pain and long-lasting body warmth.",
-          "Features a relaxing outdoor open-air bath where you can enjoy fresh breezes and peaceful resort vibes."
-        ]
-      },
-      "springData": {
-        "ko": {
-          "source": "지하 669m",
-          "quality": "탄산수소염 천",
-          "temp": "72℃",
-          "benefits": "신경통, 근육통, 관절통"
-        },
-        "en": {
-          "source": "From 669m underground",
-          "quality": "Bicarbonate spring",
-          "temp": "72°C",
-          "benefits": "Neuralgia, Muscle pain, Joint pain"
-        },
-        "ja": {
-          "source": "地下669m",
-          "quality": "炭酸水素塩泉",
-          "temp": "72℃",
-          "benefits": "神経痛、筋肉痛、関節痛"
-        }
-      },
-      "access": {
-        "ko": {
-          "parking": "36대 (입장 시 물료)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "en": {
-          "parking": "36 spaces (free)",
-          "shuttle": "",
-          "highway": ""
-        },
-        "ja": {
-          "parking": "36台(無料)",
-          "shuttle": "",
-          "highway": ""
-        }
-      },
-      "amenities": [
-        "shampoo",
-        "bodySoap",
-        "hairDryer",
-        "locker",
-        "openAirBath",
-        "rentalTowel",
-        "manga"
-      ],
-      "rating": 4.1,
-      "reviewCount": 141,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%AD%E3%83%86%E3%83%B3%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%94%BA%E7%94%B0%E5%B8%82"
     },
     {
       "id": "izumi_tenku_haneda",
@@ -21478,6 +20973,737 @@
       },
       "website": "",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%9F%8E%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E5%93%81%E5%B7%9D2-18-4"
+    },
+    {
+      "id": "marushin_spa",
+      "name": {
+        "ko": "덴쿠노아지트 마루신스파",
+        "ja": "天空のアジト マルシンスパ",
+        "en": "Marushin Spa"
+      },
+      "area": {
+        "ko": "시부야",
+        "ja": "渋谷区",
+        "en": "Shibuya"
+      },
+      "areaGroup": {
+        "ko": "shibuya",
+        "ja": "shibuya",
+        "en": "shibuya"
+      },
+      "type": {
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都渋谷区笹塚1-32-25 笹塚センタービル10F",
+        "ko": "도쿄도 시부야구 사사즈카 1-32-25 10F",
+        "en": "10F, 1-32-25 Sasazuka, Shibuya-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sauna",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "빌딩 10층 \"천공의 아지트\"",
+          "ja": "ビル10階の「天空のアジト」",
+          "en": "Rooftop \"sky hideout\" sauna"
+        },
+        {
+          "ko": "사우나 명소",
+          "ja": "サウナの名店",
+          "en": "Renowned sauna spot"
+        },
+        {
+          "ko": "심야 영업",
+          "ja": "深夜営業",
+          "en": "Open late night"
+        }
+      ],
+      "desc": {
+        "ko": "시부야에 자리한 도심형 스파 '덴쿠노아지트 마루신스파'은(는) 사사즈카역 앞 빌딩 10층의 사우나 명소로, 외기욕 공간에서 하늘을 보며 쉬는 \"천공의 아지트\" 콘셉트로 유명합니다.",
+        "ja": "渋谷区に位置する都市型スパ「天空のアジト マルシンスパ」は、笹塚駅前ビル10階のサウナの名店で、空を望む外気浴スペース「天空のアジト」で知られます。",
+        "en": "Located in Shibuya, Marushin Spa is a renowned sauna on the 10th floor by Sasazuka Station, famous for its open-air \"sky hideout\" rest deck."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%A9%BA%E3%81%AE%E3%82%A2%E3%82%B8%E3%83%88%20%E3%83%9E%E3%83%AB%E3%82%B7%E3%83%B3%E3%82%B9%E3%83%91%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%AC%B9%E5%A1%9A1-32-25%20%E7%AC%B9%E5%A1%9A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%93%E3%83%AB10F"
+    },
+    {
+      "id": "sugamoyu",
+      "name": {
+        "ko": "스가모유",
+        "ja": "巣鴨湯",
+        "en": "Sugamo-yu"
+      },
+      "area": {
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
+      },
+      "areaGroup": {
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都豊島区巣鴨4-13-9",
+        "ko": "도쿄도 도시마구 스가모 4-13-9",
+        "en": "4-13-9 Sugamo, Toshima-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "2022년 리뉴얼 화제 센토",
+          "ja": "2022年リニューアルの話題店",
+          "en": "Acclaimed 2022 renovation"
+        },
+        {
+          "ko": "사우나·외기욕 완비",
+          "ja": "サウナ・外気浴完備",
+          "en": "Sauna & outdoor rest"
+        },
+        {
+          "ko": "스가모의 인기 센토",
+          "ja": "巣鴨の人気銭湯",
+          "en": "Popular in Sugamo"
+        }
+      ],
+      "desc": {
+        "ko": "도시마에 자리한 전통 센토 '스가모유'은(는) 2022년 리뉴얼로 화제가 된 스가모의 인기 센토로, 알찬 사우나와 외기욕 공간을 갖췄습니다.",
+        "ja": "豊島区に位置する伝統銭湯「巣鴨湯」は、2022年のリニューアルで話題となった巣鴨の人気銭湯で、充実したサウナと外気浴スペースを備えます。",
+        "en": "Located in Toshima, Sugamo-yu is a Sugamo sento acclaimed since its 2022 renovation, with an excellent sauna and outdoor cooling space."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B7%A3%E9%B4%A8%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E5%B7%A3%E9%B4%A84-13-9"
+    },
+    {
+      "id": "inariyu",
+      "name": {
+        "ko": "이나리유",
+        "ja": "稲荷湯",
+        "en": "Inari-yu"
+      },
+      "area": {
+        "ko": "기타",
+        "ja": "北区",
+        "en": "Kita"
+      },
+      "areaGroup": {
+        "ko": "kita",
+        "ja": "kita",
+        "en": "kita"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都北区滝野川6-27-14",
+        "ko": "도쿄도 기타구 다키노가와 6-27-14",
+        "en": "6-27-14 Takinogawa, Kita-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "history"
+      ],
+      "highlights": [
+        {
+          "ko": "국가 등록 유형문화재",
+          "ja": "国登録有形文化財",
+          "en": "Registered Cultural Property"
+        },
+        {
+          "ko": "1930년 건축 미야즈쿠리",
+          "ja": "1930年築の宮造り",
+          "en": "Palace-style build (1930)"
+        },
+        {
+          "ko": "영화 촬영지로도 유명",
+          "ja": "映画のロケ地としても有名",
+          "en": "Featured in films"
+        }
+      ],
+      "desc": {
+        "ko": "기타에 자리한 전통 센토 '이나리유'은(는) 1930년 건축된 미야즈쿠리 건물이 국가 등록 유형문화재로 지정된 노포 센토입니다.",
+        "ja": "北区に位置する伝統銭湯「稲荷湯」は、1930年築の宮造り建築が国登録有形文化財に指定された老舗銭湯です。",
+        "en": "Located in Kita, Inari-yu is a historic sento whose 1930 palace-style building is a Registered Tangible Cultural Property."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E8%8D%B7%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8C%97%E5%8C%BA%E6%BB%9D%E9%87%8E%E5%B7%9D6-27-14"
+    },
+    {
+      "id": "atamiyu",
+      "name": {
+        "ko": "아타미유",
+        "ja": "熱海湯",
+        "en": "Atami-yu"
+      },
+      "area": {
+        "ko": "신주쿠",
+        "ja": "新宿区",
+        "en": "Shinjuku"
+      },
+      "areaGroup": {
+        "ko": "shinjuku",
+        "ja": "shinjuku",
+        "en": "shinjuku"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都新宿区神楽坂3-6",
+        "ko": "도쿄도 신주쿠구 가구라자카 3-6",
+        "en": "3-6 Kagurazaka, Shinjuku-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "history"
+      ],
+      "highlights": [
+        {
+          "ko": "가구라자카 골목의 노포",
+          "ja": "神楽坂の路地裏の老舗",
+          "en": "Historic Kagurazaka sento"
+        },
+        {
+          "ko": "전통 목조 센토 건축",
+          "ja": "昔ながらの木造銭湯",
+          "en": "Classic wooden bathhouse"
+        },
+        {
+          "ko": "후지산 페인트화",
+          "ja": "富士山のペンキ絵",
+          "en": "Mt. Fuji mural"
+        }
+      ],
+      "desc": {
+        "ko": "신주쿠에 자리한 전통 센토 '아타미유'은(는) 가구라자카 골목 계단 아래의 정취 있는 노포 센토로, 후지산 페인트화 등 옛 센토의 모습을 간직하고 있습니다.",
+        "ja": "新宿区に位置する伝統銭湯「熱海湯」は、神楽坂の路地の階段下にある風情ある老舗銭湯で、富士山のペンキ絵など昔ながらの銭湯の姿を残します。",
+        "en": "Located in Shinjuku, Atami-yu is an atmospheric old sento tucked below a Kagurazaka alley staircase, preserving classic touches like its Mt. Fuji mural."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%86%B1%E6%B5%B7%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%A5%9E%E6%A5%BD%E5%9D%823-6"
+    },
+    {
+      "id": "bentenyu_kichijoji",
+      "name": {
+        "ko": "벤텐유 (기치조지)",
+        "ja": "弁天湯",
+        "en": "Benten-yu (Kichijoji)"
+      },
+      "area": {
+        "ko": "기치조지·무사시노·미타카",
+        "ja": "吉祥寺・武蔵野・三鷹",
+        "en": "Kichijoji-Musashino-Mitaka"
+      },
+      "areaGroup": {
+        "ko": "kichijoji-musashino-mitaka",
+        "ja": "kichijoji-musashino-mitaka",
+        "en": "kichijoji-musashino-mitaka"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都武蔵野市吉祥寺本町2-27-13",
+        "ko": "도쿄도 무사시노시 기치조지혼초 2-27-13",
+        "en": "2-27-13 Kichijoji-Honcho, Musashino-shi, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "local",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "기치조지역 도보권",
+          "ja": "吉祥寺駅から徒歩圏",
+          "en": "Near Kichijoji Station"
+        },
+        {
+          "ko": "동네 밀착 센토",
+          "ja": "地域密着の銭湯",
+          "en": "Neighborhood sento"
+        },
+        {
+          "ko": "늦은 시간까지 영업",
+          "ja": "遅くまで営業",
+          "en": "Open late"
+        }
+      ],
+      "desc": {
+        "ko": "기치조지·무사시노·미타카에 자리한 전통 센토 '벤텐유 (기치조지)'은(는) 기치조지역 도보권의 동네 센토로, 번화가에서 가까워 쇼핑 후 들르기 좋습니다.",
+        "ja": "吉祥寺・武蔵野・三鷹に位置する伝統銭湯「弁天湯」は、吉祥寺駅から徒歩圏の地域密着型銭湯で、繁華街から近く買い物帰りに立ち寄れます。",
+        "en": "Located in Kichijoji-Musashino-Mitaka, Benten-yu (Kichijoji) is a neighborhood sento within walking distance of Kichijoji Station, handy after shopping in the lively district."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%BC%81%E5%A4%A9%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82%E5%90%89%E7%A5%A5%E5%AF%BA%E6%9C%AC%E7%94%BA2-27-13"
+    },
+    {
+      "id": "yudonburi_sakaeyu",
+      "name": {
+        "ko": "유돈부리 사카에유",
+        "ja": "天然温泉 湯どんぶり栄湯",
+        "en": "Yudonburi Sakae-yu"
+      },
+      "area": {
+        "ko": "다이토",
+        "ja": "台東区",
+        "en": "Taito"
+      },
+      "areaGroup": {
+        "ko": "taito",
+        "ja": "taito",
+        "en": "taito"
+      },
+      "type": {
+        "ko": "천연 온천",
+        "ja": "天然温泉",
+        "en": "Natural Hot Spring"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都台東区日本堤1-4-5",
+        "ko": "도쿄도 다이토구 니혼즈쓰미 1-4-5",
+        "en": "1-4-5 Nihonzutsumi, Taito-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna",
+        "tattoo"
+      ],
+      "highlights": [
+        {
+          "ko": "천연 온천 사용 센토",
+          "ja": "天然温泉使用の銭湯",
+          "en": "Natural spring sento"
+        },
+        {
+          "ko": "노천탕·고농도 탄산천",
+          "ja": "露天風呂・高濃度炭酸泉",
+          "en": "Open-air & carbonated baths"
+        },
+        {
+          "ko": "타투 입욕 가능",
+          "ja": "タトゥー入浴可",
+          "en": "Tattoo-friendly"
+        }
+      ],
+      "desc": {
+        "ko": "다이토에 자리한 천연 온천 '유돈부리 사카에유'은(는) 천연 온천을 사용하는 센토로, 노천탕과 고농도 탄산천을 갖췄고 타투 입욕도 가능합니다.",
+        "ja": "台東区に位置する天然温泉「天然温泉 湯どんぶり栄湯」は、天然温泉を使用する銭湯で、露天風呂と高濃度炭酸泉を備え、タトゥーの方も入浴できます。",
+        "en": "Located in Taito, Yudonburi Sakae-yu is a sento using genuine natural spring water, with an open-air bath, carbonated bath, and tattoo-friendly policy."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E6%B9%AF%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E6%A0%84%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%97%A5%E6%9C%AC%E5%A0%A41-4-5"
+    },
+    {
+      "id": "fukunoyu_sendagi",
+      "name": {
+        "ko": "후쿠노유",
+        "ja": "ふくの湯",
+        "en": "Fuku no Yu"
+      },
+      "area": {
+        "ko": "분쿄",
+        "ja": "文京区",
+        "en": "Bunkyo"
+      },
+      "areaGroup": {
+        "ko": "bunkyo",
+        "ja": "bunkyo",
+        "en": "bunkyo"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都文京区千駄木5-41-5",
+        "ko": "도쿄도 분쿄구 센다기 5-41-5",
+        "en": "5-41-5 Sendagi, Bunkyo-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "retro",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "야네센 산책 코스",
+          "ja": "谷根千さんぽの立ち寄り湯",
+          "en": "On the Yanesen walking route"
+        },
+        {
+          "ko": "복을 부르는 칠복신 테마",
+          "ja": "七福神テーマの装飾",
+          "en": "Seven Lucky Gods theme"
+        },
+        {
+          "ko": "레트로 감성 리뉴얼",
+          "ja": "レトロモダンな内装",
+          "en": "Retro-modern interior"
+        }
+      ],
+      "desc": {
+        "ko": "분쿄에 자리한 전통 센토 '후쿠노유'은(는) 야네센(야나카·네즈·센다기) 산책길에 들르기 좋은 칠복신 테마의 레트로 모던 센토입니다.",
+        "ja": "文京区に位置する伝統銭湯「ふくの湯」は、谷根千さんぽの途中に立ち寄れる、七福神をテーマにしたレトロモダンな銭湯です。",
+        "en": "Located in Bunkyo, Fuku no Yu is a retro-modern sento themed on the Seven Lucky Gods, a perfect stop on a Yanesen neighborhood stroll."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%B5%E3%81%8F%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E5%8D%83%E9%A7%84%E6%9C%A85-41-5"
+    },
+    {
+      "id": "myohoyu",
+      "name": {
+        "ko": "묘호유",
+        "ja": "妙法湯",
+        "en": "Myoho-yu"
+      },
+      "area": {
+        "ko": "도시마",
+        "ja": "豊島区",
+        "en": "Toshima"
+      },
+      "areaGroup": {
+        "ko": "toshima",
+        "ja": "toshima",
+        "en": "toshima"
+      },
+      "type": {
+        "ko": "전통 센토",
+        "ja": "伝統銭湯",
+        "en": "Traditional Sento"
+      },
+      "price": {
+        "ko": "550엔~ (도쿄 공통요금)",
+        "ja": "550円～（東京都統一料金）",
+        "en": "¥550~ (Tokyo standard)"
+      },
+      "hours": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "holiday": {
+        "ko": "공식 사이트 확인",
+        "ja": "公式サイト参照",
+        "en": "See official site"
+      },
+      "address": {
+        "ja": "東京都豊島区西池袋4-32-4",
+        "ko": "도쿄도 도시마구 니시이케부쿠로 4-32-4",
+        "en": "4-32-4 Nishi-Ikebukuro, Toshima-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "sauna",
+        "local"
+      ],
+      "highlights": [
+        {
+          "ko": "시이나마치의 리뉴얼 센토",
+          "ja": "椎名町のリニューアル銭湯",
+          "en": "Renovated Shiinamachi sento"
+        },
+        {
+          "ko": "연수(軟水) 목욕물",
+          "ja": "軟水の湯",
+          "en": "Soft-water baths"
+        },
+        {
+          "ko": "알찬 사우나",
+          "ja": "コンパクトで質の高いサウナ",
+          "en": "Quality compact sauna"
+        }
+      ],
+      "desc": {
+        "ko": "도시마에 자리한 전통 센토 '묘호유'은(는) 시이나마치역 인근의 리뉴얼 센토로, 부드러운 연수탕과 알찬 사우나로 평가가 높습니다.",
+        "ja": "豊島区に位置する伝統銭湯「妙法湯」は、椎名町駅近くのリニューアル銭湯で、やわらかな軟水の湯と質の高いサウナが評判です。",
+        "en": "Located in Toshima, Myoho-yu is a renovated sento near Shiinamachi Station, praised for its soft-water baths and quality sauna."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E6%B3%95%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E8%A5%BF%E6%B1%A0%E8%A2%8B4-32-4"
+    },
+    {
+      "id": "rooftop_nishiogi",
+      "name": {
+        "ko": "루프탑 (니시오기쿠보)",
+        "ja": "ROOFTOP",
+        "en": "ROOFTOP Sauna"
+      },
+      "area": {
+        "ko": "스기나미",
+        "ja": "杉並区",
+        "en": "Suginami"
+      },
+      "areaGroup": {
+        "ko": "suginami",
+        "ja": "suginami",
+        "en": "suginami"
+      },
+      "type": {
+        "ko": "도심형 스파",
+        "ja": "都市型スパ",
+        "en": "Urban Spa"
+      },
+      "price": {
+        "ko": "평일 1,980엔~ (2시간)",
+        "ja": "平日1,980円～（2時間）",
+        "en": "From ¥1,980 (2h, weekdays)"
+      },
+      "hours": {
+        "ko": "08:00~24:00",
+        "ja": "8:00~24:00",
+        "en": "08:00~24:00"
+      },
+      "holiday": {
+        "ko": "연중무휴",
+        "ja": "年中無休",
+        "en": "Open year-round"
+      },
+      "address": {
+        "ja": "東京都杉並区西荻南3-14-7 3・4F",
+        "ko": "도쿄도 스기나미구 니시오기미나미 3-14-7 3·4F",
+        "en": "3-4F, 3-14-7 Nishiogi-Minami, Suginami-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sauna",
+        "night"
+      ],
+      "highlights": [
+        {
+          "ko": "옥상 펜트하우스 사우나",
+          "ja": "ペントハウス型フィンランドサウナ",
+          "en": "Penthouse Finnish sauna"
+        },
+        {
+          "ko": "개인용 노천 수풍려",
+          "ja": "屋外パーソナル水風呂",
+          "en": "Personal outdoor cold tubs"
+        },
+        {
+          "ko": "니시오기쿠보역 도보 1분",
+          "ja": "西荻窪駅から徒歩1分",
+          "en": "1 min from Nishi-Ogikubo Sta."
+        }
+      ],
+      "desc": {
+        "ko": "스기나미에 자리한 도심형 스파 '루프탑 (니시오기쿠보)'은(는) 니시오기쿠보역 앞 빌딩 옥상의 핀란드식 사우나로, 개인용 노천 수풍려와 루프탑 외기욕이 명물입니다. 코워킹 스페이스도 병설되어 있습니다.",
+        "ja": "杉並区に位置する都市型スパ「ROOFTOP」は、西荻窪駅前ビル屋上のフィンランド式サウナで、屋外パーソナル水風呂とルーフトップ外気浴が名物。コワーキングスペースも併設しています。",
+        "en": "Located in Suginami, ROOFTOP Sauna is a penthouse-style Finnish sauna atop a building by Nishi-Ogikubo Station, famed for personal outdoor cold tubs and rooftop air baths, with a coworking space attached."
+      },
+      "website": "https://rooftopsauna.jp/",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ROOFTOP%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E8%A5%BF%E8%8D%BB%E5%8D%973-14-7%203%E3%83%BB4F"
+    },
+    {
+      "id": "yudokoro_kasai",
+      "name": {
+        "ko": "유도코로 가사이",
+        "ja": "スーパー銭湯 湯処葛西",
+        "en": "Yudokoro Kasai"
+      },
+      "area": {
+        "ko": "에도가와",
+        "ja": "江戸川区",
+        "en": "Edogawa"
+      },
+      "areaGroup": {
+        "ko": "edogawa",
+        "ja": "edogawa",
+        "en": "edogawa"
+      },
+      "type": {
+        "ko": "슈퍼 센토",
+        "ja": "スーパー銭湯",
+        "en": "Super Sento"
+      },
+      "price": {
+        "ko": "700엔~",
+        "ja": "700円～",
+        "en": "¥700~"
+      },
+      "hours": {
+        "ko": "10:00~26:00",
+        "ja": "10:00~26:00",
+        "en": "10:00~26:00"
+      },
+      "holiday": {
+        "ko": "연중무휴",
+        "ja": "年中無休",
+        "en": "Open year-round"
+      },
+      "address": {
+        "ja": "東京都江戸川区東葛西9-3-5",
+        "ko": "도쿄도 에도가와구 히가시카사이 9-3-5",
+        "en": "9-3-5 Higashi-Kasai, Edogawa-ku, Tokyo"
+      },
+      "tel": "-",
+      "features": [
+        "sento",
+        "rotenburo",
+        "sauna",
+        "family",
+        "cheap"
+      ],
+      "highlights": [
+        {
+          "ko": "11종 목욕탕·2종 사우나",
+          "ja": "11種の風呂と2種のサウナ",
+          "en": "11 baths & 2 saunas"
+        },
+        {
+          "ko": "탄산천·라듐 광천탕",
+          "ja": "炭酸泉・ラジウム鉱物泉",
+          "en": "Carbonated & radium baths"
+        },
+        {
+          "ko": "센토 수준의 합리적 요금",
+          "ja": "銭湯並みの手頃な料金",
+          "en": "Sento-level pricing"
+        }
+      ],
+      "desc": {
+        "ko": "에도가와에 자리한 슈퍼 센토 '유도코로 가사이'은(는) 11종의 목욕탕과 2종의 사우나를 갖춘 대형 슈퍼 센토로, 합리적인 요금에 노천 탄산천까지 즐길 수 있어 가족 단위로 인기입니다.",
+        "ja": "江戸川区に位置するスーパー銭湯「スーパー銭湯 湯処葛西」は、11種類のお風呂と2種類のサウナを備えた大型スーパー銭湯で、手頃な料金で露天の炭酸泉まで楽しめると家族連れに人気です。",
+        "en": "Located in Edogawa, Yudokoro Kasai is a large super sento with eleven baths and two saunas, popular with families for its open-air carbonated bath at wallet-friendly prices."
+      },
+      "website": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E9%8A%AD%E6%B9%AF%20%E6%B9%AF%E5%87%A6%E8%91%9B%E8%A5%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA%E6%9D%B1%E8%91%9B%E8%A5%BF9-3-5"
     }
   ],
   "AREAS": [
