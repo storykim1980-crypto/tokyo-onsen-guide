@@ -9,10 +9,18 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1a1410">
 <meta name="color-scheme" content="light">
-<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<meta name="google-adsense-account" content="ca-pub-3122957517118825">
 <!-- Google AdSense -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
-<title>도쿄 온천 가이드 | Tokyo Onsen Guide</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3122957517118825" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://www.tokyo-onsen-guide.com/" id="seo-canonical">
+  <link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko">
+  <link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/">
+  <meta property="og:locale" content="ko_KR" id="seo-og-locale">
+  <meta property="og:site_name" content="Tokyo Onsen Guide">
+  <meta property="og:type" content="website">
+  <title>도쿄 온천 가이드 | Tokyo Onsen Guide</title>
 <style>
 :root {
   --wood-dark: #1a1410;
@@ -1001,6 +1009,9 @@ body::before {
       .card-badge { font-size: 11px; }
       input, select, textarea { font-size: 16px; } /* iOS 자동 확대 방지 */
     }
+
+    /* 애드센스 승인 전: 더미 광고 박스 전체 숨김 (승인 후 자동 광고 사용 시 이대로 두면 됨) */
+    .ad-slot { display: none !important; }
 </style>
 <link rel="icon" type="image/jpeg" href="images/hero-onsen.jpg">
   <link rel="apple-touch-icon" href="images/hero-onsen.jpg">
@@ -1094,7 +1105,7 @@ if ('serviceWorker' in navigator) {
           <div>
             <div class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span></div>
             <div class="editorial-sub" data-i18n="siteSub">도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보</div>
-            <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>200</strong>곳</div>
+            <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>145</strong>곳</div>
           </div>
         </div>
         <div class="hero-search-overlay">
@@ -1229,7 +1240,7 @@ if ('serviceWorker' in navigator) {
       <h1 data-i18n="pageListTitle">온천 목록</h1>
       <p data-i18n="pageListSub">도쿄의 인기 일일 온천과 스파</p>
     </div>
-    <div class="ad-slot ad-top"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="리스트상단"</div></div>
+    
     <button type="button" id="sidebar-toggle" class="btn btn-secondary" style="display:none;margin-bottom:10px;width:100%;font-size:14px;font-weight:800;" data-i18n="filterToggle">☰ 필터 보기</button>
     <div class="list-layout">
       <aside class="list-sidebar">
@@ -1252,7 +1263,7 @@ if ('serviceWorker' in navigator) {
           <div class="sidebar-title" data-i18n="filterFeature">특징</div>
           <div class="sidebar-pills" id="sidebar-feat-list"></div>
         </div>
-        <div class="ad-slot ad-sidebar"><span class="ad-slot-label">Advertisement</span><div>Google AdSense<br>data-ad-slot="사이드바"</div></div>
+        
       </aside>
       <div class="list-main">
         <div class="list-toolbar">
@@ -1450,14 +1461,14 @@ const S = {
           canonicalUrl = domain + "/?view=about&lang=ko";
         } else if (lang === "ja") {
           title = "東京温泉ガイドについて | 当サイトのご紹介と厳選基準";
-          desc = "東京温泉ガイドの設立目的と人気200施設の厳選基準、快適に楽しむための日本の温泉・銭湯マナー（タトゥー規定、入浴エチケット）をご紹介します。";
+          desc = "東京温泉ガイドの設立目的と人気145施設の厳選基準、快適に楽しむための日本の温泉・銭湯マナー（タトゥー規定、入浴エチケット）をご紹介します。";
           kw = "東京温泉ガイドについて, 日帰り温泉 選び方, 銭湯 マナー, 温泉 タトゥー";
           ogTitle = "東京温泉ガイドについて | About Tokyo Onsen Guide";
           ogDesc = desc;
           canonicalUrl = domain + "/?view=about&lang=ja";
         } else {
           title = "About Tokyo Onsen Guide | Our Mission & Curation Standards";
-          desc = "Learn about Tokyo Onsen Guide's mission, our 200 facility verification criteria, and essential Japanese bathhouse etiquette (tattoos, towel rules).";
+          desc = "Learn about Tokyo Onsen Guide's mission, our 145 facility verification criteria, and essential Japanese bathhouse etiquette (tattoos, towel rules).";
           kw = "about tokyo onsen guide, japanese onsen etiquette, tokyo bathhouse rules, tattoo friendly onsen";
           ogTitle = "About Tokyo Onsen Guide | Our Mission & Standards";
           ogDesc = desc;
@@ -1472,21 +1483,21 @@ const S = {
         };
       } else if (!title) {
         if (lang === "ko") {
-          title = "도쿄 온천 추천 베스트 200 | 직접 가본 도쿄 당일치기 온천 가이드";
+          title = "도쿄 온천 추천 베스트 145 | 직접 가본 도쿄 당일치기 온천 가이드";
           desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 200곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
           kw = "도쿄 온천 추천, 도쿄 당일치기 온천, 도쿄 온천 여행, 도쿄 료칸, 도쿄 스파, 도쿄 센토";
-          ogTitle = "도쿄 온천 추천 베스트 200 | 실제 운영중인 온천 가이드";
+          ogTitle = "도쿄 온천 추천 베스트 145 | 실제 운영중인 온천 가이드";
           ogDesc = "실제 운영 중인 도쿄 인기 온천 엄선! 외국인 접근성 최상, 찐 현지인 추천 온천 정보.";
           canonicalUrl = domain + "/";
         } else if (lang === "ja") {
-          title = "東京温泉おすすめ200選！現地で人気の日帰り温泉・スーパー銭湯紹介";
+          title = "東京温泉おすすめ145選！現地で人気の日帰り温泉・スーパー銭湯紹介";
           desc = "東京都内で実際に営業している人気の天然温泉・スパ施設200選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
           kw = "東京 温泉 おすすめ, 東京 日帰り温泉, 都内 温泉, 東京 スーパー銭湯, 源泉かけ流し";
-          ogTitle = "東京温泉おすすめ200選！日帰り温泉最新ガイド";
+          ogTitle = "東京温泉おすすめ145選！日帰り温泉最新ガイド";
           ogDesc = "実際に営業している都内の極上温泉を厳選。現地人にも愛される名湯・銭湯を紹介。";
           canonicalUrl = domain + "/?lang=ja";
         } else {
-          title = "200 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
+          title = "145 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
           desc = "Discover 200 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
           kw = "best onsen in tokyo, tokyo hot spring, tokyo day trip onsen, tokyo spa, traditional bathhouse tokyo";
           ogTitle = "Best Onsen in Tokyo | Top-Rated Day Trip Hot Springs & Sento";
@@ -1574,6 +1585,15 @@ const S = {
     } else {
       document.body.style.fontFamily = '';
     }
+    // 다국어 SEO: canonical·og:locale을 현재 언어에 맞춰 갱신
+    try {
+      const BASE = "https://www.tokyo-onsen-guide.com/";
+      const can = document.getElementById("seo-canonical");
+      if (can) can.setAttribute("href", BASE + "?lang=" + S.lang);
+      const ogl = document.getElementById("seo-og-locale");
+      if (ogl) ogl.setAttribute("content", {ko:"ko_KR", ja:"ja_JP", en:"en_US"}[S.lang] || "ko_KR");
+      document.documentElement.setAttribute("lang", S.lang);
+    } catch(e) {}
     document.querySelectorAll("[data-i18n]").forEach(el=>{
       const k=el.getAttribute("data-i18n");
       const txt=i18n[S.lang][k];
@@ -1900,7 +1920,7 @@ const S = {
                    <p><strong>Tokyo Onsen Guide (東京温泉ガイド)</strong>は、こうした情報格差を解消し、誰でも手軽に東京都内の極上の名湯や極上の癒やしスポットを発見できるよう設立されました。日本語・韓国語・英語の3言語で信頼性の高い深掘りキュレーション情報をお届けします。</p>`,
           c2Title: "✨ 厳選200施設の選定基準と特徴",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気200施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気145施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>泉質・効能の深掘りデータ:</strong> 単なる住所情報にとどまらず、源泉名、泉質（強塩泉、黒湯など）、泉温、疲労回復や神経통への具体的な効能データを網羅しています。</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>充実のアメニティ確認:</strong> タオルレンタルやサウナ・露天風呂・岩盤浴の有無、お食事処や休憩ラウンジの充実度をひと目で比較できるように整理しています。</div></div>
                    </div>`,
