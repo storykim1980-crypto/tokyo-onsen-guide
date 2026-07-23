@@ -1012,6 +1012,26 @@ body::before {
 
     /* 애드센스 승인 전: 더미 광고 박스 전체 숨김 (승인 후 자동 광고 사용 시 이대로 두면 됨) */
     .ad-slot { display: none !important; }
+
+    /* === 필터 툴바 레이아웃 (일본어 등 긴 라벨 대응) === */
+    .list-toolbar { flex-wrap: nowrap; gap: 8px; }
+    .list-toolbar select { flex: 0 1 auto; min-width: 0; }
+    #list-result-count { white-space: nowrap; flex: 0 0 auto; font-size: 13px; }
+    #list-reset-btn {
+      white-space: nowrap; flex: 0 0 auto;
+      padding: 8px 12px; font-size: 13px; line-height: 1.2; min-height: 40px;
+    }
+    html[lang="ja"] #list-reset-btn { font-size: 12px; padding: 8px 10px; }
+    @media (max-width: 480px) {
+      .list-toolbar { gap: 6px; }
+      .list-toolbar select { font-size: 12px; padding: 8px 24px 8px 10px; }
+      #list-result-count { font-size: 12px; }
+      #list-reset-btn { font-size: 12px; padding: 7px 9px; min-height: 38px; }
+      html[lang="ja"] .list-toolbar select,
+      html[lang="ja"] #list-result-count,
+      html[lang="ja"] #list-reset-btn { font-size: 11px; letter-spacing: -0.2px; }
+      html[lang="ja"] #list-reset-btn { padding: 7px 8px; }
+    }
 </style>
 <link rel="icon" type="image/jpeg" href="images/hero-onsen.jpg">
   <link rel="apple-touch-icon" href="images/hero-onsen.jpg">
@@ -1498,7 +1518,7 @@ const S = {
           canonicalUrl = domain + "/?lang=ja";
         } else {
           title = "145 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
-          desc = "Discover 200 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
+          desc = "Discover 145 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
           kw = "best onsen in tokyo, tokyo hot spring, tokyo day trip onsen, tokyo spa, traditional bathhouse tokyo";
           ogTitle = "Best Onsen in Tokyo | Top-Rated Day Trip Hot Springs & Sento";
           ogDesc = "Explore Tokyo's best natural hot springs. Tourist-friendly and highly recommended by locals.";
@@ -1852,8 +1872,8 @@ const S = {
     try {
       const wrap = $("terms-container"); if (!wrap) return; const lang = S.lang || "ko";
       const c = {
-        ko: { title: "이용약관", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 200개 온천 시설의 요금, 영업시간, 휴무일, 泉質 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
-        ja: { title: "利用規約", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている200の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
+        ko: { title: "이용약관", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 145개 온천 시설의 요금, 영업시간, 휴무일, 수질(泉質) 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
+        ja: { title: "利用規約", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている145の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
         en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 200 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
@@ -1899,7 +1919,7 @@ const S = {
                    <p><strong>Tokyo Onsen Guide (도쿄 온천 가이드)</strong>는 이러한 정보 불균형을 해소하고, 누구나 쉽고 편리하게 도쿄 곳곳의 숨은 명탕과 최고의 힐링 스파를 발견할 수 있도록 돕기 위해 설립되었습니다. 한국어, 영어, 일본어 3개 국어로 100% 현장 검증 기반의 심층 큐레이션 데이터를 제공합니다.</p>`,
           c2Title: "✨ 우리의 200선 엄선 기준 및 차별화 포인트",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 200개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 145개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>심층 수질 및 효능 분석:</strong> 단순한 위치 정보를 넘어, 원천명, 수질(나트륨-염화물 강염천, 흑탕 등), 온도, 피로 회복 및 신경통 완화 등 구체적인 효능 데이터를 상세히 수록했습니다.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>방문 편의성 및 어메니티 확인:</strong> 수건 대여 가능 여부, 사우나 및 로텐부로(노천탕) 완비 여부, 휴게실 및 식당 유무를 한눈에 파악할 수 있도록 정리했습니다.</div></div>
                    </div>`,
@@ -1918,10 +1938,10 @@ const S = {
           c1Title: "🎯 東京温泉ガイドの設立目的とミッション",
           c1Body: `<p>東京は最先端のメトロポリスであると同時に、地下数千メートルから湧き出る天然温泉や、江戸時代から続く伝統的な銭湯文化が息づく魅力的な都市です。しかし、訪日観光客や在住外国人にとって、各施設の泉質、効能、タトゥー規定、アメニティ情報などを正確に把握して比較することは容易ではありませんでした。</p>
                    <p><strong>Tokyo Onsen Guide (東京温泉ガイド)</strong>は、こうした情報格差を解消し、誰でも手軽に東京都内の極上の名湯や極上の癒やしスポットを発見できるよう設立されました。日本語・韓国語・英語の3言語で信頼性の高い深掘りキュレーション情報をお届けします。</p>`,
-          c2Title: "✨ 厳選200施設の選定基準と特徴",
+          c2Title: "✨ 厳選145施設の選定基準と特徴",
           c2Body: `<div class="luxury-recs-list">
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気145施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>泉質・効能の深掘りデータ:</strong> 単なる住所情報にとどまらず、源泉名、泉質（強塩泉、黒湯など）、泉温、疲労回復や神経통への具体的な効能データを網羅しています。</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>泉質・効能の深掘りデータ:</strong> 単なる住所情報にとどまらず、源泉名、泉質（強塩泉、黒湯など）、泉温、疲労回復や神経痛への具体的な効能データを網羅しています。</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>充実のアメニティ確認:</strong> タオルレンタルやサウナ・露天風呂・岩盤浴の有無、お食事処や休憩ラウンジの充実度をひと目で比較できるように整理しています。</div></div>
                    </div>`,
           c3Title: "💡 心地よく楽しむための日本の温泉・銭湯マナー",
