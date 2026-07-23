@@ -1039,9 +1039,14 @@ body::before {
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js')
-      .then(reg => { try { reg.update(); } catch(e) {} })
-      .catch(err => console.log('SW reg error:', err));
+    // sw.js가 실제로 존재할 때만 등록 (없는 환경에서 404·콘솔 에러 방지)
+    fetch('sw.js', { method: 'HEAD' })
+      .then(res => {
+        if (!res.ok) return; // 파일 없음 → 조용히 종료
+        return navigator.serviceWorker.register('sw.js')
+          .then(reg => { try { reg.update(); } catch(e) {} });
+      })
+      .catch(() => { /* 미리보기 등 SW 미지원/부재 환경: 무시 */ });
     // 새 서비스워커 활성화 시 1회 자동 새로고침 (구버전 화면 고착 방지)
     let refreshed = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
@@ -1474,7 +1479,7 @@ const S = {
       } else if (view === "about") {
         if (lang === "ko") {
           title = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide - 실제 운영 온천 큐레이션";
-          desc = "도쿄 온천 가이드 설립 목적과 200선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
+          desc = "도쿄 온천 가이드 설립 목적과 145선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
           kw = "도쿄 온천 가이드 소개, 도쿄 온천 큐레이션, 일본 온천 예절, 온천 타투 규정";
           ogTitle = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide";
           ogDesc = desc;
@@ -1504,14 +1509,14 @@ const S = {
       } else if (!title) {
         if (lang === "ko") {
           title = "도쿄 온천 추천 베스트 145 | 직접 가본 도쿄 당일치기 온천 가이드";
-          desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 200곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
+          desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 145곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
           kw = "도쿄 온천 추천, 도쿄 당일치기 온천, 도쿄 온천 여행, 도쿄 료칸, 도쿄 스파, 도쿄 센토";
           ogTitle = "도쿄 온천 추천 베스트 145 | 실제 운영중인 온천 가이드";
           ogDesc = "실제 운영 중인 도쿄 인기 온천 엄선! 외국인 접근성 최상, 찐 현지인 추천 온천 정보.";
           canonicalUrl = domain + "/";
         } else if (lang === "ja") {
           title = "東京温泉おすすめ145選！現地で人気の日帰り温泉・スーパー銭湯紹介";
-          desc = "東京都内で実際に営業している人気の天然温泉・スパ施設200選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
+          desc = "東京都内で実際に営業している人気の天然温泉・スパ施設145選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
           kw = "東京 温泉 おすすめ, 東京 日帰り温泉, 都内 温泉, 東京 スーパー銭湯, 源泉かけ流し";
           ogTitle = "東京温泉おすすめ145選！日帰り温泉最新ガイド";
           ogDesc = "実際に営業している都内の極上温泉を厳選。現地人にも愛される名湯・銭湯を紹介。";
@@ -1874,7 +1879,7 @@ const S = {
       const c = {
         ko: { title: "이용약관", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 145개 온천 시설의 요금, 영업시간, 휴무일, 수질(泉質) 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
         ja: { title: "利用規約", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている145の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
-        en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 200 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
+        en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 145 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
     } catch(e) {}
@@ -1917,7 +1922,7 @@ const S = {
           c1Title: "🎯 도쿄 온천 가이드의 설립 목적 및 미션",
           c1Body: `<p>도쿄는 번화한 메트로폴리탄 도시이자, 지하 수천 미터에서 솟아오르는 양질의 천연 온천과 에도 시대부터 이어져 온 전통 센토(銭湯) 문화가 살아 숨 쉬는 매력적인 곳입니다. 하지만 외국인 여행객이나 현지 거주자들에게는 각 시설의 수질(泉質), 효능, 타투 허용 여부, 수건 대여 규정 등 복잡하고 상세한 정보를 정확히 확인하고 비교하기에 언어적·문화적 장벽이 컸습니다.</p>
                    <p><strong>Tokyo Onsen Guide (도쿄 온천 가이드)</strong>는 이러한 정보 불균형을 해소하고, 누구나 쉽고 편리하게 도쿄 곳곳의 숨은 명탕과 최고의 힐링 스파를 발견할 수 있도록 돕기 위해 설립되었습니다. 한국어, 영어, 일본어 3개 국어로 100% 현장 검증 기반의 심층 큐레이션 데이터를 제공합니다.</p>`,
-          c2Title: "✨ 우리의 200선 엄선 기준 및 차별화 포인트",
+          c2Title: "✨ 우리의 엄선 기준 및 차별화 포인트",
           c2Body: `<div class="luxury-recs-list">
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 145개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>심층 수질 및 효능 분석:</strong> 단순한 위치 정보를 넘어, 원천명, 수질(나트륨-염화물 강염천, 흑탕 등), 온도, 피로 회복 및 신경통 완화 등 구체적인 효능 데이터를 상세히 수록했습니다.</div></div>
@@ -1959,9 +1964,9 @@ const S = {
           c1Title: "🎯 Our Mission & Purpose",
           c1Body: `<p>Tokyo is not only a ultra-modern metropolis but also home to rich subterranean natural hot springs (Onsen) and a historic neighborhood bathhouse (Sento) culture dating back to the Edo period. However, international travelers and expatriates often face language and informational barriers when trying to compare thermal water qualities, tattoo policies, and amenity rules.</p>
                    <p><strong>Tokyo Onsen Guide</strong> was created to bridge this gap. We provide comprehensive, 100% verified multilingual curation across English, Korean, and Japanese, empowering anyone to effortlessly discover the finest relaxing hot springs and authentic bathhouses throughout Tokyo.</p>`,
-          c2Title: "✨ Our 200 Curation Standards & Highlights",
+          c2Title: "✨ Our Curation Standards & Highlights",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>200 Verified Operating Facilities:</strong> We strictly feature top-rated, actively operating natural hot springs, super sento, and urban day spas across the 23 special wards and Tama region.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>145 Verified Operating Facilities:</strong> We strictly feature top-rated, actively operating natural hot springs, super sento, and urban day spas across the 23 special wards and Tama region.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>In-Depth Thermal & Quality Data:</strong> Beyond basic locations, we document exact spring sources, water quality (e.g., sodium-chloride strong salt springs, mineral black water), temperature, and therapeutic benefits.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>Transparent Amenity Checks:</strong> Easily check whether towel rentals, saunas, open-air baths (rotenburo), bedrock baths, and dining/lounge areas are available before your visit.</div></div>
                    </div>`,
@@ -2566,16 +2571,27 @@ function loadDataFast(callback){
 
   function fetchAndUpdateDB(db, isFirst, cb){
     fetch('data.json?v=6.0')
-      .then(r=>r.json())
+      .then(r=>{
+        // 응답이 JSON이 아니면(예: 404 HTML 페이지) 파싱을 시도하지 않음
+        const ct = (r.headers.get('content-type') || '');
+        if (!r.ok || ct.indexOf('json') === -1) {
+          return r.text().then(t => {
+            const s = t.trim();
+            if (s.charAt(0) === '{' || s.charAt(0) === '[') return JSON.parse(s); // 서버가 헤더만 누락한 정상 JSON
+            throw new Error('data.json not available in this environment');
+          });
+        }
+        return r.json();
+      })
       .then(data=>{
         if(db){ try{ const tx=db.transaction(STORE_NAME, "readwrite"); tx.objectStore(STORE_NAME).put(data, DATA_KEY); }catch(e){} }
         if(isFirst) applyDataAndInit(data, cb);
       })
       .catch(err=>{
-        if(isFirst){
-          console.error('Failed to load data.json',err);
+        // 실제 사이트에서 파일이 없을 때만 안내를 표시하고, 그 외엔 조용히 무시
+        if(isFirst && location.hostname.indexOf('claudeusercontent') === -1){
           var main=document.getElementById('main');
-          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;"><strong>data.json</strong> 로출 오류: '+err.message+'</p></div>';
+          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;"><strong>data.json</strong> 로드 오류: '+err.message+'</p></div>';
         }
       });
   }
