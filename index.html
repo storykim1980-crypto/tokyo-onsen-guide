@@ -2571,27 +2571,16 @@ function loadDataFast(callback){
 
   function fetchAndUpdateDB(db, isFirst, cb){
     fetch('data.json?v=6.0')
-      .then(r=>{
-        // 응답이 JSON이 아니면(예: 404 HTML 페이지) 파싱을 시도하지 않음
-        const ct = (r.headers.get('content-type') || '');
-        if (!r.ok || ct.indexOf('json') === -1) {
-          return r.text().then(t => {
-            const s = t.trim();
-            if (s.charAt(0) === '{' || s.charAt(0) === '[') return JSON.parse(s); // 서버가 헤더만 누락한 정상 JSON
-            throw new Error('data.json not available in this environment');
-          });
-        }
-        return r.json();
-      })
+      .then(r=>r.json())
       .then(data=>{
         if(db){ try{ const tx=db.transaction(STORE_NAME, "readwrite"); tx.objectStore(STORE_NAME).put(data, DATA_KEY); }catch(e){} }
         if(isFirst) applyDataAndInit(data, cb);
       })
       .catch(err=>{
-        // 실제 사이트에서 파일이 없을 때만 안내를 표시하고, 그 외엔 조용히 무시
+        // 실제 배포 사이트에서 파일이 정말 없을 때만 안내 표시, 미리보기 등에서는 조용히 무시
         if(isFirst && location.hostname.indexOf('claudeusercontent') === -1){
           var main=document.getElementById('main');
-          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;"><strong>data.json</strong> 로드 오류: '+err.message+'</p></div>';
+          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">잠시 후 새로고침 해주세요.</p></div>';
         }
       });
   }
