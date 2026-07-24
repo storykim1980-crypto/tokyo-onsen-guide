@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /data/
+Allow: /assets/
 
-Sitemap: https://www.tokyo-onsen-guide.com/sitemap.xml
+Sitemap: https://www.unsemill.com/sitemap.xml

@@ -1,21 +1,24 @@
 {
-  "name": "도쿄 온천 가이드 | Tokyo Onsen Guide",
-  "short_name": "Tokyo Onsen",
-  "description": "200 Best Hot Springs and Sento in Tokyo - Multilingual Guide",
-  "start_url": "/index.html",
+  "name": "운세방앗간 | 무료 사주팔자·평생운세·궁합·작명 24대 정통 명리 포털",
+  "short_name": "운세방앗간",
+  "description": "생년월일시로 사주팔자, 평생운세, 궁합, 작명, 꿈해몽, 삼재 등 24가지 정밀 운세를 무료로 제공하는 정통 명리학 기반 웹 서비스입니다.",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f5f0e8",
-  "theme_color": "#1a1410",
+  "background_color": "#0B0A16",
+  "theme_color": "#0B0A16",
+  "orientation": "any",
   "icons": [
     {
-      "src": "images/hero-onsen.jpg",
+      "src": "https://cdn-icons-png.flaticon.com/512/3286/3286386.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "images/hero-onsen.jpg",
+      "src": "https://cdn-icons-png.flaticon.com/512/3286/3286386.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
