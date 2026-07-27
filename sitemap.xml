@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.tokyo-onsen-guide.com/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://www.tokyo-onsen-guide.com/?lang=ko</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://www.tokyo-onsen-guide.com/?lang=ja</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
@@ -29,7 +29,7 @@
   </url>
   <url>
     <loc>https://www.tokyo-onsen-guide.com/?lang=en</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>

@@ -12,6 +12,13 @@
 <meta name="google-adsense-account" content="ca-pub-3122957517118825">
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3122957517118825" crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3122957517118825",
+      enable_page_level_ads: true,
+      overlays: { bottom: true }
+    });
+  </script>
 <link rel="canonical" href="https://www.tokyo-onsen-guide.com/" id="seo-canonical">
   <link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko">
   <link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja">
@@ -20,6 +27,14 @@
   <meta property="og:locale" content="ko_KR" id="seo-og-locale">
   <meta property="og:site_name" content="Tokyo Onsen Guide">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.tokyo-onsen-guide.com/images/hero-onsen.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.tokyo-onsen-guide.com/" id="seo-og-url">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="도쿄 온천 가이드 | Tokyo Onsen Guide">
+  <meta name="twitter:description" content="실제 운영 중인 도쿄 인기 온천·센토 145곳 엄선. 한·일·영 3개국어 가이드.">
+  <meta name="twitter:image" content="https://www.tokyo-onsen-guide.com/images/hero-onsen.jpg">
   <title>도쿄 온천 가이드 | Tokyo Onsen Guide</title>
 <style>
 :root {
@@ -1054,6 +1069,34 @@ if ('serviceWorker' in navigator) {
       window.location.reload();
     });
   });
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tokyo-onsen-guide.com/#organization",
+      "name": "Tokyo Onsen Guide",
+      "url": "https://www.tokyo-onsen-guide.com/",
+      "logo": "https://www.tokyo-onsen-guide.com/images/hero-onsen.jpg",
+      "description": "도쿄의 천연 온천·일일 온천·슈퍼 센토·전통 센토 정보를 한국어·일본어·영어로 제공하는 여행 가이드."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tokyo-onsen-guide.com/#website",
+      "url": "https://www.tokyo-onsen-guide.com/",
+      "name": "Tokyo Onsen Guide",
+      "publisher": { "@id": "https://www.tokyo-onsen-guide.com/#organization" },
+      "inLanguage": ["ko", "ja", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.tokyo-onsen-guide.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
 }
 </script>
 </head>
