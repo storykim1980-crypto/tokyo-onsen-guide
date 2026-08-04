@@ -1072,13 +1072,6 @@ body::before {
     .guide-back { display:inline-block; margin-bottom:16px; font-size:14px; color:var(--burgundy); cursor:pointer; }
     @media (max-width:767px){ .guide-article{padding:20px 16px;} .guide-article h1{font-size:21px;} .guide-article h2{font-size:17px;} }
 
-    /* === 푸터 면책 조항 === */
-    .footer-disclaimer { max-width:860px; margin:22px auto 18px; padding:16px 18px; border:1px solid var(--border); border-radius:8px; background:rgba(0,0,0,0.02); text-align:left; }
-    [data-theme="dark"] .footer-disclaimer { background:rgba(255,255,255,0.03); }
-    .footer-disclaimer h2 { font-size:13px; font-weight:700; margin:0 0 8px; letter-spacing:.03em; color:var(--text-muted); }
-    .footer-disclaimer ul { margin:0; padding-left:16px; }
-    .footer-disclaimer li { font-size:12px; line-height:1.75; color:var(--text-muted); margin-bottom:5px; }
-    @media (max-width:767px){ .footer-disclaimer{ margin:16px 12px; padding:14px; } .footer-disclaimer li{ font-size:11.5px; } }
 </style>
 <link rel="icon" type="image/jpeg" href="images/hero-onsen.jpg">
   <link rel="apple-touch-icon" href="images/hero-onsen.jpg">
@@ -1188,6 +1181,7 @@ if ('serviceWorker' in navigator) {
       <a href="#" data-nav="cookies" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🍪</span> <span data-i18n="footerCookies">쿠키 정책</span></a>
       <a href="#" data-nav="contact" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>✉️</span> <span data-i18n="footerContact">문의</span></a>
       <a href="#" data-nav="advertising" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>📢</span> <span data-i18n="footerAdvertising">광고 정책</span></a>
+            <a href="#" data-nav="disclaimer" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>⚖️</span> <span data-i18n="footerDisclaimer">면책조항</span></a>
     </div>
   </div>
 </div>
@@ -1410,6 +1404,9 @@ if ('serviceWorker' in navigator) {
 <section id="page-advertising" class="page" aria-label="광고 및 제휴 정책">
   <div id="advertising-container"></div>
 </section>
+<section id="page-disclaimer" class="page" aria-label="면책조항">
+  <div id="disclaimer-container"></div>
+</section>
 
 <section id="page-guides" class="page" aria-label="온천 가이드">
   <div class="container">
@@ -1438,17 +1435,7 @@ if ('serviceWorker' in navigator) {
     <a href="#" data-nav="cookies" data-i18n="footerCookies">쿠키 정책</a>
     <a href="#" data-nav="contact" data-i18n="footerContact">문의</a>
     <a href="#" data-nav="advertising" data-i18n="footerAdvertising">광고 정책</a>
-  </div>
-  <div class="footer-disclaimer">
-    <h2 data-i18n="discTitle">면책 조항</h2>
-    <ul>
-      <li data-i18n="disc1">본 사이트의 요금·영업시간·휴무일·시설 정보는 공개 자료를 바탕으로 정리한 참고용 자료이며, 예고 없이 변경될 수 있습니다. 방문 전 각 시설의 공식 사이트나 전화로 반드시 확인해 주시기 바랍니다.</li>
-      <li data-i18n="disc2">게재된 이미지는 분위기를 전달하기 위한 참고 이미지이며, 해당 시설의 실제 사진이 아닙니다.</li>
-      <li data-i18n="disc3">본 사이트는 소개된 시설과 자본·운영상 제휴 관계가 없으며, 게재 여부에 대한 대가를 받지 않습니다. 광고는 광고임을 명확히 구분해 표시합니다.</li>
-      <li data-i18n="disc4">본 사이트의 정보를 이용하여 발생한 직접적·간접적 손해에 대해 운영자는 법적 책임을 지지 않습니다.</li>
-      <li data-i18n="disc5">시설명·상표·상호에 대한 권리는 각 권리자에게 귀속됩니다. 정보 정정 요청이나 게재 중지 요청은 문의 페이지를 통해 접수해 주시기 바랍니다.</li>
-      <li data-i18n="disc6">입욕 시 건강 상태에 유의하시고, 음주 후 입욕은 삼가 주십시오. 지병이 있으신 분은 사전에 의사와 상담하시기 바랍니다.</li>
-    </ul>
+    <a href="#" data-nav="disclaimer" data-i18n="footerDisclaimer">면책조항</a>
   </div>
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.<br><span style="font-size:12px;opacity:.8"><span data-i18n="lastUpdated">최종 업데이트</span>: 2026-08-04</span></p>
 </footer>
@@ -1783,6 +1770,7 @@ const S = {
     if(S.view==="cookies")drawCookies();
     if(S.view==="contact")drawContact();
     if(S.view==="advertising")drawAdvertising();
+    if(S.view==="disclaimer")drawDisclaimer();
     if(S.view==="guides")drawGuides();
     if(S.view==="guide")drawGuideDetail();
     // update footerAdvertising i18n label dynamically
@@ -1991,6 +1979,51 @@ const S = {
       ${mdToHtml(g.body[lang]||g.body.ko)}`;
     const bb=$("guide-back-btn");
     if(bb) bb.addEventListener("click",()=>{ go("guides"); window.scrollTo(0,0); });
+  }
+
+  function drawDisclaimer(){
+    try {
+      const wrap = $("disclaimer-container");
+      if (!wrap) return;
+      const lang = S.lang || "ko";
+      const c = {
+        ko: { title:"면책조항", sub:"Disclaimer",
+          items:[
+            ["1. 정보의 성격","<p>본 사이트에 게재된 요금·영업시간·휴무일·시설 정보는 각 시설의 공식 사이트, 지방자치단체 및 목욕조합의 공개 자료를 바탕으로 정리한 <strong>참고용 자료</strong>입니다. 이러한 정보는 예고 없이 변경될 수 있으므로, 방문 전 반드시 각 시설의 공식 사이트나 전화로 최신 정보를 확인해 주시기 바랍니다.</p>"],
+            ["2. 이미지에 관하여","<p>본 사이트에 게재된 이미지는 온천·센토의 분위기를 전달하기 위한 <strong>참고 이미지</strong>이며, 해당 시설의 실제 사진이 아닙니다. 시설의 실제 외관이나 내부는 이미지와 다릅니다.</p>"],
+            ["3. 편집 독립성","<p>본 사이트는 소개된 시설과 자본 관계나 운영상의 제휴 관계가 없으며, 게재 여부에 대한 대가를 받지 않습니다. 모든 시설 정보는 중립적인 기준으로 선정·작성됩니다. 광고가 게재되는 경우 광고임을 명확히 구분하여 표시합니다.</p>"],
+            ["4. 책임의 한계","<p>운영자는 본 사이트의 정보가 정확하고 최신이 되도록 노력하고 있으나, 그 완전성이나 정확성을 보증하지 않습니다. 본 사이트의 정보를 이용하여 발생한 직접적·간접적 손해에 대하여 운영자는 법적 책임을 지지 않습니다.</p>"],
+            ["5. 권리의 귀속","<p>시설명·상표·상호에 관한 권리는 각 권리자에게 귀속됩니다. 게재된 정보에 오류가 있거나 게재 중지를 원하시는 경우, 문의 페이지를 통해 연락해 주시면 신속히 확인 후 조치하겠습니다.</p>"],
+            ["6. 건강 및 안전","<p>입욕 시에는 건강 상태에 유의해 주십시오. 음주 후 입욕은 매우 위험하므로 삼가시기 바랍니다. 심장 질환, 고혈압 등 지병이 있으신 분이나 임신 중인 분은 사전에 의사와 상담하시기 바랍니다. 사우나 이용 시에는 충분한 수분 보충을 권장합니다.</p>"],
+            ["7. 외부 링크","<p>본 사이트에는 외부 웹사이트로 연결되는 링크가 포함되어 있습니다. 링크된 외부 사이트의 내용이나 개인정보 처리에 대하여 운영자는 책임을 지지 않습니다.</p>"]
+          ]},
+        ja: { title:"免責事項", sub:"Disclaimer",
+          items:[
+            ["1. 情報の性質","<p>当サイトに掲載する料金・営業時間・定休日・施設情報は、各施設の公式サイト、自治体および浴場組合の公開資料をもとに整理した<strong>参考情報</strong>です。これらの情報は予告なく変更される場合がありますので、ご訪問前に各施設の公式サイトまたはお電話にて最新の情報をご確認ください。</p>"],
+            ["2. 画像について","<p>当サイトに掲載している画像は、温泉・銭湯の雰囲気をお伝えするための<strong>イメージ画像</strong>であり、当該施設の実際の写真ではありません。施設の実際の外観や内部は画像と異なります。</p>"],
+            ["3. 編集の独立性","<p>当サイトは掲載施設との資本関係および運営上の提携関係はなく、掲載の対価を受け取っておりません。すべての施設情報は中立的な基準で選定・作成しています。広告を掲載する場合は、広告であることを明示いたします。</p>"],
+            ["4. 責任の範囲","<p>運営者は当サイトの情報が正確かつ最新であるよう努めておりますが、その完全性や正確性を保証するものではありません。当サイトの情報のご利用により生じた直接的・間接的な損害について、運営者は法的責任を負いかねます。</p>"],
+            ["5. 権利の帰属","<p>施設名・商標・商号に関する権利は各権利者に帰属します。掲載情報に誤りがある場合や掲載停止をご希望の場合は、お問い合わせページよりご連絡いただければ、速やかに確認のうえ対応いたします。</p>"],
+            ["6. 健康と安全","<p>ご入浴の際は体調にご留意ください。飲酒後の入浴は大変危険ですのでお控えください。心臓疾患、高血圧などの持病をお持ちの方、妊娠中の方は、事前に医師にご相談ください。サウナをご利用の際は十分な水分補給をお勧めします。</p>"],
+            ["7. 外部リンク","<p>当サイトには外部ウェブサイトへのリンクが含まれています。リンク先の外部サイトの内容や個人情報の取り扱いについて、運営者は責任を負いかねます。</p>"]
+          ]},
+        en: { title:"Disclaimer", sub:"Disclaimer",
+          items:[
+            ["1. Nature of the Information","<p>Prices, opening hours, closing days, and facility details on this site are <strong>reference information</strong> compiled from official facility websites and public records published by local governments and bathhouse associations. Such information may change without notice, so please confirm the latest details directly with each facility before visiting.</p>"],
+            ["2. About the Images","<p>Images on this site are <strong>illustrative</strong>, intended to convey the atmosphere of onsen and sento. They are not photographs of the specific facilities listed, and actual exteriors and interiors will differ.</p>"],
+            ["3. Editorial Independence","<p>This site has no financial or operational affiliation with the facilities listed and receives no payment for inclusion. All listings are selected and written according to neutral criteria. Where advertising appears, it is clearly identified as such.</p>"],
+            ["4. Limitation of Liability","<p>While we make every effort to keep information accurate and current, we make no warranty as to its completeness or accuracy. The operator accepts no legal liability for any direct or indirect loss arising from the use of information on this site.</p>"],
+            ["5. Ownership of Rights","<p>All facility names, trademarks, and trade names belong to their respective owners. If you find an error in our listings or wish to request removal, please contact us via the contact page and we will review and respond promptly.</p>"],
+            ["6. Health and Safety","<p>Please take care of your health when bathing. Bathing after consuming alcohol is highly dangerous and should be avoided. Those with heart conditions, high blood pressure, or other medical conditions, and those who are pregnant, should consult a doctor beforehand. Adequate hydration is recommended when using saunas.</p>"],
+            ["7. External Links","<p>This site contains links to external websites. The operator accepts no responsibility for the content or privacy practices of linked external sites.</p>"]
+          ]}
+      };
+      const t = c[lang] || c.ko;
+      let html = `<div class="policy-wrap"><div class="policy-head"><h1>${t.title}</h1><p class="policy-sub">${t.sub}</p></div>`;
+      t.items.forEach(it => { html += `<section class="policy-sec"><h2>${it[0]}</h2>${it[1]}</section>`; });
+      html += `<p class="policy-updated"><span>${lang==="ja"?"最終更新":lang==="en"?"Last updated":"최종 업데이트"}</span>: 2026-08-04</p></div>`;
+      wrap.innerHTML = html;
+    } catch(e) { console.error(e); }
   }
 
   function drawAdvertising(){
