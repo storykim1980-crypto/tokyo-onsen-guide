@@ -21342,7 +21342,14 @@
       "navGuides": "온천 가이드",
       "guidesTitle": "온천 가이드",
       "guidesSub": "도쿄 온천을 제대로 즐기기 위한 정보",
-      "lastUpdated": "최종 업데이트"
+      "lastUpdated": "최종 업데이트",
+      "discTitle": "면책 조항",
+      "disc1": "본 사이트의 요금·영업시간·휴무일·시설 정보는 공개 자료를 바탕으로 정리한 참고용 자료이며, 예고 없이 변경될 수 있습니다. 방문 전 각 시설의 공식 사이트나 전화로 반드시 확인해 주시기 바랍니다.",
+      "disc2": "게재된 이미지는 분위기를 전달하기 위한 참고 이미지이며, 해당 시설의 실제 사진이 아닙니다.",
+      "disc3": "본 사이트는 소개된 시설과 자본·운영상 제휴 관계가 없으며, 게재 여부에 대한 대가를 받지 않습니다. 광고는 광고임을 명확히 구분해 표시합니다.",
+      "disc4": "본 사이트의 정보를 이용하여 발생한 직접적·간접적 손해에 대해 운영자는 법적 책임을 지지 않습니다.",
+      "disc5": "시설명·상표·상호에 대한 권리는 각 권리자에게 귀속됩니다. 정보 정정 요청이나 게재 중지 요청은 문의 페이지를 통해 접수해 주시기 바랍니다.",
+      "disc6": "입욕 시 건강 상태에 유의하시고, 음주 후 입욕은 삼가 주십시오. 지병이 있으신 분은 사전에 의사와 상담하시기 바랍니다."
     },
     "en": {
       "yearBadge": "(2026 Latest)",
@@ -21470,7 +21477,14 @@
       "navGuides": "Guides",
       "guidesTitle": "Onsen Guides",
       "guidesSub": "Practical knowledge for enjoying Tokyo hot springs",
-      "lastUpdated": "Last updated"
+      "lastUpdated": "Last updated",
+      "discTitle": "Disclaimer",
+      "disc1": "Prices, opening hours, closing days, and facility details on this site are reference information compiled from publicly available sources and may change without notice. Please confirm directly with each facility before visiting.",
+      "disc2": "Images shown are for illustrative purposes only and are not photographs of the specific facilities listed.",
+      "disc3": "This site has no financial or operational affiliation with the facilities listed and receives no payment for inclusion. Advertising is clearly labeled as such.",
+      "disc4": "The operator accepts no legal liability for any direct or indirect loss arising from the use of information on this site.",
+      "disc5": "All facility names, trademarks, and trade names belong to their respective owners. Requests for correction or removal can be submitted via our contact page.",
+      "disc6": "Please take care of your health when bathing and avoid bathing after consuming alcohol. Those with medical conditions should consult a doctor beforehand."
     },
     "ja": {
       "yearBadge": "(2026年最新)",
@@ -21598,7 +21612,14 @@
       "navGuides": "温泉ガイド",
       "guidesTitle": "温泉ガイド",
       "guidesSub": "東京の温泉を存分に楽しむための情報",
-      "lastUpdated": "最終更新"
+      "lastUpdated": "最終更新",
+      "discTitle": "免責事項",
+      "disc1": "当サイトの料金・営業時間・定休日・施設情報は公開資料をもとに整理した参考情報であり、予告なく変更される場合があります。ご訪問前に各施設の公式サイトまたはお電話で必ずご確認ください。",
+      "disc2": "掲載している画像は雰囲気をお伝えするためのイメージであり、当該施設の実際の写真ではありません。",
+      "disc3": "当サイトは掲載施設との資本関係・運営上の提携関係はなく、掲載の対価を受け取っておりません。広告は広告であることを明示して掲載します。",
+      "disc4": "当サイトの情報のご利用により生じた直接的・間接的な損害について、運営者は法的責任を負いかねます。",
+      "disc5": "施設名・商標・商号に関する権利は各権利者に帰属します。情報の訂正や掲載停止のご要望はお問い合わせページよりご連絡ください。",
+      "disc6": "ご入浴の際は体調にご留意いただき、飲酒後の入浴はお控えください。持病のある方は事前に医師にご相談ください。"
     }
   },
   "TYPES": [

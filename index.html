@@ -1071,6 +1071,14 @@ body::before {
     .guide-img-note { font-size:12px; color:var(--text-muted); margin:-14px 0 20px; text-align:center; }
     .guide-back { display:inline-block; margin-bottom:16px; font-size:14px; color:var(--burgundy); cursor:pointer; }
     @media (max-width:767px){ .guide-article{padding:20px 16px;} .guide-article h1{font-size:21px;} .guide-article h2{font-size:17px;} }
+
+    /* === 푸터 면책 조항 === */
+    .footer-disclaimer { max-width:860px; margin:22px auto 18px; padding:16px 18px; border:1px solid var(--border); border-radius:8px; background:rgba(0,0,0,0.02); text-align:left; }
+    [data-theme="dark"] .footer-disclaimer { background:rgba(255,255,255,0.03); }
+    .footer-disclaimer h2 { font-size:13px; font-weight:700; margin:0 0 8px; letter-spacing:.03em; color:var(--text-muted); }
+    .footer-disclaimer ul { margin:0; padding-left:16px; }
+    .footer-disclaimer li { font-size:12px; line-height:1.75; color:var(--text-muted); margin-bottom:5px; }
+    @media (max-width:767px){ .footer-disclaimer{ margin:16px 12px; padding:14px; } .footer-disclaimer li{ font-size:11.5px; } }
 </style>
 <link rel="icon" type="image/jpeg" href="images/hero-onsen.jpg">
   <link rel="apple-touch-icon" href="images/hero-onsen.jpg">
@@ -1430,6 +1438,17 @@ if ('serviceWorker' in navigator) {
     <a href="#" data-nav="cookies" data-i18n="footerCookies">쿠키 정책</a>
     <a href="#" data-nav="contact" data-i18n="footerContact">문의</a>
     <a href="#" data-nav="advertising" data-i18n="footerAdvertising">광고 정책</a>
+  </div>
+  <div class="footer-disclaimer">
+    <h2 data-i18n="discTitle">면책 조항</h2>
+    <ul>
+      <li data-i18n="disc1">본 사이트의 요금·영업시간·휴무일·시설 정보는 공개 자료를 바탕으로 정리한 참고용 자료이며, 예고 없이 변경될 수 있습니다. 방문 전 각 시설의 공식 사이트나 전화로 반드시 확인해 주시기 바랍니다.</li>
+      <li data-i18n="disc2">게재된 이미지는 분위기를 전달하기 위한 참고 이미지이며, 해당 시설의 실제 사진이 아닙니다.</li>
+      <li data-i18n="disc3">본 사이트는 소개된 시설과 자본·운영상 제휴 관계가 없으며, 게재 여부에 대한 대가를 받지 않습니다. 광고는 광고임을 명확히 구분해 표시합니다.</li>
+      <li data-i18n="disc4">본 사이트의 정보를 이용하여 발생한 직접적·간접적 손해에 대해 운영자는 법적 책임을 지지 않습니다.</li>
+      <li data-i18n="disc5">시설명·상표·상호에 대한 권리는 각 권리자에게 귀속됩니다. 정보 정정 요청이나 게재 중지 요청은 문의 페이지를 통해 접수해 주시기 바랍니다.</li>
+      <li data-i18n="disc6">입욕 시 건강 상태에 유의하시고, 음주 후 입욕은 삼가 주십시오. 지병이 있으신 분은 사전에 의사와 상담하시기 바랍니다.</li>
+    </ul>
   </div>
   <p>© 2026 Tokyo Onsen Guide. All rights reserved.<br><span style="font-size:12px;opacity:.8"><span data-i18n="lastUpdated">최종 업데이트</span>: 2026-08-04</span></p>
 </footer>
