@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?lang=ko</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?lang=ja</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?lang=en</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ko</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guides"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ja</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guides"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=en</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guides&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guides"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ko</loc>
+    <lastmod>2026-08-02</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ja</loc>
+    <lastmod>2026-08-02</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=en</loc>
+    <lastmod>2026-08-02</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g20"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ko</loc>
+    <lastmod>2026-08-01</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ja</loc>
+    <lastmod>2026-08-01</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=en</loc>
+    <lastmod>2026-08-01</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g19"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ko</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ja</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=en</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g18"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ko</loc>
+    <lastmod>2026-07-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ja</loc>
+    <lastmod>2026-07-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=en</loc>
+    <lastmod>2026-07-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g17"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ko</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ja</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=en</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g16"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ko</loc>
+    <lastmod>2026-07-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ja</loc>
+    <lastmod>2026-07-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=en</loc>
+    <lastmod>2026-07-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g15"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ko</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ja</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=en</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g14"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ko</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ja</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=en</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g13"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ko</loc>
+    <lastmod>2026-06-28</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ja</loc>
+    <lastmod>2026-06-28</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=en</loc>
+    <lastmod>2026-06-28</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g12"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ko</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ja</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=en</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g11"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ko</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ja</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=en</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g10"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ko</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ja</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=en</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g09"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ko</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ja</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=en</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g08"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ko</loc>
+    <lastmod>2026-05-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ja</loc>
+    <lastmod>2026-05-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=en</loc>
+    <lastmod>2026-05-24</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g07"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ko</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ja</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=en</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g06"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ko</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ja</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=en</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g05"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ko</loc>
+    <lastmod>2026-05-03</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ja</loc>
+    <lastmod>2026-05-03</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=en</loc>
+    <lastmod>2026-05-03</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g04"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ko</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ja</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=en</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g03"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ko</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ja</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=en</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g02"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ko</loc>
+    <lastmod>2026-04-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ja</loc>
+    <lastmod>2026-04-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=en</loc>
+    <lastmod>2026-04-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/?view=guide&amp;id=g01"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/guide-sento-first-time.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/guide-sento-first-time.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/guide-sento-first-time.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/guide-sento-first-time.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/guide-sento-first-time.html"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/guide-tattoo-onsen-tokyo.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/guide-tattoo-onsen-tokyo.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/guide-tattoo-onsen-tokyo.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/guide-tattoo-onsen-tokyo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/guide-tattoo-onsen-tokyo.html"/>
+  </url>
+  <url>
+    <loc>https://www.tokyo-onsen-guide.com/guide-research-notes.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/guide-research-notes.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/guide-research-notes.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/guide-research-notes.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tokyo-onsen-guide.com/guide-research-notes.html"/>
+  </url>
+</urlset>

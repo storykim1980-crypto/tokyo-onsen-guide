@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tokyo-onsen-guide.com/sitemap.xml
