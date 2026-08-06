@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="description" content="도쿄 온천 가이드 - 도쿄의 인기 일일 온천, 천연 온천, 슈퍼 센토 정보">
 <meta name="keywords" content="도쿄 온천, Tokyo onsen, 도쿄 스파, 일본 온천, 도쿄 여행, 도쿄 일일 온천, 슈퍼 센토, sento, ryokan">
 <meta name="author" content="Tokyo Onsen Guide">
@@ -12,8 +12,38 @@
 <meta name="google-adsense-account" content="ca-pub-3122957517118825">
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3122957517118825" crossorigin="anonymous"></script>
-  <!-- Auto/page-level ads are intentionally not forced here. Enable approved ad units after review. -->
-<link rel="canonical" href="https://www.tokyo-onsen-guide.com/" id="seo-canonical">
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3122957517118825",
+      enable_page_level_ads: true,
+      overlays: { bottom: true }
+    });
+  </script>
+<script>
+  // 다국어 SEO: 접속 URL의 언어에 맞춰 canonical·lang·og:locale을 즉시 설정
+  // (self-referencing canonical이 아니면 ja/en 페이지가 중복으로 판정되어 색인에서 제외됨)
+  (function(){
+    try {
+      var BASE = "https://www.tokyo-onsen-guide.com/";
+      var p = new URLSearchParams(location.search);
+      var lang = p.get("lang");
+      if (lang !== "ja" && lang !== "en" && lang !== "ko") lang = "";
+      var self = lang ? BASE + "?lang=" + lang : BASE;
+      var LOC = { ko:"ko_KR", ja:"ja_JP", en:"en_US" };
+      document.documentElement.setAttribute("lang", lang || "ko");
+      document.addEventListener("DOMContentLoaded", function(){
+        var c = document.getElementById("seo-canonical");
+        if (c) c.setAttribute("href", self);
+        var o = document.getElementById("seo-og-locale");
+        if (o) o.setAttribute("content", LOC[lang || "ko"]);
+        var u = document.getElementById("seo-og-url");
+        if (u) u.setAttribute("content", self);
+      });
+      window.__seoSelfUrl = self;
+    } catch(e) {}
+  })();
+  </script>
+  <link rel="canonical" href="https://www.tokyo-onsen-guide.com/" id="seo-canonical">
   <link rel="alternate" hreflang="ko" href="https://www.tokyo-onsen-guide.com/?lang=ko">
   <link rel="alternate" hreflang="ja" href="https://www.tokyo-onsen-guide.com/?lang=ja">
   <link rel="alternate" hreflang="en" href="https://www.tokyo-onsen-guide.com/?lang=en">
@@ -27,7 +57,7 @@
   <meta property="og:url" content="https://www.tokyo-onsen-guide.com/" id="seo-og-url">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="도쿄 온천 가이드 | Tokyo Onsen Guide">
-  <meta name="twitter:description" content="실제 운영 중인 도쿄 인기 온천·센토 153곳 엄선. 한·일·영 3개국어 가이드.">
+  <meta name="twitter:description" content="실제 운영 중인 도쿄 인기 온천·센토 302곳 엄선. 한·일·영 3개국어 가이드.">
   <meta name="twitter:image" content="https://www.tokyo-onsen-guide.com/images/hero-onsen.jpg">
   <title>도쿄 온천 가이드 | Tokyo Onsen Guide</title>
 <style>
@@ -44,11 +74,11 @@
   --gold-pale: rgba(201,169,110,0.12);
   --burgundy: #8b1a2b;
   --burgundy-light: #a02035;
-  --text: #2c2416;
+  --text: #2c2026;
   --text-light: #5c4d3c;
   --text-muted: #8a7a6a;
   --link: #7a5c3a;
-  --link-hover: #5c4228;
+  --link-hover: #5c4291;
   --border: #d4c9b8;
   --border-light: #e8e0d4;
   --danger: #b91c1c;
@@ -79,8 +109,8 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]):not([data-theme="dark"]) {
     --cream-panel: rgba(245,240,232,0.97);
-    --text: #2c2416; --text-light: #5c4d3c; --text-muted: #8a7a6a;
-    --link: #7a5c3a; --link-hover: #5c4228;
+    --text: #2c2026; --text-light: #5c4d3c; --text-muted: #8a7a6a;
+    --link: #7a5c3a; --link-hover: #5c4291;
     --border: #d4c9b8; --border-light: #e8e0d4;
     --shadow-sm: 0 2px 8px rgba(26,20,16,0.08); --shadow: 0 4px 20px rgba(26,20,16,0.12); --shadow-lg: 0 12px 40px rgba(26,20,16,0.18);
   }
@@ -99,13 +129,7 @@ body {
   min-height: 100vh; padding-bottom: 64px;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  overflow-x: hidden;
-  word-break: keep-all;
-  overflow-wrap: break-word;
 }
-img, iframe, video, svg { max-width: 100%; }
-a, button, input, select, textarea { overflow-wrap: break-word; }
-a[href^="http"], .data-table-value a, .luxury-table-value a { overflow-wrap: anywhere; word-break: break-word; }
 body::before {
   content: "";
   position: fixed; inset: 0;
@@ -204,17 +228,6 @@ body::before {
 .map-label:hover { background: var(--burgundy); color: #fff; border-color: var(--burgundy); transform: translateY(-2px); }
 [data-theme="dark"] .map-label { background: rgba(40,34,26,0.98); color: var(--cream); }
 .map-legend { display: flex; align-items: center; gap: 14px; padding: 12px 16px; font-size: 12px; font-weight: 700; color: var(--text-light); border-top: 1px solid var(--border); background: var(--cream-dark); }
-/* Homepage map: keep the Google basemap visual, but make facility pins
-   current-data-driven and clickable instead of relying on stale third-party descriptions. */
-.map-frame iframe.map-base { pointer-events: none; }
-.map-pin-layer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
-.map-pin { position: absolute; width: 15px; height: 15px; padding: 0; border: 2px solid #fff; border-radius: 50%; background: var(--burgundy); box-shadow: 0 1px 5px rgba(26,20,16,0.45); transform: translate(-50%, -50%); cursor: pointer; pointer-events: auto; transition: transform 150ms ease, background 150ms ease, z-index 150ms ease; }
-.map-pin::after { content: ""; position: absolute; left: 50%; bottom: -6px; width: 6px; height: 6px; background: var(--burgundy); transform: translateX(-50%) rotate(45deg); z-index: -1; }
-.map-pin:hover, .map-pin:focus-visible { background: var(--gold-dark); transform: translate(-50%, -50%) scale(1.35); z-index: 10; outline: 2px solid var(--gold-light); outline-offset: 2px; }
-.map-pin:hover::after, .map-pin:focus-visible::after { background: var(--gold-dark); }
-.map-open-link { position: absolute; right: 10px; bottom: 10px; z-index: 5; display: inline-flex; align-items: center; gap: 4px; min-height: 34px; padding: 6px 10px; border: 1px solid var(--gold); border-radius: 999px; background: rgba(245,240,232,0.96); color: var(--wood-dark); font-size: 11px; font-weight: 800; text-decoration: none; box-shadow: 0 2px 8px rgba(26,20,16,0.18); }
-.map-open-link:hover, .map-open-link:focus-visible { background: var(--burgundy); color: #fff; outline: none; }
-[data-theme="dark"] .map-open-link { background: rgba(40,34,26,0.96); color: var(--cream); }
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
 .side-panel { background: var(--cream-panel); border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 18px; box-shadow: var(--shadow); }
@@ -489,7 +502,7 @@ body::before {
 
 .luxury-main-inner { max-width: 900px; margin: 0 auto; padding: 10px 20px 40px; }
 
-.luxury-header-card { background: #fff; border: 1px solid rgba(212,201,184,0.8); border-radius: 20px; padding: 28px 32px 24px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 24px; position: relative; overflow: hidden; }
+.luxury-header-card { background: #fff; border: 1px solid rgba(255, 201, 184, 0.8); border-radius: 20px; padding: 28px 32px 24px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 24px; position: relative; overflow: hidden; }
 [data-theme="dark"] .luxury-header-card { background: rgba(38,32,24,0.9); border-color: rgba(70,56,40,0.8); }
 .luxury-header-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--gold) 0%, #8b1a2b 50%, var(--gold) 100%); }
 
@@ -503,7 +516,7 @@ body::before {
 .luxury-rating-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .luxury-rating-stars { color: #d97706; font-size: 20px; letter-spacing: 2px; }
 .luxury-rating-score { font-size: 22px; font-weight: 900; color: #8b1a2b; }
-[data-theme="dark"] .luxury-rating-score { color: #f87171; }
+[data-theme="dark"] .luxury-rating-score { color: #f87291; }
 .luxury-rating-count { font-size: 14px; font-weight: 700; color: var(--text-muted); }
 .luxury-rating-disc { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
 
@@ -514,7 +527,7 @@ body::before {
 .luxury-showcase-bar { background: rgba(245,240,232,0.98); padding: 12px 22px; font-size: 13px; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--border-light); }
 [data-theme="dark"] .luxury-showcase-bar { background: rgba(30,26,20,0.98); border-color: var(--wood-light); }
 
-.luxury-section-card { background: #fff; border: 1px solid rgba(212,201,184,0.8); border-radius: 20px; padding: 32px 36px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 26px; transition: border-color 0.2s ease; }
+.luxury-section-card { background: #fff; border: 1px solid rgba(255, 201, 184, 0.8); border-radius: 20px; padding: 32px 36px; box-shadow: 0 4px 20px rgba(26,20,16,0.05); margin-bottom: 26px; transition: border-color 0.2s ease; }
 [data-theme="dark"] .luxury-section-card { background: rgba(38,32,24,0.9); border-color: rgba(70,56,40,0.8); }
 .luxury-section-card:hover { border-color: var(--gold); }
 
@@ -1080,84 +1093,57 @@ body::before {
     .guide-article th { background:var(--gold-pale); font-weight:700; }
     .guide-hero-img { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; margin-bottom:20px; }
     .guide-img-note { font-size:12px; color:var(--text-muted); margin:-14px 0 20px; text-align:center; }
-    .guide-back { display:inline-block; margin-bottom:16px; padding:0; border:0; background:transparent; text-align:left; font:inherit; font-size:14px; color:var(--burgundy); cursor:pointer; }
+    .guide-back { display:inline-block; margin-bottom:16px; font-size:14px; color:var(--burgundy); cursor:pointer; }
     @media (max-width:767px){ .guide-article{padding:20px 16px;} .guide-article h1{font-size:21px;} .guide-article h2{font-size:17px;} }
 
-/* Image provenance notice */
-.image-meta {
-  padding: 7px 10px;
-  border-top: 1px solid var(--border-light);
-  background: var(--cream-panel);
-  color: var(--text-muted);
-  font-size: 11px;
-  line-height: 1.55;
-}
-.image-meta .image-usage-note { font-weight: 700; color: var(--text-light); }
-.image-meta .image-credit { margin-top: 2px; overflow-wrap: anywhere; }
-.image-meta a { color: var(--link); text-decoration: underline; }
-.luxury-showcase-bar .image-meta { width: 100%; padding: 0; border-top: 0; background: transparent; }
-[data-theme="dark"] .image-meta { background: rgba(30,26,20,0.92); }
 
-.image-disclaimer {
-  font-size: 11px;
-  line-height: 1.5;
-  color: var(--text-muted);
-  background: rgba(245,240,232,0.92);
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  padding: 7px 10px;
-}
-.hero-image-disclaimer {
-  position: absolute;
-  left: 16px;
-  bottom: 12px;
-  z-index: 4;
-  max-width: min(440px, calc(100% - 32px));
-  background: rgba(26,20,16,0.78);
-  border-color: rgba(201,169,110,0.45);
-  color: rgba(255,255,255,0.88);
-}
-.list-image-disclaimer { margin: 10px 0 14px; text-align: center; }
-[data-theme="dark"] .image-disclaimer { background: rgba(30,26,20,0.92); }
+    /* 참고 이미지 고지 */
+    .img-disclaimer { font-size: 12px; line-height: 1.5; color: var(--text-muted); margin: 6px 0 0; text-align: center; opacity: .85; }
+    .card-visual { position: relative; }
+    .card-visual::after {
+      content: attr(data-imgnote);
+      position: absolute; left: 0; right: 0; bottom: 0;
+      font-size: 10px; line-height: 1.4; color: #fff;
+      background: rgba(0,0,0,0.45); padding: 3px 6px;
+      text-align: center; letter-spacing: -0.2px;
+    }
+    @media (max-width:767px){ .card-visual::after { font-size: 9px; } }
 
-/* ===== Final responsive/accessibility hardening ===== */
-.runtime-error { max-width: 760px; margin: 32px auto; padding: 24px 20px; border: 1px solid var(--border); border-left: 4px solid var(--danger); border-radius: var(--radius); background: var(--cream-panel); color: var(--text); text-align: center; }
-.runtime-error h1 { font-size: 20px; margin-bottom: 10px; color: var(--danger); }
-.runtime-error p { color: var(--text-light); overflow-wrap: anywhere; }
-.runtime-error-help { margin-top: 10px; font-size: 13px; color: var(--text-muted) !important; }
-@media (max-width: 767px) {
-  body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
-  .site-header { padding-top: env(safe-area-inset-top, 0px); }
-  .bottom-nav {
-    height: calc(60px + env(safe-area-inset-bottom, 0px));
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-  button, select, input, textarea,
-  .menu-nav a, .category-nav a, .side-more, .side-list li a, .sidebar-list li a,
-  .sidebar-pill, .active-filter-tag, .blog-btn, .luxury-action-pill,
-  .luxury-back-pill, .luxury-back-btn-lg, .tool-btn, .lang-btn,
-  .menu-close, .bottom-nav a, .footer-links a {
-    min-height: 44px;
-  }
-  .tool-btn, .lang-btn, .menu-close { min-width: 44px; }
-  .sidebar-pill, .active-filter-tag { display: inline-flex; align-items: center; justify-content: center; }
-  .map-pin { min-width: 44px; min-height: 44px; border: 0; background: transparent; box-shadow: none; }
-  .map-pin::before { content: ""; position: absolute; left: 50%; top: 50%; width: 15px; height: 15px; border: 2px solid #fff; border-radius: 50%; background: var(--burgundy); transform: translate(-50%, -50%); box-shadow: 0 1px 5px rgba(26,20,16,0.45); }
-  .map-pin::after { bottom: 6px; width: 6px; height: 6px; background: var(--burgundy); }
-  .map-pin:hover::before, .map-pin:focus-visible::before { background: var(--gold-dark); }
-  .map-label { min-height: 44px; display: inline-flex; align-items: center; }
-  .map-open-link { min-height: 44px; padding: 8px 12px; }
-  .guide-back { border: 0; background: transparent; padding: 0; text-align: left; }
-  .blog-title, .detail-title, .luxury-main-heading, .guide-article h1, .guide-article h2 { overflow-wrap: anywhere; }
-}
-@media (min-width: 768px) {
-  body { padding-bottom: 0; }
-  .bottom-nav { padding-bottom: 0; }
-}
+    /* 정적 목록 (JS 미실행 크롤러·환경용) — JS 로드 후 자동 숨김 */
+    noscript-fallback { display: block; margin-top: 8px; }
+    body.js-ready noscript-fallback { display: none; }
+    .static-intro { font-size: 13px; line-height: 1.7; color: var(--text-muted); padding: 12px 14px; background: var(--cream-panel); border: 1px solid var(--border); border-radius: var(--radius); margin: 0 0 12px; }
+    .static-card { padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; background: var(--cream-panel); }
+    .static-card h3 { font-size: 15px; margin: 0 0 4px; color: var(--wood-dark); }
+    .static-card h3 span { font-size: 13px; font-weight: 500; color: var(--text-muted); }
+    .static-meta { font-size: 12px; color: var(--text-muted); margin: 0 0 6px; }
+    .static-desc { font-size: 13px; line-height: 1.65; margin: 0 0 6px; }
+    .static-alt { font-size: 12px; color: var(--text-muted); margin: 0 0 3px; }
+    .static-card a { font-size: 12px; color: var(--burgundy); }
 </style>
 <link rel="icon" type="image/jpeg" href="images/hero-onsen.jpg">
   <link rel="apple-touch-icon" href="images/hero-onsen.jpg">
   <link rel="manifest" href="manifest.json">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    // sw.js가 실제로 존재할 때만 등록 (없는 환경에서 404·콘솔 에러 방지)
+    fetch('sw.js', { method: 'HEAD' })
+      .then(res => {
+        if (!res.ok) return; // 파일 없음 → 조용히 종료
+        return navigator.serviceWorker.register('sw.js')
+          .then(reg => { try { reg.update(); } catch(e) {} });
+      })
+      .catch(() => { /* 미리보기 등 SW 미지원/부재 환경: 무시 */ });
+    // 새 서비스워커 활성화 시 1회 자동 새로고침 (구버전 화면 고착 방지)
+    let refreshed = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (refreshed) return; refreshed = true;
+      window.location.reload();
+    });
+  });
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1192,14 +1178,14 @@ body::before {
 
 <header class="site-header" id="site-header">
   <div class="header-inner">
-    <a href="#" class="site-logo" data-nav="home" aria-label="홈으로 이동" data-i18n-aria="homeLabel">
+    <a href="#" class="site-logo" data-nav="home" aria-label="홈으로 이동">
       <span class="logo-mark">♨</span>
       <div class="logo-text">
         <span class="logo-sub" data-i18n="logoSub">TOKYO ONSEN</span>
         <span class="logo-main" data-i18n="siteTitle">도쿄 온천 가이드</span>
       </div>
     </a>
-    <nav class="desktop-nav" aria-label="메인 메뉴" data-i18n-aria="mainNavLabel">
+    <nav class="desktop-nav" aria-label="메인 메뉴">
       <a href="#" data-nav="home" class="active" data-i18n="navHome">홈</a>
       <a href="#" data-nav="list" data-i18n="navOnsen">온천 탐색</a>
       <a href="#" data-feat="rotenburo" data-i18n="catRotenburo">🌿 노천탕</a>
@@ -1214,8 +1200,8 @@ body::before {
         <button type="button" class="lang-btn" data-lang="en" title="English">🇺🇸</button>
         <button type="button" class="lang-btn" data-lang="ja" title="日本語">🇯🇵</button>
       </div>
-      <button type="button" id="btn-theme" class="tool-btn" aria-label="테마 전환" data-i18n-aria="themeToggleLabel">🌙</button>
-      <button type="button" id="btn-menu-toggle" class="tool-btn menu-toggle" aria-label="메뉴 열기" data-i18n-aria="menuOpenLabel">☰</button>
+      <button type="button" id="btn-theme" class="tool-btn" aria-label="테마 전환">🌙</button>
+      <button type="button" id="btn-menu-toggle" class="tool-btn menu-toggle" aria-label="메뉴 열기">☰</button>
     </div>
   </div>
 </header>
@@ -1225,7 +1211,7 @@ body::before {
   <div class="menu-panel">
     <div class="menu-header">
       <strong data-i18n="menuTitle">메뉴</strong>
-      <button type="button" id="btn-menu-close" class="menu-close" aria-label="닫기" data-i18n-aria="menuCloseLabel">✕</button>
+      <button type="button" id="btn-menu-close" class="menu-close" aria-label="닫기">✕</button>
     </div>
     <nav class="menu-nav">
       <a href="#" data-nav="home"><span>🏠</span> <span data-i18n="navHome">홈</span></a>
@@ -1243,13 +1229,14 @@ body::before {
       <a href="#" data-nav="cookies" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>🍪</span> <span data-i18n="footerCookies">쿠키 정책</span></a>
       <a href="#" data-nav="contact" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>✉️</span> <span data-i18n="footerContact">문의</span></a>
       <a href="#" data-nav="advertising" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>📢</span> <span data-i18n="footerAdvertising">광고 정책</span></a>
+            <a href="#" data-nav="disclaimer" style="display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--text-light);text-decoration:none;border-radius:10px;transition:background 150ms;"><span>⚖️</span> <span data-i18n="footerDisclaimer">면책조항</span></a>
     </div>
   </div>
 </div>
 
 <main id="main" class="main">
 
-<section id="page-home" class="page active" aria-label="홈" data-i18n-aria="pageHomeLabel">
+<section id="page-home" class="page active" aria-label="홈">
   <div class="container">
     <div class="breadcrumb">
       <a href="#" data-nav="home" data-i18n="breadcrumbTop">온천 TOP</a> &gt; <span class="current" data-i18n="breadcrumbCurrent">도쿄의 온천, 일일 온천, 슈퍼 센토</span>
@@ -1260,9 +1247,9 @@ body::before {
         <div class="hero-content">
           <div class="editorial-icon">♨</div>
           <div>
-            <h1 class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span></h1>
+            <div class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span></div>
             <div class="editorial-sub" data-i18n="siteSub">도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보</div>
-            <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>153</strong>곳</div>
+            <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>302</strong>곳</div>
           </div>
         </div>
         <div class="hero-search-overlay">
@@ -1274,7 +1261,6 @@ body::before {
           </div>
         </div>
       </div>
-      <div id="hero-image-meta" class="image-meta"></div>
     </div>
     <div class="category-nav">
       <div class="category-nav-inner">
@@ -1316,7 +1302,7 @@ body::before {
     <div class="home-layout">
       <div class="map-zone">
         <div class="map-frame">
-          <iframe id="home-map-iframe" class="map-base" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d120000.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTokyo%20onsen!5e0!3m2!1sko!2sjp!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" decoding="async" aria-label="도쿄 온천 지도" title="도쿄 온천 지도" data-i18n-aria="mapLabel"></iframe>
+          <iframe id="home-map-iframe" src="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399512913&z=9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" decoding="async"></iframe>
           <div class="map-label" style="top:45%;left:52%;" data-area="chiyoda">치요다</div>
           <div class="map-label" style="top:48%;left:55%;" data-area="chuo">주오</div>
           <div class="map-label" style="top:50%;left:58%;" data-area="minato">미나토</div>
@@ -1350,8 +1336,6 @@ body::before {
           <div class="map-label" style="top:68%;left:50%;" data-area="akishima">아키시마</div>
           <div class="map-label" style="top:85%;left:70%;" data-area="oshima-hachijo">오시마·하치조</div>
           <div class="map-label" style="top:75%;left:55%;" data-area="other-tokyo">도쿄 기타</div>
-          <div id="home-map-pins" class="map-pin-layer" aria-label="온천 시설 위치"></div>
-          <a id="home-map-open" class="map-open-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo%20onsen" target="_blank" rel="noopener noreferrer">Google Maps에서 전체 보기 ↗</a>
         </div>
         <div class="map-legend">
           <span><span class="legend-dot" style="background:#c9a96e;"></span> <span data-i18n="mapLegend23">도쿄 23구</span></span>
@@ -1394,13 +1378,12 @@ body::before {
   </div>
 </section>
 
-<section id="page-list" class="page" aria-label="온천 목록" data-i18n-aria="pageListLabel">
+<section id="page-list" class="page" aria-label="온천 목록">
   <div class="container">
     <div class="sub-hero">
       <h1 data-i18n="pageListTitle">온천 목록</h1>
       <p data-i18n="pageListSub">도쿄의 인기 일일 온천과 스파</p>
     </div>
-    <p class="image-disclaimer list-image-disclaimer" data-i18n="imageDisclaimer">이 카테고리의 분위기를 전하는 참고 사진입니다. 이 가게를 촬영한 것이 아닙니다.</p>
     
     <button type="button" id="sidebar-toggle" class="btn btn-secondary" style="display:none;margin-bottom:10px;width:100%;font-size:14px;font-weight:800;" data-i18n="filterToggle">☰ 필터 보기</button>
     <div class="list-layout">
@@ -1437,40 +1420,368 @@ body::before {
           <button id="list-reset-btn" class="btn btn-secondary" style="display:none" data-i18n="btnResetFilter">필터 초기화</button>
         </div>
         <div class="blog-list" id="list-grid"></div>
+        <noscript-fallback id="static-list" aria-label="온천 목록 (기본 표시)">
+          <p class="static-intro">도쿄도 내 온천·센토·스파 <strong>302곳</strong> 중 지역별 대표 40곳입니다. 전체 목록과 검색·필터는 페이지가 완전히 로드되면 표시됩니다.<br>
+          <span lang="ja">東京都内の温泉・銭湯・スパ302施設のうち、地域別の代表40施設です。</span><br>
+          <span lang="en">A selection of 40 facilities from 302 across Tokyo. The full searchable list loads with the page.</span></p>
+      <article class="static-card">
+        <h3>오야타 온천 묘진노유 <span lang="ja">大谷田温泉 明神の湯</span></h3>
+        <p class="static-meta">아다치 · 천연 온천 · 도쿄도 아다치구 오야다 1-18-1</p>
+        <p class="static-desc">아다치에 자리한 천연 온천 명소 &#x27;오야타 온천 묘진노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 23구에서 느껴지지 않는 본격 온천, 천연 히노키 대욕장, 개방…</p>
+        <p class="static-alt" lang="ja">大谷田温泉 明神の湯／東京都足立区大谷田1-18-1</p>
+        <p class="static-alt" lang="en">Oyata Onsen Myojin no Yu — 1-18-1 Oyata, Adachi-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A7%E8%B0%B7%E7%94%B0%E6%B8%A9%E6%B3%89%20%E6%98%8E%E7%A5%9E%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E5%A4%A7%E8%B0%B7%E7%94%B01-18-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>THE SPA 니시아라이 <span lang="ja">THE SPA 西新井</span></h3>
+        <p class="static-meta">아다치 · 도심형 스파 · 도쿄도 아다치구 니시아라이사카에초 1-17-10</p>
+        <p class="static-desc">아다치에 자리한 도심형 스파 명소 &#x27;THE SPA 니시아라이&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 실키바스·츠볼유 등 다양한 탕, TV 리클 라이닝 체어 휴…</p>
+        <p class="static-alt" lang="ja">THE SPA 西新井／東京都足立区西新井栄町1-17-10</p>
+        <p class="static-alt" lang="en">THE SPA Nishiarai — 1-17-10 Nishiarai Sakaecho, Adachi-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=THE%20SPA%20%E8%A5%BF%E6%96%B0%E4%BA%95%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E8%A5%BF%E6%96%B0%E4%BA%95%E6%A0%84%E7%94%BA1-17-10" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>스파디오 <span lang="ja">スパディオ</span></h3>
+        <p class="static-meta">이타바시 · 천연 온천 · 도쿄도 이타바시구 미야모토초 49-4</p>
+        <p class="static-desc">이타바시에 자리한 천연 온천 명소 &#x27;스파디오&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 지하 1,500m 고대 해수 온천, 우키우키 풍욕, 넓고 밝은 휴식코너 등…</p>
+        <p class="static-alt" lang="ja">スパディオ／東京都板橋区宮本町49-4</p>
+        <p class="static-alt" lang="en">Spadio — 49-4 Miyamotocho, Itabashi-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%91%E3%83%87%E3%82%A3%E3%82%AA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%AE%AE%E6%9C%AC%E7%94%BA49-4" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>마에노하라 온천 사야노유도코로 <span lang="ja">前野原温泉 さやの湯処</span></h3>
+        <p class="static-meta">이타바시 · 천연 온천 · 도쿄도 이타바시구 마에노하라초 3-41-1</p>
+        <p class="static-desc">이타바시에 자리한 천연 온천 명소 &#x27;마에노하라 온천 사야노유도코로&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 전후 저택과 정원을 활용, 고사수 정원의 비일상 공간…</p>
+        <p class="static-alt" lang="ja">前野原温泉 さやの湯処／東京都板橋区前野原町3-41-1</p>
+        <p class="static-alt" lang="en">Maenohara Onsen Sayanoyu Dokoro — 3-41-1 Maenoharacho, Itabashi-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%89%8D%E9%87%8E%E5%8E%9F%E6%B8%A9%E6%B3%89%20%E3%81%95%E3%82%84%E3%81%AE%E6%B9%AF%E5%87%A6%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%89%8D%E9%87%8E%E5%8E%9F%E7%94%BA3-41-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>토고시 긴자 온천 <span lang="ja">戸越銀座温泉</span></h3>
+        <p class="static-meta">시나가와 · 전통 센토 · 도쿄도 시나가와구 토고시 2-1-6</p>
+        <p class="static-desc">시나가와에 자리한 전통 센토 명소 &#x27;토고시 긴자 온천&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 리뉴얼한 스타일리시 센토, 남녀 교체제 노천탕, 식사 가능한 테이…</p>
+        <p class="static-alt" lang="ja">戸越銀座温泉／東京都品川区戸越2-1-6</p>
+        <p class="static-alt" lang="en">Togoshi Ginza Onsen — 2-1-6 Togoshi, Shinagawa-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%88%B8%E8%B6%8A%E9%8A%80%E5%BA%A7%E6%B8%A9%E6%B3%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%88%B8%E8%B6%8A2-1-6" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>나칸노부 온천 마츠노유 <span lang="ja">中延温泉 松の湯</span></h3>
+        <p class="static-meta">시나가와 · 전통 센토 · 도쿄도 시나가와구 토고시 6-23-15</p>
+        <p class="static-desc">시나가와에 자리한 전통 센토 명소 &#x27;나칸노부 온천 마츠노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 정원 노천탕, 편(히노키) 노천탕, 록키 사우나 등 방문객의…</p>
+        <p class="static-alt" lang="ja">中延温泉 松の湯／東京都品川区戸越6-23-15</p>
+        <p class="static-alt" lang="en">Matsunoyu — 6-23-15 Togoshi, Shinagawa-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E5%BB%B6%E6%B8%A9%E6%B3%89%20%E6%9D%BE%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%88%B8%E8%B6%8A6-23-15" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>유도코로 가사이 <span lang="ja">スーパー銭湯 湯処葛西</span></h3>
+        <p class="static-meta">에도가와 · 슈퍼 센토 · 도쿄도 에도가와구 히가시카사이 9-3-5</p>
+        <p class="static-desc">에도가와에 자리한 슈퍼 센토 &#x27;유도코로 가사이&#x27;은(는) 11종의 목욕탕과 2종의 사우나를 갖춘 대형 슈퍼 센토로, 합리적인 요금에 노천 탄산천까지 즐길 수 있어 가족 단위로 인기입니다.</p>
+        <p class="static-alt" lang="ja">スーパー銭湯 湯処葛西／東京都江戸川区東葛西9-3-5</p>
+        <p class="static-alt" lang="en">Yudokoro Kasai — 9-3-5 Higashi-Kasai, Edogawa-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E9%8A%AD%E6%B9%AF%20%E6%B9%AF%E5%87%A6%E8%91%9B%E8%A5%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA%E6%9D%B1%E8%91%9B%E8%A5%BF9-3-5" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>오토메유 <span lang="ja">乙女湯</span></h3>
+        <p class="static-meta">에도가와 · 천연 온천 · 도쿄도 에도가와구 후나보리 7초메</p>
+        <p class="static-desc">에도가와에 자리한 천연 온천 &#x27;오토메유&#x27;은(는) 후나보리역 도보권의 흑탕 천연 온천 센토입니다. 사우나 이용자 전용 냉수탕과 파우더룸을 갖춰 편안하게 이용할 수 있습니다.</p>
+        <p class="static-alt" lang="ja">乙女湯／東京都江戸川区船堀7</p>
+        <p class="static-alt" lang="en">Otome-yu — 7-chome Funabori, Edogawa-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B9%99%E5%A5%B3%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA%E8%88%B9%E5%A0%807" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>다이코쿠유(대흑탕) <span lang="ja">大黒湯</span></h3>
+        <p class="static-meta">스미다 · 전통 센토 · 도쿄도 스미다구 요코카와 3-12-14</p>
+        <p class="static-desc">스미다에 자리한 전통 센토 명소 &#x27;다이코쿠유(대흑탕)&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 스카이트리가 보이는 노천탕, 2층 우드덱에서도 스카이트리 전…</p>
+        <p class="static-alt" lang="ja">大黒湯／東京都墨田区横川3-12-14</p>
+        <p class="static-alt" lang="en">Daikokuyu — 3-12-14 Yokokawa, Sumida-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A7%E9%BB%92%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%A8%AA%E5%B7%9D3-12-14" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>료고쿠 유야 에도유 <span lang="ja">両国湯屋 江戸遊</span></h3>
+        <p class="static-meta">스미다 · 슈퍼 센토 · 도쿄도 스미다구 치메자와 1-5-8</p>
+        <p class="static-desc">스미다에 자리한 슈퍼 센토 명소 &#x27;료고쿠 유야 에도유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 2019년 전관 리뉴얼, 고농도 탄산천, 심야 체류 가능 등 방문…</p>
+        <p class="static-alt" lang="ja">両国湯屋 江戸遊／東京都墨田区亀沢1-5-8</p>
+        <p class="static-alt" lang="en">Ryogoku Edoyu — 1-5-8 Kamezawa, Sumida-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%A1%E5%9B%BD%E6%B9%AF%E5%B1%8B%20%E6%B1%9F%E6%88%B8%E9%81%8A%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E4%BA%80%E6%B2%A21-5-8" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>호텔 마루추 첸트로 <span lang="ja">ホテル丸忠 CENTRO（チェントロ）</span></h3>
+        <p class="static-meta">아라카와 · 온천 여관 · 도쿄도 아라카와구 미나미센주 3-2-2</p>
+        <p class="static-desc">아라카와에 자리한 온천 여관 명소 &#x27;호텔 마루추 첸트로&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 …</p>
+        <p class="static-alt" lang="ja">ホテル丸忠 CENTRO（チェントロ）／東京都荒川区南千住3-2-2</p>
+        <p class="static-alt" lang="en">Hotel Maruchu CENTRO — 3-2-2 Minamisenju, Arakawa-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E4%B8%B8%E5%BF%A0%20CENTRO%EF%BC%88%E3%83%81%E3%82%A7%E3%83%B3%E3%83%88%E3%83%AD%EF%BC%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%8D%92%E5%B7%9D%E5%8C%BA%E5%8D%97%E5%8D%83%E4%BD%8F3-2-2" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>알몬트 호텔 닛포리 <span lang="ja">アルモントホテル日暮里</span></h3>
+        <p class="static-meta">아라카와 · 온천 여관 · 도쿄도 아라카와구 히가시닛포리 5-47-1</p>
+        <p class="static-desc">아라카와에 자리한 온천 여관 명소 &#x27;알몬트 호텔 닛포리&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고 …</p>
+        <p class="static-alt" lang="ja">アルモントホテル日暮里／東京都荒川区東日暮里5-47-1</p>
+        <p class="static-alt" lang="en">Almont Hotel Nippori — 5-47-1 Higashinippori, Arakawa-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A2%E3%83%AB%E3%83%A2%E3%83%B3%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%A5%E6%9A%AE%E9%87%8C%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%8D%92%E5%B7%9D%E5%8C%BA%E6%9D%B1%E6%97%A5%E6%9A%AE%E9%87%8C5-47-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>도쿄 도요스 만요 클럽 <span lang="ja">東京豊洲 万葉倶楽部</span></h3>
+        <p class="static-meta">고토 · 테마파크 · 도쿄도 코토구 도요스 6-4-1</p>
+        <p class="static-desc">고토에 자리한 테마파크 명소 &#x27;도쿄 도요스 만요 클럽&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 유카타 착용 가능, 24시간 영업, 도요스 시장 인근 등 방문객의…</p>
+        <p class="static-alt" lang="ja">東京豊洲 万葉倶楽部／東京都江東区豊洲6-4-1</p>
+        <p class="static-alt" lang="en">Tokyo Toyosu Manyo Club — 6-4-1 Toyosu, Koto-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E8%B1%8A%E6%B4%B2%20%E4%B8%87%E8%91%89%E5%80%B6%E6%A5%BD%E9%83%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E8%B1%8A%E6%B4%B26-4-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>이즈미 텐쿠노유 아리아케 가든 <span lang="ja">泉天空の湯 有明ガーデン</span></h3>
+        <p class="static-meta">고토 · 도심형 스파 · 도쿄도 코토구 아리아케 2-1-7</p>
+        <p class="static-desc">고토에 자리한 도심형 스파 명소 &#x27;이즈미 텐쿠노유 아리아케 가든&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 24시간 도심 리조트, 미용 온천, 호텔식 레스토랑 등…</p>
+        <p class="static-alt" lang="ja">泉天空の湯 有明ガーデン／東京都江東区有明2-1-7</p>
+        <p class="static-alt" lang="en">Izumi Tenku no Yu Ariake Garden — 2-1-7 Ariake, Koto-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B3%89%E5%A4%A9%E7%A9%BA%E3%81%AE%E6%B9%AF%20%E6%9C%89%E6%98%8E%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E6%9C%89%E6%98%8E2-1-7" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>도쿄 소메이 온천 사쿠라 <span lang="ja">東京染井温泉 SAKURA</span></h3>
+        <p class="static-meta">도시마 · 천연 온천 · 도쿄도 도시마구 코마고메 5-4-24</p>
+        <p class="static-desc">도시마에 자리한 천연 온천 명소 &#x27;도쿄 소메이 온천 사쿠라&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 지하 1,800m 천연온천, 풍정 있는 노천탕, 레스토랑 연…</p>
+        <p class="static-alt" lang="ja">東京染井温泉 SAKURA／東京都豊島区駒込5-4-24</p>
+        <p class="static-alt" lang="en">Tokyo Somei Onsen Sakura — 5-4-24 Komagome, Toshima-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E6%9F%93%E4%BA%95%E6%B8%A9%E6%B3%89%20SAKURA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E9%A7%92%E8%BE%BC5-4-24" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>타임즈 스파 레스타 <span lang="ja">タイムズ スパ・レスタ</span></h3>
+        <p class="static-meta">도시마 · 도심형 스파 · 도쿄도 도시마구 히가시이케부쿠로 1-19-2</p>
+        <p class="static-desc">도시마에 자리한 도심형 스파 명소 &#x27;타임즈 스파 레스타&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 성인 전용, 워킹 스페이스, 도심 노천탕 등 방문객의 눈길을 사…</p>
+        <p class="static-alt" lang="ja">タイムズ スパ・レスタ／東京都豊島区東池袋1-19-2</p>
+        <p class="static-alt" lang="en">Times Spa Resta — 1-19-2 Higashi-Ikebukuro, Toshima-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%BA%20%E3%82%B9%E3%83%91%E3%83%BB%E3%83%AC%E3%82%B9%E3%82%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-19-2" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>THE SPA 세이조 <span lang="ja">THE SPA 成城</span></h3>
+        <p class="static-meta">세타가야 · 도심형 스파 · 도쿄도 세타가야구 치토세다이 3-20-2</p>
+        <p class="static-desc">세타가야에 자리한 도심형 스파 명소 &#x27;THE SPA 세이조&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 천연온천 카케나가시 츠볼유, 한국식 아카스리, 타이 건식·에…</p>
+        <p class="static-alt" lang="ja">THE SPA 成城／東京都世田谷区千歳台3-20-2</p>
+        <p class="static-alt" lang="en">THE SPA Seijo — 3-20-2 Chitosedai, Setagaya-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=THE%20SPA%20%E6%88%90%E5%9F%8E%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8D%83%E6%AD%B3%E5%8F%B03-20-2" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>소시가야 온천 21 <span lang="ja">そしがや温泉21</span></h3>
+        <p class="static-meta">세타가야 · 전통 센토 · 도쿄도 세타가야구 소시가야 3-36-21</p>
+        <p class="static-desc">세타가야에 자리한 전통 센토 &#x27;소시가야 온천 21&#x27;은(는) 흑탕과 3종 사우나, 미니 풀까지 갖춘 테마파크형 센토입니다. 명물 냉동 사우나가 유명하며 타투 입욕도 가능합니다.</p>
+        <p class="static-alt" lang="ja">そしがや温泉21／東京都世田谷区祖師谷3-36-21</p>
+        <p class="static-alt" lang="en">Soshigaya Onsen 21 — 3-36-21 Soshigaya, Setagaya-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%9D%E3%81%97%E3%81%8C%E3%82%84%E6%B8%A9%E6%B3%8921%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%A5%96%E5%B8%AB%E8%B0%B73-36-21" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>신주쿠 천연온천 테루마유 <span lang="ja">新宿天然温泉 テルマー湯</span></h3>
+        <p class="static-meta">신주쿠 · 도심형 스파 · 도쿄도 신주쿠구 가부키초 1-1-2</p>
+        <p class="static-desc">신주쿠에 자리한 도심형 스파 명소 &#x27;신주쿠 천연온천 테루마유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 24시간 영업, 중이즈 온천 수송, 다수 휴식공간 등 방문…</p>
+        <p class="static-alt" lang="ja">新宿天然温泉 テルマー湯／東京都新宿区歌舞伎町1-1-2</p>
+        <p class="static-alt" lang="en">Thermae Yu — 1-1-2 Kabukicho, Shinjuku-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E5%AE%BF%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E3%83%86%E3%83%AB%E3%83%9E%E3%83%BC%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA1-1-2" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>아타미유 <span lang="ja">熱海湯</span></h3>
+        <p class="static-meta">신주쿠 · 전통 센토 · 도쿄도 신주쿠구 가구라자카 3-6</p>
+        <p class="static-desc">신주쿠에 자리한 전통 센토 &#x27;아타미유&#x27;은(는) 가구라자카 골목 계단 아래의 정취 있는 노포 센토로, 후지산 페인트화 등 옛 센토의 모습을 간직하고 있습니다.</p>
+        <p class="static-alt" lang="ja">熱海湯／東京都新宿区神楽坂3-6</p>
+        <p class="static-alt" lang="en">Atami-yu — 3-6 Kagurazaka, Shinjuku-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%86%B1%E6%B5%B7%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%A5%9E%E6%A5%BD%E5%9D%823-6" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>카마타 온천(센토) <span lang="ja">蒲田温泉（銭湯）</span></h3>
+        <p class="static-meta">오타 · 전통 센토 · 도쿄도 오타구 칵마타혼초 2-23-2</p>
+        <p class="static-desc">오타에 자리한 전통 센토 명소 &#x27;카마타 온천(센토)&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 쇼와 12년 창업의 노포, 흑탕 온천, 2층 스테이지付 대광간 등 …</p>
+        <p class="static-alt" lang="ja">蒲田温泉（銭湯）／東京都大田区蒲田本町2-23-2</p>
+        <p class="static-alt" lang="en">Kamata Onsen — 2-23-2 Kamatahoncho, Ota-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%92%B2%E7%94%B0%E6%B8%A9%E6%B3%89%EF%BC%88%E9%8A%AD%E6%B9%AF%EF%BC%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E8%92%B2%E7%94%B0%E6%9C%AC%E7%94%BA2-23-2" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>쿠로유 천연온천 누랜드 사가미유 <span lang="ja">黒湯天然温泉 ぬるんど さがみ湯</span></h3>
+        <p class="static-meta">오타 · 천연 온천 · 도쿄도 오타구 나칠코 2-7-5</p>
+        <p class="static-desc">오타에 자리한 천연 온천 명소 &#x27;쿠로유 천연온천 누랜드 사가미유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 흑탕 천연온천, 벨리댄스·하와이안 이벤트, 휴식공간 충…</p>
+        <p class="static-alt" lang="ja">黒湯天然温泉 ぬるんど さがみ湯／東京都大田区仲六郷2-7-5</p>
+        <p class="static-alt" lang="en">Nuland Sagamiyu — 2-7-5 Nakarokugo, Ota-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BB%92%E6%B9%AF%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E3%81%AC%E3%82%8B%E3%82%93%E3%81%A9%20%E3%81%95%E3%81%8C%E3%81%BF%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E4%BB%B2%E5%85%AD%E9%83%B72-7-5" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>나칸노유 <span lang="ja">中野湯</span></h3>
+        <p class="static-meta">나카노 · 전통 센토 · 도쿄도 나칸오구 나칸오 1-3-1</p>
+        <p class="static-desc">나카노에 자리한 전통 센토 명소 &#x27;나칸노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 청결한 시설, 외국인 환영, 역세권 등 방문객의 눈길을 사로잡는 차별화된 매…</p>
+        <p class="static-alt" lang="ja">中野湯／東京都中野区中野1-3-1</p>
+        <p class="static-alt" lang="en">Nakanoyu — 1-3-1 Nakano, Nakano, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E9%87%8E%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E4%B8%AD%E9%87%8E1-3-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>아쿠아 히가시나카노 <span lang="ja">アクア東中野</span></h3>
+        <p class="static-meta">나카노 · 전통 센토 · 도쿄도 나카노구 히가시나카노 4-9-22</p>
+        <p class="static-desc">나카노에 자리한 전통 센토 &#x27;아쿠아 히가시나카노&#x27;은(는) 노천 풀을 갖춘 보기 드문 센토로, 노천탕·사우나와 함께 사계절 이용할 수 있습니다.</p>
+        <p class="static-alt" lang="ja">アクア東中野／東京都中野区東中野4-9-22</p>
+        <p class="static-alt" lang="en">Aqua Higashi-Nakano — 4-9-22 Higashi-Nakano, Nakano-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A2%E3%82%AF%E3%82%A2%E6%9D%B1%E4%B8%AD%E9%87%8E%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E6%9D%B1%E4%B8%AD%E9%87%8E4-9-22" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>도쿄 천연온천 고다이노유 <span lang="ja">東京天然温泉 古代の湯</span></h3>
+        <p class="static-meta">가쓰시카 · 천연 온천 · 도쿄도 카츠시카구 오쿠도 4-2-1</p>
+        <p class="static-desc">가쓰시카에 자리한 천연 온천 명소 &#x27;도쿄 천연온천 고다이노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 온도가 다른 3단 노천탕, 큰 히노키 풍욕, 가족탕 대여 …</p>
+        <p class="static-alt" lang="ja">東京天然温泉 古代の湯／東京都葛飾区奥戸4-2-1</p>
+        <p class="static-alt" lang="en">Tokyo Natural Hot Spring Kodai no Yu — 4-2-1 Okudo, Katsushika-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E5%8F%A4%E4%BB%A3%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%91%9B%E9%A3%BE%E5%8C%BA%E5%A5%A5%E6%88%B84-2-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>아쿠아가든 사카에유 <span lang="ja">アクアガーデン栄湯</span></h3>
+        <p class="static-meta">가쓰시카 · 전통 센토 · 도쿄도 가쓰시카구 히가시요쓰기 3-45-7</p>
+        <p class="static-desc">가쓰시카에 자리한 전통 센토 &#x27;아쿠아가든 사카에유&#x27;은(는) 요쓰기역 인근의 모던한 센토로, 아이도 안심하고 들어갈 수 있는 얕은 욕조와 미지근한 목욕물이 특징입니다. 주말과 공휴일에는 날마다 바뀌는…</p>
+        <p class="static-alt" lang="ja">アクアガーデン栄湯／東京都葛飾区東四つ木3-45-7</p>
+        <p class="static-alt" lang="en">Aqua Garden Sakae-yu — 3-45-7 Higashi-Yotsugi, Katsushika-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A2%E3%82%AF%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E6%A0%84%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%91%9B%E9%A3%BE%E5%8C%BA%E6%9D%B1%E5%9B%9B%E3%81%A4%E6%9C%A83-45-7" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>카베 온천 우메노유 <span lang="ja">河辺温泉 梅の湯</span></h3>
+        <p class="static-meta">오메·아키루노 · 천연 온천 · 도쿄도 오메시 카페초 10-8-1</p>
+        <p class="static-desc">오메·아키루노에 자리한 천연 온천 명소 &#x27;카베 온천 우메노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 역 북구 콩코스 직결, 암풍욕·히노키 풍욕·네코로비유, 여…</p>
+        <p class="static-alt" lang="ja">河辺温泉 梅の湯／東京都青梅市河辺町10-8-1</p>
+        <p class="static-alt" lang="en">Kabe Onsen Umenoyu — 10-8-1 Kabecho, Ome-shi</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B2%B3%E8%BE%BA%E6%B8%A9%E6%B3%89%20%E6%A2%85%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82%E6%B2%B3%E8%BE%BA%E7%94%BA10-8-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>마마다야(이와쿠라 온천/여관) <span lang="ja">ままだや（岩蔵温泉/旅館）</span></h3>
+        <p class="static-meta">오메·아키루노 · 온천 여관 · 도쿄도 오메시 오소기 5-3140</p>
+        <p class="static-desc">오메·아키루노에 자리한 온천 여관 명소 &#x27;마마다야(이와쿠라 온천/여관)&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 자연의 암석을 사용한 암풍욕, 흐르는 세세라기를…</p>
+        <p class="static-alt" lang="ja">ままだや（岩蔵温泉/旅館）／東京都青梅市小曽木5-3140</p>
+        <p class="static-alt" lang="en">Mamadaya (Iwakura Onsen/Ryokan) — 5-3140 Osogi, Ome-shi</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%BE%E3%81%BE%E3%81%A0%E3%82%84%EF%BC%88%E5%B2%A9%E8%94%B5%E6%B8%A9%E6%B3%89/%E6%97%85%E9%A4%A8%EF%BC%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82%E5%B0%8F%E6%9B%BD%E6%9C%A85-3140" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>생애청춘노유 츠루츠루 온천 <span lang="ja">生涯青春の湯 つるつる温泉</span></h3>
+        <p class="static-meta">오쿠타마·히노하라 · 천연 온천 · 도쿄도 니시타마군 히노데마치 오쿠노 4718</p>
+        <p class="static-desc">오쿠타마·히노하라에 자리한 천연 온천 명소 &#x27;생애청춘노유 츠루츠루 온천&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 알칼리성분 높은 미인의 탕, 와풍·양풍 2개의 …</p>
+        <p class="static-alt" lang="ja">生涯青春の湯 つるつる温泉／東京都西多摩郡日の出町大久野4718</p>
+        <p class="static-alt" lang="en">Shogai Seishun no Yu Tsurutsuru Onsen — 4718 Okuno, Hinode-machi, Nishitama-gun</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%94%9F%E6%B6%AF%E9%9D%92%E6%98%A5%E3%81%AE%E6%B9%AF%20%E3%81%A4%E3%82%8B%E3%81%A4%E3%82%8B%E6%B8%A9%E6%B3%89%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%97%A5%E3%81%AE%E5%87%BA%E7%94%BA%E5%A4%A7%E4%B9%85%E9%87%8E4718" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>헤비노유 온천 타카라소 <span lang="ja">蛇の湯温泉 宝荘</span></h3>
+        <p class="static-meta">오쿠타마·히노하라 · 온천 여관 · 도쿄도 니시타마군 히노하라무라 카즈마 2465</p>
+        <p class="static-desc">오쿠타마·히노하라에 자리한 온천 여관 명소 &#x27;헤비노유 온천 타카라소&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 일본 비탕을 지키는 회원 유일 도쿄 참가, 상처 입…</p>
+        <p class="static-alt" lang="ja">蛇の湯温泉 宝荘／東京都西多摩郡檜原村数馬2465</p>
+        <p class="static-alt" lang="en">Hebi no Yu Onsen Takaraso — 2465 Kazuma, Hinohara-mura, Nishitama-gun</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%9B%87%E3%81%AE%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E5%AE%9D%E8%8D%98%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%AA%9C%E5%8E%9F%E6%9D%91%E6%95%B0%E9%A6%AC2465" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>히사마츠유 <span lang="ja">久松湯</span></h3>
+        <p class="static-meta">네리마 · 전통 센토 · 도쿄도 네리마구 사쿠라다이 4-32-15</p>
+        <p class="static-desc">네리마에 자리한 전통 센토 명소 &#x27;히사마츠유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 2015 굿디자인상 수상, &#x27;빛과 바람, 잡목림 속 센토&#x27; 컨셉, 보디케어…</p>
+        <p class="static-alt" lang="ja">久松湯／東京都練馬区桜台4-32-15</p>
+        <p class="static-alt" lang="en">Hisamatsuyu — 4-32-15 Sakuradai, Nerima-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B9%85%E6%9D%BE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E6%A1%9C%E5%8F%B04-32-15" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>토시마엔 니와노유 <span lang="ja">豊島園 庭の湯</span></h3>
+        <p class="static-meta">네리마 · 천연 온천 · 도쿄도 네리마구 무코야마 3-25-1</p>
+        <p class="static-desc">네리마에 자리한 천연 온천 명소 &#x27;토시마엔 니와노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 수영복 착용 남녀 함께 바데존, 사계절 정원 노천탕, 나이트 스파 …</p>
+        <p class="static-alt" lang="ja">豊島園 庭の湯／東京都練馬区向山3-25-1</p>
+        <p class="static-alt" lang="en">Toshimaen Niwa no Yu — 3-25-1 Mukoyama, Nerima-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%8A%E5%B3%B6%E5%9C%92%20%E5%BA%AD%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E5%90%91%E5%B1%B13-25-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>도쿄 오기쿠보 천연온천 나고미노유 <span lang="ja">東京荻窪天然温泉 なごみの湯</span></h3>
+        <p class="static-meta">스기나미 · 도심형 스파 · 도쿄도 스기나미구 가미오기 1-10-10</p>
+        <p class="static-desc">스기나미에 자리한 도심형 스파 명소 &#x27;도쿄 오기쿠보 천연온천 나고미노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 5층 전체가 암반욕·힐링 파티오, 시가라키 소재…</p>
+        <p class="static-alt" lang="ja">東京荻窪天然温泉 なごみの湯／東京都杉並区上荻1-10-10</p>
+        <p class="static-alt" lang="en">Tokyo Ogikubo Onsen Nagomi no Yu — 1-10-10 Kami-Ogi, Suginami-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E8%8D%BB%E7%AA%AA%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E3%81%AA%E3%81%94%E3%81%BF%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E4%B8%8A%E8%8D%BB1-10-10" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>우츠쿠시노유 <span lang="ja">うつくしの湯</span></h3>
+        <p class="static-meta">스기나미 · 천연 온천 · 도쿄도 스기나미구 타카이도니시 2-3-45</p>
+        <p class="static-desc">스기나미에 자리한 천연 온천 명소 &#x27;우츠쿠시노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 본격적인 노천탕, 아트랙션 풍욕, 25m 온수풀(주말) 등 방문객의 눈…</p>
+        <p class="static-alt" lang="ja">うつくしの湯／東京都杉並区高井戸西2-3-45</p>
+        <p class="static-alt" lang="en">Utsukushi no Yu — 2-3-45 Takaidonishi, Suginami-ku</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%86%E3%81%A4%E3%81%8F%E3%81%97%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E9%AB%98%E4%BA%95%E6%88%B8%E8%A5%BF2-3-45" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>고쿠라쿠유 타마 센터점 <span lang="ja">極楽湯 多摩センター店</span></h3>
+        <p class="static-meta">다마·후추·조후 · 슈퍼 센토 · 도쿄도 타마시 오치아이 1-30-1</p>
+        <p class="static-desc">다마·후추·조후에 자리한 슈퍼 센토 명소 &#x27;고쿠라쿠유 타마 센터점&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 지하 1,500m 천연온천, 큰 노천탕, 레이디스데이…</p>
+        <p class="static-alt" lang="ja">極楽湯 多摩センター店／東京都多摩市落合1-30-1</p>
+        <p class="static-alt" lang="en">Gokurakuyu Tama Center — 1-30-1 Ochiai, Tama-shi</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A5%B5%E6%A5%BD%E6%B9%AF%20%E5%A4%9A%E6%91%A9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%9A%E6%91%A9%E5%B8%82%E8%90%BD%E5%90%881-30-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>후추 에키마에 천연온천 조몬노유 <span lang="ja">府中駅前天然温泉 縄文の湯</span></h3>
+        <p class="static-meta">다마·후추·조후 · 천연 온천 · 도쿄도 후추시 미야니시초 1-5-1</p>
+        <p class="static-desc">다마·후추·조후에 자리한 천연 온천 명소 &#x27;후추 에키마에 천연온천 조몬노유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 천연온천, 석조 노천탕, 심야체류 가능 등 …</p>
+        <p class="static-alt" lang="ja">府中駅前天然温泉 縄文の湯／東京都府中市宮西町1-5-1</p>
+        <p class="static-alt" lang="en">Jomon no Yu — 1-5-1 Miyanishicho, Fuchu</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BA%9C%E4%B8%AD%E9%A7%85%E5%89%8D%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E7%B8%84%E6%96%87%E3%81%AE%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%B8%AD%E5%B8%82%E5%AE%AE%E8%A5%BF%E7%94%BA1-5-1" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>아사쿠사 ROX 마츠리유 <span lang="ja">浅草ROXまつり湯</span></h3>
+        <p class="static-meta">다이토 · 테마파크 · 도쿄도 다이토구 아사쿠사 1-25-15 ROX빌딩</p>
+        <p class="static-desc">다이토에 자리한 테마파크 명소 &#x27;아사쿠사 ROX 마츠리유&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 스카이트리 뷰 노천탕, 히스이 온천, 관광 연계 등 방문객의 …</p>
+        <p class="static-alt" lang="ja">浅草ROXまつり湯／東京都台東区浅草1-25-15 ROXビル</p>
+        <p class="static-alt" lang="en">Asakusa ROX Matsuri Yu — ROX Bldg, 1-25-15 Asakusa, Taito-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B5%85%E8%8D%89ROX%E3%81%BE%E3%81%A4%E3%82%8A%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%891-25-15%20ROX%E3%83%93%E3%83%AB" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>사우나&amp;캡슐호텔 호쿠오 <span lang="ja">サウナ＆カプセルホテル北欧</span></h3>
+        <p class="static-meta">다이토 · 온천 여관 · 도쿄도 다이토구 우에노 7-2-16</p>
+        <p class="static-desc">다이토에 자리한 온천 여관 명소 &#x27;사우나&amp;캡슐호텔 호쿠오&#x27;은(는) 바쁜 일상에서 벗어나 여유로운 힐링을 즐길 수 있는 공간입니다. 특히 도쿄 온천 등 방문객의 눈길을 사로잡는 차별화된 매력을 갖추고…</p>
+        <p class="static-alt" lang="ja">サウナ＆カプセルホテル北欧／東京都台東区上野7-2-16</p>
+        <p class="static-alt" lang="en">Sauna &amp; Capsule Hotel Hokuo — 7-2-16 Ueno, Taito-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B5%E3%82%A6%E3%83%8A%EF%BC%86%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E5%8C%97%E6%AC%A7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E7-2-16" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>이나리유 <span lang="ja">稲荷湯</span></h3>
+        <p class="static-meta">기타 · 전통 센토 · 도쿄도 기타구 다키노가와 6-27-14</p>
+        <p class="static-desc">기타에 자리한 전통 센토 &#x27;이나리유&#x27;은(는) 1930년 건축된 미야즈쿠리 건물이 국가 등록 유형문화재로 지정된 노포 센토입니다.</p>
+        <p class="static-alt" lang="ja">稲荷湯／東京都北区滝野川6-27-14</p>
+        <p class="static-alt" lang="en">Inari-yu — 6-27-14 Takinogawa, Kita-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A8%B2%E8%8D%B7%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8C%97%E5%8C%BA%E6%BB%9D%E9%87%8E%E5%B7%9D6-27-14" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+      <article class="static-card">
+        <h3>주조유 <span lang="ja">十條湯</span></h3>
+        <p class="static-meta">기타 · 전통 센토 · 도쿄도 기타구 주조나카하라 1-14-21</p>
+        <p class="static-desc">기타에 자리한 전통 센토 &#x27;주조유&#x27;은(는) 1949년 창업한 센토로, 쇼와 레트로 감성의 찻집 &quot;깃사 신카이&quot;가 병설되어 있는 것이 특징입니다. 우물물을 사용한 질 좋은 목욕물과 시원한 냉수탕이 호…</p>
+        <p class="static-alt" lang="ja">十條湯／東京都北区十条仲原1-14-21</p>
+        <p class="static-alt" lang="en">Jujo-yu — 1-14-21 Jujo-Nakahara, Kita-ku, Tokyo</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E6%A2%9D%E6%B9%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8C%97%E5%8C%BA%E5%8D%81%E6%9D%A1%E4%BB%B2%E5%8E%9F1-14-21" rel="nofollow noopener" target="_blank">지도에서 보기 / 地図 / Map</a>
+      </article>
+        </noscript-fallback>
         <div class="empty-state hidden" id="list-empty">
           <div class="empty-icon">🔍</div>
           <p data-i18n="emptySearch">검색 결과가 없습니다</p>
-          <button type="button" id="list-empty-reset-btn" class="btn btn-primary" data-i18n="btnResetFilter">필터 초기화</button>
+          <button class="btn btn-primary" onclick="S.q='';S.fArea='all';S.fType='all';S.fFeat='all';document.getElementById('list-search-input').value='';drawList();" data-i18n="btnResetFilter">필터 초기화</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="page-detail" class="page" aria-label="온천 상세" data-i18n-aria="pageDetailLabel">
+<section id="page-detail" class="page" aria-label="온천 상세">
   <div id="detail-container"></div>
 </section>
 
-<section id="page-about" class="page" aria-label="소개" data-i18n-aria="pageAboutLabel">
+<section id="page-about" class="page" aria-label="소개">
   <div id="about-container"></div>
 </section>
-<section id="page-privacy" class="page" aria-label="개인정보처리방침" data-i18n-aria="pagePrivacyLabel">
+<section id="page-privacy" class="page" aria-label="개인정보처리방침">
   <div id="privacy-container"></div>
 </section>
-<section id="page-terms" class="page" aria-label="이용약관" data-i18n-aria="pageTermsLabel">
+<section id="page-terms" class="page" aria-label="이용약관">
   <div id="terms-container"></div>
 </section>
-<section id="page-cookies" class="page" aria-label="쿠키 정책" data-i18n-aria="pageCookiesLabel">
+<section id="page-cookies" class="page" aria-label="쿠키 정책">
   <div id="cookies-container"></div>
 </section>
-<section id="page-contact" class="page" aria-label="문의" data-i18n-aria="pageContactLabel">
+<section id="page-contact" class="page" aria-label="문의">
   <div id="contact-container"></div>
 </section>
-<section id="page-advertising" class="page" aria-label="광고 및 제휴 정책" data-i18n-aria="pageAdvertisingLabel">
+<section id="page-advertising" class="page" aria-label="광고 및 제휴 정책">
   <div id="advertising-container"></div>
 </section>
+<section id="page-disclaimer" class="page" aria-label="면책조항">
+  <div id="disclaimer-container"></div>
+</section>
 
-<section id="page-guides" class="page" aria-label="온천 가이드" data-i18n-aria="pageGuidesLabel">
+<section id="page-guides" class="page" aria-label="온천 가이드">
   <div class="container">
     <div class="page-hero">
       <h1 data-i18n="guidesTitle">온천 가이드</h1>
@@ -1480,7 +1791,7 @@ body::before {
   </div>
 </section>
 
-<section id="page-guide" class="page" aria-label="가이드 상세" data-i18n-aria="pageGuideLabel">
+<section id="page-guide" class="page" aria-label="가이드 상세">
   <div class="container">
     <article id="guide-article" class="guide-article"></article>
   </div>
@@ -1497,11 +1808,12 @@ body::before {
     <a href="#" data-nav="cookies" data-i18n="footerCookies">쿠키 정책</a>
     <a href="#" data-nav="contact" data-i18n="footerContact">문의</a>
     <a href="#" data-nav="advertising" data-i18n="footerAdvertising">광고 정책</a>
+    <a href="#" data-nav="disclaimer" data-i18n="footerDisclaimer">면책조항</a>
   </div>
-  <p>© 2026 Tokyo Onsen Guide. All rights reserved.<br><span style="font-size:12px;opacity:.8"><span data-i18n="lastUpdated">최종 업데이트</span>: 2026-08-06</span></p>
+  <p>© 2026 Tokyo Onsen Guide. All rights reserved.<br><span style="font-size:12px;opacity:.8"><span data-i18n="lastUpdated">최종 업데이트</span>: 2026-08-04</span></p>
 </footer>
 
-<nav class="bottom-nav" aria-label="모바일 하단 메뉴" data-i18n-aria="bottomNavLabel">
+<nav class="bottom-nav" aria-label="모바일 하단 메뉴">
   <a href="#" data-nav="home" class="active"><span>🏠</span><span data-i18n="navHome">홈</span></a>
   <a href="#" data-nav="list"><span>♨️</span><span data-i18n="navOnsen">온천</span></a>
 </nav>
@@ -1537,15 +1849,6 @@ const S = {
     box.appendChild(t);
     setTimeout(()=>{if(t.parentNode)t.parentNode.removeChild(t);},3000);
   }
-  function escapeHtml(value){
-    return String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");
-  }
-  function errorPanel(titleKey, error, includeReload){
-    const detail=error && error.message ? escapeHtml(error.message) : "";
-    return '<div class="runtime-error" role="alert"><h1>⚠️ '+escapeHtml(t(titleKey))+'</h1>'
-      +(detail ? '<p>'+detail+'</p>' : '')
-      +(includeReload ? '<p class="runtime-error-help">'+escapeHtml(t("reloadPrompt"))+'</p>' : '')+'</div>';
-  }
   function save(){
     try{localStorage.setItem(KEY,JSON.stringify({v:5,lang:S.lang,theme:S.theme}));}catch(e){}
   }
@@ -1570,7 +1873,7 @@ const S = {
       const view = S.view || "home";
       const lang = S.lang || "ko";
       const detailId = S.detailId;
-      const domain = SITE_ORIGIN;
+      const domain = "https://tokyo-onsen-guide.com";
 
       let title = "";
       let desc = "";
@@ -1620,63 +1923,42 @@ const S = {
               "reviewCount": o.reviewCount || 10
             };
           }
-        } else {
-          title = {ko:"온천 시설을 찾을 수 없습니다 | Tokyo Onsen Guide",ja:"施設が見つかりません | 東京温泉ガイド",en:"Facility not found | Tokyo Onsen Guide"}[lang] || "Tokyo Onsen Guide";
-          desc = {ko:"요청한 온천 시설 정보를 찾을 수 없습니다.",ja:"指定された温泉施設の情報が見つかりません。",en:"The requested hot spring facility could not be found."}[lang] || "";
-          canonicalUrl = domain + "/?lang=" + lang;
         }
       }
 
                   else if (view === "advertising") {
-        const tMap = { ko: "도쿄 온천 가이드 광고 및 제휴 정책", ja: "東京温泉ガイド 広告および提携ポリシー", en: "Tokyo Onsen Guide Advertising & Partnership Policy" };
+        const tMap = { ko: "도쿄 온천 가이드 광고 및 제휴 정책 | Advertising Policy", ja: "東京温泉ガイド 広告および提携ポリシー | Advertising Policy", en: "Tokyo Onsen Guide Advertising & Partnership Policy" };
         title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 Google AdSense 광고 게재, 제휴 링크 및 후원 정책 안내입니다."; canonicalUrl = domain + "/?view=advertising&lang=" + lang;
       } else if (view === "privacy") {
-        const tMap = { ko: "도쿄 온천 가이드 개인정보처리방침", ja: "東京温泉ガイド プライバシーポリシー", en: "Tokyo Onsen Guide Privacy Policy" };
+        const tMap = { ko: "도쿄 온천 가이드 개인정보처리방침 | Privacy Policy", ja: "東京温泉ガイド プライバシーポリシー | Privacy Policy", en: "Tokyo Onsen Guide Privacy Policy" };
         title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 개인정보처리방침 및 쿠키 보호 원칙 안내입니다."; canonicalUrl = domain + "/?view=privacy&lang=" + lang;
       } else if (view === "terms") {
-        const tMap = { ko: "도쿄 온천 가이드 이용약관", ja: "東京温泉ガイド 利用規約", en: "Tokyo Onsen Guide Terms of Service" };
+        const tMap = { ko: "도쿄 온천 가이드 이용약관 | Terms of Service", ja: "東京温泉ガイド 利用規約 | Terms of Service", en: "Tokyo Onsen Guide Terms of Service" };
         title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 서비스 이용약관 및 면책조항 안내입니다."; canonicalUrl = domain + "/?view=terms&lang=" + lang;
       } else if (view === "cookies") {
-        const tMap = { ko: "도쿄 온천 가이드 쿠키 정책", ja: "東京温泉ガイド Cookieポリシー", en: "Tokyo Onsen Guide Cookie Policy" };
+        const tMap = { ko: "도쿄 온천 가이드 쿠키 정책 | Cookie Policy", ja: "東京温泉ガイド Cookieポリシー | Cookie Policy", en: "Tokyo Onsen Guide Cookie Policy" };
         title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 쿠키 및 로컬 스토리지 사용 안내입니다."; canonicalUrl = domain + "/?view=cookies&lang=" + lang;
       } else if (view === "contact") {
-        const tMap = { ko: "도쿄 온천 가이드 공식 문의", ja: "東京温泉ガイド お問い合わせ", en: "Tokyo Onsen Guide Contact Us" };
+        const tMap = { ko: "도쿄 온천 가이드 공식 문의 | Contact Us", ja: "東京温泉ガイド お問い合わせ | Contact Us", en: "Tokyo Onsen Guide Contact Us" };
         title = tMap[lang] || tMap.ko; desc = "도쿄 온천 가이드 운영팀 이메일 문의 및 정보 수정 요청 접수 안내입니다."; canonicalUrl = domain + "/?view=contact&lang=" + lang;
-      } else if (view === "guides") {
-        const tMap = { ko: "도쿄 온천 가이드", ja: "東京温泉ガイド", en: "Tokyo Onsen Guides" };
-        const dMap = { ko: "도쿄 온천을 더 깊이 즐기기 위한 실용적인 가이드입니다.", ja: "東京の温泉をより深く楽しむための実用ガイドです。", en: "Practical guides for getting more from Tokyo's hot springs." };
-        title=tMap[lang]||tMap.ko; desc=dMap[lang]||dMap.ko; canonicalUrl=domain+"/?view=guides&lang="+lang;
-      } else if (view === "guide") {
-        const g=(typeof GUIDES !== "undefined" && Array.isArray(GUIDES)) ? GUIDES.find(x=>x.id===S.guideId) : null;
-        if(g){
-          title=((g.title&&g.title[lang])||g.title.ko)+" | Tokyo Onsen Guide";
-          desc=((g.summary&&g.summary[lang])||g.summary.ko||"").slice(0,155);
-          ogTitle=title; ogDesc=desc; if(g.image) ogImg=domain+"/"+g.image;
-          canonicalUrl=domain+"/?view=guide&id="+encodeURIComponent(g.id)+"&lang="+lang;
-          schemaJson={"@context":"https://schema.org","@type":"Article","headline":(g.title&&g.title[lang])||g.title.ko,"description":desc,"image":ogImg,"url":canonicalUrl};
-        } else {
-          title={ko:"가이드 글을 찾을 수 없습니다 | Tokyo Onsen Guide",ja:"ガイド記事が見つかりません | 東京温泉ガイド",en:"Guide not found | Tokyo Onsen Guide"}[lang]||"Tokyo Onsen Guide";
-          desc={ko:"요청한 가이드 글을 찾을 수 없습니다.",ja:"指定されたガイド記事が見つかりません。",en:"The requested guide article could not be found."}[lang]||"";
-          canonicalUrl=domain+"/?view=guides&lang="+lang;
-        }
       } else if (view === "about") {
         if (lang === "ko") {
           title = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide - 실제 운영 온천 큐레이션";
-          desc = "도쿄 온천 가이드 설립 목적과 153선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
+          desc = "도쿄 온천 가이드 설립 목적과 291선 엄선 기준, 올바른 일본 온천 및 센토 입욕 예절(타투 규정, 수건 매너)을 한국어로 상세히 안내합니다.";
           kw = "도쿄 온천 가이드 소개, 도쿄 온천 큐레이션, 일본 온천 예절, 온천 타투 규정";
           ogTitle = "도쿄 온천 가이드 소개 | About Tokyo Onsen Guide";
           ogDesc = desc;
           canonicalUrl = domain + "/?view=about&lang=ko";
         } else if (lang === "ja") {
           title = "東京温泉ガイドについて | 当サイトのご紹介と厳選基準";
-          desc = "東京温泉ガイドの設立目的と人気153施設の厳選基準、快適に楽しむための日本の温泉・銭湯マナー（タトゥー規定、入浴エチケット）をご紹介します。";
+          desc = "東京温泉ガイドの設立目的と人気302施設の厳選基準、快適に楽しむための日本の温泉・銭湯マナー（タトゥー規定、入浴エチケット）をご紹介します。";
           kw = "東京温泉ガイドについて, 日帰り温泉 選び方, 銭湯 マナー, 温泉 タトゥー";
           ogTitle = "東京温泉ガイドについて | About Tokyo Onsen Guide";
           ogDesc = desc;
           canonicalUrl = domain + "/?view=about&lang=ja";
         } else {
           title = "About Tokyo Onsen Guide | Our Mission & Curation Standards";
-          desc = "Learn about Tokyo Onsen Guide's mission, our 153 facility verification criteria, and essential Japanese bathhouse etiquette (tattoos, towel rules).";
+          desc = "Learn about Tokyo Onsen Guide's mission, our 302 facility verification criteria, and essential Japanese bathhouse etiquette (tattoos, towel rules).";
           kw = "about tokyo onsen guide, japanese onsen etiquette, tokyo bathhouse rules, tattoo friendly onsen";
           ogTitle = "About Tokyo Onsen Guide | Our Mission & Standards";
           ogDesc = desc;
@@ -1691,22 +1973,22 @@ const S = {
         };
       } else if (!title) {
         if (lang === "ko") {
-          title = "도쿄 온천 추천 베스트 153 | 직접 가본 도쿄 당일치기 온천 가이드";
-          desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 153곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
+          title = "도쿄 온천 추천 베스트 302 | 직접 가본 도쿄 당일치기 온천 가이드";
+          desc = "외국인이 가기 쉽고 현지인에게 인기 있는 도쿄 최고의 천연 온천 및 센토 302곳 정보를 만나보세요. 스파 라쿠아, 다이코쿠유 등 리얼 후기와 이용 팁 제공.";
           kw = "도쿄 온천 추천, 도쿄 당일치기 온천, 도쿄 온천 여행, 도쿄 료칸, 도쿄 스파, 도쿄 센토";
-          ogTitle = "도쿄 온천 추천 베스트 153 | 실제 운영중인 온천 가이드";
+          ogTitle = "도쿄 온천 추천 베스트 302 | 실제 운영중인 온천 가이드";
           ogDesc = "실제 운영 중인 도쿄 인기 온천 엄선! 외국인 접근성 최상, 찐 현지인 추천 온천 정보.";
           canonicalUrl = domain + "/";
         } else if (lang === "ja") {
-          title = "東京温泉おすすめ153選！現地で人気の日帰り温泉・スーパー銭湯紹介";
-          desc = "東京都内で実際に営業している人気の天然温泉・スパ施設153選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
+          title = "東京温泉おすすめ302選！現地で人気の日帰り温泉・スーパー銭湯紹介";
+          desc = "東京都内で実際に営業している人気の天然温泉・スパ施設291選を厳選紹介。外国人も行きやすいスパ ラクーアや大黒湯など、最新の営業情報と効能をお届けします。";
           kw = "東京 温泉 おすすめ, 東京 日帰り温泉, 都内 温泉, 東京 スーパー銭湯, 源泉かけ流し";
-          ogTitle = "東京温泉おすすめ153選！日帰り温泉最新ガイド";
+          ogTitle = "東京温泉おすすめ302選！日帰り温泉最新ガイド";
           ogDesc = "実際に営業している都内の極上温泉を厳選。現地人にも愛される名湯・銭湯を紹介。";
           canonicalUrl = domain + "/?lang=ja";
         } else {
-          title = "153 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
-          desc = "Discover 153 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
+          title = "302 Best Onsen in Tokyo 2026 | Top-Rated Day Trip Hot Springs & Bathhouses";
+          desc = "Discover 302 of the best natural hot springs (Onsen) and sento in Tokyo. Easy access for tourists, highly rated by locals. Explore Spa LaQua, Daikokuyu, and essential etiquette.";
           kw = "best onsen in tokyo, tokyo hot spring, tokyo day trip onsen, tokyo spa, traditional bathhouse tokyo";
           ogTitle = "Best Onsen in Tokyo | Top-Rated Day Trip Hot Springs & Sento";
           ogDesc = "Explore Tokyo's best natural hot springs. Tourist-friendly and highly recommended by locals.";
@@ -1752,20 +2034,11 @@ const S = {
       can.setAttribute("href", canonicalUrl);
 
       // Hreflang links
-      const localizedPageUrl = (targetLang) => {
-        const q = new URLSearchParams();
-        if(view !== "home") q.set("view", view);
-        if(view === "detail" && detailId) q.set("id", detailId);
-        if(view === "guide" && S.guideId) q.set("id", S.guideId);
-        if(view !== "home" || targetLang !== "ko") q.set("lang", targetLang);
-        const query=q.toString();
-        return domain + "/" + (query ? "?" + query : "");
-      };
       const hreflangs = {
-        "ko": localizedPageUrl("ko"),
-        "ja": localizedPageUrl("ja"),
-        "en": localizedPageUrl("en"),
-        "x-default": localizedPageUrl("en")
+        "ko": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=ko" : domain + "/",
+        "ja": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=ja" : domain + "/?lang=ja",
+        "en": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=en" : domain + "/?lang=en",
+        "x-default": view === "detail" && detailId ? domain + "/?view=detail&id=" + encodeURIComponent(detailId) + "&lang=en" : domain + "/?lang=en"
       };
 
       Object.keys(hreflangs).forEach(hl => {
@@ -1795,124 +2068,6 @@ const S = {
     }
   }
 
-  const SITE_ORIGIN = "https://www.tokyo-onsen-guide.com";
-  const GOOGLE_MAPS_ORIGIN = "https://www.google.com";
-
-  function localizedValue(value, lang){
-    if(!value) return "";
-    if(typeof value === "string") return value;
-    return value[lang] || value.ja || value.en || value.ko || "";
-  }
-
-  function safeHttpUrl(value){
-    try{
-      const u=new URL(String(value||""));
-      return ["https:","http:"].includes(u.protocol) ? u.href : "";
-    }catch(e){ return ""; }
-  }
-
-  function imageMetaMarkup(src,lang){
-    const path=String(src||"");
-    const c=(window.IMAGE_CREDITS||{})[path] || {};
-    const noticeKey=c.isActualVenue ? "imageActualDisclaimer" : "imageDisclaimer";
-    const file=c.filename || path.split("/").pop() || "-";
-    const photographer=c.photographer || t("imageUnknownPhotographer");
-    const license=c.license || "-";
-    const sourceUrl=safeHttpUrl(c.sourceUrl);
-    const licenseUrl=safeHttpUrl(c.licenseUrl);
-    const fileLabel=t("imageFileLabel");
-    const photographerLabel=t("imagePhotographerLabel");
-    const licenseLabel=t("imageLicenseLabel");
-    const originalLabel=t("imageOriginalLabel");
-    const licenseValue=licenseUrl ? '<a href="'+escapeHtml(licenseUrl)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(license)+'</a>' : escapeHtml(license);
-    const original=sourceUrl ? ' · <a href="'+escapeHtml(sourceUrl)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(originalLabel)+'</a>' : "";
-    return '<div class="image-meta">'
-      +'<div class="image-usage-note">'+escapeHtml(t(noticeKey))+'</div>'
-      +'<div class="image-credit"><span>'+escapeHtml(fileLabel)+': '+escapeHtml(file)+'</span> · <span>'+escapeHtml(photographerLabel)+': '+escapeHtml(photographer)+'</span> · <span>'+escapeHtml(licenseLabel)+': '+licenseValue+original+'</span></div>'
-      +'</div>';
-  }
-
-  function updateHeroImageMeta(){
-    const box=$("hero-image-meta");
-    if(box) box.innerHTML=imageMetaMarkup("images/hero-onsen.jpg",S.lang);
-  }
-
-  // Always generate a first-party-independent, valid Google Maps URL from the
-  // current facility record. This prevents stale/legacy map descriptions from
-  // being reused when a data record is updated.
-  function buildGoogleMapsUrl(o){
-    if(!o) return "";
-    const name = localizedValue(o.name, "ja") || localizedValue(o.name, S.lang);
-    const address = localizedValue(o.address, "ja") || localizedValue(o.address, S.lang);
-    const c = o.coords || {};
-    const query = [name, address].filter(Boolean).join(" ");
-    if(query) return GOOGLE_MAPS_ORIGIN + "/maps/search/?api=1&query=" + encodeURIComponent(query);
-    if(Number.isFinite(c.lat) && Number.isFinite(c.lng)){
-      return GOOGLE_MAPS_ORIGIN + "/maps/search/?api=1&query=" + encodeURIComponent(c.lat + "," + c.lng);
-    }
-    return GOOGLE_MAPS_ORIGIN + "/maps/search/?api=1&query=" + encodeURIComponent("Tokyo onsen");
-  }
-
-  function buildGoogleMapsEmbedUrl(o, lang){
-    const c = (o && o.coords) || {};
-    const lat = Number.isFinite(c.lat) ? c.lat : 35.6895;
-    const lng = Number.isFinite(c.lng) ? c.lng : 139.6917;
-    const query = [localizedValue(o && o.name, "ja"), localizedValue(o && o.address, "ja")].filter(Boolean).join(" ") || "Tokyo onsen";
-    const hl = lang === "ja" ? "ja" : (lang === "en" ? "en" : "ko");
-    return GOOGLE_MAPS_ORIGIN + "/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d" + lng + "!3d" + lat + "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s" + encodeURIComponent(query) + "!5e0!3m2!1s" + hl + "!2sjp!4v1";
-  }
-
-  function buildHomeMapEmbedUrl(){
-    const hl = S.lang === "ja" ? "ja" : (S.lang === "en" ? "en" : "ko");
-    return GOOGLE_MAPS_ORIGIN + "/maps/embed?pb=!1m16!1m12!1m3!1d120000.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTokyo%20onsen!5e0!3m2!1s" + hl + "!2sjp!4v1";
-  }
-
-  function clearKeywordFilter(){
-    S.q = "";
-    ["list-search-input", "home-search-input", "home-search-input2"].forEach(id=>{
-      const input = $(id);
-      if(input) input.value = "";
-    });
-  }
-
-  function selectAreaFilter(areaId, opts){
-    const resolved = resolveArea(areaId);
-    S.fArea = resolved || "all";
-    // Selecting a region is a replacement action, not an additional keyword
-    // filter. This removes stale tags such as “아라카와구” + “아라카와”.
-    clearKeywordFilter();
-    if(opts && opts.resetOther){
-      S.fType = "all";
-      S.fFeat = "all";
-    }
-  }
-
-  function normalizeSearchText(value){
-    return String(value || "").toLocaleLowerCase().normalize("NFKC").replace(/[\s\-‐‑–—_]+/g, "");
-  }
-
-  function searchTerms(value){
-    const raw = normalizeSearchText(value);
-    if(!raw) return [];
-    const terms = [raw];
-    // Accept common area suffix variants: 아라카와구/아라카와, 荒川区/荒川, and -ku.
-    const withoutWard = raw.replace(/(구|区|ku)$/i, "");
-    if(withoutWard && withoutWard !== raw) terms.push(withoutWard);
-    return [...new Set(terms)];
-  }
-
-  function fieldMatchesSearch(o, query){
-    const terms = searchTerms(query);
-    if(!terms.length) return true;
-    const fields = [];
-    [o.name, o.area, o.address, o.desc].forEach(value=>{
-      if(value && typeof value === "object") Object.values(value).forEach(v=>fields.push(v));
-      else if(value) fields.push(value);
-    });
-    const haystack = fields.map(normalizeSearchText).join(" ");
-    return terms.some(term=>haystack.includes(term));
-  }
-
   function updateI18n(){
     document.documentElement.setAttribute("lang", S.lang || "ko");
     if(S.lang === "ja") {
@@ -1924,7 +2079,7 @@ const S = {
     try {
       const BASE = "https://www.tokyo-onsen-guide.com/";
       const can = document.getElementById("seo-canonical");
-      if (can) can.setAttribute("href", BASE + "?lang=" + S.lang);
+      if (can) can.setAttribute("href", S.lang === "ko" ? BASE : BASE + "?lang=" + S.lang);
       const ogl = document.getElementById("seo-og-locale");
       if (ogl) ogl.setAttribute("content", {ko:"ko_KR", ja:"ja_JP", en:"en_US"}[S.lang] || "ko_KR");
       document.documentElement.setAttribute("lang", S.lang);
@@ -1940,11 +2095,6 @@ const S = {
       const k=el.getAttribute("data-i18n");
       const txt=i18n[S.lang][k];
       if(txt!==undefined){ el.textContent=txt; }
-    });
-    document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
-      const k=el.getAttribute("data-i18n-aria");
-      const txt=i18n[S.lang][k];
-      if(txt!==undefined){ el.setAttribute("aria-label",txt); if(el.tagName === "IFRAME") el.setAttribute("title",txt); }
     });
     // 지역 필터·지도 라벨 3개국어 동기화
     if (typeof AREAS !== "undefined" && Array.isArray(AREAS)) {
@@ -1993,6 +2143,7 @@ const S = {
     if(S.view==="cookies")drawCookies();
     if(S.view==="contact")drawContact();
     if(S.view==="advertising")drawAdvertising();
+    if(S.view==="disclaimer")drawDisclaimer();
     if(S.view==="guides")drawGuides();
     if(S.view==="guide")drawGuideDetail();
     // update footerAdvertising i18n label dynamically
@@ -2002,68 +2153,15 @@ const S = {
   }
   function updateMapLang(){
     const iframe=$("home-map-iframe");
-    if(iframe) iframe.src=buildHomeMapEmbedUrl();
-    const open=$("home-map-open");
-    if(open){
-      open.href=GOOGLE_MAPS_ORIGIN + "/maps/search/?api=1&query=" + encodeURIComponent("Tokyo onsen");
-      open.textContent={ko:"Google Maps에서 전체 보기 ↗",ja:"Google Mapsで全体を見る ↗",en:"Open full map in Google Maps ↗"}[S.lang] || "Google Maps ↗";
-    }
-  }
-
-  function drawHomeMapPins(){
-    const layer=$("home-map-pins");
-    if(!layer || typeof DATA === "undefined") return;
-    clearEl(layer);
-
-    const allPoints = DATA.filter(o=>{
-      const c=o.coords || {};
-      return Number.isFinite(c.lat) && Number.isFinite(c.lng);
-    });
-    const areaPoints={};
-    allPoints.forEach(o=>{
-      const areaId=resolveArea(getAreaKey(o));
-      if(!areaId || areaId === "all") return;
-      areaPoints[areaId] ||= [];
-      areaPoints[areaId].push(o.coords);
-    });
-    const areaCenter={};
-    Object.entries(areaPoints).forEach(([id,points])=>{
-      areaCenter[id]={
-        lat:points.reduce((sum,p)=>sum+p.lat,0)/points.length,
-        lng:points.reduce((sum,p)=>sum+p.lng,0)/points.length
-      };
-    });
-
-    // Bounds cover the Tokyo 23 wards, Tama, and the western mountain area.
-    const minLat=35.48, maxLat=35.83, minLng=139.12, maxLng=139.94;
-    DATA.forEach((o,index)=>{
-      const c=o.coords || {};
-      let lat=Number.isFinite(c.lat) ? c.lat : null;
-      let lng=Number.isFinite(c.lng) ? c.lng : null;
-      if(lat===null || lng===null){
-        const areaId=resolveArea(getAreaKey(o));
-        const center=areaCenter[areaId] || {lat:35.6895,lng:139.6917};
-        const n=index % 7;
-        lat=center.lat + ((n % 3)-1) * 0.0025;
-        lng=center.lng + (Math.floor(n / 3)-1) * 0.0035;
-      }
-      const left=Math.max(2,Math.min(98,((lng-minLng)/(maxLng-minLng))*100));
-      const top=Math.max(3,Math.min(97,((maxLat-lat)/(maxLat-minLat))*100));
-      const name=localizedValue(o.name,S.lang) || localizedValue(o.name,"ko");
-      const area=localizedValue(o.area,S.lang) || localizedValue(o.area,"ko");
-      const pin=el("button",{cls:"map-pin",attr:{type:"button","aria-label":name + (area ? " — " + area : ""),title:name + (area ? " · " + area : "")},on:{click:e=>{e.stopPropagation();go("detail",{id:o.id});}}});
-      pin.style.left=left+"%";
-      pin.style.top=top+"%";
-      layer.appendChild(pin);
-    });
+    if(!iframe)return;
+    const hl={ko:"ko",en:"en",ja:"ja"}[S.lang]||"ko";
+    const base="https://www.google.com/maps/d/embed?mid=1zCqUtrWpjWz9PGmznh-vNeafwjg&ll=35.730314252495724%2C139.49317399512913&z=9";
+    iframe.src=base+"&hl="+hl;
   }
 
   function go(name,opts){
     S.view=name;
-    if(opts&&opts.id){
-      if(name === "guide") S.guideId=opts.id;
-      else S.detailId=opts.id;
-    }
+    if(opts&&opts.id)S.detailId=opts.id;
     document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
     const page=$("page-"+name);if(page)page.classList.add("active");
     document.querySelectorAll("[data-nav]").forEach(n=>{
@@ -2083,6 +2181,19 @@ const S = {
     if(name==="cookies")drawCookies();
     if(name==="contact")drawContact();
     if(name==="advertising")drawAdvertising();
+    if(name==="disclaimer")drawDisclaimer();
+    if(name==="guides")drawGuides();
+    if(name==="guide")drawGuideDetail();
+    // 안전장치: 렌더 누락 시 컨테이너를 다시 채운다
+    try{
+      const RENDERERS={about:drawAbout,privacy:drawPrivacy,terms:drawTerms,cookies:drawCookies,
+        contact:drawContact,advertising:drawAdvertising,disclaimer:drawDisclaimer,guides:drawGuides,guide:drawGuideDetail};
+      const box=document.getElementById(name+"-container")||document.getElementById(name==="guides"?"guides-grid":name==="guide"?"guide-article":"");
+      if(box && !box.innerHTML.trim() && typeof RENDERERS[name]==="function"){
+        RENDERERS[name]();
+        if(!box.innerHTML.trim()) console.warn("[렌더 가드] "+name+" 페이지를 그리지 못했습니다");
+      }
+    }catch(e){ console.warn("[렌더 가드]", e); }
   }
 
   function getTypeClass(typeVal){
@@ -2094,32 +2205,14 @@ const S = {
     return map[typeVal]||"♨️";
   }
 
-  function smartImgFallback(img,typeKo){
-    if(!img) return;
-    if(img.dataset.fallbackApplied === "1"){
-      img.removeAttribute("src");
-      img.style.visibility = "hidden";
-      return;
-    }
-    img.dataset.fallbackApplied = "1";
-    const fallback=(window.getDefaultImage && window.getDefaultImage(typeKo)) || "images/hero-onsen.jpg";
-    if(img.getAttribute("src") !== fallback) img.setAttribute("src",fallback);
-    else { img.removeAttribute("src"); img.style.visibility="hidden"; }
-  }
-
-  function resetListFilters(){
-    S.q=""; S.fArea="all"; S.fType="all"; S.fFeat="all";
-    clearKeywordFilter();
-    drawList();
-  }
-
   function drawHome(){
     try{
     const ec=$("editorial-count");
     if(ec)ec.textContent=t("facilityCount",{count:DATA.length});
     const areaCounts={};
     DATA.forEach(o=>{
-      const agKo=getAreaKey(o)||"unknown";
+      const ag=(o.areaGroup||o.area);
+      const agKo=(ag&&ag.ko)||"unknown";
       const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);
       if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;
     });
@@ -2129,7 +2222,7 @@ const S = {
       const cnt=areaCounts[a.id]||0;
       if(cnt===0)return;
       const li=el("li");
-      const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();selectAreaFilter(a.id,{resetOther:true});go("list");}}});
+      const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();S.fArea=a.id;S.fType="all";S.fFeat="all";S.q="";go("list");}}});
       li.appendChild(btn);
       li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
       areaList.appendChild(li);
@@ -2141,7 +2234,7 @@ const S = {
       sorted.forEach(([id,cnt])=>{
         const a=AREAS.find(x=>x.id===id);if(!a)return;
         const li=el("li");
-        const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();selectAreaFilter(a.id,{resetOther:true});go("list");}}});
+        const btn=el("a",{text:a[S.lang],on:{click:e=>{e.preventDefault();S.fArea=a.id;S.fType="all";S.fFeat="all";S.q="";go("list");}}});
         li.appendChild(btn);
         li.appendChild(el("span",{cls:"count",text:"("+cnt+")"}));
         popList.appendChild(li);
@@ -2152,7 +2245,7 @@ const S = {
       const areaId=lbl.getAttribute("data-area");
       const area=AREAS.find(a=>a.id===areaId);
       if(area)lbl.textContent=area[S.lang];
-      lbl.onclick=(e)=>{e.preventDefault();selectAreaFilter(areaId,{resetOther:true});go("list");};
+      lbl.onclick=(e)=>{e.preventDefault();S.fArea=areaId;S.fType="all";S.fFeat="all";S.q="";go("list");};
     });
 
     const wishGrid=$("home-wish-list");
@@ -2173,8 +2266,15 @@ const S = {
       const rImg=o.image||window.getDefaultImage(typeKo);
       if(rImg){
         const img=el("img",{attr:{src:rImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy", decoding:"async"}});
-        img.onerror=function(){smartImgFallback(this, typeKo);};
+        img.onerror=function(){smartImgFallback(this, o.id, typeKo);};
         imgWrap.appendChild(img);
+        // 참고 이미지 고지 (해당 시설의 실제 사진이 아님을 3개국어로 명시)
+        const noteTxt = {
+          ko: "※ 이미지는 분위기 참고용이며 해당 시설의 실제 사진이 아닙니다.",
+          ja: "※ 画像はイメージであり、当該施設の実際の写真ではありません。",
+          en: "※ Image is for illustration only and does not depict this facility."
+        }[S.lang] || "※ 이미지는 분위기 참고용이며 해당 시설의 실제 사진이 아닙니다.";
+        imgWrap.appendChild(el("p",{cls:"img-disclaimer",text:noteTxt}));
       }else{ imgWrap.appendChild(el("div",{cls:"report-icon",text:getTypeIcon(typeKo)})); }
       imgWrap.appendChild(el("span",{cls:"report-badge",text:(o.type&&o.type[S.lang])||""}));
       const overlay=el("div",{cls:"report-overlay"});
@@ -2182,27 +2282,16 @@ const S = {
       overlay.appendChild(el("div",{cls:"report-meta",text:((o.area&&o.area[S.lang])||"")+" · "+((o.price&&o.price[S.lang])||"")}));
       imgWrap.appendChild(overlay);
       item.appendChild(imgWrap);
-      item.insertAdjacentHTML("beforeend",imageMetaMarkup(rImg,S.lang));
       report.appendChild(item);
     });}
-    drawHomeMapPins();
-    updateHeroImageMeta();
     }catch(e){
       console.error("drawHome error:",e);
       var rep=document.getElementById("home-report-list");
-      if(rep) rep.innerHTML=errorPanel("homeLoadError",e,false);
+      if(rep) rep.innerHTML='<p style="padding:20px;color:#b91c1c;text-align:center;font-weight:700;">⚠️ 홈 콘텐츠를 불러오는 중 오류가 발생했습니다.<br><span style="font-size:13px;color:#8a7a6a;font-weight:400;">'+String(e.message).replace(/</g,"&lt;")+'</span></p>';
     }
   }
 
   function normArea(id){return String(id||"").replace(/-/g,"_");}
-  function getAreaKey(o){
-    const group=o && o.areaGroup;
-    const fromGroup=typeof group === "string" ? group : (group && (group.ko || group.en || group.ja));
-    if(fromGroup) return fromGroup;
-    const area=o && o.area;
-    if(typeof area === "string") return area;
-    return area && (area.ko || area.en || area.ja) || "";
-  }
   function resolveArea(areaVal){
     if(!areaVal||areaVal==="all")return"all";
     const found=AREAS.find(a=>a.id===areaVal||a.ko===areaVal||a.en===areaVal||a.ja===areaVal);
@@ -2210,7 +2299,8 @@ const S = {
   }
   function areaMatch(o){
     if(S.fArea==="all")return true;
-    const agKo=getAreaKey(o);
+    const ag=(o.areaGroup||o.area);
+    const agKo=ag&&ag.ko;
     if(!agKo)return false;
     // agKo may be an area id (new data) or a name (old data)
     if(agKo===S.fArea)return true;
@@ -2227,27 +2317,22 @@ const S = {
     const list=(window.GUIDES||[]);
     if(!list.length){ wrap.innerHTML=""; return; }
     wrap.innerHTML=list.map(g=>{
-      const rawImg=g.image||"images/hero-onsen.jpg";
-      const img=escapeHtml(rawImg);
-      const title=escapeHtml((g.title&&g.title[lang])||(g.title&&g.title.ko)||g.id||"");
-      const summary=escapeHtml((g.summary&&g.summary[lang])||(g.summary&&g.summary.ko)||"");
-      return `<article class="guide-card" data-guide="${escapeHtml(g.id)}">
-        <img src="${img}" alt="${title}" loading="lazy">
-        ${imageMetaMarkup(rawImg,lang)}
+      const img=g.image||"images/hero-onsen.jpg";
+      return `<article class="guide-card" data-guide="${g.id}">
+        <img src="${img}" alt="${(g.title[lang]||"").replace(/"/g,"&quot;")}" loading="lazy" onerror="this.src='images/hero-onsen.jpg'">
         <div class="guide-card-body">
-          <h2 class="guide-card-title">${title}</h2>
-          <p class="guide-card-sum">${summary}</p>
+          <h2 class="guide-card-title">${g.title[lang]||g.title.ko}</h2>
+          <p class="guide-card-sum">${g.summary[lang]||g.summary.ko}</p>
         </div>
       </article>`;
     }).join("");
-    wrap.querySelectorAll("img").forEach(img=>img.addEventListener("error",()=>smartImgFallback(img)));
     wrap.querySelectorAll("[data-guide]").forEach(el=>{
       el.addEventListener("click",()=>{ S.guideId=el.getAttribute("data-guide"); go("guide"); window.scrollTo(0,0); });
     });
   }
   function mdToHtml(md){
     const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-    const lines=esc(String(md || "")).split("\n"); let out=[], inUl=false, inTable=false;
+    const lines=esc(md).split("\n"); let out=[], inUl=false, inTable=false;
     const inline=s=>s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>");
     for(let i=0;i<lines.length;i++){
       const L=lines[i].trim();
@@ -2279,17 +2364,61 @@ const S = {
     const imgNote={ko:"※ 이미지는 분위기 참고용이며 특정 시설의 실제 사진이 아닙니다.",
                    ja:"※ 画像はイメージであり、特定施設の実際の写真ではありません。",
                    en:"※ Image is for illustration and does not depict a specific facility."}[lang];
-    wrap.innerHTML=`<button type="button" class="guide-back" id="guide-back-btn">${escapeHtml(backTxt)}</button>
-      <h1>${escapeHtml((g.title&&g.title[lang])||(g.title&&g.title.ko)||g.id||"")}</h1>
+    wrap.innerHTML=`<span class="guide-back" id="guide-back-btn">${backTxt}</span>
+      <h1>${g.title[lang]||g.title.ko}</h1>
       <div class="guide-meta">Tokyo Onsen Guide</div>
-      <img class="guide-hero-img" src="${escapeHtml(g.image||"images/hero-onsen.jpg")}" alt="${escapeHtml((g.title&&g.title[lang])||(g.title&&g.title.ko)||g.id||"")}">
-      ${imageMetaMarkup(g.image||"images/hero-onsen.jpg",lang)}
-      <p class="guide-img-note">${escapeHtml(imgNote)}</p>
-      ${mdToHtml((g.body&&g.body[lang])||(g.body&&g.body.ko)||"")}`;
-    const guideImg=wrap.querySelector(".guide-hero-img");
-    if(guideImg) guideImg.addEventListener("error",()=>smartImgFallback(guideImg));
+      <img class="guide-hero-img" src="${g.image||"images/hero-onsen.jpg"}" alt="" onerror="this.src='images/hero-onsen.jpg'">
+      <p class="guide-img-note">${imgNote}</p>
+      ${mdToHtml(g.body[lang]||g.body.ko)}`;
     const bb=$("guide-back-btn");
     if(bb) bb.addEventListener("click",()=>{ go("guides"); window.scrollTo(0,0); });
+  }
+
+  function drawDisclaimer(){
+    try {
+      const wrap = $("disclaimer-container");
+      if (!wrap) return;
+      const lang = S.lang || "ko";
+      const c = {
+        ko: { title:"면책조항", sub:"Disclaimer", items:[
+          ["1. 정보의 성격","<p>본 사이트에 게재된 요금·영업시간·휴무일·시설 정보는 각 시설의 공식 사이트, 지방자치단체 및 목욕조합의 공개 자료를 바탕으로 정리한 <strong>참고용 자료</strong>입니다. 이러한 정보는 예고 없이 변경될 수 있으므로, 방문 전 반드시 각 시설의 공식 사이트나 전화로 최신 정보를 확인해 주시기 바랍니다.</p>"],
+          ["2. 이미지에 관하여","<p>본 사이트에 게재된 이미지는 온천·센토의 분위기를 전달하기 위한 <strong>참고 이미지</strong>이며, 해당 시설의 실제 사진이 아닙니다. 시설의 실제 외관이나 내부는 이미지와 다릅니다.</p>"],
+          ["3. 편집 독립성","<p>본 사이트는 소개된 시설과 자본 관계나 운영상의 제휴 관계가 없으며, 게재 여부에 대한 대가를 받지 않습니다. 모든 시설 정보는 중립적인 기준으로 선정·작성됩니다. 광고가 게재되는 경우 광고임을 명확히 구분하여 표시합니다.</p>"],
+          ["4. 책임의 한계","<p>운영자는 본 사이트의 정보가 정확하고 최신이 되도록 노력하고 있으나, 그 완전성이나 정확성을 보증하지 않습니다. 본 사이트의 정보를 이용하여 발생한 직접적·간접적 손해에 대하여 운영자는 법적 책임을 지지 않습니다.</p>"],
+          ["5. 권리의 귀속","<p>시설명·상표·상호에 관한 권리는 각 권리자에게 귀속됩니다. 게재된 정보에 오류가 있거나 게재 중지를 원하시는 경우, 문의 페이지를 통해 연락해 주시면 신속히 확인 후 조치하겠습니다.</p>"],
+          ["6. 건강 및 안전","<p>입욕 시에는 건강 상태에 유의해 주십시오. 음주 후 입욕은 매우 위험하므로 삼가시기 바랍니다. 심장 질환, 고혈압 등 지병이 있으신 분이나 임신 중인 분은 사전에 의사와 상담하시기 바랍니다. 사우나 이용 시에는 충분한 수분 보충을 권장합니다.</p>"],
+          ["7. 외부 링크","<p>본 사이트에는 외부 웹사이트로 연결되는 링크가 포함되어 있습니다. 링크된 외부 사이트의 내용이나 개인정보 처리에 대하여 운영자는 책임을 지지 않습니다.</p>"]
+        ]},
+        ja: { title:"免責事項", sub:"Disclaimer", items:[
+          ["1. 情報の性質","<p>当サイトに掲載する料金・営業時間・定休日・施設情報は、各施設の公式サイト、自治体および浴場組合の公開資料をもとに整理した<strong>参考情報</strong>です。これらの情報は予告なく変更される場合がありますので、ご訪問前に各施設の公式サイトまたはお電話にて最新の情報をご確認ください。</p>"],
+          ["2. 画像について","<p>当サイトに掲載している画像は、温泉・銭湯の雰囲気をお伝えするための<strong>イメージ画像</strong>であり、当該施設の実際の写真ではありません。施設の実際の外観や内部は画像と異なります。</p>"],
+          ["3. 編集の独立性","<p>当サイトは掲載施設との資本関係および運営上の提携関係はなく、掲載の対価を受け取っておりません。すべての施設情報は中立的な基準で選定・作成しています。広告を掲載する場合は、広告であることを明示いたします。</p>"],
+          ["4. 責任の範囲","<p>運営者は当サイトの情報が正確かつ最新であるよう努めておりますが、その完全性や正確性を保証するものではありません。当サイトの情報のご利用により生じた直接的・間接的な損害について、運営者は法的責任を負いかねます。</p>"],
+          ["5. 権利の帰属","<p>施設名・商標・商号に関する権利は各権利者に帰属します。掲載情報に誤りがある場合や掲載停止をご希望の場合は、お問い合わせページよりご連絡いただければ、速やかに確認のうえ対応いたします。</p>"],
+          ["6. 健康と安全","<p>ご入浴の際は体調にご留意ください。飲酒後の入浴は大変危険ですのでお控えください。心臓疾患、高血圧などの持病をお持ちの方、妊娠中の方は、事前に医師にご相談ください。サウナをご利用の際は十分な水分補給をお勧めします。</p>"],
+          ["7. 外部リンク","<p>当サイトには外部ウェブサイトへのリンクが含まれています。リンク先の外部サイトの内容や個人情報の取り扱いについて、運営者は責任を負いかねます。</p>"]
+        ]},
+        en: { title:"Disclaimer", sub:"Disclaimer", items:[
+          ["1. Nature of the Information","<p>Prices, opening hours, closing days, and facility details on this site are <strong>reference information</strong> compiled from official facility websites and public records published by local governments and bathhouse associations. Such information may change without notice, so please confirm the latest details directly with each facility before visiting.</p>"],
+          ["2. About the Images","<p>Images on this site are <strong>illustrative</strong>, intended to convey the atmosphere of onsen and sento. They are not photographs of the specific facilities listed, and actual exteriors and interiors will differ.</p>"],
+          ["3. Editorial Independence","<p>This site has no financial or operational affiliation with the facilities listed and receives no payment for inclusion. All listings are selected and written according to neutral criteria. Where advertising appears, it is clearly identified as such.</p>"],
+          ["4. Limitation of Liability","<p>While we make every effort to keep information accurate and current, we make no warranty as to its completeness or accuracy. The operator accepts no legal liability for any direct or indirect loss arising from the use of information on this site.</p>"],
+          ["5. Ownership of Rights","<p>All facility names, trademarks, and trade names belong to their respective owners. If you find an error in our listings or wish to request removal, please contact us via the contact page and we will review and respond promptly.</p>"],
+          ["6. Health and Safety","<p>Please take care of your health when bathing. Bathing after consuming alcohol is highly dangerous and should be avoided. Those with heart conditions, high blood pressure, or other medical conditions, and those who are pregnant, should consult a doctor beforehand. Adequate hydration is recommended when using saunas.</p>"],
+          ["7. External Links","<p>This site contains links to external websites. The operator accepts no responsibility for the content or privacy practices of linked external sites.</p>"]
+        ]}
+      };
+      const t = c[lang] || c.ko;
+      let s = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);">`;
+      s += `<h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${t.title}</h1>`;
+      s += `<p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${t.sub}</p>`;
+      s += `</div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">`;
+      t.items.forEach((it, n) => {
+        s += `<div class="luxury-section-card" style="margin-bottom:${n===t.items.length-1?0:24}px;"><div class="luxury-sec-header"><h2>${it[0]}</h2></div><div class="luxury-desc-content">${it[1]}</div></div>`;
+      });
+      s += `</div>`;
+      wrap.innerHTML = s;
+    } catch(e) { console.error("drawDisclaimer error:", e); }
   }
 
   function drawAdvertising(){
@@ -2299,19 +2428,19 @@ const S = {
       const lang = S.lang || "ko";
       const c = {
         ko: {
-          title: "광고 및 제휴 정책", sub: "광고 정책",
+          title: "광고 및 제휴 정책", sub: "Advertising Policy",
           c1Title: "1. 광고 게재", c1Body: "<p>본 사이트는 Google AdSense 프로그램을 통해 광고를 게재합니다. Google AdSense는 사용자의 관심사에 기반한 맞춤형 광고를 자동으로 표시할 수 있습니다.</p>",
           c2Title: "2. 제휴 링크", c2Body: "<p>현재 본 사이트는 제휴 링크(Affiliate Links)를 사용하지 않습니다. 모든 온천 정보는 중립적으로 제공되며, 특정 시설과의 유료 제휴 관계는 없습니다.</p>",
           c3Title: "3. 스폰서십 및 후원", c3Body: "<p>본 사이트의 콘텐츠는 독립적으로 작성되며, 특정 온천 시설이나 기업으로부터 금전적 후원을 받고 있지 않습니다. 향후 후원 콘텐츠가 포함될 경우, 해당 콘텐츠에 명확히 \"후원\" 또는 \"광고\" 표기를 추가합니다.</p>",
-          c4Title: "4. 이미지 출처 및 참고 이미지 고지", c4Body: "<p>본 사이트의 시설 카드와 가이드에는 Wikimedia Commons 등 공개 라이선스 범위를 확인한 사진을 분위기 참고용으로 사용합니다. 특정 온천 시설이나 가게의 실제 사진으로 오인하지 않도록 표시하며, 이미지별 출처·라이선스 기록은 IMAGE_CREDITS.json에서 확인할 수 있습니다.</p>",
+          c4Title: "4. AI 생성 이미지 고지", c4Body: "<p>본 사이트의 일부 이미지는 AI(인공지능)가 생성한 참고용 이미지입니다. 실제 온천 시설과 다를 수 있으며, 시설 예약이나 방문 결정의 유일한 기준이 되어서는 안 됩니다.</p>",
           c5Title: "5. 광고 문의", c5Body: '<p>광고 게재 및 제휴 문의: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
         },
         ja: {
-          title: "広告および提携ポリシー", sub: "広告ポリシー",
+          title: "広告および提携ポリシー", sub: "Advertising Policy",
           c1Title: "1. 広告掲載", c1Body: "<p>当サイトはGoogle AdSenseプログラムを通じて広告を掲載しています。Google AdSenseはユーザーの興味や関心に基づいたパーソナライズ広告を自動的に表示する場合があります。</p>",
           c2Title: "2. アフィリエイトリンク", c2Body: "<p>現在、当サイトはアフィリエイトリンクを使用していません。すべての温泉情報は中立かつ公正な視点で提供されており、特定施設との有料提携関係はありません。</p>",
           c3Title: "3. スポンサーシップおよび協賛", c3Body: "<p>当サイトのコンテンツは独自に作成されており、特定の温泉施設や企業から金銭的支援を受けていません。将来的にスポンサー記事を掲載する場合は、該当コンテンツに明確に「PR」または「広告」と明記します。</p>",
-          c4Title: "4. 画像の出典と参考画像について", c4Body: "<p>当サイトの施設カードとガイドには、Wikimedia Commons等で公開ライセンス条件を確認した写真を雰囲気の参考として使用しています。特定の温泉施設や店舗の実際の写真ではありません。画像ごとの出典・ライセンス記録はIMAGE_CREDITS.jsonでご確認いただけます。</p>",
+          c4Title: "4. AI生成画像についてのご案内", c4Body: "<p>当サイトの一部のイメージ画像はAI（人工知能）により生成された参考用イメージです。実際の温泉施設とは異なる場合があるため、施設のご予約や訪問決定の唯一の判断基準となさらないようお願い申し上げます。</p>",
           c5Title: "5. 広告に関するお問い合わせ", c5Body: '<p>広告掲載および提携に関するお問い合わせ: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
         },
         en: {
@@ -2319,7 +2448,7 @@ const S = {
           c1Title: "1. Ad Placement", c1Body: "<p>This site displays advertisements via the Google AdSense program. Google AdSense may automatically display personalized advertisements based on user interests and browsing history.</p>",
           c2Title: "2. Affiliate Links", c2Body: "<p>This site currently does not use affiliate links. All hot spring curation data is provided neutrally, and we have no paid partnerships with any featured facilities.</p>",
           c3Title: "3. Sponsorships & Funding", c3Body: "<p>All editorial content on this site is written independently without financial sponsorship from specific hot spring facilities or corporations. If sponsored content is introduced in the future, it will be clearly labeled as \"Sponsored\" or \"Ad\".</p>",
-          c4Title: "4. Image Sources & Reference Photos", c4Body: "<p>Facility cards and guides use photographs from Wikimedia Commons and other sources under their published open-license terms. They are atmosphere references and do not depict the specific onsen facility or shop. Per-image source and license records are available in IMAGE_CREDITS.json.</p>",
+          c4Title: "4. Notice Regarding AI-Generated Images", c4Body: "<p>Some illustrative photos on this site are AI-generated reference images. They may differ from the actual hot spring facilities and should not serve as the sole criterion when making reservations or visiting decisions.</p>",
           c5Title: "5. Advertising Inquiries", c5Body: '<p>For advertising and partnership inquiries: <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p>'
         }
       }[lang] || c.ko;
@@ -2342,8 +2471,8 @@ const S = {
     try {
       const wrap = $("privacy-container"); if (!wrap) return; const lang = S.lang || "ko";
       const c = {
-        ko: { title: "개인정보처리방침", sub: "개인정보처리방침", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 개인정보 보호 원칙</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide는 서비스 이용자의 개인정보를 소중히 다루며, 관련 법령을 철저히 준수합니다.</p><p><strong>1. 수집하는 정보:</strong> 당사는 회원가입을 요구하지 않으며 개인식별정보를 직접 수집하지 않습니다. 서비스 최적화를 위해 접속 로그 및 쿠키 등 익명화된 통계 정보만 자동 수집될 수 있습니다.</p><p><strong>2. 광고 및 맞춤형 쿠키:</strong> Google AdSense 및 Google Analytics 등의 맞춤형 광고 서비스와 연동될 수 있으며, 브라우저 쿠키를 활용하여 맞춤형 광고가 표시될 수 있습니다.</p></div></div>` },
-        ja: { title: "プライバシーポリシー", sub: "プライバシーポリシー", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 個人情報の保護について</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guideは、利用者の個人情報を尊重し、関連法令を徹底して遵守します。</p><p><strong>1. 収集する情報:</strong> 当サイトは会員登録を求めず、氏名や電話番号などの個人情報を直接収集しません。サービス改善のため匿名化されたアクセスログやCookieのみが自動収集される場合があります。</p><p><strong>2. 広告およびCookie:</strong> Google AdSenseおよびGoogle Analyticsなどの広告・分析ツールがCookieを使用してユーザーの興味に応じた広告を表示する場合があります。</p></div></div>` },
+        ko: { title: "개인정보처리방침", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 개인정보 보호 원칙</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide는 서비스 이용자의 개인정보를 소중히 다루며, 관련 법령을 철저히 준수합니다.</p><p><strong>1. 수집하는 정보:</strong> 당사는 회원가입을 요구하지 않으며 개인식별정보를 직접 수집하지 않습니다. 서비스 최적화를 위해 접속 로그 및 쿠키 등 익명화된 통계 정보만 자동 수집될 수 있습니다.</p><p><strong>2. 광고 및 맞춤형 쿠키:</strong> Google AdSense 및 Google Analytics 등의 맞춤형 광고 서비스와 연동될 수 있으며, 브라우저 쿠키를 활용하여 맞춤형 광고가 표시될 수 있습니다.</p></div></div>` },
+        ja: { title: "プライバシーポリシー", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 個人情報の保護について</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guideは、利用者の個人情報を尊重し、関連法令を徹底して遵守します。</p><p><strong>1. 収集する情報:</strong> 当サイトは会員登録を求めず、氏名や電話番号などの個人情報を直接収集しません。サービス改善のため匿名化されたアクセスログやCookieのみが自動収集される場合があります。</p><p><strong>2. 広告およびCookie:</strong> Google AdSenseおよびGoogle Analyticsなどの広告・分析ツールがCookieを使用してユーザーの興味に応じた広告を表示する場合があります。</p></div></div>` },
         en: { title: "Privacy Policy", sub: "Privacy Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🔒 Privacy & Data Protection</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide respects user privacy and strictly complies with applicable data protection regulations.</p><p><strong>1. Information Collection:</strong> We do not require membership registration or collect personally identifiable information directly. Only anonymized statistical data and cookies may be automatically processed for site optimization.</p><p><strong>2. Advertising Cookies:</strong> Third-party vendors including Google AdSense use cookies to serve ads based on prior visits to our website or other websites.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
@@ -2354,9 +2483,9 @@ const S = {
     try {
       const wrap = $("terms-container"); if (!wrap) return; const lang = S.lang || "ko";
       const c = {
-        ko: { title: "이용약관", sub: "이용약관", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 153개 온천 시설의 요금, 영업시간, 휴무일, 수질(泉質) 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
-        ja: { title: "利用規約", sub: "利用規約", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている153の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
-        en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 153 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
+        ko: { title: "이용약관", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 이용약관 및 면책조항</h2></div><div class="luxury-desc-content"><p><strong>1. 정보의 참고 목적:</strong> 본 사이트에 수록된 302개 온천 시설의 요금, 영업시간, 휴무일, 수질(泉質) 정보는 현지 데이터 및 공식 웹사이트를 조사하여 큐레이션한 참고용 자료입니다.</p><p><strong>2. 면책 고지:</strong> 온천 및 센토 시설의 실제 영업 상황이나 요금은 계절, 리뉴얼, 정책 변경 등에 따라 예고 없이 달라질 수 있습니다. 당사는 본 사이트 정보 이용으로 발생한 손해에 대해 법적 책임을 지지 않으므로, 방문 전 반드시 공식 웹사이트를 확인해 주시기 바랍니다.</p></div></div>` },
+        ja: { title: "利用規約", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 利用規約および免責事項</h2></div><div class="luxury-desc-content"><p><strong>1. 情報の提供目的:</strong> 当サイトに掲載されている302の温泉・銭湯施設の料金、営業時間、定休日、泉質情報は現地調査および公式サイトを基にした参考情報です。</p><p><strong>2. 免責事項:</strong> 実際の営業状況や料金は施設のリニューアルや季節要因等により予告なく変更される場合があります。当サイトの利用により生じたいかなる損害についても法的責任を負いかねますので、ご訪問前に必ず各施設の公式サイトをご確認ください。</p></div></div>` },
+        en: { title: "Terms of Service", sub: "Terms of Service", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>📋 Terms & Disclaimer</h2></div><div class="luxury-desc-content"><p><strong>1. Informational Purpose:</strong> All operating hours, admission fees, regular holidays, and thermal spring data across the 302 curated facilities are provided for reference only.</p><p><strong>2. Disclaimer of Liability:</strong> Facility details may change without notice due to renovations, seasonal schedules, or policy updates. Tokyo Onsen Guide assumes no legal liability for any damages or inconveniences arising from the use of this information. Always verify details with official facility websites prior to visiting.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
     } catch(e) {}
@@ -2366,8 +2495,8 @@ const S = {
     try {
       const wrap = $("cookies-container"); if (!wrap) return; const lang = S.lang || "ko";
       const c = {
-        ko: { title: "쿠키 정책", sub: "쿠키 정책", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 쿠키(Cookie) 사용 안내</h2></div><div class="luxury-desc-content"><p>본 사이트는 사용자의 언어 설정(한국어, 영어, 일본어) 및 테마 설정(라이트/다크 모드)을 브라우저에 기억하여 편리한 이용을 돕기 위해 쿠키 및 로컬 스토리지(Local Storage)를 사용합니다.</p><p>사용자는 언제든 브라우저 설정에서 쿠키 저장을 거부하거나 기존 데이터를 삭제할 수 있으며, 이 경우에도 온천 탐색 및 상세페이지 열람 서비스는 정상적으로 이용 가능합니다.</p></div></div>` },
-        ja: { title: "Cookieポリシー", sub: "Cookieポリシー", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 Cookieの使用について</h2></div><div class="luxury-desc-content"><p>当サイトはユーザーの言語設定（日本語・韓国語・英語）やテーマ設定をブラウザに記憶し、より快適なブラウジングを提供するためにCookieおよびローカルストレージを使用します。</p><p>ブラウザの設定によりCookieを無効化したり削除したりすることが可能であり、その場合でも温泉検索や詳細ページの閲覧は問題なくご利用いただけます。</p></div></div>` },
+        ko: { title: "쿠키 정책", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 쿠키(Cookie) 사용 안내</h2></div><div class="luxury-desc-content"><p>본 사이트는 사용자의 언어 설정(한국어, 영어, 일본어) 및 테마 설정(라이트/다크 모드)을 브라우저에 기억하여 편리한 이용을 돕기 위해 쿠키 및 로컬 스토리지(Local Storage)를 사용합니다.</p><p>사용자는 언제든 브라우저 설정에서 쿠키 저장을 거부하거나 기존 데이터를 삭제할 수 있으며, 이 경우에도 온천 탐색 및 상세페이지 열람 서비스는 정상적으로 이용 가능합니다.</p></div></div>` },
+        ja: { title: "Cookieポリシー", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 Cookieの使用について</h2></div><div class="luxury-desc-content"><p>当サイトはユーザーの言語設定（日本語・韓国語・英語）やテーマ設定をブラウザに記憶し、より快適なブラウジングを提供するためにCookieおよびローカルストレージを使用します。</p><p>ブラウザの設定によりCookieを無効化したり削除したりすることが可能であり、その場合でも温泉検索や詳細ページの閲覧は問題なくご利用いただけます。</p></div></div>` },
         en: { title: "Cookie Policy", sub: "Cookie Policy", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>🍪 Cookie & Local Storage Usage</h2></div><div class="luxury-desc-content"><p>We use cookies and local storage solely to remember your preferred language (English, Korean, Japanese) and theme mode (light/dark) across visits.</p><p>You can disable or delete cookies at any time through your browser settings. Doing so will not restrict your access to exploring hot springs or reading detailed guides.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
@@ -2378,8 +2507,8 @@ const S = {
     try {
       const wrap = $("contact-container"); if (!wrap) return; const lang = S.lang || "ko";
       const c = {
-        ko: { title: "문의 및 제안", sub: "문의하기", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ 공식 문의 및 제안 접수</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide 운영팀과 소통하고 싶으시거나 새로운 온천 시설 추천, 기존 데이터 수정 요청이 있다면 아래 공식 이메일로 연락 주시기 바랍니다.</p><p><strong>• 이메일 문의:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>보내주신 의견은 신속하게 검토하여 서비스에 반영하겠습니다.</p></div></div>` },
-        ja: { title: "お問い合わせ", sub: "お問い合わせ", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ お問い合わせ・ご提案</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide運営チームへのご連絡、新規温泉施設のリクエスト、掲載データの情報修正依頼などがございましたら下記メールアドレスまでお問い合わせください。</p><p><strong>• 公式メール:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>お寄せいただいたご意見は速やかに確認し、改善に役立てます。</p></div></div>` },
+        ko: { title: "문의 및 제안", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ 공식 문의 및 제안 접수</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide 운영팀과 소통하고 싶으시거나 새로운 온천 시설 추천, 기존 데이터 수정 요청이 있다면 아래 공식 이메일로 연락 주시기 바랍니다.</p><p><strong>• 이메일 문의:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>보내주신 의견은 신속하게 검토하여 서비스에 반영하겠습니다.</p></div></div>` },
+        ja: { title: "お問い合わせ", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ お問い合わせ・ご提案</h2></div><div class="luxury-desc-content"><p>Tokyo Onsen Guide運営チームへのご連絡、新規温泉施設のリクエスト、掲載データの情報修正依頼などがございましたら下記メールアドレスまでお問い合わせください。</p><p><strong>• 公式メール:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>お寄せいただいたご意見は速やかに確認し、改善に役立てます。</p></div></div>` },
         en: { title: "Contact Us", sub: "Contact Us", body: `<div class="luxury-section-card"><div class="luxury-sec-header"><h2>✉️ Inquiries & Feedback</h2></div><div class="luxury-desc-content"><p>If you have questions for the Tokyo Onsen Guide editorial team, wish to recommend a new bathhouse, or need to request data updates, please reach out via email.</p><p><strong>• Official Email:</strong> <a href="mailto:storykim1980@gmail.com" style="color:var(--link); font-weight:700;">storykim1980@gmail.com</a></p><p>We review all feedback promptly to keep our guide accurate and helpful.</p></div></div>` }
       }[lang] || c.ko;
       wrap.innerHTML = `<div style="background: var(--wood-dark); color: var(--cream); padding: 56px 20px 42px; text-align: center; border-bottom: 2px solid var(--gold);"><h1 style="font-size:32px; font-weight:900; margin:0 0 10px; color:#fff;">${c.title}</h1><p style="font-size:16px; color:var(--gold-light); font-weight:700; margin:0;">${c.sub}</p></div><div style="max-width:860px; margin: 0 auto; padding: 36px 20px 60px;">${c.body}</div>`;
@@ -2395,13 +2524,13 @@ const S = {
       const content = {
         ko: {
           title: "사이트 소개",
-          sub: "도쿄 온천 가이드 소개",
+          sub: "About Tokyo Onsen Guide",
           c1Title: "🎯 도쿄 온천 가이드의 설립 목적 및 미션",
           c1Body: `<p>도쿄는 번화한 메트로폴리탄 도시이자, 지하 수천 미터에서 솟아오르는 양질의 천연 온천과 에도 시대부터 이어져 온 전통 센토(銭湯) 문화가 살아 숨 쉬는 매력적인 곳입니다. 하지만 외국인 여행객이나 현지 거주자들에게는 각 시설의 수질(泉質), 효능, 타투 허용 여부, 수건 대여 규정 등 복잡하고 상세한 정보를 정확히 확인하고 비교하기에 언어적·문화적 장벽이 컸습니다.</p>
                    <p><strong>Tokyo Onsen Guide (도쿄 온천 가이드)</strong>는 이러한 정보 불균형을 해소하고, 누구나 쉽고 편리하게 도쿄 곳곳의 숨은 명탕과 최고의 힐링 스파를 발견할 수 있도록 돕기 위해 설립되었습니다. 한국어, 영어, 일본어 3개 국어로 100% 현장 검증 기반의 심층 큐레이션 데이터를 제공합니다.</p>`,
           c2Title: "✨ 우리의 엄선 기준 및 차별화 포인트",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 153개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>100% 실제 영업 시설 검증:</strong> 도쿄 23구 및 다마 지역 전역에서 현재 활발히 영업 중인 302개 인기 천연 온천, 슈퍼 센토, 도심형 스파만을 엄선하였습니다.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>심층 수질 및 효능 분석:</strong> 단순한 위치 정보를 넘어, 원천명, 수질(나트륨-염화물 강염천, 흑탕 등), 온도, 피로 회복 및 신경통 완화 등 구체적인 효능 데이터를 상세히 수록했습니다.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>방문 편의성 및 어메니티 확인:</strong> 수건 대여 가능 여부, 사우나 및 로텐부로(노천탕) 완비 여부, 휴게실 및 식당 유무를 한눈에 파악할 수 있도록 정리했습니다.</div></div>
                    </div>`,
@@ -2416,13 +2545,13 @@ const S = {
         },
         ja: {
           title: "サイトのご紹介",
-          sub: "東京温泉ガイドについて",
+          sub: "About Tokyo Onsen Guide",
           c1Title: "🎯 東京温泉ガイドの設立目的とミッション",
           c1Body: `<p>東京は最先端のメトロポリスであると同時に、地下数千メートルから湧き出る天然温泉や、江戸時代から続く伝統的な銭湯文化が息づく魅力的な都市です。しかし、訪日観光客や在住外国人にとって、各施設の泉質、効能、タトゥー規定、アメニティ情報などを正確に把握して比較することは容易ではありませんでした。</p>
                    <p><strong>Tokyo Onsen Guide (東京温泉ガイド)</strong>は、こうした情報格差を解消し、誰でも手軽に東京都内の極上の名湯や極上の癒やしスポットを発見できるよう設立されました。日本語・韓国語・英語の3言語で信頼性の高い深掘りキュレーション情報をお届けします。</p>`,
-          c2Title: "✨ 厳選153施設の選定基準と特徴",
+          c2Title: "✨ 厳選302施設の選定基準と特徴",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気153施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>都内営業中の人気302施設を厳選:</strong> 東京23区および多摩地域で現在活躍中の人気天然温泉、スーパー銭湯、都市型スパのみを厳選掲載しています。</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>泉質・効能の深掘りデータ:</strong> 単なる住所情報にとどまらず、源泉名、泉質（強塩泉、黒湯など）、泉温、疲労回復や神経痛への具体的な効能データを網羅しています。</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>充実のアメニティ確認:</strong> タオルレンタルやサウナ・露天風呂・岩盤浴の有無、お食事処や休憩ラウンジの充実度をひと目で比較できるように整理しています。</div></div>
                    </div>`,
@@ -2443,7 +2572,7 @@ const S = {
                    <p><strong>Tokyo Onsen Guide</strong> was created to bridge this gap. We provide comprehensive, 100% verified multilingual curation across English, Korean, and Japanese, empowering anyone to effortlessly discover the finest relaxing hot springs and authentic bathhouses throughout Tokyo.</p>`,
           c2Title: "✨ Our Curation Standards & Highlights",
           c2Body: `<div class="luxury-recs-list">
-                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>153 Verified Operating Facilities:</strong> We strictly feature top-rated, actively operating natural hot springs, super sento, and urban day spas across the 23 special wards and Tama region.</div></div>
+                     <div class="luxury-rec-item"><span class="luxury-rec-badge">👑</span><div class="luxury-rec-text"><strong>302 Verified Operating Facilities:</strong> We strictly feature top-rated, actively operating natural hot springs, super sento, and urban day spas across the 23 special wards and Tama region.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🌿</span><div class="luxury-rec-text"><strong>In-Depth Thermal & Quality Data:</strong> Beyond basic locations, we document exact spring sources, water quality (e.g., sodium-chloride strong salt springs, mineral black water), temperature, and therapeutic benefits.</div></div>
                      <div class="luxury-rec-item"><span class="luxury-rec-badge">🧴</span><div class="luxury-rec-text"><strong>Transparent Amenity Checks:</strong> Easily check whether towel rentals, saunas, open-air baths (rotenburo), bedrock baths, and dining/lounge areas are available before your visit.</div></div>
                    </div>`,
@@ -2493,19 +2622,17 @@ const S = {
     }
   }
 
-  let listRenderToken = 0;
   function drawList(){
-    const renderToken = ++listRenderToken;
     try{
     const areaList=$("sidebar-area-list");
     if(areaList){clearEl(areaList);
-      const areaCounts={};DATA.forEach(o=>{const agKo=getAreaKey(o)||"unknown";const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
+      const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const agKo=(ag&&ag.ko)||"unknown";const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
       AREAS.forEach(a=>{
         const cnt=a.id==="all"?DATA.length:(areaCounts[a.id]||0);
         if(a.id!=="all" && cnt===0)return;
         const li=el("li");
         const isActive=resolveArea(S.fArea)===a.id;
-        const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();selectAreaFilter(a.id);drawList();}}});
+        const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();S.fArea=a.id;drawList();}}});
         li.appendChild(link);
         areaList.appendChild(li);
       });
@@ -2531,8 +2658,11 @@ const S = {
       const typeFound=TYPES.find(t=>t.id===S.fType);
       const mt=S.fType==="all"||typeVal===S.fType||typeEn===S.fType||typeJa===S.fType||(typeFound&&(typeVal===typeFound.ko||typeEn===typeFound.en||typeJa===typeFound.ja));
       const mf=S.fFeat==="all"||(o.features||[]).includes(S.fFeat);
-      const q=(S.q||"").trim();
-      const mq=fieldMatchesSearch(o,q);
+      const q=(S.q||"").trim().toLowerCase();
+      const nameStr=(o.name&&o.name[S.lang])||"";
+      const areaStr=(o.area&&o.area[S.lang])||"";
+      const descStr=(o.desc&&o.desc[S.lang])||"";
+      const mq=!q||nameStr.toLowerCase().includes(q)||areaStr.toLowerCase().includes(q)||descStr.toLowerCase().includes(q);
       return ma&&mt&&mf&&mq;
     });
     if(S.sort==="name")list.sort((a,b)=>{const aName=(a.name&&a.name[S.lang])||"";const bName=(b.name&&b.name[S.lang])||"";return aName.localeCompare(bName,S.lang);});
@@ -2558,21 +2688,20 @@ const S = {
       grid.classList.remove("hidden");emptyEl.classList.add("hidden");
       const CHUNK_SIZE=24; let idx=0;
       function renderNextBatch(){
-        if(renderToken !== listRenderToken) return;
         const end=Math.min(idx+CHUNK_SIZE, list.length);
         for(; idx<end; idx++){
           const o=list[idx];
           grid.appendChild(makeBlogItem(o));
           if((idx+1)%4===0 && idx!==list.length-1) grid.appendChild(makeAdInfeed(Math.floor((idx+1)/4)-1));
         }
-        if(renderToken === listRenderToken && idx<list.length) requestAnimationFrame(renderNextBatch);
+        if(idx<list.length) requestAnimationFrame(renderNextBatch);
       }
       renderNextBatch();
     }
     }catch(e){
       console.error("drawList error:",e);
       var grid=document.getElementById("list-grid");
-      if(grid) grid.innerHTML=errorPanel("listLoadError",e,false);
+      if(grid) grid.innerHTML='<p style="padding:20px;color:#b91c1c;text-align:center;font-weight:700;">⚠️ 목록을 불러오는 중 오류가 발생했습니다.<br><span style="font-size:13px;color:#8a7a6a;font-weight:400;">'+String(e.message).replace(/</g,"&lt;")+'</span></p>';
     }
   }
 
@@ -2584,8 +2713,9 @@ const S = {
       const cImg=o.image||window.getDefaultImage(typeKo);
     if(cImg){
       const img=el("img",{attr:{src:cImg,alt:(o.name&&o.name[S.lang])||"",loading:"lazy", decoding:"async"}});
-      img.onerror=function(){smartImgFallback(this, typeKo);};
+      img.onerror=function(){smartImgFallback(this, o.id, typeKo);};
       media.appendChild(img);
+      media.setAttribute("data-imgnote", {ko:"이미지는 참고용", ja:"画像はイメージ", en:"Illustrative image"}[S.lang] || "이미지는 참고용");
     }
     media.appendChild(el("div",{cls:"card-icon-wrap",text:getTypeIcon(typeKo)}));
     const badges=el("div",{cls:"card-badge-group"});
@@ -2593,7 +2723,6 @@ const S = {
     badges.appendChild(el("span",{cls:["card-badge","price"],text:(o.price&&o.price[S.lang])||""}));
     media.appendChild(badges);
     item.appendChild(media);
-    item.insertAdjacentHTML("beforeend",imageMetaMarkup(cImg,S.lang));
     const body=el("div",{cls:"blog-body"});
     const header=el("div",{cls:"blog-header"});
     header.appendChild(el("div",{cls:"blog-title",text:(o.name&&o.name[S.lang])||""}));
@@ -2608,7 +2737,7 @@ const S = {
     body.appendChild(meta);
     if(o.highlights&&o.highlights.length){const hl=el("div",{cls:"feature-tags"});o.highlights.slice(0,3).forEach(h=>hl.appendChild(el("span",{cls:"feature-tag",text:(h&&h[S.lang])||""})));body.appendChild(hl);}
     const actions=el("div",{cls:"blog-actions"});
-    actions.appendChild(el("button",{cls:"blog-btn primary",text:t("btnMap"),on:{click:e=>{e.stopPropagation();window.open(buildGoogleMapsUrl(o),"_blank","noopener,noreferrer");}}}));
+    actions.appendChild(el("button",{cls:"blog-btn primary",text:t("btnMap"),on:{click:e=>{e.stopPropagation();window.open((o.googleMapsUrl||("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(((o.name&&o.name.ja)||"")+" "+((o.address&&o.address.ja)||"")))),"_blank","noopener,noreferrer");}}}));
     if(o.website)actions.appendChild(el("button",{cls:"blog-btn secondary",text:t("btnWebsite"),on:{click:e=>{e.stopPropagation();window.open(o.website,"_blank","noopener,noreferrer");}}}));
     body.appendChild(actions);
     item.appendChild(body);
@@ -2616,13 +2745,12 @@ const S = {
     return item;
     }catch(e){
       console.error("makeBlogItem error:",e,o);
-      return el("div",{cls:"blog-item",html:'<p style="padding:16px;color:#b91c1c;font-size:13px;">'+escapeHtml(t("cardRenderError"))+'</p>'});
+      return el("div",{cls:"blog-item",html:'<p style="padding:16px;color:#b91c1c;font-size:13px;">항목 렌더링 오류</p>'});
     }
   }
   function makeAdInfeed(index){
     const ad=el("div",{cls:"ad-slot ad-infeed"});
-    const label={ko:"인피드 광고 슬롯",ja:"インフィード広告スロット",en:"In-feed ad slot"}[S.lang] || "In-feed ad slot";
-    ad.innerHTML='<span class="ad-slot-label">Ad</span><div>Google AdSense<br>'+escapeHtml(label)+' #'+(index+1)+'</div>';
+    ad.innerHTML='<span class="ad-slot-label">Ad</span><div>Google AdSense<br>인피드 광고 슬롯 #'+(index+1)+'</div>';
     return ad;
   }
 
@@ -2632,7 +2760,7 @@ const S = {
     if(!wrap) return;
     const o=DATA.find(x=>x.id===id);
     if(!o){
-      wrap.innerHTML='<p class="runtime-error" role="alert">'+escapeHtml(t("notFound"))+'</p>';
+      wrap.innerHTML='<p style="padding:60px;text-align:center;font-size:18px;">Not found</p>';
       return;
     }
     const lang=S.lang||"ko";
@@ -2659,9 +2787,8 @@ const S = {
       if(o.website){
         s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill primary">🌐 '+esc(lang==="ko"?"공식 웹사이트":(lang==="ja"?"公式サイト":"Official Website"))+' ↗</a>';
       }
-      const mapsUrl=buildGoogleMapsUrl(o);
-      if(mapsUrl){
-        s+='<a href="'+esc(mapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill secondary">📍 Google Maps ↗</a>';
+      if(o.googleMapsUrl){
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill secondary">📍 Google Maps ↗</a>';
       }
       s+='</div>';
       s+='</div>';
@@ -2688,10 +2815,9 @@ const S = {
         const countLabel=lang==="ko"?"리뷰":(lang==="ja"?"レビュー":"reviews");
         s+='<span class="luxury-rating-stars">'+stars+'</span>';
         s+='<span class="luxury-rating-score">'+o.rating+'</span>';
-        const reviewCount=Number(o.reviewCount)||0;
-        s+='<span class="luxury-rating-count">('+reviewCount.toLocaleString()+' '+countLabel+')</span>';
+        s+='<span class="luxury-rating-count">('+o.reviewCount.toLocaleString()+' '+countLabel+')</span>';
       } else {
-        s+='<span class="luxury-rating-score" style="font-size:16px;">'+esc(t("newFacility"))+'</span>';
+        s+='<span class="luxury-rating-score" style="font-size:16px;">NEW</span>';
       }
       s+='</div>';
       const discLabel=lang==="ko"?"※ 평점 및 리뷰 수는 참고용이며 실시간 데이터와 상이할 수 있습니다."
@@ -2713,11 +2839,11 @@ const S = {
       s+='<img src="'+esc(src)+'" alt="'+esc((o.name&&o.name[lang])||'')+'" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'images/hero-onsen.jpg\';">';
       s+='</div>';
       const disc = lang==="ko"
-        ? "※ 본 이미지는 분위기 참고용 스톡 사진이며, 특정 시설의 실제 사진이 아닙니다."
+        ? "※ 본 이미지는 이해를 돕기 위한 예시 이미지이며, 실제 시설과 다를 수 있습니다."
         : (lang==="ja"
-          ? "※ この画像は雰囲気を伝える参考用素材で、特定施設の実際の写真ではありません。"
-          : "※ This is a licensed atmosphere image and is not a photograph of the specific facility.");
-      s+='<div class="luxury-showcase-bar">'+imageMetaMarkup(src,lang)+'</div>';
+          ? "※ この画像はイメージです。実際の施設とは異なる場合があります。"
+          : "※ This image is for illustrative purposes only and may differ from the actual facility.");
+      s+='<div class="luxury-showcase-bar"><span style="font-size:16px;">ℹ️</span><span>'+esc(disc)+'</span></div>';
       s+='</div>';
       return s;
     });
@@ -2863,20 +2989,19 @@ const S = {
     h+=safe(function(){
       const addr=(o.address&&o.address[lang])||(o.address&&o.address.ko)||"";
       if(!addr)return "";
-      const mapUrl=buildGoogleMapsEmbedUrl(o,lang);
+      const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
       
       let s='<div class="luxury-section-card">';
       s+='<div class="luxury-sec-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
       
       s+='<div style="border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 2px 10px rgba(0,0,0,0.06); width:100%;">';
-      s+='<iframe src="'+mapUrl+'" title="'+esc(t("mapLabel"))+'" aria-label="'+esc(t("mapLabel"))+'" allowfullscreen="" loading="lazy" decoding="async" style="width:100%; height:380px; border:0; display:block;"></iframe>';
+      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" decoding="async" style="width:100%; height:380px; border:0; display:block;"></iframe>';
       s+='</div>';
 
       s+='<div class="luxury-map-bar">';
       s+='<div class="luxury-map-addr"><strong>'+esc(lang==="ko"?"📍 주소":(lang==="ja"?"📍 住所":"📍 Address"))+':</strong> '+esc(addr)+'</div>';
-      const mapsUrl=buildGoogleMapsUrl(o);
-      if(mapsUrl){
-        s+='<a href="'+esc(mapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-map-btn">📍 '+esc(lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで直接見る ↗":"View on Google Maps ↗"))+'</a>';
+      if(o.googleMapsUrl){
+        s+='<a href="'+esc(o.googleMapsUrl)+'" target="_blank" rel="noopener noreferrer" class="luxury-map-btn">📍 '+esc(lang==="ko"?"Google Maps 직접 보기 ↗":(lang==="ja"?"Google Mapsで直接見る ↗":"View on Google Maps ↗"))+'</a>';
       }
       s+='</div>';
 
@@ -2897,8 +3022,9 @@ const S = {
 
     // 8. Section 5: Nearby Hot Springs
     h+=safe(function(){
-      const myArea=getAreaKey(o);
-      const nearby=DATA.filter(function(x){if(x.id===o.id)return false;return getAreaKey(x)===myArea;}).slice(0,3);
+      const ag=(o.areaGroup||o.area);
+      const myArea=(ag&&ag.ko)||"";
+      const nearby=DATA.filter(function(x){if(x.id===o.id)return false;const xag=(x.areaGroup||x.area);return xag&&xag.ko===myArea;}).slice(0,3);
       if(!nearby.length)return "";
       
       let s='<div class="luxury-section-card">';
@@ -2956,7 +3082,7 @@ const S = {
     }catch(e){
       console.error("drawDetail error:",e);
       var wrap=document.getElementById("detail-container");
-      if(wrap) wrap.innerHTML=errorPanel("detailLoadError",e,false);
+      if(wrap) wrap.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 상세 페이지 오류</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">'+String(e.message).replace(/</g,"&lt;")+'</p></div>';
     }
   }
 
@@ -2973,11 +3099,8 @@ const S = {
       }
       if(params.has("view")) {
         const pv = params.get("view");
-        if(["home", "list", "detail", "about", "privacy", "terms", "cookies", "contact", "advertising", "guides", "guide"].includes(pv)) S.view = pv;
-        if(params.has("id")) {
-          if(pv === "guide") S.guideId = params.get("id");
-          else S.detailId = params.get("id");
-        }
+        if(["home", "list", "detail", "about", "privacy", "terms", "cookies", "contact", "advertising"].includes(pv)) S.view = pv;
+        if(params.has("id")) S.detailId = params.get("id");
       }
     } catch(e) {}
 
@@ -2989,9 +3112,9 @@ const S = {
       const mm=$("mobile-menu");if(mm)mm.classList.remove("open");
       go("list");
     }));
-    document.querySelectorAll(".category-nav [data-area]").forEach(n=>n.addEventListener("click",e=>{
+    document.querySelectorAll("[data-area]").forEach(n=>n.addEventListener("click",e=>{
       e.preventDefault();
-      selectAreaFilter(n.getAttribute("data-area"),{resetOther:true});
+      S.fArea=n.getAttribute("data-area");S.fType="all";S.fFeat="all";S.q="";
       go("list");
     }));
     const mm=$("mobile-menu");const mb=$("btn-menu-toggle");const mc=$("btn-menu-close");
@@ -3008,20 +3131,13 @@ const S = {
     if(ls)ls.addEventListener("input",e=>{S.q=e.target.value;drawList();});
     if(lb)lb.addEventListener("click",()=>{S.q=ls?ls.value:"";drawList();});
     const ss=$("list-sort");if(ss)ss.addEventListener("change",e=>{S.sort=e.target.value;drawList();});
-    const br=$("list-reset-btn");if(br)br.addEventListener("click",resetListFilters);
-    const emptyReset=$("list-empty-reset-btn");if(emptyReset)emptyReset.addEventListener("click",resetListFilters);
-    const colorScheme=window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
-    const onColorSchemeChange=()=>{if(S.theme==="system")applyTheme();};
-    if(colorScheme){
-      if(colorScheme.addEventListener) colorScheme.addEventListener("change",onColorSchemeChange);
-      else if(colorScheme.addListener) colorScheme.addListener(onColorSchemeChange);
-    }
+    const br=$("list-reset-btn");if(br)br.addEventListener("click",()=>{S.q="";S.fArea="all";S.fType="all";S.fFeat="all";if(ls)ls.value="";drawList();});
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(S.theme==="system")applyTheme();});
     // Check URL parameters / hash before navigation
     try {
       const p = new URLSearchParams(window.location.search);
       if (p.has("feat")) {
-        const requestedFeature=p.get("feat");
-        S.fFeat = (FEATS||[]).some(f=>f.id===requestedFeature) ? requestedFeature : "all";
+        S.fFeat = p.get("feat");
         S.view = "list";
       }
       if (window.location.hash === "#list") {
@@ -3032,7 +3148,7 @@ const S = {
     }catch(e){
       console.error("init error:",e);
       var main=document.getElementById("main");
-      if(main) main.innerHTML=errorPanel("initError",e,true);
+      if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 초기화 오류</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">'+String(e.message).replace(/</g,"&lt;")+'</p><p style="color:#8a7a6a;font-size:13px;margin-top:12px;">콘솔(F12 → Console)의 빨간 오류 메시지를 개발자에게 알려주세요.</p></div>';
     }
   }
 
@@ -3042,7 +3158,7 @@ const S = {
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 }
 function loadDataFast(callback){
-  const DB_NAME="TokyoOnsenDB_v5"; const DB_VER=1; const STORE_NAME="cache"; const DATA_KEY="data_v6_1";
+  const DB_NAME="TokyoOnsenDB_v5"; const DB_VER=1; const STORE_NAME="cache"; const DATA_KEY="data_v7_0";
   try {
     const req=indexedDB.open(DB_NAME, DB_VER);
     req.onupgradeneeded=e=>{ e.target.result.createObjectStore(STORE_NAME); };
@@ -3061,7 +3177,7 @@ function loadDataFast(callback){
   } catch(err) { fetchAndUpdateDB(null, true, callback); }
 
   function fetchAndUpdateDB(db, isFirst, cb){
-    fetch('data.json?v=6.1')
+    fetch('data.json?v=7.0')
       .then(r=>r.json())
       .then(data=>{
         if(db){ try{ const tx=db.transaction(STORE_NAME, "readwrite"); tx.objectStore(STORE_NAME).put(data, DATA_KEY); }catch(e){} }
@@ -3069,10 +3185,9 @@ function loadDataFast(callback){
       })
       .catch(err=>{
         // 실제 배포 사이트에서 파일이 정말 없을 때만 안내 표시, 미리보기 등에서는 조용히 무시
-        if(isFirst){
+        if(isFirst && location.hostname.indexOf('claudeusercontent') === -1){
           var main=document.getElementById('main');
-          var copy=getBootCopy();
-          if(main) main.innerHTML='<div class="runtime-error" role="alert"><h1>⚠️ '+copy.title+'</h1><p>'+copy.body+'</p></div>';
+          if(main) main.innerHTML='<div style="padding:40px 20px;text-align:center;"><h1 style="color:#8b1a2b;font-size:22px;">⚠️ 데이터 로드 실패</h1><p style="color:#5c4d3c;font-size:15px;margin-top:12px;">잠시 후 새로고침 해주세요.</p></div>';
         }
       });
   }
@@ -3080,11 +3195,13 @@ function loadDataFast(callback){
   function applyDataAndInit(data, cb){
     if(window.DATA) return;
     window.DATA=data.DATA; window.AREAS=data.AREAS; window.i18n=data.i18n; window.TYPES=data.TYPES; window.GUIDES=data.GUIDES||[];
+    // 동적 목록이 준비되면 정적 목록(크롤러용)을 숨김
+    try { document.body.classList.add("js-ready"); } catch(e) {}
     // 가이드 링크 다국어 라벨
     (function(){
       var G = {
-        ko:{guideTattoo:"타투 온천 가이드",guideFirst:"센토 첫 방문 가이드",guideNotes:"153곳 조사 기록"},
-        ja:{guideTattoo:"タトゥー温泉ガイド",guideFirst:"銭湯はじめてガイド",guideNotes:"153施設の調査記録"},
+        ko:{guideTattoo:"타투 온천 가이드",guideFirst:"센토 첫 방문 가이드",guideNotes:"291곳 조사 기록"},
+        ja:{guideTattoo:"タトゥー温泉ガイド",guideFirst:"銭湯はじめてガイド",guideNotes:"291施設の調査記録"},
         en:{guideTattoo:"Tattoo-Friendly Guide",guideFirst:"First-Timer's Guide",guideNotes:"Research Notes"}
       };
       ["ko","ja","en"].forEach(function(lg){
@@ -3110,33 +3227,12 @@ function loadDataFast(callback){
       });
       if(missing.length) console.warn("[이미지 가드] image 필드 누락 → 기본 이미지 자동 적용:", missing.join(", "));
     })();
-    window.WISHES=data.WISHES;
-    window.FEATURES=data.FEATURES || {};
-    const featureMap=window.FEATURES.ko || {};
-    const featureById=new Map((data.FEATS || []).map(f=>[f.id,f]));
-    Object.keys(featureMap).forEach(id=>{
-      if(!featureById.has(id)){
-        featureById.set(id,{id,ko:featureMap[id],en:(window.FEATURES.en||{})[id]||featureMap[id],ja:(window.FEATURES.ja||{})[id]||featureMap[id]});
-      }
-    });
-    window.FEATS=[...featureById.values()];
-    window.IMAGE_MAP=data.IMAGE_MAP || {};
-    window.IMAGE_CREDITS=data.IMAGE_CREDITS || {};
+    window.WISHES=data.WISHES; window.FEATS=data.FEATS; window.FEATURES=data.FEATURES; window.IMAGE_MAP=data.IMAGE_MAP;
     if(cb) cb();
   }
 }
-
-const BOOT_COPY = {
-  ko: { title: "데이터를 불러오지 못했습니다.", body: "잠시 후 새로고침해 주세요." },
-  ja: { title: "データを読み込めませんでした。", body: "しばらくしてから再読み込みしてください。" },
-  en: { title: "The data could not be loaded.", body: "Please reload the page in a moment." }
-};
-function getBootCopy(){
-  const lang=(document.documentElement && document.documentElement.lang) || "ko";
-  return BOOT_COPY[lang] || BOOT_COPY.ko;
-}
 loadDataFast(initApp);
 </script>
-
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1dfee5779a1a624',t:'MTc4NDUyOTE3MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2914.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
