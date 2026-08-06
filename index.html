@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
 <meta name="description" content="도쿄 온천 가이드 - 도쿄의 인기 일일 온천, 천연 온천, 슈퍼 센토 정보">
 <meta name="keywords" content="도쿄 온천, Tokyo onsen, 도쿄 스파, 일본 온천, 도쿄 여행, 도쿄 일일 온천, 슈퍼 센토, sento, ryokan">
 <meta name="author" content="Tokyo Onsen Guide">
@@ -116,10 +116,14 @@
   }
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html { word-break: keep-all !important; overflow-wrap: break-word; -webkit-font-smoothing: antialiased; }
+body, p, li, h1, h2, h3 { word-break: keep-all; overflow-wrap: break-word; }
 html { font-size: 16px; -webkit-text-size-adjust: 100%; }
 body {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  /* Fallback safe-area for iOS notch */
+  padding-bottom: calc(64px + env(safe-area-inset-bottom));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", "Noto Serif KR", serif;
   font-size: 15px; line-height: 1.6; color: var(--text);
   background: var(--wood-dark);
@@ -152,7 +156,7 @@ body::before {
 .desktop-nav a { padding: 8px 12px; font-size: 13px; font-weight: 700; color: var(--text-light); text-decoration: none; border-radius: 8px; transition: all 150ms; white-space: nowrap; }
 .desktop-nav a:hover, .desktop-nav a.active { color: var(--burgundy); background: rgba(139,26,43,0.06); }
 .header-tools { display: flex; gap: 4px; }
-.tool-btn { width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; font-size: 14px; cursor: pointer; color: var(--text-light); display: inline-flex; align-items: center; justify-content: center; transition: background 150ms; }
+.tool-btn { width: 44px; height: 44px; border-radius: 50%; border: none; background: transparent; font-size: 14px; cursor: pointer; color: var(--text-light); display: inline-flex; align-items: center; justify-content: center; transition: background 150ms; }
 .tool-btn:hover { background: rgba(201,169,110,0.15); color: var(--wood-dark); }
 .menu-toggle { font-size: 18px; }
 .lang-group { display: flex; align-items: center; gap: 2px; margin-right: 4px; }
@@ -1043,7 +1047,8 @@ body::before {
 
     /* === 모바일 터치 최적화 === */
     @media (max-width: 767px) {
-      .blog-btn, .category-nav a, .luxury-action-pill, button { min-height: 44px; }
+      .blog-btn, .category-nav a, .luxury-action-pill, button, .tool-btn, .lang-btn, .bottom-nav a { min-height: 44px; min-width: 44px; }
+      .tool-btn, .lang-btn { width: 44px; height: 44px; }
       .category-nav a { padding-top: 10px; padding-bottom: 10px; }
       .card-badge { font-size: 11px; }
       input, select, textarea { font-size: 16px; } /* iOS 자동 확대 방지 */
@@ -1247,7 +1252,7 @@ if ('serviceWorker' in navigator) {
         <div class="hero-content">
           <div class="editorial-icon">♨</div>
           <div>
-            <div class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span></div>
+            <h1 class="editorial-title"><span data-i18n="siteTitle">도쿄 온천 가이드</span></h1>
             <div class="editorial-sub" data-i18n="siteSub">도쿄의 천연 온천, 일일 온천, 슈퍼 센토 정보</div>
             <div id="editorial-count" class="editorial-count" data-i18n="facilityCount">엄선된 시설 수: <strong>302</strong>곳</div>
           </div>
@@ -1748,7 +1753,7 @@ if ('serviceWorker' in navigator) {
         <div class="empty-state hidden" id="list-empty">
           <div class="empty-icon">🔍</div>
           <p data-i18n="emptySearch">검색 결과가 없습니다</p>
-          <button class="btn btn-primary" onclick="S.q='';S.fArea='all';S.fType='all';S.fFeat='all';document.getElementById('list-search-input').value='';drawList();" data-i18n="btnResetFilter">필터 초기화</button>
+          <button class="btn btn-primary" id="list-empty-reset-btn" data-i18n="btnResetFilter">필터 초기화</button>
         </div>
       </div>
     </div>
@@ -1827,6 +1832,17 @@ const S = {
     fArea:"all", fType:"all", fFeat:"all", sort:"recommend", q:""
   };
   const KEY = "tokyoOnsen_v5";
+  let _listRenderGen = 0; // 세대 카운터로 이전 비동기 렌더가 새 필터 결과를 덮어쓰는 것을 방지
+  function isRealWebsite(url){
+    if(!url) return false;
+    const u = String(url).trim();
+    if(!u) return false;
+    if(u.includes("google.com/search")) return false;
+    try {
+      const parsed = new URL(u);
+      return parsed.protocol === "https:" || parsed.protocol === "http:";
+    } catch(e){ return false; }
+  }
 
   function $(id){return document.getElementById(id);}
   function t(k,obj){let s=(i18n[S.lang]&&i18n[S.lang][k])||i18n["ko"][k]||k;return obj?s.replace(/\{(\w+)\}/g,(_,p)=>obj[p]??""):s;}
@@ -1873,7 +1889,7 @@ const S = {
       const view = S.view || "home";
       const lang = S.lang || "ko";
       const detailId = S.detailId;
-      const domain = "https://tokyo-onsen-guide.com";
+      const domain = "https://www.tokyo-onsen-guide.com";
 
       let title = "";
       let desc = "";
@@ -2624,6 +2640,7 @@ const S = {
 
   function drawList(){
     try{
+    const myGen = ++_listRenderGen;
     const areaList=$("sidebar-area-list");
     if(areaList){clearEl(areaList);
       const areaCounts={};DATA.forEach(o=>{const ag=(o.areaGroup||o.area);const agKo=(ag&&ag.ko)||"unknown";const found=AREAS.find(a=>a.id===agKo||a.ko===agKo||a.en===agKo||a.ja===agKo);if(found)areaCounts[found.id]=(areaCounts[found.id]||0)+1;});
@@ -2632,7 +2649,7 @@ const S = {
         if(a.id!=="all" && cnt===0)return;
         const li=el("li");
         const isActive=resolveArea(S.fArea)===a.id;
-        const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();S.fArea=a.id;drawList();}}});
+        const link=el("a",{cls:isActive?"active":"",text:a[S.lang]+" ("+cnt+")",on:{click:e=>{e.preventDefault();S.fArea=(S.fArea===a.id?"all":a.id);drawList();}}});
         li.appendChild(link);
         areaList.appendChild(li);
       });
@@ -2640,13 +2657,13 @@ const S = {
 
     const typeList=$("sidebar-type-list");
     if(typeList){clearEl(typeList);TYPES.forEach(t=>{
-      const btn=el("button",{cls:["sidebar-pill",S.fType===t.id?"active":""],text:t[S.lang],on:{click:()=>{S.fType=t.id;drawList();}}});
+      const btn=el("button",{cls:["sidebar-pill",S.fType===t.id?"active":""],text:t[S.lang],on:{click:()=>{S.fType=(S.fType===t.id?"all":t.id);drawList();}}});
       typeList.appendChild(btn);
     });}
 
     const featList=$("sidebar-feat-list");
     if(featList){clearEl(featList);FEATS.forEach(f=>{
-      const btn=el("button",{cls:["sidebar-pill",S.fFeat===f.id?"active":""],text:f[S.lang],on:{click:()=>{S.fFeat=f.id;drawList();}}});
+      const btn=el("button",{cls:["sidebar-pill",S.fFeat===f.id?"active":""],text:f[S.lang],on:{click:()=>{S.fFeat=(S.fFeat===f.id?"all":f.id);drawList();}}});
       featList.appendChild(btn);
     });}
 
@@ -2682,14 +2699,20 @@ const S = {
       });
     }
     const grid=$("list-grid");const emptyEl=$("list-empty");
-    if(!grid)return;clearEl(grid);
+    if(!grid)return;
+    // 즉시 기존 목록을 비워 아라카와 등 이전 필터 결과가 남는 현상 방지
+    clearEl(grid);
+    // 이 세대(myGen)가 아니면 더 이상 렌더하지 않도록 가드
+    if(myGen !== _listRenderGen) return;
     if(list.length===0){grid.classList.add("hidden");emptyEl.classList.remove("hidden");}
     else{
       grid.classList.remove("hidden");emptyEl.classList.add("hidden");
       const CHUNK_SIZE=24; let idx=0;
       function renderNextBatch(){
+        if(myGen !== _listRenderGen) return;
         const end=Math.min(idx+CHUNK_SIZE, list.length);
         for(; idx<end; idx++){
+          if(myGen !== _listRenderGen) return;
           const o=list[idx];
           grid.appendChild(makeBlogItem(o));
           if((idx+1)%4===0 && idx!==list.length-1) grid.appendChild(makeAdInfeed(Math.floor((idx+1)/4)-1));
@@ -2738,7 +2761,7 @@ const S = {
     if(o.highlights&&o.highlights.length){const hl=el("div",{cls:"feature-tags"});o.highlights.slice(0,3).forEach(h=>hl.appendChild(el("span",{cls:"feature-tag",text:(h&&h[S.lang])||""})));body.appendChild(hl);}
     const actions=el("div",{cls:"blog-actions"});
     actions.appendChild(el("button",{cls:"blog-btn primary",text:t("btnMap"),on:{click:e=>{e.stopPropagation();window.open((o.googleMapsUrl||("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(((o.name&&o.name.ja)||"")+" "+((o.address&&o.address.ja)||"")))),"_blank","noopener,noreferrer");}}}));
-    if(o.website)actions.appendChild(el("button",{cls:"blog-btn secondary",text:t("btnWebsite"),on:{click:e=>{e.stopPropagation();window.open(o.website,"_blank","noopener,noreferrer");}}}));
+    if(isRealWebsite(o.website))actions.appendChild(el("button",{cls:"blog-btn secondary",text:t("btnWebsite"),on:{click:e=>{e.stopPropagation();window.open(o.website,"_blank","noopener,noreferrer");}}}));
     body.appendChild(actions);
     item.appendChild(body);
     item.addEventListener("click",()=>go("detail",{id:o.id}));
@@ -2784,7 +2807,7 @@ const S = {
       let s='<div class="luxury-top-nav">';
       s+='<button class="luxury-back-pill" id="luxury-back-btn">← '+esc(lang==="ko"?"온천 목록으로 돌아가기":(lang==="ja"?"一覧に戻る":"Back to List"))+'</button>';
       s+='<div class="luxury-nav-actions">';
-      if(o.website){
+      if(isRealWebsite(o.website)){
         s+='<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer" class="luxury-action-pill primary">🌐 '+esc(lang==="ko"?"공식 웹사이트":(lang==="ja"?"公式サイト":"Official Website"))+' ↗</a>';
       }
       if(o.googleMapsUrl){
@@ -2896,7 +2919,7 @@ const S = {
         [hourLabel, hourVal+(holidayVal!=="-"?" / "+esc(lang==="ko"?"휴일":(lang==="ja"?"定休日":"Closed"))+": "+holidayVal:"")],
         [lang==="ko"?"입장료":(lang==="ja"?"入場料":"Price"), (o.price&&o.price[lang])||"-"]
       ];
-      if(o.website){
+      if(isRealWebsite(o.website)){
         rows.push([lang==="ko"?"공식 HP":(lang==="ja"?"公式HP":"Website"), '<a href="'+esc(o.website)+'" target="_blank" rel="noopener noreferrer">'+esc(o.website)+'</a>']);
       }
 
@@ -2989,13 +3012,14 @@ const S = {
     h+=safe(function(){
       const addr=(o.address&&o.address[lang])||(o.address&&o.address.ko)||"";
       if(!addr)return "";
-      const mapUrl="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3240.0!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s"+encodeURIComponent(addr)+"!5e0!3m2!1s"+(lang==="ja"?"ja":(lang==="en"?"en":"ko"))+"!2sjp!4v1";
+      const hlMap={ko:"ko",en:"en",ja:"ja"}[lang]||"ko";
+      const mapUrl="https://maps.google.com/maps?q="+encodeURIComponent(addr)+"&hl="+hlMap+"&z=15&output=embed";
       
       let s='<div class="luxury-section-card">';
       s+='<div class="luxury-sec-header"><h2>📍 '+esc(lang==="ko"?"위치, 지도 & 교통편":(lang==="ja"?"地図・アクセス案内":"Location & Map"))+'</h2></div>';
       
       s+='<div style="border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 2px 10px rgba(0,0,0,0.06); width:100%;">';
-      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" decoding="async" style="width:100%; height:380px; border:0; display:block;"></iframe>';
+      s+='<iframe src="'+mapUrl+'" allowfullscreen="" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" title="'+esc(addr)+'" style="width:100%; height:380px; border:0; display:block;"></iframe>';
       s+='</div>';
 
       s+='<div class="luxury-map-bar">';
@@ -3087,6 +3111,8 @@ const S = {
   }
 
   window.S = S;
+  window.drawList = drawList;
+  window.go = go;
 
   function init(){
     try{
@@ -3132,6 +3158,7 @@ const S = {
     if(lb)lb.addEventListener("click",()=>{S.q=ls?ls.value:"";drawList();});
     const ss=$("list-sort");if(ss)ss.addEventListener("change",e=>{S.sort=e.target.value;drawList();});
     const br=$("list-reset-btn");if(br)br.addEventListener("click",()=>{S.q="";S.fArea="all";S.fType="all";S.fFeat="all";if(ls)ls.value="";drawList();});
+    const brEmpty=$("list-empty-reset-btn");if(brEmpty)brEmpty.addEventListener("click",()=>{S.q="";S.fArea="all";S.fType="all";S.fFeat="all";const inp=$("list-search-input");if(inp)inp.value="";drawList();});
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(S.theme==="system")applyTheme();});
     // Check URL parameters / hash before navigation
     try {
@@ -3220,6 +3247,15 @@ function loadDataFast(callback){
         "온천 마을":"images/village-daiyokujo.jpg"
       };
       window.getDefaultImage = function(typeKo){ return TYPE_IMG[typeKo] || "images/hero-onsen.jpg"; };
+      window.smartImgFallback = function(img, id, typeKo){
+        try{
+          if(!img) return;
+          img.onerror = null;
+          var fallback = (window.getDefaultImage && window.getDefaultImage(typeKo)) || "images/hero-onsen.jpg";
+          if(img.src && img.src.indexOf(fallback) !== -1) return;
+          img.src = fallback;
+        }catch(e){}
+      };
       const missing = [];
       (window.DATA||[]).forEach(o=>{
         const t=(o.type&&o.type.ko)||"";
